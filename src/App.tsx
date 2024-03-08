@@ -1,22 +1,19 @@
+import { Link, Outlet } from 'react-router-dom';
 import {
   AppShell,
-  Button,
+  Box,
   Group,
   Stack,
-  Text,
   Title
 } from '@mantine/core';
-import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { fetchAllDecks } from './deck/deck-api';
 import { Deck } from './deck/deck-types';
 
 const App: React.FC = () => {
-  const queryClient = useQueryClient();
-
-  const { data, isLoading, isError } = useQuery<Deck[], Error>({ queryKey: ['decks'], queryFn: fetchAllDecks });
+  const { data, isLoading } = useQuery<Deck[], Error>({ queryKey: ['decks'], queryFn: fetchAllDecks });
 
   if (data === undefined || isLoading) return <div>Loading...</div>;
-  if (isError) return <div>Error</div>;
 
   return (
     <AppShell
@@ -30,11 +27,13 @@ const App: React.FC = () => {
       </AppShell.Header>
       <AppShell.Navbar p="md">
         <Stack>
-          {data.map(deck => <Text>{deck.name}</Text>)}
+          {data.map(deck => <Link key={deck.id} to={`decks/${deck.id}`}>{deck.name}</Link>)}
         </Stack>
       </AppShell.Navbar>
       <AppShell.Main>
-        <Button variant="filled">Hey</Button>
+        <Box p="md">
+          <Outlet />
+        </Box>
       </AppShell.Main>
     </AppShell>
   );
