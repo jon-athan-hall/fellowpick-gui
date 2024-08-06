@@ -6,6 +6,9 @@ const theme = createTheme({
     sizes: {
       h1: {
         fontSize: rem('48px')
+      },
+      h2: {
+        fontSize: rem('36px')
       }
     }
   },

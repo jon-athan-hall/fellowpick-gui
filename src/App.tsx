@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import {
+  Anchor,
   AppShell,
   Box,
   Group,
@@ -20,9 +21,13 @@ const App: React.FC = () => {
       header={{ height: '6em' }}
       navbar={{ width: '12em', breakpoint: 'sm' }}
     >
-      <AppShell.Header p="md">
-        <Group align="center" h="100%">
+      <AppShell.Header p="lg">
+        <Group justify="space-between">
           <Title>Fellowpick</Title>
+          <Group>
+            <Anchor component={Link} to="/login">Login</Anchor>
+            <Anchor component={Link} to="/register">Register</Anchor>
+          </Group>
         </Group>
       </AppShell.Header>
       <AppShell.Navbar p="md">

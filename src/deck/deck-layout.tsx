@@ -1,14 +1,15 @@
 import { useParams } from 'react-router-dom';
 import {
-  Box,
   Card,
   Loader,
+  Paper,
   Stack,
   Title
 } from '@mantine/core';
 import { useQuery } from '@tanstack/react-query';
+
 import { fetchDeck } from './deck-api';
-import { Deck } from './deck-types';
+import { ColorIdentity, Deck } from './deck-types';
 
 const DeckLayout: React.FC = () => {
   // Grab the deckId parameter from the route.
@@ -26,14 +27,14 @@ const DeckLayout: React.FC = () => {
   };
 
   return (
-    <Box p="md">
+    <Paper p="md">
       <Stack>
         <Title order={2}>{data.name}</Title>
         {data.cards.map(card => (
-          <Card>{card.name}</Card>
+          <Card key={card.id}>{card.name}</Card>
         ))}
       </Stack>
-    </Box>
+    </Paper>
   );
 };
 
