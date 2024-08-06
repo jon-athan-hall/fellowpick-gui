@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import {
   Anchor,
   Button,
@@ -9,15 +11,14 @@ import {
   Title
 } from '@mantine/core';
 import { useForm } from '@mantine/form';
-import { upperFirst, useToggle } from '@mantine/hooks';
+import { upperFirst } from '@mantine/hooks';
+import { useMutation } from '@tanstack/react-query';
 
-import { AuthAction, AuthFormValues } from './auth-types';
+import { AuthAction, AuthFormValues, AuthRequest } from './auth-types';
+import { postLogin, postRegister } from './auth-api';
 
-interface AuthFormProps {
-  initialAction: AuthAction;
-}
-
-const AuthForm: React.FC<AuthFormProps> = ({ initialAction = AuthAction.Register }) => {
+const AuthForm: React.FC = () => {
+  // Set up form.
   const form = useForm<AuthFormValues>({
     initialValues: {
       email: '',
@@ -29,20 +30,50 @@ const AuthForm: React.FC<AuthFormProps> = ({ initialAction = AuthAction.Register
     }
   });
 
-  /**
-   * Initialize the toggle options. Make sure the first option is set to the initialAction prop.
-   * Mantine uses the first option in the array as the initial value.
-   */
-  const [action, toggleAction] = useToggle([
-    initialAction,
-    ...Object.values(AuthAction).filter(action => (typeof action === 'string'))
-  ] as const);
+  // Use the current route to determine which action is being used.
+  const location = useLocation();
+
+  // Set up the mutation to login.
+  const loginMutation = useMutation({
+    mutationFn: (auth: AuthRequest) => postLogin(auth)
+  });
+
+  // Set up mutation to register.
+  const registerMutation = useMutation({
+    mutationFn: (auth: AuthRequest) => postRegister(auth)
+  });
+
+  // Keep track of which authentication action will be used. Initialize according to the route.
+  const [action, setAction] = useState<AuthAction>(() => 
+    location.pathname === '/login' ? AuthAction.Login : AuthAction.Register
+  );
+
+  // Update the action if the navigation is clicked while this form is on the screen.
+  useEffect(() => {
+    setAction(location.pathname === '/login' ? AuthAction.Login : AuthAction.Register);
+  }, [location]);
+
+  // Switch between the register and login actions.
+  const toggleAction = () => {
+    setAction((prevAction) => prevAction === AuthAction.Login ? AuthAction.Register : AuthAction.Login);
+  };
+
+  // Decide which mutation to call after clicking submit.
+  const handleSubmit = (values: AuthFormValues) => {
+    console.log(values);
+    console.log(action);
+    if (action === AuthAction.Login) {
+      loginMutation.mutate(values);
+    } else {
+      registerMutation.mutate(values);
+    }
+  };
 
   return (
     <Paper p="md" w="50%">
       <Title order={2}>{upperFirst(action)}</Title>
 
-      <form onSubmit={form.onSubmit((values) => console.log(values))}>
+      <form onSubmit={form.onSubmit(handleSubmit)}>
         <Stack>
           <TextInput
             key={form.key('email')}
@@ -66,7 +97,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ initialAction = AuthAction.Register
             <Button type="submit">
               {upperFirst(action)}
             </Button>
-            <Anchor component="button" onClick={() => toggleAction()} type="button">
+            <Anchor component="button" onClick={toggleAction} size="sm" type="button">
               {action === AuthAction.Register ? 'Already registered? Login' : 'No account yet? Register'}
             </Anchor>
           </Group>

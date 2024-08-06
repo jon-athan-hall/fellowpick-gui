@@ -1,9 +1,9 @@
 export enum ColorIdentity {
-  W,
-  U,
-  B,
-  R,
-  G
+  W = 'W',
+  U = 'U',
+  B = 'B',
+  R = 'R',
+  G = 'G'
 };
 
 export interface Card {

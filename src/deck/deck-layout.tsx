@@ -9,7 +9,7 @@ import {
 import { useQuery } from '@tanstack/react-query';
 
 import { fetchDeck } from './deck-api';
-import { ColorIdentity, Deck } from './deck-types';
+import { Deck } from './deck-types';
 
 const DeckLayout: React.FC = () => {
   // Grab the deckId parameter from the route.

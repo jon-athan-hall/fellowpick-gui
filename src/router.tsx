@@ -16,11 +16,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'login',
-        element: <AuthForm initialAction={AuthAction.Login} />
+        element: <AuthForm />
       },
       {
         path: 'register',
-        element: <AuthForm initialAction={AuthAction.Register} />
+        element: <AuthForm />
       }
     ]
   }
