@@ -5,14 +5,20 @@ import {
   AppShell,
   Box,
   Group,
+  Image,
   NavLink,
+  rem,
+  Stack,
+  Text,
   Title
 } from '@mantine/core';
 import { useQuery } from '@tanstack/react-query';
 import { fetchAllDecks } from './deck/deck-api';
 import { Deck } from './deck/deck-types';
+import { useCardImage } from './card/card-image-context';
 
 const App: React.FC = () => {
+  const { cardImageUrl } = useCardImage();
   const { data, isLoading } = useQuery<Deck[], Error>({ queryKey: ['decks'], queryFn: fetchAllDecks });
   const [activeDeck, setActiveDeck] = useState(0);
 
@@ -20,8 +26,8 @@ const App: React.FC = () => {
 
   return (
     <AppShell
-      header={{ height: '6em' }}
-      navbar={{ width: '12em', breakpoint: 'sm' }}
+      header={{ height: rem(100) }}
+      navbar={{ breakpoint: 'sm', width: rem(400) }}
     >
       <AppShell.Header p="lg">
         <Group justify="space-between">
@@ -33,16 +39,19 @@ const App: React.FC = () => {
         </Group>
       </AppShell.Header>
       <AppShell.Navbar p="md">
-        {data.map(deck => (
-          <NavLink
-            active={deck.id === activeDeck}
-            component={Link}
-            key={deck.id}
-            label={deck.name}
-            onClick={() => setActiveDeck(deck.id)}
-            to={`decks/${deck.id}`}
-          />
-        ))}
+        <Stack gap="xs" h="100%">
+          {data.map(deck => (
+            <NavLink
+              active={deck.id === activeDeck}
+              component={Link}
+              key={deck.id}
+              label={<Text size="lg">{deck.name}</Text>}
+              onClick={() => setActiveDeck(deck.id)}
+              to={`decks/${deck.id}`}
+            />
+          ))}
+          <Image mt="auto" src={cardImageUrl} />
+        </Stack>
       </AppShell.Navbar>
       <AppShell.Main>
         <Box p="md">

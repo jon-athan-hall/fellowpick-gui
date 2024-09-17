@@ -8,6 +8,7 @@ export enum ColorIdentity {
 
 export interface Card {
   id: string;
+  imageUrl: string;
   name: string;
   colorIdentity: ColorIdentity[];
 };

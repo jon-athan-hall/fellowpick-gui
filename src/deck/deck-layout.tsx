@@ -10,8 +10,11 @@ import { useQuery } from '@tanstack/react-query';
 
 import { fetchDeck } from './deck-api';
 import { Deck } from './deck-types';
+import { useCardImage } from '../card/card-image-context';
 
 const DeckLayout: React.FC = () => {
+  const { setCardImageUrl } = useCardImage();
+
   // Grab the deckId parameter from the route.
   const { deckId } = useParams();
 
@@ -28,10 +31,15 @@ const DeckLayout: React.FC = () => {
 
   return (
     <Paper p="md">
-      <Stack>
+      <Stack gap="xs">
         <Title order={2}>{data.name}</Title>
         {data.cards.map(card => (
-          <Card key={card.id}>{card.name}</Card>
+          <Card
+            key={card.id}
+            onMouseEnter={() => setCardImageUrl(card.imageUrl)}
+            p="xs"
+            styles={{ root: { cursor: 'pointer' }}}
+          >{card.name}</Card>
         ))}
       </Stack>
     </Paper>
