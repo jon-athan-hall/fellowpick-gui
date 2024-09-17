@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 @import '@mantine/core/styles.css';
 
 :root {
@@ -6,9 +5,4 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h1 {
-  font-family: 'MedievalSharp';
-  font-size: 5em;
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import {
+  Alert,
   Anchor,
   Button,
   Group,
@@ -33,20 +34,30 @@ const AuthForm: React.FC = () => {
   // Use the current route to determine which action is being used.
   const location = useLocation();
 
-  // Set up the mutation to login.
+  // Set up the mutation to login. Store the token in the response. 
   const loginMutation = useMutation({
-    mutationFn: (auth: AuthRequest) => postLogin(auth)
+    mutationFn: (auth: AuthRequest) => postLogin(auth),
+    onSuccess: () => {
+      setIsNowRegistered(false);
+    }
   });
 
-  // Set up mutation to register.
+  // Set up mutation to register. Switch over to login on success, and show the alert.
   const registerMutation = useMutation({
-    mutationFn: (auth: AuthRequest) => postRegister(auth)
+    mutationFn: (auth: AuthRequest) => postRegister(auth),
+    onSuccess: () => {
+      setAction(AuthAction.Login);
+      setIsNowRegistered(true);
+    }
   });
 
   // Keep track of which authentication action will be used. Initialize according to the route.
   const [action, setAction] = useState<AuthAction>(() => 
     location.pathname === '/login' ? AuthAction.Login : AuthAction.Register
   );
+
+  // Keep track of a successful registration to show the alert.
+  const [isNowRegistered, setIsNowRegistered] = useState<boolean>(false);
 
   // Update the action if the navigation is clicked while this form is on the screen.
   useEffect(() => {
@@ -71,7 +82,15 @@ const AuthForm: React.FC = () => {
 
   return (
     <Paper p="md" w="50%">
-      <Title order={2}>{upperFirst(action)}</Title>
+      <Stack>
+        {isNowRegistered && (
+          <Alert title="Success">
+            You have successfully registered. Please login to make your fellowpicks.
+          </Alert>
+        )}
+
+        <Title order={2}>{upperFirst(action)}</Title>
+      </Stack>
 
       <form onSubmit={form.onSubmit(handleSubmit)}>
         <Stack>

@@ -1,10 +1,11 @@
+import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import {
   Anchor,
   AppShell,
   Box,
   Group,
-  Stack,
+  NavLink,
   Title
 } from '@mantine/core';
 import { useQuery } from '@tanstack/react-query';
@@ -13,6 +14,7 @@ import { Deck } from './deck/deck-types';
 
 const App: React.FC = () => {
   const { data, isLoading } = useQuery<Deck[], Error>({ queryKey: ['decks'], queryFn: fetchAllDecks });
+  const [activeDeck, setActiveDeck] = useState(0);
 
   if (data === undefined || isLoading) return <div>Loading...</div>;
 
@@ -25,15 +27,22 @@ const App: React.FC = () => {
         <Group justify="space-between">
           <Title>Fellowpick</Title>
           <Group>
-            <Anchor component={Link} to="/login">Login</Anchor>
-            <Anchor component={Link} to="/register">Register</Anchor>
+            <Anchor component={Link} onClick={() => setActiveDeck(0)} to="/login">Login</Anchor>
+            <Anchor component={Link} onClick={() => setActiveDeck(0)} to="/register">Register</Anchor>
           </Group>
         </Group>
       </AppShell.Header>
       <AppShell.Navbar p="md">
-        <Stack>
-          {data.map(deck => <Link key={deck.id} to={`decks/${deck.id}`}>{deck.name}</Link>)}
-        </Stack>
+        {data.map(deck => (
+          <NavLink
+            active={deck.id === activeDeck}
+            component={Link}
+            key={deck.id}
+            label={deck.name}
+            onClick={() => setActiveDeck(deck.id)}
+            to={`decks/${deck.id}`}
+          />
+        ))}
       </AppShell.Navbar>
       <AppShell.Main>
         <Box p="md">
