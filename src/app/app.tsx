@@ -1,25 +1,13 @@
+import { Anchor, AppShell, Box, Group, Image, NavLink, rem, Stack, Text, Title} from '@mantine/core';
 import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import {
-  Anchor,
-  AppShell,
-  Box,
-  Group,
-  Image,
-  NavLink,
-  rem,
-  Stack,
-  Text,
-  Title
-} from '@mantine/core';
-import { useQuery } from '@tanstack/react-query';
-import { fetchAllDecks } from './deck/deck-api';
-import { Deck } from './deck/deck-types';
-import { useCardImage } from './card/card-image-context';
+
+import { useCardImage } from '@/card/card-image-context';
+import useFetchAllDecks from '@/deck/api/fetch-all-decks';
 
 const App: React.FC = () => {
   const { cardImageUrl } = useCardImage();
-  const { data, isLoading } = useQuery<Deck[], Error>({ queryKey: ['decks'], queryFn: fetchAllDecks });
+  const { data, isLoading } = useFetchAllDecks();
   const [activeDeck, setActiveDeck] = useState(0);
 
   if (data === undefined || isLoading) return <div>Loading...</div>;

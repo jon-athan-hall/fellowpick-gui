@@ -1,13 +1,13 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
 
 // Define the context type.
-interface CardImageContextType {
+type CardImageContextType = {
   cardImageUrl: string;
   setCardImageUrl: (url: string) => void;
 };
 
 // Define the provider props type.
-interface CardImageProviderProps {
+type CardImageProviderProps = {
   children: ReactNode;
 };
 
@@ -28,6 +28,7 @@ export const CardImageProvider = ({ children }: CardImageProviderProps) => {
   );
 };
 
+// Hook for card image context.
 export const useCardImage = () => {
   const context = useContext(CardImageContext);
   if (!context) {

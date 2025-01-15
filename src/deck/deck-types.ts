@@ -1,20 +1,7 @@
-export enum ColorIdentity {
-  W = 'W',
-  U = 'U',
-  B = 'B',
-  R = 'R',
-  G = 'G'
-};
+import { Card } from '@/card/card-types';
 
-export interface Card {
-  id: string;
-  imageUrl: string;
-  name: string;
-  colorIdentity: ColorIdentity[];
-};
-
-export interface Deck {
+export type Deck = {
+  cards: Card[];
   id: number;
   name: string;
-  cards: Card[];
 };

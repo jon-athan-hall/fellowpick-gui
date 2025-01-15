@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import App from './app';
+import App from './app/app';
 import AuthForm from './auth/auth-form';
-import DeckLayout from './deck/deck-layout';
+import DeckLayout from './deck/components/deck-layout';
 
 const router = createBrowserRouter([
   {
