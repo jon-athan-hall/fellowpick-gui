@@ -1,4 +1,4 @@
-import { AppBar, Box, Container, Drawer, Link, List, ListItem, Typography } from '@mui/material';
+import { AppBar, Box, Container, CssBaseline, Drawer, Link, List, ListItem, Typography } from '@mui/material';
 import { Link as RouterLink, Outlet } from 'react-router-dom';
 
 import { useCardImage } from '@/card/card-image-context';
@@ -13,6 +13,7 @@ const App: React.FC = () => {
 
   return (
     <Container maxWidth={false}>
+      <CssBaseline />
       <AppBar>
           <Typography variant="h1">Fellowpick</Typography>
           <Link component={RouterLink} to="/login">Login</Link>
