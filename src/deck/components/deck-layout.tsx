@@ -1,4 +1,4 @@
-import { Card, Loader, Paper, Stack, Title } from '@mantine/core';
+import { Card, Group, Loader, Paper, Stack, Switch, Text, Title } from '@mantine/core';
 import { useParams } from 'react-router-dom';
 
 import { useCardImage } from '@/card/card-image-context';
@@ -25,7 +25,10 @@ const DeckLayout: React.FC = () => {
             p="xs"
             styles={{ root: { cursor: 'pointer' }}}
           >
-            {card.name}
+            <Group justify="space-between">
+              <Text>{card.name}</Text>
+              <Switch />
+            </Group>
           </Card>
         ))}
       </Stack>
