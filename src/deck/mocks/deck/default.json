@@ -1,0 +1,12 @@
+{
+  "cards": [
+    {
+      "colorIdentity": ["U", "W"],
+      "id": "LTC0054",
+      "imageUrl": "https://cards.scryfall.io/png/front/5/c/5c3e8a30-de2a-4d8f-a929-5abeaea2e65a.png?1686964208",
+      "name": "Faramir, Steward of Gondor"
+    }
+  ],
+  "id": 1, 
+  "name": "Riders of Rohan"
+}

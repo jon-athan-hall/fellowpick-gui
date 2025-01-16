@@ -1,4 +1,5 @@
-import { Card, Group, Loader, Paper, Stack, Switch, Text, Title } from '@mantine/core';
+import { Card, Group, Loader, Paper, Stack, Text, Title } from '@mantine/core';
+import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useParams } from 'react-router-dom';
 
 import { useCardImage } from '@/card/card-image-context';
@@ -27,7 +28,10 @@ const DeckLayout: React.FC = () => {
           >
             <Group justify="space-between">
               <Text>{card.name}</Text>
-              <Switch />
+              <ToggleButtonGroup>
+                <ToggleButton value={false}></ToggleButton>
+                <ToggleButton value={true}>CUT</ToggleButton>
+              </ToggleButtonGroup>
             </Group>
           </Card>
         ))}
