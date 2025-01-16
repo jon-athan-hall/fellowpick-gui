@@ -1,6 +1,25 @@
-import { createTheme, rem } from "@mantine/core";
+import { createTheme } from '@mui/material';
 
 const theme = createTheme({
+  palette: {
+    primary: {
+      light: '#3350bf',
+      main: '#0025b0',
+      dark: '#00197b',
+      contrastText: '#ffffff',
+    },
+    secondary: {
+      light: '#7f6245',
+      main: '#603b17',
+      dark: '#432910',
+      contrastText: '#ffffff',
+    },
+  },
+});
+
+export default theme;
+
+/*
   colors: {
     'gandalf-gray': [
       "#fef2f5",
@@ -64,5 +83,10 @@ const theme = createTheme({
   },
   primaryColor: 'pallando-blue'
 });
+*/
 
-export default theme;
+//ffffff - saruman-white
+//757575 - gandalf-gray
+//603b17 - radagast-brown
+//001eff - alatar-blue
+//0025b0 - pallando-blue
