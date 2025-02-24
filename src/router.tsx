@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import App from './app/app';
+import App from './app/components/app.tsx';
 import AuthForm from './auth/auth-form';
 import DeckLayout from './deck/components/deck-layout';
 

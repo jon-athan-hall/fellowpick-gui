@@ -4,7 +4,7 @@ export enum ColorIdentity {
   B = 'B',
   R = 'R',
   G = 'G'
-};
+}
 
 export type Card = {
   colorIdentity: ColorIdentity[];

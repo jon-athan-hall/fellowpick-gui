@@ -13,7 +13,7 @@ const DeckLayout: React.FC = () => {
   // Show a loader while the fetch is happening.
   if (data === undefined || data === null || isLoading) {
     return <Loader color="lime" />;
-  };
+  }
 
   return (
     <Paper p="md">

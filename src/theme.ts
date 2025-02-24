@@ -6,15 +6,21 @@ const theme = createTheme({
       light: '#3350bf',
       main: '#0025b0',
       dark: '#00197b',
-      contrastText: '#ffffff',
+      contrastText: '#ffffff'
     },
     secondary: {
       light: '#7f6245',
       main: '#603b17',
       dark: '#432910',
-      contrastText: '#ffffff',
+      contrastText: '#ffffff'
     },
   },
+  typography: {
+    h1: {
+      fontFamily: 'MedievalSharp',
+      fontSize: 48
+    }
+  }
 });
 
 export default theme;

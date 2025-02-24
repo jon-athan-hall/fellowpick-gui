@@ -11,7 +11,7 @@ export const fetchDeck = async (id: string): Promise<Deck> => {
     return response.data;
   } catch (error) {
     throw new Error('Error fetching deck');
-  };
+  }
 };
 
 // Hook for fetch deck.
