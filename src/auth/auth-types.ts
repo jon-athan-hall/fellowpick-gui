@@ -3,9 +3,9 @@ export enum AuthAction {
   Register = 'register'
 }
 
-export interface AuthFormValues extends AuthRequest {}
-
 export interface AuthRequest {
   email: string,
   password: string
 }
+
+export interface AuthFormValues extends AuthRequest {}
