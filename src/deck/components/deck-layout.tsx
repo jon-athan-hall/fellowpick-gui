@@ -8,7 +8,7 @@ import {
 } from '@mui/material';
 import { useParams } from 'react-router-dom';
 
-import { useCardImage } from '@/card/card-image-context';
+import { fetchScryfallImageUrl, useCardImage } from '@/card/card-image-context';
 import useFetchDeck from '../api/fetch-deck';
 
 const DeckLayout: React.FC = () => {
@@ -21,13 +21,18 @@ const DeckLayout: React.FC = () => {
     return <LinearProgress />;
   }
 
+  const handleHover = async (scryfallId: string) => {
+    const imageUrl = await fetchScryfallImageUrl(scryfallId);
+    setCardImageUrl(imageUrl);
+  };
+
   return (
     <Box>
-      <Typography variant="h2">{deck.name}</Typography>
-        {deck.cards.map(card => (
+      <Typography variant="h2">{deck.data.name}</Typography>
+        {deck.data.mainBoard.map(card => (
           <Box
-            key={card.id}
-            onMouseEnter={() => setCardImageUrl(card.imageUrl)}
+            key={card.number}
+            onMouseEnter={() => handleHover(card.identifiers.scryfallId)}
             p="xs"
           >
             <Stack direction="row">

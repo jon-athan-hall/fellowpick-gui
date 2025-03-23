@@ -1,7 +1,12 @@
 import { Card } from '@/card/card-types';
 
 export type Deck = {
-  cards: Card[];
-  id: number;
-  name: string;
+  data: {
+    mainBoard: Card[];
+    name: string;
+  }
+  meta: {
+    date: string;
+    version: string;
+  }
 };

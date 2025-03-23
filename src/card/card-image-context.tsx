@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { createContext, ReactNode, useContext, useState } from 'react';
 
 // Define the context type.
@@ -35,4 +36,15 @@ export const useCardImage = () => {
     throw new Error('The hook useCardImage must be used within a CardImageProvider');
   }
   return context;
+};
+
+// Helper function for getting the card image from Scryfall.
+export const fetchScryfallImageUrl = async (scryfallId: string): Promise<string> => {
+  try {
+    const response = await axios.get(`https://api.scryfall.com/cards/${scryfallId}`);
+    return response.data.image_uris?.normal ?? '';
+  } catch (error) {
+    console.error('Error fetching Scryfall card image: ', error);
+    return '';
+  }
 };

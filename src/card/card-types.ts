@@ -8,7 +8,10 @@ export enum ColorIdentity {
 
 export type Card = {
   colorIdentity: ColorIdentity[];
-  id: string;
-  imageUrl: string;
+  identifiers: {
+    scryfallId: string;
+  }
   name: string;
+  number: string;
+  setCode: string
 };
