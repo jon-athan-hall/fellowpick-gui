@@ -1,4 +1,13 @@
-import { Box, Container, CssBaseline, Drawer, Link, List, ListItem } from '@mui/material';
+import {
+  Box,
+  Container,
+  CssBaseline,
+  Drawer,
+  Link,
+  List,
+  ListItem,
+  Stack
+} from '@mui/material';
 import { Link as RouterLink, Outlet } from 'react-router-dom';
 
 import { useCardImage } from '@/card/card-image-context.tsx';
@@ -20,21 +29,29 @@ const App: React.FC = () => {
       <Drawer
         sx={{
           '& .MuiDrawer-paper': {
+            height: 'calc(100vh - 80px)',
             top: 80
           }
         }}
         variant="permanent"
       >
-        <List>
-          {Object.entries(decks).map(([slug, name]) => (
-            <ListItem key={slug}>
-              <Link component={RouterLink} to={`decks/${slug}`}>
-                {name}
-              </Link>
-            </ListItem>
-          ))}
-          <Box component="img" src={cardImageUrl} />
-        </List>
+        <Stack height="100%" justifyContent="space-between">
+          <List>
+            {Object.entries(decks).map(([slug, name]) => (
+              <ListItem key={slug}>
+                <Link component={RouterLink} to={`decks/${slug}`}>
+                  {name}
+                </Link>
+              </ListItem>
+            ))}
+          </List>
+          <Box
+            component="img"
+            src={cardImageUrl}
+            maxWidth={256}
+            padding={2}
+          />
+        </Stack>
       </Drawer>
       <Box>
         <Outlet />
