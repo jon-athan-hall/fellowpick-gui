@@ -19,6 +19,10 @@ const theme = createTheme({
     h1: {
       fontFamily: 'MedievalSharp',
       fontSize: 48
+    },
+    h2: {
+      fontFamily: 'MedievalSharp',
+      fontSize: 30
     }
   }
 });

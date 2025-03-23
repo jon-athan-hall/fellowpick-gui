@@ -30,7 +30,8 @@ const App: React.FC = () => {
         sx={{
           '& .MuiDrawer-paper': {
             height: 'calc(100vh - 80px)',
-            top: 80
+            top: 80,
+            width: 256
           }
         }}
         variant="permanent"
@@ -48,12 +49,14 @@ const App: React.FC = () => {
           <Box
             component="img"
             src={cardImageUrl}
-            maxWidth={256}
             padding={2}
           />
         </Stack>
       </Drawer>
-      <Box>
+      <Box
+        marginLeft={32}
+        padding={2}
+      >
         <Outlet />
       </Box>
     </Container>
