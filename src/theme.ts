@@ -24,6 +24,17 @@ const theme = createTheme({
       fontFamily: 'MedievalSharp',
       fontSize: 30
     }
+  },
+  components: {
+    MuiTypography: {
+      styleOverrides: {
+        h2: ({ theme }) => ({
+          borderBottomColor: theme.palette.primary.main,
+          borderBottomStyle: 'solid',
+          borderBottomWidth: 2,
+        })
+      }
+    }
   }
 });
 
