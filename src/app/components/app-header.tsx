@@ -5,7 +5,10 @@ const AppHeader = () => {
   return (
     <AppBar
       component="header"
-      position="static"
+      position="fixed"
+      sx={{
+        top: 0
+      }}
     >
       <Toolbar sx={{ my: 1 }}>
         <Typography variant="h1">Fellowpick</Typography>

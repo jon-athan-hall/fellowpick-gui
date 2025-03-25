@@ -1,19 +1,17 @@
 import {
   Box,
-  LinearProgress,
-  Stack,
-  ToggleButton,
-  ToggleButtonGroup,
+  Divider,
+  LinearProgress, Stack,
   Typography
 } from '@mui/material';
+import { ReactElement } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { fetchScryfallImageUrl, useCardImage } from '@/card/card-image-context';
+import CardToggleBox from '@/card/card-toggle-box';
 import useFetchDeck from '../api/fetch-deck';
 
-const DeckLayout: React.FC = () => {
+const DeckLayout = (): ReactElement => {
   const { deckId } = useParams(); // Grab the deckId parameter from the route.
-  const { setCardImageUrl } = useCardImage();
   const { data: deck, isLoading } = useFetchDeck(deckId!);
 
   // Show a loader while the fetch is happening.
@@ -21,29 +19,29 @@ const DeckLayout: React.FC = () => {
     return <LinearProgress />;
   }
 
-  const handleHover = async (scryfallId: string) => {
-    const imageUrl = await fetchScryfallImageUrl(scryfallId);
-    setCardImageUrl(imageUrl);
-  };
-
   return (
     <Box>
-      <Typography variant="h2">{deck.data.name}</Typography>
-        {deck.data.mainBoard.map(card => (
-          <Box
-            key={card.number}
-            onMouseEnter={() => handleHover(card.identifiers.scryfallId)}
-            p="xs"
-          >
-            <Stack direction="row">
-              <Typography variant="body1">{card.name}</Typography>
-              <ToggleButtonGroup>
-                <ToggleButton value={false}></ToggleButton>
-                <ToggleButton value={true}>CUT</ToggleButton>
-              </ToggleButtonGroup>
-            </Stack>
-          </Box>
-        ))}
+      <Typography
+        variant="h2"
+        sx={{
+          mb: 1
+        }}
+      >
+        {deck.data.name}
+      </Typography>
+      <Stack
+        divider={
+          <Divider
+            flexItem={true}
+            orientation="horizontal"
+          />
+        }
+        sx={{
+          maxWidth: 384
+        }}
+      >
+      {deck.data.mainBoard.map(card => <CardToggleBox card={card} key={card.number} />)}
+      </Stack>
     </Box>
   );
 };

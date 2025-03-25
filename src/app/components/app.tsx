@@ -36,7 +36,12 @@ const App: React.FC = () => {
         }}
         variant="permanent"
       >
-        <Stack height="100%" justifyContent="space-between">
+        <Stack
+          justifyContent="space-between"
+          sx={{
+            height: '100%'
+          }}
+        >
           <List>
             {Object.entries(decks).map(([slug, name]) => (
               <ListItem key={slug}>
@@ -47,15 +52,30 @@ const App: React.FC = () => {
             ))}
           </List>
           <Box
-            component="img"
-            src={cardImageUrl}
-            padding={2}
-          />
+            sx={{
+              borderRadius: 2,
+              display: 'block',
+              m: 2,
+              overflow: 'hidden'
+            }}
+          >
+            <Box
+              component="img"
+              src={cardImageUrl}
+              sx={{
+                height: '100%',
+                width: '100%'
+              }}
+            />
+          </Box>
         </Stack>
       </Drawer>
       <Box
-        marginLeft={32}
-        padding={2}
+        sx={{
+          ml: 32,
+          mt: 10,
+          p: 2
+        }}
       >
         <Outlet />
       </Box>
