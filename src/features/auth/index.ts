@@ -1,0 +1,12 @@
+export { AuthProvider } from './hooks/auth-context';
+export { useAuth } from './hooks/use-auth';
+export { RequireAuth, RequireRole } from './guards';
+export { ResendVerificationBanner } from './components/resend-verification-banner';
+export { useLoginMutation } from './api/use-login';
+export { useRegisterMutation } from './api/use-register';
+export { useLogoutMutation } from './api/use-logout';
+export { useForgotPasswordMutation } from './api/use-forgot-password';
+export { useResetPasswordMutation } from './api/use-reset-password';
+export { useVerifyEmailQuery } from './api/use-verify-email';
+export { useResendVerificationMutation } from './api/use-resend-verification';
+export type { AuthUser, LoginRequest, RegisterRequest } from './types';

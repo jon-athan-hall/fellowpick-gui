@@ -1,0 +1,37 @@
+import { Button, Container, Stack, Text, Title } from '@mantine/core';
+import { notifications } from '@mantine/notifications';
+import { useNavigate } from 'react-router-dom';
+import { useLogoutMutation } from '../features/auth/api/use-logout';
+import { useAuth } from '../features/auth/hooks/use-auth';
+
+export function HomePage() {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  const logoutMutation = useLogoutMutation();
+
+  function handleLogout() {
+    logoutMutation.mutate(undefined, {
+      onSettled: () => {
+        notifications.show({ message: 'Signed out' });
+        navigate('/login');
+      }
+    });
+  }
+
+  return (
+    <Container size="sm" py="xl">
+      <Stack>
+        <Title order={1}>Welcome, {user?.name}</Title>
+        <Text>You are signed in as {user?.email}.</Text>
+        <Button
+          onClick={handleLogout}
+          loading={logoutMutation.isPending}
+          variant="default"
+          w="fit-content"
+        >
+          Sign out
+        </Button>
+      </Stack>
+    </Container>
+  );
+}
