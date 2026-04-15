@@ -1,33 +1,35 @@
 import {
   AppShell,
-  Box,
+  Avatar,
   Burger,
-  Button,
-  Divider,
   Group,
   Image,
   Menu,
-  NavLink,
-  Stack,
-  Text,
+  Select,
   Title,
   UnstyledButton
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Link, Outlet, useNavigate, useParams } from 'react-router-dom';
 import { useLogoutMutation, useAuth } from '../features/auth';
 import { useCardPreview } from '../features/picks/hooks/use-card-preview';
+import universes from '../data/universes.json';
 
-// Renders the application shell with header, sidebar navigation, and card preview.
+// Renders the application shell with header, sidebar universe selector, and routed content.
 export function AppLayout() {
   const [navOpened, { toggle: toggleNav, close: closeNav }] = useDisclosure();
   const { user, isAuthenticated, clearSession } = useAuth();
   const logoutMutation = useLogoutMutation();
   const navigate = useNavigate();
-  const location = useLocation();
+  const { universeId, preconId } = useParams<{ universeId: string; preconId: string }>();
 
-  const isAdmin = user?.roles.includes('ROLE_ADMIN') ?? false;
   const { imageUrl } = useCardPreview();
+  const selectedUniverse = universeId ?? null;
+  const universeOptions = universes.map((u) => ({ value: u.id, label: u.name }));
+  const selectedUniverseData = universes.find((u) => u.id === selectedUniverse);
+  const preconOptions = selectedUniverseData
+    ? selectedUniverseData.precons.map((p) => ({ value: p.id, label: p.name }))
+    : [];
 
   function handleSignOut() {
     logoutMutation.mutate(undefined, {
@@ -38,36 +40,47 @@ export function AppLayout() {
     });
   }
 
-  function isActive(path: string): boolean {
-    return path === '/' ? location.pathname === '/' : location.pathname.startsWith(path);
+  function handleUniverseChange(value: string | null) {
+    if (value) {
+      navigate(`/universes/${value}`);
+    } else {
+      navigate('/');
+    }
   }
 
-  function navTo(path: string) {
+  function handlePreconChange(value: string | null) {
     closeNav();
-    navigate(path);
+    if (selectedUniverse && value) {
+      navigate(`/universes/${selectedUniverse}/precons/${value}`);
+    }
   }
 
   return (
     <AppShell
-      header={{ height: 60 }}
+      header={{ height: 75 }}
       navbar={{ width: 260, breakpoint: 'sm', collapsed: { mobile: !navOpened } }}
       padding="md"
     >
       <AppShell.Header>
-        <Group h="100%" px="md" justify="space-between">
+        <Group h="100%" p="md" justify="space-between">
           <Group gap="sm">
             <Burger opened={navOpened} onClick={toggleNav} hiddenFrom="sm" size="sm" />
             <UnstyledButton component={Link} to="/" aria-label="Fellowpick home">
-              <Title order={4}>Fellowpick</Title>
+              <Title order={1}>Fellowpick</Title>
             </UnstyledButton>
           </Group>
           {isAuthenticated ? (
             <Menu position="bottom-end" withArrow>
               <Menu.Target>
                 <UnstyledButton aria-label="User menu">
-                  <Text size="sm" fw={500}>
-                    {user?.name ?? 'Account'}
-                  </Text>
+                  <Avatar color="yellow" radius="xl">
+                    {user?.name
+                      ?.split(' ')
+                      .map((n) => n[0])
+                      .join('')
+                      .toUpperCase()
+                      .slice(0, 2) ?? '?'}
+                  </Avatar>
                 </UnstyledButton>
               </Menu.Target>
               <Menu.Dropdown>
@@ -82,56 +95,44 @@ export function AppLayout() {
               </Menu.Dropdown>
             </Menu>
           ) : (
-            <Group gap="sm">
-              <Button component={Link} to="/login" variant="subtle" size="sm">
-                Sign in
-              </Button>
-              <Button component={Link} to="/register" size="sm">
-                Register
-              </Button>
-            </Group>
+            <Menu position="bottom-end" withArrow>
+              <Menu.Target>
+                <UnstyledButton aria-label="Guest menu">
+                  <Avatar color="gray" radius="xl" />
+                </UnstyledButton>
+              </Menu.Target>
+              <Menu.Dropdown>
+                <Menu.Item component={Link} to="/login">
+                  Sign in
+                </Menu.Item>
+                <Menu.Item component={Link} to="/register">
+                  Register
+                </Menu.Item>
+              </Menu.Dropdown>
+            </Menu>
           )}
         </Group>
       </AppShell.Header>
 
-      <AppShell.Navbar p="md" style={{ display: 'flex', flexDirection: 'column' }}>
-        <Stack gap="xs" style={{ flex: 1 }}>
-          <NavLink
-            label="Browse Universes"
-            active={isActive('/universes')}
-            onClick={() => navTo('/universes')}
-          />
-          {isAuthenticated && (
-            <>
-              <Divider my="sm" />
-              <NavLink label="Home" active={isActive('/')} onClick={() => navTo('/')} />
-              <NavLink
-                label="Profile"
-                active={isActive('/profile')}
-                onClick={() => navTo('/profile')}
-              />
-            </>
-          )}
-          {isAdmin && (
-            <>
-              <Divider label="Admin" labelPosition="center" my="sm" />
-              <NavLink
-                label="Users"
-                active={isActive('/admin/users')}
-                onClick={() => navTo('/admin/users')}
-              />
-              <NavLink
-                label="Roles"
-                active={isActive('/admin/roles')}
-                onClick={() => navTo('/admin/roles')}
-              />
-            </>
-          )}
-        </Stack>
+      <AppShell.Navbar p="md">
+        <Select
+          label="Universe"
+          placeholder="Choose a universe"
+          data={universeOptions}
+          value={selectedUniverse}
+          onChange={handleUniverseChange}
+          mb="md"
+        />
+        <Select
+          label="Precon"
+          placeholder="Choose a precon"
+          data={preconOptions}
+          value={preconId ?? null}
+          disabled={!selectedUniverse}
+          onChange={handlePreconChange}
+        />
         {imageUrl && (
-          <Box mt="auto" pt="md">
-            <Image src={imageUrl} radius="md" fit="contain" alt="Card preview" />
-          </Box>
+          <Image src={imageUrl} radius="md" fit="contain" alt="Card preview" mt="md" />
         )}
       </AppShell.Navbar>
 

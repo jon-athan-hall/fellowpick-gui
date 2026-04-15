@@ -1,4 +1,4 @@
-import { Alert, Button, Container, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
+import { Anchor, Alert, Button, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useRegisterMutation } from '../features/auth';
@@ -34,20 +34,18 @@ export function RegisterPage() {
         : null;
 
   return (
-    <Container size="xs" py="xl">
-      <form onSubmit={form.onSubmit(handleSubmit)}>
-        <Stack>
-          <Title order={2}>Create an account</Title>
-          {errorMessage && <Alert color="red">{errorMessage}</Alert>}
-          <TextInput label="Name" required {...form.getInputProps('name')} />
-          <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
-          <PasswordInput label="Password" required {...form.getInputProps('password')} />
-          <Button type="submit" loading={registerMutation.isPending}>
-            Register
-          </Button>
-          <Link to="/login">Already have an account? Sign in</Link>
-        </Stack>
-      </form>
-    </Container>
+    <form onSubmit={form.onSubmit(handleSubmit)}>
+      <Stack>
+        <Title order={2}>Create an account</Title>
+        {errorMessage && <Alert color="red">{errorMessage}</Alert>}
+        <TextInput label="Name" required {...form.getInputProps('name')} />
+        <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
+        <PasswordInput label="Password" required {...form.getInputProps('password')} />
+        <Button type="submit" loading={registerMutation.isPending}>
+          Register
+        </Button>
+        <Anchor component={Link} to="/login">Already have an account? Sign in</Anchor>
+      </Stack>
+    </form>
   );
 }

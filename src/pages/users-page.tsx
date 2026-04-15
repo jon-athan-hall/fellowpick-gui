@@ -1,4 +1,4 @@
-import { Container, Stack, Title } from '@mantine/core';
+import { Stack, Title } from '@mantine/core';
 import { useState } from 'react';
 import { useRolesQuery } from '../features/roles';
 import {
@@ -15,7 +15,7 @@ export function UsersPage() {
   const [deletingUser, setDeletingUser] = useState<UserResponse | null>(null);
 
   return (
-    <Container size="xl" py="xl">
+    <>
       <Stack gap="lg">
         <Title order={2}>Users</Title>
         <UsersTable onManageRoles={setRolesUser} onDelete={setDeletingUser} />
@@ -26,6 +26,6 @@ export function UsersPage() {
         onClose={() => setRolesUser(null)}
       />
       <DeleteUserConfirm user={deletingUser} onClose={() => setDeletingUser(null)} />
-    </Container>
+    </>
   );
 }

@@ -40,36 +40,41 @@ describe('AppLayout', () => {
     expect(screen.getByText('Fellowpick')).toBeInTheDocument();
   });
 
-  it('shows Sign in / Register in the header when unauthenticated', () => {
+  it('shows the guest avatar menu when unauthenticated', () => {
     renderWithProviders(routesTree, { routes: ['/login'], auth: {} });
-    expect(screen.getByRole('link', { name: /sign in/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /register/i })).toBeInTheDocument();
-    // No user menu, no navbar links
+    expect(screen.getByRole('button', { name: /guest menu/i })).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /user menu/i })).not.toBeInTheDocument();
-    expect(screen.queryByText('Home')).not.toBeInTheDocument();
   });
 
-  it('shows the user menu and navbar when authenticated', () => {
+  it('shows the guest menu with sign in and register options', async () => {
+    renderWithProviders(routesTree, { routes: ['/login'], auth: {} });
+    fireEvent.click(screen.getByRole('button', { name: /guest menu/i }));
+    const items = await screen.findAllByRole('menuitem');
+    const labels = items.map((el) => el.textContent?.trim());
+    expect(labels).toContain('Sign in');
+    expect(labels).toContain('Register');
+  });
+
+  it('shows the user avatar menu when authenticated', () => {
     renderWithProviders(routesTree, {
       routes: ['/'],
       auth: { user: plainUser, isAuthenticated: true }
     });
     expect(screen.getByRole('button', { name: /user menu/i })).toBeInTheDocument();
-    expect(screen.getByText('Bob User')).toBeInTheDocument();
-    expect(screen.getByText('Home')).toBeInTheDocument();
-    expect(screen.getByText('Profile')).toBeInTheDocument();
-    // No admin links for non-admin
-    expect(screen.queryByText('Users')).not.toBeInTheDocument();
-    expect(screen.queryByText('Roles')).not.toBeInTheDocument();
+    // Avatar shows initials
+    expect(screen.getByText('BU')).toBeInTheDocument();
   });
 
-  it('shows the admin section for users with ROLE_ADMIN', () => {
-    renderWithProviders(routesTree, {
-      routes: ['/'],
-      auth: { user: adminUser, isAuthenticated: true }
-    });
-    expect(screen.getByText('Users')).toBeInTheDocument();
-    expect(screen.getByText('Roles')).toBeInTheDocument();
+  it('shows the universe and precon selects in the sidebar', () => {
+    renderWithProviders(routesTree, { routes: ['/'], auth: {} });
+    expect(screen.getByText('Universe')).toBeInTheDocument();
+    expect(screen.getByText('Precon')).toBeInTheDocument();
+  });
+
+  it('disables the precon select when no universe is selected', () => {
+    renderWithProviders(routesTree, { routes: ['/'], auth: {} });
+    const preconInput = screen.getByPlaceholderText('Choose a precon');
+    expect(preconInput).toBeDisabled();
   });
 
   it('opens the user menu and exposes profile + sign out items', async () => {
@@ -78,10 +83,6 @@ describe('AppLayout', () => {
       auth: { user: plainUser, isAuthenticated: true }
     });
     fireEvent.click(screen.getByRole('button', { name: /user menu/i }));
-    // Mantine Menu renders the dropdown into a portal — use findBy to wait
-    // for the portal mount. Mantine Menu items have role=menuitem but the
-    // text label sits in a nested div, so query the items by their visible
-    // text instead of by accessible name.
     const items = await screen.findAllByRole('menuitem');
     const labels = items.map((el) => el.textContent?.trim());
     expect(labels).toContain('Profile');
@@ -107,8 +108,6 @@ describe('AppLayout', () => {
     const signOut = items.find((el) => el.textContent?.includes('Sign out'));
     if (!signOut) throw new Error('Sign out menu item not found');
     fireEvent.click(signOut);
-    // clearSession is invoked from the logout mutation's onSettled callback
-    // after the mocked promise resolves; wait for it.
     await waitFor(() => expect(clearSession).toHaveBeenCalled());
   });
 });

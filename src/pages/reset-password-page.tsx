@@ -1,4 +1,4 @@
-import { Alert, Button, Container, PasswordInput, Stack, Title } from '@mantine/core';
+import { Anchor, Alert, Button, PasswordInput, Stack, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useResetPasswordMutation } from '../features/auth';
@@ -34,50 +34,46 @@ export function ResetPasswordPage() {
 
   if (!token) {
     return (
-      <Container size="xs" py="xl">
-        <Stack>
-          <Title order={2}>Reset your password</Title>
-          <Alert color="red">
-            Missing reset token. Check the link in your email or request a new one.
-          </Alert>
-          <Link to="/forgot-password">Request a new reset link</Link>
-        </Stack>
-      </Container>
+      <Stack>
+        <Title order={2}>Reset your password</Title>
+        <Alert color="red">
+          Missing reset token. Check the link in your email or request a new one.
+        </Alert>
+        <Anchor component={Link} to="/forgot-password">Request a new reset link</Anchor>
+      </Stack>
     );
   }
 
   return (
-    <Container size="xs" py="xl">
-      <form onSubmit={form.onSubmit(handleSubmit)}>
-        <Stack>
-          <Title order={2}>Choose a new password</Title>
-          {resetMutation.isSuccess ? (
-            <>
-              <Alert color="green">Your password has been reset.</Alert>
-              <Button component={Link} to="/login">
-                Continue to sign in
-              </Button>
-            </>
-          ) : (
-            <>
-              {errorMessage && <Alert color="red">{errorMessage}</Alert>}
-              <PasswordInput
-                label="New password"
-                required
-                {...form.getInputProps('newPassword')}
-              />
-              <PasswordInput
-                label="Confirm new password"
-                required
-                {...form.getInputProps('confirmPassword')}
-              />
-              <Button type="submit" loading={resetMutation.isPending}>
-                Reset password
-              </Button>
-            </>
-          )}
-        </Stack>
-      </form>
-    </Container>
+    <form onSubmit={form.onSubmit(handleSubmit)}>
+      <Stack>
+        <Title order={2}>Choose a new password</Title>
+        {resetMutation.isSuccess ? (
+          <>
+            <Alert color="green">Your password has been reset.</Alert>
+            <Button component={Link} to="/login">
+              Continue to sign in
+            </Button>
+          </>
+        ) : (
+          <>
+            {errorMessage && <Alert color="red">{errorMessage}</Alert>}
+            <PasswordInput
+              label="New password"
+              required
+              {...form.getInputProps('newPassword')}
+            />
+            <PasswordInput
+              label="Confirm new password"
+              required
+              {...form.getInputProps('confirmPassword')}
+            />
+            <Button type="submit" loading={resetMutation.isPending}>
+              Reset password
+            </Button>
+          </>
+        )}
+      </Stack>
+    </form>
   );
 }

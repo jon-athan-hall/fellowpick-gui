@@ -1,4 +1,4 @@
-import { Button, Container, Stack, Text, Title } from '@mantine/core';
+import { Button, Stack, Text, Title } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import { useNavigate } from 'react-router-dom';
 import { useLogoutMutation, useAuth } from '../features/auth';
@@ -19,19 +19,17 @@ export function HomePage() {
   }
 
   return (
-    <Container size="sm" py="xl">
-      <Stack>
-        <Title order={1}>Welcome, {user?.name}</Title>
-        <Text>You are signed in as {user?.email}.</Text>
-        <Button
-          onClick={handleLogout}
-          loading={logoutMutation.isPending}
-          variant="default"
-          w="fit-content"
-        >
-          Sign out
-        </Button>
-      </Stack>
-    </Container>
+    <Stack>
+      <Title order={1}>Welcome, {user?.name}</Title>
+      <Text>You are signed in as {user?.email}.</Text>
+      <Button
+        onClick={handleLogout}
+        loading={logoutMutation.isPending}
+        variant="default"
+        w="fit-content"
+      >
+        Sign out
+      </Button>
+    </Stack>
   );
 }

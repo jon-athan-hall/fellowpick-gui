@@ -7,8 +7,16 @@ import { CardPreviewProvider } from '../features/picks/hooks/card-preview-contex
 import { AppRouter } from './app-router';
 
 const theme = createTheme({
+  primaryColor: 'yellow',
   headings: {
     fontFamily: 'MedievalSharp, cursive'
+  },
+  components: {
+    Title: {
+      defaultProps: {
+        c: 'yellow'
+      }
+    }
   }
 });
 
@@ -24,7 +32,7 @@ const queryClient = new QueryClient({
 // Bootstraps the application with theme, routing, auth, and query providers.
 export function App() {
   return (
-    <MantineProvider theme={theme} defaultColorScheme="auto">
+    <MantineProvider theme={theme} defaultColorScheme="dark">
       <Notifications />
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>

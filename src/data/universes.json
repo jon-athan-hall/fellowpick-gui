@@ -1,14 +1,14 @@
 [
   {
-    "id": "tolkien",
-    "name": "Tolkien",
-    "description": "The Lord of the Rings and Middle-earth",
+    "id": "middle-earth",
+    "name": "Middle-Earth",
+    "description": "The Lord of the Rings and Middle-Earth",
     "sets": ["LTR", "LTC"],
     "precons": [
       { "id": "food-and-fellowship", "name": "Food and Fellowship" },
       { "id": "riders-of-rohan", "name": "Riders of Rohan" },
       { "id": "elven-council", "name": "Elven Council" },
-      { "id": "hosts-of-mordor", "name": "The Hosts of Mordor" }
+      { "id": "the-hosts-of-mordor", "name": "The Hosts of Mordor" }
     ]
   }
 ]

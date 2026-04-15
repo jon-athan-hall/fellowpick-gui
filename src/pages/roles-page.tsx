@@ -1,4 +1,4 @@
-import { Button, Container, Group, Stack, Title } from '@mantine/core';
+import { Button, Group, Stack, Title } from '@mantine/core';
 import { useState } from 'react';
 import {
   DeleteRoleConfirm,
@@ -28,7 +28,7 @@ export function RolesPage() {
   }
 
   return (
-    <Container size="md" py="xl">
+    <>
       <Stack gap="lg">
         <Group justify="space-between" align="center">
           <Title order={2}>Roles</Title>
@@ -38,6 +38,6 @@ export function RolesPage() {
       </Stack>
       <RoleFormModal opened={formOpen} onClose={closeForm} role={editingRole} />
       <DeleteRoleConfirm role={deletingRole} onClose={() => setDeletingRole(null)} />
-    </Container>
+    </>
   );
 }

@@ -1,4 +1,4 @@
-import { Alert, Button, Container, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
+import { Anchor, Alert, Button, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLoginMutation } from '../features/auth';
@@ -33,20 +33,18 @@ export function LoginPage() {
         : null;
 
   return (
-    <Container size="xs" py="xl">
-      <form onSubmit={form.onSubmit(handleSubmit)}>
-        <Stack>
-          <Title order={2}>Sign in</Title>
-          {errorMessage && <Alert color="red">{errorMessage}</Alert>}
-          <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
-          <PasswordInput label="Password" required {...form.getInputProps('password')} />
-          <Button type="submit" loading={loginMutation.isPending}>
-            Sign in
-          </Button>
-          <Link to="/register">Need an account? Register</Link>
-          <Link to="/forgot-password">Forgot your password?</Link>
-        </Stack>
-      </form>
-    </Container>
+    <form onSubmit={form.onSubmit(handleSubmit)}>
+      <Stack>
+        <Title order={2}>Sign in</Title>
+        {errorMessage && <Alert color="red">{errorMessage}</Alert>}
+        <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
+        <PasswordInput label="Password" required {...form.getInputProps('password')} />
+        <Button type="submit" loading={loginMutation.isPending}>
+          Sign in
+        </Button>
+        <Anchor component={Link} to="/register">Need an account? Register</Anchor>
+        <Anchor component={Link} to="/forgot-password">Forgot your password?</Anchor>
+      </Stack>
+    </form>
   );
 }

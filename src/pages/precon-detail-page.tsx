@@ -1,5 +1,5 @@
-import { Alert, Container, Loader, Stack, Tabs, Text, Title } from '@mantine/core';
-import { useMemo } from 'react';
+import { Alert, Loader, Stack, Tabs, Text, Title } from '@mantine/core';
+import { useEffect, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
 import { usePickCountsQuery, useMyPicksQuery, useMakePickMutation, useRemovePickMutation } from '../features/picks';
@@ -26,6 +26,18 @@ export function PreconDetailPage() {
     [precon, universeId]
   );
 
+  // Preload all card images in the background so hover previews are instant.
+  useEffect(() => {
+    if (!precon) return;
+    const allCards = [...Object.values(precon.mainBoard), ...addCandidates];
+    for (const card of allCards) {
+      if (card.scryfallImage) {
+        const img = new Image();
+        img.src = card.scryfallImage;
+      }
+    }
+  }, [precon, addCandidates]);
+
   // Build lookup maps from API data
   const countMap = useMemo(() => {
     const map: Record<string, Record<PickType, number>> = {};
@@ -46,9 +58,7 @@ export function PreconDetailPage() {
 
   if (!precon) {
     return (
-      <Container size="md" py="xl">
-        <Text>Precon deck not found.</Text>
-      </Container>
+      <Text>Precon deck not found.</Text>
     );
   }
 
@@ -90,42 +100,40 @@ export function PreconDetailPage() {
   }
 
   return (
-    <Container size="xl" py="xl">
-      <Stack gap="lg">
-        <div>
-          <Title order={2}>{precon.name}</Title>
-          <Text size="sm" c="dimmed">
-            Commander{precon.commanders.length > 1 ? 's' : ''}:{' '}
-            {precon.commanders.map((c) => c.name).join(' & ')}
-            {' · '}Color identity: {precon.colorIdentity.join('')}
-          </Text>
-        </div>
+    <Stack gap="lg">
+      <div>
+        <Title order={2}>{precon.name}</Title>
+        <Text size="sm" c="dimmed">
+          Commander{precon.commanders.length > 1 ? 's' : ''}:{' '}
+          {precon.commanders.map((c) => c.name).join(' & ')}
+          {' · '}Color identity: {precon.colorIdentity.join('')}
+        </Text>
+      </div>
 
-        {!isAuthenticated && (
-          <Alert variant="light" color="blue">
-            Sign in to make your picks. You can browse the community's picks as a guest.
-          </Alert>
-        )}
+      {!isAuthenticated && (
+        <Alert variant="light" color="blue">
+          Sign in to make your picks. You can browse the community's picks as a guest.
+        </Alert>
+      )}
 
-        {countsQuery.isLoading ? (
-          <Loader />
-        ) : (
-          <Tabs defaultValue="cuts">
-            <Tabs.List>
-              <Tabs.Tab value="cuts">CUT ({mainBoardCards.length} cards)</Tabs.Tab>
-              <Tabs.Tab value="adds">ADD ({addCandidates.length} candidates)</Tabs.Tab>
-            </Tabs.List>
+      {countsQuery.isLoading ? (
+        <Loader />
+      ) : (
+        <Tabs defaultValue="cuts">
+          <Tabs.List>
+            <Tabs.Tab value="cuts">CUT ({mainBoardCards.length} cards)</Tabs.Tab>
+            <Tabs.Tab value="adds">ADD ({addCandidates.length} candidates)</Tabs.Tab>
+          </Tabs.List>
 
-            <Tabs.Panel value="cuts" pt="md">
-              <Stack gap={0}>{renderCardList(sortedCuts, 'CUT')}</Stack>
-            </Tabs.Panel>
+          <Tabs.Panel value="cuts" pt="md">
+            <Stack gap={0}>{renderCardList(sortedCuts, 'CUT')}</Stack>
+          </Tabs.Panel>
 
-            <Tabs.Panel value="adds" pt="md">
-              <Stack gap={0}>{renderCardList(sortedAdds, 'ADD')}</Stack>
-            </Tabs.Panel>
-          </Tabs>
-        )}
-      </Stack>
-    </Container>
+          <Tabs.Panel value="adds" pt="md">
+            <Stack gap={0}>{renderCardList(sortedAdds, 'ADD')}</Stack>
+          </Tabs.Panel>
+        </Tabs>
+      )}
+    </Stack>
   );
 }
