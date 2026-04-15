@@ -1,10 +1,11 @@
-import { Alert, Loader, Stack, Tabs, Text, Title } from '@mantine/core';
-import { useEffect, useMemo } from 'react';
+import { Alert, Group, Loader, Stack, Tabs, Text, Title } from '@mantine/core';
+import { useEffect, useMemo, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
 import { usePickCountsQuery, useMyPicksQuery, useMakePickMutation, useRemovePickMutation } from '../features/picks';
 import type { Card, PickType } from '../features/picks';
 import { CardRow } from '../features/picks/components/card-row';
+import { ManaCost } from '../features/picks/components/mana-cost';
 import { loadPrecon, loadUniverseSets, getAddCandidates } from '../features/picks/data/load-precon';
 
 // Displays a precon deck's cards with CUT/ADD pick voting and community pick counts.
@@ -64,14 +65,24 @@ export function PreconDetailPage() {
 
   const mainBoardCards = Object.values(precon.mainBoard);
 
-  // Sort by pick count descending
-  const sortedCuts = [...mainBoardCards].sort(
-    (a, b) => (countMap[b.id]?.CUT ?? 0) - (countMap[a.id]?.CUT ?? 0)
-  );
+  // Sort by pick count on initial load, then lock the order so cards don't
+  // jump around as the user toggles picks.
+  const cutsOrderRef = useRef<Card[] | null>(null);
+  const addsOrderRef = useRef<Card[] | null>(null);
 
-  const sortedAdds = [...addCandidates].sort(
-    (a, b) => (countMap[b.id]?.ADD ?? 0) - (countMap[a.id]?.ADD ?? 0)
-  );
+  if (!cutsOrderRef.current && countsQuery.data) {
+    cutsOrderRef.current = [...mainBoardCards].sort(
+      (a, b) => (countMap[b.id]?.CUT ?? 0) - (countMap[a.id]?.CUT ?? 0)
+    );
+  }
+  if (!addsOrderRef.current && countsQuery.data) {
+    addsOrderRef.current = [...addCandidates].sort(
+      (a, b) => (countMap[b.id]?.ADD ?? 0) - (countMap[a.id]?.ADD ?? 0)
+    );
+  }
+
+  const sortedCuts = cutsOrderRef.current ?? mainBoardCards;
+  const sortedAdds = addsOrderRef.current ?? addCandidates;
 
   function handlePick(cardId: string, pickType: PickType) {
     if (!preconId) return;
@@ -103,11 +114,13 @@ export function PreconDetailPage() {
     <Stack gap="lg">
       <div>
         <Title order={2}>{precon.name}</Title>
-        <Text size="sm" c="dimmed">
-          Commander{precon.commanders.length > 1 ? 's' : ''}:{' '}
-          {precon.commanders.map((c) => c.name).join(' & ')}
-          {' · '}Color identity: {precon.colorIdentity.join('')}
-        </Text>
+        <Group gap={6} align="center">
+          <Text size="sm" c="dimmed">
+            Commander{precon.commanders.length > 1 ? 's' : ''}:{' '}
+            {precon.commanders.map((c) => c.name).join(' & ')} ·
+          </Text>
+          <ManaCost cost={precon.colorIdentity.map((c) => `{${c}}`).join('')} size={16} />
+        </Group>
       </div>
 
       {!isAuthenticated && (
