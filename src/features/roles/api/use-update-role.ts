@@ -8,6 +8,7 @@ interface UpdateRoleVars {
   body: UpdateRoleRequest;
 }
 
+// Sends a PUT request to update a role's details.
 export function updateRoleRequest({ id, body }: UpdateRoleVars): Promise<RoleResponse> {
   return apiFetch<RoleResponse>(`/api/roles/${id}`, {
     method: 'PUT',
@@ -15,6 +16,7 @@ export function updateRoleRequest({ id, body }: UpdateRoleVars): Promise<RoleRes
   });
 }
 
+// Returns a mutation that updates a role and invalidates the roles query cache.
 export function useUpdateRoleMutation() {
   const queryClient = useQueryClient();
   return useMutation({

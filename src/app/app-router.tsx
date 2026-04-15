@@ -15,6 +15,7 @@ import { UsersPage } from '../pages/users-page';
 import { VerifyEmailPage } from '../pages/verify-email-page';
 import { AppLayout } from './app-layout';
 
+// Defines all application routes including public, authenticated, and admin-only paths.
 export function AppRouter() {
   return (
     <Routes>

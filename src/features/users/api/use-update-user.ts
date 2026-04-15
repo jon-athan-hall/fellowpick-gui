@@ -7,6 +7,7 @@ interface UpdateUserVars {
   body: UpdateUserRequest;
 }
 
+// Sends a PUT request to update a user's profile details.
 export function updateUserRequest({ id, body }: UpdateUserVars): Promise<UserResponse> {
   return apiFetch<UserResponse>(`/api/users/${id}`, {
     method: 'PUT',
@@ -14,6 +15,7 @@ export function updateUserRequest({ id, body }: UpdateUserVars): Promise<UserRes
   });
 }
 
+// Returns a mutation that updates a user's profile.
 export function useUpdateUserMutation() {
   return useMutation({ mutationFn: updateUserRequest });
 }

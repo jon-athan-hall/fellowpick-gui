@@ -7,6 +7,7 @@ function myPicksRequest(preconId: string): Promise<PickResponse[]> {
   return apiFetch<PickResponse[]>(`/api/picks/${preconId}/me`);
 }
 
+// Fetches the current user's picks for a given precon.
 export function useMyPicksQuery(preconId: string, enabled: boolean) {
   return useQuery({
     queryKey: picksQueryKeys.myPicks(preconId),

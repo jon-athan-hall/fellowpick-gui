@@ -2,6 +2,7 @@ import { Card, Container, SimpleGrid, Stack, Text, Title, UnstyledButton } from 
 import { useNavigate } from 'react-router-dom';
 import universes from '../data/universes.json';
 
+// Displays a grid of available MTG universes for browsing precon decks.
 export function UniversesPage() {
   const navigate = useNavigate();
 

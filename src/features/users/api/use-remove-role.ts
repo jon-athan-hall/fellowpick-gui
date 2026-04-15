@@ -8,12 +8,14 @@ interface RemoveRoleVars {
   roleId: string;
 }
 
+// Sends a DELETE request to remove a role from a user.
 export function removeRoleRequest({ userId, roleId }: RemoveRoleVars): Promise<UserResponse> {
   return apiFetch<UserResponse>(`/api/users/${userId}/roles/${roleId}`, {
     method: 'DELETE'
   });
 }
 
+// Returns a mutation that removes a role from a user and invalidates user queries.
 export function useRemoveRoleMutation() {
   const queryClient = useQueryClient();
   return useMutation({

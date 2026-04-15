@@ -17,10 +17,12 @@ interface RequestOptions extends Omit<RequestInit, 'body'> {
  */
 let refreshHandler: (() => Promise<boolean>) | null = null;
 
+// Registers the token refresh callback used by the API client on 401 responses.
 export function registerRefreshHandler(fn: () => Promise<boolean>) {
   refreshHandler = fn;
 }
 
+// Attempts to parse a JSON error body from a failed response.
 async function parseErrorBody(res: Response): Promise<ApiErrorBody | null> {
   try {
     return (await res.json()) as ApiErrorBody;
@@ -29,6 +31,7 @@ async function parseErrorBody(res: Response): Promise<ApiErrorBody | null> {
   }
 }
 
+// Executes a fetch request with auth headers and JSON serialization.
 async function doFetch(path: string, options: RequestOptions): Promise<Response> {
   const { body, skipAuth, headers, ...rest } = options;
   const finalHeaders = new Headers(headers);
@@ -50,6 +53,7 @@ async function doFetch(path: string, options: RequestOptions): Promise<Response>
   });
 }
 
+// Sends an API request with automatic 401 token refresh and error handling.
 export async function apiFetch<T>(path: string, options: RequestOptions = {}): Promise<T> {
   let res = await doFetch(path, options);
 

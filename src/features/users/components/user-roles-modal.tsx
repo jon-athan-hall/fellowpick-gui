@@ -22,6 +22,7 @@ export interface UserRolesModalProps {
   onClose: () => void;
 }
 
+// Renders a modal for assigning and removing roles on a user.
 export function UserRolesModal({ user, availableRoles, onClose }: UserRolesModalProps) {
   const assignMutation = useAssignRoleMutation();
   const removeMutation = useRemoveRoleMutation();

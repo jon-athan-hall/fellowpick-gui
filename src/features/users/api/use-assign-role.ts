@@ -8,6 +8,7 @@ interface AssignRoleVars {
   roleId: string;
 }
 
+// Sends a PUT request to assign a role to a user.
 export function assignRoleRequest({ userId, roleId }: AssignRoleVars): Promise<UserResponse> {
   return apiFetch<UserResponse>(`/api/users/${userId}/roles`, {
     method: 'PUT',
@@ -15,6 +16,7 @@ export function assignRoleRequest({ userId, roleId }: AssignRoleVars): Promise<U
   });
 }
 
+// Returns a mutation that assigns a role to a user and invalidates user queries.
 export function useAssignRoleMutation() {
   const queryClient = useQueryClient();
   return useMutation({

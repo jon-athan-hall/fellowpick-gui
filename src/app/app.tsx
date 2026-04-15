@@ -21,6 +21,7 @@ const queryClient = new QueryClient({
   }
 });
 
+// Bootstraps the application with theme, routing, auth, and query providers.
 export function App() {
   return (
     <MantineProvider theme={theme} defaultColorScheme="auto">

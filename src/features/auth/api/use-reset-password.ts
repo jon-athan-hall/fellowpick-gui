@@ -7,6 +7,7 @@ interface ResetPasswordVars {
   newPassword: string;
 }
 
+// Sends a password-reset request with the reset token and new password.
 export function resetPasswordRequest(vars: ResetPasswordVars): Promise<MessageResponse> {
   return apiFetch<MessageResponse>('/api/auth/reset-password', {
     method: 'POST',
@@ -15,6 +16,7 @@ export function resetPasswordRequest(vars: ResetPasswordVars): Promise<MessageRe
   });
 }
 
+// React Query mutation hook for resetting a user's password via a token.
 export function useResetPasswordMutation() {
   return useMutation({ mutationFn: resetPasswordRequest });
 }

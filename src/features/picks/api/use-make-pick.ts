@@ -7,6 +7,7 @@ function makePickRequest(body: PickRequest): Promise<PickResponse> {
   return apiFetch<PickResponse>('/api/picks', { method: 'POST', body });
 }
 
+// Returns a mutation that submits a pick and invalidates related pick queries.
 export function useMakePickMutation(preconId: string) {
   const queryClient = useQueryClient();
   return useMutation({

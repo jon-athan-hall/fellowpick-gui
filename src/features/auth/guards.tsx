@@ -12,6 +12,7 @@ export function RequireAuth({ children }: { children?: ReactNode }) {
   return <>{children ?? <Outlet />}</>;
 }
 
+// Route guard that redirects users who lack the specified role.
 export function RequireRole({
   role,
   children

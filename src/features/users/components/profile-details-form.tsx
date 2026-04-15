@@ -11,6 +11,7 @@ export interface ProfileDetailsFormProps {
   onUpdated: (patch: { name: string; email: string }) => void;
 }
 
+// Renders a form for editing the user's name and email.
 export function ProfileDetailsForm({
   userId,
   initialName,

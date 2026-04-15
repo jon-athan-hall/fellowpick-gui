@@ -12,6 +12,7 @@ interface CardRowProps {
   canPick: boolean;
 }
 
+// Displays a single card row with pick count badge and vote toggle button.
 export function CardRow({ card, count, pickType, userPicked, onPick, onUnpick, canPick }: CardRowProps) {
   const { setPreviewImage } = useCardPreview();
 

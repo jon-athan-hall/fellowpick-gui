@@ -13,6 +13,7 @@ export interface RoleFormModalProps {
   role: RoleResponse | null;
 }
 
+// Renders a modal form for creating or editing a role.
 export function RoleFormModal({ opened, onClose, role }: RoleFormModalProps) {
   const isEditing = role !== null;
   const createMutation = useCreateRoleMutation();

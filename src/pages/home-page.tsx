@@ -1,9 +1,9 @@
 import { Button, Container, Stack, Text, Title } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import { useNavigate } from 'react-router-dom';
-import { useLogoutMutation } from '../features/auth/api/use-logout';
-import { useAuth } from '../features/auth/hooks/use-auth';
+import { useLogoutMutation, useAuth } from '../features/auth';
 
+// Displays a welcome greeting and sign-out button for authenticated users.
 export function HomePage() {
   const { user } = useAuth();
   const navigate = useNavigate();

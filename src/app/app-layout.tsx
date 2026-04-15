@@ -18,6 +18,7 @@ import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useLogoutMutation, useAuth } from '../features/auth';
 import { useCardPreview } from '../features/picks/hooks/use-card-preview';
 
+// Renders the application shell with header, sidebar navigation, and card preview.
 export function AppLayout() {
   const [navOpened, { toggle: toggleNav, close: closeNav }] = useDisclosure();
   const { user, isAuthenticated, clearSession } = useAuth();

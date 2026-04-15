@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { apiFetch } from '../../../shared/api/client';
 import type { MessageResponse } from '../types';
 
+// Sends an email verification token to the API for confirmation.
 export function verifyEmailRequest(token: string): Promise<MessageResponse> {
   return apiFetch<MessageResponse>('/api/auth/verify', {
     method: 'POST',

@@ -8,6 +8,7 @@ interface ChangePasswordVars {
   body: ChangePasswordRequest;
 }
 
+// Sends a PUT request to change a user's password.
 export function changePasswordRequest({ id, body }: ChangePasswordVars): Promise<MessageResponse> {
   return apiFetch<MessageResponse>(`/api/users/${id}/password`, {
     method: 'PUT',
@@ -15,6 +16,7 @@ export function changePasswordRequest({ id, body }: ChangePasswordVars): Promise
   });
 }
 
+// Returns a mutation that changes the current user's password.
 export function useChangePasswordMutation() {
   return useMutation({ mutationFn: changePasswordRequest });
 }

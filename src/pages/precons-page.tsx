@@ -2,6 +2,7 @@ import { Card, Container, SimpleGrid, Stack, Text, Title, UnstyledButton } from 
 import { useNavigate, useParams } from 'react-router-dom';
 import universes from '../data/universes.json';
 
+// Lists all precon decks within a selected universe.
 export function PreconsPage() {
   const { universeId } = useParams<{ universeId: string }>();
   const navigate = useNavigate();

@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render, type RenderOptions, type RenderResult } from '@testing-library/react';
 import type { ReactElement, ReactNode } from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { AuthContext, type AuthContextValue } from '../features/auth/hooks/auth-context';
+import { AuthContext, type AuthContextValue } from '../features/auth/hooks/auth-state';
 
 export interface RenderWithProvidersOptions extends Omit<RenderOptions, 'wrapper'> {
   /** Initial route(s) for the in-memory router. Defaults to ['/']. */
@@ -25,6 +25,7 @@ const defaultAuth: AuthContextValue = {
   updateUser: () => {}
 };
 
+// Creates an AuthContextValue with sensible defaults, optionally overridden.
 export function makeAuthValue(overrides: Partial<AuthContextValue> = {}): AuthContextValue {
   return { ...defaultAuth, ...overrides };
 }

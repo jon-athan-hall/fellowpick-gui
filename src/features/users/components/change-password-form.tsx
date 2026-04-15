@@ -7,6 +7,7 @@ export interface ChangePasswordFormProps {
   userId: string;
 }
 
+// Renders a form for changing the current user's password.
 export function ChangePasswordForm({ userId }: ChangePasswordFormProps) {
   const changeMutation = useChangePasswordMutation();
 

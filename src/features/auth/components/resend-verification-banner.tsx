@@ -2,6 +2,7 @@ import { Alert, Button, Group, Stack, Text } from '@mantine/core';
 import { ApiError } from '../../../shared/api/errors';
 import { useResendVerificationMutation } from '../api/use-resend-verification';
 
+// Displays a warning banner prompting the user to verify their email, with a resend button.
 export function ResendVerificationBanner() {
   const resendMutation = useResendVerificationMutation();
 

@@ -6,6 +6,7 @@ function removePickRequest(pickId: string): Promise<void> {
   return apiFetch<void>(`/api/picks/${pickId}`, { method: 'DELETE' });
 }
 
+// Returns a mutation that deletes a pick and invalidates related pick queries.
 export function useRemovePickMutation(preconId: string) {
   const queryClient = useQueryClient();
   return useMutation({

@@ -10,6 +10,7 @@ export interface DeleteRoleConfirmProps {
   onClose: () => void;
 }
 
+// Renders a confirmation modal for deleting a role.
 export function DeleteRoleConfirm({ role, onClose }: DeleteRoleConfirmProps) {
   const deleteMutation = useDeleteRoleMutation();
 

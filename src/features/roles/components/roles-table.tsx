@@ -16,6 +16,7 @@ export interface RolesTableProps {
   onDelete: (role: RoleResponse) => void;
 }
 
+// Renders a sortable table of roles with edit and delete actions.
 export function RolesTable({ onEdit, onDelete }: RolesTableProps) {
   const rolesQuery = useRolesQuery();
 

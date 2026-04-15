@@ -4,10 +4,12 @@ import universes from '../../../data/universes.json';
 const preconModules = import.meta.glob('../../../data/*/precons/*.json', { eager: true }) as Record<string, { default: Precon }>;
 const setModules = import.meta.glob('../../../data/*/sets/*.json', { eager: true }) as Record<string, { default: CardSet }>;
 
+// Looks up a universe by ID from the static universes list.
 export function findUniverse(universeId: string) {
   return universes.find((u) => u.id === universeId) ?? null;
 }
 
+// Loads a precon's JSON data by universe and precon ID.
 export function loadPrecon(universeId: string, preconId: string): Precon | null {
   const key = Object.keys(preconModules).find(
     (k) => k.includes(`/${universeId}/precons/${preconId}.json`)
@@ -17,6 +19,7 @@ export function loadPrecon(universeId: string, preconId: string): Precon | null 
   return (mod as unknown as Precon).id ? (mod as unknown as Precon) : mod.default;
 }
 
+// Loads all card set JSON files belonging to a given universe.
 export function loadUniverseSets(universeId: string): CardSet[] {
   return Object.entries(setModules)
     .filter(([k]) => k.includes(`/${universeId}/sets/`))

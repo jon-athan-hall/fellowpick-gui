@@ -8,6 +8,7 @@ import {
   type UserResponse
 } from '../features/users';
 
+// Admin page for managing users, their roles, and account deletion.
 export function UsersPage() {
   const rolesQuery = useRolesQuery();
   const [rolesUser, setRolesUser] = useState<UserResponse | null>(null);

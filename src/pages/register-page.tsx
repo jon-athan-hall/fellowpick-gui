@@ -1,9 +1,10 @@
 import { Alert, Button, Container, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { Link, useNavigate } from 'react-router-dom';
-import { useRegisterMutation } from '../features/auth/api/use-register';
+import { useRegisterMutation } from '../features/auth';
 import { ApiError } from '../shared/api/errors';
 
+// Renders the account registration form with name, email, and password fields.
 export function RegisterPage() {
   const navigate = useNavigate();
   const registerMutation = useRegisterMutation();

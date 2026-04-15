@@ -7,6 +7,7 @@ function pickCountsRequest(preconId: string): Promise<PickCountResponse[]> {
   return apiFetch<PickCountResponse[]>(`/api/picks/${preconId}`, { skipAuth: true });
 }
 
+// Fetches aggregated pick counts for all cards in a precon.
 export function usePickCountsQuery(preconId: string) {
   return useQuery({
     queryKey: picksQueryKeys.counts(preconId),

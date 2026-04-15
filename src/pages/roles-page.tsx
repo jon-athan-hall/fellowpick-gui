@@ -7,6 +7,7 @@ import {
   type RoleResponse
 } from '../features/roles';
 
+// Admin page for creating, editing, and deleting roles.
 export function RolesPage() {
   const [formOpen, setFormOpen] = useState(false);
   const [editingRole, setEditingRole] = useState<RoleResponse | null>(null);

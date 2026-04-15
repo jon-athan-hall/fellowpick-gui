@@ -1,34 +1,20 @@
-import { createContext, useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
 import { registerRefreshHandler } from '../../../shared/api/client';
 import { tokenStore } from '../../../shared/api/token-store';
 import { refreshRequest } from '../api/refresh';
 import { decodeJwt, userFromClaims } from '../jwt';
 import type { AuthResponse, AuthUser } from '../types';
+import { AuthContext } from './auth-state';
 
-export interface AuthContextValue {
-  user: AuthUser | null;
-  isAuthenticated: boolean;
-  isLoading: boolean;
-  /** Apply an auth response: store tokens and derive the user. */
-  setSession: (res: AuthResponse) => void;
-  /** Clear all auth state (called on logout). */
-  clearSession: () => void;
-  /**
-   * Patch the locally-cached user (e.g. after a profile update). The JWT
-   * still holds the old claims until the next refresh, but the UI updates
-   * immediately.
-   */
-  updateUser: (patch: Partial<AuthUser>) => void;
-}
-
-export const AuthContext = createContext<AuthContextValue | null>(null);
+export type { AuthContextValue } from './auth-state';
 
 function userFromAuthResponse(res: AuthResponse): AuthUser | null {
   const claims = decodeJwt(res.accessToken);
   return claims ? userFromClaims(claims) : null;
 }
 
+// Provides auth state (user, tokens, session lifecycle) to the component tree.
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);

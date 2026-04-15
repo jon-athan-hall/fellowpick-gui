@@ -9,6 +9,7 @@ export interface DeleteUserConfirmProps {
   onClose: () => void;
 }
 
+// Renders a confirmation modal for soft-deleting a user.
 export function DeleteUserConfirm({ user, onClose }: DeleteUserConfirmProps) {
   const deleteMutation = useDeleteUserMutation();
 

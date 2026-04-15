@@ -27,6 +27,7 @@ export interface UsersTableProps {
 
 const DEFAULT_PAGE_SIZE = 20;
 
+// Renders a paginated table of users with role management and delete actions.
 export function UsersTable({ onManageRoles, onDelete }: UsersTableProps) {
   const [pagination, setPagination] = useState<PaginationState>({
     pageIndex: 0,

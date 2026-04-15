@@ -4,6 +4,7 @@ import { tokenStore } from '../../../shared/api/token-store';
 import { useAuth } from '../hooks/use-auth';
 import type { MessageResponse } from '../types';
 
+// Sends a logout request to the API, revoking the current refresh token.
 export function logoutRequest(): Promise<MessageResponse> {
   const refreshToken = tokenStore.getRefreshToken();
   return apiFetch<MessageResponse>('/api/auth/logout', {
@@ -13,6 +14,7 @@ export function logoutRequest(): Promise<MessageResponse> {
   });
 }
 
+// React Query mutation hook that logs out and clears the local session.
 export function useLogoutMutation() {
   const { clearSession } = useAuth();
   return useMutation({

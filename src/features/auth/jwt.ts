@@ -21,11 +21,13 @@ export function decodeJwt(token: string): JwtClaims | null {
   }
 }
 
+// Checks whether a JWT's expiration time has passed, with an optional clock-skew buffer.
 export function isExpired(claims: JwtClaims, skewSeconds = 30): boolean {
   const now = Math.floor(Date.now() / 1000);
   return claims.exp <= now + skewSeconds;
 }
 
+// Extracts an AuthUser object from decoded JWT claims.
 export function userFromClaims(claims: JwtClaims): AuthUser {
   return {
     id: claims.sub,

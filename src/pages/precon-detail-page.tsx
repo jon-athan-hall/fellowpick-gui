@@ -7,6 +7,7 @@ import type { Card, PickType } from '../features/picks';
 import { CardRow } from '../features/picks/components/card-row';
 import { loadPrecon, loadUniverseSets, getAddCandidates } from '../features/picks/data/load-precon';
 
+// Displays a precon deck's cards with CUT/ADD pick voting and community pick counts.
 export function PreconDetailPage() {
   const { universeId, preconId } = useParams<{ universeId: string; preconId: string }>();
   const { isAuthenticated } = useAuth();
