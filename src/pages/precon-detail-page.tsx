@@ -1,30 +1,28 @@
-import { Alert, Container, Grid, Loader, Stack, Tabs, Text, Title } from '@mantine/core';
+import { Alert, Container, Loader, Stack, Tabs, Text, Title } from '@mantine/core';
 import { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
-import { useAuth } from '../features/auth/hooks/use-auth';
-import { usePickCountsQuery } from '../features/picks/api/use-pick-counts';
-import { useMyPicksQuery } from '../features/picks/api/use-my-picks';
-import { useMakePickMutation } from '../features/picks/api/use-make-pick';
-import { useRemovePickMutation } from '../features/picks/api/use-remove-pick';
+import { useAuth } from '../features/auth';
+import { usePickCountsQuery, useMyPicksQuery, useMakePickMutation, useRemovePickMutation } from '../features/picks';
+import type { Card, PickType } from '../features/picks';
 import { CardRow } from '../features/picks/components/card-row';
 import { loadPrecon, loadUniverseSets, getAddCandidates } from '../features/picks/data/load-precon';
-import type { Card, PickType } from '../features/picks/types';
 
 export function PreconDetailPage() {
   const { universeId, preconId } = useParams<{ universeId: string; preconId: string }>();
   const { isAuthenticated } = useAuth();
 
   const precon = universeId && preconId ? loadPrecon(universeId, preconId) : null;
-  const sets = universeId ? loadUniverseSets(universeId) : [];
-
   const countsQuery = usePickCountsQuery(preconId ?? '');
   const myPicksQuery = useMyPicksQuery(preconId ?? '', isAuthenticated);
   const makePick = useMakePickMutation(preconId ?? '');
   const removePick = useRemovePickMutation(preconId ?? '');
 
   const addCandidates = useMemo(
-    () => (precon ? getAddCandidates(precon, sets) : []),
-    [precon, sets]
+    () => {
+      const sets = universeId ? loadUniverseSets(universeId) : [];
+      return precon ? getAddCandidates(precon, sets) : [];
+    },
+    [precon, universeId]
   );
 
   // Build lookup maps from API data

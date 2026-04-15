@@ -62,7 +62,8 @@ describe('userFromClaims', () => {
   });
 
   it('falls back to false when the verified claim is missing (legacy tokens)', () => {
-    const { verified: _verified, ...claimsWithoutVerified } = baseClaims;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { verified, ...claimsWithoutVerified } = baseClaims;
     const user = userFromClaims(claimsWithoutVerified as JwtClaims);
     expect(user.verified).toBe(false);
   });

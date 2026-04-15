@@ -1,5 +1,5 @@
 import { ActionIcon, Badge, Group, Text } from '@mantine/core';
-import { useCardPreview } from '../hooks/card-preview-context';
+import { useCardPreview } from '../hooks/use-card-preview';
 import type { Card, PickType } from '../types';
 
 interface CardRowProps {

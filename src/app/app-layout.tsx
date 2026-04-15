@@ -15,9 +15,8 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { useLogoutMutation } from '../features/auth';
-import { useAuth } from '../features/auth/hooks/use-auth';
-import { useCardPreview } from '../features/picks/hooks/card-preview-context';
+import { useLogoutMutation, useAuth } from '../features/auth';
+import { useCardPreview } from '../features/picks/hooks/use-card-preview';
 
 export function AppLayout() {
   const [navOpened, { toggle: toggleNav, close: closeNav }] = useDisclosure();

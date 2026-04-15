@@ -2,7 +2,7 @@ import { MantineProvider, createTheme } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
-import { AuthProvider } from '../features/auth/hooks/auth-context';
+import { AuthProvider } from '../features/auth';
 import { CardPreviewProvider } from '../features/picks/hooks/card-preview-context';
 import { AppRouter } from './app-router';
 

@@ -1,7 +1,7 @@
 import { fireEvent, screen, waitFor } from '@testing-library/react';
 import { Route, Routes } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
-import type { AuthUser } from '../../features/auth/types';
+import type { AuthUser } from '../../features/auth';
 import { renderWithProviders } from '../../test/render';
 import { AppLayout } from '../app-layout';
 
