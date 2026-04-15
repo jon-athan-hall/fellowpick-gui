@@ -15,7 +15,7 @@ const baseClaims: JwtClaims = {
   name: 'Jane Doe',
   roles: ['ROLE_USER'],
   verified: true,
-  iss: 'trailhead-api',
+  iss: 'fellowpick-api',
   iat: 0,
   exp: Math.floor(Date.now() / 1000) + 3600
 };

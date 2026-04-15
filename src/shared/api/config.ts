@@ -12,4 +12,4 @@ export const API_BASE_URL =
  * `credentials: 'include'`, and only persists a refresh token when one is
  * actually returned in the response body.
  */
-export const REFRESH_TOKEN_STORAGE_KEY = 'trailhead.refreshToken';
+export const REFRESH_TOKEN_STORAGE_KEY = 'fellowpick.refreshToken';

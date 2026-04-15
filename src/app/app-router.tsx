@@ -4,10 +4,13 @@ import { ForgotPasswordPage } from '../pages/forgot-password-page';
 import { HomePage } from '../pages/home-page';
 import { LoginPage } from '../pages/login-page';
 import { NotFoundPage } from '../pages/not-found-page';
+import { PreconDetailPage } from '../pages/precon-detail-page';
+import { PreconsPage } from '../pages/precons-page';
 import { ProfilePage } from '../pages/profile-page';
 import { RegisterPage } from '../pages/register-page';
 import { ResetPasswordPage } from '../pages/reset-password-page';
 import { RolesPage } from '../pages/roles-page';
+import { UniversesPage } from '../pages/universes-page';
 import { UsersPage } from '../pages/users-page';
 import { VerifyEmailPage } from '../pages/verify-email-page';
 import { AppLayout } from './app-layout';
@@ -23,6 +26,11 @@ export function AppRouter() {
         <Route path="/verify" element={<VerifyEmailPage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
+
+        {/* Public browse routes — guests can view picks, auth required to make picks */}
+        <Route path="/universes" element={<UniversesPage />} />
+        <Route path="/universes/:universeId" element={<PreconsPage />} />
+        <Route path="/universes/:universeId/precons/:preconId" element={<PreconDetailPage />} />
 
         {/* Authenticated routes */}
         <Route element={<RequireAuth />}>

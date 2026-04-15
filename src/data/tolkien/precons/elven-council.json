@@ -1,0 +1,1682 @@
+{
+  "id": "elven-council",
+  "name": "Elven Council",
+  "universe": "tolkien",
+  "setCode": "LTC",
+  "colorIdentity": [
+    "G",
+    "U"
+  ],
+  "commanders": [
+    {
+      "id": "LTC0003",
+      "name": "Galadriel, Elven-Queen",
+      "setCode": "LTC",
+      "number": "3",
+      "manaCost": "{2}{G}{U}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Elf Noble",
+      "text": "Will of the council — At the beginning of combat on your turn, if another Elf entered the battlefield under your control this turn, starting with you, each player votes for dominion or guidance. If dominion gets more votes, the Ring tempts you, then you put a +1/+1 counter on your Ring-bearer. If guidance gets more votes or the vote is tied, draw a card.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "mythic",
+      "power": "4",
+      "toughness": "5",
+      "keywords": [
+        "Will of the council"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/f/8fa46d54-563d-4b5c-9c69-5ab37dd529b3.jpg"
+    }
+  ],
+  "mainBoard": {
+    "LTC0006": {
+      "id": "LTC0006",
+      "name": "Gandalf, Westward Voyager",
+      "setCode": "LTC",
+      "number": "6",
+      "manaCost": "{3}{G}{U}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Avatar Wizard",
+      "text": "Whenever you cast a spell with mana value 5 or greater, each opponent reveals the top card of their library. If any of those cards shares a card type with that spell, copy that spell, you may choose new targets for the copy, and each opponent draws a card. Otherwise, you draw a card. (A copy of a permanent spell becomes a token.)",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "mythic",
+      "power": "5",
+      "toughness": "5",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/6/56910251-6339-4f8b-b863-29caab4965d8.jpg"
+    },
+    "LTC0023": {
+      "id": "LTC0023",
+      "name": "Raise the Palisade",
+      "setCode": "LTC",
+      "number": "23",
+      "manaCost": "{4}{U}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "text": "Choose a creature type. Return all creatures that aren't of the chosen type to their owners' hands.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/9/7966eb7a-0ef7-470f-9769-0d5f45f0395b.jpg"
+    },
+    "LTC0025": {
+      "id": "LTC0025",
+      "name": "Trap the Trespassers",
+      "setCode": "LTC",
+      "number": "25",
+      "manaCost": "{2}{U}",
+      "manaValue": 3,
+      "type": "Instant",
+      "text": "Secret council — Each player secretly votes for a creature you don't control, then those votes are revealed. For each creature with one or more votes, put that many stun counters on it, then tap it. (If a permanent with a stun counter would become untapped, remove one from it instead.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Secret council"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/0/a077a046-300b-41d2-b891-c57ebe983ba2.jpg"
+    },
+    "LTC0035": {
+      "id": "LTC0035",
+      "name": "Arwen, Weaver of Hope",
+      "setCode": "LTC",
+      "number": "35",
+      "manaCost": "{1}{G}{G}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Elf Noble",
+      "text": "Each other creature you control enters with a number of additional +1/+1 counters on it equal to Arwen's toughness.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/d/4d4f4d41-232d-4377-be69-de590b880edb.jpg"
+    },
+    "LTC0038": {
+      "id": "LTC0038",
+      "name": "Galadhrim Ambush",
+      "setCode": "LTC",
+      "number": "38",
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Instant",
+      "text": "Create X 1/1 green Elf Warrior creature tokens, where X is the number of attacking creatures.\nPrevent all combat damage that would be dealt this turn by non-Elf creatures.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/6/e69e06f0-6142-4f80-9208-362b3e74d51d.jpg"
+    },
+    "LTC0039": {
+      "id": "LTC0039",
+      "name": "Haldir, Lórien Lieutenant",
+      "setCode": "LTC",
+      "number": "39",
+      "manaCost": "{X}{G}",
+      "manaValue": 1,
+      "type": "Legendary Creature — Elf Soldier",
+      "text": "Haldir enters with X +1/+1 counters on it.\nVigilance\n{5}{G}: Until end of turn, other Elves you control gain vigilance and get +1/+1 for each +1/+1 counter on Haldir.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "0",
+      "toughness": "0",
+      "keywords": [
+        "Vigilance"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/440e5796-9264-4649-bf2f-58826dd0352c.jpg"
+    },
+    "LTC0040": {
+      "id": "LTC0040",
+      "name": "Legolas Greenleaf",
+      "setCode": "LTC",
+      "number": "40",
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Elf Archer",
+      "text": "Reach\nLegolas can't be blocked by creatures with power 2 or less.\nWhenever another legendary creature you control enters, put a +1/+1 counter on Legolas.\nWhenever Legolas deals combat damage to a player, draw a card.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "2",
+      "keywords": [
+        "Reach"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/3/130237e7-6f45-4b92-b49d-12f10db29bb8.jpg"
+    },
+    "LTC0041": {
+      "id": "LTC0041",
+      "name": "Mirkwood Elk",
+      "setCode": "LTC",
+      "number": "41",
+      "manaCost": "{5}{G}",
+      "manaValue": 6,
+      "type": "Creature — Elk",
+      "text": "Trample\nWhenever this creature enters or attacks, return target Elf card from your graveyard to your hand. You gain life equal to that card's power.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "6",
+      "toughness": "6",
+      "keywords": [
+        "Trample"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1cf84c03-a131-451b-99ee-64330c1f2e26.jpg"
+    },
+    "LTC0044": {
+      "id": "LTC0044",
+      "name": "Travel Through Caradhras",
+      "setCode": "LTC",
+      "number": "44",
+      "manaCost": "{5}{G}",
+      "manaValue": 6,
+      "type": "Sorcery",
+      "text": "Council's dilemma — Starting with you, each player votes for Redhorn Pass or Mines of Moria. For each Redhorn Pass vote, search your library for a basic land card and put it onto the battlefield tapped. If you search your library this way, shuffle. For each Mines of Moria vote, return a card from your graveyard to your hand.\nExile Travel Through Caradhras.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Council's dilemma"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/5/955058b2-9758-4797-8ffc-c5fbee619309.jpg"
+    },
+    "LTC0045": {
+      "id": "LTC0045",
+      "name": "Windswift Slice",
+      "setCode": "LTC",
+      "number": "45",
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Instant",
+      "text": "Target creature you control deals damage equal to its power to target creature you don't control. Create a number of 1/1 green Elf Warrior creature tokens equal to the amount of excess damage dealt this way.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/8/f8097193-1d32-4235-afd4-f6839602e4fb.jpg"
+    },
+    "LTC0050": {
+      "id": "LTC0050",
+      "name": "Círdan the Shipwright",
+      "setCode": "LTC",
+      "number": "50",
+      "manaCost": "{3}{G}{U}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Elf Noble",
+      "text": "Vigilance\nSecret council — Whenever Círdan enters or attacks, each player secretly votes for a player, then those votes are revealed. Each player draws a card for each vote they received. Each player who received no votes may put a permanent card from their hand onto the battlefield.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "3",
+      "toughness": "4",
+      "keywords": [
+        "Secret council",
+        "Vigilance"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/4/c4f23d68-d0de-4b57-b0f9-9c0ca770c3c1.jpg"
+    },
+    "LTC0051": {
+      "id": "LTC0051",
+      "name": "Elrond of the White Council",
+      "setCode": "LTC",
+      "number": "51",
+      "manaCost": "{3}{G}{U}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Elf Noble",
+      "text": "Secret council — When Elrond enters, each player secretly votes for fellowship or aid, then those votes are revealed. For each fellowship vote, the voter chooses a creature they control. You gain control of each creature chosen this way, and they gain \"This creature can't attack its owner.\" Then for each aid vote, put a +1/+1 counter on each creature you control.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "3",
+      "toughness": "3",
+      "keywords": [
+        "Secret council"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/c/4cdfb792-fe55-4aa0-88df-4296db794bc5.jpg"
+    },
+    "LTC0053": {
+      "id": "LTC0053",
+      "name": "Erestor of the Council",
+      "setCode": "LTC",
+      "number": "53",
+      "manaCost": "{1}{G}{U}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Elf Noble",
+      "text": "Whenever players finish voting, each opponent who voted for a choice you voted for creates a Treasure token. You scry X, where X is the number of opponents who voted for a choice you didn't vote for. Draw a card.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "4",
+      "keywords": [
+        "Scry",
+        "Treasure"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/e/de17d520-cb32-4fb1-830b-8494ea118e9b.jpg"
+    },
+    "LTC0062": {
+      "id": "LTC0062",
+      "name": "Mirkwood Trapper",
+      "setCode": "LTC",
+      "number": "62",
+      "manaCost": "{1}{G}{U}",
+      "manaValue": 3,
+      "type": "Creature — Elf Scout",
+      "text": "Whenever a player attacks you, target attacking creature gets -2/-0 until end of turn.\nWhenever a player attacks, if they aren't attacking you, that player chooses an attacking creature. It gets +2/+0 until end of turn.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "1",
+      "toughness": "4",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/a/ca079e59-4433-49c7-9001-abac20b776e4.jpg"
+    },
+    "LTC0066": {
+      "id": "LTC0066",
+      "name": "Radagast, Wizard of Wilds",
+      "setCode": "LTC",
+      "number": "66",
+      "manaCost": "{2}{G}{U}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Avatar Wizard",
+      "text": "Ward {1}\nBeasts and Birds you control have ward {1}.\nWhenever you cast a spell with mana value 5 or greater, choose one —\n• Create a 3/3 green Beast creature token.\n• Create a 2/2 blue Bird creature token with flying.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "3",
+      "toughness": "5",
+      "keywords": [
+        "Ward"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/5/9573ee62-4fdf-4fca-90e2-10a7d8161764.jpg"
+    },
+    "LTC0068": {
+      "id": "LTC0068",
+      "name": "Sail into the West",
+      "setCode": "LTC",
+      "number": "68",
+      "manaCost": "{2}{G}{U}",
+      "manaValue": 4,
+      "type": "Instant",
+      "text": "Will of the council — Starting with you, each player votes for return or embark. If return gets more votes, each player returns up to two cards from their graveyard to their hand, then you exile Sail into the West. If embark gets more votes or the vote is tied, each player may discard their hand and draw seven cards.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Will of the council"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b293d4cb-0920-46ef-bf4e-fc6a796df290.jpg"
+    },
+    "LTC0069": {
+      "id": "LTC0069",
+      "name": "Song of Eärendil",
+      "setCode": "LTC",
+      "number": "69",
+      "manaCost": "{3}{G}{U}",
+      "manaValue": 5,
+      "type": "Enchantment — Saga",
+      "text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — Scry 2, then draw two cards.\nII — Create a Treasure token and a 2/2 blue Bird creature token with flying.\nIII — Put a flying counter on each creature you control without flying.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Scry",
+        "Treasure"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/2/325bb6b7-6d19-48b5-82dd-2759d4fc3144.jpg"
+    },
+    "LTC0077": {
+      "id": "LTC0077",
+      "name": "Lothlórien Blade",
+      "setCode": "LTC",
+      "number": "77",
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Artifact — Equipment",
+      "text": "Whenever equipped creature attacks, it deals damage equal to its power to target creature defending player controls.\nEquip Elf {2}\nEquip {5}",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Equip"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3f7f1d3b-d6bb-4ddb-81d8-12f7aaaec49e.jpg"
+    },
+    "LTC0078": {
+      "id": "LTC0078",
+      "name": "Model of Unity",
+      "setCode": "LTC",
+      "number": "78",
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Artifact",
+      "text": "Whenever players finish voting, you and each opponent who voted for a choice you voted for may scry 2.\n{T}: Add one mana of any color.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Scry"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/d/0d804d47-1f7b-47bd-9eac-aa539eda9af7.jpg"
+    },
+    "LTC0186": {
+      "id": "LTC0186",
+      "name": "Colossal Whale",
+      "setCode": "LTC",
+      "number": "186",
+      "manaCost": "{5}{U}{U}",
+      "manaValue": 7,
+      "type": "Creature — Whale",
+      "text": "Islandwalk (This creature can't be blocked as long as defending player controls an Island.)\nWhenever this creature attacks, you may exile target creature defending player controls until this creature leaves the battlefield. (That creature returns under its owner's control.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "5",
+      "toughness": "5",
+      "keywords": [
+        "Islandwalk",
+        "Landwalk"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/6/c6740a66-6902-49fc-bb56-9d121abe7d7a.jpg"
+    },
+    "LTC0189": {
+      "id": "LTC0189",
+      "name": "Devastation Tide",
+      "setCode": "LTC",
+      "number": "189",
+      "manaCost": "{3}{U}{U}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "text": "Return all nonland permanents to their owners' hands.\nMiracle {1}{U} (You may cast this card for its miracle cost when you draw it if it's the first card you drew this turn.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Miracle"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c95bc785-6d4a-4157-9a29-270f88db0028.jpg"
+    },
+    "LTC0193": {
+      "id": "LTC0193",
+      "name": "Mystic Confluence",
+      "setCode": "LTC",
+      "number": "193",
+      "manaCost": "{3}{U}{U}",
+      "manaValue": 5,
+      "type": "Instant",
+      "text": "Choose three. You may choose the same mode more than once.\n• Counter target spell unless its controller pays {3}.\n• Return target creature to its owner's hand.\n• Draw a card.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/b/9ba59aaf-d2f8-4f26-a58b-5245d686714d.jpg"
+    },
+    "LTC0195": {
+      "id": "LTC0195",
+      "name": "Plea for Power",
+      "setCode": "LTC",
+      "number": "195",
+      "manaCost": "{3}{U}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "text": "Will of the council — Starting with you, each player votes for time or knowledge. If time gets more votes, take an extra turn after this one. If knowledge gets more votes or the vote is tied, draw three cards.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Will of the council"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/b/7be27ad5-8a7c-42fc-b62b-2586f39255f5.jpg"
+    },
+    "LTC0197": {
+      "id": "LTC0197",
+      "name": "Swan Song",
+      "setCode": "LTC",
+      "number": "197",
+      "manaCost": "{U}",
+      "manaValue": 1,
+      "type": "Instant",
+      "text": "Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/67c5aa41-9c40-4bd3-8e74-29f216b9bc77.jpg"
+    },
+    "LTC0233": {
+      "id": "LTC0233",
+      "name": "Asceticism",
+      "setCode": "LTC",
+      "number": "233",
+      "manaCost": "{3}{G}{G}",
+      "manaValue": 5,
+      "type": "Enchantment",
+      "text": "Creatures you control have hexproof.\n{1}{G}: Regenerate target creature. (The next time it would be destroyed this turn, instead tap it, remove it from combat, and heal all damage on it.)",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/d/bde335c5-0e87-43c9-bef6-423e4d1caf35.jpg"
+    },
+    "LTC0237": {
+      "id": "LTC0237",
+      "name": "Elvish Archdruid",
+      "setCode": "LTC",
+      "number": "237",
+      "manaCost": "{1}{G}{G}",
+      "manaValue": 3,
+      "type": "Creature — Elf Druid",
+      "text": "Other Elf creatures you control get +1/+1.\n{T}: Add {G} for each Elf you control.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "2",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/4/34866dd8-661f-40c1-8eb1-b9445ec626ec.jpg"
+    },
+    "LTC0239": {
+      "id": "LTC0239",
+      "name": "Elvish Piper",
+      "setCode": "LTC",
+      "number": "239",
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Creature — Elf Shaman",
+      "text": "{G}, {T}: You may put a creature card from your hand onto the battlefield.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "1",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/4/94cb4d52-0042-494d-8025-59c1eb0f90e0.jpg"
+    },
+    "LTC0241": {
+      "id": "LTC0241",
+      "name": "Elvish Warmaster",
+      "setCode": "LTC",
+      "number": "241",
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Creature — Elf Warrior",
+      "text": "Whenever one or more other Elves you control enter, create a 1/1 green Elf Warrior creature token. This ability triggers only once each turn.\n{5}{G}{G}: Elves you control get +2/+2 and gain deathtouch until end of turn.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "2",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/5/551a3557-3d91-4198-afd2-d4d7a3dbe153.jpg"
+    },
+    "LTC0245": {
+      "id": "LTC0245",
+      "name": "Genesis Wave",
+      "setCode": "LTC",
+      "number": "245",
+      "manaCost": "{X}{G}{G}{G}",
+      "manaValue": 3,
+      "type": "Sorcery",
+      "text": "Reveal the top X cards of your library. You may put any number of permanent cards with mana value X or less from among them onto the battlefield. Then put all cards revealed this way that weren't put onto the battlefield into your graveyard.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/4/546c3b8d-6218-4786-bf16-22c6d3718361.jpg"
+    },
+    "LTC0249": {
+      "id": "LTC0249",
+      "name": "Heroic Intervention",
+      "setCode": "LTC",
+      "number": "249",
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Instant",
+      "text": "Permanents you control gain hexproof and indestructible until end of turn.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/3/4377b09d-08e8-4150-bb84-4a9c00c7af82.jpg"
+    },
+    "LTC0250": {
+      "id": "LTC0250",
+      "name": "Hornet Queen",
+      "setCode": "LTC",
+      "number": "250",
+      "manaCost": "{4}{G}{G}{G}",
+      "manaValue": 7,
+      "type": "Creature — Insect",
+      "text": "Flying, deathtouch\nWhen this creature enters, create four 1/1 green Insect creature tokens with flying and deathtouch.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "2",
+      "keywords": [
+        "Deathtouch",
+        "Flying"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/2/a247694f-7b23-489b-b524-898625d000e2.jpg"
+    },
+    "LTC0251": {
+      "id": "LTC0251",
+      "name": "Inscription of Abundance",
+      "setCode": "LTC",
+      "number": "251",
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Instant",
+      "text": "Kicker {2}{G}\nChoose one. If this spell was kicked, choose any number instead.\n• Put two +1/+1 counters on target creature.\n• Target player gains X life, where X is the greatest power among creatures they control.\n• Target creature you control fights target creature you don't control.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Fight",
+        "Kicker"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/4/94b8203a-cd49-4542-a5fa-c0c2f627b309.jpg"
+    },
+    "LTC0254": {
+      "id": "LTC0254",
+      "name": "Overwhelming Stampede",
+      "setCode": "LTC",
+      "number": "254",
+      "manaCost": "{3}{G}{G}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "text": "Until end of turn, creatures you control gain trample and get +X/+X, where X is the greatest power among creatures you control.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/b/8b7d65b9-5f66-4cf7-b3ef-c47e7c6a131b.jpg"
+    },
+    "LTC0258": {
+      "id": "LTC0258",
+      "name": "Realm Seekers",
+      "setCode": "LTC",
+      "number": "258",
+      "manaCost": "{4}{G}{G}",
+      "manaValue": 6,
+      "type": "Creature — Elf Scout",
+      "text": "This creature enters with X +1/+1 counters on it, where X is the total number of cards in all players' hands.\n{2}{G}, Remove a +1/+1 counter from this creature: Search your library for a land card, reveal it, put it into your hand, then shuffle.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": "0",
+      "toughness": "0",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a4c0f889-adcb-4947-830f-7fc6899575d4.jpg"
+    },
+    "LTC0260": {
+      "id": "LTC0260",
+      "name": "Seeds of Renewal",
+      "setCode": "LTC",
+      "number": "260",
+      "manaCost": "{6}{G}",
+      "manaValue": 7,
+      "type": "Sorcery",
+      "text": "Undaunted (This spell costs {1} less to cast for each opponent.)\nReturn up to two target cards from your graveyard to your hand. Exile Seeds of Renewal.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Undaunted"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/8/18bb0434-b49e-4626-bad6-06b2caef4d5d.jpg"
+    },
+    "LTC0261": {
+      "id": "LTC0261",
+      "name": "Sylvan Offering",
+      "setCode": "LTC",
+      "number": "261",
+      "manaCost": "{X}{G}",
+      "manaValue": 1,
+      "type": "Sorcery",
+      "text": "Choose an opponent. You and that player each create an X/X green Treefolk creature token.\nChoose an opponent. You and that player each create X 1/1 green Elf Warrior creature tokens.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/6/96320770-e879-4c29-ab93-03b6ff191464.jpg"
+    },
+    "LTC0307": {
+      "id": "LTC0307",
+      "name": "Exotic Orchard",
+      "setCode": "LTC",
+      "number": "307",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/3/a3120b65-f021-467e-bd9f-27329134a743.jpg"
+    },
+    "LTC0309": {
+      "id": "LTC0309",
+      "name": "Flooded Grove",
+      "setCode": "LTC",
+      "number": "309",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add {C}.\n{G/U}, {T}: Add {G}{G}, {G}{U}, or {U}{U}.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/1/f10457be-4f02-48c0-bec7-93687c8763ea.jpg"
+    },
+    "LTC0317": {
+      "id": "LTC0317",
+      "name": "Hinterland Harbor",
+      "setCode": "LTC",
+      "number": "317",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped unless you control a Forest or an Island.\n{T}: Add {G} or {U}.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/5/35753c7f-e6d0-4335-a87e-3d3e5abb059b.jpg"
+    },
+    "LTC0325": {
+      "id": "LTC0325",
+      "name": "Rejuvenating Springs",
+      "setCode": "LTC",
+      "number": "325",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {G} or {U}.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/6/c68876b6-5a30-4dea-af0a-53d30e6f8029.jpg"
+    },
+    "LTC0343": {
+      "id": "LTC0343",
+      "name": "Vineglimmer Snarl",
+      "setCode": "LTC",
+      "number": "343",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "As this land enters, you may reveal a Forest or Island card from your hand. If you don't, this land enters tapped.\n{T}: Add {G} or {U}.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/5/e5a26fb5-f230-4b66-b3f9-02e883d41670.jpg"
+    },
+    "LTR0060": {
+      "id": "LTR0060",
+      "name": "Lórien Revealed",
+      "setCode": "LTR",
+      "number": "60",
+      "manaCost": "{3}{U}{U}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "text": "Draw three cards.\nIslandcycling {1} ({1}, Discard this card: Search your library for an Island card, reveal it, put it into your hand, then shuffle.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Cycling",
+        "Islandcycling",
+        "Landcycling",
+        "Typecycling"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0ce44270-a684-4489-9077-521456e6dfaa.jpg"
+    },
+    "LTR0156": {
+      "id": "LTR0156",
+      "name": "Celeborn the Wise",
+      "setCode": "LTR",
+      "number": "156",
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Elf Noble",
+      "text": "Whenever you attack with one or more Elves, scry 1.\nWhenever you scry, Celeborn gets +1/+1 until end of turn for each card looked at while scrying this way.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "uncommon",
+      "power": "3",
+      "toughness": "3",
+      "keywords": [
+        "Scry"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/d/2daf449a-5f3e-44fd-968e-55d8517ae797.jpg"
+    },
+    "LTR0161": {
+      "id": "LTR0161",
+      "name": "Elven Farsight",
+      "setCode": "LTR",
+      "number": "161",
+      "manaCost": "{G}",
+      "manaValue": 1,
+      "type": "Sorcery",
+      "text": "Scry 3, then you may reveal the top card of your library. If it's a creature card, draw a card.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Scry"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/3/73d135b2-d2b8-499c-84d9-824370c19ccc.jpg"
+    },
+    "LTR0190": {
+      "id": "LTR0190",
+      "name": "Wose Pathfinder",
+      "setCode": "LTR",
+      "number": "190",
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Creature — Human Shaman",
+      "text": "{T}: Add one mana of any color.\n{6}{G}, {T}: Another target creature gets +3/+3 and gains trample until end of turn.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": "1",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/5/6589b339-9067-4e9b-bfdb-c49f8b3ef2d4.jpg"
+    },
+    "LTC0192": {
+      "id": "LTC0192",
+      "name": "Learn from the Past",
+      "setCode": "LTC",
+      "number": "192",
+      "manaCost": "{3}{U}",
+      "manaValue": 4,
+      "type": "Instant",
+      "text": "Target player shuffles their graveyard into their library.\nDraw a card.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b2462239-1060-46b1-ad20-caf979d73030.jpg"
+    },
+    "LTC0194": {
+      "id": "LTC0194",
+      "name": "Opt",
+      "setCode": "LTC",
+      "number": "194",
+      "manaCost": "{U}",
+      "manaValue": 1,
+      "type": "Instant",
+      "text": "Scry 1. (Look at the top card of your library. You may put that card on the bottom.)\nDraw a card.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Scry"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/0/50ee44a3-09b5-491a-ba51-609756020a31.jpg"
+    },
+    "LTC0196": {
+      "id": "LTC0196",
+      "name": "Preordain",
+      "setCode": "LTC",
+      "number": "196",
+      "manaCost": "{U}",
+      "manaValue": 1,
+      "type": "Sorcery",
+      "text": "Scry 2, then draw a card. (To scry 2, look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Scry"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/e/6e681c39-aa00-4c6d-b077-affe3b90bed8.jpg"
+    },
+    "LTC0232": {
+      "id": "LTC0232",
+      "name": "Arbor Elf",
+      "setCode": "LTC",
+      "number": "232",
+      "manaCost": "{G}",
+      "manaValue": 1,
+      "type": "Creature — Elf Druid",
+      "text": "{T}: Untap target Forest.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": "1",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8c61d23e-2be3-4b99-a24c-2a55e29d99d3.jpg"
+    },
+    "LTC0234": {
+      "id": "LTC0234",
+      "name": "Beast Within",
+      "setCode": "LTC",
+      "number": "234",
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Instant",
+      "text": "Destroy target permanent. Its controller creates a 3/3 green Beast creature token.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/b/2baf505b-ea99-470b-ac87-fd4fb8f5f322.jpg"
+    },
+    "LTC0236": {
+      "id": "LTC0236",
+      "name": "Cultivate",
+      "setCode": "LTC",
+      "number": "236",
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Sorcery",
+      "text": "Search your library for up to two basic land cards, reveal those cards, put one onto the battlefield tapped and the other into your hand, then shuffle.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/2/3217b813-7c21-473c-b65b-5766b0dc7803.jpg"
+    },
+    "LTC0238": {
+      "id": "LTC0238",
+      "name": "Elvish Mystic",
+      "setCode": "LTC",
+      "number": "238",
+      "manaCost": "{G}",
+      "manaValue": 1,
+      "type": "Creature — Elf Druid",
+      "text": "{T}: Add {G}.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": "1",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/8/880468be-3f4d-4dbf-92e7-cf212da7f718.jpg"
+    },
+    "LTC0240": {
+      "id": "LTC0240",
+      "name": "Elvish Visionary",
+      "setCode": "LTC",
+      "number": "240",
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Creature — Elf Shaman",
+      "text": "When this creature enters, draw a card.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": "1",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b83c5d22-914b-430a-948f-f076b14c5cff.jpg"
+    },
+    "LTC0243": {
+      "id": "LTC0243",
+      "name": "Farhaven Elf",
+      "setCode": "LTC",
+      "number": "243",
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Creature — Elf Druid",
+      "text": "When this creature enters, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": "1",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/1/c187b12a-391b-41fb-9728-053909f69f66.jpg"
+    },
+    "LTR0244": {
+      "id": "LTR0244",
+      "name": "Mirror of Galadriel",
+      "setCode": "LTR",
+      "number": "244",
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Legendary Artifact",
+      "text": "{5}, {T}: Scry 1, then draw a card. This ability costs {1} less to activate for each legendary creature you control.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Scry"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bc95036f-98f2-4ea7-93bb-542ad7064540.jpg"
+    },
+    "LTC0252": {
+      "id": "LTC0252",
+      "name": "Lignify",
+      "setCode": "LTC",
+      "number": "252",
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Kindred Enchantment — Treefolk Aura",
+      "text": "Enchant creature\nEnchanted creature is a Treefolk with base power and toughness 0/4 and loses all abilities.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/c/dc738689-2ed8-45e1-bdd4-c9d8450e2589.jpg"
+    },
+    "LTC0255": {
+      "id": "LTC0255",
+      "name": "Paradise Druid",
+      "setCode": "LTC",
+      "number": "255",
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Creature — Elf Druid",
+      "text": "This creature has hexproof as long as it's untapped. (It can't be the target of spells or abilities your opponents control.)\n{T}: Add one mana of any color.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "uncommon",
+      "power": "2",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b58370c4-2f18-4701-969f-2f6eed337085.jpg"
+    },
+    "LTC0257": {
+      "id": "LTC0257",
+      "name": "Rampant Growth",
+      "setCode": "LTC",
+      "number": "257",
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Sorcery",
+      "text": "Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/d/ddf4a6bc-8582-4e01-8d50-d3b4eb0c7cf2.jpg"
+    },
+    "LTC0259": {
+      "id": "LTC0259",
+      "name": "Reclamation Sage",
+      "setCode": "LTC",
+      "number": "259",
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Creature — Elf Shaman",
+      "text": "When this creature enters, you may destroy target artifact or enchantment.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "uncommon",
+      "power": "2",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/a/3a873762-2fff-4eb3-bf77-da52a1652c2a.jpg"
+    },
+    "LTC0263": {
+      "id": "LTC0263",
+      "name": "Wood Elves",
+      "setCode": "LTC",
+      "number": "263",
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Creature — Elf Scout",
+      "text": "When this creature enters, search your library for a Forest card, put that card onto the battlefield, then shuffle.",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "rarity": "common",
+      "power": "1",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/e/7e6efd6b-6815-4308-9cca-948dd43a0424.jpg"
+    },
+    "LTC0267": {
+      "id": "LTC0267",
+      "name": "Growth Spiral",
+      "setCode": "LTC",
+      "number": "267",
+      "manaCost": "{G}{U}",
+      "manaValue": 2,
+      "type": "Instant",
+      "text": "Draw a card. You may put a land card from your hand onto the battlefield.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [
+        "G",
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f7b59b66-677d-4fd8-b7d7-5135d6622eb9.jpg"
+    },
+    "LTC0273": {
+      "id": "LTC0273",
+      "name": "Arcane Signet",
+      "setCode": "LTC",
+      "number": "273",
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact",
+      "text": "{T}: Add one mana of any color in your commander's color identity.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/e/4e92354d-c203-41e1-822d-8263fadd9eb3.jpg"
+    },
+    "LTC0276": {
+      "id": "LTC0276",
+      "name": "Commander's Sphere",
+      "setCode": "LTC",
+      "number": "276",
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Artifact",
+      "text": "{T}: Add one mana of any color in your commander's color identity.\nSacrifice this artifact: Draw a card.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/6/6620b4a3-fa33-4bd7-9180-314919d8ea2a.jpg"
+    },
+    "LTC0281": {
+      "id": "LTC0281",
+      "name": "Lightning Greaves",
+      "setCode": "LTC",
+      "number": "281",
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact — Equipment",
+      "text": "Equipped creature has haste and shroud. (It can't be the target of spells or abilities.)\nEquip {0}",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Equip"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/0/3008696b-f89c-40e3-a437-22c95ef337fb.jpg"
+    },
+    "LTC0284": {
+      "id": "LTC0284",
+      "name": "Sol Ring",
+      "setCode": "LTC",
+      "number": "284",
+      "manaCost": "{1}",
+      "manaValue": 1,
+      "type": "Artifact",
+      "text": "{T}: Add {C}{C}.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/8/5805f64c-dd88-4e94-8f0a-a01dae67e3ba.jpg"
+    },
+    "LTC0292": {
+      "id": "LTC0292",
+      "name": "Whispersilk Cloak",
+      "setCode": "LTC",
+      "number": "292",
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Artifact — Equipment",
+      "text": "Equipped creature can't be blocked and has shroud. (It can't be the target of spells or abilities.)\nEquip {2}",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Equip"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/2/92b5bbfe-2e61-417b-9a75-fc39de57098c.jpg"
+    },
+    "LTC0295": {
+      "id": "LTC0295",
+      "name": "Ash Barrens",
+      "setCode": "LTC",
+      "number": "295",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add {C}.\nBasic landcycling {1} ({1}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Basic landcycling",
+        "Cycling",
+        "Landcycling",
+        "Typecycling"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/3/d38dade6-1b83-4a7e-a424-f605a3d83de9.jpg"
+    },
+    "LTC0301": {
+      "id": "LTC0301",
+      "name": "Command Tower",
+      "setCode": "LTC",
+      "number": "301",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add one mana of any color in your commander's color identity.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/3/5306a95e-fb18-463d-81a9-3c3b8121fc94.jpg"
+    },
+    "LTC0308": {
+      "id": "LTC0308",
+      "name": "Field of Ruin",
+      "setCode": "LTC",
+      "number": "308",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add {C}.\n{2}, {T}, Sacrifice this land: Destroy target nonbasic land an opponent controls. Each player searches their library for a basic land card, puts it onto the battlefield, then shuffles.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/d/8d9d6a9d-18a3-4cc8-8276-29fb826ed1fa.jpg"
+    },
+    "LTC0319": {
+      "id": "LTC0319",
+      "name": "Lonely Sandbar",
+      "setCode": "LTC",
+      "number": "319",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped.\n{T}: Add {U}.\nCycling {U} ({U}, Discard this card: Draw a card.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Cycling"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/3/932ab27a-37bc-4d67-af16-619c500517b1.jpg"
+    },
+    "LTC0338": {
+      "id": "LTC0338",
+      "name": "Thornwood Falls",
+      "setCode": "LTC",
+      "number": "338",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped.\nWhen this land enters, you gain 1 life.\n{T}: Add {G} or {U}.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/3/33e0f5c9-6f89-4b2e-8934-057009b33e90.jpg"
+    },
+    "LTC0341": {
+      "id": "LTC0341",
+      "name": "Tranquil Thicket",
+      "setCode": "LTC",
+      "number": "341",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped.\n{T}: Add {G}.\nCycling {G} ({G}, Discard this card: Draw a card.)",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Cycling"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/5/c5988fba-e870-4eb7-8469-01dff0c93d3f.jpg"
+    },
+    "LTC0347": {
+      "id": "LTC0347",
+      "name": "Woodland Stream",
+      "setCode": "LTC",
+      "number": "347",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped.\n{T}: Add {G} or {U}.",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/679c4e48-5046-41cc-8cca-8d7dd4019f7b.jpg"
+    },
+    "LTR0264": {
+      "id": "LTR0264",
+      "name": "Island",
+      "setCode": "LTR",
+      "number": "264",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Island",
+      "text": "({T}: Add {U}.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/b/bbeca27a-6c5b-40b9-83a4-a3a2096ff6f8.jpg"
+    },
+    "LTR0265": {
+      "id": "LTR0265",
+      "name": "Island",
+      "setCode": "LTR",
+      "number": "265",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Island",
+      "text": "({T}: Add {U}.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/671516eb-b088-4a15-aec9-1781ca016e11.jpg"
+    },
+    "LTR0270": {
+      "id": "LTR0270",
+      "name": "Forest",
+      "setCode": "LTR",
+      "number": "270",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Forest",
+      "text": "({T}: Add {G}.)",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/b/cbe793e4-c034-4a22-929d-d743c0255bf1.jpg"
+    },
+    "LTR0271": {
+      "id": "LTR0271",
+      "name": "Forest",
+      "setCode": "LTR",
+      "number": "271",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Forest",
+      "text": "({T}: Add {G}.)",
+      "colorIdentity": [
+        "G"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/7/07264de1-4322-4adb-8f08-c0aa236747c7.jpg"
+    }
+  }
+}

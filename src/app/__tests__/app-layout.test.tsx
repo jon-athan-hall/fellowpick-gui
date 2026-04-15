@@ -36,8 +36,8 @@ const routesTree = (
 describe('AppLayout', () => {
   it('always shows the brand', () => {
     renderWithProviders(routesTree, { routes: ['/login'], auth: {} });
-    expect(screen.getByLabelText('Trailhead home')).toBeInTheDocument();
-    expect(screen.getByText('Trailhead')).toBeInTheDocument();
+    expect(screen.getByLabelText('Fellowpick home')).toBeInTheDocument();
+    expect(screen.getByText('Fellowpick')).toBeInTheDocument();
   });
 
   it('shows Sign in / Register in the header when unauthenticated', () => {

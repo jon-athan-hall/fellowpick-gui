@@ -1,5 +1,5 @@
 /**
- * Mirrors the trailhead-api user DTOs.
+ * Mirrors the fellowpick-api user DTOs.
  */
 
 export interface UserResponse {

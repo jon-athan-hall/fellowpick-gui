@@ -1,5 +1,5 @@
 /**
- * Mirrors the trailhead-api auth DTOs.
+ * Mirrors the fellowpick-api auth DTOs.
  */
 
 export interface LoginRequest {

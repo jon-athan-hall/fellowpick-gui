@@ -1,0 +1,1893 @@
+{
+  "id": "hosts-of-mordor",
+  "name": "The Hosts of Mordor",
+  "universe": "tolkien",
+  "setCode": "LTC",
+  "colorIdentity": [
+    "B",
+    "R",
+    "U"
+  ],
+  "commanders": [
+    {
+      "id": "LTC0004",
+      "name": "Sauron, Lord of the Rings",
+      "setCode": "LTC",
+      "number": "4",
+      "manaCost": "{5}{U}{B}{R}",
+      "manaValue": 8,
+      "type": "Legendary Creature — Avatar Horror",
+      "text": "When you cast this spell, amass Orcs 5, mill five cards, then return a creature card from your graveyard to the battlefield.\nTrample\nWhenever a commander an opponent controls dies, the Ring tempts you.",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "R",
+        "U"
+      ],
+      "rarity": "mythic",
+      "power": "9",
+      "toughness": "9",
+      "keywords": [
+        "Amass",
+        "Mill",
+        "Trample"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/c/fc53dec0-79fe-4f6f-9d5b-cf298588e808.jpg"
+    }
+  ],
+  "mainBoard": {
+    "LTC0008": {
+      "id": "LTC0008",
+      "name": "Saruman, the White Hand",
+      "setCode": "LTC",
+      "number": "8",
+      "manaCost": "{1}{U}{B}{R}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Avatar Wizard",
+      "text": "Whenever you cast a noncreature spell, amass Orcs X, where X is that spell's mana value. (Put X +1/+1 counters on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)\nGoblins and Orcs you control have ward {2}.",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "R",
+        "U"
+      ],
+      "rarity": "mythic",
+      "power": "2",
+      "toughness": "5",
+      "keywords": [
+        "Amass"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/4/6487ccbf-f6cd-45a6-8514-2c458b655ef2.jpg"
+    },
+    "LTC0019": {
+      "id": "LTC0019",
+      "name": "Corsairs of Umbar",
+      "setCode": "LTC",
+      "number": "19",
+      "manaCost": "{3}{U}",
+      "manaValue": 4,
+      "type": "Creature — Human Pirate",
+      "text": "{2}{U}: Target Goblin, Orc, or Pirate can't be blocked this turn.\nWhenever this creature deals combat damage to a player, amass Orcs 3. (Put three +1/+1 counters on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "3",
+      "toughness": "3",
+      "keywords": [
+        "Amass"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/5/159727a9-0bc4-497d-8fb2-4a66923726d8.jpg"
+    },
+    "LTC0022": {
+      "id": "LTC0022",
+      "name": "Monstrosity of the Lake",
+      "setCode": "LTC",
+      "number": "22",
+      "manaCost": "{4}{U}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Kraken",
+      "text": "When Monstrosity of the Lake enters, you may pay {5}. If you do, tap all creatures your opponents control, then put a stun counter on each of those creatures. (If a permanent with a stun counter would become untapped, remove one from it instead.)\nIslandcycling {2} ({2}, Discard this card: Search your library for an Island card, reveal it, put it into your hand, then shuffle.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "4",
+      "toughness": "6",
+      "keywords": [
+        "Cycling",
+        "Islandcycling",
+        "Landcycling",
+        "Typecycling"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/7/d72aa8fc-6808-4865-879e-417a300c40de.jpg"
+    },
+    "LTC0024": {
+      "id": "LTC0024",
+      "name": "Subjugate the Hobbits",
+      "setCode": "LTC",
+      "number": "24",
+      "manaCost": "{5}{U}{U}",
+      "manaValue": 7,
+      "type": "Sorcery",
+      "text": "Gain control of each noncommander creature with mana value 3 or less.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/2/6206d9f1-6a57-46a2-942f-6f20e33e5d6a.jpg"
+    },
+    "LTC0029": {
+      "id": "LTC0029",
+      "name": "Shelob, Dread Weaver",
+      "setCode": "LTC",
+      "number": "29",
+      "manaCost": "{3}{B}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Spider Demon",
+      "text": "Whenever a nontoken creature an opponent controls dies, exile it.\n{2}{B}, Put a creature card exiled with Shelob into its owner's graveyard: Put two +1/+1 counters on Shelob. Draw a card.\n{X}{1}{B}: Put target creature card with mana value X exiled with Shelob onto the battlefield tapped under your control.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "rare",
+      "power": "3",
+      "toughness": "3",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/3/83944c19-6f9b-4043-9eeb-1a4ca452f698.jpg"
+    },
+    "LTC0031": {
+      "id": "LTC0031",
+      "name": "Cavern-Hoard Dragon",
+      "setCode": "LTC",
+      "number": "31",
+      "manaCost": "{7}{R}{R}",
+      "manaValue": 9,
+      "type": "Creature — Dragon",
+      "text": "This spell costs {X} less to cast, where X is the greatest number of artifacts an opponent controls.\nFlying, trample, haste\nWhenever this creature deals combat damage to a player, you create a Treasure token for each artifact that player controls.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "6",
+      "toughness": "6",
+      "keywords": [
+        "Flying",
+        "Haste",
+        "Trample",
+        "Treasure"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/6/c67e509e-a219-4f7f-b7eb-8c446cc0620a.jpg"
+    },
+    "LTC0033": {
+      "id": "LTC0033",
+      "name": "Orcish Siegemaster",
+      "setCode": "LTC",
+      "number": "33",
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Creature — Orc Soldier",
+      "text": "Trample\nOther Orcs and Goblins you control have trample.\nWhenever this creature attacks, it gets +X/+0 until end of turn, where X is the greatest power among creatures you control.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "0",
+      "toughness": "5",
+      "keywords": [
+        "Trample"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/e/1e9f9869-0f43-4eac-892f-26cd8a614330.jpg"
+    },
+    "LTC0034": {
+      "id": "LTC0034",
+      "name": "Rampaging War Mammoth",
+      "setCode": "LTC",
+      "number": "34",
+      "manaCost": "{5}{R}{R}",
+      "manaValue": 7,
+      "type": "Creature — Elephant",
+      "text": "Trample\nCycling {X}{2}{R} ({X}{2}{R}, Discard this card: Draw a card.)\nWhen you cycle this card, destroy up to X target artifacts.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "9",
+      "toughness": "7",
+      "keywords": [
+        "Cycling",
+        "Trample"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/c/dc13dbf0-c0ff-4c76-96c6-d3ee88ab2fce.jpg"
+    },
+    "LTC0046": {
+      "id": "LTC0046",
+      "name": "The Balrog of Moria",
+      "setCode": "LTC",
+      "number": "46",
+      "manaCost": "{4}{B}{B}{R}",
+      "manaValue": 7,
+      "type": "Legendary Creature — Avatar Demon",
+      "text": "Trample, haste\nWhen The Balrog of Moria dies, you may exile it. When you do, for each opponent, exile up to one target creature that player controls.\nCycling {3}{R} ({3}{R}, Discard this card: Draw a card.)\nWhen you cycle this card, create two Treasure tokens.",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [
+        "B",
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "8",
+      "toughness": "8",
+      "keywords": [
+        "Cycling",
+        "Haste",
+        "Trample",
+        "Treasure"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/a/2a3fcfdc-f2cf-42d8-8bb4-7308bc12746e.jpg"
+    },
+    "LTC0057": {
+      "id": "LTC0057",
+      "name": "Gríma, Saruman's Footman",
+      "setCode": "LTC",
+      "number": "57",
+      "manaCost": "{2}{U}{B}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Human Advisor",
+      "text": "Gríma can't be blocked.\nWhenever Gríma deals combat damage to a player, that player exiles cards from the top of their library until they exile an instant or sorcery card. You may cast that card without paying its mana cost. Then that player puts the exiled cards that weren't cast this way on the bottom of their library in a random order.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "1",
+      "toughness": "4",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/0/00f40514-d37d-423f-aa0c-1875300f43a8.jpg"
+    },
+    "LTC0058": {
+      "id": "LTC0058",
+      "name": "In the Darkness Bind Them",
+      "setCode": "LTC",
+      "number": "58",
+      "manaCost": "{2}{U}{B}{R}",
+      "manaValue": 5,
+      "type": "Enchantment — Saga",
+      "text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)\nI, II, III — Create a 3/3 black Wraith creature token with menace. The Ring tempts you.\nIV — For each opponent, gain control of up to one target creature that player controls until end of turn. Untap those creatures. They gain haste until end of turn. The Ring tempts you.",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "R",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f7f7413b-0a65-4338-90eb-4b4c5462c21c.jpg"
+    },
+    "LTC0059": {
+      "id": "LTC0059",
+      "name": "Lidless Gaze",
+      "setCode": "LTC",
+      "number": "59",
+      "manaCost": "{2}{B}{R}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "text": "Exile the top card of each player's library. Until the end of your next turn, you may play those cards, and mana of any type can be spent to cast those spells.\nFlashback {2}{B}{R} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [
+        "B",
+        "R"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Flashback"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/9/6937954b-353a-47ac-a0c0-f731fe3881a6.jpg"
+    },
+    "LTC0060": {
+      "id": "LTC0060",
+      "name": "Lord of the Nazgûl",
+      "setCode": "LTC",
+      "number": "60",
+      "manaCost": "{3}{U}{B}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Wraith Noble",
+      "text": "Flying\nWraiths you control have protection from Ring-bearers.\nWhenever you cast an instant or sorcery spell, create a 3/3 black Wraith creature token with menace. Then if you control nine or more Wraiths, Wraiths you control have base power and toughness 9/9 until end of turn.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "4",
+      "toughness": "3",
+      "keywords": [
+        "Flying"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/1/41e3d118-8f97-4c68-acff-2f90a055af5b.jpg"
+    },
+    "LTC0063": {
+      "id": "LTC0063",
+      "name": "Moria Scavenger",
+      "setCode": "LTC",
+      "number": "63",
+      "manaCost": "{1}{B}{R}",
+      "manaValue": 3,
+      "type": "Creature — Orc Rogue",
+      "text": "Deathtouch, haste\n{T}, Discard a card: Draw a card. If the discarded card was a creature card, amass Orcs 1. (Put a +1/+1 counter on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [
+        "B",
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "1",
+      "toughness": "4",
+      "keywords": [
+        "Amass",
+        "Deathtouch",
+        "Haste"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea926187-ac8e-4197-8fd4-ac6b8d818d83.jpg"
+    },
+    "LTC0070": {
+      "id": "LTC0070",
+      "name": "Summons of Saruman",
+      "setCode": "LTC",
+      "number": "70",
+      "manaCost": "{X}{U}{R}",
+      "manaValue": 2,
+      "type": "Sorcery",
+      "text": "Amass Orcs X. Mill X cards. You may cast an instant or sorcery spell with mana value X or less from among them without paying its mana cost. (To amass Orcs X, put X +1/+1 counters on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)\nFlashback—{3}{U}{R}, Exile X cards from your graveyard.",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "colors": [
+        "R",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Amass",
+        "Flashback",
+        "Mill"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/b/cbb1bc1f-b1d6-4639-b892-9b1ff6ed65fb.jpg"
+    },
+    "LTC0072": {
+      "id": "LTC0072",
+      "name": "Too Greedily, Too Deep",
+      "setCode": "LTC",
+      "number": "72",
+      "manaCost": "{5}{B}{R}",
+      "manaValue": 7,
+      "type": "Sorcery",
+      "text": "Put target creature card from a graveyard onto the battlefield under your control. That creature deals damage equal to its power to each other creature.",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [
+        "B",
+        "R"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/2/328b93f0-5078-4334-9c95-60ecdd17a388.jpg"
+    },
+    "LTC0074": {
+      "id": "LTC0074",
+      "name": "Wake the Dragon",
+      "setCode": "LTC",
+      "number": "74",
+      "manaCost": "{4}{B}{R}",
+      "manaValue": 6,
+      "type": "Sorcery",
+      "text": "Create a 6/6 black and red Dragon creature token with flying, menace, and \"Whenever this token deals combat damage to a player, gain control of target artifact that player controls.\"\nFlashback {6}{B}{R} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [
+        "B",
+        "R"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Flashback",
+        "Menace"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/9/f9cf5f78-0316-4c35-a40e-9bfba2e46ad8.jpg"
+    },
+    "LTC0079": {
+      "id": "LTC0079",
+      "name": "Relic of Sauron",
+      "setCode": "LTC",
+      "number": "79",
+      "manaCost": "{4}",
+      "manaValue": 4,
+      "type": "Artifact",
+      "text": "{T}: Add two mana in any combination of {U}, {B}, and/or {R}.\n{3}, {T}: Draw two cards, then discard a card.",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/7/175b3d28-5c74-4972-9b5c-5e39762c78f4.jpg"
+    },
+    "LTC0080": {
+      "id": "LTC0080",
+      "name": "The Black Gate",
+      "setCode": "LTC",
+      "number": "80",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land — Gate",
+      "text": "As The Black Gate enters, you may pay 3 life. If you don't, it enters tapped.\n{T}: Add {B}.\n{1}{B}, {T}: Choose a player with the most life or tied for most life. Target creature can't be blocked by creatures that player controls this turn.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/6/46418186-c215-47c4-9d0a-d15a1d8ca613.jpg"
+    },
+    "LTC0199": {
+      "id": "LTC0199",
+      "name": "Decree of Pain",
+      "setCode": "LTC",
+      "number": "199",
+      "manaCost": "{6}{B}{B}",
+      "manaValue": 8,
+      "type": "Sorcery",
+      "text": "Destroy all creatures. They can't be regenerated. Draw a card for each creature destroyed this way.\nCycling {3}{B}{B} ({3}{B}{B}, Discard this card: Draw a card.)\nWhen you cycle this card, all creatures get -2/-2 until end of turn.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Cycling"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/d/4dd53069-bf38-4358-95b7-6fd738aaeeab.jpg"
+    },
+    "LTC0202": {
+      "id": "LTC0202",
+      "name": "Languish",
+      "setCode": "LTC",
+      "number": "202",
+      "manaCost": "{2}{B}{B}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "text": "All creatures get -4/-4 until end of turn.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/4/b4f5fc18-a62c-4771-9062-e7bb42bae7ff.jpg"
+    },
+    "LTC0203": {
+      "id": "LTC0203",
+      "name": "Living Death",
+      "setCode": "LTC",
+      "number": "203",
+      "manaCost": "{3}{B}{B}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "text": "Each player exiles all creature cards from their graveyard, then sacrifices all creatures they control, then puts all cards they exiled this way onto the battlefield.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b22235ac-5028-4b84-8ec2-0ab46768dee2.jpg"
+    },
+    "LTC0206": {
+      "id": "LTC0206",
+      "name": "Reanimate",
+      "setCode": "LTC",
+      "number": "206",
+      "manaCost": "{B}",
+      "manaValue": 1,
+      "type": "Sorcery",
+      "text": "Put target creature card from a graveyard onto the battlefield under your control. You lose life equal to that card's mana value.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/e/eee48ed0-3965-4bcc-8eee-bcd8f1607808.jpg"
+    },
+    "LTC0211": {
+      "id": "LTC0211",
+      "name": "Blasphemous Act",
+      "setCode": "LTC",
+      "number": "211",
+      "manaCost": "{8}{R}",
+      "manaValue": 9,
+      "type": "Sorcery",
+      "text": "This spell costs {1} less to cast for each creature on the battlefield.\nBlasphemous Act deals 13 damage to each creature.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/f/cf9e842f-4840-49e3-b4f3-c2fad395d41a.jpg"
+    },
+    "LTC0219": {
+      "id": "LTC0219",
+      "name": "Goblin Dark-Dwellers",
+      "setCode": "LTC",
+      "number": "219",
+      "manaCost": "{3}{R}{R}",
+      "manaValue": 5,
+      "type": "Creature — Goblin",
+      "text": "Menace (This creature can't be blocked except by two or more creatures.)\nWhen this creature enters, you may cast target instant or sorcery card with mana value 3 or less from your graveyard without paying its mana cost. If that spell would be put into your graveyard, exile it instead.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "4",
+      "toughness": "4",
+      "keywords": [
+        "Menace"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/b/cb2091cb-4c20-4210-9917-6632c1d39dc1.jpg"
+    },
+    "LTC0223": {
+      "id": "LTC0223",
+      "name": "Inferno Titan",
+      "setCode": "LTC",
+      "number": "223",
+      "manaCost": "{4}{R}{R}",
+      "manaValue": 6,
+      "type": "Creature — Giant",
+      "text": "{R}: This creature gets +1/+0 until end of turn.\nWhenever this creature enters or attacks, it deals 3 damage divided as you choose among one, two, or three targets.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "mythic",
+      "power": "6",
+      "toughness": "6",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/b/db61b57c-b870-41af-87b7-037ec52fe063.jpg"
+    },
+    "LTC0224": {
+      "id": "LTC0224",
+      "name": "Knollspine Dragon",
+      "setCode": "LTC",
+      "number": "224",
+      "manaCost": "{5}{R}{R}",
+      "manaValue": 7,
+      "type": "Creature — Dragon",
+      "text": "Flying\nWhen this creature enters, you may discard your hand and draw cards equal to the damage dealt to target opponent this turn.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "7",
+      "toughness": "5",
+      "keywords": [
+        "Flying"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/0/20dcd98d-01c8-45be-97ed-993a73b01b9c.jpg"
+    },
+    "LTC0225": {
+      "id": "LTC0225",
+      "name": "Scourge of the Throne",
+      "setCode": "LTC",
+      "number": "225",
+      "manaCost": "{4}{R}{R}",
+      "manaValue": 6,
+      "type": "Creature — Dragon",
+      "text": "Flying\nDethrone (Whenever this creature attacks the player with the most life or tied for most life, put a +1/+1 counter on it.)\nWhenever this creature attacks for the first time each turn, if it's attacking the player with the most life or tied for most life, untap all attacking creatures. After this phase, there is an additional combat phase.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "mythic",
+      "power": "5",
+      "toughness": "5",
+      "keywords": [
+        "Dethrone",
+        "Flying"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/9/89b46f36-6115-4d86-82a3-9397a123091c.jpg"
+    },
+    "LTC0228": {
+      "id": "LTC0228",
+      "name": "Siege-Gang Commander",
+      "setCode": "LTC",
+      "number": "228",
+      "manaCost": "{3}{R}{R}",
+      "manaValue": 5,
+      "type": "Creature — Goblin",
+      "text": "When this creature enters, create three 1/1 red Goblin creature tokens.\n{1}{R}, Sacrifice a Goblin: This creature deals 2 damage to any target.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "2",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/8/98b913e1-c26d-4a7d-9671-50d483304ba3.jpg"
+    },
+    "LTC0230": {
+      "id": "LTC0230",
+      "name": "Treasure Nabber",
+      "setCode": "LTC",
+      "number": "230",
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Creature — Goblin Rogue",
+      "text": "Whenever an opponent taps an artifact for mana, gain control of that artifact until the end of your next turn.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "rare",
+      "power": "3",
+      "toughness": "2",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/7/27822718-27eb-484d-94b9-55fbe3fc03cc.jpg"
+    },
+    "LTC0268": {
+      "id": "LTC0268",
+      "name": "Hostage Taker",
+      "setCode": "LTC",
+      "number": "268",
+      "manaCost": "{2}{U}{B}",
+      "manaValue": 4,
+      "type": "Creature — Human Pirate",
+      "text": "When this creature enters, exile another target creature or artifact until this creature leaves the battlefield. You may cast that card for as long as it remains exiled, and mana of any type can be spent to cast that spell.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "3",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/8/183ae03f-ee62-4b5c-9f8f-16b21af8eaa0.jpg"
+    },
+    "LTC0270": {
+      "id": "LTC0270",
+      "name": "Notion Thief",
+      "setCode": "LTC",
+      "number": "270",
+      "manaCost": "{2}{U}{B}",
+      "manaValue": 4,
+      "type": "Creature — Human Rogue",
+      "text": "Flash\nIf an opponent would draw a card except the first one they draw in each of their draw steps, instead that player skips that draw and you draw a card.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "U"
+      ],
+      "rarity": "rare",
+      "power": "3",
+      "toughness": "1",
+      "keywords": [
+        "Flash"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/7/c7654035-7d5a-4897-af0e-429edebbb55b.jpg"
+    },
+    "LTC0299": {
+      "id": "LTC0299",
+      "name": "Choked Estuary",
+      "setCode": "LTC",
+      "number": "299",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "As this land enters, you may reveal an Island or Swamp card from your hand. If you don't, this land enters tapped.\n{T}: Add {U} or {B}.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/1/3128d8c7-2486-4b66-9c30-7a3c5e7d7fe5.jpg"
+    },
+    "LTC0303": {
+      "id": "LTC0303",
+      "name": "Desolate Lighthouse",
+      "setCode": "LTC",
+      "number": "303",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add {C}.\n{1}{U}{R}, {T}: Draw a card, then discard a card.",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/1/f18bfb4f-6af7-48f0-98c1-c69008039773.jpg"
+    },
+    "LTC0304": {
+      "id": "LTC0304",
+      "name": "Dragonskull Summit",
+      "setCode": "LTC",
+      "number": "304",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped unless you control a Swamp or a Mountain.\n{T}: Add {B} or {R}.",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/0/d0581897-7bdb-465e-ab52-9e656b9a5607.jpg"
+    },
+    "LTC0305": {
+      "id": "LTC0305",
+      "name": "Drowned Catacomb",
+      "setCode": "LTC",
+      "number": "305",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped unless you control an Island or a Swamp.\n{T}: Add {U} or {B}.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1ce5d548-379d-442d-a68d-efbd6525fb86.jpg"
+    },
+    "LTC0310": {
+      "id": "LTC0310",
+      "name": "Foreboding Ruins",
+      "setCode": "LTC",
+      "number": "310",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "As this land enters, you may reveal a Swamp or Mountain card from your hand. If you don't, this land enters tapped.\n{T}: Add {B} or {R}.",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/7/172a7547-eee6-4279-8438-afdd2f9e72f4.jpg"
+    },
+    "LTC0312": {
+      "id": "LTC0312",
+      "name": "Frostboil Snarl",
+      "setCode": "LTC",
+      "number": "312",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "As this land enters, you may reveal an Island or Mountain card from your hand. If you don't, this land enters tapped.\n{T}: Add {U} or {R}.",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/d/bddcc7a7-bebf-4b57-9e6c-4637bca88bd6.jpg"
+    },
+    "LTC0332": {
+      "id": "LTC0332",
+      "name": "Smoldering Marsh",
+      "setCode": "LTC",
+      "number": "332",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land — Swamp Mountain",
+      "text": "({T}: Add {B} or {R}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b8de7fc8-3a90-4693-9d4d-cdca5c5aa206.jpg"
+    },
+    "LTC0333": {
+      "id": "LTC0333",
+      "name": "Sulfur Falls",
+      "setCode": "LTC",
+      "number": "333",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped unless you control an Island or a Mountain.\n{T}: Add {U} or {R}.",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/a/9ac747b1-db9a-463f-b222-cb46bb0a43f8.jpg"
+    },
+    "LTC0334": {
+      "id": "LTC0334",
+      "name": "Sulfurous Springs",
+      "setCode": "LTC",
+      "number": "334",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This land deals 1 damage to you.",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/1/119ea61b-8575-4491-a422-2eadebe8b261.jpg"
+    },
+    "LTC0335": {
+      "id": "LTC0335",
+      "name": "Sunken Hollow",
+      "setCode": "LTC",
+      "number": "335",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land — Island Swamp",
+      "text": "({T}: Add {U} or {B}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/7/9764a8bc-94ff-448f-aed6-2eca21fc0418.jpg"
+    },
+    "LTC0342": {
+      "id": "LTC0342",
+      "name": "Underground River",
+      "setCode": "LTC",
+      "number": "342",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This land deals 1 damage to you.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "rare",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/44832720-67b3-48ca-9460-807a6f1931a5.jpg"
+    },
+    "LTR0074": {
+      "id": "LTR0074",
+      "name": "Treason of Isengard",
+      "setCode": "LTR",
+      "number": "74",
+      "manaCost": "{2}{U}",
+      "manaValue": 3,
+      "type": "Sorcery",
+      "text": "Put up to one target instant or sorcery card from your graveyard on top of your library.\nAmass Orcs 2. (To amass Orcs 2, put two +1/+1 counters on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Amass"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/1/71f97505-c961-4890-acd0-32a63919ac2a.jpg"
+    },
+    "LTR0077": {
+      "id": "LTR0077",
+      "name": "Bitter Downfall",
+      "setCode": "LTR",
+      "number": "77",
+      "manaCost": "{3}{B}",
+      "manaValue": 4,
+      "type": "Instant",
+      "text": "This spell costs {3} less to cast if it targets a creature that was dealt damage this turn.\nDestroy target creature. Its controller loses 2 life.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e4b83aa1-33ce-4b8d-ae5a-72f64eef5f09.jpg"
+    },
+    "LTR0111": {
+      "id": "LTR0111",
+      "name": "Troll of Khazad-dûm",
+      "setCode": "LTR",
+      "number": "111",
+      "manaCost": "{5}{B}",
+      "manaValue": 6,
+      "type": "Creature — Troll",
+      "text": "This creature can't be blocked except by three or more creatures.\nSwampcycling {1} ({1}, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "common",
+      "power": "6",
+      "toughness": "5",
+      "keywords": [
+        "Cycling",
+        "Landcycling",
+        "Swampcycling",
+        "Typecycling"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6539e26-b63b-4725-9407-caaf451de084.jpg"
+    },
+    "LTR0113": {
+      "id": "LTR0113",
+      "name": "Voracious Fell Beast",
+      "setCode": "LTR",
+      "number": "113",
+      "manaCost": "{4}{B}{B}",
+      "manaValue": 6,
+      "type": "Creature — Drake Beast",
+      "text": "Flying\nWhen this creature enters, each opponent sacrifices a creature of their choice. Create a Food token for each creature sacrificed this way. (It's an artifact with \"{2}, {T}, Sacrifice this token: You gain 3 life.\")",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "uncommon",
+      "power": "4",
+      "toughness": "4",
+      "keywords": [
+        "Flying",
+        "Food"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d9b7d7f8-503d-4660-9a18-6a8e2fcaa25f.jpg"
+    },
+    "LTR0126": {
+      "id": "LTR0126",
+      "name": "Fiery Inscription",
+      "setCode": "LTR",
+      "number": "126",
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Enchantment",
+      "text": "When this enchantment enters, the Ring tempts you.\nWhenever you cast an instant or sorcery spell, this enchantment deals 2 damage to each opponent.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8c321159-43e5-40fc-9f0c-4ecc4f6cfd20.jpg"
+    },
+    "LTR0134": {
+      "id": "LTR0134",
+      "name": "Grishnákh, Brash Instigator",
+      "setCode": "LTR",
+      "number": "134",
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Goblin Soldier",
+      "text": "When Grishnákh enters, amass Orcs 2. When you do, until end of turn, gain control of target nonlegendary creature an opponent controls with power less than or equal to the amassed Army's power. Untap that creature. It gains haste until end of turn.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "uncommon",
+      "power": "1",
+      "toughness": "1",
+      "keywords": [
+        "Amass"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/3/6385e769-f805-499d-9f47-494533362152.jpg"
+    },
+    "LTC0184": {
+      "id": "LTC0184",
+      "name": "Arcane Denial",
+      "setCode": "LTC",
+      "number": "184",
+      "manaCost": "{1}{U}",
+      "manaValue": 2,
+      "type": "Instant",
+      "text": "Counter target spell. Its controller may draw up to two cards at the beginning of the next turn's upkeep.\nYou draw a card at the beginning of the next turn's upkeep.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/e/7e0cc18d-c6b8-4db1-ac07-0f17ae6d6c95.jpg"
+    },
+    "LTC0185": {
+      "id": "LTC0185",
+      "name": "Boon of the Wish-Giver",
+      "setCode": "LTC",
+      "number": "185",
+      "manaCost": "{4}{U}{U}",
+      "manaValue": 6,
+      "type": "Sorcery",
+      "text": "Draw four cards.\nCycling {1} ({1}, Discard this card: Draw a card.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Cycling"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/f/bf2fa3fd-f6d9-4c23-9025-9b8b72da32dc.jpg"
+    },
+    "LTC0187": {
+      "id": "LTC0187",
+      "name": "Consider",
+      "setCode": "LTC",
+      "number": "187",
+      "manaCost": "{U}",
+      "manaValue": 1,
+      "type": "Instant",
+      "text": "Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)\nDraw a card.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Surveil"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/6/1668af50-abd3-4b12-974a-b19fd010dc3e.jpg"
+    },
+    "LTC0188": {
+      "id": "LTC0188",
+      "name": "Deep Analysis",
+      "setCode": "LTC",
+      "number": "188",
+      "manaCost": "{3}{U}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "text": "Target player draws two cards.\nFlashback—{1}{U}, Pay 3 life. (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Flashback"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/0/801d2482-f35a-4155-9925-335d5f4adfd9.jpg"
+    },
+    "LTC0190": {
+      "id": "LTC0190",
+      "name": "Fact or Fiction",
+      "setCode": "LTC",
+      "number": "190",
+      "manaCost": "{3}{U}",
+      "manaValue": 4,
+      "type": "Instant",
+      "text": "Reveal the top five cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/4/74d189fc-48fe-40f5-ae56-34b4dfc068d0.jpg"
+    },
+    "LTC0191": {
+      "id": "LTC0191",
+      "name": "Forbidden Alchemy",
+      "setCode": "LTC",
+      "number": "191",
+      "manaCost": "{2}{U}",
+      "manaValue": 3,
+      "type": "Instant",
+      "text": "Look at the top four cards of your library. Put one of them into your hand and the rest into your graveyard.\nFlashback {6}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Flashback"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/8/486e5526-a24e-434e-a816-513dfd83580b.jpg"
+    },
+    "LTC0200": {
+      "id": "LTC0200",
+      "name": "Feed the Swarm",
+      "setCode": "LTC",
+      "number": "200",
+      "manaCost": "{1}{B}",
+      "manaValue": 2,
+      "type": "Sorcery",
+      "text": "Destroy target creature or enchantment an opponent controls. You lose life equal to that permanent's mana value.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/2/029e2a27-46f2-44fa-ac7c-462c69feab95.jpg"
+    },
+    "LTC0204": {
+      "id": "LTC0204",
+      "name": "Merciless Executioner",
+      "setCode": "LTC",
+      "number": "204",
+      "manaCost": "{2}{B}",
+      "manaValue": 3,
+      "type": "Creature — Orc Warrior",
+      "text": "When this creature enters, each player sacrifices a creature of their choice.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "uncommon",
+      "power": "3",
+      "toughness": "1",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/0/a034d73b-a511-4c02-946f-ea520f93a2a4.jpg"
+    },
+    "LTC0207": {
+      "id": "LTC0207",
+      "name": "Revenge of Ravens",
+      "setCode": "LTC",
+      "number": "207",
+      "manaCost": "{3}{B}",
+      "manaValue": 4,
+      "type": "Enchantment",
+      "text": "Whenever a creature attacks you or a planeswalker you control, that creature's controller loses 1 life and you gain 1 life.",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [
+        "B"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/8418f1ed-e4b8-436b-8859-c4df51c29f60.jpg"
+    },
+    "LTC0210": {
+      "id": "LTC0210",
+      "name": "Anger",
+      "setCode": "LTC",
+      "number": "210",
+      "manaCost": "{3}{R}",
+      "manaValue": 4,
+      "type": "Creature — Incarnation",
+      "text": "Haste\nAs long as this card is in your graveyard and you control a Mountain, creatures you control have haste.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "uncommon",
+      "power": "2",
+      "toughness": "2",
+      "keywords": [
+        "Haste"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/9/59773a37-371f-44b8-9418-9d9a875b992c.jpg"
+    },
+    "LTC0215": {
+      "id": "LTC0215",
+      "name": "Faithless Looting",
+      "setCode": "LTC",
+      "number": "215",
+      "manaCost": "{R}",
+      "manaValue": 1,
+      "type": "Sorcery",
+      "text": "Draw two cards, then discard two cards.\nFlashback {2}{R} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Flashback"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/7/57102ba6-79ab-4487-a62a-926b30682421.jpg"
+    },
+    "LTR0216": {
+      "id": "LTR0216",
+      "name": "The Mouth of Sauron",
+      "setCode": "LTR",
+      "number": "216",
+      "manaCost": "{3}{U}{B}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Human Advisor",
+      "text": "When The Mouth of Sauron enters, target player mills three cards. Then amass Orcs X, where X is the number of instant and sorcery cards in that player's graveyard. (Put X +1/+1 counters on an Army you control. It's also an Orc. If you don't control an Army, create a 0/0 black Orc Army creature token first.)",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "U"
+      ],
+      "rarity": "uncommon",
+      "power": "3",
+      "toughness": "4",
+      "keywords": [
+        "Amass",
+        "Mill"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/6/76a88814-aa30-4297-b338-3d851bfe7256.jpg"
+    },
+    "LTC0218": {
+      "id": "LTC0218",
+      "name": "Goblin Cratermaker",
+      "setCode": "LTC",
+      "number": "218",
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Creature — Goblin Warrior",
+      "text": "{1}, Sacrifice this creature: Choose one —\n• This creature deals 2 damage to target creature.\n• Destroy target colorless nonland permanent.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "uncommon",
+      "power": "2",
+      "toughness": "2",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/8/88670dcc-715e-4570-8b0c-f4772a2c99e2.jpg"
+    },
+    "LTC0220": {
+      "id": "LTC0220",
+      "name": "Guttersnipe",
+      "setCode": "LTC",
+      "number": "220",
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Creature — Goblin Shaman",
+      "text": "Whenever you cast an instant or sorcery spell, this creature deals 2 damage to each opponent.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "uncommon",
+      "power": "2",
+      "toughness": "2",
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d1ade999-a59c-4594-a787-b68fbf90bbb2.jpg"
+    },
+    "LTC0227": {
+      "id": "LTC0227",
+      "name": "Shiny Impetus",
+      "setCode": "LTC",
+      "number": "227",
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Enchantment — Aura",
+      "text": "Enchant creature\nEnchanted creature gets +2/+2 and is goaded. (It attacks each combat if able and attacks a player other than you if able.)\nWhenever enchanted creature attacks, you create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Enchant",
+        "Goad",
+        "Treasure"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/0/a02cac8f-6d0f-439d-bd0e-e76514c1a685.jpg"
+    },
+    "LTC0229": {
+      "id": "LTC0229",
+      "name": "Thrill of Possibility",
+      "setCode": "LTC",
+      "number": "229",
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Instant",
+      "text": "As an additional cost to cast this spell, discard a card.\nDraw two cards.",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/f/7f81cdab-2a4e-4518-bfc3-7ccda8f2e806.jpg"
+    },
+    "LTC0266": {
+      "id": "LTC0266",
+      "name": "Extract from Darkness",
+      "setCode": "LTC",
+      "number": "266",
+      "manaCost": "{3}{U}{B}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "text": "Each player mills two cards. Then you put a creature card from a graveyard onto the battlefield under your control.",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "colors": [
+        "B",
+        "U"
+      ],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Mill"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/b/5b2db271-6109-407b-9ffd-91e3b858c426.jpg"
+    },
+    "LTC0273": {
+      "id": "LTC0273",
+      "name": "Arcane Signet",
+      "setCode": "LTC",
+      "number": "273",
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact",
+      "text": "{T}: Add one mana of any color in your commander's color identity.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/e/4e92354d-c203-41e1-822d-8263fadd9eb3.jpg"
+    },
+    "LTC0274": {
+      "id": "LTC0274",
+      "name": "Basalt Monolith",
+      "setCode": "LTC",
+      "number": "274",
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Artifact",
+      "text": "This artifact doesn't untap during your untap step.\n{T}: Add {C}{C}{C}.\n{3}: Untap this artifact.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/7/97d8dbc9-d9f3-4e8e-95d2-27917c152a29.jpg"
+    },
+    "LTC0276": {
+      "id": "LTC0276",
+      "name": "Commander's Sphere",
+      "setCode": "LTC",
+      "number": "276",
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Artifact",
+      "text": "{T}: Add one mana of any color in your commander's color identity.\nSacrifice this artifact: Draw a card.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/6/6620b4a3-fa33-4bd7-9180-314919d8ea2a.jpg"
+    },
+    "LTC0278": {
+      "id": "LTC0278",
+      "name": "Everflowing Chalice",
+      "setCode": "LTC",
+      "number": "278",
+      "manaCost": "{0}",
+      "manaValue": 0,
+      "type": "Artifact",
+      "text": "Multikicker {2} (You may pay an additional {2} any number of times as you cast this spell.)\nThis artifact enters with a charge counter on it for each time it was kicked.\n{T}: Add {C} for each charge counter on this artifact.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Multikicker"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/5/156464e7-3bb1-465f-939c-a9d290dc3ebc.jpg"
+    },
+    "LTC0282": {
+      "id": "LTC0282",
+      "name": "Mind Stone",
+      "setCode": "LTC",
+      "number": "282",
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact",
+      "text": "{T}: Add {C}.\n{1}, {T}, Sacrifice this artifact: Draw a card.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/3/23dd6cb6-31ee-467e-9f67-39046197bcb6.jpg"
+    },
+    "LTC0284": {
+      "id": "LTC0284",
+      "name": "Sol Ring",
+      "setCode": "LTC",
+      "number": "284",
+      "manaCost": "{1}",
+      "manaValue": 1,
+      "type": "Artifact",
+      "text": "{T}: Add {C}{C}.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/8/5805f64c-dd88-4e94-8f0a-a01dae67e3ba.jpg"
+    },
+    "LTC0293": {
+      "id": "LTC0293",
+      "name": "Worn Powerstone",
+      "setCode": "LTC",
+      "number": "293",
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Artifact",
+      "text": "This artifact enters tapped.\n{T}: Add {C}{C}.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/2/329342a8-5708-4332-868a-7410d7461647.jpg"
+    },
+    "LTC0301": {
+      "id": "LTC0301",
+      "name": "Command Tower",
+      "setCode": "LTC",
+      "number": "301",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add one mana of any color in your commander's color identity.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/3/5306a95e-fb18-463d-81a9-3c3b8121fc94.jpg"
+    },
+    "LTC0302": {
+      "id": "LTC0302",
+      "name": "Crumbling Necropolis",
+      "setCode": "LTC",
+      "number": "302",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped.\n{T}: Add {U}, {B}, or {R}.",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/e/3e221859-c573-47ed-a811-9b3e02178bda.jpg"
+    },
+    "LTC0306": {
+      "id": "LTC0306",
+      "name": "Evolving Wilds",
+      "setCode": "LTC",
+      "number": "306",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/2/e24ec4c1-5a28-450d-8e37-62a154749ee6.jpg"
+    },
+    "LTC0308": {
+      "id": "LTC0308",
+      "name": "Field of Ruin",
+      "setCode": "LTC",
+      "number": "308",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add {C}.\n{2}, {T}, Sacrifice this land: Destroy target nonbasic land an opponent controls. Each player searches their library for a basic land card, puts it onto the battlefield, then shuffles.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/d/8d9d6a9d-18a3-4cc8-8276-29fb826ed1fa.jpg"
+    },
+    "LTC0322": {
+      "id": "LTC0322",
+      "name": "Path of Ancestry",
+      "setCode": "LTC",
+      "number": "322",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "This land enters tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1. (Look at the top card of your library. You may put that card on the bottom.)",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [
+        "Scry"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/7/d79e2780-94ae-41bb-af48-c63abc726fb5.jpg"
+    },
+    "LTC0326": {
+      "id": "LTC0326",
+      "name": "Rogue's Passage",
+      "setCode": "LTC",
+      "number": "326",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}: Add {C}.\n{4}, {T}: Target creature can't be blocked this turn.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "uncommon",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/6/86438671-fdb8-4a82-b1e8-ef51fa4078df.jpg"
+    },
+    "LTC0337": {
+      "id": "LTC0337",
+      "name": "Terramorphic Expanse",
+      "setCode": "LTC",
+      "number": "337",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "colorIdentity": [],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/84a12498-9c44-4178-a8fc-54d20014ba7a.jpg"
+    },
+    "LTR0264": {
+      "id": "LTR0264",
+      "name": "Island",
+      "setCode": "LTR",
+      "number": "264",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Island",
+      "text": "({T}: Add {U}.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/b/bbeca27a-6c5b-40b9-83a4-a3a2096ff6f8.jpg"
+    },
+    "LTR0265": {
+      "id": "LTR0265",
+      "name": "Island",
+      "setCode": "LTR",
+      "number": "265",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Island",
+      "text": "({T}: Add {U}.)",
+      "colorIdentity": [
+        "U"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/671516eb-b088-4a15-aec9-1781ca016e11.jpg"
+    },
+    "LTR0266": {
+      "id": "LTR0266",
+      "name": "Swamp",
+      "setCode": "LTR",
+      "number": "266",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Swamp",
+      "text": "({T}: Add {B}.)",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/a/2a0fba6e-54d2-498c-83bc-41024307e608.jpg"
+    },
+    "LTR0267": {
+      "id": "LTR0267",
+      "name": "Swamp",
+      "setCode": "LTR",
+      "number": "267",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Swamp",
+      "text": "({T}: Add {B}.)",
+      "colorIdentity": [
+        "B"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/8/d86cd8fb-4ba7-4311-b0f3-b06fa112eda5.jpg"
+    },
+    "LTR0268": {
+      "id": "LTR0268",
+      "name": "Mountain",
+      "setCode": "LTR",
+      "number": "268",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Mountain",
+      "text": "({T}: Add {R}.)",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/3/e3731001-4e6a-4a91-9e7d-fc2ea039a60b.jpg"
+    },
+    "LTR0269": {
+      "id": "LTR0269",
+      "name": "Mountain",
+      "setCode": "LTR",
+      "number": "269",
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Basic Land — Mountain",
+      "text": "({T}: Add {R}.)",
+      "colorIdentity": [
+        "R"
+      ],
+      "colors": [],
+      "rarity": "common",
+      "power": null,
+      "toughness": null,
+      "keywords": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/d/adf13285-d127-4534-9f49-aa86914da175.jpg"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 /**
- * Mirrors the trailhead-api role DTOs.
+ * Mirrors the fellowpick-api role DTOs.
  */
 
 export interface RoleResponse {
