@@ -35,7 +35,7 @@ export function CardRow({ card, count, userPicked, onPick, onUnpick, canPick }: 
       onMouseEnter={() => setPreviewImage(card.scryfallImage)}
       onMouseLeave={() => setPreviewImage(null)}
     >
-      <Badge color="yellow" variant="filled" size="lg" w={50} style={{ flexShrink: 0 }}>
+      <Badge color="yellow" variant="outline" size="lg" w={50} style={{ flexShrink: 0 }}>
         {count}
       </Badge>
       <div style={{ flexShrink: 0, width: 100, display: 'flex', justifyContent: 'center' }}>

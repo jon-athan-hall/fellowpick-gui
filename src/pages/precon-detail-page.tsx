@@ -1,5 +1,5 @@
-import { Alert, Group, Loader, Stack, Tabs, Text, Title } from '@mantine/core';
-import { useEffect, useMemo, useRef } from 'react';
+import { Alert, Grid, Group, Loader, Pagination, Stack, Text, Title } from '@mantine/core';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
 import { usePickCountsQuery, useMyPicksQuery, useMakePickMutation, useRemovePickMutation } from '../features/picks';
@@ -84,6 +84,10 @@ export function PreconDetailPage() {
   const sortedCuts = cutsOrderRef.current ?? mainBoardCards;
   const sortedAdds = addsOrderRef.current ?? addCandidates;
 
+  const PAGE_SIZE = 25;
+  const [cutsPage, setCutsPage] = useState(1);
+  const [addsPage, setAddsPage] = useState(1);
+
   function handlePick(cardId: string, pickType: PickType) {
     if (!preconId) return;
     makePick.mutate({ preconId, cardId, pickType });
@@ -95,24 +99,37 @@ export function PreconDetailPage() {
     if (pick) removePick.mutate(pick.id);
   }
 
-  function renderCardList(cards: Card[], pickType: PickType) {
-    return cards.map((card) => (
-      <CardRow
-        key={card.id}
-        card={card}
-        count={countMap[card.id]?.[pickType] ?? 0}
-        pickType={pickType}
-        userPicked={!!myPickMap[`${card.id}:${pickType}`]}
-        onPick={() => handlePick(card.id, pickType)}
-        onUnpick={() => handleUnpick(card.id, pickType)}
-        canPick={isAuthenticated}
-      />
-    ));
+  function renderCardList(cards: Card[], pickType: PickType, page: number, setPage: (p: number) => void) {
+    const totalPages = Math.ceil(cards.length / PAGE_SIZE);
+    const start = (page - 1) * PAGE_SIZE;
+    const pageCards = cards.slice(start, start + PAGE_SIZE);
+
+    return (
+      <>
+        {pageCards.map((card) => (
+          <CardRow
+            key={card.id}
+            card={card}
+            count={countMap[card.id]?.[pickType] ?? 0}
+            pickType={pickType}
+            userPicked={!!myPickMap[`${card.id}:${pickType}`]}
+            onPick={() => handlePick(card.id, pickType)}
+            onUnpick={() => handleUnpick(card.id, pickType)}
+            canPick={isAuthenticated}
+          />
+        ))}
+        {totalPages > 1 && (
+          <Group justify="center" mt="md">
+            <Pagination total={totalPages} value={page} onChange={setPage} color="yellow" />
+          </Group>
+        )}
+      </>
+    );
   }
 
   return (
     <Stack gap="lg">
-      <div>
+      <Stack align="center" gap={4}>
         <Title order={2}>{precon.name}</Title>
         <Group gap={6} align="center">
           <Text size="sm" c="dimmed">
@@ -121,7 +138,7 @@ export function PreconDetailPage() {
           </Text>
           <ManaCost cost={precon.colorIdentity.map((c) => `{${c}}`).join('')} size={16} />
         </Group>
-      </div>
+      </Stack>
 
       {!isAuthenticated && (
         <Alert variant="light" color="blue">
@@ -132,20 +149,20 @@ export function PreconDetailPage() {
       {countsQuery.isLoading ? (
         <Loader />
       ) : (
-        <Tabs defaultValue="cuts">
-          <Tabs.List>
-            <Tabs.Tab value="cuts">CUT ({mainBoardCards.length} cards)</Tabs.Tab>
-            <Tabs.Tab value="adds">ADD ({addCandidates.length} candidates)</Tabs.Tab>
-          </Tabs.List>
-
-          <Tabs.Panel value="cuts" pt="md">
-            <Stack gap={0}>{renderCardList(sortedCuts, 'CUT')}</Stack>
-          </Tabs.Panel>
-
-          <Tabs.Panel value="adds" pt="md">
-            <Stack gap={0}>{renderCardList(sortedAdds, 'ADD')}</Stack>
-          </Tabs.Panel>
-        </Tabs>
+        <Grid>
+          <Grid.Col span={6}>
+            <Title order={3} ta="center" size="h1">CUT</Title>
+            <Stack gap={0} mt="md">
+              {renderCardList(sortedCuts, 'CUT', cutsPage, setCutsPage)}
+            </Stack>
+          </Grid.Col>
+          <Grid.Col span={6}>
+            <Title order={3} ta="center" size="h1">ADD</Title>
+            <Stack gap={0} mt="md">
+              {renderCardList(sortedAdds, 'ADD', addsPage, setAddsPage)}
+            </Stack>
+          </Grid.Col>
+        </Grid>
       )}
     </Stack>
   );
