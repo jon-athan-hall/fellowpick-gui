@@ -2,7 +2,7 @@ import { Anchor, Alert, Button, PasswordInput, Stack, TextInput, Title } from '@
 import { useForm } from '@mantine/form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useRegisterMutation } from '../features/auth';
-import { ApiError } from '../shared/api/errors';
+import { ApiError } from '../common/api/errors';
 
 // Renders the account registration form with name, email, and password fields.
 export function RegisterPage() {

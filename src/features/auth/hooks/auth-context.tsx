@@ -1,13 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
-import { registerRefreshHandler } from '../../../shared/api/client';
-import { tokenStore } from '../../../shared/api/token-store';
+import { registerRefreshHandler } from '../../../common/api/client';
+import { tokenStore } from '../../../common/api/token-store';
 import { refreshRequest } from '../api/refresh';
 import { decodeJwt, userFromClaims } from '../jwt';
 import type { AuthResponse, AuthUser } from '../types';
-import { AuthContext } from './auth-state';
-
-export type { AuthContextValue } from './auth-state';
+import { AuthContext, type AuthContextValue } from './auth-state';
 
 function userFromAuthResponse(res: AuthResponse): AuthUser | null {
   const claims = decodeJwt(res.accessToken);

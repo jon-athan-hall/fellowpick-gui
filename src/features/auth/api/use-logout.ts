@@ -1,6 +1,6 @@
 import { useMutation } from '@tanstack/react-query';
-import { apiFetch } from '../../../shared/api/client';
-import { tokenStore } from '../../../shared/api/token-store';
+import { apiFetch } from '../../../common/api/client';
+import { tokenStore } from '../../../common/api/token-store';
 import { useAuth } from '../hooks/use-auth';
 import type { MessageResponse } from '../types';
 

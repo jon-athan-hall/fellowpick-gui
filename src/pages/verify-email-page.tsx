@@ -1,7 +1,7 @@
 import { Alert, Button, Loader, Stack, Title } from '@mantine/core';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useVerifyEmailQuery } from '../features/auth';
-import { ApiError } from '../shared/api/errors';
+import { ApiError } from '../common/api/errors';
 
 // Handles email verification by consuming the token from the URL query string.
 export function VerifyEmailPage() {

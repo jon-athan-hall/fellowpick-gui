@@ -20,4 +20,22 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    // Block deep cross-feature imports — outside a feature, only the barrel is public.
+    // Internal feature files use plain relative paths (e.g. `../types`) and are unaffected.
+    files: ['src/**/*.{ts,tsx}'],
+    ignores: [
+      'src/**/__tests__/**',
+      'src/**/*.test.{ts,tsx}',
+      'src/test/**',
+    ],
+    rules: {
+      'no-restricted-imports': ['error', {
+        patterns: [{
+          regex: '^(\\.{1,2}/)+features/[^/]+/(?!index($|\\.|/))',
+          message: 'Import from the feature barrel (e.g. `../features/auth`), not from feature internals.',
+        }],
+      }],
+    },
+  },
 ])

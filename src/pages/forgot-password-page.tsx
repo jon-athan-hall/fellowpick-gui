@@ -2,7 +2,7 @@ import { Anchor, Alert, Button, Stack, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { Link } from 'react-router-dom';
 import { useForgotPasswordMutation } from '../features/auth';
-import { ApiError } from '../shared/api/errors';
+import { ApiError } from '../common/api/errors';
 
 // Renders a form to request a password reset link via email.
 export function ForgotPasswordPage() {

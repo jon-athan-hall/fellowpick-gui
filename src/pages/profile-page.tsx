@@ -4,7 +4,7 @@ import {
   ChangePasswordForm,
   ProfileDetailsForm,
   UserVerifiedBadge
-} from '../features/users';
+} from '../features/user';
 
 // Displays the current user's profile details, verification status, and password change form.
 export function ProfilePage() {

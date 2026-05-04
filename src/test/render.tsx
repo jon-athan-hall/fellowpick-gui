@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render, type RenderOptions, type RenderResult } from '@testing-library/react';
 import type { ReactElement, ReactNode } from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { AuthContext, type AuthContextValue } from '../features/auth/hooks/auth-state';
+import { AuthContext, type AuthContextValue } from '../features/auth';
 
 export interface RenderWithProvidersOptions extends Omit<RenderOptions, 'wrapper'> {
   /** Initial route(s) for the in-memory router. Defaults to ['/']. */

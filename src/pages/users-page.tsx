@@ -1,12 +1,12 @@
 import { Stack, Title } from '@mantine/core';
 import { useState } from 'react';
-import { useRolesQuery } from '../features/roles';
+import { useRolesQuery } from '../features/role';
 import {
   DeleteUserConfirm,
   UserRolesModal,
   UsersTable,
   type UserResponse
-} from '../features/users';
+} from '../features/user';
 
 // Admin page for managing users, their roles, and account deletion.
 export function UsersPage() {

@@ -1,7 +1,7 @@
 import { fireEvent, screen, waitFor } from '@testing-library/react';
 import { Route, Routes } from 'react-router-dom';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { ApiError } from '../../shared/api/errors';
+import { ApiError } from '../../common/api/errors';
 import { renderWithProviders } from '../../test/render';
 import { ResetPasswordPage } from '../reset-password-page';
 

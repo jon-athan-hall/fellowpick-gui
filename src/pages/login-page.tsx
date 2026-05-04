@@ -2,7 +2,7 @@ import { Anchor, Alert, Button, PasswordInput, Stack, TextInput, Title } from '@
 import { useForm } from '@mantine/form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLoginMutation } from '../features/auth';
-import { ApiError } from '../shared/api/errors';
+import { ApiError } from '../common/api/errors';
 
 // Renders the sign-in form with email/password fields and login validation.
 export function LoginPage() {

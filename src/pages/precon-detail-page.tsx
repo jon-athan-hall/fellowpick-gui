@@ -2,11 +2,18 @@ import { Alert, Grid, Group, Loader, Pagination, Stack, Text, Title } from '@man
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
-import { usePickCountsQuery, useMyPicksQuery, useMakePickMutation, useRemovePickMutation } from '../features/picks';
-import type { Card, PickType } from '../features/picks';
-import { CardRow } from '../features/picks/components/card-row';
-import { ManaCost } from '../features/picks/components/mana-cost';
-import { loadPrecon, loadUniverseSets, getAddCandidates } from '../features/picks/data/load-precon';
+import {
+  CardRow,
+  ManaCost,
+  getAddCandidates,
+  loadPrecon,
+  loadUniverseSets,
+  useMakePickMutation,
+  useMyPicksQuery,
+  usePickCountsQuery,
+  useRemovePickMutation,
+} from '../features/pick';
+import type { Card, PickType } from '../features/pick';
 
 // Displays a precon deck's cards with CUT/ADD pick voting and community pick counts.
 export function PreconDetailPage() {
@@ -120,7 +127,7 @@ export function PreconDetailPage() {
         ))}
         {totalPages > 1 && (
           <Group justify="center" mt="md">
-            <Pagination total={totalPages} value={page} onChange={setPage} color="yellow" />
+            <Pagination total={totalPages} value={page} onChange={setPage} />
           </Group>
         )}
       </>
@@ -149,7 +156,7 @@ export function PreconDetailPage() {
       {countsQuery.isLoading ? (
         <Loader />
       ) : (
-        <Grid>
+        <Grid gutter="xl">
           <Grid.Col span={6}>
             <Title order={3} ta="center" size="h1">CUT</Title>
             <Stack gap={0} mt="md">

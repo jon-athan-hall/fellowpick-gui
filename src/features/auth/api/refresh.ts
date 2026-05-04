@@ -1,11 +1,11 @@
-import { apiFetch } from '../../../shared/api/client';
-import { tokenStore } from '../../../shared/api/token-store';
+import { apiFetch } from '../../../common/api/client';
+import { tokenStore } from '../../../common/api/token-store';
 import type { AuthResponse } from '../types';
 
 /**
  * Refresh is a plain function (no hook) because it's called from two
  * non-component contexts:
- *   1. The API client's 401 interceptor in shared/api/client.ts
+ *   1. The API client's 401 interceptor in common/api/client.ts
  *   2. The AuthContext's rehydrate-on-mount effect
  *
  * Sends the stored refresh token in `body` mode; sends no body in `cookie`

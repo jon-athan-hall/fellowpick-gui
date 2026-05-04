@@ -2,7 +2,7 @@ import { fireEvent, screen, waitFor } from '@testing-library/react';
 import { Route, Routes } from 'react-router-dom';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { AuthUser } from '../../features/auth/types';
-import { ApiError } from '../../shared/api/errors';
+import { ApiError } from '../../common/api/errors';
 import { renderWithProviders } from '../../test/render';
 import { ProfilePage } from '../profile-page';
 
@@ -12,7 +12,7 @@ const { updateMock, changePasswordMock, resendMock } = vi.hoisted(() => ({
   resendMock: vi.fn()
 }));
 
-vi.mock('../../features/users/api/use-update-user', async () => {
+vi.mock('../../features/user/api/use-update-user', async () => {
   const { useMutation } = await import('@tanstack/react-query');
   return {
     updateUserRequest: (vars: unknown) => updateMock(vars),
@@ -21,7 +21,7 @@ vi.mock('../../features/users/api/use-update-user', async () => {
   };
 });
 
-vi.mock('../../features/users/api/use-change-password', async () => {
+vi.mock('../../features/user/api/use-change-password', async () => {
   const { useMutation } = await import('@tanstack/react-query');
   return {
     changePasswordRequest: (vars: unknown) => changePasswordMock(vars),

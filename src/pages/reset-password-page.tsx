@@ -2,7 +2,7 @@ import { Anchor, Alert, Button, PasswordInput, Stack, Title } from '@mantine/cor
 import { useForm } from '@mantine/form';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useResetPasswordMutation } from '../features/auth';
-import { ApiError } from '../shared/api/errors';
+import { ApiError } from '../common/api/errors';
 
 // Renders the password reset form using a token from the email link.
 export function ResetPasswordPage() {

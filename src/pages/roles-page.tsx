@@ -5,7 +5,7 @@ import {
   RoleFormModal,
   RolesTable,
   type RoleResponse
-} from '../features/roles';
+} from '../features/role';
 
 // Admin page for creating, editing, and deleting roles.
 export function RolesPage() {

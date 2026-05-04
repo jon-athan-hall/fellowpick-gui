@@ -1,5 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
-import { apiFetch } from '../../../shared/api/client';
+import { apiFetch } from '../../../common/api/client';
 import { useAuth } from '../hooks/use-auth';
 import type { AuthResponse, RegisterRequest } from '../types';
 

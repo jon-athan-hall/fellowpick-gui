@@ -12,7 +12,7 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import { Link, Outlet, useNavigate, useParams } from 'react-router-dom';
 import { useLogoutMutation, useAuth } from '../features/auth';
-import { useCardPreview } from '../features/picks/hooks/use-card-preview';
+import { useCardPreview } from '../features/pick';
 import universes from '../data/universes.json';
 
 // Renders the application shell with header, sidebar universe selector, and routed content.
