@@ -98,7 +98,7 @@ export function AppLayout() {
             <Menu position="bottom-end" withArrow>
               <Menu.Target>
                 <UnstyledButton aria-label="Guest menu">
-                  <Avatar color="gray" radius="xl" />
+                  <Avatar color="secondary" radius="xl" />
                 </UnstyledButton>
               </Menu.Target>
               <Menu.Dropdown>

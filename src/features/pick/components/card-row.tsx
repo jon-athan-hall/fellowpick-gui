@@ -15,12 +15,13 @@ interface CardRowProps {
 }
 
 // Displays a single card row with pick count, mana cost, name, and vote toggle.
-export function CardRow({ card, count, userPicked, onPick, onUnpick, canPick }: CardRowProps) {
+export function CardRow({ card, count, pickType, userPicked, onPick, onUnpick, canPick }: CardRowProps) {
   const { setPreviewImage } = useCardPreview();
+  const accentColor = pickType === 'CUT' ? 'red' : 'secondary';
 
   return (
     <Group
-      justify="space-between"
+      gap="md"
       py={4}
       px="xs"
       wrap="nowrap"
@@ -35,25 +36,28 @@ export function CardRow({ card, count, userPicked, onPick, onUnpick, canPick }: 
       onMouseEnter={() => setPreviewImage(card.scryfallImage)}
       onMouseLeave={() => setPreviewImage(null)}
     >
-      <Badge variant="outline" size="lg" w={50} style={{ flexShrink: 0 }}>
-        {count}
-      </Badge>
-      <div style={{ flexShrink: 0, width: 100, display: 'flex', justifyContent: 'center' }}>
+      <Group gap={8} wrap="nowrap" style={{ flexShrink: 0 }}>
+        <Badge variant="outline" size="lg" w={50} color={accentColor}>
+          {count}
+        </Badge>
+        {canPick && (
+          <Switch
+            checked={userPicked}
+            readOnly
+            size="sm"
+            color={accentColor}
+            tabIndex={-1}
+            withThumbIndicator={false}
+            styles={{ track: { cursor: 'pointer' } }}
+          />
+        )}
+      </Group>
+      <div style={{ flexShrink: 0, width: 80, display: 'flex', justifyContent: 'flex-end' }}>
         {card.manaCost && <ManaCost cost={card.manaCost} size={16} />}
       </div>
       <Text size="md" fw={500} truncate style={{ flex: 1, minWidth: 0 }}>
         {card.name}
       </Text>
-      {canPick && (
-        <Switch
-          checked={userPicked}
-          readOnly
-          size="sm"
-          tabIndex={-1}
-          withThumbIndicator={false}
-          styles={{ track: { cursor: 'pointer' } }}
-        />
-      )}
     </Group>
   );
 }
