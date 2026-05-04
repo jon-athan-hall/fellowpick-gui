@@ -1,0 +1,5978 @@
+{
+  "setCode": "FIN",
+  "name": "Final Fantasy",
+  "releaseDate": "2025-06-13",
+  "totalCards": 691,
+  "cards": {
+    "FIN0001": {
+      "id": "FIN0001",
+      "name": "Summon: Bahamut",
+      "manaCost": "{9}",
+      "type": "Enchantment Creature — Saga Dragon",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/5/95318d85-4a08-47ac-a43d-ea83c0bea81c.jpg"
+    },
+    "FIN0002": {
+      "id": "FIN0002",
+      "name": "Ultima, Origin of Oblivion",
+      "manaCost": "{5}",
+      "type": "Legendary Creature — God",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d55a4c02-1aa4-454c-9041-84937377a53b.jpg"
+    },
+    "FIN0003": {
+      "id": "FIN0003",
+      "name": "Adelbert Steiner",
+      "manaCost": "{1}{W}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/a/1a67a991-1e52-4676-a2e3-2bc7aa943ab3.jpg"
+    },
+    "FIN0004": {
+      "id": "FIN0004",
+      "name": "Aerith Gainsborough",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/8/e86328b6-ded2-41df-8b6e-4a770e7b171e.jpg"
+    },
+    "FIN0005": {
+      "id": "FIN0005",
+      "name": "Aerith Rescue Mission",
+      "manaCost": "{3}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/1/3123d16c-e1e6-4659-a7a3-2ec6efc6bf08.jpg"
+    },
+    "FIN0006": {
+      "id": "FIN0006",
+      "name": "Ambrosia Whiteheart",
+      "manaCost": "{1}{W}",
+      "type": "Legendary Creature — Bird",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/2/f2596767-7d19-4110-86ed-3cfc93ac7483.jpg"
+    },
+    "FIN0007": {
+      "id": "FIN0007",
+      "name": "Ashe, Princess of Dalmasca",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Rebel Noble",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/f/ffe0596f-ef99-4862-9386-0fe455259995.jpg"
+    },
+    "FIN0008": {
+      "id": "FIN0008",
+      "name": "Auron's Inspiration",
+      "manaCost": "{2}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/7/77d82764-563c-4bc2-b568-625ec7215e0d.jpg"
+    },
+    "FIN0009": {
+      "id": "FIN0009",
+      "name": "Battle Menu",
+      "manaCost": "{1}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/4/240e1466-bd02-423d-b829-234dcd2bfab2.jpg"
+    },
+    "FIN0010": {
+      "id": "FIN0010",
+      "name": "Cloud, Midgar Mercenary",
+      "manaCost": "{W}{W}",
+      "type": "Legendary Creature — Human Soldier Mercenary",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/c/2cf7e8a3-fad7-413d-b17c-7519a9cf5fb5.jpg"
+    },
+    "FIN0011": {
+      "id": "FIN0011",
+      "name": "Cloudbound Moogle",
+      "manaCost": "{3}{W}{W}",
+      "type": "Creature — Moogle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/3/7387bca7-f496-45da-a0ac-6be049303a8f.jpg"
+    },
+    "FIN0012": {
+      "id": "FIN0012",
+      "name": "Coeurl",
+      "manaCost": "{1}{W}",
+      "type": "Creature — Cat Beast",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/6/7604b534-5480-42fa-bc36-bbae730f8582.jpg"
+    },
+    "FIN0013": {
+      "id": "FIN0013",
+      "name": "Crystal Fragments // Summon: Alexander",
+      "manaCost": null,
+      "type": "Enchantment Creature — Saga Construct",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/f/5f51c853-949d-44e9-a3a2-02e1ce69a147.jpg"
+    },
+    "FIN0014": {
+      "id": "FIN0014",
+      "name": "The Crystal's Chosen",
+      "manaCost": "{5}{W}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/4/d4df4373-0ee6-44e3-81c6-0881c070014c.jpg"
+    },
+    "FIN0015": {
+      "id": "FIN0015",
+      "name": "Delivery Moogle",
+      "manaCost": "{3}{W}",
+      "type": "Creature — Moogle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f58840dc-c641-4092-8b67-9c0d449af715.jpg"
+    },
+    "FIN0016": {
+      "id": "FIN0016",
+      "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Dragon",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8c0f9306-2058-476d-a711-bd37a6e15e42.jpg"
+    },
+    "FIN0017": {
+      "id": "FIN0017",
+      "name": "Dragoon's Lance",
+      "manaCost": "{1}{W}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/6/96630531-8eb7-4e3e-8d63-60c562a5571b.jpg"
+    },
+    "FIN0018": {
+      "id": "FIN0018",
+      "name": "Dwarven Castle Guard",
+      "manaCost": "{1}{W}",
+      "type": "Creature — Dwarf Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/1/e17c0d27-e88d-4ba9-acbb-3f916cee3d7e.jpg"
+    },
+    "FIN0019": {
+      "id": "FIN0019",
+      "name": "Fate of the Sun-Cryst",
+      "manaCost": "{4}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/0/900cdf11-b42e-4dcc-97c3-2e4d8e406a70.jpg"
+    },
+    "FIN0020": {
+      "id": "FIN0020",
+      "name": "From Father to Son",
+      "manaCost": "{1}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0c730a3b-334e-466b-bb9b-4b41fce2af6d.jpg"
+    },
+    "FIN0021": {
+      "id": "FIN0021",
+      "name": "G'raha Tia",
+      "manaCost": "{4}{W}",
+      "type": "Legendary Creature — Cat Archer",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/7/076a8eca-ed73-4ee9-aab4-d9d43d394ee6.jpg"
+    },
+    "FIN0022": {
+      "id": "FIN0022",
+      "name": "Gaelicat",
+      "manaCost": "{2}{W}",
+      "type": "Creature — Cat",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/9/29606c49-e1a4-49c3-883b-9122c08bbbc7.jpg"
+    },
+    "FIN0023": {
+      "id": "FIN0023",
+      "name": "Machinist's Arsenal",
+      "manaCost": "{4}{W}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/f/ff976428-2145-4630-aab1-08870b90b2f0.jpg"
+    },
+    "FIN0024": {
+      "id": "FIN0024",
+      "name": "Magitek Armor",
+      "manaCost": "{3}{W}",
+      "type": "Artifact — Vehicle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/9/59c4a1a2-623c-43b2-8005-ecb5c6436c10.jpg"
+    },
+    "FIN0025": {
+      "id": "FIN0025",
+      "name": "Magitek Infantry",
+      "manaCost": "{W}",
+      "type": "Artifact Creature — Robot Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/6/b64dc6d7-dd01-4e66-9099-4c90865448df.jpg"
+    },
+    "FIN0026": {
+      "id": "FIN0026",
+      "name": "Minwu, White Mage",
+      "manaCost": "{3}{W}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/8/6822144f-f0eb-4e10-a217-52cad36d2973.jpg"
+    },
+    "FIN0027": {
+      "id": "FIN0027",
+      "name": "Moogles' Valor",
+      "manaCost": "{3}{W}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/a/caa838a7-60a9-4791-af5b-194f7574c4c8.jpg"
+    },
+    "FIN0028": {
+      "id": "FIN0028",
+      "name": "Paladin's Arms",
+      "manaCost": "{2}{W}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/446506c5-5e1d-4b42-aef3-ea247d7881ef.jpg"
+    },
+    "FIN0029": {
+      "id": "FIN0029",
+      "name": "Phoenix Down",
+      "manaCost": "{W}",
+      "type": "Artifact",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/2/62e299b0-9ef6-49d3-aa79-384325fed89e.jpg"
+    },
+    "FIN0030": {
+      "id": "FIN0030",
+      "name": "Restoration Magic",
+      "manaCost": "{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/9/494e68e9-ecba-4482-82bc-207ad59144c1.jpg"
+    },
+    "FIN0031": {
+      "id": "FIN0031",
+      "name": "Sidequest: Catch a Fish // Cooking Campsite",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.jpg"
+    },
+    "FIN0032": {
+      "id": "FIN0032",
+      "name": "Slash of Light",
+      "manaCost": "{1}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/a/da6d9529-3cb0-4adc-8209-b9b02db3bf54.jpg"
+    },
+    "FIN0033": {
+      "id": "FIN0033",
+      "name": "Snow Villiers",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Rebel Monk",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/9/399bb699-e61d-4b41-b6e9-e594cbad6194.jpg"
+    },
+    "FIN0034": {
+      "id": "FIN0034",
+      "name": "Stiltzkin, Moogle Merchant",
+      "manaCost": "{W}",
+      "type": "Legendary Creature — Moogle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/6/06a972a4-0c1b-4f12-a5a5-fdea47c4cd35.jpg"
+    },
+    "FIN0035": {
+      "id": "FIN0035",
+      "name": "Summon: Choco/Mog",
+      "manaCost": "{2}{W}",
+      "type": "Enchantment Creature — Saga Bird Moogle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/0/00546117-018a-4286-bc20-b5446c5be56f.jpg"
+    },
+    "FIN0036": {
+      "id": "FIN0036",
+      "name": "Summon: Knights of Round",
+      "manaCost": "{6}{W}{W}",
+      "type": "Enchantment Creature — Saga Knight",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/44d23652-077e-4c1f-b640-b284685db911.jpg"
+    },
+    "FIN0037": {
+      "id": "FIN0037",
+      "name": "Summon: Primal Garuda",
+      "manaCost": "{3}{W}",
+      "type": "Enchantment Creature — Saga Harpy",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e44497a8-067e-454e-a9c0-684f03df55ff.jpg"
+    },
+    "FIN0038": {
+      "id": "FIN0038",
+      "name": "Ultima",
+      "manaCost": "{3}{W}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/9/39504a0e-f63f-4907-afd7-c4492f6b8a3b.jpg"
+    },
+    "FIN0039": {
+      "id": "FIN0039",
+      "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
+      "manaCost": null,
+      "type": "Legendary Creature — God",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/6/2625c00d-0a51-4481-bf36-cf13a2546242.jpg"
+    },
+    "FIN0040": {
+      "id": "FIN0040",
+      "name": "Weapons Vendor",
+      "manaCost": "{3}{W}",
+      "type": "Creature — Human Artificer",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c9e6b374-3e44-4df7-b0a3-4ef98dc08267.jpg"
+    },
+    "FIN0041": {
+      "id": "FIN0041",
+      "name": "White Auracite",
+      "manaCost": "{2}{W}{W}",
+      "type": "Artifact",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/d/2df6f515-9d21-4769-b1c4-c219611bccbb.jpg"
+    },
+    "FIN0042": {
+      "id": "FIN0042",
+      "name": "White Mage's Staff",
+      "manaCost": "{1}{W}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/0/30db372e-0b4c-4e16-9667-bf3fda666f72.jpg"
+    },
+    "FIN0043": {
+      "id": "FIN0043",
+      "name": "The Wind Crystal",
+      "manaCost": "{2}{W}{W}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/9/19bd0885-baaa-40f2-9c59-b1ea53807540.jpg"
+    },
+    "FIN0044": {
+      "id": "FIN0044",
+      "name": "You're Not Alone",
+      "manaCost": "{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/8/1867b5cb-2bb0-4f49-b302-036fdffa2344.jpg"
+    },
+    "FIN0045": {
+      "id": "FIN0045",
+      "name": "Zack Fair",
+      "manaCost": "{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/2/f21f9161-5945-40da-8da0-446f6a4a1c23.jpg"
+    },
+    "FIN0046": {
+      "id": "FIN0046",
+      "name": "Astrologian's Planisphere",
+      "manaCost": "{1}{U}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/f/bfa4e927-1d6f-4a64-9801-7d168a5ef3f6.jpg"
+    },
+    "FIN0047": {
+      "id": "FIN0047",
+      "name": "Cargo Ship",
+      "manaCost": "{1}{U}",
+      "type": "Artifact — Vehicle",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/3/932b865c-bfe7-4bb7-82e9-2403cf0e0522.jpg"
+    },
+    "FIN0048": {
+      "id": "FIN0048",
+      "name": "Combat Tutorial",
+      "manaCost": "{2}{U}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/c/ec195607-ac30-4931-acfd-f9d8ac8b047f.jpg"
+    },
+    "FIN0049": {
+      "id": "FIN0049",
+      "name": "Dragoon's Wyvern",
+      "manaCost": "{2}{U}",
+      "type": "Creature — Drake",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d92bce20-308e-4841-aaf8-8e20698292e7.jpg"
+    },
+    "FIN0050": {
+      "id": "FIN0050",
+      "name": "Dreams of Laguna",
+      "manaCost": "{1}{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/a/ba752243-2727-4b8a-8e21-e70becfd4ff3.jpg"
+    },
+    "FIN0051": {
+      "id": "FIN0051",
+      "name": "Edgar, King of Figaro",
+      "manaCost": "{4}{U}{U}",
+      "type": "Legendary Creature — Human Artificer Noble",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/5/950ee302-5512-43c5-ac7c-b2b06f4177bf.jpg"
+    },
+    "FIN0052": {
+      "id": "FIN0052",
+      "name": "Eject",
+      "manaCost": "{3}{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/e/aec83c9a-8ec4-4a5a-b27f-0e74a2b3d21e.jpg"
+    },
+    "FIN0053": {
+      "id": "FIN0053",
+      "name": "Ether",
+      "manaCost": "{3}{U}",
+      "type": "Artifact",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/9/896ee6e9-15a9-4974-b576-50f4759fac38.jpg"
+    },
+    "FIN0054": {
+      "id": "FIN0054",
+      "name": "Gogo, Master of Mimicry",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/c/cce4eb99-d960-4ab7-911a-bb4ea74d1775.jpg"
+    },
+    "FIN0055": {
+      "id": "FIN0055",
+      "name": "Ice Flan",
+      "manaCost": "{4}{U}{U}",
+      "type": "Creature — Elemental Ooze",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/d/ad304c9c-943f-442f-bb82-ff378ad7d7ba.jpg"
+    },
+    "FIN0056": {
+      "id": "FIN0056",
+      "name": "Ice Magic",
+      "manaCost": "{1}{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9dabd626-7ec3-4913-babb-d5d3fd5e32d5.jpg"
+    },
+    "FIN0057": {
+      "id": "FIN0057",
+      "name": "Il Mheg Pixie",
+      "manaCost": "{1}{U}",
+      "type": "Creature — Faerie",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/e/ae612312-3a8e-495f-8730-deaaf7505ca1.jpg"
+    },
+    "FIN0058": {
+      "id": "FIN0058",
+      "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Elemental",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/f/1f163763-4802-4a96-a5bc-f3c381db7b5c.jpg"
+    },
+    "FIN0059": {
+      "id": "FIN0059",
+      "name": "Louisoix's Sacrifice",
+      "manaCost": "{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/a/4a6976f2-0bd5-449a-8fcf-f5a732ce22c1.jpg"
+    },
+    "FIN0060": {
+      "id": "FIN0060",
+      "name": "The Lunar Whale",
+      "manaCost": "{3}{U}",
+      "type": "Legendary Artifact — Vehicle",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/e/ae875471-346c-4a76-b26f-b7205dad5b80.jpg"
+    },
+    "FIN0061": {
+      "id": "FIN0061",
+      "name": "Magic Damper",
+      "manaCost": "{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/44921b2e-5938-4f63-92b9-0b719a2f8c68.jpg"
+    },
+    "FIN0062": {
+      "id": "FIN0062",
+      "name": "Matoya, Archon Elder",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Human Warlock",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/d/1dd61cf6-2fb5-4cff-ab00-7677ac85774c.jpg"
+    },
+    "FIN0063": {
+      "id": "FIN0063",
+      "name": "Memories Returning",
+      "manaCost": "{2}{U}{U}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/7/a753abfc-35d3-4faf-ab35-3b51aa778174.jpg"
+    },
+    "FIN0064": {
+      "id": "FIN0064",
+      "name": "The Prima Vista",
+      "manaCost": "{4}{U}",
+      "type": "Legendary Artifact — Vehicle",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/3/e3998132-5746-4dde-9529-97d3ad7d7361.jpg"
+    },
+    "FIN0065": {
+      "id": "FIN0065",
+      "name": "Qiqirn Merchant",
+      "manaCost": "{2}{U}",
+      "type": "Creature — Beast Citizen",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/7/a75a6ecc-a6a5-462c-bd92-ae57dde9b965.jpg"
+    },
+    "FIN0066": {
+      "id": "FIN0066",
+      "name": "Quistis Trepe",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/1/61784cbd-92e9-43c7-a1a8-4004b1bf4dae.jpg"
+    },
+    "FIN0067": {
+      "id": "FIN0067",
+      "name": "Relm's Sketching",
+      "manaCost": "{2}{U}{U}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/a/6aedac12-3714-4a81-bd4d-1d2555c66f78.jpg"
+    },
+    "FIN0068": {
+      "id": "FIN0068",
+      "name": "Retrieve the Esper",
+      "manaCost": "{3}{U}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/b/ebd733f0-8883-434a-b36c-ef76b091fe8e.jpg"
+    },
+    "FIN0069": {
+      "id": "FIN0069",
+      "name": "Rook Turret",
+      "manaCost": "{3}{U}",
+      "type": "Artifact Creature — Construct",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/5/4572884d-0c0e-41e7-b219-f76b95fdbd01.jpg"
+    },
+    "FIN0070": {
+      "id": "FIN0070",
+      "name": "Sage's Nouliths",
+      "manaCost": "{1}{U}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/1/a12ff7c3-6ae0-4098-9240-ff3fd16a5288.jpg"
+    },
+    "FIN0071": {
+      "id": "FIN0071",
+      "name": "Sahagin",
+      "manaCost": "{1}{U}",
+      "type": "Creature — Merfolk Warrior",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/1/516940c7-c271-4f64-af75-c7ba98548382.jpg"
+    },
+    "FIN0072": {
+      "id": "FIN0072",
+      "name": "Scorpion Sentinel",
+      "manaCost": "{1}{U}",
+      "type": "Artifact Creature — Robot Scorpion",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/8/08ab5220-e5c1-472e-8217-97fd60e1773c.jpg"
+    },
+    "FIN0073": {
+      "id": "FIN0073",
+      "name": "Sidequest: Card Collection // Magicked Card",
+      "manaCost": null,
+      "type": "Artifact — Vehicle",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/a/8ac3d2c9-5978-4cfb-a746-c901decff093.jpg"
+    },
+    "FIN0074": {
+      "id": "FIN0074",
+      "name": "Sleep Magic",
+      "manaCost": "{U}",
+      "type": "Enchantment — Aura",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c96cae63-7625-48e3-aaba-5b1632a8642d.jpg"
+    },
+    "FIN0075": {
+      "id": "FIN0075",
+      "name": "Stolen Uniform",
+      "manaCost": "{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/d/0d80c511-2f4d-4f77-8143-7b49b2b19fae.jpg"
+    },
+    "FIN0076": {
+      "id": "FIN0076",
+      "name": "Stuck in Summoner's Sanctum",
+      "manaCost": "{2}{U}",
+      "type": "Enchantment — Aura",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/6/6678501e-6349-4e37-ab4c-a31a3d408d52.jpg"
+    },
+    "FIN0077": {
+      "id": "FIN0077",
+      "name": "Summon: Leviathan",
+      "manaCost": "{4}{U}{U}",
+      "type": "Enchantment Creature — Saga Leviathan",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea7f26a9-b203-4ee7-88f1-3d9c77a25bcb.jpg"
+    },
+    "FIN0078": {
+      "id": "FIN0078",
+      "name": "Summon: Shiva",
+      "manaCost": "{3}{U}{U}",
+      "type": "Enchantment Creature — Saga Elemental",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/8/a80511f8-7cb1-4974-afde-8a5cebe13ad7.jpg"
+    },
+    "FIN0079": {
+      "id": "FIN0079",
+      "name": "Swallowed by Leviathan",
+      "manaCost": "{2}{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/2/2270642d-fe2a-4265-aff0-a24a43ebe0a1.jpg"
+    },
+    "FIN0080": {
+      "id": "FIN0080",
+      "name": "Syncopate",
+      "manaCost": "{X}{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/3/83e1cd8d-5b97-427a-be75-2a1947f9c59b.jpg"
+    },
+    "FIN0081": {
+      "id": "FIN0081",
+      "name": "Thief's Knife",
+      "manaCost": "{2}{U}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c2dcfd0a-3f52-4616-a09a-fd2db8b6b93e.jpg"
+    },
+    "FIN0082": {
+      "id": "FIN0082",
+      "name": "Travel the Overworld",
+      "manaCost": "{5}{U}{U}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/a/aa5086e0-e2f2-498f-9035-1b31e1d21e0a.jpg"
+    },
+    "FIN0083": {
+      "id": "FIN0083",
+      "name": "Ultros, Obnoxious Octopus",
+      "manaCost": "{1}{U}",
+      "type": "Legendary Creature — Octopus",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/4/14379198-9a0a-4853-9d51-fb074a24b1c0.jpg"
+    },
+    "FIN0084": {
+      "id": "FIN0084",
+      "name": "Valkyrie Aerial Unit",
+      "manaCost": "{5}{U}{U}",
+      "type": "Artifact Creature — Construct",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/4/b40a055f-ea66-44d4-b058-a328a3d10994.jpg"
+    },
+    "FIN0085": {
+      "id": "FIN0085",
+      "name": "The Water Crystal",
+      "manaCost": "{2}{U}{U}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/0/e0af8436-797b-4e1f-b21a-d8e93701c3c9.jpg"
+    },
+    "FIN0086": {
+      "id": "FIN0086",
+      "name": "Y'shtola Rhul",
+      "manaCost": "{4}{U}{U}",
+      "type": "Legendary Creature — Cat Druid",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/e/aef218fa-13a4-4653-95d6-6b3ef1b33a92.jpg"
+    },
+    "FIN0087": {
+      "id": "FIN0087",
+      "name": "Ahriman",
+      "manaCost": "{2}{B}",
+      "type": "Creature — Eye Horror",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/6/162a415c-5465-497e-8f4e-c6f09681641d.jpg"
+    },
+    "FIN0088": {
+      "id": "FIN0088",
+      "name": "Al Bhed Salvagers",
+      "manaCost": "{2}{B}",
+      "type": "Creature — Human Artificer Warrior",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/8/58ccdcfc-a669-480f-bded-4273cfaf2045.jpg"
+    },
+    "FIN0089": {
+      "id": "FIN0089",
+      "name": "Ardyn, the Usurper",
+      "manaCost": "{5}{B}{B}{B}",
+      "type": "Legendary Creature — Elder Human Noble",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/6/4627072e-9c72-4084-8021-690777342548.jpg"
+    },
+    "FIN0090": {
+      "id": "FIN0090",
+      "name": "Black Mage's Rod",
+      "manaCost": "{1}{B}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/5/35e8f140-055f-4fc7-a765-fb030d828214.jpg"
+    },
+    "FIN0091": {
+      "id": "FIN0091",
+      "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
+      "manaCost": null,
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/2/026e7167-d665-43d0-a51e-8df2d68cdb5e.jpg"
+    },
+    "FIN0092": {
+      "id": "FIN0092",
+      "name": "Circle of Power",
+      "manaCost": "{3}{B}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c969bd0f-f174-4e2f-b95c-c9ccd5d0b8ba.jpg"
+    },
+    "FIN0093": {
+      "id": "FIN0093",
+      "name": "Cornered by Black Mages",
+      "manaCost": "{1}{B}{B}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/8/688fcf8a-0a44-416a-8086-83acf9a6fe69.jpg"
+    },
+    "FIN0094": {
+      "id": "FIN0094",
+      "name": "Dark Confidant",
+      "manaCost": "{1}{B}",
+      "type": "Creature — Human Wizard",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/5/2520ab23-a068-4462-b261-2754409b4108.jpg"
+    },
+    "FIN0095": {
+      "id": "FIN0095",
+      "name": "Dark Knight's Greatsword",
+      "manaCost": "{2}{B}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b50dcc7c-260f-4d8c-9a9e-9244ec23a91e.jpg"
+    },
+    "FIN0096": {
+      "id": "FIN0096",
+      "name": "The Darkness Crystal",
+      "manaCost": "{2}{B}{B}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f93b6ac-54ce-45d0-8549-19307406e6e5.jpg"
+    },
+    "FIN0097": {
+      "id": "FIN0097",
+      "name": "Demon Wall",
+      "manaCost": "{1}{B}",
+      "type": "Artifact Creature — Demon Wall",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/3/13abd96c-d1af-43d0-b3a4-ac3db20e3b51.jpg"
+    },
+    "FIN0098": {
+      "id": "FIN0098",
+      "name": "Evil Reawakened",
+      "manaCost": "{4}{B}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/b/eb98cbc3-749c-44f4-974c-00be1286d69e.jpg"
+    },
+    "FIN0099": {
+      "id": "FIN0099",
+      "name": "Ragnarok, Divine Deliverance",
+      "manaCost": null,
+      "type": "Legendary Creature — Beast Avatar",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/1/01c5bafe-c995-4cef-90fb-7ccb95858511.jpg"
+    },
+    "FIN0100": {
+      "id": "FIN0100",
+      "name": "Fight On!",
+      "manaCost": "{2}{B}",
+      "type": "Instant",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/1/e1b0739a-dcc4-4034-96d7-69e551b2f36b.jpg"
+    },
+    "FIN0101": {
+      "id": "FIN0101",
+      "name": "The Final Days",
+      "manaCost": "{2}{B}{B}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/b/bbf01770-6d0f-4015-b4b4-a74a53cb767a.jpg"
+    },
+    "FIN0102": {
+      "id": "FIN0102",
+      "name": "Gaius van Baelsar",
+      "manaCost": "{2}{B}{B}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a4ee8ba5-6a79-4652-b2a4-a3dae804bc28.jpg"
+    },
+    "FIN0103": {
+      "id": "FIN0103",
+      "name": "Hecteyes",
+      "manaCost": "{1}{B}",
+      "type": "Creature — Ooze Horror",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/6/8680d052-c07b-4d9b-bda9-b5f69f44f424.jpg"
+    },
+    "FIN0104": {
+      "id": "FIN0104",
+      "name": "Jecht, Reluctant Guardian // Braska's Final Aeon",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Nightmare",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/e/4ec91fe8-b3da-47fa-b45e-94b62a260aba.jpg"
+    },
+    "FIN0105": {
+      "id": "FIN0105",
+      "name": "Kain, Traitorous Dragoon",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/8/f8c86be0-e1b3-4a78-9254-238dd936914b.jpg"
+    },
+    "FIN0106": {
+      "id": "FIN0106",
+      "name": "Malboro",
+      "manaCost": "{4}{B}{B}",
+      "type": "Creature — Plant Horror",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e46d8048-03ce-4e07-ba24-f41ba6140a4e.jpg"
+    },
+    "FIN0107": {
+      "id": "FIN0107",
+      "name": "Namazu Trader",
+      "manaCost": "{3}{B}",
+      "type": "Creature — Fish Citizen",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/9/f9d25b34-990d-416c-aef7-1b5a73f19dd4.jpg"
+    },
+    "FIN0108": {
+      "id": "FIN0108",
+      "name": "Ninja's Blades",
+      "manaCost": "{2}{B}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6b5af82-3646-44f9-ac12-1d7fa698f037.jpg"
+    },
+    "FIN0109": {
+      "id": "FIN0109",
+      "name": "Overkill",
+      "manaCost": "{2}{B}",
+      "type": "Instant",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/e/ae075e71-d33d-4d6c-b4a5-0b47dd6fd196.jpg"
+    },
+    "FIN0110": {
+      "id": "FIN0110",
+      "name": "Phantom Train",
+      "manaCost": "{3}{B}",
+      "type": "Artifact — Vehicle",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/a/7a50d2ac-101d-41e1-b400-18fa7d2d7125.jpg"
+    },
+    "FIN0111": {
+      "id": "FIN0111",
+      "name": "Poison the Waters",
+      "manaCost": "{1}{B}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/f/ff2bafe7-4d0f-464d-b7ba-55a54366fc68.jpg"
+    },
+    "FIN0112": {
+      "id": "FIN0112",
+      "name": "Qutrub Forayer",
+      "manaCost": "{2}{B}",
+      "type": "Creature — Zombie Horror",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/4/7475ecf6-23f5-45af-9ef0-ac7923bbc9cb.jpg"
+    },
+    "FIN0113": {
+      "id": "FIN0113",
+      "name": "Reno and Rude",
+      "manaCost": "{1}{B}",
+      "type": "Legendary Creature — Human Assassin",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b5eb0064-c7c4-4e3e-add2-b86269de3fb9.jpg"
+    },
+    "FIN0114": {
+      "id": "FIN0114",
+      "name": "Resentful Revelation",
+      "manaCost": "{1}{B}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/4/945006ea-c6a1-4ee5-abb2-387c2b6d3123.jpg"
+    },
+    "FIN0115": {
+      "id": "FIN0115",
+      "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
+      "manaCost": null,
+      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/5/85eaf5e7-77dc-4842-a70c-ce4ac7f724df.jpg"
+    },
+    "FIN0116": {
+      "id": "FIN0116",
+      "name": "Sephiroth's Intervention",
+      "manaCost": "{3}{B}",
+      "type": "Instant",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/f/cf7df82f-937a-443f-813f-2bcc6944c5c0.jpg"
+    },
+    "FIN0117": {
+      "id": "FIN0117",
+      "name": "Shambling Cie'th",
+      "manaCost": "{2}{B}",
+      "type": "Creature — Mutant Horror",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/0/f02ce338-4fe2-44b0-a896-3ed7e6c874a3.jpg"
+    },
+    "FIN0118": {
+      "id": "FIN0118",
+      "name": "Shinra Reinforcements",
+      "manaCost": "{2}{B}",
+      "type": "Creature — Human Soldier",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/3/7367b257-1a8c-4593-a307-7116e36e0342.jpg"
+    },
+    "FIN0119": {
+      "id": "FIN0119",
+      "name": "Sidequest: Hunt the Mark // Yiazmat, Ultimate Mark",
+      "manaCost": null,
+      "type": "Legendary Creature — Dragon",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/3/c3eb2ae5-10de-4c3d-91c8-8734befc80b2.jpg"
+    },
+    "FIN0120": {
+      "id": "FIN0120",
+      "name": "Summon: Anima",
+      "manaCost": "{4}{B}{B}",
+      "type": "Enchantment Creature — Saga Horror",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/a/aa4f6703-21f8-4c29-ad5a-5afb54188ade.jpg"
+    },
+    "FIN0121": {
+      "id": "FIN0121",
+      "name": "Summon: Primal Odin",
+      "manaCost": "{4}{B}{B}",
+      "type": "Enchantment Creature — Saga Knight",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/b/8b1b5f06-e34d-44a3-976e-5157c4b7a0f4.jpg"
+    },
+    "FIN0122": {
+      "id": "FIN0122",
+      "name": "Tonberry",
+      "manaCost": "{B}",
+      "type": "Creature — Salamander Horror",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/a/1a9b8723-4383-4c14-b24d-52863af8703d.jpg"
+    },
+    "FIN0123": {
+      "id": "FIN0123",
+      "name": "Undercity Dire Rat",
+      "manaCost": "{1}{B}",
+      "type": "Creature — Rat",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/7/274788f4-fbf3-4a15-bdc0-f513a2fde30d.jpg"
+    },
+    "FIN0124": {
+      "id": "FIN0124",
+      "name": "Vayne's Treachery",
+      "manaCost": "{1}{B}",
+      "type": "Instant",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/d/6de6d23b-7d42-41c1-be1c-010fe43ee586.jpg"
+    },
+    "FIN0125": {
+      "id": "FIN0125",
+      "name": "Vincent Valentine // Galian Beast",
+      "manaCost": null,
+      "type": "Legendary Creature — Werewolf Beast",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/2/028ef608-acfe-4e9d-90db-eca4411ba78a.jpg"
+    },
+    "FIN0126": {
+      "id": "FIN0126",
+      "name": "Vincent's Limit Break",
+      "manaCost": "{1}{B}",
+      "type": "Instant",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/5/0502c426-5271-4989-8598-5bc159afe79c.jpg"
+    },
+    "FIN0127": {
+      "id": "FIN0127",
+      "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
+      "manaCost": null,
+      "type": "Legendary Creature — Dragon",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/6/b65ffce4-bb58-418a-9bad-81533a5f2ba2.jpg"
+    },
+    "FIN0128": {
+      "id": "FIN0128",
+      "name": "Zodiark, Umbral God",
+      "manaCost": "{B}{B}{B}{B}{B}",
+      "type": "Legendary Creature — God",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/b/9ba292d5-5139-42ea-950d-0a638445277f.jpg"
+    },
+    "FIN0129": {
+      "id": "FIN0129",
+      "name": "Barret Wallace",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Creature — Human Rebel",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/a/1a504dff-5857-4a61-ab99-616d5df7cf5a.jpg"
+    },
+    "FIN0130": {
+      "id": "FIN0130",
+      "name": "Blazing Bomb",
+      "manaCost": "{R}",
+      "type": "Creature — Elemental",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/0/70f47277-ca47-428a-808f-0fb32e820a71.jpg"
+    },
+    "FIN0131": {
+      "id": "FIN0131",
+      "name": "Call the Mountain Chocobo",
+      "manaCost": "{3}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b2e1986c-2852-4843-bdc4-eddb727ba3d4.jpg"
+    },
+    "FIN0132": {
+      "id": "FIN0132",
+      "name": "Choco-Comet",
+      "manaCost": "{X}{R}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/d/8d8d3903-a7f4-4cd8-8d29-b4a173e4fbb2.jpg"
+    },
+    "FIN0133": {
+      "id": "FIN0133",
+      "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Demon",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/a/9a069e96-2786-493d-aca8-f70611435dbe.jpg"
+    },
+    "FIN0134": {
+      "id": "FIN0134",
+      "name": "Coral Sword",
+      "manaCost": "{R}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/3/13e81e32-7246-46b9-872e-cde77cedd197.jpg"
+    },
+    "FIN0135": {
+      "id": "FIN0135",
+      "name": "The Fire Crystal",
+      "manaCost": "{2}{R}{R}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea430b17-2014-4b8e-b53f-43bcfc06f7cd.jpg"
+    },
+    "FIN0136": {
+      "id": "FIN0136",
+      "name": "Fire Magic",
+      "manaCost": "{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/1/415ff6a5-61ef-4b37-ae08-e44476300d4a.jpg"
+    },
+    "FIN0137": {
+      "id": "FIN0137",
+      "name": "Firion, Wild Rose Warrior",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Rebel Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/8/98366937-d15b-4a66-b9f6-878d50b63871.jpg"
+    },
+    "FIN0138": {
+      "id": "FIN0138",
+      "name": "Freya Crescent",
+      "manaCost": "{R}",
+      "type": "Legendary Creature — Rat Knight",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/9/9921f646-e893-44db-ac89-0633c1009788.jpg"
+    },
+    "FIN0139": {
+      "id": "FIN0139",
+      "name": "Gilgamesh, Master-at-Arms",
+      "manaCost": "{4}{R}{R}",
+      "type": "Legendary Creature — Human Samurai",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/e/1eb81329-fb7a-4347-b96c-9960a5c48e87.jpg"
+    },
+    "FIN0140": {
+      "id": "FIN0140",
+      "name": "Haste Magic",
+      "manaCost": "{1}{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/a/3af9d100-70ee-4c6c-a762-11a0c4f3ef6f.jpg"
+    },
+    "FIN0141": {
+      "id": "FIN0141",
+      "name": "Hill Gigas",
+      "manaCost": "{4}{R}{R}",
+      "type": "Creature — Giant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/a/2a8b3e1e-5c10-4360-ac1c-83b2e026278c.jpg"
+    },
+    "FIN0142": {
+      "id": "FIN0142",
+      "name": "Item Shopkeep",
+      "manaCost": "{1}{R}",
+      "type": "Creature — Human Citizen",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/d/bd2db3f5-fd0d-4817-af90-6bea1f07e16b.jpg"
+    },
+    "FIN0143": {
+      "id": "FIN0143",
+      "name": "Laughing Mad",
+      "manaCost": "{2}{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/d/cd5b9daf-6325-4eb4-a069-4a8cc7807884.jpg"
+    },
+    "FIN0144": {
+      "id": "FIN0144",
+      "name": "Light of Judgment",
+      "manaCost": "{4}{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/8/98bb716d-ca66-445f-9cb3-0fc656c8ebff.jpg"
+    },
+    "FIN0145": {
+      "id": "FIN0145",
+      "name": "Mysidian Elder",
+      "manaCost": "{2}{R}",
+      "type": "Creature — Human Wizard",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/b/6bc39af4-be19-4889-b930-df7ebf7b9481.jpg"
+    },
+    "FIN0146": {
+      "id": "FIN0146",
+      "name": "Nibelheim Aflame",
+      "manaCost": "{2}{R}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/d/3d3e926a-74af-4996-849f-d31e0fdedeae.jpg"
+    },
+    "FIN0147": {
+      "id": "FIN0147",
+      "name": "Opera Love Song",
+      "manaCost": "{1}{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/3/0343916d-1b65-4e95-aef1-e72dbcebf0c4.jpg"
+    },
+    "FIN0148": {
+      "id": "FIN0148",
+      "name": "Prompto Argentum",
+      "manaCost": "{1}{R}",
+      "type": "Legendary Creature — Human Scout",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/c/4c617bcd-05f8-40c2-bb38-489bc863ce6b.jpg"
+    },
+    "FIN0149": {
+      "id": "FIN0149",
+      "name": "Queen Brahne",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Noble",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/3/c38c98bb-74c9-460f-9997-ea5c5f922347.jpg"
+    },
+    "FIN0150": {
+      "id": "FIN0150",
+      "name": "Random Encounter",
+      "manaCost": "{4}{R}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/6/3618e283-2df9-4eb9-97b0-96b55ee31cc0.jpg"
+    },
+    "FIN0151": {
+      "id": "FIN0151",
+      "name": "Raubahn, Bull of Ala Mhigo",
+      "manaCost": "{1}{R}",
+      "type": "Legendary Creature — Human Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/0/7035d11b-525f-4120-8dcb-610095196681.jpg"
+    },
+    "FIN0152": {
+      "id": "FIN0152",
+      "name": "Red Mage's Rapier",
+      "manaCost": "{1}{R}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/0/e0579955-75f9-47a9-8b03-e287d120826a.jpg"
+    },
+    "FIN0153": {
+      "id": "FIN0153",
+      "name": "Sabotender",
+      "manaCost": "{1}{R}",
+      "type": "Creature — Plant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/2/12df1295-8b08-4c8e-bac9-55b4f514c0be.jpg"
+    },
+    "FIN0154": {
+      "id": "FIN0154",
+      "name": "Samurai's Katana",
+      "manaCost": "{2}{R}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/1/11f1d378-c78c-402a-ac46-2d32598c23e7.jpg"
+    },
+    "FIN0155": {
+      "id": "FIN0155",
+      "name": "Sandworm",
+      "manaCost": "{4}{R}",
+      "type": "Creature — Worm",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6e021da-2397-4ad3-a07b-65c701df531a.jpg"
+    },
+    "FIN0156": {
+      "id": "FIN0156",
+      "name": "Seifer Almasy",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/c/9c776984-99ea-4181-ac95-78c41ba9d54f.jpg"
+    },
+    "FIN0157": {
+      "id": "FIN0157",
+      "name": "Self-Destruct",
+      "manaCost": "{1}{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/6/7661003c-bf83-46bb-bcc0-8fbf5819ffa8.jpg"
+    },
+    "FIN0158": {
+      "id": "FIN0158",
+      "name": "Sidequest: Play Blitzball // World Champion, Celestial Weapon",
+      "manaCost": null,
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/1/31e2ad37-73cf-4858-8a3a-fc1165cd21a7.jpg"
+    },
+    "FIN0159": {
+      "id": "FIN0159",
+      "name": "Sorceress's Schemes",
+      "manaCost": "{3}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/e/7efd7627-0754-4685-9d04-8f5f82f45632.jpg"
+    },
+    "FIN0160": {
+      "id": "FIN0160",
+      "name": "Summon: Brynhildr",
+      "manaCost": "{1}{R}",
+      "type": "Enchantment Creature — Saga Knight",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/a/8ab5429a-1075-49aa-9608-0610080fbf7a.jpg"
+    },
+    "FIN0161": {
+      "id": "FIN0161",
+      "name": "Summon: Esper Ramuh",
+      "manaCost": "{2}{R}{R}",
+      "type": "Enchantment Creature — Saga Wizard",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/840659ee-1493-4190-a514-c2c9ae14e331.jpg"
+    },
+    "FIN0162": {
+      "id": "FIN0162",
+      "name": "Summon: G.F. Cerberus",
+      "manaCost": "{2}{R}{R}",
+      "type": "Enchantment Creature — Saga Dog",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/0/d0e5cbd4-401b-4456-80bf-d90beadfd1f8.jpg"
+    },
+    "FIN0163": {
+      "id": "FIN0163",
+      "name": "Summon: G.F. Ifrit",
+      "manaCost": "{2}{R}",
+      "type": "Enchantment Creature — Saga Demon",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/6/c6c73092-5195-4bdc-b039-a699f6e297b2.jpg"
+    },
+    "FIN0164": {
+      "id": "FIN0164",
+      "name": "Suplex",
+      "manaCost": "{1}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/6/f61693a2-7042-44e0-85ba-9bf12ab94e7e.jpg"
+    },
+    "FIN0165": {
+      "id": "FIN0165",
+      "name": "Thunder Magic",
+      "manaCost": "{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/f/9f2b202c-91da-40ec-8324-6b6be7cb3bc8.jpg"
+    },
+    "FIN0166": {
+      "id": "FIN0166",
+      "name": "Triple Triad",
+      "manaCost": "{3}{R}{R}{R}",
+      "type": "Enchantment",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d9a1de36-7f47-4b28-bb56-38d7e5bed82f.jpg"
+    },
+    "FIN0167": {
+      "id": "FIN0167",
+      "name": "Unexpected Request",
+      "manaCost": "{2}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/2/0265fd20-a85d-49ce-b338-4c40843a5b18.jpg"
+    },
+    "FIN0168": {
+      "id": "FIN0168",
+      "name": "Vaan, Street Thief",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Scout",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/0/50e1ec29-9de3-4f1b-b818-057e030d475b.jpg"
+    },
+    "FIN0169": {
+      "id": "FIN0169",
+      "name": "Warrior's Sword",
+      "manaCost": "{3}{R}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/b/cb98a7dd-542e-4448-b3bb-ff5d67a36535.jpg"
+    },
+    "FIN0170": {
+      "id": "FIN0170",
+      "name": "Zell Dincht",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Monk",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/3/135d6b27-9168-4513-9d7d-56edae048857.jpg"
+    },
+    "FIN0171": {
+      "id": "FIN0171",
+      "name": "Airship Crash",
+      "manaCost": "{2}{G}",
+      "type": "Instant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/c/ec91c4e4-711f-464d-bc83-e6813f4fdcdb.jpg"
+    },
+    "FIN0172": {
+      "id": "FIN0172",
+      "name": "Ancient Adamantoise",
+      "manaCost": "{5}{G}{G}{G}",
+      "type": "Creature — Turtle",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/c/4c139f30-5ecd-48fd-ae7c-ec2cc98889ff.jpg"
+    },
+    "FIN0173": {
+      "id": "FIN0173",
+      "name": "Balamb T-Rexaur",
+      "manaCost": "{4}{G}{G}",
+      "type": "Creature — Dinosaur",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/5/e5857b1b-73bc-458e-b26b-7ed8bef785f3.jpg"
+    },
+    "FIN0174": {
+      "id": "FIN0174",
+      "name": "Bard's Bow",
+      "manaCost": "{2}{G}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/a/2ac03e90-1e16-453f-88e4-a0448db73403.jpg"
+    },
+    "FIN0175": {
+      "id": "FIN0175",
+      "name": "Bartz and Boko",
+      "manaCost": "{3}{G}{G}",
+      "type": "Legendary Creature — Human Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/8/d818d574-2832-4a7a-a13b-aa6e695fdaa5.jpg"
+    },
+    "FIN0176": {
+      "id": "FIN0176",
+      "name": "Blitzball Shot",
+      "manaCost": "{1}{G}",
+      "type": "Instant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/c/ec8ab637-3d7d-4712-9f83-8920f808f715.jpg"
+    },
+    "FIN0177": {
+      "id": "FIN0177",
+      "name": "Cactuar",
+      "manaCost": "{G}",
+      "type": "Creature — Plant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d5273db4-6214-41e4-825a-612fca8bbe03.jpg"
+    },
+    "FIN0178": {
+      "id": "FIN0178",
+      "name": "Chocobo Kick",
+      "manaCost": "{1}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/f/ff8c8be0-8223-499c-8704-cb68e0a42ce2.jpg"
+    },
+    "FIN0179": {
+      "id": "FIN0179",
+      "name": "Chocobo Racetrack",
+      "manaCost": "{3}{G}{G}",
+      "type": "Artifact",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/5/1565813b-6912-42f4-bae0-22136a2d6a92.jpg"
+    },
+    "FIN0180": {
+      "id": "FIN0180",
+      "name": "Clash of the Eikons",
+      "manaCost": "{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/5/75c18134-f517-4a68-8640-0426b3cd4f6c.jpg"
+    },
+    "FIN0181": {
+      "id": "FIN0181",
+      "name": "Coliseum Behemoth",
+      "manaCost": "{5}{G}{G}",
+      "type": "Creature — Beast",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/0/900206f1-7dd6-4db9-a430-73e560fd196b.jpg"
+    },
+    "FIN0182": {
+      "id": "FIN0182",
+      "name": "Commune with Beavers",
+      "manaCost": "{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/8/784287c2-43c5-4210-93ae-cdd33b9acb1b.jpg"
+    },
+    "FIN0183": {
+      "id": "FIN0183",
+      "name": "Diamond Weapon",
+      "manaCost": "{7}{G}{G}",
+      "type": "Legendary Artifact Creature — Elemental",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/c/6ce7f494-2a19-4b11-94d4-fc5e5a7068bd.jpg"
+    },
+    "FIN0184": {
+      "id": "FIN0184",
+      "name": "The Earth Crystal",
+      "manaCost": "{2}{G}{G}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d585e218-3dc8-4fbd-8ad2-795fbc9b2155.jpg"
+    },
+    "FIN0185": {
+      "id": "FIN0185",
+      "name": "Esper Origins // Summon: Esper Maduin",
+      "manaCost": null,
+      "type": "Enchantment Creature — Saga Elemental",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f503360-216a-4629-89b2-d32072850aef.jpg"
+    },
+    "FIN0186": {
+      "id": "FIN0186",
+      "name": "Galuf's Final Act",
+      "manaCost": "{1}{G}",
+      "type": "Instant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0ce05634-6c01-4941-a135-904cb4e33ac4.jpg"
+    },
+    "FIN0187": {
+      "id": "FIN0187",
+      "name": "Gigantoad",
+      "manaCost": "{3}{G}",
+      "type": "Creature — Frog",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bc10d648-4053-460f-bc52-9c20477bf6de.jpg"
+    },
+    "FIN0188": {
+      "id": "FIN0188",
+      "name": "Goobbue Gardener",
+      "manaCost": "{1}{G}",
+      "type": "Creature — Plant Beast",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/7/b7c3544a-5dd5-423e-8a40-ac4803db8adc.jpg"
+    },
+    "FIN0189": {
+      "id": "FIN0189",
+      "name": "Gran Pulse Ochu",
+      "manaCost": "{G}",
+      "type": "Creature — Plant Beast",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/d/4dced21f-478c-4500-9484-af5864dea5cc.jpg"
+    },
+    "FIN0190": {
+      "id": "FIN0190",
+      "name": "Gysahl Greens",
+      "manaCost": "{1}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/2/020dee17-d85b-44c4-9faa-b1ef977956f4.jpg"
+    },
+    "FIN0191": {
+      "id": "FIN0191",
+      "name": "Jumbo Cactuar",
+      "manaCost": "{5}{G}{G}",
+      "type": "Creature — Plant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/b/db01c222-8795-47e9-a789-e7f749a3ee7d.jpg"
+    },
+    "FIN0192": {
+      "id": "FIN0192",
+      "name": "Loporrit Scout",
+      "manaCost": "{2}{G}",
+      "type": "Creature — Rabbit Scout",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/1/a182bc66-bfda-4bf5-bd12-3de5dba60945.jpg"
+    },
+    "FIN0193": {
+      "id": "FIN0193",
+      "name": "Prishe's Wanderings",
+      "manaCost": "{2}{G}",
+      "type": "Instant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/6/d6e1dee0-e2cd-4899-a3ea-7d0df717c9ab.jpg"
+    },
+    "FIN0194": {
+      "id": "FIN0194",
+      "name": "Quina, Qu Gourmet",
+      "manaCost": "{2}{G}",
+      "type": "Legendary Creature — Qu",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/f/4f352b5e-9731-4a8e-b872-db5d3bf32211.jpg"
+    },
+    "FIN0195": {
+      "id": "FIN0195",
+      "name": "Reach the Horizon",
+      "manaCost": "{3}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c25960e0-5779-4e20-89f3-03950ad9d91c.jpg"
+    },
+    "FIN0196": {
+      "id": "FIN0196",
+      "name": "A Realm Reborn",
+      "manaCost": "{4}{G}{G}",
+      "type": "Enchantment",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d1af74e4-38d5-44b5-85e1-4d13f6970453.jpg"
+    },
+    "FIN0197": {
+      "id": "FIN0197",
+      "name": "Ride the Shoopuf",
+      "manaCost": "{1}{G}",
+      "type": "Enchantment",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/9/19ad36d6-8bf4-490c-9980-b98a470af892.jpg"
+    },
+    "FIN0198": {
+      "id": "FIN0198",
+      "name": "Rydia's Return",
+      "manaCost": "{3}{G}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/0/40a06165-2835-4610-86a1-7f684992fcf2.jpg"
+    },
+    "FIN0199": {
+      "id": "FIN0199",
+      "name": "Sazh Katzroy",
+      "manaCost": "{3}{G}",
+      "type": "Legendary Creature — Human Pilot",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/e/1e2a3566-1390-457e-8077-d776a8671319.jpg"
+    },
+    "FIN0200": {
+      "id": "FIN0200",
+      "name": "Sazh's Chocobo",
+      "manaCost": "{G}",
+      "type": "Creature — Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/d/dda6b4d0-1b60-46b0-b321-b9ffe15afff4.jpg"
+    },
+    "FIN0201": {
+      "id": "FIN0201",
+      "name": "Sidequest: Raise a Chocobo // Black Chocobo",
+      "manaCost": null,
+      "type": "Creature — Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0cbf911c-a721-4b84-8645-d83a0966be18.jpg"
+    },
+    "FIN0202": {
+      "id": "FIN0202",
+      "name": "Summon: Fat Chocobo",
+      "manaCost": "{4}{G}",
+      "type": "Enchantment Creature — Saga Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/2/32eb192b-de6b-4814-8077-628d343d014e.jpg"
+    },
+    "FIN0203": {
+      "id": "FIN0203",
+      "name": "Summon: Fenrir",
+      "manaCost": "{2}{G}",
+      "type": "Enchantment Creature — Saga Wolf",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/3/93feb9d5-d004-4598-a448-b3488c869c05.jpg"
+    },
+    "FIN0204": {
+      "id": "FIN0204",
+      "name": "Summon: Titan",
+      "manaCost": "{3}{G}{G}",
+      "type": "Enchantment Creature — Saga Giant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/c/5ce6ea96-7293-496d-b9c8-8ed6d6109a4d.jpg"
+    },
+    "FIN0205": {
+      "id": "FIN0205",
+      "name": "Summoner's Grimoire",
+      "manaCost": "{3}{G}",
+      "type": "Artifact — Book Equipment",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d9fda3fc-569d-49f8-a2ed-e0b1d6668426.jpg"
+    },
+    "FIN0206": {
+      "id": "FIN0206",
+      "name": "Tifa Lockhart",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Human Monk",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/b/fb781323-2746-405d-a9b2-e778c037a6e9.jpg"
+    },
+    "FIN0207": {
+      "id": "FIN0207",
+      "name": "Tifa's Limit Break",
+      "manaCost": "{G}",
+      "type": "Instant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/4/24d6eab7-22bd-494f-8cbe-204446f24be9.jpg"
+    },
+    "FIN0208": {
+      "id": "FIN0208",
+      "name": "Torgal, A Fine Hound",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Wolf",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f5725aa-42bb-4dfd-9c15-135b38b33da3.jpg"
+    },
+    "FIN0209": {
+      "id": "FIN0209",
+      "name": "Town Greeter",
+      "manaCost": "{1}{G}",
+      "type": "Creature — Human Citizen",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/9/49cd4efa-4df4-4257-9a42-60330f7781e2.jpg"
+    },
+    "FIN0210": {
+      "id": "FIN0210",
+      "name": "Traveling Chocobo",
+      "manaCost": "{2}{G}",
+      "type": "Creature — Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/4/2462df62-fc35-47ed-9571-40452074dc6d.jpg"
+    },
+    "FIN0211": {
+      "id": "FIN0211",
+      "name": "Vanille, Cheerful l'Cie // Ragnarok, Divine Deliverance",
+      "manaCost": "{3}{G}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/1/91226c1a-63a0-494e-bcf0-77c2d6f49213.jpg"
+    },
+    "FIN0212": {
+      "id": "FIN0212",
+      "name": "Absolute Virtue",
+      "manaCost": "{6}{W}{U}",
+      "type": "Legendary Creature — Avatar Warrior",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/a/aa192912-c9ee-403f-8a46-a338c9edb4b9.jpg"
+    },
+    "FIN0213": {
+      "id": "FIN0213",
+      "name": "Balthier and Fran",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Human Rabbit",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/f/afcaed7d-7ea3-4f2a-a7f5-ee3315226369.jpg"
+    },
+    "FIN0214": {
+      "id": "FIN0214",
+      "name": "Black Waltz No. 3",
+      "manaCost": "{2}{B}{R}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fe86e41b-b0f6-4aa1-8827-c095c721f304.jpg"
+    },
+    "FIN0215": {
+      "id": "FIN0215",
+      "name": "Choco, Seeker of Paradise",
+      "manaCost": "{1}{G}{W}{U}",
+      "type": "Legendary Creature — Bird",
+      "colorIdentity": [
+        "G",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/0/409c305a-52dc-4538-8e72-efcd568eaf49.jpg"
+    },
+    "FIN0216": {
+      "id": "FIN0216",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/f/7fb99393-d2b6-40a6-8de7-317efdc4c50b.jpg"
+    },
+    "FIN0217": {
+      "id": "FIN0217",
+      "name": "Cloud of Darkness",
+      "manaCost": "{2}{B}{G}{G}",
+      "type": "Legendary Creature — Avatar",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/2/a292094a-674a-401f-8776-ba5ebe57c946.jpg"
+    },
+    "FIN0218": {
+      "id": "FIN0218",
+      "name": "Emet-Selch, Unsundered // Hades, Sorcerer of Eld",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/5/75cf4eb8-33e7-4dfc-b890-a7e3b5c1b9d5.jpg"
+    },
+    "FIN0219": {
+      "id": "FIN0219",
+      "name": "The Emperor of Palamecia // The Lord Master of Hell",
+      "manaCost": null,
+      "type": "Legendary Creature — Demon Noble Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/d/3d75e8fd-6139-4b10-9ce3-195b47d72e0c.jpg"
+    },
+    "FIN0220": {
+      "id": "FIN0220",
+      "name": "Exdeath, Void Warlock // Neo Exdeath, Dimension's End",
+      "manaCost": null,
+      "type": "Legendary Creature — Spirit Avatar",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/b/1b4bab87-4000-461d-8b58-d34928fee305.jpg"
+    },
+    "FIN0221": {
+      "id": "FIN0221",
+      "name": "Garland, Knight of Cornelia // Chaos, the Endless",
+      "manaCost": null,
+      "type": "Legendary Creature — Demon",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/d/dd463dbe-5f2c-4d4f-86f8-ad8ff407af62.jpg"
+    },
+    "FIN0222": {
+      "id": "FIN0222",
+      "name": "Garnet, Princess of Alexandria",
+      "manaCost": "{G}{W}",
+      "type": "Legendary Creature — Human Noble Cleric",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b883df14-8d7b-4f6a-9a6a-2f71f5b6ddda.jpg"
+    },
+    "FIN0223": {
+      "id": "FIN0223",
+      "name": "Giott, King of the Dwarves",
+      "manaCost": "{R}{W}",
+      "type": "Legendary Creature — Dwarf Noble",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/a/6a7784de-a10d-4ce6-98a5-aaf3e85773b6.jpg"
+    },
+    "FIN0224": {
+      "id": "FIN0224",
+      "name": "Gladiolus Amicitia",
+      "manaCost": "{4}{R}{G}",
+      "type": "Legendary Creature — Human Warrior",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/442957fc-045d-4db6-b82a-445f172d23e4.jpg"
+    },
+    "FIN0225": {
+      "id": "FIN0225",
+      "name": "Golbez, Crystal Collector",
+      "manaCost": "{U}{B}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/849f5716-7211-4e93-a220-f88d49f937f4.jpg"
+    },
+    "FIN0226": {
+      "id": "FIN0226",
+      "name": "Hope Estheim",
+      "manaCost": "{W}{U}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/b/fbdb68cc-5516-481a-94c5-59f6c69b8a17.jpg"
+    },
+    "FIN0227": {
+      "id": "FIN0227",
+      "name": "Ignis Scientia",
+      "manaCost": "{1}{G}{U}",
+      "type": "Legendary Creature — Human Advisor",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/b/ab4f9721-5b2c-4371-98a5-3f6714265e57.jpg"
+    },
+    "FIN0228": {
+      "id": "FIN0228",
+      "name": "Jenova, Ancient Calamity",
+      "manaCost": "{2}{B}{G}",
+      "type": "Legendary Creature — Alien",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/3/534f98ee-7bc2-44d6-b49f-f57c051807d5.jpg"
+    },
+    "FIN0229": {
+      "id": "FIN0229",
+      "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Phoenix",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/5/457fdbb9-5439-460f-8e37-176f8919362c.jpg"
+    },
+    "FIN0230": {
+      "id": "FIN0230",
+      "name": "Judge Magister Gabranth",
+      "manaCost": "{W}{B}",
+      "type": "Legendary Creature — Human Advisor Knight",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/9/f9e64cb6-48f7-41d3-99e7-4b0bc3b33fd7.jpg"
+    },
+    "FIN0231": {
+      "id": "FIN0231",
+      "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/f/8fcf3fbb-1ddd-437e-81c1-f5a3133f5ee8.jpg"
+    },
+    "FIN0232": {
+      "id": "FIN0232",
+      "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/0/903192c7-f4ee-4872-aa61-3f8bdf2ab5c6.jpg"
+    },
+    "FIN0233": {
+      "id": "FIN0233",
+      "name": "Lightning, Army of One",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/1/1103da9c-300c-406b-997d-9e5bb7cd02d6.jpg"
+    },
+    "FIN0234": {
+      "id": "FIN0234",
+      "name": "Locke Cole",
+      "manaCost": "{1}{U}{B}",
+      "type": "Legendary Creature — Human Rogue",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/7/572feb8c-6976-40a8-8a34-b4db836cca56.jpg"
+    },
+    "FIN0235": {
+      "id": "FIN0235",
+      "name": "Noctis, Prince of Lucis",
+      "manaCost": "{1}{W}{U}{B}",
+      "type": "Legendary Creature — Human Noble",
+      "colorIdentity": [
+        "B",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/8/1881a66b-956d-4bab-b578-5b2d3407c972.jpg"
+    },
+    "FIN0236": {
+      "id": "FIN0236",
+      "name": "Omega, Heartless Evolution",
+      "manaCost": "{5}{G}{U}",
+      "type": "Legendary Artifact Creature — Robot",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/a/9a8eb7e6-0c0b-42d0-aa90-2d3d29bc15aa.jpg"
+    },
+    "FIN0237": {
+      "id": "FIN0237",
+      "name": "Rinoa Heartilly",
+      "manaCost": "{3}{G}{W}",
+      "type": "Legendary Creature — Human Rebel Warlock",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/a/ba79d293-bf42-48b6-a868-5249f4beeb76.jpg"
+    },
+    "FIN0238": {
+      "id": "FIN0238",
+      "name": "Rufus Shinra",
+      "manaCost": "{1}{W}{B}",
+      "type": "Legendary Creature — Human Noble",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f5fff00b-c9a0-4e90-abc0-349f8716c885.jpg"
+    },
+    "FIN0239": {
+      "id": "FIN0239",
+      "name": "Rydia, Summoner of Mist",
+      "manaCost": "{R}{G}",
+      "type": "Legendary Creature — Human Shaman",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/9/99450143-6ab5-463d-9e04-e8e6703a8b92.jpg"
+    },
+    "FIN0240": {
+      "id": "FIN0240",
+      "name": "Serah Farron // Crystallized Serah",
+      "manaCost": null,
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/2/62fa74c0-43ae-445c-8039-ca9d00e9709a.jpg"
+    },
+    "FIN0241": {
+      "id": "FIN0241",
+      "name": "Shantotto, Tactician Magician",
+      "manaCost": "{1}{U}{R}",
+      "type": "Legendary Creature — Dwarf Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/f/eff984b2-6ea9-4471-91c5-99c47f87f10b.jpg"
+    },
+    "FIN0242": {
+      "id": "FIN0242",
+      "name": "Sin, Spira's Punishment",
+      "manaCost": "{4}{B}{G}{U}",
+      "type": "Legendary Creature — Leviathan Avatar",
+      "colorIdentity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/5/659be746-bd31-4a70-8cec-7798da78b0b5.jpg"
+    },
+    "FIN0243": {
+      "id": "FIN0243",
+      "name": "Squall, SeeD Mercenary",
+      "manaCost": "{2}{W}{B}",
+      "type": "Legendary Creature — Human Knight Mercenary",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/c/cc4e5234-fb41-48f7-91f4-039710542bc3.jpg"
+    },
+    "FIN0244": {
+      "id": "FIN0244",
+      "name": "Tellah, Great Sage",
+      "manaCost": "{3}{U}{R}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a67793ef-ef80-4434-9c54-e3fd8a270bbe.jpg"
+    },
+    "FIN0245": {
+      "id": "FIN0245",
+      "name": "Terra, Magical Adept // Esper Terra",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Wizard",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/b/fbd447aa-588d-4c4d-925e-a7d3bdf6a65c.jpg"
+    },
+    "FIN0246": {
+      "id": "FIN0246",
+      "name": "Tidus, Blitzball Star",
+      "manaCost": "{1}{W}{U}",
+      "type": "Legendary Creature — Human Warrior",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/a/aa851d68-a7a4-48c0-9cd7-d3d2e079f3a1.jpg"
+    },
+    "FIN0247": {
+      "id": "FIN0247",
+      "name": "Ultimecia, Time Sorceress // Ultimecia, Omnipotent",
+      "manaCost": null,
+      "type": "Legendary Creature — Nightmare Warlock",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/d/2d6a2b68-5407-464e-a335-7866fd969c30.jpg"
+    },
+    "FIN0248": {
+      "id": "FIN0248",
+      "name": "A-Vivi Ornitier",
+      "manaCost": "{1}{U}{R}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f5fce9a5-85ae-408e-a260-b1e39843626e.jpg"
+    },
+    "FIN0249": {
+      "id": "FIN0249",
+      "name": "The Wandering Minstrel",
+      "manaCost": "{G}{U}",
+      "type": "Legendary Creature — Human Bard",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/7/77bc419d-ff69-4e7c-afe6-faca383a5ed7.jpg"
+    },
+    "FIN0250": {
+      "id": "FIN0250",
+      "name": "Yuna, Hope of Spira",
+      "manaCost": "{3}{G}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/5/35b613ad-86f0-431b-af93-147d21041fde.jpg"
+    },
+    "FIN0251": {
+      "id": "FIN0251",
+      "name": "Zidane, Tantalus Thief",
+      "manaCost": "{3}{R}{W}",
+      "type": "Legendary Creature — Human Mutant Scout",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e42c7d9d-8685-415b-8c5d-6ab2165863b9.jpg"
+    },
+    "FIN0252": {
+      "id": "FIN0252",
+      "name": "Adventurer's Airship",
+      "manaCost": "{3}",
+      "type": "Artifact — Vehicle",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/a/0a1d6dcd-bd41-4f57-a35b-6613811fe4d4.jpg"
+    },
+    "FIN0253": {
+      "id": "FIN0253",
+      "name": "Aettir and Priwen",
+      "manaCost": "{6}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/3/038710ca-c756-4e66-a9de-278e676c9f5b.jpg"
+    },
+    "FIN0254": {
+      "id": "FIN0254",
+      "name": "Blitzball",
+      "manaCost": "{3}",
+      "type": "Artifact",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/2/92f4ad73-42bf-45c0-8bb6-0b44043c81ef.jpg"
+    },
+    "FIN0255": {
+      "id": "FIN0255",
+      "name": "Buster Sword",
+      "manaCost": "{3}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/7/374d7383-a1a7-4eea-91f7-290180e14cc9.jpg"
+    },
+    "FIN0256": {
+      "id": "FIN0256",
+      "name": "Elixir",
+      "manaCost": "{1}",
+      "type": "Artifact",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a4b05d37-df62-475c-8371-735ed2fa1b05.jpg"
+    },
+    "FIN0257": {
+      "id": "FIN0257",
+      "name": "Excalibur II",
+      "manaCost": "{1}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/4/d42e5fed-67ac-46d7-a5d4-78f661f3e8b4.jpg"
+    },
+    "FIN0258": {
+      "id": "FIN0258",
+      "name": "Genji Glove",
+      "manaCost": "{5}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f724dde1-84b0-4e3b-a9b8-44cd22bb9f79.jpg"
+    },
+    "FIN0259": {
+      "id": "FIN0259",
+      "name": "Instant Ramen",
+      "manaCost": "{2}",
+      "type": "Artifact — Food",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/f/ef7011f4-fc08-4b15-973d-d15357cbe744.jpg"
+    },
+    "FIN0260": {
+      "id": "FIN0260",
+      "name": "Iron Giant",
+      "manaCost": "{7}",
+      "type": "Artifact Creature — Demon",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e48cf6d5-4d32-4b66-80be-3495ecd3e906.jpg"
+    },
+    "FIN0261": {
+      "id": "FIN0261",
+      "name": "Lion Heart",
+      "manaCost": "{4}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/4/04d327a3-1699-4556-b681-a957671ad142.jpg"
+    },
+    "FIN0262": {
+      "id": "FIN0262",
+      "name": "Lunatic Pandora",
+      "manaCost": "{1}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/6/d6e1e3e7-20d4-42cb-ad22-60356b9e8fdc.jpg"
+    },
+    "FIN0263": {
+      "id": "FIN0263",
+      "name": "Magic Pot",
+      "manaCost": "{3}",
+      "type": "Artifact Creature — Goblin Construct",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/7/57d07ca0-5618-4a90-a605-ca14a193ce3b.jpg"
+    },
+    "FIN0264": {
+      "id": "FIN0264",
+      "name": "The Masamune",
+      "manaCost": "{3}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/c/fc408575-8ef7-4043-b6b7-b38cef7c97d1.jpg"
+    },
+    "FIN0265": {
+      "id": "FIN0265",
+      "name": "Monk's Fist",
+      "manaCost": "{2}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/9/995033f0-873d-4e46-b0c9-98ec8ef270ff.jpg"
+    },
+    "FIN0266": {
+      "id": "FIN0266",
+      "name": "PuPu UFO",
+      "manaCost": "{2}",
+      "type": "Artifact Creature — Construct Alien",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/8/989b52f7-d8a5-4488-9a5d-f14a1d48686d.jpg"
+    },
+    "FIN0267": {
+      "id": "FIN0267",
+      "name": "The Regalia",
+      "manaCost": "{4}",
+      "type": "Legendary Artifact — Vehicle",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/c/dc420e79-c483-474f-97cd-e9c6a636c306.jpg"
+    },
+    "FIN0268": {
+      "id": "FIN0268",
+      "name": "Relentless X-ATM092",
+      "manaCost": "{6}",
+      "type": "Artifact Creature — Robot Spider",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/0/e09ee4c9-85ef-4d1e-864b-d659b8e8f51d.jpg"
+    },
+    "FIN0269": {
+      "id": "FIN0269",
+      "name": "Ring of the Lucii",
+      "manaCost": "{4}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/5/75761f1e-9449-4c58-8265-8abac71dafc1.jpg"
+    },
+    "FIN0270": {
+      "id": "FIN0270",
+      "name": "World Map",
+      "manaCost": "{1}",
+      "type": "Artifact",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/0/70d9ab99-ec8a-402e-ba1d-ffa6c4c84a3f.jpg"
+    },
+    "FIN0271": {
+      "id": "FIN0271",
+      "name": "Adventurer's Inn",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/0/f0da2ee1-986e-4cbf-92eb-d96fdb572ca5.jpg"
+    },
+    "FIN0272": {
+      "id": "FIN0272",
+      "name": "Balamb Garden, SeeD Academy // Balamb Garden, Airborne",
+      "manaCost": null,
+      "type": "Legendary Artifact — Vehicle",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/0/001e9f20-5b15-41cb-bf82-46172decc235.jpg"
+    },
+    "FIN0273": {
+      "id": "FIN0273",
+      "name": "Baron, Airship Kingdom",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/e/6e4bf840-802d-47d5-bffd-8ba495e19cf6.jpg"
+    },
+    "FIN0274": {
+      "id": "FIN0274",
+      "name": "Capital City",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f73ce8ec-c916-48eb-ae20-c0d6d03d7145.jpg"
+    },
+    "FIN0275": {
+      "id": "FIN0275",
+      "name": "Clive's Hideaway",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/e/5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c.jpg"
+    },
+    "FIN0276": {
+      "id": "FIN0276",
+      "name": "Crossroads Village",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/4/64db46d4-f91f-49cc-971c-b8e19f0c4ea9.jpg"
+    },
+    "FIN0277": {
+      "id": "FIN0277",
+      "name": "Eden, Seat of the Sanctum",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/2/e28eac1e-adc7-4f8d-b206-bef09ba07d38.jpg"
+    },
+    "FIN0278": {
+      "id": "FIN0278",
+      "name": "Gohn, Town of Ruin",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/9/99582781-613e-4a33-aec7-7569b4a961aa.jpg"
+    },
+    "FIN0279": {
+      "id": "FIN0279",
+      "name": "The Gold Saucer",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/3/5363c881-443d-43df-afd8-f81e1a1741a2.jpg"
+    },
+    "FIN0280": {
+      "id": "FIN0280",
+      "name": "Gongaga, Reactor Town",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/b/7beccfa6-3e4b-4460-954e-870cb39e462d.jpg"
+    },
+    "FIN0281": {
+      "id": "FIN0281",
+      "name": "Guadosalam, Farplane Gateway",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/f/dfcbc131-fd50-4908-b539-c8e52bb70c58.jpg"
+    },
+    "FIN0282": {
+      "id": "FIN0282",
+      "name": "Insomnia, Crown City",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/7/07fca511-a65c-4779-82c0-9215b0dcd068.jpg"
+    },
+    "FIN0283": {
+      "id": "FIN0283",
+      "name": "Ishgard, the Holy See // Faith & Grief",
+      "manaCost": "{3}{W}{W}",
+      "type": "Sorcery — Adventure",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/6/068bc755-9d3d-430b-abc5-c775a5415bf9.jpg"
+    },
+    "FIN0284": {
+      "id": "FIN0284",
+      "name": "Jidoor, Aristocratic Capital // Overture",
+      "manaCost": "{4}{U}{U}",
+      "type": "Sorcery — Adventure",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/8/98b2d5b5-f85b-4c42-a0f5-a76f6af304ba.jpg"
+    },
+    "FIN0285": {
+      "id": "FIN0285",
+      "name": "Lindblum, Industrial Regency // Mage Siege",
+      "manaCost": "{2}{R}",
+      "type": "Instant — Adventure",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/4/548dd152-f0b6-4e8f-9afc-a4ec1671b648.jpg"
+    },
+    "FIN0286": {
+      "id": "FIN0286",
+      "name": "Midgar, City of Mako // Reactor Raid",
+      "manaCost": "{2}{B}",
+      "type": "Sorcery — Adventure",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/a/8a837256-6bb4-4a60-962d-d2793548d26c.jpg"
+    },
+    "FIN0287": {
+      "id": "FIN0287",
+      "name": "Rabanastre, Royal City",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/4/c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1.jpg"
+    },
+    "FIN0288": {
+      "id": "FIN0288",
+      "name": "Sharlayan, Nation of Scholars",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/a/7a745b5e-cdb8-4d05-ac5c-87be69536da6.jpg"
+    },
+    "FIN0289": {
+      "id": "FIN0289",
+      "name": "Starting Town",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/c/fc7d1912-7e27-49ef-bd98-375d975a42b0.jpg"
+    },
+    "FIN0290": {
+      "id": "FIN0290",
+      "name": "Treno, Dark City",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/6/f6285535-bc44-4274-a886-b14d7c7aaba8.jpg"
+    },
+    "FIN0291": {
+      "id": "FIN0291",
+      "name": "Vector, Imperial Capital",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/0/10e5648e-4884-41e3-95f8-c76f6bca01e2.jpg"
+    },
+    "FIN0292": {
+      "id": "FIN0292",
+      "name": "Windurst, Federation Center",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/7/c74024bd-b383-468d-9cf5-d112a29f6457.jpg"
+    },
+    "FIN0293": {
+      "id": "FIN0293",
+      "name": "Zanarkand, Ancient Metropolis // Lasting Fayth",
+      "manaCost": "{4}{G}{G}",
+      "type": "Sorcery — Adventure",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/8/881e4c00-3b9a-47a1-bf66-1badda994c88.jpg"
+    },
+    "FIN0294": {
+      "id": "FIN0294",
+      "name": "Plains",
+      "manaCost": null,
+      "type": "Basic Land — Plains",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9dd2d666-7c6b-48ce-93dc-c004ebdd1fe9.jpg"
+    },
+    "FIN0295": {
+      "id": "FIN0295",
+      "name": "Plains",
+      "manaCost": null,
+      "type": "Basic Land — Plains",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/6/e623b058-76d2-476b-9ee6-82807f7992c3.jpg"
+    },
+    "FIN0296": {
+      "id": "FIN0296",
+      "name": "Plains",
+      "manaCost": null,
+      "type": "Basic Land — Plains",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/e/ee86ac2f-f398-4422-8721-8ac859fbf5bc.jpg"
+    },
+    "FIN0297": {
+      "id": "FIN0297",
+      "name": "Island",
+      "manaCost": null,
+      "type": "Basic Land — Island",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/9/b92ec9f6-a56d-40c6-aee2-7d5e1524c985.jpg"
+    },
+    "FIN0298": {
+      "id": "FIN0298",
+      "name": "Island",
+      "manaCost": null,
+      "type": "Basic Land — Island",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/e/eeecf096-87dd-4dcb-953f-700445bf3f3a.jpg"
+    },
+    "FIN0299": {
+      "id": "FIN0299",
+      "name": "Island",
+      "manaCost": null,
+      "type": "Basic Land — Island",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/4/347e00db-abcf-4053-aa27-4a5b42e1da55.jpg"
+    },
+    "FIN0300": {
+      "id": "FIN0300",
+      "name": "Swamp",
+      "manaCost": null,
+      "type": "Basic Land — Swamp",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/6/f66094ef-059b-4511-aa6e-835906736de4.jpg"
+    },
+    "FIN0301": {
+      "id": "FIN0301",
+      "name": "Swamp",
+      "manaCost": null,
+      "type": "Basic Land — Swamp",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/7/a7f56d20-16dc-4b7f-98bf-124817a83bae.jpg"
+    },
+    "FIN0302": {
+      "id": "FIN0302",
+      "name": "Swamp",
+      "manaCost": null,
+      "type": "Basic Land — Swamp",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/8/08ec1e4f-e284-4216-a022-bd94c4dae02b.jpg"
+    },
+    "FIN0303": {
+      "id": "FIN0303",
+      "name": "Mountain",
+      "manaCost": null,
+      "type": "Basic Land — Mountain",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/1/a18ef64b-a9de-4548-b4d5-168758442db7.jpg"
+    },
+    "FIN0304": {
+      "id": "FIN0304",
+      "name": "Mountain",
+      "manaCost": null,
+      "type": "Basic Land — Mountain",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/0/d061b9a8-e95d-48ec-a1c9-337433b62dfc.jpg"
+    },
+    "FIN0305": {
+      "id": "FIN0305",
+      "name": "Mountain",
+      "manaCost": null,
+      "type": "Basic Land — Mountain",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea1735b9-fd10-4c9c-b9d3-046d8c22b852.jpg"
+    },
+    "FIN0306": {
+      "id": "FIN0306",
+      "name": "Forest",
+      "manaCost": null,
+      "type": "Basic Land — Forest",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/e/be72862d-d71e-4b18-98a6-59019399f631.jpg"
+    },
+    "FIN0307": {
+      "id": "FIN0307",
+      "name": "Forest",
+      "manaCost": null,
+      "type": "Basic Land — Forest",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/d/3d08f6a6-316d-45d8-aabe-1760a20903ac.jpg"
+    },
+    "FIN0308": {
+      "id": "FIN0308",
+      "name": "Forest",
+      "manaCost": null,
+      "type": "Basic Land — Forest",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/5/c52038c8-5bba-4d8e-845f-30af44300acc.jpg"
+    },
+    "FIN0309": {
+      "id": "FIN0309",
+      "name": "Wastes",
+      "manaCost": null,
+      "type": "Basic Land",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/6/c61feafd-ef09-437c-a12c-fd7d6cb8c15a.jpg"
+    },
+    "FIN0310": {
+      "id": "FIN0310",
+      "name": "Ishgard, the Holy See // Faith & Grief",
+      "manaCost": "{3}{W}{W}",
+      "type": "Sorcery — Adventure",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b5327e09-2ea0-4365-bb20-087a08da8ce6.jpg"
+    },
+    "FIN0311": {
+      "id": "FIN0311",
+      "name": "Jidoor, Aristocratic Capital // Overture",
+      "manaCost": "{4}{U}{U}",
+      "type": "Sorcery — Adventure",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/2/72678d58-888e-4d3c-bc2c-78f5b7862e03.jpg"
+    },
+    "FIN0312": {
+      "id": "FIN0312",
+      "name": "Lindblum, Industrial Regency // Mage Siege",
+      "manaCost": "{2}{R}",
+      "type": "Instant — Adventure",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b2ae92d9-7047-424e-a482-2311888a8c56.jpg"
+    },
+    "FIN0313": {
+      "id": "FIN0313",
+      "name": "Midgar, City of Mako // Reactor Raid",
+      "manaCost": "{2}{B}",
+      "type": "Sorcery — Adventure",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fa605930-a7f0-410d-ac58-f5f0bd8caadf.jpg"
+    },
+    "FIN0314": {
+      "id": "FIN0314",
+      "name": "Zanarkand, Ancient Metropolis // Lasting Fayth",
+      "manaCost": "{4}{G}{G}",
+      "type": "Sorcery — Adventure",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/6/c64bb94b-c1a7-4dd3-b2dc-b87d306d62ad.jpg"
+    },
+    "FIN0315": {
+      "id": "FIN0315",
+      "name": "Ardyn, the Usurper",
+      "manaCost": "{5}{B}{B}{B}",
+      "type": "Legendary Creature — Elder Human Noble",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/1/41ae833d-77ee-4876-8990-591ae0d800ab.jpg"
+    },
+    "FIN0316": {
+      "id": "FIN0316",
+      "name": "Kain, Traitorous Dragoon",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/9/39f9de73-84a7-483f-927e-91ade20a2d06.jpg"
+    },
+    "FIN0317": {
+      "id": "FIN0317",
+      "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
+      "manaCost": null,
+      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/3/83c82209-47d5-4c4c-b8ec-96ab907e15d3.jpg"
+    },
+    "FIN0318": {
+      "id": "FIN0318",
+      "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Demon",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/2/425d5bea-9c9a-4e8a-b4bc-02284fb9b5b4.jpg"
+    },
+    "FIN0319": {
+      "id": "FIN0319",
+      "name": "Balthier and Fran",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Human Rabbit",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/a/6aaba8b1-1fcb-4a73-894f-f32400352c8c.jpg"
+    },
+    "FIN0320": {
+      "id": "FIN0320",
+      "name": "Lightning, Army of One",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/e/be2af52c-9f38-40e4-a643-06c5f2a9f416.jpg"
+    },
+    "FIN0321": {
+      "id": "FIN0321",
+      "name": "Vivi Ornitier",
+      "manaCost": "{1}{U}{R}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/d/ada6aeb6-8c9f-4498-9326-b4da0fcb19a3.jpg"
+    },
+    "FIN0322": {
+      "id": "FIN0322",
+      "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0cadfe0e-9cdf-4e64-b143-f996c76bf93b.jpg"
+    },
+    "FIN0323": {
+      "id": "FIN0323",
+      "name": "Terra, Magical Adept // Esper Terra",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Wizard",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0cf789e7-045c-4ad1-abc3-23eabda54f02.jpg"
+    },
+    "FIN0324": {
+      "id": "FIN0324",
+      "name": "Ultima, Origin of Oblivion",
+      "manaCost": "{5}",
+      "type": "Legendary Creature — God",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/a/2ac1b165-27ff-47f3-b598-43f7f021093a.jpg"
+    },
+    "FIN0325": {
+      "id": "FIN0325",
+      "name": "Ambrosia Whiteheart",
+      "manaCost": "{1}{W}",
+      "type": "Legendary Creature — Bird",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/e/2ecefb14-23a2-44f4-a3aa-63c246f744e1.jpg"
+    },
+    "FIN0326": {
+      "id": "FIN0326",
+      "name": "Moogles' Valor",
+      "manaCost": "{3}{W}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/2/522920b3-e7a4-4097-8321-2dbb326719c6.jpg"
+    },
+    "FIN0327": {
+      "id": "FIN0327",
+      "name": "Stiltzkin, Moogle Merchant",
+      "manaCost": "{W}",
+      "type": "Legendary Creature — Moogle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/3/8347cb57-7c20-4085-83f3-bee35b55b3f1.jpg"
+    },
+    "FIN0328": {
+      "id": "FIN0328",
+      "name": "Ultima",
+      "manaCost": "{3}{W}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/6/e673fb51-d36c-42fb-91bf-805812522064.jpg"
+    },
+    "FIN0329": {
+      "id": "FIN0329",
+      "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
+      "manaCost": null,
+      "type": "Legendary Creature — God",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a9a432dc-6e53-48d2-8fbe-b01bd2cab6dd.jpg"
+    },
+    "FIN0330": {
+      "id": "FIN0330",
+      "name": "The Wind Crystal",
+      "manaCost": "{2}{W}{W}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/2/423134fa-62d9-439c-b123-eeea52f42414.jpg"
+    },
+    "FIN0331": {
+      "id": "FIN0331",
+      "name": "Memories Returning",
+      "manaCost": "{2}{U}{U}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/b/fb3c836d-8012-4591-ba4f-e6db6d59b974.jpg"
+    },
+    "FIN0332": {
+      "id": "FIN0332",
+      "name": "Stolen Uniform",
+      "manaCost": "{U}",
+      "type": "Instant",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0cf03aad-0562-4d29-8c70-dc529c3a3961.jpg"
+    },
+    "FIN0333": {
+      "id": "FIN0333",
+      "name": "The Water Crystal",
+      "manaCost": "{2}{U}{U}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/5/7572888a-c394-4d9f-b66f-30d91364d265.jpg"
+    },
+    "FIN0334": {
+      "id": "FIN0334",
+      "name": "Dark Confidant",
+      "manaCost": "{1}{B}",
+      "type": "Creature — Human Wizard",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/7/378df0f4-5043-461f-8705-9a2c0c3acd43.jpg"
+    },
+    "FIN0335": {
+      "id": "FIN0335",
+      "name": "The Darkness Crystal",
+      "manaCost": "{2}{B}{B}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/4/749f2041-0eb5-42c3-b9ac-05a7575cb693.jpg"
+    },
+    "FIN0336": {
+      "id": "FIN0336",
+      "name": "Zodiark, Umbral God",
+      "manaCost": "{B}{B}{B}{B}{B}",
+      "type": "Legendary Creature — God",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/e/2eb50ecd-d32f-482b-8e6f-57f68179241b.jpg"
+    },
+    "FIN0337": {
+      "id": "FIN0337",
+      "name": "The Fire Crystal",
+      "manaCost": "{2}{R}{R}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/8/58306c68-5de8-48f4-9ce5-ea69792af58c.jpg"
+    },
+    "FIN0338": {
+      "id": "FIN0338",
+      "name": "Gilgamesh, Master-at-Arms",
+      "manaCost": "{4}{R}{R}",
+      "type": "Legendary Creature — Human Samurai",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/1/816f618c-ed6c-4320-9c33-9ae903e32abf.jpg"
+    },
+    "FIN0339": {
+      "id": "FIN0339",
+      "name": "Nibelheim Aflame",
+      "manaCost": "{2}{R}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/6/f6c21de9-7278-4406-8037-afe2c29b271f.jpg"
+    },
+    "FIN0340": {
+      "id": "FIN0340",
+      "name": "Triple Triad",
+      "manaCost": "{3}{R}{R}{R}",
+      "type": "Enchantment",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/b/5bd84d2c-6f09-4aef-a98b-7b256c7de821.jpg"
+    },
+    "FIN0341": {
+      "id": "FIN0341",
+      "name": "Clash of the Eikons",
+      "manaCost": "{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fa15ebf3-7ada-4e86-abc9-85dea83edb8c.jpg"
+    },
+    "FIN0342": {
+      "id": "FIN0342",
+      "name": "The Earth Crystal",
+      "manaCost": "{2}{G}{G}",
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/2/9240303a-73a3-4daf-b5fc-090ce7cbd92a.jpg"
+    },
+    "FIN0343": {
+      "id": "FIN0343",
+      "name": "Jumbo Cactuar",
+      "manaCost": "{5}{G}{G}",
+      "type": "Creature — Plant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fe80b498-a25d-4f68-ac26-9554c3ee1677.jpg"
+    },
+    "FIN0344": {
+      "id": "FIN0344",
+      "name": "A Realm Reborn",
+      "manaCost": "{4}{G}{G}",
+      "type": "Enchantment",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/a/aa78ab04-6ddf-4a67-8bcf-0da4646a1e48.jpg"
+    },
+    "FIN0345": {
+      "id": "FIN0345",
+      "name": "Torgal, A Fine Hound",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Wolf",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/6/66188ecc-ac97-4dcb-ada3-57d86915a911.jpg"
+    },
+    "FIN0346": {
+      "id": "FIN0346",
+      "name": "Jenova, Ancient Calamity",
+      "manaCost": "{2}{B}{G}",
+      "type": "Legendary Creature — Alien",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/f/9f80efa6-769f-4205-b69e-9cf0e78b7bcd.jpg"
+    },
+    "FIN0347": {
+      "id": "FIN0347",
+      "name": "Omega, Heartless Evolution",
+      "manaCost": "{5}{G}{U}",
+      "type": "Legendary Artifact Creature — Robot",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/1/615f1a04-2ad4-443b-a915-2181a6bf13af.jpg"
+    },
+    "FIN0348": {
+      "id": "FIN0348",
+      "name": "Sin, Spira's Punishment",
+      "manaCost": "{4}{B}{G}{U}",
+      "type": "Legendary Creature — Leviathan Avatar",
+      "colorIdentity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/e/ce15bf1d-debf-4e0f-a69d-a57619d4b0ee.jpg"
+    },
+    "FIN0349": {
+      "id": "FIN0349",
+      "name": "Tellah, Great Sage",
+      "manaCost": "{3}{U}{R}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/d/0dcb6a53-ad1b-465b-8d4c-f2c8b2b29e25.jpg"
+    },
+    "FIN0350": {
+      "id": "FIN0350",
+      "name": "Aettir and Priwen",
+      "manaCost": "{6}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/c/2ceea116-6197-45ec-a5a9-73588744b8a0.jpg"
+    },
+    "FIN0351": {
+      "id": "FIN0351",
+      "name": "Buster Sword",
+      "manaCost": "{3}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f57d0446-1eae-4b88-b65c-92a14a3f9cef.jpg"
+    },
+    "FIN0352": {
+      "id": "FIN0352",
+      "name": "Excalibur II",
+      "manaCost": "{1}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/e/becf759b-e3bc-4281-a1e1-1da9f36247ef.jpg"
+    },
+    "FIN0353": {
+      "id": "FIN0353",
+      "name": "The Masamune",
+      "manaCost": "{3}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/2/a288efba-7c70-428d-a2b7-571891976f78.jpg"
+    },
+    "FIN0354": {
+      "id": "FIN0354",
+      "name": "Balamb Garden, SeeD Academy // Balamb Garden, Airborne",
+      "manaCost": null,
+      "type": "Legendary Artifact — Vehicle",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/a/1a6c87dc-188c-4c75-9026-568263940b90.jpg"
+    },
+    "FIN0355": {
+      "id": "FIN0355",
+      "name": "Eden, Seat of the Sanctum",
+      "manaCost": null,
+      "type": "Land — Town",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/7/4786e79c-1e64-41bd-87f6-9a33110afa71.jpg"
+    },
+    "FIN0356": {
+      "id": "FIN0356",
+      "name": "Summon: Bahamut",
+      "manaCost": "{9}",
+      "type": "Enchantment Creature — Saga Dragon",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/d/fd5cb1fc-71b2-4b05-abd3-c90e95c53ad1.jpg"
+    },
+    "FIN0357": {
+      "id": "FIN0357",
+      "name": "Crystal Fragments // Summon: Alexander",
+      "manaCost": null,
+      "type": "Enchantment Creature — Saga Construct",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c2416ecc-bb6b-44f6-8fa6-61d168777f2e.jpg"
+    },
+    "FIN0358": {
+      "id": "FIN0358",
+      "name": "Summon: Choco/Mog",
+      "manaCost": "{2}{W}",
+      "type": "Enchantment Creature — Saga Bird Moogle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/9/b95481b1-1780-4cf9-b910-dd0a4461f818.jpg"
+    },
+    "FIN0359": {
+      "id": "FIN0359",
+      "name": "Summon: Knights of Round",
+      "manaCost": "{6}{W}{W}",
+      "type": "Enchantment Creature — Saga Knight",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b8a48466-6dc1-4874-9328-c7358e642f39.jpg"
+    },
+    "FIN0360": {
+      "id": "FIN0360",
+      "name": "Summon: Primal Garuda",
+      "manaCost": "{3}{W}",
+      "type": "Enchantment Creature — Saga Harpy",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/6/f6ee6624-79be-4a76-8c12-80bf31f81ae2.jpg"
+    },
+    "FIN0361": {
+      "id": "FIN0361",
+      "name": "Summon: Leviathan",
+      "manaCost": "{4}{U}{U}",
+      "type": "Enchantment Creature — Saga Leviathan",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/c/4c6738f5-55cb-48f0-8e70-296d1c549cd3.jpg"
+    },
+    "FIN0362": {
+      "id": "FIN0362",
+      "name": "Summon: Shiva",
+      "manaCost": "{3}{U}{U}",
+      "type": "Enchantment Creature — Saga Elemental",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/4/340b2b03-1b20-411c-ba30-2be77655290a.jpg"
+    },
+    "FIN0363": {
+      "id": "FIN0363",
+      "name": "Jecht, Reluctant Guardian // Braska's Final Aeon",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Nightmare",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/0/20c75373-7db4-4964-8e09-2badce2f0f84.jpg"
+    },
+    "FIN0364": {
+      "id": "FIN0364",
+      "name": "Summon: Anima",
+      "manaCost": "{4}{B}{B}",
+      "type": "Enchantment Creature — Saga Horror",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/4/d4aa9f4e-cba9-41fa-8c65-3e263988f90d.jpg"
+    },
+    "FIN0365": {
+      "id": "FIN0365",
+      "name": "Summon: Primal Odin",
+      "manaCost": "{4}{B}{B}",
+      "type": "Enchantment Creature — Saga Knight",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/8/d8117e64-6e43-4aa8-90df-c5b21fbb9182.jpg"
+    },
+    "FIN0366": {
+      "id": "FIN0366",
+      "name": "Summon: Brynhildr",
+      "manaCost": "{1}{R}",
+      "type": "Enchantment Creature — Saga Knight",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fac98745-a30e-4f64-be21-302c0d73d4f7.jpg"
+    },
+    "FIN0367": {
+      "id": "FIN0367",
+      "name": "Summon: Esper Ramuh",
+      "manaCost": "{2}{R}{R}",
+      "type": "Enchantment Creature — Saga Wizard",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6edb808-9753-4029-81ed-60a91ebc1d77.jpg"
+    },
+    "FIN0368": {
+      "id": "FIN0368",
+      "name": "Summon: G.F. Cerberus",
+      "manaCost": "{2}{R}{R}",
+      "type": "Enchantment Creature — Saga Dog",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/5/a5ad1e50-2bf1-4f43-9da4-62a89b521206.jpg"
+    },
+    "FIN0369": {
+      "id": "FIN0369",
+      "name": "Summon: G.F. Ifrit",
+      "manaCost": "{2}{R}",
+      "type": "Enchantment Creature — Saga Demon",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/5/25c3ce9a-39e5-4273-ba67-224a837b75e7.jpg"
+    },
+    "FIN0370": {
+      "id": "FIN0370",
+      "name": "Esper Origins // Summon: Esper Maduin",
+      "manaCost": null,
+      "type": "Enchantment Creature — Saga Elemental",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/f/efbe3aa0-ddf1-4db2-ae4c-cfea7b5d09ed.jpg"
+    },
+    "FIN0371": {
+      "id": "FIN0371",
+      "name": "Summon: Fat Chocobo",
+      "manaCost": "{4}{G}",
+      "type": "Enchantment Creature — Saga Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a44ae92c-4894-4172-82b3-11e2e94653ef.jpg"
+    },
+    "FIN0372": {
+      "id": "FIN0372",
+      "name": "Summon: Fenrir",
+      "manaCost": "{2}{G}",
+      "type": "Enchantment Creature — Saga Wolf",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/1/412093fb-15c1-4b36-aa53-9484f955ee2c.jpg"
+    },
+    "FIN0373": {
+      "id": "FIN0373",
+      "name": "Summon: Titan",
+      "manaCost": "{3}{G}{G}",
+      "type": "Enchantment Creature — Saga Giant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/5/e5881485-7935-427e-911e-843f198d94dc.jpg"
+    },
+    "FIN0374": {
+      "id": "FIN0374",
+      "name": "Aerith Gainsborough",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fa316d6e-9ea7-4496-a3f3-5023a6952473.jpg"
+    },
+    "FIN0375": {
+      "id": "FIN0375",
+      "name": "Cloud, Midgar Mercenary",
+      "manaCost": "{W}{W}",
+      "type": "Legendary Creature — Human Soldier Mercenary",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/d/5d8690ec-fded-4801-8eaf-5e5fe3d444ec.jpg"
+    },
+    "FIN0376": {
+      "id": "FIN0376",
+      "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Dragon",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/2/f2309a7e-4ba0-4820-8313-ecd38d32a55f.jpg"
+    },
+    "FIN0377": {
+      "id": "FIN0377",
+      "name": "Gogo, Master of Mimicry",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/5/054e180d-4e66-426d-adb5-a4fee94b6a67.jpg"
+    },
+    "FIN0378": {
+      "id": "FIN0378",
+      "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Elemental",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/b/8b67055b-4a0a-4a16-9c83-d493c36fce01.jpg"
+    },
+    "FIN0379": {
+      "id": "FIN0379",
+      "name": "Ardyn, the Usurper",
+      "manaCost": "{5}{B}{B}{B}",
+      "type": "Legendary Creature — Elder Human Noble",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/5/35090ce1-6fb4-438c-88e9-dd116d550a92.jpg"
+    },
+    "FIN0380": {
+      "id": "FIN0380",
+      "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
+      "manaCost": null,
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/8/d8c5c414-c7a0-489b-9cb8-1b910aa89b8e.jpg"
+    },
+    "FIN0381": {
+      "id": "FIN0381",
+      "name": "Ragnarok, Divine Deliverance",
+      "manaCost": null,
+      "type": "Legendary Creature — Beast Avatar",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f40e47b-32ed-4846-92b3-cc54e89368fe.jpg"
+    },
+    "FIN0382": {
+      "id": "FIN0382",
+      "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
+      "manaCost": null,
+      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/1/f150d6e9-3da6-4655-9c63-dd34525d08a1.jpg"
+    },
+    "FIN0383": {
+      "id": "FIN0383",
+      "name": "Vincent Valentine // Galian Beast",
+      "manaCost": null,
+      "type": "Legendary Creature — Werewolf Beast",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/2/221efaa7-ba6e-4f6e-99d1-e258b91091f7.jpg"
+    },
+    "FIN0384": {
+      "id": "FIN0384",
+      "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
+      "manaCost": null,
+      "type": "Legendary Creature — Dragon",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/9/59fc74c0-9a97-44d5-a62e-a2b68880cfac.jpg"
+    },
+    "FIN0385": {
+      "id": "FIN0385",
+      "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Demon",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/faf87bad-253a-4c7a-9dd5-c575cb27db9f.jpg"
+    },
+    "FIN0386": {
+      "id": "FIN0386",
+      "name": "Firion, Wild Rose Warrior",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Rebel Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/f/8f1cb5a5-2f52-4a9d-a4fe-9603116b7ad5.jpg"
+    },
+    "FIN0387": {
+      "id": "FIN0387",
+      "name": "Prompto Argentum",
+      "manaCost": "{1}{R}",
+      "type": "Legendary Creature — Human Scout",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/8/d8f9b257-6491-46d2-be41-846ab4c39d5e.jpg"
+    },
+    "FIN0388": {
+      "id": "FIN0388",
+      "name": "Raubahn, Bull of Ala Mhigo",
+      "manaCost": "{1}{R}",
+      "type": "Legendary Creature — Human Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/0/90ee46cc-12fc-499f-8c13-a289d5fdbaba.jpg"
+    },
+    "FIN0389": {
+      "id": "FIN0389",
+      "name": "Seifer Almasy",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/0/e0863980-7f20-4af0-8a5a-5504b2419f64.jpg"
+    },
+    "FIN0390": {
+      "id": "FIN0390",
+      "name": "Vaan, Street Thief",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Scout",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/d/6db5c3de-eb63-40f1-a721-9f2de47ea59e.jpg"
+    },
+    "FIN0391": {
+      "id": "FIN0391",
+      "name": "Tifa Lockhart",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Human Monk",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/4/d402d825-4c2c-46db-b16b-5df583bc5f83.jpg"
+    },
+    "FIN0392": {
+      "id": "FIN0392",
+      "name": "Vanille, Cheerful l'Cie // Ragnarok, Divine Deliverance",
+      "manaCost": "{3}{G}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/8/28cdd11b-7337-4696-b2a0-77236c7b7210.jpg"
+    },
+    "FIN0393": {
+      "id": "FIN0393",
+      "name": "Balthier and Fran",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Human Rabbit",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/8/c8198264-150f-4f95-9de1-cbc7fa456535.jpg"
+    },
+    "FIN0394": {
+      "id": "FIN0394",
+      "name": "Emet-Selch, Unsundered // Hades, Sorcerer of Eld",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/d/fd537047-d997-4ee1-b259-3ed54b7c5576.jpg"
+    },
+    "FIN0395": {
+      "id": "FIN0395",
+      "name": "Golbez, Crystal Collector",
+      "manaCost": "{U}{B}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/5/95822b03-a49b-4a77-a257-fe0527088177.jpg"
+    },
+    "FIN0396": {
+      "id": "FIN0396",
+      "name": "Hope Estheim",
+      "manaCost": "{W}{U}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/b/5b1fd4c8-7de6-47cb-916a-513d04774f01.jpg"
+    },
+    "FIN0397": {
+      "id": "FIN0397",
+      "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Phoenix",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/4/04dd9ad9-eab2-447c-b065-078a0b184519.jpg"
+    },
+    "FIN0398": {
+      "id": "FIN0398",
+      "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/3/53756218-bcdb-498a-8c61-654183153487.jpg"
+    },
+    "FIN0399": {
+      "id": "FIN0399",
+      "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/0/b058d305-d032-47c9-8567-11a4b4319695.jpg"
+    },
+    "FIN0400": {
+      "id": "FIN0400",
+      "name": "Lightning, Army of One",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/5/45cb2a76-7d12-41e6-93c7-09922934699c.jpg"
+    },
+    "FIN0401": {
+      "id": "FIN0401",
+      "name": "Noctis, Prince of Lucis",
+      "manaCost": "{1}{W}{U}{B}",
+      "type": "Legendary Creature — Human Noble",
+      "colorIdentity": [
+        "B",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/d/8d61fe60-0318-4362-8cea-7c6499b8ca70.jpg"
+    },
+    "FIN0402": {
+      "id": "FIN0402",
+      "name": "Squall, SeeD Mercenary",
+      "manaCost": "{2}{W}{B}",
+      "type": "Legendary Creature — Human Knight Mercenary",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/8/883c6111-c921-4cd6-930d-4fa335ef2871.jpg"
+    },
+    "FIN0403": {
+      "id": "FIN0403",
+      "name": "The Wandering Minstrel",
+      "manaCost": "{G}{U}",
+      "type": "Legendary Creature — Human Bard",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/3/f39b9892-9b82-4dea-bae0-e1735618341e.jpg"
+    },
+    "FIN0404": {
+      "id": "FIN0404",
+      "name": "Yuna, Hope of Spira",
+      "manaCost": "{3}{G}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/f/8f861d59-f2ce-457f-99f4-48b12ae34fa2.jpg"
+    },
+    "FIN0405": {
+      "id": "FIN0405",
+      "name": "Zidane, Tantalus Thief",
+      "manaCost": "{3}{R}{W}",
+      "type": "Legendary Creature — Human Mutant Scout",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/d/8dca28e1-21f1-4ed7-b294-df2e0c5c9503.jpg"
+    },
+    "FIN0406": {
+      "id": "FIN0406",
+      "name": "Traveling Chocobo",
+      "manaCost": "{2}{G}",
+      "type": "Creature — Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/8/28ce1dbc-508c-4d09-8e44-37bf5ebfdc8f.jpg"
+    },
+    "FIN0407": {
+      "id": "FIN0407",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/3/a3e8d94e-050b-4571-ae12-1e80e6b63611.jpg"
+    },
+    "FIN0408": {
+      "id": "FIN0408",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a9801368-263b-4515-9027-4f1827e7214c.jpg"
+    },
+    "FIN0409": {
+      "id": "FIN0409",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/b/2bbab097-acb3-480d-a433-e4f81dde62e4.jpg"
+    },
+    "FIN0410": {
+      "id": "FIN0410",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/c/fc4d240f-8920-4f8d-82a2-4cd4da93d6fb.jpg"
+    },
+    "FIN0411": {
+      "id": "FIN0411",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/2/8200a5e1-0c8b-45a4-b468-03e5067e9f81.jpg"
+    },
+    "FIN0412": {
+      "id": "FIN0412",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/a/5a9b1404-3061-4979-81eb-e056bc212205.jpg"
+    },
+    "FIN0413": {
+      "id": "FIN0413",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/c/cc027995-3d7c-4283-9e0e-eaef5727f2b8.jpg"
+    },
+    "FIN0414": {
+      "id": "FIN0414",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/b/4bd892ea-b5bc-4b57-b317-741113381b50.jpg"
+    },
+    "FIN0415": {
+      "id": "FIN0415",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/6/b6776f23-5f5b-4f0a-a00c-1ca8f03ffc5f.jpg"
+    },
+    "FIN0416": {
+      "id": "FIN0416",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/5/e564eda2-36dd-4f44-b84b-d0c18a9bdb1e.jpg"
+    },
+    "FIN0417": {
+      "id": "FIN0417",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/9/3952bbbb-6fe4-4d13-8825-e93df1d048e9.jpg"
+    },
+    "FIN0418": {
+      "id": "FIN0418",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/1/0148fa7c-b6d6-458c-8cdd-a6c4e6dd4e59.jpg"
+    },
+    "FIN0419": {
+      "id": "FIN0419",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/d/7d8b2dfc-ecaf-403b-932f-a5efc8b713e6.jpg"
+    },
+    "FIN0420": {
+      "id": "FIN0420",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/c/2c1b48ba-b158-4b9d-802c-5cbfdf96dca5.jpg"
+    },
+    "FIN0421": {
+      "id": "FIN0421",
+      "name": "Ultima, Origin of Oblivion",
+      "manaCost": "{5}",
+      "type": "Legendary Creature — God",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/6/e6e27054-03e1-424e-92d8-6e77d7683d79.jpg"
+    },
+    "FIN0422": {
+      "id": "FIN0422",
+      "name": "Adelbert Steiner",
+      "manaCost": "{1}{W}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/1/817ffbb6-5e7c-4498-af65-9e3d0cc5bcd6.jpg"
+    },
+    "FIN0423": {
+      "id": "FIN0423",
+      "name": "Aerith Gainsborough",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/a/6a1796e1-30c5-4e55-bec8-7013512606b0.jpg"
+    },
+    "FIN0424": {
+      "id": "FIN0424",
+      "name": "Ambrosia Whiteheart",
+      "manaCost": "{1}{W}",
+      "type": "Legendary Creature — Bird",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/c/fcd2f288-9d05-465a-bb3e-2a444a027096.jpg"
+    },
+    "FIN0425": {
+      "id": "FIN0425",
+      "name": "Ashe, Princess of Dalmasca",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Rebel Noble",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/b/9b103e50-8bac-41d4-966e-a5d42132bc12.jpg"
+    },
+    "FIN0426": {
+      "id": "FIN0426",
+      "name": "Beatrix, Loyal General",
+      "manaCost": "{4}{W}{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/b/ab1b24dd-ab23-41b0-a074-e77e8d9c5564.jpg"
+    },
+    "FIN0427": {
+      "id": "FIN0427",
+      "name": "Cloud, Midgar Mercenary",
+      "manaCost": "{W}{W}",
+      "type": "Legendary Creature — Human Soldier Mercenary",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/6/86fd126f-7672-4d83-93df-c61184d2fcf4.jpg"
+    },
+    "FIN0428": {
+      "id": "FIN0428",
+      "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Dragon",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/8/d869c60b-3aa2-4a90-aa93-5d4c5afd1672.jpg"
+    },
+    "FIN0429": {
+      "id": "FIN0429",
+      "name": "G'raha Tia",
+      "manaCost": "{4}{W}",
+      "type": "Legendary Creature — Cat Archer",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/2/d285d6fa-b618-4558-b1e6-d148e0927cb5.jpg"
+    },
+    "FIN0430": {
+      "id": "FIN0430",
+      "name": "Minwu, White Mage",
+      "manaCost": "{3}{W}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/9/99ad3e31-815c-409f-8fe5-d13a3f5d2b65.jpg"
+    },
+    "FIN0431": {
+      "id": "FIN0431",
+      "name": "Rosa, Resolute White Mage",
+      "manaCost": "{3}{W}",
+      "type": "Legendary Creature — Human Noble Cleric",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/7/d7964800-1392-4bb8-84e2-c9f3938ceac3.jpg"
+    },
+    "FIN0432": {
+      "id": "FIN0432",
+      "name": "Snow Villiers",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Rebel Monk",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/f/8ff58500-479d-48d2-b84e-ff3cdb9d0154.jpg"
+    },
+    "FIN0433": {
+      "id": "FIN0433",
+      "name": "Stiltzkin, Moogle Merchant",
+      "manaCost": "{W}",
+      "type": "Legendary Creature — Moogle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea207686-faf2-4e60-a613-a6752a3d1ddf.jpg"
+    },
+    "FIN0434": {
+      "id": "FIN0434",
+      "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
+      "manaCost": null,
+      "type": "Legendary Creature — God",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/9/790d1050-025a-4792-8e89-24b14278eec5.jpg"
+    },
+    "FIN0435": {
+      "id": "FIN0435",
+      "name": "Zack Fair",
+      "manaCost": "{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/9/f99f3a14-3a7c-4c1c-b747-c6b1144ef1f1.jpg"
+    },
+    "FIN0436": {
+      "id": "FIN0436",
+      "name": "Edgar, King of Figaro",
+      "manaCost": "{4}{U}{U}",
+      "type": "Legendary Creature — Human Artificer Noble",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/2/f28bd4d2-b2cf-48f1-ba11-956c12284550.jpg"
+    },
+    "FIN0437": {
+      "id": "FIN0437",
+      "name": "Gogo, Master of Mimicry",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/9/59156e99-5514-4eb3-b976-bb6cfe354d12.jpg"
+    },
+    "FIN0438": {
+      "id": "FIN0438",
+      "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Elemental",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/6/863dc1bd-8554-42ba-8d49-d99ea969103d.jpg"
+    },
+    "FIN0439": {
+      "id": "FIN0439",
+      "name": "Matoya, Archon Elder",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Human Warlock",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/4/0429bba6-d496-49ac-b849-fb8274f86880.jpg"
+    },
+    "FIN0440": {
+      "id": "FIN0440",
+      "name": "Quistis Trepe",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/c/3cc379aa-6810-421d-a317-026867c4d245.jpg"
+    },
+    "FIN0441": {
+      "id": "FIN0441",
+      "name": "Ultimecia, Temporal Threat",
+      "manaCost": "{4}{U}{U}",
+      "type": "Legendary Creature — Human Warlock",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/9/f988af75-acf4-41bb-b4c5-58492fd1f6a0.jpg"
+    },
+    "FIN0442": {
+      "id": "FIN0442",
+      "name": "Ultros, Obnoxious Octopus",
+      "manaCost": "{1}{U}",
+      "type": "Legendary Creature — Octopus",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/e/9e3f57b6-0d03-4176-8c2a-0937437fb62e.jpg"
+    },
+    "FIN0443": {
+      "id": "FIN0443",
+      "name": "Y'shtola Rhul",
+      "manaCost": "{4}{U}{U}",
+      "type": "Legendary Creature — Cat Druid",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/1/a1d3d33d-4cd9-4009-82c9-adb2e1ec45cb.jpg"
+    },
+    "FIN0444": {
+      "id": "FIN0444",
+      "name": "Ardyn, the Usurper",
+      "manaCost": "{5}{B}{B}{B}",
+      "type": "Legendary Creature — Elder Human Noble",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/4/c4c34b33-4b03-4225-ac22-a34efe173b42.jpg"
+    },
+    "FIN0445": {
+      "id": "FIN0445",
+      "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
+      "manaCost": null,
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c976f89d-768a-4cee-b0ac-90f854bfe94f.jpg"
+    },
+    "FIN0446": {
+      "id": "FIN0446",
+      "name": "Ragnarok, Divine Deliverance",
+      "manaCost": null,
+      "type": "Legendary Creature — Beast Avatar",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/b/cbcde2c1-e973-4ec0-b333-d71fa7452ef1.jpg"
+    },
+    "FIN0447": {
+      "id": "FIN0447",
+      "name": "Gaius van Baelsar",
+      "manaCost": "{2}{B}{B}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/2/42605473-e37d-46b3-8979-31cc6b21bc3c.jpg"
+    },
+    "FIN0448": {
+      "id": "FIN0448",
+      "name": "Jecht, Reluctant Guardian // Braska's Final Aeon",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Nightmare",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/a/3ae96898-3a72-428a-93e8-93ded3662669.jpg"
+    },
+    "FIN0449": {
+      "id": "FIN0449",
+      "name": "Kain, Traitorous Dragoon",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/8/28eb294b-4cab-4c34-ae29-20aac9799471.jpg"
+    },
+    "FIN0450": {
+      "id": "FIN0450",
+      "name": "Reno and Rude",
+      "manaCost": "{1}{B}",
+      "type": "Legendary Creature — Human Assassin",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/f/ef6a2ef4-4aa1-4037-89d5-50c4a6579371.jpg"
+    },
+    "FIN0451": {
+      "id": "FIN0451",
+      "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
+      "manaCost": null,
+      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/c/7cb5acb6-14af-4e17-8e6c-b44122bd81e4.jpg"
+    },
+    "FIN0452": {
+      "id": "FIN0452",
+      "name": "Seymour Flux",
+      "manaCost": "{4}{B}",
+      "type": "Legendary Creature — Spirit Avatar",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/f/8fc42c17-a12b-42db-bb01-3e444ac2a376.jpg"
+    },
+    "FIN0453": {
+      "id": "FIN0453",
+      "name": "Sidequest: Hunt the Mark // Yiazmat, Ultimate Mark",
+      "manaCost": null,
+      "type": "Legendary Creature — Dragon",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/e/de8067cc-3de3-43b2-8fcf-6dce6f4f7db1.jpg"
+    },
+    "FIN0454": {
+      "id": "FIN0454",
+      "name": "Vincent Valentine // Galian Beast",
+      "manaCost": null,
+      "type": "Legendary Creature — Werewolf Beast",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/b/2b2a676e-901f-4e0e-87c6-69820f319d7f.jpg"
+    },
+    "FIN0455": {
+      "id": "FIN0455",
+      "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
+      "manaCost": null,
+      "type": "Legendary Creature — Dragon",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/0/40658fd0-78a6-44e5-9351-512e6bdcf637.jpg"
+    },
+    "FIN0456": {
+      "id": "FIN0456",
+      "name": "Zodiark, Umbral God",
+      "manaCost": "{B}{B}{B}{B}{B}",
+      "type": "Legendary Creature — God",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f7f9977f-b2dc-46bb-b961-097675cdcb45.jpg"
+    },
+    "FIN0457": {
+      "id": "FIN0457",
+      "name": "Barret Wallace",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Creature — Human Rebel",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/c/3c8d6eaa-e6d1-4a52-98fb-9cb4d876cc0b.jpg"
+    },
+    "FIN0458": {
+      "id": "FIN0458",
+      "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Demon",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/d/cdf7fb4a-acb5-4fae-a44c-c437e5b82ec4.jpg"
+    },
+    "FIN0459": {
+      "id": "FIN0459",
+      "name": "Firion, Wild Rose Warrior",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Rebel Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/0/70def31c-e328-4f1f-a165-a43f94401c65.jpg"
+    },
+    "FIN0460": {
+      "id": "FIN0460",
+      "name": "Freya Crescent",
+      "manaCost": "{R}",
+      "type": "Legendary Creature — Rat Knight",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/5/e5aa0b07-9ebb-46d7-a80f-2e644dbd9d36.jpg"
+    },
+    "FIN0461": {
+      "id": "FIN0461",
+      "name": "Gilgamesh, Master-at-Arms",
+      "manaCost": "{4}{R}{R}",
+      "type": "Legendary Creature — Human Samurai",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/9/79070b71-3737-4d9a-8193-b2d7bf8d876b.jpg"
+    },
+    "FIN0462": {
+      "id": "FIN0462",
+      "name": "Lightning, Security Sergeant",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/0/40cce7b4-1d5d-4d91-90c5-71b79b5be1ac.jpg"
+    },
+    "FIN0463": {
+      "id": "FIN0463",
+      "name": "Prompto Argentum",
+      "manaCost": "{1}{R}",
+      "type": "Legendary Creature — Human Scout",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/e/5ee02af5-cb6c-43a3-8a1d-7e8630a90739.jpg"
+    },
+    "FIN0464": {
+      "id": "FIN0464",
+      "name": "Queen Brahne",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Noble",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/9/5957ab2d-55ed-4160-8c78-8c70009c39d8.jpg"
+    },
+    "FIN0465": {
+      "id": "FIN0465",
+      "name": "Raubahn, Bull of Ala Mhigo",
+      "manaCost": "{1}{R}",
+      "type": "Legendary Creature — Human Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/7/3732c276-3635-46e0-a46e-1b433501d3fd.jpg"
+    },
+    "FIN0466": {
+      "id": "FIN0466",
+      "name": "Seifer Almasy",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/0/50467632-dddf-45ef-900e-9718f364cf9b.jpg"
+    },
+    "FIN0467": {
+      "id": "FIN0467",
+      "name": "Vaan, Street Thief",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Scout",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/b/dbd01ef3-0b06-46a3-97f9-eaff2a539a4a.jpg"
+    },
+    "FIN0468": {
+      "id": "FIN0468",
+      "name": "Zell Dincht",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Monk",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/5/25d28011-f0a6-4d7b-ab87-aae0fe354d9e.jpg"
+    },
+    "FIN0469": {
+      "id": "FIN0469",
+      "name": "Bartz and Boko",
+      "manaCost": "{3}{G}{G}",
+      "type": "Legendary Creature — Human Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/b/1b9a92f8-2044-4554-aec9-00b410dada35.jpg"
+    },
+    "FIN0470": {
+      "id": "FIN0470",
+      "name": "Diamond Weapon",
+      "manaCost": "{7}{G}{G}",
+      "type": "Legendary Artifact Creature — Elemental",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/b/bb17f0c0-4738-42a0-94e1-27344f13735f.jpg"
+    },
+    "FIN0471": {
+      "id": "FIN0471",
+      "name": "Quina, Qu Gourmet",
+      "manaCost": "{2}{G}",
+      "type": "Legendary Creature — Qu",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/2/0208a5a9-3a6f-44c5-9e46-24bdf924753c.jpg"
+    },
+    "FIN0472": {
+      "id": "FIN0472",
+      "name": "Sazh Katzroy",
+      "manaCost": "{3}{G}",
+      "type": "Legendary Creature — Human Pilot",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/6/366fbdb4-56b4-4dd1-8cc7-565786c71c24.jpg"
+    },
+    "FIN0473": {
+      "id": "FIN0473",
+      "name": "Tifa Lockhart",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Human Monk",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/6/165a50ba-5ead-45aa-be8a-9bdd9766da66.jpg"
+    },
+    "FIN0474": {
+      "id": "FIN0474",
+      "name": "Torgal, A Fine Hound",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Wolf",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/4/b4b78fba-cde2-4ab9-bc96-51d0fc5b29cf.jpg"
+    },
+    "FIN0475": {
+      "id": "FIN0475",
+      "name": "Vanille, Cheerful l'Cie // Ragnarok, Divine Deliverance",
+      "manaCost": "{3}{G}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/c/6c752ee2-81b0-468a-a54b-740c22f2334e.jpg"
+    },
+    "FIN0476": {
+      "id": "FIN0476",
+      "name": "Absolute Virtue",
+      "manaCost": "{6}{W}{U}",
+      "type": "Legendary Creature — Avatar Warrior",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/0/50716867-4370-4c2f-aae5-9d791a5d5a2e.jpg"
+    },
+    "FIN0477": {
+      "id": "FIN0477",
+      "name": "Balthier and Fran",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Human Rabbit",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8c9eaf03-0af1-496f-b3d9-37938a8dc6dd.jpg"
+    },
+    "FIN0478": {
+      "id": "FIN0478",
+      "name": "Black Waltz No. 3",
+      "manaCost": "{2}{B}{R}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/d/7d143a13-a627-4b64-9356-253a2f9ddf98.jpg"
+    },
+    "FIN0479": {
+      "id": "FIN0479",
+      "name": "Choco, Seeker of Paradise",
+      "manaCost": "{1}{G}{W}{U}",
+      "type": "Legendary Creature — Bird",
+      "colorIdentity": [
+        "G",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/b/6bf0cce3-ba72-4f7f-8b65-01e5dcd3299f.jpg"
+    },
+    "FIN0480": {
+      "id": "FIN0480",
+      "name": "Cid, Timeless Artificer",
+      "manaCost": "{2}{W}{U}",
+      "type": "Legendary Creature — Human Artificer",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/b/db9830c7-1f40-4ff2-8e99-7c6393d4a968.jpg"
+    },
+    "FIN0481": {
+      "id": "FIN0481",
+      "name": "Cloud of Darkness",
+      "manaCost": "{2}{B}{G}{G}",
+      "type": "Legendary Creature — Avatar",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/5/c53b7098-02c6-4977-8871-334f3fd4ee1f.jpg"
+    },
+    "FIN0482": {
+      "id": "FIN0482",
+      "name": "Cloud, Planet's Champion",
+      "manaCost": "{3}{R}{W}",
+      "type": "Legendary Creature — Human Soldier Mercenary",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/5/75180e47-064e-4dd6-adcf-d4fb497a445b.jpg"
+    },
+    "FIN0483": {
+      "id": "FIN0483",
+      "name": "Emet-Selch, Unsundered // Hades, Sorcerer of Eld",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f462d81-bb1b-4d44-8952-6dff52970792.jpg"
+    },
+    "FIN0484": {
+      "id": "FIN0484",
+      "name": "The Emperor of Palamecia // The Lord Master of Hell",
+      "manaCost": null,
+      "type": "Legendary Creature — Demon Noble Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/b/1b4d8a51-2307-4ed6-af25-c48946219096.jpg"
+    },
+    "FIN0485": {
+      "id": "FIN0485",
+      "name": "Exdeath, Void Warlock // Neo Exdeath, Dimension's End",
+      "manaCost": null,
+      "type": "Legendary Creature — Spirit Avatar",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/f/df51bf51-839a-4b4d-a6c2-431c9ebff875.jpg"
+    },
+    "FIN0486": {
+      "id": "FIN0486",
+      "name": "Garland, Knight of Cornelia // Chaos, the Endless",
+      "manaCost": null,
+      "type": "Legendary Creature — Demon",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/e/8e6e21d2-e282-4f56-8e6b-929176b264b3.jpg"
+    },
+    "FIN0487": {
+      "id": "FIN0487",
+      "name": "Garnet, Princess of Alexandria",
+      "manaCost": "{G}{W}",
+      "type": "Legendary Creature — Human Noble Cleric",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/1/6136d21e-e6fa-4aaf-9eca-3847fa2c65fd.jpg"
+    },
+    "FIN0488": {
+      "id": "FIN0488",
+      "name": "Giott, King of the Dwarves",
+      "manaCost": "{R}{W}",
+      "type": "Legendary Creature — Dwarf Noble",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/5/e5220843-4964-4abe-b397-a909be8ed8e0.jpg"
+    },
+    "FIN0489": {
+      "id": "FIN0489",
+      "name": "Gladiolus Amicitia",
+      "manaCost": "{4}{R}{G}",
+      "type": "Legendary Creature — Human Warrior",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/e/8e2d8e83-1fd4-4c99-ae84-b450e3650cb7.jpg"
+    },
+    "FIN0490": {
+      "id": "FIN0490",
+      "name": "Golbez, Crystal Collector",
+      "manaCost": "{U}{B}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/b/db013d39-3681-4ed0-8671-d1d2452df9de.jpg"
+    },
+    "FIN0491": {
+      "id": "FIN0491",
+      "name": "Hope Estheim",
+      "manaCost": "{W}{U}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/5/a50f113e-be5d-4251-8605-67f54fbe9b3f.jpg"
+    },
+    "FIN0492": {
+      "id": "FIN0492",
+      "name": "Ignis Scientia",
+      "manaCost": "{1}{G}{U}",
+      "type": "Legendary Creature — Human Advisor",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/7/2790a23d-00ff-47b7-badd-9dd68042bb99.jpg"
+    },
+    "FIN0493": {
+      "id": "FIN0493",
+      "name": "Jenova, Ancient Calamity",
+      "manaCost": "{2}{B}{G}",
+      "type": "Legendary Creature — Alien",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/2/22dd493f-e481-4563-8f87-c5bdbfd54fdd.jpg"
+    },
+    "FIN0494": {
+      "id": "FIN0494",
+      "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Phoenix",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/d/8d5aaba7-1d36-4a0f-ad3e-70dca5944c53.jpg"
+    },
+    "FIN0495": {
+      "id": "FIN0495",
+      "name": "Judge Magister Gabranth",
+      "manaCost": "{W}{B}",
+      "type": "Legendary Creature — Human Advisor Knight",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/b/ab39a24e-c73b-4d62-b7a0-c4ea968768c9.jpg"
+    },
+    "FIN0496": {
+      "id": "FIN0496",
+      "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/6/06b7ca77-7194-4a0b-a650-4afd7afb50eb.jpg"
+    },
+    "FIN0497": {
+      "id": "FIN0497",
+      "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/d/cdb5acf7-2878-466d-8224-24fa64a602f5.jpg"
+    },
+    "FIN0498": {
+      "id": "FIN0498",
+      "name": "Lightning, Army of One",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0c665905-183b-401f-b83c-a312d032e061.jpg"
+    },
+    "FIN0499": {
+      "id": "FIN0499",
+      "name": "Locke Cole",
+      "manaCost": "{1}{U}{B}",
+      "type": "Legendary Creature — Human Rogue",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/1/81d0f2e4-8b22-4c9b-ad01-fd0818fe7372.jpg"
+    },
+    "FIN0500": {
+      "id": "FIN0500",
+      "name": "Noctis, Prince of Lucis",
+      "manaCost": "{1}{W}{U}{B}",
+      "type": "Legendary Creature — Human Noble",
+      "colorIdentity": [
+        "B",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/7/8717cde9-eaee-4926-ab6e-02bb58421d05.jpg"
+    },
+    "FIN0501": {
+      "id": "FIN0501",
+      "name": "Omega, Heartless Evolution",
+      "manaCost": "{5}{G}{U}",
+      "type": "Legendary Artifact Creature — Robot",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/2/926953df-e1f8-4d3e-a05d-93657143da04.jpg"
+    },
+    "FIN0502": {
+      "id": "FIN0502",
+      "name": "Rinoa Heartilly",
+      "manaCost": "{3}{G}{W}",
+      "type": "Legendary Creature — Human Rebel Warlock",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3f77c0f4-7a1b-496e-b030-55627446dfe3.jpg"
+    },
+    "FIN0503": {
+      "id": "FIN0503",
+      "name": "Rufus Shinra",
+      "manaCost": "{1}{W}{B}",
+      "type": "Legendary Creature — Human Noble",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/d/5d49c95e-2398-4646-b9f1-44d0b73fc157.jpg"
+    },
+    "FIN0504": {
+      "id": "FIN0504",
+      "name": "Rydia, Summoner of Mist",
+      "manaCost": "{R}{G}",
+      "type": "Legendary Creature — Human Shaman",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/6/f67652be-9b37-41d0-93db-ba26f8a23186.jpg"
+    },
+    "FIN0505": {
+      "id": "FIN0505",
+      "name": "Sephiroth, Planet's Heir",
+      "manaCost": "{4}{U}{B}",
+      "type": "Legendary Creature — Human Avatar Soldier",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/0/b03e29e2-cfda-4284-8d30-0686c01e861e.jpg"
+    },
+    "FIN0506": {
+      "id": "FIN0506",
+      "name": "Serah Farron // Crystallized Serah",
+      "manaCost": null,
+      "type": "Legendary Artifact",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/2/7224bb1b-167c-47e5-8314-84aebca054b6.jpg"
+    },
+    "FIN0507": {
+      "id": "FIN0507",
+      "name": "Shantotto, Tactician Magician",
+      "manaCost": "{1}{U}{R}",
+      "type": "Legendary Creature — Dwarf Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d1e01457-1696-4313-b21e-36e088735b1f.jpg"
+    },
+    "FIN0508": {
+      "id": "FIN0508",
+      "name": "Sin, Spira's Punishment",
+      "manaCost": "{4}{B}{G}{U}",
+      "type": "Legendary Creature — Leviathan Avatar",
+      "colorIdentity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/7/075dd582-61b7-45e9-9dcf-0b544b733e61.jpg"
+    },
+    "FIN0509": {
+      "id": "FIN0509",
+      "name": "Squall, SeeD Mercenary",
+      "manaCost": "{2}{W}{B}",
+      "type": "Legendary Creature — Human Knight Mercenary",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fef02132-34e6-4f3a-ac60-af3221a782b3.jpg"
+    },
+    "FIN0510": {
+      "id": "FIN0510",
+      "name": "Tellah, Great Sage",
+      "manaCost": "{3}{U}{R}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/0/e0c5f3d5-ca17-4d4c-8de4-3559d6c6fe94.jpg"
+    },
+    "FIN0511": {
+      "id": "FIN0511",
+      "name": "Terra, Magical Adept // Esper Terra",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Wizard",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fe0aa7d7-73e7-4c8c-92b5-b923817ce461.jpg"
+    },
+    "FIN0512": {
+      "id": "FIN0512",
+      "name": "Tidus, Blitzball Star",
+      "manaCost": "{1}{W}{U}",
+      "type": "Legendary Creature — Human Warrior",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/f/cfe3a1fa-d885-48c0-aa47-bfd8d340bf8e.jpg"
+    },
+    "FIN0513": {
+      "id": "FIN0513",
+      "name": "Ultimecia, Time Sorceress // Ultimecia, Omnipotent",
+      "manaCost": null,
+      "type": "Legendary Creature — Nightmare Warlock",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/7/e7922b5a-6e75-4910-93ad-37e322073d35.jpg"
+    },
+    "FIN0514": {
+      "id": "FIN0514",
+      "name": "Vivi Ornitier",
+      "manaCost": "{1}{U}{R}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0cfc4614-f6c1-4247-ab96-5bd41006ad85.jpg"
+    },
+    "FIN0515": {
+      "id": "FIN0515",
+      "name": "The Wandering Minstrel",
+      "manaCost": "{G}{U}",
+      "type": "Legendary Creature — Human Bard",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/d/fd5de0c8-6af9-4b0a-be9d-19af1e7bd7c3.jpg"
+    },
+    "FIN0516": {
+      "id": "FIN0516",
+      "name": "Xande, Dark Mage",
+      "manaCost": "{2}{U}{B}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/1/e11df7e8-e154-4fe2-b8d6-a452d0e0d7d5.jpg"
+    },
+    "FIN0517": {
+      "id": "FIN0517",
+      "name": "Yuna, Hope of Spira",
+      "manaCost": "{3}{G}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/f/cf41b2a8-0f8f-48fd-a430-056a2f669615.jpg"
+    },
+    "FIN0518": {
+      "id": "FIN0518",
+      "name": "Zidane, Tantalus Thief",
+      "manaCost": "{3}{R}{W}",
+      "type": "Legendary Creature — Human Mutant Scout",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/e/2eaffe7a-0e04-4c19-942b-695a0c350ef0.jpg"
+    },
+    "FIN0519": {
+      "id": "FIN0519",
+      "name": "Aerith Gainsborough",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/2/024a8033-fb41-40a4-b71d-0aa533e0f378.jpg"
+    },
+    "FIN0520": {
+      "id": "FIN0520",
+      "name": "Cloud, Midgar Mercenary",
+      "manaCost": "{W}{W}",
+      "type": "Legendary Creature — Human Soldier Mercenary",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/0/f0b73ab0-b8eb-4a6f-a8d9-25d56fdf740a.jpg"
+    },
+    "FIN0521": {
+      "id": "FIN0521",
+      "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Dragon",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/f/9f347fa7-301f-4bc5-954c-b910a840a23b.jpg"
+    },
+    "FIN0522": {
+      "id": "FIN0522",
+      "name": "Gogo, Master of Mimicry",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8cbeb01f-965f-4aa2-9e75-31718cc574e3.jpg"
+    },
+    "FIN0523": {
+      "id": "FIN0523",
+      "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Elemental",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/b/bbd46c0d-cd9d-4e48-b6bf-f619e141100c.jpg"
+    },
+    "FIN0524": {
+      "id": "FIN0524",
+      "name": "Ardyn, the Usurper",
+      "manaCost": "{5}{B}{B}{B}",
+      "type": "Legendary Creature — Elder Human Noble",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/4/34bd7a66-afb1-4a6b-80b3-fce1bb361d88.jpg"
+    },
+    "FIN0525": {
+      "id": "FIN0525",
+      "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
+      "manaCost": null,
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/d/7d95f911-91c3-41ee-a709-c579c723eede.jpg"
+    },
+    "FIN0526": {
+      "id": "FIN0526",
+      "name": "Ragnarok, Divine Deliverance",
+      "manaCost": null,
+      "type": "Legendary Creature — Beast Avatar",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a951cc35-bd29-467f-b28c-5d57340e7450.jpg"
+    },
+    "FIN0527": {
+      "id": "FIN0527",
+      "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
+      "manaCost": null,
+      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/b/db95465a-2a58-44d7-9439-edd18c9505f0.jpg"
+    },
+    "FIN0528": {
+      "id": "FIN0528",
+      "name": "Vincent Valentine // Galian Beast",
+      "manaCost": null,
+      "type": "Legendary Creature — Werewolf Beast",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/5/15ea1113-7360-462d-91b8-22d5110cbf5a.jpg"
+    },
+    "FIN0529": {
+      "id": "FIN0529",
+      "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
+      "manaCost": null,
+      "type": "Legendary Creature — Dragon",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/e/8e3b09a9-631d-4174-8390-a82db0a3d68d.jpg"
+    },
+    "FIN0530": {
+      "id": "FIN0530",
+      "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Demon",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/7/57f83eb3-d9d3-4565-b898-4ba1da768172.jpg"
+    },
+    "FIN0531": {
+      "id": "FIN0531",
+      "name": "Firion, Wild Rose Warrior",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Rebel Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/6/6687a6e8-f674-4db8-81eb-5ad28b7890f7.jpg"
+    },
+    "FIN0532": {
+      "id": "FIN0532",
+      "name": "Prompto Argentum",
+      "manaCost": "{1}{R}",
+      "type": "Legendary Creature — Human Scout",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/1/516105c2-462e-44e8-b412-5e9eb27ba040.jpg"
+    },
+    "FIN0533": {
+      "id": "FIN0533",
+      "name": "Raubahn, Bull of Ala Mhigo",
+      "manaCost": "{1}{R}",
+      "type": "Legendary Creature — Human Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/a/3afa1696-e242-469f-b3ae-99109c4b36e0.jpg"
+    },
+    "FIN0534": {
+      "id": "FIN0534",
+      "name": "Seifer Almasy",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Creature — Human Knight",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/a/0a38194e-44bb-4f79-9797-03cb733808d0.jpg"
+    },
+    "FIN0535": {
+      "id": "FIN0535",
+      "name": "Vaan, Street Thief",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Scout",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/c/9cbdcfad-dd4f-4405-9379-eb11c6e4d4f5.jpg"
+    },
+    "FIN0536": {
+      "id": "FIN0536",
+      "name": "Tifa Lockhart",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Human Monk",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/7/17e88e4e-d8f0-4598-bfd4-006469c6f26e.jpg"
+    },
+    "FIN0537": {
+      "id": "FIN0537",
+      "name": "Vanille, Cheerful l'Cie // Ragnarok, Divine Deliverance",
+      "manaCost": "{3}{G}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/1/f1083637-7c43-44e0-8029-ad56cca8cc19.jpg"
+    },
+    "FIN0538": {
+      "id": "FIN0538",
+      "name": "Balthier and Fran",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Human Rabbit",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/b/ab6954bc-4fbc-4cb9-9c4d-1f46b3fe0085.jpg"
+    },
+    "FIN0539": {
+      "id": "FIN0539",
+      "name": "Emet-Selch, Unsundered // Hades, Sorcerer of Eld",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/0/7083fa8a-a841-4c69-9443-af35676a7817.jpg"
+    },
+    "FIN0540": {
+      "id": "FIN0540",
+      "name": "Golbez, Crystal Collector",
+      "manaCost": "{U}{B}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/e/de4c9b6b-27be-45b6-9642-49471aaddcb9.jpg"
+    },
+    "FIN0541": {
+      "id": "FIN0541",
+      "name": "Hope Estheim",
+      "manaCost": "{W}{U}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/b/0b3ba36b-4a15-425c-98ae-37a10b3772bc.jpg"
+    },
+    "FIN0542": {
+      "id": "FIN0542",
+      "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
+      "manaCost": null,
+      "type": "Legendary Enchantment Creature — Saga Phoenix",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b818aec4-f5a1-411f-ae19-85787cad9032.jpg"
+    },
+    "FIN0543": {
+      "id": "FIN0543",
+      "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/1/21977a0a-7e76-4e1f-9c42-dcc4d63961a1.jpg"
+    },
+    "FIN0544": {
+      "id": "FIN0544",
+      "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
+      "manaCost": null,
+      "type": "Legendary Creature — Avatar Wizard",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/5/65530632-5b09-4359-921b-a6d094937aff.jpg"
+    },
+    "FIN0545": {
+      "id": "FIN0545",
+      "name": "Lightning, Army of One",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/b/2b760674-b6cc-4730-8c88-4e627f60589c.jpg"
+    },
+    "FIN0546": {
+      "id": "FIN0546",
+      "name": "Noctis, Prince of Lucis",
+      "manaCost": "{1}{W}{U}{B}",
+      "type": "Legendary Creature — Human Noble",
+      "colorIdentity": [
+        "B",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/9/49543cd4-d976-4d3b-a7d2-6acfbb28b1b5.jpg"
+    },
+    "FIN0547": {
+      "id": "FIN0547",
+      "name": "Squall, SeeD Mercenary",
+      "manaCost": "{2}{W}{B}",
+      "type": "Legendary Creature — Human Knight Mercenary",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/1/51df7137-8bfc-4140-b436-88834bd78b73.jpg"
+    },
+    "FIN0548": {
+      "id": "FIN0548",
+      "name": "The Wandering Minstrel",
+      "manaCost": "{G}{U}",
+      "type": "Legendary Creature — Human Bard",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fe9cd860-1b4e-48ec-be30-e0ec4ca75e26.jpg"
+    },
+    "FIN0549": {
+      "id": "FIN0549",
+      "name": "Yuna, Hope of Spira",
+      "manaCost": "{3}{G}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/d/ed59c09c-b972-4470-bcae-c79866825941.jpg"
+    },
+    "FIN0550": {
+      "id": "FIN0550",
+      "name": "Zidane, Tantalus Thief",
+      "manaCost": "{3}{R}{W}",
+      "type": "Legendary Creature — Human Mutant Scout",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/3/439b31a8-d6e2-4db4-bac3-c02e2eb11719.jpg"
+    },
+    "FIN0551": {
+      "id": "FIN0551",
+      "name": "Traveling Chocobo",
+      "manaCost": "{2}{G}",
+      "type": "Creature — Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/c/6ce8744a-ede3-4662-968a-360eb6639f08.jpg"
+    },
+    "FIN0552": {
+      "id": "FIN0552",
+      "name": "Cloud, Planet's Champion",
+      "manaCost": "{3}{R}{W}",
+      "type": "Legendary Creature — Human Soldier Mercenary",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6d58067-337d-43dc-b4a3-c6acc701d450.jpg"
+    },
+    "FIN0553": {
+      "id": "FIN0553",
+      "name": "Sephiroth, Planet's Heir",
+      "manaCost": "{4}{U}{B}",
+      "type": "Legendary Creature — Human Avatar Soldier",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/b/abd73e52-62f0-4e89-9dc6-90ff0bc2a9b7.jpg"
+    },
+    "FIN0554": {
+      "id": "FIN0554",
+      "name": "Beatrix, Loyal General",
+      "manaCost": "{4}{W}{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9da83b07-4978-4af7-be51-8aa8f35ec0bb.jpg"
+    },
+    "FIN0555": {
+      "id": "FIN0555",
+      "name": "Rosa, Resolute White Mage",
+      "manaCost": "{3}{W}",
+      "type": "Legendary Creature — Human Noble Cleric",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/4/c44e0ad6-9f44-4e4c-8c3b-3ee99409a740.jpg"
+    },
+    "FIN0556": {
+      "id": "FIN0556",
+      "name": "Ultimecia, Temporal Threat",
+      "manaCost": "{4}{U}{U}",
+      "type": "Legendary Creature — Human Warlock",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/6/b64e4475-f1c6-4d85-b42f-6d84d06855bb.jpg"
+    },
+    "FIN0557": {
+      "id": "FIN0557",
+      "name": "Deadly Embrace",
+      "manaCost": "{3}{B}{B}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/1/a11cb85c-85dd-435c-8303-4d0d18bdb1e9.jpg"
+    },
+    "FIN0558": {
+      "id": "FIN0558",
+      "name": "Seymour Flux",
+      "manaCost": "{4}{B}",
+      "type": "Legendary Creature — Spirit Avatar",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/5/c5fdc78e-0815-443c-8c26-35387b6f4f37.jpg"
+    },
+    "FIN0559": {
+      "id": "FIN0559",
+      "name": "Judgment Bolt",
+      "manaCost": "{3}{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/5/05b04b06-9271-4a28-a60e-287df0d1a4d1.jpg"
+    },
+    "FIN0560": {
+      "id": "FIN0560",
+      "name": "Lightning, Security Sergeant",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/a/4ad4dce3-6e43-4528-b570-85547d03164e.jpg"
+    },
+    "FIN0561": {
+      "id": "FIN0561",
+      "name": "Xande, Dark Mage",
+      "manaCost": "{2}{U}{B}",
+      "type": "Legendary Creature — Human Wizard",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1caed9a8-b73b-470e-b9d8-8c3b7cac3eee.jpg"
+    },
+    "FIN0562": {
+      "id": "FIN0562",
+      "name": "Magitek Scythe",
+      "manaCost": "{4}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/b/8b691d42-3498-4d47-9a46-f7c376df8886.jpg"
+    },
+    "FIN0563": {
+      "id": "FIN0563",
+      "name": "Ultima Weapon",
+      "manaCost": "{7}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/9/b9162d08-a6ba-4e6e-b82c-9b092bd781dd.jpg"
+    },
+    "FIN0564": {
+      "id": "FIN0564",
+      "name": "Cloud, Midgar Mercenary",
+      "manaCost": "{W}{W}",
+      "type": "Legendary Creature — Human Soldier Mercenary",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/3/b358dadc-9cc9-4baf-afec-3b50d0822609.jpg"
+    },
+    "FIN0565": {
+      "id": "FIN0565",
+      "name": "Stiltzkin, Moogle Merchant",
+      "manaCost": "{W}",
+      "type": "Legendary Creature — Moogle",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/7/c7d9c54d-edec-40a8-82d8-b12cee7daa21.jpg"
+    },
+    "FIN0566": {
+      "id": "FIN0566",
+      "name": "A Realm Reborn",
+      "manaCost": "{4}{G}{G}",
+      "type": "Enchantment",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/3/13f4b6f3-736f-4f33-9d05-9bfd0b05b214.jpg"
+    },
+    "FIN0567": {
+      "id": "FIN0567",
+      "name": "Tifa Lockhart",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Human Monk",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/9/39a038ed-9ed9-4a32-9613-989e4809ec94.jpg"
+    },
+    "FIN0568": {
+      "id": "FIN0568",
+      "name": "Traveling Chocobo",
+      "manaCost": "{2}{G}",
+      "type": "Creature — Bird",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f58e882a-c59f-4f72-91b5-0291f8360a2c.jpg"
+    },
+    "FIN0569": {
+      "id": "FIN0569",
+      "name": "Choco, Seeker of Paradise",
+      "manaCost": "{1}{G}{W}{U}",
+      "type": "Legendary Creature — Bird",
+      "colorIdentity": [
+        "G",
+        "U",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1ce688fa-1fdb-4acd-b9b0-bf7325a6b8e0.jpg"
+    },
+    "FIN0570": {
+      "id": "FIN0570",
+      "name": "Vivi Ornitier",
+      "manaCost": "{1}{U}{R}",
+      "type": "Legendary Creature — Wizard",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/5/25ef2d44-c261-4511-b96f-85e7a291e318.jpg"
+    },
+    "FIN0571": {
+      "id": "FIN0571",
+      "name": "Yuna, Hope of Spira",
+      "manaCost": "{3}{G}{W}",
+      "type": "Legendary Creature — Human Cleric",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d9228c15-06d1-4701-8619-1ad08d63275a.jpg"
+    },
+    "FIN0572": {
+      "id": "FIN0572",
+      "name": "Plains",
+      "manaCost": null,
+      "type": "Basic Land — Plains",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/e/dec72b07-8f41-4d42-a455-794bf106302c.jpg"
+    },
+    "FIN0573": {
+      "id": "FIN0573",
+      "name": "Island",
+      "manaCost": null,
+      "type": "Basic Land — Island",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/6/46255a65-b735-4888-85db-3ab2ab3d903c.jpg"
+    },
+    "FIN0574": {
+      "id": "FIN0574",
+      "name": "Swamp",
+      "manaCost": null,
+      "type": "Basic Land — Swamp",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/1/1176ebbf-4130-4e4e-ad49-65101a7357b4.jpg"
+    },
+    "FIN0575": {
+      "id": "FIN0575",
+      "name": "Mountain",
+      "manaCost": null,
+      "type": "Basic Land — Mountain",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0cef98b7-d54a-456e-8240-1c5af3a72a04.jpg"
+    },
+    "FIN0576": {
+      "id": "FIN0576",
+      "name": "Forest",
+      "manaCost": null,
+      "type": "Basic Land — Forest",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/0/2036f825-ef57-4a40-b45f-0668d9c8ec6a.jpg"
+    },
+    "FIN0577": {
+      "id": "FIN0577",
+      "name": "Y'shtola Rhul",
+      "manaCost": "{4}{U}{U}",
+      "type": "Legendary Creature — Cat Druid",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/d/6d24956c-b123-4682-9f89-6821ae45fc00.jpg"
+    },
+    "FIN0578": {
+      "id": "FIN0578",
+      "name": "Phoenix Down",
+      "manaCost": "{W}",
+      "type": "Artifact",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/e/de3b9b08-f430-4f01-8a42-3a9f1415eee0.jpg"
+    },
+    "FIN0579": {
+      "id": "FIN0579",
+      "name": "White Auracite",
+      "manaCost": "{2}{W}{W}",
+      "type": "Artifact",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b8921d64-fdd3-4cdd-9687-983c8d6e0f72.jpg"
+    },
+    "FIN0580": {
+      "id": "FIN0580",
+      "name": "Zack Fair",
+      "manaCost": "{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/0/90ab9143-23e0-437e-bc51-a46f3497c195.jpg"
+    },
+    "FIN0581": {
+      "id": "FIN0581",
+      "name": "Astrologian's Planisphere",
+      "manaCost": "{1}{U}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/0/a0f6e2d7-58b5-4a7d-8c42-e25185cd173f.jpg"
+    },
+    "FIN0582": {
+      "id": "FIN0582",
+      "name": "Sage's Nouliths",
+      "manaCost": "{1}{U}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "U"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/c/ace9baac-4aa6-49ef-b85d-514de6e77043.jpg"
+    },
+    "FIN0583": {
+      "id": "FIN0583",
+      "name": "Circle of Power",
+      "manaCost": "{3}{B}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "B"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/6/b6dc1f5a-a6cc-4ab4-8bb9-e216e24ca735.jpg"
+    },
+    "FIN0584": {
+      "id": "FIN0584",
+      "name": "Barret Wallace",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Creature — Human Rebel",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea5b9fe8-2561-4176-adfd-3fb790250bbc.jpg"
+    },
+    "FIN0585": {
+      "id": "FIN0585",
+      "name": "Laughing Mad",
+      "manaCost": "{2}{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/2/9268ccdb-0b5b-4624-9443-f7b5330ec71f.jpg"
+    }
+  }
+}

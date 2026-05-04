@@ -3,12 +3,54 @@
     "id": "middle-earth",
     "name": "Middle-Earth",
     "description": "The Lord of the Rings and Middle-Earth",
-    "sets": ["LTR", "LTC"],
+    "sets": [
+      "LTR",
+      "LTC"
+    ],
     "precons": [
-      { "id": "food-and-fellowship", "name": "Food and Fellowship" },
-      { "id": "riders-of-rohan", "name": "Riders of Rohan" },
-      { "id": "elven-council", "name": "Elven Council" },
-      { "id": "the-hosts-of-mordor", "name": "The Hosts of Mordor" }
+      {
+        "id": "food-and-fellowship",
+        "name": "Food and Fellowship"
+      },
+      {
+        "id": "riders-of-rohan",
+        "name": "Riders of Rohan"
+      },
+      {
+        "id": "elven-council",
+        "name": "Elven Council"
+      },
+      {
+        "id": "the-hosts-of-mordor",
+        "name": "The Hosts of Mordor"
+      }
+    ]
+  },
+  {
+    "id": "final-fantasy",
+    "name": "Final Fantasy",
+    "description": "The Final Fantasy video game series",
+    "sets": [
+      "FIN",
+      "FIC"
+    ],
+    "precons": [
+      {
+        "id": "revival-trance",
+        "name": "Revival Trance"
+      },
+      {
+        "id": "limit-break",
+        "name": "Limit Break"
+      },
+      {
+        "id": "counter-blitz",
+        "name": "Counter Blitz"
+      },
+      {
+        "id": "scions-and-spellcraft",
+        "name": "Scions & Spellcraft"
+      }
     ]
   }
 ]

@@ -1,0 +1,994 @@
+{
+  "id": "limit-break",
+  "name": "Limit Break",
+  "universe": "final-fantasy",
+  "setCode": "FIC",
+  "colorIdentity": [
+    "G",
+    "R",
+    "W"
+  ],
+  "commanders": [
+    {
+      "id": "FIC0002",
+      "name": "Cloud, Ex-SOLDIER",
+      "manaCost": "{2}{R}{G}{W}",
+      "type": "Legendary Creature — Human Soldier Mercenary",
+      "colorIdentity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/7/07b4e4f8-6a31-4533-be51-668ce3ddc84f.jpg"
+    }
+  ],
+  "mainBoard": {
+    "FIC0006": {
+      "id": "FIC0006",
+      "name": "Tifa, Martial Artist",
+      "manaCost": "{1}{R}{G}{W}",
+      "type": "Legendary Creature — Human Monk",
+      "colorIdentity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/1/31513afc-329c-4913-8fcd-945c39ec82b2.jpg"
+    },
+    "FIC0013": {
+      "id": "FIC0013",
+      "name": "Cid, Freeflier Pilot",
+      "manaCost": "{1}{W}",
+      "type": "Legendary Creature — Human Warrior Pilot",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/f/afa9e3e6-a633-46ad-b52a-48574b2f3d07.jpg"
+    },
+    "FIC0014": {
+      "id": "FIC0014",
+      "name": "Cloud's Limit Break",
+      "manaCost": "{1}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/e/1eb10082-4f0a-41f9-9a70-0d3c7ead249f.jpg"
+    },
+    "FIC0018": {
+      "id": "FIC0018",
+      "name": "Elena, Turk Recruit",
+      "manaCost": "{2}{W}",
+      "type": "Legendary Creature — Human Assassin",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d16553a3-65c3-4dec-af92-123d1e5dce10.jpg"
+    },
+    "FIC0021": {
+      "id": "FIC0021",
+      "name": "Heidegger, Shinra Executive",
+      "manaCost": "{3}{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/e/8e216baf-0e3c-4173-a852-5c5aeb3a9d79.jpg"
+    },
+    "FIC0022": {
+      "id": "FIC0022",
+      "name": "Helitrooper",
+      "manaCost": "{1}{W}",
+      "type": "Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/0/2073f387-9cdd-4184-8704-e6031c934b6d.jpg"
+    },
+    "FIC0025": {
+      "id": "FIC0025",
+      "name": "SOLDIER Military Program",
+      "manaCost": "{2}{W}",
+      "type": "Enchantment",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/d/dddad2c2-bd19-42bd-aad6-bbf23ccef269.jpg"
+    },
+    "FIC0032": {
+      "id": "FIC0032",
+      "name": "Ultimate Magic: Holy",
+      "manaCost": "{2}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/f/8fdb8414-2f08-42fb-ae0a-c7f0af1e144e.jpg"
+    },
+    "FIC0053": {
+      "id": "FIC0053",
+      "name": "Avalanche of Sector 7",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Rebel",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/0/20a87dbc-5deb-42ae-9097-806e9a27466f.jpg"
+    },
+    "FIC0054": {
+      "id": "FIC0054",
+      "name": "Cait Sith, Fortune Teller",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Artifact Creature — Cat Moogle",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/e/3e0f6c53-6bbf-4d4c-bbbf-4dab22297527.jpg"
+    },
+    "FIC0061": {
+      "id": "FIC0061",
+      "name": "Summon: Kujata",
+      "manaCost": "{5}{R}",
+      "type": "Enchantment Creature — Saga Ox",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/a/ba934866-efd0-4126-b1ff-9c7e82b73bd6.jpg"
+    },
+    "FIC0062": {
+      "id": "FIC0062",
+      "name": "Ultimate Magic: Meteor",
+      "manaCost": "{5}{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b5b0f0fd-574a-4ae7-ab55-b815112d6b3a.jpg"
+    },
+    "FIC0064": {
+      "id": "FIC0064",
+      "name": "Vincent, Vengeful Atoner",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Assassin",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/e/9e53d0b2-eeb0-4d54-86e5-723e05aaf6da.jpg"
+    },
+    "FIC0065": {
+      "id": "FIC0065",
+      "name": "Yuffie, Materia Hunter",
+      "manaCost": "{2}{R}",
+      "type": "Legendary Creature — Human Ninja",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/1/117bb5db-4a1c-4704-b0b5-c67b45ac2f52.jpg"
+    },
+    "FIC0066": {
+      "id": "FIC0066",
+      "name": "Bugenhagen, Wise Elder",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Human Shaman",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/9/99155fae-507a-4eab-918a-bdee021e2262.jpg"
+    },
+    "FIC0067": {
+      "id": "FIC0067",
+      "name": "Lifestream's Blessing",
+      "manaCost": "{4}{G}{G}",
+      "type": "Instant",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/8/48b4101b-3428-4b6b-818a-6097a093e9b5.jpg"
+    },
+    "FIC0069": {
+      "id": "FIC0069",
+      "name": "Professor Hojo",
+      "manaCost": "{1}{G}",
+      "type": "Legendary Creature — Human Scientist",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/0/107ffe2e-47eb-43de-bc9e-c68013b62912.jpg"
+    },
+    "FIC0072": {
+      "id": "FIC0072",
+      "name": "Summoning Materia",
+      "manaCost": "{2}{G}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/7/176401fb-f87c-4085-9dac-e6c8a843e32e.jpg"
+    },
+    "FIC0076": {
+      "id": "FIC0076",
+      "name": "Aerith, Last Ancient",
+      "manaCost": "{2}{G}{W}",
+      "type": "Legendary Creature — Human Cleric Druid",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/0/d041a51c-9a28-4b32-9da3-0f06807959f1.jpg"
+    },
+    "FIC0079": {
+      "id": "FIC0079",
+      "name": "Barret, Avalanche Leader",
+      "manaCost": "{2}{R}{G}",
+      "type": "Legendary Creature — Human Rebel",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/e/2e37fd36-84f0-4869-bfae-da4b97c9725d.jpg"
+    },
+    "FIC0091": {
+      "id": "FIC0091",
+      "name": "Red XIII, Proud Warrior",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Beast Warrior",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/0/10407b26-be28-4628-9567-746681e5c834.jpg"
+    },
+    "FIC0092": {
+      "id": "FIC0092",
+      "name": "Sephiroth, Fallen Hero",
+      "manaCost": "{3}{R}{W}",
+      "type": "Legendary Creature — Human Avatar Soldier",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/f/df919eb8-9eff-4777-9c46-94c795cda918.jpg"
+    },
+    "FIC0098": {
+      "id": "FIC0098",
+      "name": "Conformer Shuriken",
+      "manaCost": "{2}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/1/019615fa-4bec-41e8-9c4c-2c6f91bdefb2.jpg"
+    },
+    "FIC0100": {
+      "id": "FIC0100",
+      "name": "Wrecking Ball Arm",
+      "manaCost": "{2}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/1/e1f16620-08d6-49bd-9f75-d89ae46bfd1f.jpg"
+    },
+    "FIC0231": {
+      "id": "FIC0231",
+      "name": "Austere Command",
+      "manaCost": "{4}{W}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/3/93e3dbd9-20f6-47a2-8246-c260b2ead9dc.jpg"
+    },
+    "FIC0233": {
+      "id": "FIC0233",
+      "name": "Bastion Protector",
+      "manaCost": "{2}{W}",
+      "type": "Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/e/0ed04a28-2984-4fa6-a11e-f508b7b5446e.jpg"
+    },
+    "FIC0234": {
+      "id": "FIC0234",
+      "name": "Bronze Guardian",
+      "manaCost": "{4}{W}",
+      "type": "Artifact Creature — Golem",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/3/032dc879-bf2f-4626-8aac-4d5446421923.jpg"
+    },
+    "FIC0236": {
+      "id": "FIC0236",
+      "name": "Clever Concealment",
+      "manaCost": "{2}{W}{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/8/4836e220-5c89-49fc-8918-a51adf026ab4.jpg"
+    },
+    "FIC0250": {
+      "id": "FIC0250",
+      "name": "Puresteel Paladin",
+      "manaCost": "{W}{W}",
+      "type": "Creature — Human Knight",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/7/b7f768ce-e30e-4da6-a2e3-3e67315b1766.jpg"
+    },
+    "FIC0259": {
+      "id": "FIC0259",
+      "name": "Unfinished Business",
+      "manaCost": "{3}{W}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/6/76c9b6c1-05de-4c16-8ebf-ea68aa110a69.jpg"
+    },
+    "FIC0260": {
+      "id": "FIC0260",
+      "name": "Vanquish the Horde",
+      "manaCost": "{6}{W}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/b/5bb0f6ec-6448-40bd-a819-b828b85b2118.jpg"
+    },
+    "FIC0291": {
+      "id": "FIC0291",
+      "name": "Chaos Warp",
+      "manaCost": "{2}{R}",
+      "type": "Instant",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/3/a3579f5c-255d-4b01-9b84-9f5c72cb4178.jpg"
+    },
+    "FIC0295": {
+      "id": "FIC0295",
+      "name": "Hellkite Tyrant",
+      "manaCost": "{4}{R}{R}",
+      "type": "Creature — Dragon",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/7/97ff9946-af2c-4568-847e-b828a71d0217.jpg"
+    },
+    "FIC0296": {
+      "id": "FIC0296",
+      "name": "Professional Face-Breaker",
+      "manaCost": "{2}{R}",
+      "type": "Creature — Human Warrior",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d5a53791-d4e9-49e9-9daf-c8b378925afe.jpg"
+    },
+    "FIC0323": {
+      "id": "FIC0323",
+      "name": "Decimate",
+      "manaCost": "{2}{R}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/a/dae88c31-77a5-40aa-84be-d74b4545a6ee.jpg"
+    },
+    "FIC0336": {
+      "id": "FIC0336",
+      "name": "Armory Automaton",
+      "manaCost": "{3}",
+      "type": "Artifact Creature — Construct",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/9/99fbb6f1-0584-45c2-b4c5-0431447913d4.jpg"
+    },
+    "FIC0337": {
+      "id": "FIC0337",
+      "name": "Champion's Helm",
+      "manaCost": "{3}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/2/a207957a-16e4-4830-a101-39bcd4a46e61.jpg"
+    },
+    "FIC0340": {
+      "id": "FIC0340",
+      "name": "Conqueror's Flail",
+      "manaCost": "{2}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/e/8e47061a-5505-4fe3-8caa-b0279b26e9b2.jpg"
+    },
+    "FIC0342": {
+      "id": "FIC0342",
+      "name": "Darksteel Plate",
+      "manaCost": "{3}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/9/49277723-84df-4842-a8e5-cdf1c1aa8161.jpg"
+    },
+    "FIC0347": {
+      "id": "FIC0347",
+      "name": "Inspiring Statuary",
+      "manaCost": "{3}",
+      "type": "Artifact",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/c/6c28687d-b96a-4d3c-a6cb-99fbae6a384b.jpg"
+    },
+    "FIC0362": {
+      "id": "FIC0362",
+      "name": "Sword of the Animist",
+      "manaCost": "{2}",
+      "type": "Legendary Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/8/a822129c-0699-40e2-8639-c1a609a5ba3b.jpg"
+    },
+    "FIC0375": {
+      "id": "FIC0375",
+      "name": "Battlefield Forge",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/2/a2de3346-9647-4540-ba41-e67c24ddf141.jpg"
+    },
+    "FIC0376": {
+      "id": "FIC0376",
+      "name": "Bonders' Enclave",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/b/abcd3daa-dd34-4d7d-b3ed-839f5e438cd7.jpg"
+    },
+    "FIC0377": {
+      "id": "FIC0377",
+      "name": "Brushland",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c2bc3f62-1e3a-4ec3-a83b-f6547d7c7b0d.jpg"
+    },
+    "FIC0378": {
+      "id": "FIC0378",
+      "name": "Canopy Vista",
+      "manaCost": null,
+      "type": "Land — Forest Plains",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/d/5d33aeaa-df27-4c41-9926-79e9dc6a9c69.jpg"
+    },
+    "FIC0380": {
+      "id": "FIC0380",
+      "name": "Cinder Glade",
+      "manaCost": null,
+      "type": "Land — Mountain Forest",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/9/597dd04f-cb3d-4224-8e56-21f66485df47.jpg"
+    },
+    "FIC0381": {
+      "id": "FIC0381",
+      "name": "Clifftop Retreat",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/c/2cddc851-fef6-4a45-818c-97d3dfc4140d.jpg"
+    },
+    "FIC0390": {
+      "id": "FIC0390",
+      "name": "Exotic Orchard",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/7/47c2b572-b54a-444c-8d74-b005e94d751f.jpg"
+    },
+    "FIC0392": {
+      "id": "FIC0392",
+      "name": "Fire-Lit Thicket",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bcab849e-336d-490f-8dd2-0936fba2afbe.jpg"
+    },
+    "FIC0396": {
+      "id": "FIC0396",
+      "name": "Fortified Village",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/0/1028b210-db71-4bbd-8bd7-59dc4032f426.jpg"
+    },
+    "FIC0397": {
+      "id": "FIC0397",
+      "name": "Furycalm Snarl",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/67e44005-d0a5-49d2-b2f7-4b991ffbb5ce.jpg"
+    },
+    "FIC0398": {
+      "id": "FIC0398",
+      "name": "Game Trail",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/d/4d62258f-135b-44ca-a27d-3c2267f408a5.jpg"
+    },
+    "FIC0407": {
+      "id": "FIC0407",
+      "name": "Mossfire Valley",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/e/de5279fc-2532-4e66-bc44-ca395e106ab0.jpg"
+    },
+    "FIC0416": {
+      "id": "FIC0416",
+      "name": "Rootbound Crag",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/3/73a2e070-f375-4558-a982-01f6f4e902e9.jpg"
+    },
+    "FIC0417": {
+      "id": "FIC0417",
+      "name": "Rugged Prairie",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/d/3d575770-cb81-4353-b49e-cdaca7a5162f.jpg"
+    },
+    "FIC0419": {
+      "id": "FIC0419",
+      "name": "Scavenger Grounds",
+      "manaCost": null,
+      "type": "Land — Desert",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a4e3f65d-8d73-4fd1-9de4-813ba6e40940.jpg"
+    },
+    "FIC0424": {
+      "id": "FIC0424",
+      "name": "Slayers' Stronghold",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/0/30d0754a-f7bb-4c13-b7e3-28046db48cc1.jpg"
+    },
+    "FIC0426": {
+      "id": "FIC0426",
+      "name": "Spire of Industry",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/0/60057719-f597-4f2e-a75c-663f98a08573.jpg"
+    },
+    "FIC0428": {
+      "id": "FIC0428",
+      "name": "Sungrass Prairie",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/1/81e28e36-893f-4b34-aef7-5f2c15dc231c.jpg"
+    },
+    "FIC0432": {
+      "id": "FIC0432",
+      "name": "Sunpetal Grove",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/b/5b0275b1-64bc-4c78-ac1a-9bd31399b946.jpg"
+    },
+    "FIC0433": {
+      "id": "FIC0433",
+      "name": "Sunscorched Divide",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/84b648e4-d9c2-426f-8b2a-ef88e9eb25ac.jpg"
+    },
+    "FIN0045": {
+      "id": "FIN0045",
+      "name": "Zack Fair",
+      "manaCost": "{W}",
+      "type": "Legendary Creature — Human Soldier",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/2/f21f9161-5945-40da-8da0-446f6a4a1c23.jpg"
+    },
+    "FIN0129": {
+      "id": "FIN0129",
+      "name": "Barret Wallace",
+      "manaCost": "{3}{R}",
+      "type": "Legendary Creature — Human Rebel",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/a/1a504dff-5857-4a61-ab99-616d5df7cf5a.jpg"
+    },
+    "FIC0241": {
+      "id": "FIC0241",
+      "name": "Dispatch",
+      "manaCost": "{W}",
+      "type": "Instant",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/e/2ecc0fcb-9141-465c-90b1-7652d3c9a4ab.jpg"
+    },
+    "FIC0253": {
+      "id": "FIC0253",
+      "name": "Secret Rendezvous",
+      "manaCost": "{1}{W}{W}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/0/d09a77e7-649c-4f2c-bcd3-0598271e9373.jpg"
+    },
+    "FIC0294": {
+      "id": "FIC0294",
+      "name": "Furious Rise",
+      "manaCost": "{2}{R}",
+      "type": "Enchantment",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/8/a886ed1a-d6a4-46d2-8b97-ee4a533773fb.jpg"
+    },
+    "FIC0298": {
+      "id": "FIC0298",
+      "name": "Vandalblast",
+      "manaCost": "{R}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/b/9b5a8df2-2bc0-408c-a9d2-e70c0f56642d.jpg"
+    },
+    "FIC0300": {
+      "id": "FIC0300",
+      "name": "Cultivate",
+      "manaCost": "{2}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0c5f5297-fe94-44df-9004-427640196afd.jpg"
+    },
+    "FIC0308": {
+      "id": "FIC0308",
+      "name": "Harmonize",
+      "manaCost": "{2}{G}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/7/978410dd-aace-4a70-8028-6dd11c14156e.jpg"
+    },
+    "FIC0311": {
+      "id": "FIC0311",
+      "name": "Nature's Lore",
+      "manaCost": "{1}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/1/01c2b71a-492d-431c-90ba-173781ba8815.jpg"
+    },
+    "FIC0313": {
+      "id": "FIC0313",
+      "name": "Rampant Growth",
+      "manaCost": "{1}{G}",
+      "type": "Sorcery",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/3/f3b48473-b53d-4c85-b970-7ee09a1eefd2.jpg"
+    },
+    "FIC0320": {
+      "id": "FIC0320",
+      "name": "Behemoth Sledge",
+      "manaCost": "{1}{G}{W}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/2/22b8fad5-bb39-4a1b-9f9b-c0c9cf8228bb.jpg"
+    },
+    "FIC0333": {
+      "id": "FIC0333",
+      "name": "Arcane Signet",
+      "manaCost": "{2}",
+      "type": "Artifact",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/4/f4f7cc5b-a52a-470b-8970-260b61c91ad5.jpg"
+    },
+    "FIC0338": {
+      "id": "FIC0338",
+      "name": "Colossus Hammer",
+      "manaCost": "{1}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f50acbb6-b295-4aaa-bd75-7a94b704b945.jpg"
+    },
+    "FIC0344": {
+      "id": "FIC0344",
+      "name": "Explorer's Scope",
+      "manaCost": "{1}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bc50f65f-1866-4fa6-b318-1d981845723b.jpg"
+    },
+    "FIC0345": {
+      "id": "FIC0345",
+      "name": "Hero's Blade",
+      "manaCost": "{2}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/f/9f67b38f-275c-459d-ab9c-4851106ec732.jpg"
+    },
+    "FIC0346": {
+      "id": "FIC0346",
+      "name": "Hero's Heirloom",
+      "manaCost": "{2}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/8/08866f84-406d-4372-9893-ba22690a48ef.jpg"
+    },
+    "FIC0349": {
+      "id": "FIC0349",
+      "name": "Lightning Greaves",
+      "manaCost": "{2}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/7/779abd27-985f-4bb9-9330-38d49bf52903.jpg"
+    },
+    "FIC0350": {
+      "id": "FIC0350",
+      "name": "Mask of Memory",
+      "manaCost": "{2}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a9118fbe-f19c-4a65-a6ac-1c8a6308628d.jpg"
+    },
+    "FIC0355": {
+      "id": "FIC0355",
+      "name": "Skullclamp",
+      "manaCost": "{1}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/e/4e5d5649-3e30-4aca-80f8-5a7522d366da.jpg"
+    },
+    "FIC0357": {
+      "id": "FIC0357",
+      "name": "Sol Ring",
+      "manaCost": "{1}",
+      "type": "Artifact",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d105068a-d4f1-4971-b5a0-72806a798497.jpg"
+    },
+    "FIC0370": {
+      "id": "FIC0370",
+      "name": "Trailblazer's Boots",
+      "manaCost": "{2}",
+      "type": "Artifact — Equipment",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/d/fd1f14be-8c7c-471d-93e3-5856f48ff94a.jpg"
+    },
+    "FIC0374": {
+      "id": "FIC0374",
+      "name": "Ash Barrens",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/7/77df073b-49dc-4743-82a3-d595bc938761.jpg"
+    },
+    "FIC0389": {
+      "id": "FIC0389",
+      "name": "Evolving Wilds",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/5/351f791c-4bee-4fce-aee4-d0214ca0c945.jpg"
+    },
+    "FIC0406": {
+      "id": "FIC0406",
+      "name": "Jungle Shrine",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/f/cf5f5ffc-fad0-4f7b-b2a3-cc10ca445d40.jpg"
+    },
+    "FIC0411": {
+      "id": "FIC0411",
+      "name": "Path of Ancestry",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/d/4dd83a5d-1908-4141-8449-fac5e77cd6c0.jpg"
+    },
+    "FIC0414": {
+      "id": "FIC0414",
+      "name": "Radiant Grove",
+      "manaCost": null,
+      "type": "Land — Forest Plains",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/7/977bf5a1-81f2-4c5b-a227-347bf8e19554.jpg"
+    },
+    "FIC0418": {
+      "id": "FIC0418",
+      "name": "Sacred Peaks",
+      "manaCost": null,
+      "type": "Land — Mountain Plains",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/b/eb18e293-a58b-4a49-b601-88a30ffa9b99.jpg"
+    },
+    "FIC0441": {
+      "id": "FIC0441",
+      "name": "Wooded Ridgeline",
+      "manaCost": null,
+      "type": "Land — Mountain Forest",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/672b6ef0-a21a-4bf0-9058-58d9a353ed57.jpg"
+    },
+    "FIC0485": {
+      "id": "FIC0485",
+      "name": "Command Tower",
+      "manaCost": null,
+      "type": "Land",
+      "colorIdentity": [],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/a/aae0b3ae-ed57-4d17-8876-736aa22186cf.jpg"
+    },
+    "FIN0303": {
+      "id": "FIN0303",
+      "name": "Mountain",
+      "manaCost": null,
+      "type": "Basic Land — Mountain",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/1/a18ef64b-a9de-4548-b4d5-168758442db7.jpg"
+    },
+    "FIN0304": {
+      "id": "FIN0304",
+      "name": "Mountain",
+      "manaCost": null,
+      "type": "Basic Land — Mountain",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/0/d061b9a8-e95d-48ec-a1c9-337433b62dfc.jpg"
+    },
+    "FIN0305": {
+      "id": "FIN0305",
+      "name": "Mountain",
+      "manaCost": null,
+      "type": "Basic Land — Mountain",
+      "colorIdentity": [
+        "R"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea1735b9-fd10-4c9c-b9d3-046d8c22b852.jpg"
+    },
+    "FIN0306": {
+      "id": "FIN0306",
+      "name": "Forest",
+      "manaCost": null,
+      "type": "Basic Land — Forest",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/e/be72862d-d71e-4b18-98a6-59019399f631.jpg"
+    },
+    "FIN0307": {
+      "id": "FIN0307",
+      "name": "Forest",
+      "manaCost": null,
+      "type": "Basic Land — Forest",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/d/3d08f6a6-316d-45d8-aabe-1760a20903ac.jpg"
+    },
+    "FIN0308": {
+      "id": "FIN0308",
+      "name": "Forest",
+      "manaCost": null,
+      "type": "Basic Land — Forest",
+      "colorIdentity": [
+        "G"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/5/c52038c8-5bba-4d8e-845f-30af44300acc.jpg"
+    },
+    "FIN0294": {
+      "id": "FIN0294",
+      "name": "Plains",
+      "manaCost": null,
+      "type": "Basic Land — Plains",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9dd2d666-7c6b-48ce-93dc-c004ebdd1fe9.jpg"
+    },
+    "FIN0295": {
+      "id": "FIN0295",
+      "name": "Plains",
+      "manaCost": null,
+      "type": "Basic Land — Plains",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/6/e623b058-76d2-476b-9ee6-82807f7992c3.jpg"
+    },
+    "FIN0296": {
+      "id": "FIN0296",
+      "name": "Plains",
+      "manaCost": null,
+      "type": "Basic Land — Plains",
+      "colorIdentity": [
+        "W"
+      ],
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/e/ee86ac2f-f398-4422-8721-8ac859fbf5bc.jpg"
+    }
+  }
+}

@@ -1,33 +1,52 @@
 /**
- * Downloads MTGJSON data and transforms it into the Fellowpick frontend format.
+ * Imports MTGJSON data for a single universe and writes Fellowpick-shaped JSON.
  *
  * Usage:
- *   node scripts/import-mtgjson.mjs
+ *   node scripts/import-mtgjson.mjs <universe-id>
  *
- * This script:
- * 1. Downloads the 4 Tolkien precon deck JSONs from MTGJSON
- * 2. Downloads the LTR and LTC set JSONs from MTGJSON
- * 3. Transforms the data into our format with {setCode}{paddedNumber} card IDs
- * 4. Writes the output to src/data/tolkien/
+ * What it does:
+ * 1. Downloads each precon deck JSON from MTGJSON
+ * 2. Downloads each set JSON from MTGJSON
+ * 3. Trims every card to the fields the UI actually reads
+ * 4. Writes precons to src/data/<universe-id>/precons/<precon-id>.json
+ * 5. Writes sets to src/data/<universe-id>/sets/<setCode>.json
+ * 6. Upserts the universe entry in src/data/universes.json
  */
 
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '..', 'src', 'data');
-
+const UNIVERSES_FILE = join(DATA_DIR, 'universes.json');
 const MTGJSON_BASE = 'https://mtgjson.com/api/v5';
 
-const TOLKIEN_PRECONS = [
-  { filename: 'FoodAndFellowship_LTC', id: 'food-and-fellowship', name: 'Food and Fellowship' },
-  { filename: 'RidersOfRohan_LTC', id: 'riders-of-rohan', name: 'Riders of Rohan' },
-  { filename: 'ElvenCouncil_LTC', id: 'elven-council', name: 'Elven Council' },
-  { filename: 'TheHostsOfMordor_LTC', id: 'hosts-of-mordor', name: 'The Hosts of Mordor' },
-];
-
-const TOLKIEN_SETS = ['LTR', 'LTC'];
+// MTGJSON deck filenames are CamelCase + setCode (look them up in DeckList.json).
+const UNIVERSES = {
+  'middle-earth': {
+    name: 'Middle-Earth',
+    description: 'The Lord of the Rings and Middle-Earth',
+    sets: ['LTR', 'LTC'],
+    precons: [
+      { filename: 'FoodAndFellowship_LTC', id: 'food-and-fellowship', name: 'Food and Fellowship' },
+      { filename: 'RidersOfRohan_LTC', id: 'riders-of-rohan', name: 'Riders of Rohan' },
+      { filename: 'ElvenCouncil_LTC', id: 'elven-council', name: 'Elven Council' },
+      { filename: 'TheHostsOfMordor_LTC', id: 'the-hosts-of-mordor', name: 'The Hosts of Mordor' },
+    ],
+  },
+  'final-fantasy': {
+    name: 'Final Fantasy',
+    description: 'The Final Fantasy video game series',
+    sets: ['FIN', 'FIC'],
+    precons: [
+      { filename: 'RevivalTranceFinalFantasyVi_FIC', id: 'revival-trance', name: 'Revival Trance' },
+      { filename: 'LimitBreakFinalFantasyVii_FIC', id: 'limit-break', name: 'Limit Break' },
+      { filename: 'CounterBlitzFinalFantasyX_FIC', id: 'counter-blitz', name: 'Counter Blitz' },
+      { filename: 'ScionsSpellcraftFinalFantasyXiv_FIC', id: 'scions-and-spellcraft', name: 'Scions & Spellcraft' },
+    ],
+  },
+};
 
 function makeCardId(setCode, number) {
   const padded = number.replace(/\D/g, '').padStart(4, '0');
@@ -41,24 +60,14 @@ function buildScryfallImageUrl(scryfallId) {
   return `https://cards.scryfall.io/large/front/${c1}/${c2}/${scryfallId}.jpg`;
 }
 
+// Trims each MTGJSON card to the fields the UI reads. See Card in src/features/pick/types.ts.
 function transformCard(card) {
-  const setCode = card.setCode;
-  const number = card.number;
   return {
-    id: makeCardId(setCode, number),
+    id: makeCardId(card.setCode, card.number),
     name: card.name,
-    setCode,
-    number,
     manaCost: card.manaCost || null,
-    manaValue: card.manaValue ?? card.convertedManaCost ?? 0,
     type: card.type,
-    text: card.text || null,
     colorIdentity: card.colorIdentity || [],
-    colors: card.colors || [],
-    rarity: card.rarity,
-    power: card.power || null,
-    toughness: card.toughness || null,
-    keywords: card.keywords || [],
     scryfallImage: buildScryfallImageUrl(card.identifiers?.scryfallId),
   };
 }
@@ -70,11 +79,11 @@ async function fetchJson(url) {
   return res.json();
 }
 
-async function importPrecons() {
-  const preconsDir = join(DATA_DIR, 'tolkien', 'precons');
+async function importPrecons(universeId, config) {
+  const preconsDir = join(DATA_DIR, universeId, 'precons');
   mkdirSync(preconsDir, { recursive: true });
 
-  for (const precon of TOLKIEN_PRECONS) {
+  for (const precon of config.precons) {
     const url = `${MTGJSON_BASE}/decks/${precon.filename}.json`;
     const json = await fetchJson(url);
     const data = json.data;
@@ -83,13 +92,13 @@ async function importPrecons() {
     const mainBoardCards = (data.mainBoard || []).map(transformCard);
     const mainBoard = Object.fromEntries(mainBoardCards.map(c => [c.id, c]));
 
-    // Commander color identity is the union of all commander color identities
+    // Commander color identity is the union of all commander color identities.
     const colorIdentity = [...new Set(commanders.flatMap(c => c.colorIdentity))];
 
     const output = {
       id: precon.id,
       name: precon.name,
-      universe: 'tolkien',
+      universe: universeId,
       setCode: data.code,
       colorIdentity,
       commanders,
@@ -102,11 +111,11 @@ async function importPrecons() {
   }
 }
 
-async function importSets() {
-  const setsDir = join(DATA_DIR, 'tolkien', 'sets');
+async function importSets(universeId, config) {
+  const setsDir = join(DATA_DIR, universeId, 'sets');
   mkdirSync(setsDir, { recursive: true });
 
-  for (const setCode of TOLKIEN_SETS) {
+  for (const setCode of config.sets) {
     const url = `${MTGJSON_BASE}/${setCode}.json`;
     const json = await fetchJson(url);
     const data = json.data;
@@ -128,16 +137,48 @@ async function importSets() {
   }
 }
 
+function upsertUniverseEntry(universeId, config) {
+  const universes = JSON.parse(readFileSync(UNIVERSES_FILE, 'utf-8'));
+  const entry = {
+    id: universeId,
+    name: config.name,
+    description: config.description,
+    sets: config.sets,
+    precons: config.precons.map(p => ({ id: p.id, name: p.name })),
+  };
+  const idx = universes.findIndex(u => u.id === universeId);
+  if (idx >= 0) universes[idx] = entry;
+  else universes.push(entry);
+  writeFileSync(UNIVERSES_FILE, JSON.stringify(universes, null, 2) + '\n');
+  console.log(`  ${idx >= 0 ? 'Updated' : 'Added'} ${universeId} in universes.json`);
+}
+
 async function main() {
-  console.log('Importing MTGJSON data for Tolkien universe...\n');
+  const targetUniverse = process.argv[2];
+  if (!targetUniverse) {
+    console.error('Usage: node scripts/import-mtgjson.mjs <universe-id>');
+    console.error('Available:', Object.keys(UNIVERSES).join(', '));
+    process.exit(1);
+  }
+  const config = UNIVERSES[targetUniverse];
+  if (!config) {
+    console.error(`Unknown universe: ${targetUniverse}`);
+    console.error('Available:', Object.keys(UNIVERSES).join(', '));
+    process.exit(1);
+  }
+
+  console.log(`Importing ${config.name} (${targetUniverse})...\n`);
 
   console.log('Downloading precon decks...');
-  await importPrecons();
+  await importPrecons(targetUniverse, config);
 
   console.log('\nDownloading sets...');
-  await importSets();
+  await importSets(targetUniverse, config);
 
-  console.log('\nDone! Data written to src/data/tolkien/');
+  console.log('\nUpdating universes.json...');
+  upsertUniverseEntry(targetUniverse, config);
+
+  console.log(`\nDone! Data written to src/data/${targetUniverse}/`);
 }
 
 main().catch(err => {

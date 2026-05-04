@@ -20,18 +20,9 @@ export interface PreconSummary {
 export interface Card {
   id: string;
   name: string;
-  setCode: string;
-  number: string;
   manaCost: string | null;
-  manaValue: number;
   type: string;
-  text: string | null;
   colorIdentity: string[];
-  colors: string[];
-  rarity: string;
-  power: string | null;
-  toughness: string | null;
-  keywords: string[];
   scryfallImage: string | null;
 }
 
