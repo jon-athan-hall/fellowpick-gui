@@ -46,6 +46,14 @@ const UNIVERSES = {
       { filename: 'ScionsSpellcraftFinalFantasyXiv_FIC', id: 'scions-and-spellcraft', name: 'Scions & Spellcraft' },
     ],
   },
+  'teenage-mutant-ninja-turtles': {
+    name: 'Teenage Mutant Ninja Turtles',
+    description: 'Heroes in a half-shell — TMNT',
+    sets: ['TMT', 'TMC'],
+    precons: [
+      { filename: 'TurtlePower_TMC', id: 'turtle-power', name: 'Turtle Power!' },
+    ],
+  },
 };
 
 function makeCardId(setCode, number) {

@@ -52,5 +52,20 @@
         "name": "Scions & Spellcraft"
       }
     ]
+  },
+  {
+    "id": "teenage-mutant-ninja-turtles",
+    "name": "Teenage Mutant Ninja Turtles",
+    "description": "Heroes in a half-shell — TMNT",
+    "sets": [
+      "TMT",
+      "TMC"
+    ],
+    "precons": [
+      {
+        "id": "turtle-power",
+        "name": "Turtle Power!"
+      }
+    ]
   }
 ]
