@@ -1,5 +1,5 @@
 import { Alert, Grid, Group, Loader, Pagination, Paper, Stack, Text, Title } from '@mantine/core';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
 import {
@@ -15,7 +15,12 @@ import {
 } from '../features/pick';
 import type { Card, PickType } from '../features/pick';
 
+const PAGE_SIZE = 25;
+
 // Displays a precon deck's cards with CUT/ADD pick voting and community pick counts.
+// The route wraps this in a `key={preconId}` boundary, so per-precon state
+// (locked sort order, pagination) is reset by remount when navigating between
+// precons rather than by manual cleanup here.
 export function PreconDetailPage() {
   const { universeId, preconId } = useParams<{ universeId: string; preconId: string }>();
   const { isAuthenticated } = useAuth();
@@ -46,7 +51,6 @@ export function PreconDetailPage() {
     }
   }, [precon, addCandidates]);
 
-  // Build lookup maps from API data
   const countMap = useMemo(() => {
     const map: Record<string, Record<PickType, number>> = {};
     for (const c of countsQuery.data ?? []) {
@@ -57,53 +61,60 @@ export function PreconDetailPage() {
   }, [countsQuery.data]);
 
   const myPickMap = useMemo(() => {
-    const map: Record<string, { id: string; pickType: PickType }> = {};
+    const map: Record<string, string> = {};
     for (const p of myPicksQuery.data ?? []) {
-      map[`${p.cardId}:${p.pickType}`] = { id: p.id, pickType: p.pickType };
+      map[`${p.cardId}:${p.pickType}`] = p.id;
     }
     return map;
   }, [myPicksQuery.data]);
 
-  if (!precon) {
-    return (
-      <Text>Precon deck not found.</Text>
-    );
-  }
+  // Lock sort order on the FIRST successful counts load, so subsequent toggles
+  // (which optimistically mutate counts) don't reshuffle the list. Depending on
+  // `countsQuery.isSuccess` rather than `countsQuery.data` means the memo only
+  // recomputes when the query first succeeds; further `data` updates are
+  // ignored. Remount via the route's `key={preconId}` resets the lock per precon.
+  const sortedCuts = useMemo<Card[]>(() => {
+    if (!precon) return [];
+    const cards = Object.values(precon.mainBoard);
+    if (!countsQuery.isSuccess) return cards;
+    const anchor: Record<string, number> = {};
+    for (const c of countsQuery.data ?? []) {
+      if (c.pickType === 'CUT') anchor[c.cardId] = c.count;
+    }
+    return [...cards].sort((a, b) => (anchor[b.id] ?? 0) - (anchor[a.id] ?? 0));
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: lock on first success
+  }, [precon, countsQuery.isSuccess]);
 
-  const mainBoardCards = Object.values(precon.mainBoard);
+  const sortedAdds = useMemo<Card[]>(() => {
+    if (!countsQuery.isSuccess) return addCandidates;
+    const anchor: Record<string, number> = {};
+    for (const c of countsQuery.data ?? []) {
+      if (c.pickType === 'ADD') anchor[c.cardId] = c.count;
+    }
+    return [...addCandidates].sort((a, b) => (anchor[b.id] ?? 0) - (anchor[a.id] ?? 0));
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: lock on first success
+  }, [addCandidates, countsQuery.isSuccess]);
 
-  // Sort by pick count on initial load, then lock the order so cards don't
-  // jump around as the user toggles picks.
-  const cutsOrderRef = useRef<Card[] | null>(null);
-  const addsOrderRef = useRef<Card[] | null>(null);
-
-  if (!cutsOrderRef.current && countsQuery.data) {
-    cutsOrderRef.current = [...mainBoardCards].sort(
-      (a, b) => (countMap[b.id]?.CUT ?? 0) - (countMap[a.id]?.CUT ?? 0)
-    );
-  }
-  if (!addsOrderRef.current && countsQuery.data) {
-    addsOrderRef.current = [...addCandidates].sort(
-      (a, b) => (countMap[b.id]?.ADD ?? 0) - (countMap[a.id]?.ADD ?? 0)
-    );
-  }
-
-  const sortedCuts = cutsOrderRef.current ?? mainBoardCards;
-  const sortedAdds = addsOrderRef.current ?? addCandidates;
-
-  const PAGE_SIZE = 25;
   const [cutsPage, setCutsPage] = useState(1);
   const [addsPage, setAddsPage] = useState(1);
 
-  function handlePick(cardId: string, pickType: PickType) {
-    if (!preconId) return;
-    makePick.mutate({ preconId, cardId, pickType });
-  }
+  const handlePick = useCallback(
+    (cardId: string, pickType: PickType) => {
+      if (!preconId) return;
+      makePick.mutate({ preconId, cardId, pickType });
+    },
+    [preconId, makePick]
+  );
 
-  function handleUnpick(cardId: string, pickType: PickType) {
-    const key = `${cardId}:${pickType}`;
-    const pick = myPickMap[key];
-    if (pick) removePick.mutate(pick.id);
+  const handleUnpick = useCallback(
+    (pickId: string) => {
+      removePick.mutate(pickId);
+    },
+    [removePick]
+  );
+
+  if (!precon) {
+    return <Text>Precon deck not found.</Text>;
   }
 
   function renderCardList(cards: Card[], pickType: PickType, page: number, setPage: (p: number) => void) {
@@ -119,9 +130,9 @@ export function PreconDetailPage() {
             card={card}
             count={countMap[card.id]?.[pickType] ?? 0}
             pickType={pickType}
-            userPicked={!!myPickMap[`${card.id}:${pickType}`]}
-            onPick={() => handlePick(card.id, pickType)}
-            onUnpick={() => handleUnpick(card.id, pickType)}
+            pickId={myPickMap[`${card.id}:${pickType}`]}
+            onPick={handlePick}
+            onUnpick={handleUnpick}
             canPick={isAuthenticated}
           />
         ))}

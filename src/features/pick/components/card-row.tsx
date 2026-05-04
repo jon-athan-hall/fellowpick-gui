@@ -1,4 +1,5 @@
 import { Badge, Group, Switch, Text } from '@mantine/core';
+import { memo } from 'react';
 import { useCardPreview } from '../hooks/use-card-preview';
 import type { Card, PickType } from '../types';
 import { ManaCost } from './mana-cost';
@@ -8,16 +9,22 @@ interface CardRowProps {
   card: Card;
   count: number;
   pickType: PickType;
-  userPicked: boolean;
-  onPick: () => void;
-  onUnpick: () => void;
+  /** Present iff the user has voted; also serves as the unpick target id. */
+  pickId: string | undefined;
+  onPick: (cardId: string, pickType: PickType) => void;
+  onUnpick: (pickId: string) => void;
   canPick: boolean;
 }
 
 // Displays a single card row with pick count, mana cost, name, and vote toggle.
-export function CardRow({ card, count, pickType, userPicked, onPick, onUnpick, canPick }: CardRowProps) {
+function CardRowImpl({ card, count, pickType, pickId, onPick, onUnpick, canPick }: CardRowProps) {
   const { setPreviewImage } = useCardPreview();
   const accentColor = pickType === 'CUT' ? 'red' : 'secondary';
+  const userPicked = pickId !== undefined;
+
+  const handleClick = canPick
+    ? () => (userPicked ? onUnpick(pickId) : onPick(card.id, pickType))
+    : undefined;
 
   return (
     <Group
@@ -32,7 +39,7 @@ export function CardRow({ card, count, pickType, userPicked, onPick, onUnpick, c
         transition: 'background-color 150ms ease',
       }}
       className={classes.row}
-      onClick={canPick ? (userPicked ? onUnpick : onPick) : undefined}
+      onClick={handleClick}
       onMouseEnter={() => setPreviewImage(card.scryfallImage)}
       onMouseLeave={() => setPreviewImage(null)}
     >
@@ -61,3 +68,5 @@ export function CardRow({ card, count, pickType, userPicked, onPick, onUnpick, c
     </Group>
   );
 }
+
+export const CardRow = memo(CardRowImpl);
