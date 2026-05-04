@@ -1,4 +1,4 @@
-import { Card, Image, SimpleGrid, Stack, Text, Title, UnstyledButton } from '@mantine/core';
+import { Card, Image, Paper, SimpleGrid, Stack, Text, Title, UnstyledButton } from '@mantine/core';
 import { useNavigate, useParams } from 'react-router-dom';
 import universes from '../data/universes.json';
 import { ManaCost, loadPrecon } from '../features/pick';
@@ -21,7 +21,9 @@ export function PreconsPage() {
 
   return (
     <Stack gap="lg">
-      <Title order={1}>{universe.name} Precon Decks</Title>
+      <Paper bg="dark.6" p="md" radius="md">
+        <Title order={1} ta="center">{universe.name}</Title>
+      </Paper>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
         {universe.precons.map((p) => {
           const precon = loadPrecon(universeId, p.id);

@@ -57,11 +57,13 @@ export function AppLayout() {
 
   return (
     <AppShell
+      // navbar.width = 300 visible + 16 left inset = 316; Main offsets by full width.
       header={{ height: 75 }}
-      navbar={{ width: 260, breakpoint: 'sm', collapsed: { mobile: !navOpened } }}
+      navbar={{ width: 316, breakpoint: 'sm', collapsed: { mobile: !navOpened } }}
       padding="md"
+      withBorder={false}
     >
-      <AppShell.Header>
+      <AppShell.Header bg="dark.6">
         <Group h="100%" p="md" justify="space-between">
           <Group gap="sm">
             <Burger opened={navOpened} onClick={toggleNav} hiddenFrom="sm" size="sm" />
@@ -114,7 +116,18 @@ export function AppLayout() {
         </Group>
       </AppShell.Header>
 
-      <AppShell.Navbar p="md">
+      <AppShell.Navbar
+        p="md"
+        bg="dark.6"
+        style={{
+          top: 'calc(var(--app-shell-header-offset) + 16px)',
+          left: 16,
+          bottom: 16,
+          width: 300,
+          height: 'auto',
+          borderRadius: 'var(--mantine-radius-md)',
+        }}
+      >
         <Select
           label="Universe"
           placeholder="Choose a universe"

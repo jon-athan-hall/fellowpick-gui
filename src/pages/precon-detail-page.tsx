@@ -152,13 +152,15 @@ export function PreconDetailPage() {
 
   return (
     <Stack gap="lg">
-      <Stack align="center" gap="xs">
-        <Title order={2}>{precon.name}</Title>
-        <Text size="md" c="secondary">
-          {precon.commanders.map((c) => c.name).join(' & ')}
-        </Text>
-        <ManaCost cost={precon.colorIdentity.map((c) => `{${c}}`).join('')} size={24} />
-      </Stack>
+      <Paper bg="dark.6" p="md" radius="md">
+        <Stack align="center" gap="xs">
+          <Title order={2}>{precon.name}</Title>
+          <Text size="md" c="secondary">
+            {precon.commanders.map((c) => c.name).join(' & ')}
+          </Text>
+          <ManaCost cost={precon.colorIdentity.map((c) => `{${c}}`).join('')} size={24} />
+        </Stack>
+      </Paper>
 
       {!isAuthenticated && (
         <Alert variant="light" color="secondary">
