@@ -75,7 +75,7 @@ export function AppLayout() {
             <Menu position="bottom-end" withArrow>
               <Menu.Target>
                 <UnstyledButton aria-label="User menu">
-                  <Avatar color="yellow" radius="xl">
+                  <Avatar color="orange" radius="xl">
                     {user?.name
                       ?.split(' ')
                       .map((n) => n[0])

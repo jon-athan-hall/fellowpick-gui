@@ -1,20 +1,14 @@
 import { Alert, Button, Group, Stack, Text } from '@mantine/core';
-import { ApiError } from '../../../common/api/errors';
+import { getApiErrorMessage } from '../../../common/api/errors';
 import { useResendVerificationMutation } from '../api/use-resend-verification';
 
 // Displays a warning banner prompting the user to verify their email, with a resend button.
 export function ResendVerificationBanner() {
   const resendMutation = useResendVerificationMutation();
-
-  const errorMessage =
-    resendMutation.error instanceof ApiError
-      ? resendMutation.error.message
-      : resendMutation.isError
-        ? 'Failed to send verification email'
-        : null;
+  const errorMessage = getApiErrorMessage(resendMutation.error, 'Failed to send verification email');
 
   return (
-    <Alert color="yellow" title="Email not verified">
+    <Alert color="orange" title="Email not verified">
       <Stack gap="sm">
         <Text size="sm">
           Check your inbox for a verification link. If you don't see it, you can request a new
@@ -34,7 +28,7 @@ export function ResendVerificationBanner() {
           <Button
             size="xs"
             variant="light"
-            color="yellow"
+            color="orange"
             loading={resendMutation.isPending}
             onClick={() => resendMutation.mutate()}
           >

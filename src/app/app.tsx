@@ -6,21 +6,21 @@ import { AuthProvider } from '../features/auth';
 import { CardPreviewProvider } from '../features/pick';
 import { AppRouter } from './app-router';
 
-// Yellow is the primary identity color. Orange is registered as `secondary`
+// Orange is the primary identity color. Yellow is registered as `secondary`
 // for warm-accent roles (informational nudges, guest indicator). Red is used
 // semantically for destructive/CUT actions; do not register it as a theme
 // alias — keep `color="red"` literal so its meaning stays obvious.
 const theme = createTheme({
-  primaryColor: 'yellow',
+  primaryColor: 'orange',
   colors: {
-    secondary: DEFAULT_THEME.colors.orange,
+    secondary: DEFAULT_THEME.colors.yellow,
   },
   headings: {
     fontFamily: 'MedievalSharp, cursive'
   },
   components: {
     Title: {
-      defaultProps: { c: 'yellow' }
+      defaultProps: { c: 'orange' }
     },
     // Standard panel: lighter dark.6 background, md padding, md radius. Pages
     // wrap sections in a bare <Paper> to get the card look. Override per-use
