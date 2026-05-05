@@ -20,8 +20,25 @@ const theme = createTheme({
   },
   components: {
     Title: {
+      defaultProps: { c: 'yellow' }
+    },
+    // Standard panel: lighter dark.6 background, md padding, md radius. Pages
+    // wrap sections in a bare <Paper> to get the card look. Override per-use
+    // with style/props as needed (e.g. a colored borderTop on CUT/ADD panels).
+    Paper: {
       defaultProps: {
-        c: 'yellow'
+        bg: 'dark.6',
+        p: 'md',
+        radius: 'md'
+      }
+    },
+    // Standard list card (universes, precons). Override style/props per-use.
+    Card: {
+      defaultProps: {
+        shadow: 'md',
+        padding: 'md',
+        radius: 'md',
+        withBorder: true
       }
     }
   }

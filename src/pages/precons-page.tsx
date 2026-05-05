@@ -21,7 +21,7 @@ export function PreconsPage() {
 
   return (
     <Stack gap="lg">
-      <Paper bg="dark.6" p="md" radius="md">
+      <Paper>
         <Title order={1} ta="center">{universe.name}</Title>
       </Paper>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
@@ -35,13 +35,7 @@ export function PreconsPage() {
               key={p.id}
               onClick={() => navigate(`/universes/${universeId}/precons/${p.id}`)}
             >
-              <Card
-                shadow="md"
-                padding="md"
-                radius="md"
-                withBorder
-                style={{ borderTop: '4px solid var(--mantine-color-secondary-6)' }}
-              >
+              <Card style={{ borderTop: '4px solid var(--mantine-color-secondary-6)' }}>
                 {commanders.length > 0 && (
                   <Card.Section>
                     <SimpleGrid cols={commanders.length} spacing={0}>

@@ -1,4 +1,4 @@
-import { Card, SimpleGrid, Stack, Text, Title, UnstyledButton } from '@mantine/core';
+import { Card, Paper, SimpleGrid, Stack, Text, Title, UnstyledButton } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 import universes from '../data/universes.json';
 
@@ -8,11 +8,13 @@ export function UniversesPage() {
 
   return (
     <Stack gap="lg">
-      <Title order={2}>Choose a Universe</Title>
+      <Paper>
+        <Title order={1} ta="center">Choose a Universe</Title>
+      </Paper>
       <SimpleGrid cols={{ base: 1, sm: 2 }}>
         {universes.map((u) => (
           <UnstyledButton key={u.id} onClick={() => navigate(`/universes/${u.id}`)}>
-            <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Card>
               <Title order={4}>{u.name}</Title>
               <Text size="sm" c="dimmed" mt="xs">
                 {u.description}

@@ -1,4 +1,4 @@
-import { Stack, Title } from '@mantine/core';
+import { Paper, Stack, Title } from '@mantine/core';
 import { useState } from 'react';
 import { useRolesQuery } from '../features/role';
 import {
@@ -16,10 +16,12 @@ export function UsersPage() {
 
   return (
     <>
-      <Stack gap="lg">
-        <Title order={2}>Users</Title>
-        <UsersTable onManageRoles={setRolesUser} onDelete={setDeletingUser} />
-      </Stack>
+      <Paper>
+        <Stack gap="lg">
+          <Title order={2}>Users</Title>
+          <UsersTable onManageRoles={setRolesUser} onDelete={setDeletingUser} />
+        </Stack>
+      </Paper>
       <UserRolesModal
         user={rolesUser}
         availableRoles={rolesQuery.data ?? []}

@@ -1,4 +1,4 @@
-import { Alert, Divider, Group, Stack, Title } from '@mantine/core';
+import { Alert, Group, Paper, Stack, Title } from '@mantine/core';
 import { ResendVerificationBanner, useAuth } from '../features/auth';
 import {
   ChangePasswordForm,
@@ -11,26 +11,29 @@ export function ProfilePage() {
   const { user, updateUser } = useAuth();
 
   if (!user) {
-    return (
-      <Alert color="red">You must be signed in to view your profile.</Alert>
-    );
+    return <Alert color="red">You must be signed in to view your profile.</Alert>;
   }
 
   return (
-    <Stack gap="xl">
-      <Group justify="space-between" align="center">
-        <Title order={2}>Your profile</Title>
-        <UserVerifiedBadge verified={user.verified} />
-      </Group>
+    <Stack gap="lg">
+      <Paper>
+        <Group justify="space-between" align="center">
+          <Title order={2}>Your profile</Title>
+          <UserVerifiedBadge verified={user.verified} />
+        </Group>
+      </Paper>
       {!user.verified && <ResendVerificationBanner />}
-      <ProfileDetailsForm
-        userId={user.id}
-        initialName={user.name}
-        initialEmail={user.email}
-        onUpdated={(patch) => updateUser(patch)}
-      />
-      <Divider />
-      <ChangePasswordForm userId={user.id} />
+      <Paper>
+        <ProfileDetailsForm
+          userId={user.id}
+          initialName={user.name}
+          initialEmail={user.email}
+          onUpdated={(patch) => updateUser(patch)}
+        />
+      </Paper>
+      <Paper>
+        <ChangePasswordForm userId={user.id} />
+      </Paper>
     </Stack>
   );
 }

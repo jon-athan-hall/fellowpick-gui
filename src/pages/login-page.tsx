@@ -1,8 +1,8 @@
-import { Anchor, Alert, Button, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
+import { Anchor, Alert, Button, Paper, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLoginMutation } from '../features/auth';
-import { ApiError } from '../common/api/errors';
+import { getApiErrorMessage } from '../common/api/errors';
 
 // Renders the sign-in form with email/password fields and login validation.
 export function LoginPage() {
@@ -25,26 +25,23 @@ export function LoginPage() {
     });
   }
 
-  const errorMessage =
-    loginMutation.error instanceof ApiError
-      ? loginMutation.error.message
-      : loginMutation.isError
-        ? 'Login failed'
-        : null;
+  const errorMessage = getApiErrorMessage(loginMutation.error, 'Login failed');
 
   return (
-    <form onSubmit={form.onSubmit(handleSubmit)}>
-      <Stack>
-        <Title order={2}>Sign in</Title>
-        {errorMessage && <Alert color="red">{errorMessage}</Alert>}
-        <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
-        <PasswordInput label="Password" required {...form.getInputProps('password')} />
-        <Button type="submit" loading={loginMutation.isPending}>
-          Sign in
-        </Button>
-        <Anchor component={Link} to="/register">Need an account? Register</Anchor>
-        <Anchor component={Link} to="/forgot-password">Forgot your password?</Anchor>
-      </Stack>
-    </form>
+    <Paper>
+      <form onSubmit={form.onSubmit(handleSubmit)}>
+        <Stack>
+          <Title order={2}>Sign in</Title>
+          {errorMessage && <Alert color="red">{errorMessage}</Alert>}
+          <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
+          <PasswordInput label="Password" required {...form.getInputProps('password')} />
+          <Button type="submit" loading={loginMutation.isPending}>
+            Sign in
+          </Button>
+          <Anchor component={Link} to="/register">Need an account? Register</Anchor>
+          <Anchor component={Link} to="/forgot-password">Forgot your password?</Anchor>
+        </Stack>
+      </form>
+    </Paper>
   );
 }

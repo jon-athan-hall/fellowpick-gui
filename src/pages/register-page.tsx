@@ -1,8 +1,8 @@
-import { Anchor, Alert, Button, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
+import { Anchor, Alert, Button, Paper, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useRegisterMutation } from '../features/auth';
-import { ApiError } from '../common/api/errors';
+import { getApiErrorMessage } from '../common/api/errors';
 
 // Renders the account registration form with name, email, and password fields.
 export function RegisterPage() {
@@ -26,26 +26,23 @@ export function RegisterPage() {
     });
   }
 
-  const errorMessage =
-    registerMutation.error instanceof ApiError
-      ? registerMutation.error.message
-      : registerMutation.isError
-        ? 'Registration failed'
-        : null;
+  const errorMessage = getApiErrorMessage(registerMutation.error, 'Registration failed');
 
   return (
-    <form onSubmit={form.onSubmit(handleSubmit)}>
-      <Stack>
-        <Title order={2}>Create an account</Title>
-        {errorMessage && <Alert color="red">{errorMessage}</Alert>}
-        <TextInput label="Name" required {...form.getInputProps('name')} />
-        <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
-        <PasswordInput label="Password" required {...form.getInputProps('password')} />
-        <Button type="submit" loading={registerMutation.isPending}>
-          Register
-        </Button>
-        <Anchor component={Link} to="/login">Already have an account? Sign in</Anchor>
-      </Stack>
-    </form>
+    <Paper>
+      <form onSubmit={form.onSubmit(handleSubmit)}>
+        <Stack>
+          <Title order={2}>Create an account</Title>
+          {errorMessage && <Alert color="red">{errorMessage}</Alert>}
+          <TextInput label="Name" required {...form.getInputProps('name')} />
+          <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
+          <PasswordInput label="Password" required {...form.getInputProps('password')} />
+          <Button type="submit" loading={registerMutation.isPending}>
+            Register
+          </Button>
+          <Anchor component={Link} to="/login">Already have an account? Sign in</Anchor>
+        </Stack>
+      </form>
+    </Paper>
   );
 }

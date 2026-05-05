@@ -1,8 +1,8 @@
-import { Anchor, Alert, Button, Stack, TextInput, Title } from '@mantine/core';
+import { Anchor, Alert, Button, Paper, Stack, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { Link } from 'react-router-dom';
 import { useForgotPasswordMutation } from '../features/auth';
-import { ApiError } from '../common/api/errors';
+import { getApiErrorMessage } from '../common/api/errors';
 
 // Renders a form to request a password reset link via email.
 export function ForgotPasswordPage() {
@@ -19,37 +19,34 @@ export function ForgotPasswordPage() {
     forgotMutation.mutate(values.email);
   }
 
-  const errorMessage =
-    forgotMutation.error instanceof ApiError
-      ? forgotMutation.error.message
-      : forgotMutation.isError
-        ? 'Request failed'
-        : null;
+  const errorMessage = getApiErrorMessage(forgotMutation.error, 'Request failed');
 
   return (
-    <form onSubmit={form.onSubmit(handleSubmit)}>
-      <Stack>
-        <Title order={2}>Reset your password</Title>
-        {forgotMutation.isSuccess ? (
-          <Alert color="green">
-            If an account exists for that email, a reset link is on its way.
-          </Alert>
-        ) : (
-          <>
-            {errorMessage && <Alert color="red">{errorMessage}</Alert>}
-            <TextInput
-              label="Email"
-              type="email"
-              required
-              {...form.getInputProps('email')}
-            />
-            <Button type="submit" loading={forgotMutation.isPending}>
-              Send reset link
-            </Button>
-          </>
-        )}
-        <Anchor component={Link} to="/login">Back to sign in</Anchor>
-      </Stack>
-    </form>
+    <Paper>
+      <form onSubmit={form.onSubmit(handleSubmit)}>
+        <Stack>
+          <Title order={2}>Reset your password</Title>
+          {forgotMutation.isSuccess ? (
+            <Alert color="green">
+              If an account exists for that email, a reset link is on its way.
+            </Alert>
+          ) : (
+            <>
+              {errorMessage && <Alert color="red">{errorMessage}</Alert>}
+              <TextInput
+                label="Email"
+                type="email"
+                required
+                {...form.getInputProps('email')}
+              />
+              <Button type="submit" loading={forgotMutation.isPending}>
+                Send reset link
+              </Button>
+            </>
+          )}
+          <Anchor component={Link} to="/login">Back to sign in</Anchor>
+        </Stack>
+      </form>
+    </Paper>
   );
 }
