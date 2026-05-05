@@ -65,16 +65,38 @@ describe('AppLayout', () => {
     expect(screen.getByText('BU')).toBeInTheDocument();
   });
 
-  it('shows the universe and precon selects in the sidebar', () => {
+  it('lists each universe in the sidebar nav', () => {
     renderWithProviders(routesTree, { routes: ['/'], auth: {} });
-    expect(screen.getByText('Universe')).toBeInTheDocument();
-    expect(screen.getByText('Precon')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Middle-Earth/ })).toHaveAttribute(
+      'href',
+      '/universes/middle-earth'
+    );
+    expect(screen.getByRole('link', { name: /Final Fantasy/ })).toHaveAttribute(
+      'href',
+      '/universes/final-fantasy'
+    );
+    expect(
+      screen.getByRole('link', { name: /Teenage Mutant Ninja Turtles/ })
+    ).toHaveAttribute('href', '/universes/teenage-mutant-ninja-turtles');
   });
 
-  it('disables the precon select when no universe is selected', () => {
+  it('lists each universe’s precons under the parent (default expanded)', () => {
     renderWithProviders(routesTree, { routes: ['/'], auth: {} });
-    const preconInput = screen.getByPlaceholderText('Choose a precon');
-    expect(preconInput).toBeDisabled();
+    expect(screen.getByRole('link', { name: 'Food and Fellowship' })).toHaveAttribute(
+      'href',
+      '/universes/middle-earth/precons/food-and-fellowship'
+    );
+    expect(screen.getByRole('link', { name: 'Turtle Power' })).toHaveAttribute(
+      'href',
+      '/universes/teenage-mutant-ninja-turtles/precons/turtle-power'
+    );
+  });
+
+  it('exposes a chevron toggle for each universe', () => {
+    renderWithProviders(routesTree, { routes: ['/'], auth: {} });
+    expect(
+      screen.getByRole('button', { name: /Collapse Middle-Earth decks/ })
+    ).toBeInTheDocument();
   });
 
   it('opens the user menu and exposes profile + sign out items', async () => {

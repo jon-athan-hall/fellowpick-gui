@@ -1,35 +1,88 @@
 import {
+  ActionIcon,
   AppShell,
   Avatar,
   Burger,
+  Collapse,
   Group,
   Image,
   Menu,
-  Select,
+  NavLink,
+  ScrollArea,
+  Stack,
   Title,
   UnstyledButton
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { useEffect, useState } from 'react';
 import { Link, Outlet, useNavigate, useParams } from 'react-router-dom';
 import { useLogoutMutation, useAuth } from '../features/auth';
 import { useCardPreview } from '../features/pick';
 import universes from '../data/universes.json';
 
-// Renders the application shell with header, sidebar universe selector, and routed content.
+// Renders a Scryfall set icon recolorable to match the surrounding text. The
+// SVG is used as a CSS mask so its painted color comes from `currentColor`,
+// which lets the icon swap between the inactive nav text color and the active
+// state's contrast color without us shipping multiple icon variants.
+function SetIcon({ code }: { code: string }) {
+  const url = `https://svgs.scryfall.io/sets/${code.toLowerCase()}.svg`;
+  return (
+    <span
+      aria-hidden="true"
+      style={{
+        display: 'inline-block',
+        width: '1.25rem',
+        height: '1.25rem',
+        backgroundColor: 'currentColor',
+        maskImage: `url(${url})`,
+        maskSize: 'contain',
+        maskRepeat: 'no-repeat',
+        maskPosition: 'center',
+        WebkitMaskImage: `url(${url})`,
+        WebkitMaskSize: 'contain',
+        WebkitMaskRepeat: 'no-repeat',
+        WebkitMaskPosition: 'center',
+      }}
+    />
+  );
+}
+
+// Renders the application shell with header, sidebar universe nav, and routed content.
 export function AppLayout() {
   const [navOpened, { toggle: toggleNav, close: closeNav }] = useDisclosure();
   const { user, isAuthenticated, clearSession } = useAuth();
   const logoutMutation = useLogoutMutation();
   const navigate = useNavigate();
   const { universeId, preconId } = useParams<{ universeId: string; preconId: string }>();
-
   const { imageUrl } = useCardPreview();
-  const selectedUniverse = universeId ?? null;
-  const universeOptions = universes.map((u) => ({ value: u.id, label: u.name }));
-  const selectedUniverseData = universes.find((u) => u.id === selectedUniverse);
-  const preconOptions = selectedUniverseData
-    ? selectedUniverseData.precons.map((p) => ({ value: p.id, label: p.name }))
-    : [];
+
+  // All universes start expanded — there are few enough to fit and most users
+  // probably want the whole tree at a glance. Users can collapse any one
+  // manually via the chevron, and the active universe is force-opened on
+  // route change so a deep link doesn't land on a closed branch.
+  const [openedUniverses, setOpenedUniverses] = useState<Set<string>>(
+    () => new Set(universes.map((u) => u.id))
+  );
+
+  useEffect(() => {
+    if (universeId) {
+      setOpenedUniverses((prev) => {
+        if (prev.has(universeId)) return prev;
+        const next = new Set(prev);
+        next.add(universeId);
+        return next;
+      });
+    }
+  }, [universeId]);
+
+  function toggleOpened(id: string) {
+    setOpenedUniverses((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
 
   function handleSignOut() {
     logoutMutation.mutate(undefined, {
@@ -38,21 +91,6 @@ export function AppLayout() {
         navigate('/login');
       }
     });
-  }
-
-  function handleUniverseChange(value: string | null) {
-    if (value) {
-      navigate(`/universes/${value}`);
-    } else {
-      navigate('/');
-    }
-  }
-
-  function handlePreconChange(value: string | null) {
-    closeNav();
-    if (selectedUniverse && value) {
-      navigate(`/universes/${selectedUniverse}/precons/${value}`);
-    }
   }
 
   return (
@@ -128,25 +166,57 @@ export function AppLayout() {
           borderRadius: 'var(--mantine-radius-md)',
         }}
       >
-        <Select
-          label="Universe"
-          placeholder="Choose a universe"
-          data={universeOptions}
-          value={selectedUniverse}
-          onChange={handleUniverseChange}
-          mb="md"
-        />
-        <Select
-          label="Precon"
-          placeholder="Choose a precon"
-          data={preconOptions}
-          value={preconId ?? null}
-          disabled={!selectedUniverse}
-          onChange={handlePreconChange}
-        />
-        {imageUrl && (
-          <Image src={imageUrl} radius="md" fit="contain" alt="Card preview" mt="md" />
-        )}
+        <Stack h="100%" gap="md">
+          <ScrollArea style={{ flex: 1 }} type="auto">
+            <Stack gap={0}>
+              {universes.map((u) => {
+                const universeActive = universeId === u.id;
+                const opened = openedUniverses.has(u.id);
+                return (
+                  <Stack key={u.id} gap={0}>
+                    <Group gap={0} wrap="nowrap">
+                      <NavLink
+                        component={Link}
+                        to={`/universes/${u.id}`}
+                        active={universeActive}
+                        label={u.name}
+                        leftSection={<SetIcon code={u.sets[0]} />}
+                        onClick={closeNav}
+                        style={{ flex: 1 }}
+                      />
+                      <ActionIcon
+                        variant="subtle"
+                        color="gray"
+                        size="md"
+                        onClick={() => toggleOpened(u.id)}
+                        aria-label={`${opened ? 'Collapse' : 'Expand'} ${u.name} decks`}
+                      >
+                        <span aria-hidden="true">{opened ? '▾' : '▸'}</span>
+                      </ActionIcon>
+                    </Group>
+                    <Collapse in={opened}>
+                      <Stack pl="lg" gap={0}>
+                        {u.precons.map((p) => (
+                          <NavLink
+                            key={p.id}
+                            component={Link}
+                            to={`/universes/${u.id}/precons/${p.id}`}
+                            active={preconId === p.id}
+                            label={p.name}
+                            onClick={closeNav}
+                          />
+                        ))}
+                      </Stack>
+                    </Collapse>
+                  </Stack>
+                );
+              })}
+            </Stack>
+          </ScrollArea>
+          {imageUrl && (
+            <Image src={imageUrl} radius="md" fit="contain" alt="Card preview" />
+          )}
+        </Stack>
       </AppShell.Navbar>
 
       <AppShell.Main>
