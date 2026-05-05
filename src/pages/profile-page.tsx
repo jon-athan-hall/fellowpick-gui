@@ -18,7 +18,7 @@ export function ProfilePage() {
     <Stack gap="lg">
       <Paper>
         <Group justify="space-between" align="center">
-          <Title order={2}>Your profile</Title>
+          <Title order={1}>Profile</Title>
           <UserVerifiedBadge verified={user.verified} />
         </Group>
       </Paper>

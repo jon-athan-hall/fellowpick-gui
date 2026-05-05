@@ -157,7 +157,7 @@ export function PreconDetailPage() {
           name={precon.name}
           commanders={precon.commanders}
           colorIdentity={precon.colorIdentity}
-          titleOrder={2}
+          titleOrder={1}
         />
       </Paper>
 
@@ -173,7 +173,7 @@ export function PreconDetailPage() {
         <Grid gutter="xl">
           <Grid.Col span={6}>
             <Paper style={{ borderTop: '3px solid var(--mantine-color-red-6)' }}>
-              <Title order={3} ta="center" size="h1" c="red">CUT</Title>
+              <Title order={2} ta="center" size="h1" c="red">CUT</Title>
               <Stack gap={0} mt="md">
                 {renderCardList(sortedCuts, 'CUT', cutsPage, setCutsPage)}
               </Stack>
@@ -181,7 +181,7 @@ export function PreconDetailPage() {
           </Grid.Col>
           <Grid.Col span={6}>
             <Paper style={{ borderTop: '3px solid var(--mantine-color-secondary-6)' }}>
-              <Title order={3} ta="center" size="h1" c="secondary">ADD</Title>
+              <Title order={2} ta="center" size="h1" c="secondary">ADD</Title>
               <Stack gap={0} mt="md">
                 {renderCardList(sortedAdds, 'ADD', addsPage, setAddsPage)}
               </Stack>

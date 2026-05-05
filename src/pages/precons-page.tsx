@@ -22,7 +22,7 @@ export function PreconsPage() {
   return (
     <Stack gap="lg">
       <Paper>
-        <Title order={1} ta="center">{universe.name}</Title>
+        <Title order={1}>{universe.name}</Title>
       </Paper>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
         {universe.precons.map((p) => {
@@ -66,7 +66,7 @@ export function PreconsPage() {
                     name={p.name}
                     commanders={commanders}
                     colorIdentity={colorIdentity}
-                    titleOrder={3}
+                    titleOrder={2}
                   />
                 </Box>
               </Card>

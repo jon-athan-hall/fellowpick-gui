@@ -18,7 +18,7 @@ export function UsersPage() {
     <>
       <Paper>
         <Stack gap="lg">
-          <Title order={2}>Users</Title>
+          <Title order={1}>Users</Title>
           <UsersTable onManageRoles={setRolesUser} onDelete={setDeletingUser} />
         </Stack>
       </Paper>

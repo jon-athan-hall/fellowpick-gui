@@ -46,7 +46,7 @@ export function ChangePasswordForm({ userId }: ChangePasswordFormProps) {
   return (
     <form onSubmit={form.onSubmit(handleSubmit)}>
       <Stack gap="md">
-        <Title order={4}>Change password</Title>
+        <Title order={2}>Change password</Title>
         {errorMessage && <Alert color="red">{errorMessage}</Alert>}
         {changeMutation.isSuccess && <Alert color="green">Password updated.</Alert>}
         <PasswordInput

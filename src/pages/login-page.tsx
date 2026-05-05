@@ -31,7 +31,7 @@ export function LoginPage() {
     <Paper>
       <form onSubmit={form.onSubmit(handleSubmit)}>
         <Stack>
-          <Title order={2}>Sign in</Title>
+          <Title order={1}>Sign in</Title>
           {errorMessage && <Alert color="red">{errorMessage}</Alert>}
           <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
           <PasswordInput label="Password" required {...form.getInputProps('password')} />

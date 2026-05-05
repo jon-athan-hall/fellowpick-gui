@@ -50,7 +50,7 @@ export function ProfileDetailsForm({
   return (
     <form onSubmit={form.onSubmit(handleSubmit)}>
       <Stack gap="md">
-        <Title order={4}>Account details</Title>
+        <Title order={2}>Account details</Title>
         {errorMessage && <Alert color="red">{errorMessage}</Alert>}
         {updateMutation.isSuccess && !form.isDirty() && (
           <Alert color="green">Profile updated.</Alert>

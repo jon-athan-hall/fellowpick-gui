@@ -68,7 +68,7 @@ export function AppLayout() {
           <Group gap="sm">
             <Burger opened={navOpened} onClick={toggleNav} hiddenFrom="sm" size="sm" />
             <UnstyledButton component={Link} to="/" aria-label="Fellowpick home">
-              <Title order={1}>Fellowpick</Title>
+              <Title order={2} size="h1" component="div">Fellowpick</Title>
             </UnstyledButton>
           </Group>
           {isAuthenticated ? (

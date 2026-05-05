@@ -32,7 +32,7 @@ export function RolesPage() {
       <Paper>
         <Stack gap="lg">
           <Group justify="space-between" align="center">
-            <Title order={2}>Roles</Title>
+            <Title order={1}>Roles</Title>
             <Button onClick={openCreate}>New role</Button>
           </Group>
           <RolesTable onEdit={openEdit} onDelete={setDeletingRole} />

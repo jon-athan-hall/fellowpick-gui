@@ -9,13 +9,13 @@ export function UniversesPage() {
   return (
     <Stack gap="lg">
       <Paper>
-        <Title order={1} ta="center">Choose a Universe</Title>
+        <Title order={1}>Choose a Universe</Title>
       </Paper>
       <SimpleGrid cols={{ base: 1, sm: 2 }}>
         {universes.map((u) => (
           <UnstyledButton key={u.id} onClick={() => navigate(`/universes/${u.id}`)}>
             <Card>
-              <Title order={4}>{u.name}</Title>
+              <Title order={2}>{u.name}</Title>
               <Text size="sm" c="dimmed" mt="xs">
                 {u.description}
               </Text>
