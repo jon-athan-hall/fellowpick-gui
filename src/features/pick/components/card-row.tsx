@@ -29,8 +29,8 @@ function CardRowImpl({ card, count, pickType, pickId, onPick, onUnpick, canPick 
   return (
     <Group
       gap="md"
-      py={4}
-      px="xs"
+      py={6}
+      px="sm"
       wrap="nowrap"
       style={{
         borderBottom: '1px solid var(--mantine-color-default-border)',
@@ -67,7 +67,7 @@ function CardRowImpl({ card, count, pickType, pickId, onPick, onUnpick, canPick 
       <div style={{ flexShrink: 0, width: 80, display: 'flex', justifyContent: 'flex-end' }}>
         {card.manaCost && <ManaCost cost={card.manaCost} size={16} />}
       </div>
-      <Text size="md" fw={500} truncate style={{ flex: 1, minWidth: 0 }}>
+      <Text size="md" truncate style={{ flex: 1, minWidth: 0 }}>
         {card.name}
       </Text>
     </Group>

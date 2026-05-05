@@ -8,6 +8,7 @@ import {
   getAddCandidates,
   loadPrecon,
   loadUniverseSets,
+  useCardPreview,
   useMakePickMutation,
   useMyPicksQuery,
   usePickCountsQuery,
@@ -24,6 +25,7 @@ const PAGE_SIZE = 25;
 export function PreconDetailPage() {
   const { universeId, preconId } = useParams<{ universeId: string; preconId: string }>();
   const { isAuthenticated } = useAuth();
+  const { setPreviewImage } = useCardPreview();
 
   const precon = universeId && preconId ? loadPrecon(universeId, preconId) : null;
   const countsQuery = usePickCountsQuery(preconId ?? '');
@@ -156,10 +158,15 @@ export function PreconDetailPage() {
   // background, because Mantine's `bg` prop emits a `background:` shorthand
   // that overrides any inline `background-image` we'd put on the Paper itself.
   const commanderArt = precon.commanders[0]?.scryfallImage?.replace('/large/', '/art_crop/');
+  const commanderFullCard = precon.commanders[0]?.scryfallImage ?? null;
 
   return (
     <Stack gap="lg">
-      <Paper style={{ position: 'relative', overflow: 'hidden' }}>
+      <Paper
+        style={{ position: 'relative', overflow: 'hidden' }}
+        onMouseEnter={() => setPreviewImage(commanderFullCard)}
+        onMouseLeave={() => setPreviewImage(null)}
+      >
         {commanderArt && (
           // Right-half overlay: the image fills its 50%-wide box via `cover`,
           // and a left-going gradient on top fades it from the right edge

@@ -51,7 +51,7 @@ const UNIVERSES = {
     description: 'Heroes in a half-shell — TMNT',
     sets: ['TMT', 'TMC'],
     precons: [
-      { filename: 'TurtlePower_TMC', id: 'turtle-power', name: 'Turtle Power!' },
+      { filename: 'TurtlePower_TMC', id: 'turtle-power', name: 'Turtle Power' },
     ],
   },
 };
