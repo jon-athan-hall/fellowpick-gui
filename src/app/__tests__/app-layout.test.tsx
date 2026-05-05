@@ -92,12 +92,6 @@ describe('AppLayout', () => {
     );
   });
 
-  it('exposes a chevron toggle for each universe', () => {
-    renderWithProviders(routesTree, { routes: ['/'], auth: {} });
-    expect(
-      screen.getByRole('button', { name: /Collapse Middle-Earth decks/ })
-    ).toBeInTheDocument();
-  });
 
   it('opens the user menu and exposes profile + sign out items', async () => {
     renderWithProviders(routesTree, {

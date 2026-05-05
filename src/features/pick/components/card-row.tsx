@@ -35,7 +35,6 @@ function CardRowImpl({ card, count, pickType, pickId, onPick, onUnpick, canPick 
       style={{
         borderBottom: '1px solid var(--mantine-color-default-border)',
         cursor: 'pointer',
-        borderRadius: 'var(--mantine-radius-sm)',
         transition: 'background-color 150ms ease',
       }}
       className={classes.row}
