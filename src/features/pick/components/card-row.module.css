@@ -1,3 +1,10 @@
+/* Subtle zebra striping over the panel's dark.6 background, and a slightly
+   stronger hover tint. Both use translucent white so they layer cleanly on
+   top of whatever the panel bg happens to be. */
+.row:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
 .row:hover {
-  background-color: var(--mantine-color-dark-6);
+  background-color: rgba(255, 255, 255, 0.07);
 }
