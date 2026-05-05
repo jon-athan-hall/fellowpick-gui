@@ -150,15 +150,48 @@ export function PreconDetailPage() {
     );
   }
 
+  // Commander artwork as a right-anchored decorative background on the header,
+  // fading to the panel's dark.6 by 50% from the right edge. The image lives in
+  // an absolutely-positioned overlay div rather than on the Paper's own
+  // background, because Mantine's `bg` prop emits a `background:` shorthand
+  // that overrides any inline `background-image` we'd put on the Paper itself.
+  const commanderArt = precon.commanders[0]?.scryfallImage?.replace('/large/', '/art_crop/');
+
   return (
     <Stack gap="lg">
-      <Paper>
-        <DeckIdentity
-          name={precon.name}
-          commanders={precon.commanders}
-          colorIdentity={precon.colorIdentity}
-          titleOrder={1}
-        />
+      <Paper style={{ position: 'relative', overflow: 'hidden' }}>
+        {commanderArt && (
+          // Right-half overlay: the image fills its 50%-wide box via `cover`,
+          // and a left-going gradient on top fades it from the right edge
+          // (transparent) to the midpoint of the Paper (solid dark.6).
+          <div
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              bottom: 0,
+              width: '50%',
+              backgroundImage: `linear-gradient(to left, transparent, var(--mantine-color-dark-6)), url(${commanderArt})`,
+              // Heads on humanoid commanders typically sit ~20–30% from the
+               // top of the art_crop frame, so anchor the visible band there.
+               backgroundPosition: 'right 25%',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              pointerEvents: 'none',
+              borderTopRightRadius: 'inherit',
+              borderBottomRightRadius: 'inherit',
+            }}
+          />
+        )}
+        <div style={{ position: 'relative' }}>
+          <DeckIdentity
+            name={precon.name}
+            commanders={precon.commanders}
+            colorIdentity={precon.colorIdentity}
+            titleOrder={1}
+          />
+        </div>
       </Paper>
 
       {!isAuthenticated && (
