@@ -48,15 +48,20 @@ function CardRowImpl({ card, count, pickType, pickId, onPick, onUnpick, canPick 
           {count}
         </Badge>
         {canPick && (
-          <Switch
-            checked={userPicked}
-            readOnly
-            size="sm"
-            color={accentColor}
-            tabIndex={-1}
-            withThumbIndicator={false}
-            styles={{ track: { cursor: 'pointer' } }}
-          />
+          // pointer-events: none so the Switch's internal label+input doesn't
+          // dispatch a synthetic click on top of the user's click, which would
+          // bubble twice to the parent Group and double the optimistic +1.
+          <div style={{ pointerEvents: 'none' }}>
+            <Switch
+              checked={userPicked}
+              readOnly
+              size="sm"
+              color={accentColor}
+              tabIndex={-1}
+              withThumbIndicator={false}
+              styles={{ track: { cursor: 'pointer' } }}
+            />
+          </div>
         )}
       </Group>
       <div style={{ flexShrink: 0, width: 80, display: 'flex', justifyContent: 'flex-end' }}>
