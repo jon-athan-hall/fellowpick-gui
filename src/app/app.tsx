@@ -20,7 +20,12 @@ const theme = createTheme({
   },
   components: {
     Title: {
-      defaultProps: { c: 'orange' }
+      defaultProps: { c: 'orange' },
+      // Slight tracking globally on every Title — MedievalSharp reads better
+      // with a touch of breathing room between letters.
+      styles: {
+        root: { letterSpacing: '0.05em' }
+      }
     },
     // Standard panel: lighter dark.6 background, md padding, md radius. Pages
     // wrap sections in a bare <Paper> to get the card look. Override per-use
