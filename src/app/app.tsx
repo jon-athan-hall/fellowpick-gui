@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, MantineProvider, createTheme } from '@mantine/core';
+import { DEFAULT_THEME, MantineProvider, createTheme, type MantineColorsTuple } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
@@ -6,21 +6,40 @@ import { AuthProvider } from '../features/auth';
 import { CardPreviewProvider } from '../features/pick';
 import { AppRouter } from './app-router';
 
-// Orange is the primary identity color. Yellow is registered as `secondary`
-// for warm-accent roles (informational nudges, guest indicator). Red is used
-// semantically for destructive/CUT actions; do not register it as a theme
-// alias — keep `color="red"` literal so its meaning stays obvious.
+// Custom oxidized-iron palette: less neon than Mantine's orange, hue-shifted
+// toward red and brown. Index 6 is the "filled" shade, index 5 reads well on
+// dark backgrounds. Lighter shades carry a peachy-cream tint; darker shades
+// deepen toward a burnt-brown.
+const rust: MantineColorsTuple = [
+  '#fbece4',
+  '#f3d2bb',
+  '#e7af89',
+  '#d88a5d',
+  '#c66e3a',
+  '#b25821',
+  '#9a4716',
+  '#7e3812',
+  '#62290e',
+  '#481d0a',
+];
+
+// Rust is the primary identity color (custom palette above). Yellow is
+// registered as `secondary` for warm-accent roles (informational nudges,
+// guest indicator). Red is used semantically for destructive/CUT actions;
+// do not register it as a theme alias — keep `color="red"` literal so its
+// meaning stays obvious.
 const theme = createTheme({
-  primaryColor: 'orange',
+  primaryColor: 'rust',
   colors: {
     secondary: DEFAULT_THEME.colors.yellow,
+    rust,
   },
   headings: {
     fontFamily: 'MedievalSharp, cursive'
   },
   components: {
     Title: {
-      defaultProps: { c: 'orange' },
+      defaultProps: { c: 'rust' },
       // Slight tracking globally on every Title — MedievalSharp reads better
       // with a touch of breathing room between letters.
       styles: {

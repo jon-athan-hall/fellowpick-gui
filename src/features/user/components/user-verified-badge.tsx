@@ -11,7 +11,7 @@ export function UserVerifiedBadge({ verified, loading = false }: UserVerifiedBad
     return <Skeleton height={22} width={80} radius="sm" />;
   }
   return (
-    <Badge color={verified ? 'green' : 'orange'} variant="light">
+    <Badge color={verified ? 'green' : 'rust'} variant="light">
       {verified ? 'Verified' : 'Not verified'}
     </Badge>
   );

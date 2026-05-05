@@ -8,7 +8,7 @@ export function ResendVerificationBanner() {
   const errorMessage = getApiErrorMessage(resendMutation.error, 'Failed to send verification email');
 
   return (
-    <Alert color="orange" title="Email not verified">
+    <Alert color="rust" title="Email not verified">
       <Stack gap="sm">
         <Text size="sm">
           Check your inbox for a verification link. If you don't see it, you can request a new
@@ -28,7 +28,7 @@ export function ResendVerificationBanner() {
           <Button
             size="xs"
             variant="light"
-            color="orange"
+            color="rust"
             loading={resendMutation.isPending}
             onClick={() => resendMutation.mutate()}
           >
