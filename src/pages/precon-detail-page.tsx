@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
 import {
   CardRow,
-  ManaCost,
+  DeckIdentity,
   getAddCandidates,
   loadPrecon,
   loadUniverseSets,
@@ -153,13 +153,12 @@ export function PreconDetailPage() {
   return (
     <Stack gap="lg">
       <Paper>
-        <Stack align="center" gap="xs">
-          <Title order={2}>{precon.name}</Title>
-          <Text size="md" c="secondary">
-            {precon.commanders.map((c) => c.name).join(' & ')}
-          </Text>
-          <ManaCost cost={precon.colorIdentity.map((c) => `{${c}}`).join('')} size={24} />
-        </Stack>
+        <DeckIdentity
+          name={precon.name}
+          commanders={precon.commanders}
+          colorIdentity={precon.colorIdentity}
+          titleOrder={2}
+        />
       </Paper>
 
       {!isAuthenticated && (

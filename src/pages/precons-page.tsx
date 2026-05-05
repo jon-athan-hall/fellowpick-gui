@@ -1,7 +1,7 @@
-import { Card, Image, Paper, SimpleGrid, Stack, Text, Title, UnstyledButton } from '@mantine/core';
+import { Box, Card, Image, Paper, SimpleGrid, Stack, Title, UnstyledButton, Text } from '@mantine/core';
 import { useNavigate, useParams } from 'react-router-dom';
 import universes from '../data/universes.json';
-import { ManaCost, loadPrecon } from '../features/pick';
+import { DeckIdentity, loadPrecon } from '../features/pick';
 
 // Scryfall hosts an art-only crop alongside the full card image at the same path.
 function artCropUrl(largeUrl: string | null): string | null {
@@ -34,8 +34,12 @@ export function PreconsPage() {
             <UnstyledButton
               key={p.id}
               onClick={() => navigate(`/universes/${universeId}/precons/${p.id}`)}
+              h="100%"
             >
-              <Card style={{ borderTop: '4px solid var(--mantine-color-secondary-6)' }}>
+              <Card
+                h="100%"
+                style={{ borderTop: '4px solid var(--mantine-color-secondary-6)' }}
+              >
                 {commanders.length > 0 && (
                   <Card.Section>
                     <SimpleGrid cols={commanders.length} spacing={0}>
@@ -57,17 +61,14 @@ export function PreconsPage() {
                     </SimpleGrid>
                   </Card.Section>
                 )}
-                <Stack mt="md" align="center" gap="xs">
-                  <Title order={3} ta="center">{p.name}</Title>
-                  {commanders.length > 0 && (
-                    <Text size="md" c="secondary" ta="center">
-                      {commanders.map((c) => c.name).join(' & ')}
-                    </Text>
-                  )}
-                  {colorIdentity.length > 0 && (
-                    <ManaCost cost={colorIdentity.map((c) => `{${c}}`).join('')} size={24} />
-                  )}
-                </Stack>
+                <Box mt="md">
+                  <DeckIdentity
+                    name={p.name}
+                    commanders={commanders}
+                    colorIdentity={colorIdentity}
+                    titleOrder={3}
+                  />
+                </Box>
               </Card>
             </UnstyledButton>
           );

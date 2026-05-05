@@ -3,6 +3,7 @@ export { useMyPicksQuery } from './api/use-my-picks';
 export { useMakePickMutation } from './api/use-make-pick';
 export { useRemovePickMutation } from './api/use-remove-pick';
 export { CardRow } from './components/card-row';
+export { DeckIdentity } from './components/deck-identity';
 export { ManaCost } from './components/mana-cost';
 export { CardPreviewProvider } from './hooks/card-preview-context';
 export { useCardPreview } from './hooks/use-card-preview';
