@@ -1,0 +1,65 @@
+/* Folder-tab style: the active tab visually attaches to the card-list panel.
+ * The active color (red for CUT, yellow for ADD) is set inline on the root
+ * via --tab-color. Top edge of the panel runs in that color and connects to
+ * the active tab's outline; the side borders fade down to dark.6 (matching
+ * the header/sidebar bg), and the bottom border is dark.6 — so the bold
+ * accent reads only at the top where the tab attaches, and dissolves into
+ * the surrounding chrome below. The bottom corners are rounded (md, matching
+ * the sidebar's radius) since they're not hidden under any tab.
+ *
+ * The .root parent class is applied to the Tabs root via classNames; nesting
+ * descendant rules under it bumps specificity above Mantine's defaults
+ * (which use class+attribute selectors). Without it, Mantine's defaults like
+ * the gray bottom border on Tabs.List would still bleed through. */
+
+.root .list {
+  margin-bottom: 0;
+}
+
+/* Mantine's default tabs variant draws a 1px gray indicator line via a
+ * ::before pseudo-element pinned to the bottom of the list. It bleeds through
+ * the inactive tab's translucent bg as a thin gray streak. Disable it — we
+ * don't need an indicator since the panel's colored top edge plus the active
+ * tab's outline already serve that role. */
+.root .list::before {
+  display: none;
+}
+
+.root .tab {
+  border: 3px solid transparent;
+  border-bottom: 0;
+  background: transparent;
+  margin-bottom: -3px;
+  position: relative;
+  border-top-left-radius: var(--mantine-radius-md);
+  border-top-right-radius: var(--mantine-radius-md);
+  padding-bottom: var(--mantine-spacing-md);
+}
+
+.root .tab[data-active] {
+  border-color: var(--tab-color);
+  background: var(--mantine-color-dark-6);
+  z-index: 2;
+}
+
+.root .tab:not([data-active]) {
+  background: rgba(255, 255, 255, 0.04);
+  z-index: 1;
+}
+
+.root .tab:not([data-active]):hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Panel borders use the dual-gradient + transparent-border trick (rather
+ * than border-image), which preserves border-radius. The top bg layer
+ * (solid dark.6, padding-box clip) covers content; the bottom layer (gradient,
+ * border-box clip) shows only in the 3px border ring. */
+.root .panel {
+  border: 3px solid transparent;
+  border-radius: 0 0 var(--mantine-radius-md) var(--mantine-radius-md);
+  background:
+    linear-gradient(var(--mantine-color-dark-6), var(--mantine-color-dark-6)) padding-box,
+    linear-gradient(to bottom, var(--tab-color), var(--mantine-color-dark-6)) border-box;
+  padding: var(--mantine-spacing-md);
+}

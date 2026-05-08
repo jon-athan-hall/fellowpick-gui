@@ -1,7 +1,9 @@
-import { Alert, Grid, Group, Loader, Pagination, Paper, Stack, Text, Title } from '@mantine/core';
+import { Alert, Group, Loader, Pagination, Paper, Stack, Tabs, Text } from '@mantine/core';
+import type { CSSProperties } from 'react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
+import classes from './precon-detail-page.module.css';
 import {
   CardRow,
   DeckIdentity,
@@ -70,11 +72,11 @@ export function PreconDetailPage() {
     return map;
   }, [myPicksQuery.data]);
 
-  // Lock sort order on the FIRST successful counts load, so subsequent toggles
-  // (which optimistically mutate counts) don't reshuffle the list. Depending on
-  // `countsQuery.isSuccess` rather than `countsQuery.data` means the memo only
-  // recomputes when the query first succeeds; further `data` updates are
-  // ignored. Remount via the route's `key={preconId}` resets the lock per precon.
+  // Lock sort order so optimistic count mutations from picks don't reshuffle the
+  // list mid-vote. Reorder only on: first successful load and tab switches.
+  const [activeTab, setActiveTab] = useState<PickType>('CUT');
+  const [sortKey, setSortKey] = useState(0);
+
   const sortedCuts = useMemo<Card[]>(() => {
     if (!precon) return [];
     const cards = Object.values(precon.mainBoard);
@@ -84,8 +86,8 @@ export function PreconDetailPage() {
       if (c.pickType === 'CUT') anchor[c.cardId] = c.count;
     }
     return [...cards].sort((a, b) => (anchor[b.id] ?? 0) - (anchor[a.id] ?? 0));
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: lock on first success
-  }, [precon, countsQuery.isSuccess]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: re-snapshot only on sortKey
+  }, [precon, countsQuery.isSuccess, sortKey]);
 
   const sortedAdds = useMemo<Card[]>(() => {
     if (!countsQuery.isSuccess) return addCandidates;
@@ -94,11 +96,20 @@ export function PreconDetailPage() {
       if (c.pickType === 'ADD') anchor[c.cardId] = c.count;
     }
     return [...addCandidates].sort((a, b) => (anchor[b.id] ?? 0) - (anchor[a.id] ?? 0));
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: lock on first success
-  }, [addCandidates, countsQuery.isSuccess]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: re-snapshot only on sortKey
+  }, [addCandidates, countsQuery.isSuccess, sortKey]);
 
   const [cutsPage, setCutsPage] = useState(1);
   const [addsPage, setAddsPage] = useState(1);
+
+  const handleTabChange = useCallback((value: string | null) => {
+    if (value !== 'CUT' && value !== 'ADD') return;
+    setActiveTab((current) => {
+      if (current === value) return current;
+      setSortKey((k) => k + 1);
+      return value;
+    });
+  }, []);
 
   const handlePick = useCallback(
     (cardId: string, pickType: PickType) => {
@@ -210,24 +221,43 @@ export function PreconDetailPage() {
       {countsQuery.isLoading ? (
         <Loader />
       ) : (
-        <Grid gutter="xl">
-          <Grid.Col span={6}>
-            <Paper style={{ borderTop: '3px solid var(--mantine-color-red-6)' }}>
-              <Title order={2} ta="center" size="h1" c="red">CUT</Title>
-              <Stack gap={0} mt="md">
-                {renderCardList(sortedCuts, 'CUT', cutsPage, setCutsPage)}
-              </Stack>
-            </Paper>
-          </Grid.Col>
-          <Grid.Col span={6}>
-            <Paper style={{ borderTop: '3px solid var(--mantine-color-secondary-6)' }}>
-              <Title order={2} ta="center" size="h1" c="secondary">ADD</Title>
-              <Stack gap={0} mt="md">
-                {renderCardList(sortedAdds, 'ADD', addsPage, setAddsPage)}
-              </Stack>
-            </Paper>
-          </Grid.Col>
-        </Grid>
+        <Tabs
+          value={activeTab}
+          onChange={handleTabChange}
+          variant="default"
+          classNames={{
+            root: classes.root,
+            list: classes.list,
+            tab: classes.tab,
+            panel: classes.panel,
+          }}
+          style={{
+            '--tab-color':
+              activeTab === 'CUT'
+                ? 'var(--mantine-color-red-6)'
+                : 'var(--mantine-color-secondary-6)',
+          } as CSSProperties}
+        >
+          <Tabs.List grow>
+            <Tabs.Tab value="CUT">
+              <Text fw={700} size="lg" c="red">CUT</Text>
+            </Tabs.Tab>
+            <Tabs.Tab value="ADD">
+              <Text fw={700} size="lg" c="secondary">ADD</Text>
+            </Tabs.Tab>
+          </Tabs.List>
+
+          <Tabs.Panel value="CUT">
+            <Stack gap={0}>
+              {renderCardList(sortedCuts, 'CUT', cutsPage, setCutsPage)}
+            </Stack>
+          </Tabs.Panel>
+          <Tabs.Panel value="ADD">
+            <Stack gap={0}>
+              {renderCardList(sortedAdds, 'ADD', addsPage, setAddsPage)}
+            </Stack>
+          </Tabs.Panel>
+        </Tabs>
       )}
     </Stack>
   );
