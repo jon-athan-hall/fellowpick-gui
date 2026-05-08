@@ -83,29 +83,33 @@ export function AppLayout() {
   return (
     <AppShell
       // navbar.width = 275 visible + 16 left inset = 291; Main offsets by full width.
-      header={{ height: 90 }}
+      // Header gets extra height on small screens so the tagline can wrap to
+      // its own row beneath the burger/title/avatar row without overlapping
+      // the Main content below.
+      header={{ height: { base: 130, sm: 90 } }}
       navbar={{ width: 291, breakpoint: 'sm', collapsed: { mobile: !navOpened } }}
       padding="md"
       withBorder={false}
     >
       <AppShell.Header bg="dark.6">
-        <Group h="100%" p="md" justify="space-between">
-          <Group gap="sm">
+        <Group h="100%" p="md" justify="space-between" wrap="wrap" align="center" className={classes.headerRow}>
+          <Group gap="sm" wrap="nowrap" align="center">
             <Burger opened={navOpened} onClick={toggleNav} hiddenFrom="sm" size="sm" />
             <UnstyledButton component={Link} to="/" aria-label="Fellowpick home">
-              <Group gap="md" align="center" wrap="nowrap">
-                <Title order={2} size="2.5rem" component="div">Fellowpick</Title>
-                <Text
-                  size="sm"
-                  c="dimmed"
-                  tt="uppercase"
-                  style={{ letterSpacing: '0.06em' }}
-                >
-                  Community-driven · in-universe only · precon upgrades
-                </Text>
-              </Group>
+              <Title order={2} component="div" className={classes.appTitle}>
+                Fellowpick
+              </Title>
             </UnstyledButton>
           </Group>
+          <Text
+            size="sm"
+            c="dimmed"
+            tt="uppercase"
+            className={classes.tagline}
+            style={{ letterSpacing: '0.06em' }}
+          >
+            Community-driven · in-universe only · precon upgrades
+          </Text>
           {isAuthenticated ? (
             <Menu position="bottom-end" withArrow>
               <Menu.Target>
@@ -151,18 +155,7 @@ export function AppLayout() {
         </Group>
       </AppShell.Header>
 
-      <AppShell.Navbar
-        p="md"
-        bg="dark.6"
-        style={{
-          top: 'calc(var(--app-shell-header-offset) + 16px)',
-          left: 16,
-          bottom: 16,
-          width: 275,
-          height: 'auto',
-          borderRadius: 'var(--mantine-radius-md)',
-        }}
-      >
+      <AppShell.Navbar p="md" bg="dark.6" className={classes.navbar}>
         <Stack h="100%" gap="md">
           <ScrollArea style={{ flex: 1 }} type="auto">
             <div className={classes.navList}>

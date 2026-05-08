@@ -1,4 +1,4 @@
-import { Badge, Group, Switch, Text } from '@mantine/core';
+import { Badge, Group, Text } from '@mantine/core';
 import { memo } from 'react';
 import { useCardPreview } from '../hooks/use-card-preview';
 import type { Card, PickType } from '../types';
@@ -14,17 +14,44 @@ interface CardRowProps {
   onPick: (cardId: string, pickType: PickType) => void;
   onUnpick: (pickId: string) => void;
   canPick: boolean;
+  isMobile: boolean;
+  /** At mobile widths the row tap routes through this instead of toggling
+   * the pick directly — the parent opens a bottom-sheet preview where the
+   * user sees the card before voting. */
+  onCardTap: (cardId: string) => void;
 }
 
-// Displays a single card row with pick count, mana cost, name, and vote toggle.
-function CardRowImpl({ card, count, pickType, pickId, onPick, onUnpick, canPick }: CardRowProps) {
+// Displays a single card row with pick count, mana cost, and name.
+function CardRowImpl({
+  card,
+  count,
+  pickType,
+  pickId,
+  onPick,
+  onUnpick,
+  canPick,
+  isMobile,
+  onCardTap,
+}: CardRowProps) {
   const { setPreviewImage } = useCardPreview();
   const accentColor = pickType === 'CUT' ? 'red' : 'secondary';
   const userPicked = pickId !== undefined;
 
-  const handleClick = canPick
-    ? () => (userPicked ? onUnpick(pickId) : onPick(card.id, pickType))
-    : undefined;
+  const handleClick = isMobile
+    ? () => onCardTap(card.id)
+    : canPick
+      ? () => (userPicked ? onUnpick(pickId) : onPick(card.id, pickType))
+      : undefined;
+
+  // Hover preview only at desktop widths. At mobile widths the row tap opens
+  // a bottom-sheet preview instead, and the sidebar pane (where the hover
+  // image renders) is collapsed off-screen anyway.
+  const hoverHandlers = isMobile
+    ? undefined
+    : {
+        onMouseEnter: () => setPreviewImage(card.scryfallImage),
+        onMouseLeave: () => setPreviewImage(null),
+      };
 
   return (
     <Group
@@ -39,31 +66,12 @@ function CardRowImpl({ card, count, pickType, pickId, onPick, onUnpick, canPick 
       }}
       className={classes.row}
       onClick={handleClick}
-      onMouseEnter={() => setPreviewImage(card.scryfallImage)}
-      onMouseLeave={() => setPreviewImage(null)}
+      {...hoverHandlers}
     >
-      <Group gap={8} wrap="nowrap" style={{ flexShrink: 0 }}>
-        <Badge variant="outline" size="lg" w={50} color={accentColor}>
-          {count}
-        </Badge>
-        {canPick && (
-          // pointer-events: none so the Switch's internal label+input doesn't
-          // dispatch a synthetic click on top of the user's click, which would
-          // bubble twice to the parent Group and double the optimistic +1.
-          <div style={{ pointerEvents: 'none' }}>
-            <Switch
-              checked={userPicked}
-              readOnly
-              size="sm"
-              color={accentColor}
-              tabIndex={-1}
-              withThumbIndicator={false}
-              styles={{ track: { cursor: 'pointer' } }}
-            />
-          </div>
-        )}
-      </Group>
-      <div style={{ flexShrink: 0, width: 80, display: 'flex', justifyContent: 'flex-end' }}>
+      <Badge variant="outline" size="lg" w={50} color={accentColor} style={{ flexShrink: 0 }}>
+        {count}
+      </Badge>
+      <div className={classes.manaCostCol}>
         {card.manaCost && <ManaCost cost={card.manaCost} size={16} />}
       </div>
       <Text size="md" truncate style={{ flex: 1, minWidth: 0 }}>

@@ -63,3 +63,28 @@
     linear-gradient(to bottom, var(--tab-color), var(--mantine-color-dark-6)) border-box;
   padding: var(--mantine-spacing-md);
 }
+
+/* Commander artwork in the deck identity header. The actual `background-image`
+ * is set inline in the page (it's per-precon), so this class only owns the
+ * positioning, sizing, and the responsive width step-down for narrow viewports. */
+.commanderArt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-position: right 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+/* Mantine `sm` breakpoint = 48em. Below it (phones, narrow tablets), shrink
+ * the art band so the title on the left has more room. */
+@media (max-width: 48em) {
+  .commanderArt {
+    width: 30%;
+  }
+}

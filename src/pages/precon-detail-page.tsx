@@ -1,10 +1,12 @@
 import { Alert, Group, Loader, Pagination, Paper, Stack, Tabs, Text } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import type { CSSProperties } from 'react';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
 import classes from './precon-detail-page.module.css';
 import {
+  CardPreviewDrawer,
   CardRow,
   DeckIdentity,
   getAddCandidates,
@@ -42,18 +44,6 @@ export function PreconDetailPage() {
     },
     [precon, universeId]
   );
-
-  // Preload all card images in the background so hover previews are instant.
-  useEffect(() => {
-    if (!precon) return;
-    const allCards = [...Object.values(precon.mainBoard), ...addCandidates];
-    for (const card of allCards) {
-      if (card.scryfallImage) {
-        const img = new Image();
-        img.src = card.scryfallImage;
-      }
-    }
-  }, [precon, addCandidates]);
 
   const countMap = useMemo(() => {
     const map: Record<string, Record<PickType, number>> = {};
@@ -102,6 +92,48 @@ export function PreconDetailPage() {
   const [cutsPage, setCutsPage] = useState(1);
   const [addsPage, setAddsPage] = useState(1);
 
+  // Mobile preview drawer: at narrow viewports, tapping a row opens the card
+  // image in a bottom sheet where vote/unvote also lives. Desktop is
+  // unchanged — sidebar hover preview + click-row-to-toggle. We key off
+  // viewport width (Mantine `sm` = 48em) rather than `(hover: none)` because
+  // the layout decision is really about screen size: a hover-capable touch
+  // laptop or shrunken browser window also wants the mobile UX here.
+  // `getInitialValueInEffect: false` reads the media query synchronously on
+  // first render so a phone reload doesn't briefly show desktop behavior
+  // before the effect runs.
+  const isMobile = useMediaQuery('(max-width: 48em)', false, {
+    getInitialValueInEffect: false,
+  });
+  const [previewCardId, setPreviewCardId] = useState<string | null>(null);
+
+  const cardById = useMemo(() => {
+    const m: Record<string, Card> = {};
+    if (precon) for (const c of Object.values(precon.mainBoard)) m[c.id] = c;
+    for (const c of addCandidates) m[c.id] = c;
+    return m;
+  }, [precon, addCandidates]);
+
+  const previewCard = previewCardId ? cardById[previewCardId] ?? null : null;
+  const previewPickId = previewCardId
+    ? myPickMap[`${previewCardId}:${activeTab}`]
+    : undefined;
+
+  const handleCardTap = useCallback((cardId: string) => {
+    setPreviewCardId(cardId);
+  }, []);
+
+  const handleClosePreview = useCallback(() => setPreviewCardId(null), []);
+
+  const handleVoteFromPreview = useCallback(() => {
+    if (!previewCardId || !preconId) return;
+    if (previewPickId) {
+      removePick.mutate(previewPickId);
+    } else {
+      makePick.mutate({ preconId, cardId: previewCardId, pickType: activeTab });
+    }
+    setPreviewCardId(null);
+  }, [previewCardId, previewPickId, preconId, activeTab, makePick, removePick]);
+
   const handleTabChange = useCallback((value: string | null) => {
     if (value !== 'CUT' && value !== 'ADD') return;
     setActiveTab((current) => {
@@ -147,6 +179,8 @@ export function PreconDetailPage() {
             onPick={handlePick}
             onUnpick={handleUnpick}
             canPick={isAuthenticated}
+            isMobile={isMobile}
+            onCardTap={handleCardTap}
           />
         ))}
         {totalPages > 1 && (
@@ -156,6 +190,8 @@ export function PreconDetailPage() {
               value={page}
               onChange={setPage}
               color={pickType === 'CUT' ? 'red' : 'secondary'}
+              size="md"
+              siblings={isMobile ? 0 : 1}
             />
           </Group>
         )}
@@ -179,26 +215,16 @@ export function PreconDetailPage() {
         onMouseLeave={() => setPreviewImage(null)}
       >
         {commanderArt && (
-          // Right-half overlay: the image fills its 50%-wide box via `cover`,
+          // Right-anchored overlay: the image fills its width box via `cover`,
           // and a left-going gradient on top fades it from the right edge
-          // (transparent) to the midpoint of the Paper (solid dark.6).
+          // (transparent) to the panel's bg (dark.6). Width drops from 50%
+          // to 30% under the sm breakpoint so the title isn't crowded on
+          // narrow phones — see precon-detail-page.module.css.
           <div
             aria-hidden="true"
+            className={classes.commanderArt}
             style={{
-              position: 'absolute',
-              top: 0,
-              right: 0,
-              bottom: 0,
-              width: '50%',
               backgroundImage: `linear-gradient(to left, transparent, var(--mantine-color-dark-6)), url(${commanderArt})`,
-              // Heads on humanoid commanders typically sit ~20–30% from the
-               // top of the art_crop frame, so anchor the visible band there.
-               backgroundPosition: 'right 25%',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              pointerEvents: 'none',
-              borderTopRightRadius: 'inherit',
-              borderBottomRightRadius: 'inherit',
             }}
           />
         )}
@@ -259,6 +285,15 @@ export function PreconDetailPage() {
           </Tabs.Panel>
         </Tabs>
       )}
+
+      <CardPreviewDrawer
+        card={previewCard}
+        pickType={activeTab}
+        hasVoted={previewPickId !== undefined}
+        canVote={isAuthenticated}
+        onVote={handleVoteFromPreview}
+        onClose={handleClosePreview}
+      />
     </Stack>
   );
 }

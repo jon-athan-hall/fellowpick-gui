@@ -8,3 +8,19 @@
 .row:hover {
   background-color: rgba(255, 255, 255, 0.07);
 }
+
+/* Mana-cost column. Hidden on small screens — the card name is the dominant
+ * piece of information on mobile and was getting squeezed; the user can see
+ * the mana cost in the preview drawer's card art. */
+.manaCostCol {
+  flex-shrink: 0;
+  width: 56px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 48em) {
+  .manaCostCol {
+    display: none;
+  }
+}

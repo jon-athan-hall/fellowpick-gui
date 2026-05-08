@@ -1,3 +1,64 @@
+/* AppShell.Navbar: floating panel with rounded corners on desktop, full-screen
+ * sheet on mobile. The mobile rules at left:0/width:100% are what makes
+ * Mantine's collapsed translateX(-100%) actually shift the navbar fully off
+ * screen — with the desktop left:16 inset, 16px of its right edge would
+ * peek through. */
+.navbar {
+  top: calc(var(--app-shell-header-offset) + 16px);
+  left: 16px;
+  bottom: 16px;
+  width: 275px;
+  height: auto;
+  border-radius: var(--mantine-radius-md);
+}
+
+@media (max-width: 48em) {
+  .navbar {
+    top: var(--app-shell-header-offset);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* The Fellowpick wordmark. 2.5rem on desktop reads as a brand title; on
+ * mobile it crowds the burger and avatar, so we drop it down — but not so
+ * far that it loses presence. */
+.appTitle {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 48em) {
+  .appTitle {
+    font-size: 1.875rem;
+  }
+}
+
+/* Tagline ("Community-driven · in-universe only · precon upgrades"). On
+ * desktop sits next to the wordmark in the header. On mobile, flex-basis
+ * 100% forces it to a row of its own beneath the burger/title/avatar row. */
+.tagline {
+  flex: 0 1 auto;
+}
+
+@media (max-width: 48em) {
+  .tagline {
+    flex-basis: 100%;
+    order: 99;
+    text-align: left;
+  }
+}
+
+/* The header content row. On mobile we need a tight row-gap so the wrapped
+ * tagline sits close under the title without a slab of empty space. We
+ * leave column-gap to Mantine's Group default. */
+@media (max-width: 48em) {
+  .headerRow {
+    row-gap: 0.125rem;
+  }
+}
+
 /* Sidebar navigation styles. Built on plain <Link> + flex layout rather than
    Mantine NavLink, because NavLink's internal section/body sizing uses
    em-relative spacing that drifts when the row's font-size differs. Keeping
