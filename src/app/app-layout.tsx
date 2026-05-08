@@ -7,6 +7,7 @@ import {
   Menu,
   ScrollArea,
   Stack,
+  Text,
   Title,
   UnstyledButton
 } from '@mantine/core';
@@ -82,7 +83,7 @@ export function AppLayout() {
   return (
     <AppShell
       // navbar.width = 275 visible + 16 left inset = 291; Main offsets by full width.
-      header={{ height: 75 }}
+      header={{ height: 90 }}
       navbar={{ width: 291, breakpoint: 'sm', collapsed: { mobile: !navOpened } }}
       padding="md"
       withBorder={false}
@@ -92,7 +93,17 @@ export function AppLayout() {
           <Group gap="sm">
             <Burger opened={navOpened} onClick={toggleNav} hiddenFrom="sm" size="sm" />
             <UnstyledButton component={Link} to="/" aria-label="Fellowpick home">
-              <Title order={2} size="h1" component="div">Fellowpick</Title>
+              <Group gap="md" align="center" wrap="nowrap">
+                <Title order={2} size="2.5rem" component="div">Fellowpick</Title>
+                <Text
+                  size="sm"
+                  c="dimmed"
+                  tt="uppercase"
+                  style={{ letterSpacing: '0.06em' }}
+                >
+                  Community-driven · in-universe only · precon upgrades
+                </Text>
+              </Group>
             </UnstyledButton>
           </Group>
           {isAuthenticated ? (
@@ -171,7 +182,7 @@ export function AppLayout() {
                       )}
                       onClick={closeNav}
                     >
-                      <SetIcon code={u.sets[0]} />
+                      <SetIcon code={u.sets[1]} />
                       <span className={classes.label}>{u.name}</span>
                     </Link>
                     {u.precons.map((p) => {
