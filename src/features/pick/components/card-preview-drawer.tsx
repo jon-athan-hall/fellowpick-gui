@@ -88,22 +88,28 @@ export function CardPreviewDrawer({
           />
         )}
 
-        {hasVoted && (
-          <Text size="sm" c="dimmed" ta="center">
-            ALREADY {action} BY YOU
-          </Text>
-        )}
-
-        {canVote && (
-          <Button
-            fullWidth
-            size="lg"
-            color={accentColor}
-            onClick={onVote}
-            mt="auto"
-          >
-            {hasVoted ? `UNDO ${pickType}` : pickType}
-          </Button>
+        {/* Note + button grouped together, pinned to the bottom of the inset
+         * via mt="auto" on the wrapper. The note sits directly above the
+         * button so the user reads "ALREADY CUT BY YOU" right next to
+         * "UNDO CUT", in their natural reading order. */}
+        {(canVote || hasVoted) && (
+          <Stack gap="xs" mt="auto">
+            {hasVoted && (
+              <Text size="sm" c="dimmed" ta="center">
+                ALREADY {action} BY YOU
+              </Text>
+            )}
+            {canVote && (
+              <Button
+                fullWidth
+                size="lg"
+                color={accentColor}
+                onClick={onVote}
+              >
+                {hasVoted ? `UNDO ${pickType}` : pickType}
+              </Button>
+            )}
+          </Stack>
         )}
       </Stack>
     </Drawer>

@@ -1,4 +1,4 @@
-import { Badge, Group, Text } from '@mantine/core';
+import { Badge, Group, Switch, Text } from '@mantine/core';
 import { memo } from 'react';
 import { useCardPreview } from '../hooks/use-card-preview';
 import type { Card, PickType } from '../types';
@@ -68,9 +68,28 @@ function CardRowImpl({
       onClick={handleClick}
       {...hoverHandlers}
     >
-      <Badge variant="outline" size="lg" w={50} color={accentColor} style={{ flexShrink: 0 }}>
-        {count}
-      </Badge>
+      <Group gap={8} wrap="nowrap" style={{ flexShrink: 0 }}>
+        <Badge variant="outline" size="lg" w={50} color={accentColor}>
+          {count}
+        </Badge>
+        {!isMobile && canPick && (
+          // pointer-events: none so the Switch's internal label+input doesn't
+          // dispatch a synthetic click on top of the user's row click, which
+          // would bubble twice to the parent Group and double the optimistic
+          // +1. The row click is the actual handler.
+          <div style={{ pointerEvents: 'none' }}>
+            <Switch
+              checked={userPicked}
+              readOnly
+              size="sm"
+              color={accentColor}
+              tabIndex={-1}
+              withThumbIndicator={false}
+              styles={{ track: { cursor: 'pointer' } }}
+            />
+          </div>
+        )}
+      </Group>
       <div className={classes.manaCostCol}>
         {card.manaCost && <ManaCost cost={card.manaCost} size={16} />}
       </div>

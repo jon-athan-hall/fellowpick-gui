@@ -36,16 +36,22 @@
 }
 
 /* Tagline ("Community-driven · in-universe only · precon upgrades"). On
- * desktop sits next to the wordmark in the header. On mobile, flex-basis
- * 100% forces it to a row of its own beneath the burger/title/avatar row. */
+ * desktop sits next to the wordmark in the header. `margin-right: auto`
+ * absorbs all free space between the tagline and the avatar (and overrides
+ * the parent Group's `justify="space-between"`, which would otherwise center
+ * the tagline as the middle of three siblings). On mobile, flex-basis 100%
+ * forces it to a row of its own beneath the burger/title/avatar row, and
+ * the auto margin is reset since space-between already handles row 1. */
 .tagline {
   flex: 0 1 auto;
+  margin-right: auto;
 }
 
 @media (max-width: 48em) {
   .tagline {
     flex-basis: 100%;
     order: 99;
+    margin-right: 0;
     text-align: left;
   }
 }
