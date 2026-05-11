@@ -1,36 +1,17 @@
-import { Button, Paper, Stack, Text, Title } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
-import { useNavigate } from 'react-router-dom';
-import { useLogoutMutation, useAuth } from '../features/auth';
+import { Paper, Stack, Text, Title } from '@mantine/core';
+import { useAuth } from '../features/auth';
 
 // Displays a welcome greeting and sign-out button for authenticated users.
 export function HomePage() {
   const { user } = useAuth();
-  const navigate = useNavigate();
-  const logoutMutation = useLogoutMutation();
-
-  function handleLogout() {
-    logoutMutation.mutate(undefined, {
-      onSettled: () => {
-        notifications.show({ message: 'Signed out' });
-        navigate('/login');
-      }
-    });
-  }
 
   return (
     <Paper>
       <Stack>
-        <Title order={1}>Welcome, {user?.name}</Title>
-        <Text>You are signed in as {user?.email}.</Text>
-        <Button
-          onClick={handleLogout}
-          loading={logoutMutation.isPending}
-          variant="default"
-          w="fit-content"
-        >
-          Sign out
-        </Button>
+        <Title order={1}>Hello, {user?.name}</Title>
+        <Text fz="xl">Choose a deck in the sidebar.</Text>
+        <Text fz="xl">Pick some cards to <strong>CUT</strong>.</Text>
+        <Text fz="xl">Then pick some cards to <strong>ADD</strong>.</Text>
       </Stack>
     </Paper>
   );
