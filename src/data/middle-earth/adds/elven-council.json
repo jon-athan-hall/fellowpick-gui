@@ -1,0 +1,1809 @@
+[
+  {
+    "id": "LTC0018",
+    "name": "Archivist of Gondor",
+    "manaCost": "{2}{U}",
+    "type": "Creature — Human Advisor",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/c/ec691418-1075-477f-b0df-f0d064588baf.jpg"
+  },
+  {
+    "id": "LTC0019",
+    "name": "Corsairs of Umbar",
+    "manaCost": "{3}{U}",
+    "type": "Creature — Human Pirate",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/5/159727a9-0bc4-497d-8fb2-4a66923726d8.jpg"
+  },
+  {
+    "id": "LTC0021",
+    "name": "Fealty to the Realm",
+    "manaCost": "{4}{U}",
+    "type": "Enchantment — Aura",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/1/017a5dbf-5773-448d-abf3-9a3d42bde9e5.jpg"
+  },
+  {
+    "id": "LTC0022",
+    "name": "Monstrosity of the Lake",
+    "manaCost": "{4}{U}",
+    "type": "Legendary Creature — Kraken",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/7/d72aa8fc-6808-4865-879e-417a300c40de.jpg"
+  },
+  {
+    "id": "LTC0024",
+    "name": "Subjugate the Hobbits",
+    "manaCost": "{5}{U}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/2/6206d9f1-6a57-46a2-942f-6f20e33e5d6a.jpg"
+  },
+  {
+    "id": "LTC0036",
+    "name": "Assemble the Entmoot",
+    "manaCost": "{3}{G}",
+    "type": "Enchantment",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/0/409c226b-ef01-4ccd-b23e-d94bdc1e4aa5.jpg"
+  },
+  {
+    "id": "LTC0037",
+    "name": "Feasting Hobbit",
+    "manaCost": "{1}{G}",
+    "type": "Creature — Halfling Citizen",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/7/17662301-7284-40d4-af51-45a496c0eac0.jpg"
+  },
+  {
+    "id": "LTC0042",
+    "name": "Motivated Pony",
+    "manaCost": "{4}{G}",
+    "type": "Creature — Horse",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/b/9be4f8b6-90ef-4c77-ae70-bffae229d243.jpg"
+  },
+  {
+    "id": "LTC0043",
+    "name": "Prize Pig",
+    "manaCost": "{1}{G}",
+    "type": "Creature — Boar",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/0/a0b202d8-3c25-467e-86ed-6bea19bb869f.jpg"
+  },
+  {
+    "id": "LTC0075",
+    "name": "Crown of Gondor",
+    "manaCost": "{3}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/0/00127acd-a284-4bc8-bdfa-895914e3cd49.jpg"
+  },
+  {
+    "id": "LTC0076",
+    "name": "Hithlain Rope",
+    "manaCost": "{2}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/b/bbe6e907-eafb-402c-8b8f-4c01fb168a0b.jpg"
+  },
+  {
+    "id": "LTC0184",
+    "name": "Arcane Denial",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/e/7e0cc18d-c6b8-4db1-ac07-0f17ae6d6c95.jpg"
+  },
+  {
+    "id": "LTC0185",
+    "name": "Boon of the Wish-Giver",
+    "manaCost": "{4}{U}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/f/bf2fa3fd-f6d9-4c23-9025-9b8b72da32dc.jpg"
+  },
+  {
+    "id": "LTC0187",
+    "name": "Consider",
+    "manaCost": "{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/6/1668af50-abd3-4b12-974a-b19fd010dc3e.jpg"
+  },
+  {
+    "id": "LTC0188",
+    "name": "Deep Analysis",
+    "manaCost": "{3}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/0/801d2482-f35a-4155-9925-335d5f4adfd9.jpg"
+  },
+  {
+    "id": "LTC0190",
+    "name": "Fact or Fiction",
+    "manaCost": "{3}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/4/74d189fc-48fe-40f5-ae56-34b4dfc068d0.jpg"
+  },
+  {
+    "id": "LTC0235",
+    "name": "Birds of Paradise",
+    "manaCost": "{G}",
+    "type": "Creature — Bird",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/5/45835349-99c3-4071-95d1-7191110bfd9f.jpg"
+  },
+  {
+    "id": "LTC0242",
+    "name": "Essence Warden",
+    "manaCost": "{G}",
+    "type": "Creature — Elf Shaman",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/f/ff09be4d-bbcc-4c25-9df2-b3df07fca955.jpg"
+  },
+  {
+    "id": "LTC0244",
+    "name": "Farseek",
+    "manaCost": "{1}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/2/d2f89cec-358c-41cd-af02-92d873902f06.jpg"
+  },
+  {
+    "id": "LTC0246",
+    "name": "Gilded Goose",
+    "manaCost": "{G}",
+    "type": "Creature — Bird",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/d/0d6977e9-dd8d-4796-9fee-443a25757e09.jpg"
+  },
+  {
+    "id": "LTC0247",
+    "name": "Great Oak Guardian",
+    "manaCost": "{5}{G}",
+    "type": "Creature — Treefolk",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b5c7f189-ffab-4e45-a66c-f9410f0e8e43.jpg"
+  },
+  {
+    "id": "LTC0248",
+    "name": "Harmonize",
+    "manaCost": "{2}{G}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/e/de5e6626-fb5a-45a4-bb8c-580980e0337e.jpg"
+  },
+  {
+    "id": "LTC0253",
+    "name": "Orchard Strider",
+    "manaCost": "{4}{G}{G}",
+    "type": "Creature — Treefolk",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/3/b3e12eb9-ab0f-4526-917b-f85aba13c1b9.jpg"
+  },
+  {
+    "id": "LTC0256",
+    "name": "Prosperous Innkeeper",
+    "manaCost": "{1}{G}",
+    "type": "Creature — Halfling Citizen",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/b/8ba35b71-070e-482f-8a48-615a39631719.jpg"
+  },
+  {
+    "id": "LTC0262",
+    "name": "Tireless Provisioner",
+    "manaCost": "{2}{G}",
+    "type": "Creature — Elf Scout",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/9/995938ee-3ba7-42c9-9e0f-76b4a105f55e.jpg"
+  },
+  {
+    "id": "LTC0264",
+    "name": "Woodfall Primus",
+    "manaCost": "{5}{G}{G}{G}",
+    "type": "Creature — Treefolk Shaman",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c9d7acdf-1bce-4646-b3e2-7787b6d7a5f3.jpg"
+  },
+  {
+    "id": "LTC0274",
+    "name": "Basalt Monolith",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/7/97d8dbc9-d9f3-4e8e-95d2-27917c152a29.jpg"
+  },
+  {
+    "id": "LTC0275",
+    "name": "Chromatic Lantern",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/f/cf2fac9f-6749-4ca2-93c9-0dc068a220ec.jpg"
+  },
+  {
+    "id": "LTC0277",
+    "name": "Door of Destinies",
+    "manaCost": "{4}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/f/ef038cae-d00b-42f4-81ae-09929b05d881.jpg"
+  },
+  {
+    "id": "LTC0278",
+    "name": "Everflowing Chalice",
+    "manaCost": "{0}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/5/156464e7-3bb1-465f-939c-a9d290dc3ebc.jpg"
+  },
+  {
+    "id": "LTC0279",
+    "name": "Heirloom Blade",
+    "manaCost": "{3}",
+    "type": "Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6463bdd-f9b3-46a6-9cb7-e1ba7e800b3c.jpg"
+  },
+  {
+    "id": "LTC0280",
+    "name": "Herald's Horn",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/c/4c0d09ac-ef6e-4b66-9e47-59cc97dd7d6b.jpg"
+  },
+  {
+    "id": "LTC0282",
+    "name": "Mind Stone",
+    "manaCost": "{2}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/3/23dd6cb6-31ee-467e-9f67-39046197bcb6.jpg"
+  },
+  {
+    "id": "LTC0283",
+    "name": "Pristine Talisman",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/2/92a0093b-ef5d-4697-b85d-d890fcddc66d.jpg"
+  },
+  {
+    "id": "LTC0287",
+    "name": "Thought Vessel",
+    "manaCost": "{2}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/2/62d4f5fe-d83d-4508-819b-57784ea44fa4.jpg"
+  },
+  {
+    "id": "LTC0288",
+    "name": "Trading Post",
+    "manaCost": "{4}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/6/e6728c66-69b6-4cb0-922f-4c264f009218.jpg"
+  },
+  {
+    "id": "LTC0289",
+    "name": "Vanquisher's Banner",
+    "manaCost": "{5}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/7/e715f4e0-6ef4-40da-bc6c-84709e910cad.jpg"
+  },
+  {
+    "id": "LTC0290",
+    "name": "Wayfarer's Bauble",
+    "manaCost": "{1}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/2/7219d07d-56b3-4522-9552-7f290f2c2176.jpg"
+  },
+  {
+    "id": "LTC0291",
+    "name": "Well of Lost Dreams",
+    "manaCost": "{4}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fe839cbc-7eae-4f86-be35-96542223347c.jpg"
+  },
+  {
+    "id": "LTC0293",
+    "name": "Worn Powerstone",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/2/329342a8-5708-4332-868a-7410d7461647.jpg"
+  },
+  {
+    "id": "LTC0294",
+    "name": "Access Tunnel",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/1/8101166d-03e1-4bc9-b50a-05743c02d653.jpg"
+  },
+  {
+    "id": "LTC0306",
+    "name": "Evolving Wilds",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/2/e24ec4c1-5a28-450d-8e37-62a154749ee6.jpg"
+  },
+  {
+    "id": "LTC0314",
+    "name": "Ghost Quarter",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/5/25e987d9-6a69-46af-bd9f-8e505fa721bb.jpg"
+  },
+  {
+    "id": "LTC0322",
+    "name": "Path of Ancestry",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/7/d79e2780-94ae-41bb-af48-c63abc726fb5.jpg"
+  },
+  {
+    "id": "LTC0326",
+    "name": "Rogue's Passage",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/6/86438671-fdb8-4a82-b1e8-ef51fa4078df.jpg"
+  },
+  {
+    "id": "LTC0330",
+    "name": "Secluded Courtyard",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a49a20ea-dcd7-435b-9bb5-abc9dee58fb0.jpg"
+  },
+  {
+    "id": "LTC0337",
+    "name": "Terramorphic Expanse",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/4/84a12498-9c44-4178-a8fc-54d20014ba7a.jpg"
+  },
+  {
+    "id": "LTC0339",
+    "name": "Throne of the High City",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/f/bf43967f-756c-4e01-9fdc-7d4abdf4e9dd.jpg"
+  },
+  {
+    "id": "LTC0348",
+    "name": "The Great Henge",
+    "manaCost": "{7}{G}{G}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/6/064efadf-fdba-41fb-bf2f-ef42b274e934.jpg"
+  },
+  {
+    "id": "LTC0349",
+    "name": "Cloudstone Curio",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/1/a1f3fc27-b3ea-476c-be23-f1c30ef27f96.jpg"
+  },
+  {
+    "id": "LTC0350",
+    "name": "Ensnaring Bridge",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/b/1b251eca-06c2-4609-aaed-a88711ef6a45.jpg"
+  },
+  {
+    "id": "LTC0351",
+    "name": "The Ozolith",
+    "manaCost": "{1}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/3/83a46e68-7fb5-4c17-b5aa-ed039cea59d6.jpg"
+  },
+  {
+    "id": "LTC0352",
+    "name": "Rings of Brighthearth",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/3/730d64cf-e71b-46dd-8e26-d2dec2608fc0.jpg"
+  },
+  {
+    "id": "LTC0353",
+    "name": "Shadowspear",
+    "manaCost": "{1}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/e/0e818a8b-d0b1-4524-91b7-89ee03d12e41.jpg"
+  },
+  {
+    "id": "LTC0354",
+    "name": "Sword of Hearth and Home",
+    "manaCost": "{3}",
+    "type": "Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/e/9e30230a-4b75-4fc6-9c98-b12791beea2d.jpg"
+  },
+  {
+    "id": "LTC0355",
+    "name": "Sword of the Animist",
+    "manaCost": "{2}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/e/7ee0bfdb-1b81-4ce2-a63e-69b75eba6c57.jpg"
+  },
+  {
+    "id": "LTC0356",
+    "name": "Thorn of Amethyst",
+    "manaCost": "{2}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/d/6d6c1b72-6b8d-4f2d-a9d5-3bcf9f63a0c6.jpg"
+  },
+  {
+    "id": "LTC0357",
+    "name": "Ancient Tomb",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/f/dfd176e9-55e7-454c-bd35-24a6e3fb0d81.jpg"
+  },
+  {
+    "id": "LTC0359",
+    "name": "Boseiju, Who Shelters All",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/a/bafe3253-feed-4cb9-a13c-9a9105462a8b.jpg"
+  },
+  {
+    "id": "LTC0362",
+    "name": "Cavern of Souls",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/9/69d55219-32b0-4281-a020-52107db6d16a.jpg"
+  },
+  {
+    "id": "LTC0363",
+    "name": "Deserted Temple",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/b/3b53d6c2-b078-4204-aae8-0891284ee877.jpg"
+  },
+  {
+    "id": "LTC0364",
+    "name": "Gemstone Caverns",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/d/ad361175-1127-40e5-8990-24e651fc2a4d.jpg"
+  },
+  {
+    "id": "LTC0365",
+    "name": "Homeward Path",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/9/b926c3a5-c672-45ac-96b9-82183bfd9344.jpg"
+  },
+  {
+    "id": "LTC0369",
+    "name": "Minamo, School at Water's Edge",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/9/798c0faf-0de2-4397-8f03-2120d2a35351.jpg"
+  },
+  {
+    "id": "LTC0370",
+    "name": "Mouth of Ronom",
+    "manaCost": null,
+    "type": "Snow Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/8/98ae549f-8a92-4e70-b2d1-9dfe52e6b9bd.jpg"
+  },
+  {
+    "id": "LTC0371",
+    "name": "Oboro, Palace in the Clouds",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/2/22b7f560-ef32-496e-ac22-e1b725d08a08.jpg"
+  },
+  {
+    "id": "LTC0372",
+    "name": "Pillar of the Paruns",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/5/8/589b0dd5-7ba0-4448-9832-7754b3fccc03.jpg"
+  },
+  {
+    "id": "LTC0373",
+    "name": "Reflecting Pool",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/0/90600867-9b2b-4174-8fb5-3f58469e8733.jpg"
+  },
+  {
+    "id": "LTC0375",
+    "name": "Urborg, Tomb of Yawgmoth",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/1/4116f1c7-9191-4d92-81ca-54d9ae3c8166.jpg"
+  },
+  {
+    "id": "LTC0376",
+    "name": "Wasteland",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/2/829bbc9b-9185-4d9b-8e4e-9f04ece48fff.jpg"
+  },
+  {
+    "id": "LTC0377",
+    "name": "Yavimaya, Cradle of Growth",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/4/f442758d-4fee-43fa-a2cb-d09c326da149.jpg"
+  },
+  {
+    "id": "LTC0491",
+    "name": "Andúril, Narsil Reforged",
+    "manaCost": "{2}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/3/b33c91d2-020e-45a1-aef6-187484a7cb51.jpg"
+  },
+  {
+    "id": "LTC0493",
+    "name": "Legolas's Quick Reflexes",
+    "manaCost": "{G}",
+    "type": "Instant",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/5/851c0167-04ba-4d15-b0fa-c211bd8826f1.jpg"
+  },
+  {
+    "id": "LTC0497",
+    "name": "Arboreal Alliance",
+    "manaCost": "{X}{G}{G}",
+    "type": "Enchantment",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/0/107f9fbf-4111-41a8-8e5d-9889fa2e3047.jpg"
+  },
+  {
+    "id": "LTC0499",
+    "name": "Rally the Galadhrim",
+    "manaCost": "{2}{G}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G",
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/0/009a2276-0014-45c2-90b7-064594009780.jpg"
+  },
+  {
+    "id": "LTC0501",
+    "name": "Mists of Lórien",
+    "manaCost": "{2}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/b/eb23c5fc-3172-44c3-9d3a-ec619c6c4824.jpg"
+  },
+  {
+    "id": "LTC0502",
+    "name": "Galadhrim Brigade",
+    "manaCost": "{2}{G}",
+    "type": "Creature — Elf Soldier",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d1ac1534-ce78-467d-abf4-67a2e11cfac5.jpg"
+  },
+  {
+    "id": "LTC0504",
+    "name": "Sorcerous Squall",
+    "manaCost": "{6}{U}{U}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/0/c06274ff-892e-418b-8ba5-4d3b3231e327.jpg"
+  },
+  {
+    "id": "LTC0510",
+    "name": "Nazgûl Battle-Mace",
+    "manaCost": "{5}",
+    "type": "Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/a/8a08f237-fc13-475f-860f-011dfa4a1a67.jpg"
+  },
+  {
+    "id": "LTC0523",
+    "name": "Pact of Negation",
+    "manaCost": "{0}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/9/09535dd7-5d14-426e-8bbb-efdfe9b7543d.jpg"
+  },
+  {
+    "id": "LTC0524",
+    "name": "River Kelpie",
+    "manaCost": "{3}{U}{U}",
+    "type": "Creature — Beast",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/5/35bbc76a-30e2-471d-8a70-d953d7a9c010.jpg"
+  },
+  {
+    "id": "LTC0527",
+    "name": "Elvish Harbinger",
+    "manaCost": "{2}{G}",
+    "type": "Creature — Elf Druid",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/d/cdbb285a-8bd1-4864-9a4a-8c779435334e.jpg"
+  },
+  {
+    "id": "LTC0528",
+    "name": "Explore",
+    "manaCost": "{1}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/c/3cf7fc86-08c6-43f1-9cdb-f609cea0b1a7.jpg"
+  },
+  {
+    "id": "LTC0529",
+    "name": "Seasons Past",
+    "manaCost": "{4}{G}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/5/95862130-8eaf-47ab-bbf2-62c3d19f8f92.jpg"
+  },
+  {
+    "id": "LTC0530",
+    "name": "Second Harvest",
+    "manaCost": "{2}{G}{G}",
+    "type": "Instant",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/7/b7995204-c277-4137-ba5a-55875aee5fe1.jpg"
+  },
+  {
+    "id": "LTC0531",
+    "name": "Sylvan Tutor",
+    "manaCost": "{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/f/ef6ec496-9103-43d0-b3b4-43ee76c5e4d1.jpg"
+  },
+  {
+    "id": "LTC0532",
+    "name": "Tempt with Discovery",
+    "manaCost": "{3}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/8/787ac088-2b9a-4449-80b4-7de4a6812250.jpg"
+  },
+  {
+    "id": "LTC0533",
+    "name": "Timber Protector",
+    "manaCost": "{4}{G}",
+    "type": "Creature — Treefolk Warrior",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/6/1685e8ee-1c6a-4d9c-8ca7-e08590089818.jpg"
+  },
+  {
+    "id": "LTC0534",
+    "name": "Myriad Landscape",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/9/79bfe024-1be9-4902-898a-93502e48b86d.jpg"
+  },
+  {
+    "id": "LTR0000",
+    "name": "The One Ring",
+    "manaCost": "{4}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/3/93de9042-cc62-4ade-8d8d-68fdbc84bfae.jpg"
+  },
+  {
+    "id": "LTR0039",
+    "name": "Arwen's Gift",
+    "manaCost": "{3}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/0/30e1ec49-ad4f-4623-aeeb-dba07d6e6251.jpg"
+  },
+  {
+    "id": "LTR0040",
+    "name": "The Bath Song",
+    "manaCost": "{3}{U}",
+    "type": "Enchantment — Saga",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/b/fb11c04f-6f17-4da4-bbf6-0bd09de6e544.jpg"
+  },
+  {
+    "id": "LTR0041",
+    "name": "Bewitching Leechcraft",
+    "manaCost": "{1}{U}",
+    "type": "Enchantment — Aura",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/6/b612452e-b8a8-4a5a-82a8-01fd463cfc77.jpg"
+  },
+  {
+    "id": "LTR0042",
+    "name": "Bill Ferny, Bree Swindler",
+    "manaCost": "{1}{U}",
+    "type": "Legendary Creature — Human Rogue",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/0/20ac63cb-fa4d-4340-8062-1029c8bd5ec8.jpg"
+  },
+  {
+    "id": "LTR0043",
+    "name": "Birthday Escape",
+    "manaCost": "{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/2/42db2313-b13d-4292-bef2-bf86f989d32f.jpg"
+  },
+  {
+    "id": "LTR0044",
+    "name": "Borne Upon a Wind",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a9379675-1a32-4e2b-8aaf-5f908c595f31.jpg"
+  },
+  {
+    "id": "LTR0045",
+    "name": "Captain of Umbar",
+    "manaCost": "{2}{U}",
+    "type": "Creature — Human Pirate",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c222577d-a3c7-41d9-b11b-62065bdb98ef.jpg"
+  },
+  {
+    "id": "LTR0046",
+    "name": "Council's Deliberation",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/5/651503a2-5d1e-408a-9cdc-0cee05ab3ef0.jpg"
+  },
+  {
+    "id": "LTR0047",
+    "name": "Deceive the Messenger",
+    "manaCost": "{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b2984bc6-7c12-46e4-8dd3-b23e29a7a7ec.jpg"
+  },
+  {
+    "id": "LTR0048",
+    "name": "Dreadful as the Storm",
+    "manaCost": "{2}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/6/b6e0b4ff-85b5-485f-a78f-1a58bb343238.jpg"
+  },
+  {
+    "id": "LTR0049",
+    "name": "Elrond, Lord of Rivendell",
+    "manaCost": "{2}{U}",
+    "type": "Legendary Creature — Elf Noble",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a62a5e55-fa1b-4c70-9293-740dd513d52e.jpg"
+  },
+  {
+    "id": "LTR0050",
+    "name": "Gandalf, Friend of the Shire",
+    "manaCost": "{3}{U}",
+    "type": "Legendary Creature — Avatar Wizard",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/c/cc9cfcc7-be64-4871-8d52-851e43fe3305.jpg"
+  },
+  {
+    "id": "LTR0051",
+    "name": "Glorious Gale",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/e/6e1057de-5710-415c-9a51-1d8bd86021a3.jpg"
+  },
+  {
+    "id": "LTR0052",
+    "name": "Goldberry, River-Daughter",
+    "manaCost": "{1}{U}",
+    "type": "Legendary Creature — Nymph",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/f/bf4f0a7c-620e-4ed8-8da3-fa6564e8a0cd.jpg"
+  },
+  {
+    "id": "LTR0053",
+    "name": "Grey Havens Navigator",
+    "manaCost": "{2}{U}",
+    "type": "Creature — Elf Pilot",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/d/4dd89994-bdff-47ca-a65d-10afcc7e773e.jpg"
+  },
+  {
+    "id": "LTR0054",
+    "name": "Hithlain Knots",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/b/bbcc27e7-cbe4-45c2-b157-7251a10e7ba4.jpg"
+  },
+  {
+    "id": "LTR0055",
+    "name": "Horses of the Bruinen",
+    "manaCost": "{3}{U}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f7725dc2-2654-4ffb-b6b3-510ae64ec6af.jpg"
+  },
+  {
+    "id": "LTR0056",
+    "name": "Ioreth of the Healing House",
+    "manaCost": "{2}{U}",
+    "type": "Legendary Creature — Human Cleric",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/3/03ab74cd-978a-49eb-9d38-bc8b472b3cef.jpg"
+  },
+  {
+    "id": "LTR0057",
+    "name": "Isolation at Orthanc",
+    "manaCost": "{3}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/5/4/54b9c323-ac9b-4864-bd57-81b557f44114.jpg"
+  },
+  {
+    "id": "LTR0058",
+    "name": "Ithilien Kingfisher",
+    "manaCost": "{2}{U}",
+    "type": "Creature — Bird",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/8/68c29762-6859-4564-9e1d-a87fa63b951a.jpg"
+  },
+  {
+    "id": "LTR0059",
+    "name": "Knights of Dol Amroth",
+    "manaCost": "{3}{U}",
+    "type": "Creature — Human Knight",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/6/661338ff-a192-4007-a144-63d00f2e9ecb.jpg"
+  },
+  {
+    "id": "LTR0061",
+    "name": "Lost Isle Calling",
+    "manaCost": "{1}{U}",
+    "type": "Enchantment",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/b/7b744230-8127-4d4f-9d40-75e7c2aab77c.jpg"
+  },
+  {
+    "id": "LTR0062",
+    "name": "Meneldor, Swift Savior",
+    "manaCost": "{3}{U}",
+    "type": "Legendary Creature — Bird Soldier",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/2/62d2ee20-abbc-4a9d-8d30-4223242123e8.jpg"
+  },
+  {
+    "id": "LTR0063",
+    "name": "Nimrodel Watcher",
+    "manaCost": "{1}{U}",
+    "type": "Creature — Elf Scout",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c253ee40-41c9-4cb5-a1a3-94b0aaed09d4.jpg"
+  },
+  {
+    "id": "LTR0064",
+    "name": "Pelargir Survivor",
+    "manaCost": "{1}{U}",
+    "type": "Creature — Human Peasant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/a/aa59141a-4645-4316-b714-bbf2c139786e.jpg"
+  },
+  {
+    "id": "LTR0065",
+    "name": "Press the Enemy",
+    "manaCost": "{2}{U}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/f/dfa5380a-480c-4c61-ac52-5debc49c5df9.jpg"
+  },
+  {
+    "id": "LTR0066",
+    "name": "Rangers of Ithilien",
+    "manaCost": "{2}{U}{U}",
+    "type": "Creature — Human Ranger",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/1/819b4208-7a29-41fa-947f-614bf669b300.jpg"
+  },
+  {
+    "id": "LTR0067",
+    "name": "Saruman the White",
+    "manaCost": "{4}{U}",
+    "type": "Legendary Creature — Avatar Wizard",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/b/1bfccbab-29fa-4e92-8919-6cd4815fb655.jpg"
+  },
+  {
+    "id": "LTR0068",
+    "name": "Saruman's Trickery",
+    "manaCost": "{1}{U}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/e/8eb6c23b-e52e-4533-9625-884eb0a4d866.jpg"
+  },
+  {
+    "id": "LTR0069",
+    "name": "Scroll of Isildur",
+    "manaCost": "{2}{U}",
+    "type": "Enchantment — Saga",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/9/195821f4-ba3d-4412-930f-f3656b319dfd.jpg"
+  },
+  {
+    "id": "LTR0070",
+    "name": "Soothing of Sméagol",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/e/be6400e8-7f99-4005-9a92-ffbc359d3871.jpg"
+  },
+  {
+    "id": "LTR0071",
+    "name": "Stern Scolding",
+    "manaCost": "{U}",
+    "type": "Instant",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/c/3ca1e1de-b916-445f-b3b2-0f4d0cc7ceeb.jpg"
+  },
+  {
+    "id": "LTR0072",
+    "name": "Storm of Saruman",
+    "manaCost": "{4}{U}{U}",
+    "type": "Enchantment",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/5/2/52884e67-c742-4799-9afd-55bc70b2cf40.jpg"
+  },
+  {
+    "id": "LTR0073",
+    "name": "Surrounded by Orcs",
+    "manaCost": "{3}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1c50d4c8-2311-4394-b73f-389eb81e898b.jpg"
+  },
+  {
+    "id": "LTR0074",
+    "name": "Treason of Isengard",
+    "manaCost": "{2}{U}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/1/71f97505-c961-4890-acd0-32a63919ac2a.jpg"
+  },
+  {
+    "id": "LTR0075",
+    "name": "The Watcher in the Water",
+    "manaCost": "{3}{U}{U}",
+    "type": "Legendary Creature — Kraken",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1cb8e8bb-75a0-4b5e-b4b3-5d8f3795032d.jpg"
+  },
+  {
+    "id": "LTR0076",
+    "name": "Willow-Wind",
+    "manaCost": "{4}{U}",
+    "type": "Creature — Elemental",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/a/0adc3bff-0eb1-40e9-b954-5515babd07a3.jpg"
+  },
+  {
+    "id": "LTR0153",
+    "name": "Bag End Porter",
+    "manaCost": "{3}{G}",
+    "type": "Creature — Dwarf",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/7/b7557170-39a2-49df-823e-958c3eb34801.jpg"
+  },
+  {
+    "id": "LTR0154",
+    "name": "Bombadil's Song",
+    "manaCost": "{1}{G}",
+    "type": "Instant",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/3/6391699e-987a-499f-9fec-96f2362760b9.jpg"
+  },
+  {
+    "id": "LTR0155",
+    "name": "Brandywine Farmer",
+    "manaCost": "{2}{G}",
+    "type": "Creature — Halfling Peasant",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1c24b5fa-506d-4eaf-881b-bc282c74a16c.jpg"
+  },
+  {
+    "id": "LTR0157",
+    "name": "Chance-Met Elves",
+    "manaCost": "{2}{G}",
+    "type": "Creature — Elf Warrior",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/a/0aa57431-39e2-4152-8a30-1c1e8faef153.jpg"
+  },
+  {
+    "id": "LTR0158",
+    "name": "Delighted Halfling",
+    "manaCost": "{G}",
+    "type": "Creature — Halfling Citizen",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/1/71384418-173a-4f77-adab-56e52fa23692.jpg"
+  },
+  {
+    "id": "LTR0159",
+    "name": "Dúnedain Rangers",
+    "manaCost": "{3}{G}",
+    "type": "Creature — Human Ranger",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/3/630e1e36-2f5d-44d4-9ff2-19ae75295016.jpg"
+  },
+  {
+    "id": "LTR0160",
+    "name": "Elven Chorus",
+    "manaCost": "{3}{G}",
+    "type": "Enchantment",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/1/616cfb94-3faf-44fe-bf04-e90643765e48.jpg"
+  },
+  {
+    "id": "LTR0162",
+    "name": "Enraged Huorn",
+    "manaCost": "{4}{G}",
+    "type": "Creature — Treefolk",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a9b48836-6d37-46eb-8c41-a3eeecc72ae1.jpg"
+  },
+  {
+    "id": "LTR0163",
+    "name": "Entish Restoration",
+    "manaCost": "{2}{G}",
+    "type": "Instant",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/d/cd4dbf80-187b-40e3-9e0b-526f78d9a34e.jpg"
+  },
+  {
+    "id": "LTR0164",
+    "name": "Ent's Fury",
+    "manaCost": "{1}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/7/c7946af6-69ab-47a1-955c-1954a04752df.jpg"
+  },
+  {
+    "id": "LTR0165",
+    "name": "Fall of Gil-galad",
+    "manaCost": "{1}{G}",
+    "type": "Enchantment — Saga",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/b/fbaab2c0-ea18-4b2f-b75b-506cbbea97e1.jpg"
+  },
+  {
+    "id": "LTR0166",
+    "name": "Fangorn, Tree Shepherd",
+    "manaCost": "{4}{G}{G}{G}",
+    "type": "Legendary Creature — Treefolk",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0fb0f946-2127-4aa3-88ac-9bd2e94d8983.jpg"
+  },
+  {
+    "id": "LTR0167",
+    "name": "Galadhrim Bow",
+    "manaCost": "{2}{G}",
+    "type": "Artifact — Equipment",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9df34f21-798f-440d-8b09-ec5b5c0b8c12.jpg"
+  },
+  {
+    "id": "LTR0168",
+    "name": "Galadhrim Guide",
+    "manaCost": "{3}{G}",
+    "type": "Creature — Elf Scout",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/4/f4603f59-f899-4caf-a874-bf234d2045fb.jpg"
+  },
+  {
+    "id": "LTR0169",
+    "name": "Generous Ent",
+    "manaCost": "{5}{G}",
+    "type": "Creature — Treefolk",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/5/85d22d5d-3875-42ff-b51e-c6e21db201f5.jpg"
+  },
+  {
+    "id": "LTR0170",
+    "name": "Gift of Strands",
+    "manaCost": "{3}{G}",
+    "type": "Enchantment — Aura",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8c54ee0c-1432-4f20-9a92-2cdfcbab30ac.jpg"
+  },
+  {
+    "id": "LTR0171",
+    "name": "Glorfindel, Dauntless Rescuer",
+    "manaCost": "{2}{G}",
+    "type": "Legendary Creature — Elf Noble",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/a/baf7a546-8a8b-4396-ab64-9a5b9abffe79.jpg"
+  },
+  {
+    "id": "LTR0172",
+    "name": "Last March of the Ents",
+    "manaCost": "{6}{G}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/f/7f1b99e0-ffb7-4f98-8ee5-4357bb79dd2e.jpg"
+  },
+  {
+    "id": "LTR0173",
+    "name": "Legolas, Master Archer",
+    "manaCost": "{1}{G}{G}",
+    "type": "Legendary Creature — Elf Archer",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a9405577-c1dc-48e0-b2aa-6237c569d02e.jpg"
+  },
+  {
+    "id": "LTR0174",
+    "name": "Long List of the Ents",
+    "manaCost": "{G}",
+    "type": "Enchantment — Saga",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/7/27347256-2ac4-4b12-b288-0a8d578a1ff2.jpg"
+  },
+  {
+    "id": "LTR0175",
+    "name": "Lothlórien Lookout",
+    "manaCost": "{1}{G}",
+    "type": "Creature — Elf Scout",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/e/4e3639c1-ebc3-4a0b-ab93-549e45aff0f7.jpg"
+  },
+  {
+    "id": "LTR0176",
+    "name": "Many Partings",
+    "manaCost": "{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d179dbbe-9c79-4dbc-955a-5209a3e2745a.jpg"
+  },
+  {
+    "id": "LTR0177",
+    "name": "Meriadoc Brandybuck",
+    "manaCost": "{1}{G}",
+    "type": "Legendary Creature — Halfling Citizen",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/8/885a3277-ef10-4dcf-ac63-eb8971cd627c.jpg"
+  },
+  {
+    "id": "LTR0178",
+    "name": "Mirkwood Spider",
+    "manaCost": "{G}",
+    "type": "Creature — Spider",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/d/ad961ba1-c74f-4a44-87fe-b30e2b63e378.jpg"
+  },
+  {
+    "id": "LTR0179",
+    "name": "Mirrormere Guardian",
+    "manaCost": "{2}{G}",
+    "type": "Creature — Dwarf Soldier",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/3/8315d7cc-fc2c-45b1-8340-11ff2af3beb5.jpg"
+  },
+  {
+    "id": "LTR0180",
+    "name": "Mushroom Watchdogs",
+    "manaCost": "{1}{G}",
+    "type": "Creature — Dog",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d15fd66d-fa7e-411d-9014-a56caa879d93.jpg"
+  },
+  {
+    "id": "LTR0181",
+    "name": "Peregrin Took",
+    "manaCost": "{2}{G}",
+    "type": "Legendary Creature — Halfling Citizen",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f5baee8d-88e7-4468-94a9-66ca8e2caf15.jpg"
+  },
+  {
+    "id": "LTR0182",
+    "name": "Pippin's Bravery",
+    "manaCost": "{G}",
+    "type": "Instant",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bc60dc65-6813-4d57-877b-df195ed00d00.jpg"
+  },
+  {
+    "id": "LTR0183",
+    "name": "Quickbeam, Upstart Ent",
+    "manaCost": "{4}{G}{G}",
+    "type": "Legendary Creature — Treefolk",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b889037f-b95f-4756-80aa-04097d2818c3.jpg"
+  },
+  {
+    "id": "LTR0184",
+    "name": "Radagast the Brown",
+    "manaCost": "{2}{G}{G}",
+    "type": "Legendary Creature — Avatar Wizard",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/3/b3988120-ebbe-4d24-9bb4-8c5331a14034.jpg"
+  },
+  {
+    "id": "LTR0185",
+    "name": "Revive the Shire",
+    "manaCost": "{1}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/6/46b7f493-1b57-4b07-8510-30703282f879.jpg"
+  },
+  {
+    "id": "LTR0186",
+    "name": "The Ring Goes South",
+    "manaCost": "{3}{G}",
+    "type": "Sorcery",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/c/3c8a4c7d-527c-49ea-a115-a9e747c0fd03.jpg"
+  },
+  {
+    "id": "LTR0187",
+    "name": "Shortcut to Mushrooms",
+    "manaCost": "{1}{G}",
+    "type": "Enchantment",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/3/13bc14f9-c90c-499d-9024-3182d78e0a88.jpg"
+  },
+  {
+    "id": "LTR0188",
+    "name": "Shower of Arrows",
+    "manaCost": "{2}{G}",
+    "type": "Instant",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/2/92cd3884-18d1-4200-b28e-a52349ef37aa.jpg"
+  },
+  {
+    "id": "LTR0189",
+    "name": "Stew the Coneys",
+    "manaCost": "{2}{G}",
+    "type": "Instant",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bcc7c41c-f416-457e-91ba-1f338f45eeac.jpg"
+  },
+  {
+    "id": "LTR0194",
+    "name": "Arwen Undómiel",
+    "manaCost": "{G}{U}",
+    "type": "Legendary Creature — Elf Noble",
+    "colorIdentity": [
+      "G",
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/5/c544e301-13b4-4dec-b65c-d54809bb7736.jpg"
+  },
+  {
+    "id": "LTR0200",
+    "name": "Elrond, Master of Healing",
+    "manaCost": "{2}{G}{U}",
+    "type": "Legendary Creature — Elf Noble",
+    "colorIdentity": [
+      "G",
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/2/d26ffb2c-f7a5-4a4f-9b99-c8de9dfd49da.jpg"
+  },
+  {
+    "id": "LTR0206",
+    "name": "Galadriel of Lothlórien",
+    "manaCost": "{1}{G}{U}",
+    "type": "Legendary Creature — Elf Noble",
+    "colorIdentity": [
+      "G",
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6e5c3b3-9a70-4a1c-bfb3-db27e51c4b8d.jpg"
+  },
+  {
+    "id": "LTR0212",
+    "name": "Legolas, Counter of Kills",
+    "manaCost": "{2}{G}{U}",
+    "type": "Legendary Creature — Elf Archer",
+    "colorIdentity": [
+      "G",
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/8/c8bd408c-9e6d-436d-9c4f-9ef3203aeb64.jpg"
+  },
+  {
+    "id": "LTR0236",
+    "name": "Andúril, Flame of the West",
+    "manaCost": "{3}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/e/7e7b9eea-a224-4db1-a089-cb385f7af20c.jpg"
+  },
+  {
+    "id": "LTR0237",
+    "name": "Barrow-Blade",
+    "manaCost": "{1}",
+    "type": "Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/0/f0eb7284-78a5-4b5e-8f6d-6be540e0bef8.jpg"
+  },
+  {
+    "id": "LTR0238",
+    "name": "Ent-Draught Basin",
+    "manaCost": "{2}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/5/1500126f-fbe4-4c39-bb06-1a36e2c4682f.jpg"
+  },
+  {
+    "id": "LTR0239",
+    "name": "Glamdring",
+    "manaCost": "{2}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/2/8296ebf7-45ed-4b38-acf2-b48d9fb3e706.jpg"
+  },
+  {
+    "id": "LTR0240",
+    "name": "Horn of Gondor",
+    "manaCost": "{3}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/1/b14eaeec-d7ce-462a-90d3-2ae5ff605fdb.jpg"
+  },
+  {
+    "id": "LTR0241",
+    "name": "Horn of the Mark",
+    "manaCost": "{2}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/d/dd86b71f-d736-426f-bf15-013bc8da1a08.jpg"
+  },
+  {
+    "id": "LTR0242",
+    "name": "Inherited Envelope",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b590d028-ea6a-4550-b5e2-ba328a81bbc0.jpg"
+  },
+  {
+    "id": "LTR0243",
+    "name": "Lembas",
+    "manaCost": "{2}",
+    "type": "Artifact — Food",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/b/3b46aacf-b31a-4380-9e4b-82795fbaba3b.jpg"
+  },
+  {
+    "id": "LTR0245",
+    "name": "Mithril Coat",
+    "manaCost": "{3}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0fd1fc09-a09d-45e6-8a07-3a8a83b4e6ec.jpg"
+  },
+  {
+    "id": "LTR0246",
+    "name": "A-The One Ring",
+    "manaCost": "{4}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/3/23b91af8-eff9-402a-8ba8-ab470c5c1a44.jpg"
+  },
+  {
+    "id": "LTR0247",
+    "name": "Palantír of Orthanc",
+    "manaCost": "{3}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/e/6efb6a69-562c-4d95-858d-b067444cfd7e.jpg"
+  },
+  {
+    "id": "LTR0248",
+    "name": "Phial of Galadriel",
+    "manaCost": "{3}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/c/ac6d60fe-681b-495e-813c-c8418f3f29e5.jpg"
+  },
+  {
+    "id": "LTR0249",
+    "name": "Shire Scarecrow",
+    "manaCost": "{2}",
+    "type": "Artifact Creature — Scarecrow",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/6/b60b4f2e-ff47-4762-a803-30e81b665c09.jpg"
+  },
+  {
+    "id": "LTR0250",
+    "name": "Sting, the Glinting Dagger",
+    "manaCost": "{2}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/f/afbec7e7-f5b9-407e-bf96-2e088710e791.jpg"
+  },
+  {
+    "id": "LTR0251",
+    "name": "Stone of Erech",
+    "manaCost": "{1}",
+    "type": "Legendary Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bc02e193-df33-4eb1-adc1-b51ee931218a.jpg"
+  },
+  {
+    "id": "LTR0252",
+    "name": "Wizard's Rockets",
+    "manaCost": "{1}",
+    "type": "Artifact",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1c6ed742-dfb1-41e2-8f19-184555109e34.jpg"
+  },
+  {
+    "id": "LTR0254",
+    "name": "Great Hall of the Citadel",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/1/219c7b57-b62b-42d1-85d9-4b57624a3f54.jpg"
+  },
+  {
+    "id": "LTR0255",
+    "name": "The Grey Havens",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/d/dd698f10-b0fc-42fc-84ec-f5a0d96bfa1d.jpg"
+  },
+  {
+    "id": "LTR0259",
+    "name": "Rivendell",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/a/bacd500c-1389-4314-a53e-0ad510d6fb79.jpg"
+  },
+  {
+    "id": "LTR0260",
+    "name": "The Shire",
+    "manaCost": null,
+    "type": "Legendary Land",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d5178a1b-588b-4414-a370-ac6eed51187a.jpg"
+  },
+  {
+    "id": "LTR0261",
+    "name": "Shire Terrace",
+    "manaCost": null,
+    "type": "Land",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/5/25932483-58cd-4ae5-82bf-ab455177d117.jpg"
+  },
+  {
+    "id": "LTR0283",
+    "name": "Elvish Mariner",
+    "manaCost": "{2}{U}",
+    "type": "Creature — Elf Pilot",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/6/7604d357-4196-421f-a5c3-c7cbe79f35cb.jpg"
+  },
+  {
+    "id": "LTR0286",
+    "name": "Elanor Gardner",
+    "manaCost": "{3}{G}",
+    "type": "Legendary Creature — Halfling Scout",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/6/1/6165eb73-49a8-4337-aa5d-7d9d48b916c9.jpg"
+  },
+  {
+    "id": "LTR0296",
+    "name": "Galadriel, Gift-Giver",
+    "manaCost": "{3}{G}{G}",
+    "type": "Legendary Creature — Elf Noble",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/8/2/8229264e-af6c-4f1f-b86a-257889ace9ce.jpg"
+  },
+  {
+    "id": "LTR0298",
+    "name": "Bilbo's Ring",
+    "manaCost": "{3}",
+    "type": "Legendary Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/1/91dbeac4-1c39-4a4f-84e7-1b71f7468c8f.jpg"
+  },
+  {
+    "id": "LTR0398",
+    "name": "Trailblazer's Boots",
+    "manaCost": "{2}",
+    "type": "Artifact — Equipment",
+    "colorIdentity": [],
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/6/36ee958c-ae8c-49bd-9d85-0128ca19901c.jpg"
+  },
+  {
+    "id": "LTR0825",
+    "name": "Minas Tirith Garrison",
+    "manaCost": "{3}{U}",
+    "type": "Creature — Human Soldier",
+    "colorIdentity": [
+      "U"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/0/9023a7eb-fe74-4e3d-9279-e69519b41fbd.jpg"
+  },
+  {
+    "id": "LTR0828",
+    "name": "Mirkwood Channeler",
+    "manaCost": "{3}{G}",
+    "type": "Creature — Elf Druid",
+    "colorIdentity": [
+      "G"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/a/ca533454-8bea-4e08-ab0b-e2f4affffaef.jpg"
+  }
+]

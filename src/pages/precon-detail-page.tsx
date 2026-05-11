@@ -9,9 +9,8 @@ import {
   CardPreviewDrawer,
   CardRow,
   DeckIdentity,
-  getAddCandidates,
+  loadAddCandidates,
   loadPrecon,
-  loadUniverseSets,
   useCardPreview,
   useMakePickMutation,
   useMyPicksQuery,
@@ -38,11 +37,8 @@ export function PreconDetailPage() {
   const removePick = useRemovePickMutation(preconId ?? '');
 
   const addCandidates = useMemo(
-    () => {
-      const sets = universeId ? loadUniverseSets(universeId) : [];
-      return precon ? getAddCandidates(precon, sets) : [];
-    },
-    [precon, universeId]
+    () => (universeId && preconId ? loadAddCandidates(universeId, preconId) : []),
+    [universeId, preconId]
   );
 
   const countMap = useMemo(() => {
