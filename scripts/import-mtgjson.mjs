@@ -45,7 +45,7 @@ const UNIVERSES = {
   'final-fantasy': {
     name: 'Final Fantasy',
     description: 'The Final Fantasy video game series',
-    sets: ['FIC', 'FIN'],
+    sets: ['FIC', 'FIN', 'FCA'],
     precons: [
       { filename: 'RevivalTranceFinalFantasyVi_FIC', id: 'revival-trance', name: 'Revival Trance' },
       { filename: 'LimitBreakFinalFantasyVii_FIC', id: 'limit-break', name: 'Limit Break' },
@@ -56,9 +56,23 @@ const UNIVERSES = {
   'teenage-mutant-ninja-turtles': {
     name: 'Teenage Mutant Ninja Turtles',
     description: 'Heroes in a half-shell — TMNT',
-    sets: ['TMC', 'TMT'],
+    sets: ['TMC', 'TMT', 'PZA'],
     precons: [
       { filename: 'TurtlePower_TMC', id: 'turtle-power', name: 'Turtle Power' },
+    ],
+  },
+  marvel: {
+    name: 'Marvel',
+    description: 'The Marvel Universe — Super Heroes and Spider-Man',
+    // MSC/MSH are Marvel Super Heroes; SPM/SPE are Marvel's Spider-Man, which
+    // shipped no Commander decks and so contributes cards but no precons. MAR
+    // is the Marvel Universe bonus sheet.
+    sets: ['MSC', 'MSH', 'SPM', 'SPE', 'MAR'],
+    precons: [
+      { filename: 'AvengersAssemble_MSC', id: 'avengers-assemble', name: 'Avengers Assemble' },
+      { filename: 'TheFantasticFour_MSC', id: 'the-fantastic-four', name: 'The Fantastic Four' },
+      { filename: 'WakandaForever_MSC', id: 'wakanda-forever', name: 'Wakanda Forever' },
+      { filename: 'DoomPrevails_MSC', id: 'doom-prevails', name: 'Doom Prevails' },
     ],
   },
 };

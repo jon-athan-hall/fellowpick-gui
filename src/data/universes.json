@@ -32,7 +32,8 @@
     "description": "The Final Fantasy video game series",
     "sets": [
       "FIC",
-      "FIN"
+      "FIN",
+      "FCA"
     ],
     "precons": [
       {
@@ -59,12 +60,43 @@
     "description": "Heroes in a half-shell — TMNT",
     "sets": [
       "TMC",
-      "TMT"
+      "TMT",
+      "PZA"
     ],
     "precons": [
       {
         "id": "turtle-power",
         "name": "Turtle Power"
+      }
+    ]
+  },
+  {
+    "id": "marvel",
+    "name": "Marvel",
+    "description": "The Marvel Universe — Super Heroes and Spider-Man",
+    "sets": [
+      "MSC",
+      "MSH",
+      "SPM",
+      "SPE",
+      "MAR"
+    ],
+    "precons": [
+      {
+        "id": "avengers-assemble",
+        "name": "Avengers Assemble"
+      },
+      {
+        "id": "the-fantastic-four",
+        "name": "The Fantastic Four"
+      },
+      {
+        "id": "wakanda-forever",
+        "name": "Wakanda Forever"
+      },
+      {
+        "id": "doom-prevails",
+        "name": "Doom Prevails"
       }
     ]
   }

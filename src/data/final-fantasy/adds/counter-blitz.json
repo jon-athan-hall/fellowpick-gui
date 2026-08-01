@@ -5538,5 +5538,610 @@
     ],
     "oracleText": "Whenever equipped creature attacks, destroy target creature an opponent controls.\nEquipped creature gets +7/+7.\nEquip {7}",
     "scryfallImage": "https://cards.scryfall.io/large/front/b/9/b9162d08-a6ba-4e6e-b82c-9b092bd781dd.jpg"
+  },
+  {
+    "id": "FCA0001",
+    "name": "Adeline, Resplendent Cathar",
+    "flavorName": "Hero of Light",
+    "manaCost": "{1}{W}{W}",
+    "manaValue": 3,
+    "type": "Legendary Creature — Human Knight",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [
+      "Vigilance"
+    ],
+    "oracleText": "Vigilance\nAdeline's power is equal to the number of creatures you control.\nWhenever you attack, for each opponent, create a 1/1 white Human creature token that's tapped and attacking that player or a planeswalker they control.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/b/0b9579d8-bc8f-4d74-bfc1-dcdd42568f79.jpg"
+  },
+  {
+    "id": "FCA0002",
+    "name": "Ranger-Captain of Eos",
+    "flavorName": "Knights of San d'Oria",
+    "manaCost": "{1}{W}{W}",
+    "manaValue": 3,
+    "type": "Creature — Human Soldier Ranger",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "mythic",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [],
+    "oracleText": "When this creature enters, you may search your library for a creature card with mana value 1 or less, reveal it, put it into your hand, then shuffle.\nSacrifice this creature: Your opponents can't cast noncreature spells this turn.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/a/9af0b8d6-f41b-4aa3-ae32-1ef2d1d4bade.jpg"
+  },
+  {
+    "id": "FCA0003",
+    "name": "Sram, Senior Edificer",
+    "flavorName": "Firion, Swordmaster",
+    "manaCost": "{1}{W}",
+    "manaValue": 2,
+    "type": "Legendary Creature — Dwarf Advisor",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [],
+    "oracleText": "Whenever you cast an Aura, Equipment, or Vehicle spell, draw a card.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/8/084d7a61-ef18-42e3-8485-76ae9a36ef7b.jpg"
+  },
+  {
+    "id": "FCA0004",
+    "name": "Counterspell",
+    "flavorName": "Wild Rose Rebellion",
+    "manaCost": "{U}{U}",
+    "manaValue": 2,
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "U"
+    ],
+    "keywords": [],
+    "oracleText": "Counter target spell.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/1/e1e48b21-1a4f-4708-a4b4-e2e296df924c.jpg"
+  },
+  {
+    "id": "FCA0005",
+    "name": "Urza, Lord High Artificer",
+    "flavorName": "Terra Branford",
+    "manaCost": "{2}{U}{U}",
+    "manaValue": 4,
+    "type": "Legendary Creature — Human Artificer",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "mythic",
+    "colorIdentity": [
+      "U"
+    ],
+    "keywords": [],
+    "oracleText": "When Urza enters, create a 0/0 colorless Construct artifact creature token with \"This token gets +1/+1 for each artifact you control.\"\nTap an untapped artifact you control: Add {U}.\n{5}: Shuffle your library, then exile the top card. Until end of turn, you may play that card without paying its mana cost.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/8/98294441-b5a1-4b59-9325-80d0ff913ebd.jpg"
+  },
+  {
+    "id": "FCA0006",
+    "name": "Venser, Shaper Savant",
+    "flavorName": "Master Xande",
+    "manaCost": "{2}{U}{U}",
+    "manaValue": 4,
+    "type": "Legendary Creature — Human Wizard",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "U"
+    ],
+    "keywords": [
+      "Flash"
+    ],
+    "oracleText": "Flash (You may cast this spell any time you could cast an instant.)\nWhen Venser enters, return target spell or permanent to its owner's hand.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d9aa060d-8682-4803-9ab9-052250e3d794.jpg"
+  },
+  {
+    "id": "FCA0015",
+    "name": "Azusa, Lost but Seeking",
+    "flavorName": "Princess Sarah",
+    "manaCost": "{2}{G}",
+    "manaValue": 3,
+    "type": "Legendary Creature — Human Monk",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "G"
+    ],
+    "keywords": [],
+    "oracleText": "You may play two additional lands on each of your turns.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea8e1f76-bd26-4037-8556-e348d50bfd95.jpg"
+  },
+  {
+    "id": "FCA0016",
+    "name": "Nyxbloom Ancient",
+    "flavorName": "The Cloudsea Djinn",
+    "manaCost": "{4}{G}{G}{G}",
+    "manaValue": 7,
+    "type": "Enchantment Creature — Elemental",
+    "types": [
+      "Enchantment",
+      "Creature"
+    ],
+    "rarity": "mythic",
+    "colorIdentity": [
+      "G"
+    ],
+    "keywords": [
+      "Trample"
+    ],
+    "oracleText": "Trample\nIf you tap a permanent for mana, it produces three times as much of that mana instead.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/5/f/5f2b2373-9052-4246-a644-1f5b723ea9f1.jpg"
+  },
+  {
+    "id": "FCA0020",
+    "name": "Traxos, Scourge of Kroog",
+    "flavorName": "Giant of Babil",
+    "manaCost": "{4}",
+    "manaValue": 4,
+    "type": "Legendary Artifact Creature — Construct",
+    "types": [
+      "Artifact",
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [],
+    "keywords": [
+      "Trample"
+    ],
+    "oracleText": "Trample\nTraxos enters tapped and doesn't untap during your untap step.\nWhenever you cast a historic spell, untap Traxos. (Artifacts, legendaries, and Sagas are historic.)",
+    "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3f0cbff1-4b4e-4d60-b114-20bd3e977b25.jpg"
+  },
+  {
+    "id": "FCA0021",
+    "name": "Akroma's Will",
+    "flavorName": "Blessing of the Oracle",
+    "manaCost": "{3}{W}",
+    "manaValue": 4,
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "rarity": "mythic",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [],
+    "oracleText": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n• Creatures you control gain flying, vigilance, and double strike until end of turn.\n• Creatures you control gain lifelink, indestructible, and protection from each color until end of turn.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/c/fc9c542d-ff46-4193-9972-68287879a8a0.jpg"
+  },
+  {
+    "id": "FCA0022",
+    "name": "Danitha Capashen, Paragon",
+    "flavorName": "Squall Leonhart",
+    "manaCost": "{2}{W}",
+    "manaValue": 3,
+    "type": "Legendary Creature — Human Knight",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [
+      "First strike",
+      "Lifelink",
+      "Vigilance"
+    ],
+    "oracleText": "First strike, vigilance, lifelink\nAura and Equipment spells you cast cost {1} less to cast.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/1/210ff924-215e-4ae8-8706-5af3891c6605.jpg"
+  },
+  {
+    "id": "FCA0024",
+    "name": "Loran of the Third Path",
+    "flavorName": "Garnet Til Alexandros 17th",
+    "manaCost": "{2}{W}",
+    "manaValue": 3,
+    "type": "Legendary Creature — Human Artificer",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [
+      "Vigilance"
+    ],
+    "oracleText": "Vigilance\nWhen Loran enters, destroy up to one target artifact or enchantment.\n{T}: You and target opponent each draw a card.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/5/450ec0a6-839b-4a35-a79b-ae358408a17c.jpg"
+  },
+  {
+    "id": "FCA0025",
+    "name": "Mangara, the Diplomat",
+    "flavorName": "Minwu, Rebellion Strategist",
+    "manaCost": "{3}{W}",
+    "manaValue": 4,
+    "type": "Legendary Creature — Human Cleric",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [
+      "Lifelink"
+    ],
+    "oracleText": "Lifelink\nWhenever an opponent attacks with creatures, if two or more of those creatures are attacking you and/or planeswalkers you control, draw a card.\nWhenever an opponent casts their second spell each turn, draw a card.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/3/232b5c18-0a0a-425d-89aa-de2db833a22c.jpg"
+  },
+  {
+    "id": "FCA0026",
+    "name": "Stroke of Midnight",
+    "flavorName": "Memories of Nibelheim",
+    "manaCost": "{2}{W}",
+    "manaValue": 3,
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [],
+    "oracleText": "Destroy target nonland permanent. Its controller creates a 1/1 white Human creature token.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/1/711135d0-7769-4154-873a-e2505f8795f0.jpg"
+  },
+  {
+    "id": "FCA0027",
+    "name": "Wall of Omens",
+    "flavorName": "The Imperial City of Archades",
+    "manaCost": "{1}{W}",
+    "manaValue": 2,
+    "type": "Creature — Wall",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "W"
+    ],
+    "keywords": [
+      "Defender"
+    ],
+    "oracleText": "Defender\nWhen this creature enters, draw a card.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/a/e/ae94ab2a-5a6b-4358-ad7f-bdc9a98a9ac0.jpg"
+  },
+  {
+    "id": "FCA0028",
+    "name": "Brainstorm",
+    "flavorName": "Endwalker",
+    "manaCost": "{U}",
+    "manaValue": 1,
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "U"
+    ],
+    "keywords": [],
+    "oracleText": "Draw three cards, then put two cards from your hand on top of your library in any order.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/1/c14f8bce-d5b3-4d01-8346-8a4923ec03d9.jpg"
+  },
+  {
+    "id": "FCA0029",
+    "name": "Cryptic Command",
+    "flavorName": "To the Crystal Tower",
+    "manaCost": "{1}{U}{U}{U}",
+    "manaValue": 4,
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "U"
+    ],
+    "keywords": [],
+    "oracleText": "Choose two —\n• Counter target spell.\n• Return target permanent to its owner's hand.\n• Tap all creatures your opponents control.\n• Draw a card.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/b/7b182d1f-be0f-4b97-bca3-083483f7713c.jpg"
+  },
+  {
+    "id": "FCA0030",
+    "name": "Laboratory Maniac",
+    "flavorName": "Vana'diel Adventurers",
+    "manaCost": "{2}{U}",
+    "manaValue": 3,
+    "type": "Creature — Human Wizard",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "U"
+    ],
+    "keywords": [],
+    "oracleText": "If you would draw a card while your library has no cards in it, you win the game instead.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/4/4/44ede007-b6db-4396-8b25-9e2621cfeec4.jpg"
+  },
+  {
+    "id": "FCA0031",
+    "name": "Rhystic Study",
+    "flavorName": "Stay with Me",
+    "manaCost": "{2}{U}",
+    "manaValue": 3,
+    "type": "Enchantment",
+    "types": [
+      "Enchantment"
+    ],
+    "rarity": "mythic",
+    "colorIdentity": [
+      "U"
+    ],
+    "keywords": [],
+    "oracleText": "Whenever an opponent casts a spell, you may draw a card unless that player pays {1}.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/c/d/cd212de7-25f6-4b3b-a35b-df7d87fe205b.jpg"
+  },
+  {
+    "id": "FCA0032",
+    "name": "Teferi, Mage of Zhalfir",
+    "flavorName": "Edea Kramer",
+    "manaCost": "{2}{U}{U}{U}",
+    "manaValue": 5,
+    "type": "Legendary Creature — Human Wizard",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "U"
+    ],
+    "keywords": [
+      "Flash"
+    ],
+    "oracleText": "Flash\nCreature cards you own that aren't on the battlefield have flash.\nEach opponent can cast spells only any time they could cast a sorcery.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/c/9ca8fdd4-7e62-4475-9aed-c227ab3977f7.jpg"
+  },
+  {
+    "id": "FCA0044",
+    "name": "Carpet of Flowers",
+    "flavorName": "Fal'Cie Paradise",
+    "manaCost": "{G}",
+    "manaValue": 1,
+    "type": "Enchantment",
+    "types": [
+      "Enchantment"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "G"
+    ],
+    "keywords": [],
+    "oracleText": "At the beginning of each of your main phases, if you haven't added mana with this ability this turn, you may add X mana of any one color, where X is the number of Islands target opponent controls.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/d/dd28c05c-9473-4df8-9bb3-70593f2c5a50.jpg"
+  },
+  {
+    "id": "FCA0046",
+    "name": "Fynn, the Fangbearer",
+    "flavorName": "Vayne Carudas Solidor",
+    "manaCost": "{1}{G}",
+    "manaValue": 2,
+    "type": "Legendary Creature — Human Warrior",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "G"
+    ],
+    "keywords": [
+      "Deathtouch"
+    ],
+    "oracleText": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)\nWhenever a creature you control with deathtouch deals combat damage to a player, that player gets two poison counters. (A player with ten or more poison counters loses the game.)",
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/9/e983925b-de9c-4a09-8bff-913301aff269.jpg"
+  },
+  {
+    "id": "FCA0047",
+    "name": "Nature's Claim",
+    "flavorName": "Search for the Frozen Esper",
+    "manaCost": "{G}",
+    "manaValue": 1,
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "G"
+    ],
+    "keywords": [],
+    "oracleText": "Destroy target artifact or enchantment. Its controller gains 4 life.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/3/d349901d-f9a6-4f09-a881-531c695cf1c4.jpg"
+  },
+  {
+    "id": "FCA0048",
+    "name": "Primeval Titan",
+    "flavorName": "Astral Titan",
+    "manaCost": "{4}{G}{G}",
+    "manaValue": 6,
+    "type": "Creature — Giant",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "G"
+    ],
+    "keywords": [
+      "Trample"
+    ],
+    "oracleText": "Trample\nWhenever this creature enters or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/7/972dfe0d-1f8a-4e18-bcd8-c1ff6266c01a.jpg"
+  },
+  {
+    "id": "FCA0051",
+    "name": "Dovin's Veto",
+    "flavorName": "Shadowbringers",
+    "manaCost": "{W}{U}",
+    "manaValue": 2,
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [
+      "U",
+      "W"
+    ],
+    "keywords": [],
+    "oracleText": "This spell can't be countered.\nCounter target noncreature spell.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/a/ba332954-ed8c-48d7-8d85-971c7b71dccf.jpg"
+  },
+  {
+    "id": "FCA0053",
+    "name": "Ishai, Ojutai Dragonspeaker",
+    "flavorName": "Benedikta Harman",
+    "manaCost": "{2}{W}{U}",
+    "manaValue": 4,
+    "type": "Legendary Creature — Bird Monk",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [
+      "U",
+      "W"
+    ],
+    "keywords": [
+      "Flying",
+      "Partner"
+    ],
+    "oracleText": "Flying\nWhenever an opponent casts a spell, put a +1/+1 counter on Ishai.\nPartner (You can have two commanders if both have partner.)",
+    "scryfallImage": "https://cards.scryfall.io/large/front/9/2/92e0c1a4-e6f3-494d-9238-913af54dbffb.jpg"
+  },
+  {
+    "id": "FCA0055",
+    "name": "Kinnan, Bonder Prodigy",
+    "flavorName": "Seymour Guado",
+    "manaCost": "{G}{U}",
+    "manaValue": 2,
+    "type": "Legendary Creature — Human Druid",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "mythic",
+    "colorIdentity": [
+      "G",
+      "U"
+    ],
+    "keywords": [],
+    "oracleText": "Whenever you tap a nonland permanent for mana, add one mana of any type that permanent produced.\n{5}{G}{U}: Look at the top five cards of your library. You may put a non-Human creature card from among them onto the battlefield. Put the rest on the bottom of your library in a random order.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/e/1/e141f975-945e-4e2c-ac04-6083b5bdaf16.jpg"
+  },
+  {
+    "id": "FCA0058",
+    "name": "Thrasios, Triton Hero",
+    "flavorName": "Tidus, Zanarkand Fayth",
+    "manaCost": "{G}{U}",
+    "manaValue": 2,
+    "type": "Legendary Creature — Merfolk Wizard",
+    "types": [
+      "Creature"
+    ],
+    "rarity": "mythic",
+    "colorIdentity": [
+      "G",
+      "U"
+    ],
+    "keywords": [
+      "Partner",
+      "Scry"
+    ],
+    "oracleText": "{4}: Scry 1, then reveal the top card of your library. If it's a land card, put it onto the battlefield tapped. Otherwise, draw a card.\nPartner (You can have two commanders if both have partner.)",
+    "scryfallImage": "https://cards.scryfall.io/large/front/5/f/5f13417d-3fe1-4357-b826-cb48dd111247.jpg"
+  },
+  {
+    "id": "FCA0061",
+    "name": "Chromatic Lantern",
+    "flavorName": "Crystal of Altar Cave",
+    "manaCost": "{3}",
+    "manaValue": 3,
+    "type": "Artifact",
+    "types": [
+      "Artifact"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [],
+    "keywords": [],
+    "oracleText": "Lands you control have \"{T}: Add one mana of any color.\"\n{T}: Add one mana of any color.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/1/d170adf6-eb5e-4094-9917-3b68be92e8b9.jpg"
+  },
+  {
+    "id": "FCA0062",
+    "name": "Smuggler's Copter",
+    "flavorName": "The Strahl",
+    "manaCost": "{2}",
+    "manaValue": 2,
+    "type": "Artifact — Vehicle",
+    "types": [
+      "Artifact"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [],
+    "keywords": [
+      "Crew",
+      "Flying"
+    ],
+    "oracleText": "Flying\nWhenever this Vehicle attacks or blocks, you may draw a card. If you do, discard a card.\nCrew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)",
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/0/d0e53c71-6a58-4ea1-a550-f3cbd749eafd.jpg"
+  },
+  {
+    "id": "FCA0063",
+    "name": "Strixhaven Stadium",
+    "flavorName": "Luca Stadium",
+    "manaCost": "{3}",
+    "manaValue": 3,
+    "type": "Artifact",
+    "types": [
+      "Artifact"
+    ],
+    "rarity": "uncommon",
+    "colorIdentity": [],
+    "keywords": [],
+    "oracleText": "{T}: Add {C}. Put a point counter on this artifact.\nWhenever a creature deals combat damage to you, remove a point counter from this artifact.\nWhenever a creature you control deals combat damage to an opponent, put a point counter on this artifact. Then if it has ten or more point counters on it, remove them all and that player loses the game.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bcf0d751-5c47-4531-add4-acd07b82adf5.jpg"
+  },
+  {
+    "id": "FCA0064",
+    "name": "Command Beacon",
+    "flavorName": "Balamb Garden",
+    "manaCost": null,
+    "manaValue": 0,
+    "type": "Land",
+    "types": [
+      "Land"
+    ],
+    "rarity": "rare",
+    "colorIdentity": [],
+    "keywords": [],
+    "oracleText": "{T}: Add {C}.\n{T}, Sacrifice this land: Put your commander into your hand from the command zone.",
+    "scryfallImage": "https://cards.scryfall.io/large/front/2/6/2670653e-fcaa-46e3-b3bf-cb8e8b981a9c.jpg"
   }
 ]

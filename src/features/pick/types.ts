@@ -21,9 +21,26 @@ export interface Card {
   id: string;
   name: string;
   manaCost: string | null;
+  /** Full type line, e.g. "Legendary Creature — Elf Noble". */
   type: string;
   colorIdentity: string[];
   scryfallImage: string | null;
+
+  // Written by scripts/import-mtgjson.mjs to support search, sorting and
+  // filtering. Optional only while the re-import rolls across universes —
+  // see step 1.7 in redesign-plan.md, which makes them required once every
+  // data file carries them.
+
+  /** In-universe name a bonus sheet gives a reprint, e.g. "Hero of Light". */
+  flavorName?: string | null;
+  /** Converted mana cost, straight from MTGJSON rather than parsed. */
+  manaValue?: number;
+  /** Card types only, e.g. ["Artifact", "Creature"] — no subtypes. */
+  types?: string[];
+  rarity?: string | null;
+  keywords?: string[];
+  /** Rules text for every face, joined — see combinedText in the import script. */
+  oracleText?: string | null;
 }
 
 export interface Precon {

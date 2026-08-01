@@ -14,8 +14,14 @@
     {
       "id": "TMC0006",
       "name": "Heroes in a Half Shell",
+      "flavorName": null,
       "manaCost": "{W}{U}{B}{R}{G}",
+      "manaValue": 5,
       "type": "Legendary Creature — Mutant Ninja Turtle",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
       "colorIdentity": [
         "B",
         "G",
@@ -23,6 +29,13 @@
         "U",
         "W"
       ],
+      "keywords": [
+        "Haste",
+        "Menace",
+        "Trample",
+        "Vigilance"
+      ],
+      "oracleText": "Vigilance, menace, trample, haste\nWhenever one or more Mutants, Ninjas, and/or Turtles you control deal combat damage to a player, put a +1/+1 counter on each of those creatures and draw a card.",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/c/ccc2a4e6-f505-4040-9d8a-c7b8e1a2b55e.jpg"
     }
   ],
@@ -30,8 +43,14 @@
     "TMC0001": {
       "id": "TMC0001",
       "name": "Leonardo, the Balance",
+      "flavorName": null,
       "manaCost": "{3}{W}",
+      "manaValue": 4,
       "type": "Legendary Creature — Mutant Ninja Turtle",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
       "colorIdentity": [
         "B",
         "G",
@@ -39,702 +58,1363 @@
         "U",
         "W"
       ],
+      "keywords": [
+        "Partner"
+      ],
+      "oracleText": "Whenever a token you control enters, you may put a +1/+1 counter on each creature you control. Do this only once each turn.\n{W}{U}{B}{R}{G}: Creatures you control gain menace, trample, and lifelink until end of turn.\nPartner—Character select (You can have two commanders if both have this ability.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/2/72e637db-7112-406f-809b-0eda248488b5.jpg"
     },
     "TMC0002": {
       "id": "TMC0002",
       "name": "Donatello, the Brains",
+      "flavorName": null,
       "manaCost": "{2}{U}",
+      "manaValue": 3,
       "type": "Legendary Creature — Mutant Ninja Turtle",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [
+        "Partner"
+      ],
+      "oracleText": "If one or more tokens would be created under your control, those tokens plus a Mutagen token are created instead.\nPartner—Character select (You can have two commanders if both have this ability.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/7/774716f4-d211-497a-be91-69cd700edbf2.jpg"
     },
     "TMC0003": {
       "id": "TMC0003",
       "name": "Splinter, the Mentor",
+      "flavorName": null,
       "manaCost": "{1}{B}",
+      "manaValue": 2,
       "type": "Legendary Creature — Mutant Ninja Rat",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [
+        "Menace",
+        "Partner"
+      ],
+      "oracleText": "Menace\nWhenever Splinter or another nontoken creature you control leaves the battlefield, create a Mutagen token.\nPartner—Character select (You can have two commanders if both have this ability.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/6/06c595fa-55ff-46f3-afaf-17edae465864.jpg"
     },
     "TMC0004": {
       "id": "TMC0004",
       "name": "Raphael, the Muscle",
+      "flavorName": null,
       "manaCost": "{4}{R}",
+      "manaValue": 5,
       "type": "Legendary Creature — Mutant Ninja Turtle",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [
+        "Double",
+        "Partner"
+      ],
+      "oracleText": "Double all damage that creatures you control with counters on them would deal.\nWhen Raphael enters, create a Mutagen token.\nPartner—Character select (You can have two commanders if both have this ability.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bccdd54c-e64b-44d2-87b3-e80029672529.jpg"
     },
     "TMC0005": {
       "id": "TMC0005",
       "name": "Michelangelo, the Heart",
+      "flavorName": null,
       "manaCost": "{1}{G}",
+      "manaValue": 2,
       "type": "Legendary Creature — Mutant Ninja Turtle",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Food",
+        "Partner",
+        "Trample"
+      ],
+      "oracleText": "Trample\nRaid (the Fridge) — At the beginning of your second main phase, if you attacked this turn, put a +1/+1 counter on target creature and create a Food token.\nPartner—Character select (You can have two commanders if both have this ability.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/a/bac2d744-db65-4b56-8634-c87fd00c090e.jpg"
     },
     "TMC0007": {
       "id": "TMC0007",
       "name": "Continue?",
+      "flavorName": null,
       "manaCost": "{1}{W}",
+      "manaValue": 2,
       "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "W"
       ],
+      "keywords": [],
+      "oracleText": "Choose up to four target creature cards in your graveyard that were put there from the battlefield this turn. Return them to the battlefield.",
       "scryfallImage": "https://cards.scryfall.io/large/front/2/c/2c99c472-8820-43d8-9dfa-508dc3d07478.jpg"
     },
     "TMC0008": {
       "id": "TMC0008",
       "name": "Endless Foot Assault",
+      "flavorName": null,
       "manaCost": "{2}{W}",
+      "manaValue": 3,
       "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "W"
       ],
+      "keywords": [
+        "Squad"
+      ],
+      "oracleText": "Squad {1}{W} (As an additional cost to cast this spell, you may pay {1}{W} any number of times. When this enchantment enters, create that many tokens that are copies of it.)\nWhenever you attack, for each opponent, create a 1/1 black Ninja creature token that's tapped and attacking that player.",
       "scryfallImage": "https://cards.scryfall.io/large/front/3/8/387f6f60-69da-4965-9ab9-57bdb763a013.jpg"
     },
     "TMC0009": {
       "id": "TMC0009",
       "name": "April O'Neil, Live on the Scene",
+      "flavorName": null,
       "manaCost": "{1}{U}",
+      "manaValue": 2,
       "type": "Legendary Creature — Human Detective",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [
+        "Investigate",
+        "Partner"
+      ],
+      "oracleText": "Whenever a Mutant, Ninja, or Turtle you control enters, investigate. (Create a Clue token. It's an artifact with \"{2}, Sacrifice this token: Draw a card.\")\nPartner—Character select",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/2/7265ab42-5434-4127-acd6-8905ab63d62d.jpg"
     },
     "TMC0010": {
       "id": "TMC0010",
       "name": "Baxter, Fly in the Ointment",
+      "flavorName": null,
       "manaCost": "{3}{U}",
+      "manaValue": 4,
       "type": "Legendary Creature — Insect Mutant Scientist",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [],
+      "oracleText": "Whenever Baxter enters or attacks, each creature you control with a counter on it gains flying until end of turn.\nWhenever you draw a card, put a +1/+1 counter on Baxter.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f5ee290f-03cd-48a8-ba6e-d934cb3f4ff4.jpg"
     },
     "TMC0011": {
       "id": "TMC0011",
       "name": "Here Comes a New Hero!",
+      "flavorName": null,
       "manaCost": "{X}{2}{U}",
+      "manaValue": 3,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [],
+      "oracleText": "Target player draws X cards. Create a token that's a copy of up to one target creature with mana value X or less.",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/9/096a07e2-c213-4f8a-852f-813435bf1655.jpg"
     },
     "TMC0012": {
       "id": "TMC0012",
       "name": "Irma, Part-Time Mutant",
+      "flavorName": null,
       "manaCost": "{2}{U}",
+      "manaValue": 3,
       "type": "Legendary Creature — Human Mutant Shapeshifter",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [],
+      "oracleText": "At the beginning of combat on your turn, Irma becomes a copy of up to one other target creature you control, except her name is Irma, Part-Time Mutant and she has this ability. Then put a +1/+1 counter on her.",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/3/c3128529-4ccd-4809-8388-03f7faa0eabe.jpg"
     },
     "TMC0013": {
       "id": "TMC0013",
       "name": "Krang, the All-Powerful",
+      "flavorName": null,
       "manaCost": "{4}{U}",
+      "manaValue": 5,
       "type": "Legendary Artifact Creature — Utrom Robot",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [],
+      "oracleText": "If a player drawing a card causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.\nWhenever a player draws their second card each turn, put a +1/+1 counter on Krang.",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/8/08a0ca58-e29e-477e-9377-f8b00e4b28a0.jpg"
     },
     "TMC0014": {
       "id": "TMC0014",
       "name": "Ray Fillet, Wave Warrior",
+      "flavorName": null,
       "manaCost": "{2}{U}",
+      "manaValue": 3,
       "type": "Legendary Creature — Fish Mutant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [
+        "Evolve",
+        "Flying"
+      ],
+      "oracleText": "Flying\nEvolve (Whenever a creature you control enters, if that creature has greater power or toughness than this creature, put a +1/+1 counter on this creature.)\nWhenever a creature you control with a counter on it deals combat damage to a player, draw a card.",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/9/796c1b1c-c701-4c7e-922b-0964f04e03a6.jpg"
     },
     "TMC0015": {
       "id": "TMC0015",
       "name": "Bebop, Skull & Crossbones",
+      "flavorName": null,
       "manaCost": "{1}{B}",
+      "manaValue": 2,
       "type": "Legendary Creature — Boar Mutant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [
+        "Deathtouch",
+        "Partner",
+        "Partner with"
+      ],
+      "oracleText": "Partner with Rocksteady, Mutant Marauder (When this creature enters, target player may put Rocksteady into their hand from their library, then shuffle.)\nDeathtouch\nWhenever Bebop deals combat damage to a player, you may draw X cards, where X is the number of counters on Bebop. If you do, you lose X life.",
       "scryfallImage": "https://cards.scryfall.io/large/front/a/f/af2a1494-9c0d-4590-999b-2c52725dc5d0.jpg"
     },
     "TMC0016": {
       "id": "TMC0016",
       "name": "Dimension X Pizzasaur",
+      "flavorName": null,
       "manaCost": "{3}{B}",
+      "manaValue": 4,
       "type": "Artifact Creature — Food Alien Mutant",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [],
+      "oracleText": "When this creature enters, put two +1/+1 counters on target creature. When you do, destroy up to one target creature with mana value less than or equal to the number of counters among permanents you control.\n{2}, {T}, Sacrifice this creature: You gain 3 life and each opponent loses 3 life.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fe4ab58f-3fb5-45fa-8ea1-794efa6f7da9.jpg"
     },
     "TMC0017": {
       "id": "TMC0017",
       "name": "Foot Chopper",
+      "flavorName": null,
       "manaCost": "{1}{B}",
+      "manaValue": 2,
       "type": "Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "When this Equipment enters, create a 1/1 black Ninja creature token, then attach this Equipment to it.\nEquipped creature has flying.\nWhenever equipped creature deals combat damage to a player, you may sacrifice it. If you do, draw cards equal to its power.\nEquip {2}",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/4/f43fa5c7-51e6-4824-95f8-837ccc77a6ce.jpg"
     },
     "TMC0018": {
       "id": "TMC0018",
       "name": "Game Over",
+      "flavorName": null,
       "manaCost": "{3}{B}{B}",
+      "manaValue": 5,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [],
+      "oracleText": "This spell costs {2} less to cast if a player's life total is less than or equal to half their starting life total.\nDestroy all creatures.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/1/f1eb50a6-07e2-41de-b948-8075bba197ee.jpg"
     },
     "TMC0019": {
       "id": "TMC0019",
       "name": "Rat King, Pale Piper",
+      "flavorName": null,
       "manaCost": "{3}{B}",
+      "manaValue": 4,
       "type": "Legendary Creature — Rat Avatar",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [
+        "Menace"
+      ],
+      "oracleText": "Menace\nWhenever Rat King or another nontoken creature you control leaves the battlefield, create a 1/1 black Rat creature token.\n{2}, Sacrifice a token: Draw a card.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/b/9b215ce4-a085-4627-99b1-f4f1344ad41b.jpg"
     },
     "TMC0020": {
       "id": "TMC0020",
       "name": "Shredder, Shadow Master",
+      "flavorName": null,
       "manaCost": "{3}{B}{B}",
+      "manaValue": 5,
       "type": "Legendary Creature — Human Ninja",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [],
+      "oracleText": "Whenever Shredder attacks a player, for each other opponent, create a token that's a copy of Shredder tapped and attacking that player, except it isn't legendary. Sacrifice those tokens at end of combat.\nWhenever Shredder deals combat damage to a player, that player loses half their life, rounded up.",
       "scryfallImage": "https://cards.scryfall.io/large/front/d/d/ddf4d3c9-bef9-4796-91ef-3d5beebae571.jpg"
     },
     "TMC0021": {
       "id": "TMC0021",
       "name": "Swift Demise",
+      "flavorName": null,
       "manaCost": "{2}{B}",
+      "manaValue": 3,
       "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [],
+      "oracleText": "Swift Demise deals 1 damage to target creature. Then destroy each creature you don't control that was dealt damage this turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/4/4/442feb65-9c0f-4962-8518-78e6d314c916.jpg"
     },
     "TMC0022": {
       "id": "TMC0022",
       "name": "Casey Jones, Back Alley Brute",
+      "flavorName": null,
       "manaCost": "{3}{R}",
+      "manaValue": 4,
       "type": "Legendary Creature — Human Berserker",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [
+        "Menace"
+      ],
+      "oracleText": "Menace\nWhenever Casey Jones attacks, put a +1/+1 counter on target attacking creature.\nWhenever you put one or more +1/+1 counters on a creature you control, Casey Jones deals that much damage to target opponent.",
       "scryfallImage": "https://cards.scryfall.io/large/front/4/1/416d888d-2699-49bd-830b-bf5bda25c91f.jpg"
     },
     "TMC0023": {
       "id": "TMC0023",
       "name": "Electric Seaweed",
+      "flavorName": null,
       "manaCost": "{2}{R}{R}",
+      "manaValue": 4,
       "type": "Creature — Plant Wall",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [
+        "Defender",
+        "Haste"
+      ],
+      "oracleText": "Defender, haste\nWhen this creature enters, until end of turn, whenever another creature dies, this creature deals 1 damage to each non-Wall creature.\n{T}: This creature deals 1 damage to any target.",
       "scryfallImage": "https://cards.scryfall.io/large/front/1/e/1ead9586-2b40-498e-90d3-c8a3aa81ef92.jpg"
     },
     "TMC0024": {
       "id": "TMC0024",
       "name": "Fast Forward",
+      "flavorName": null,
       "manaCost": "{4}{R}",
+      "manaValue": 5,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [
+        "Goad"
+      ],
+      "oracleText": "This spell costs {1} less to cast for each opponent you attacked this turn.\nGoad all creatures your opponents control. (Until your next turn, those creatures attack each combat if able and attack a player other than you if able.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fe07512e-46c1-4f45-a06f-5875acaf8928.jpg"
     },
     "TMC0025": {
       "id": "TMC0025",
       "name": "Shellshock",
+      "flavorName": null,
       "manaCost": "{X}{R}",
+      "manaValue": 1,
       "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [],
+      "oracleText": "For each opponent, choose up to one target creature that player controls. Shellshock deals X damage to each of those creatures. You create a Mutagen token for each creature dealt damage this way. (They're artifacts with \"{1}, {T}, Sacrifice this token: Put a +1/+1 counter on target creature. Activate only as a sorcery.\")",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/d/7d180bb8-6a33-4c55-b4c0-2abbf6595d7b.jpg"
     },
     "TMC0026": {
       "id": "TMC0026",
       "name": "Special Move",
+      "flavorName": null,
       "manaCost": "{2}{R}",
+      "manaValue": 3,
       "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [
+        "Dash Attack",
+        "Foot Toss",
+        "Jump Kick"
+      ],
+      "oracleText": "Choose two —\n• Jump Kick — Destroy target artifact.\n• Dash Attack — Put two +1/+1 counters on target attacking or blocking creature you control.\n• Foot Toss — Target creature you control deals damage equal to its power to any other target. Then sacrifice it.",
       "scryfallImage": "https://cards.scryfall.io/large/front/6/0/600e2c3f-dfbd-4d5c-813a-47ae2d75ac12.jpg"
     },
     "TMC0027": {
       "id": "TMC0027",
       "name": "Tempestra, Dame of Games",
+      "flavorName": null,
       "manaCost": "{1}{R}",
+      "manaValue": 2,
       "type": "Legendary Creature — Elemental Illusion",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [],
+      "oracleText": "{2}{R}, {T}, Sacrifice an artifact: Create a token that's a copy of another target creature you control, except it isn't legendary. It gains haste. Sacrifice it at the beginning of the next end step.",
       "scryfallImage": "https://cards.scryfall.io/large/front/4/c/4ccb74c9-046a-4d6b-b8c2-641e2a238d52.jpg"
     },
     "TMC0028": {
       "id": "TMC0028",
       "name": "Tokka & Rahzar, Unsupervised",
+      "flavorName": null,
       "manaCost": "{2}{R}",
+      "manaValue": 3,
       "type": "Legendary Creature — Turtle Wolf Mutant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [
+        "First strike",
+        "Treasure"
+      ],
+      "oracleText": "First strike\nWhenever another nontoken creature you control leaves the battlefield, put a +1/+1 counter on Tokka & Rahzar and create a Treasure token. This ability triggers only once each turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/8/b/8bc5a0ac-5979-43ce-8a65-98c5f09f4aa6.jpg"
     },
     "TMC0029": {
       "id": "TMC0029",
       "name": "High Score",
+      "flavorName": null,
       "manaCost": "{2}{G}",
+      "manaValue": 3,
       "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [],
+      "oracleText": "If one or more +1/+1 counters would be put on a creature you control, that many plus one +1/+1 counters are put on it instead.\nAt the beginning of your end step, draw a card if you control a creature with the greatest power among creatures on the battlefield.",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/9/b9077ef5-d19a-4106-950b-bb49b3b37510.jpg"
     },
     "TMC0030": {
       "id": "TMC0030",
       "name": "Leatherhead, Iron Gator",
+      "flavorName": null,
       "manaCost": "{5}{G}{G}",
+      "manaValue": 7,
       "type": "Legendary Creature — Crocodile Mutant Rogue",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Haste",
+        "Trample"
+      ],
+      "oracleText": "Trample, haste\nWhenever Leatherhead attacks, put two +1/+1 counters on each creature you control.",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/0/c0cacd61-bdce-46c6-ac7f-b084987d9aec.jpg"
     },
     "TMC0031": {
       "id": "TMC0031",
       "name": "Level Up",
+      "flavorName": null,
       "manaCost": "{1}{G}",
+      "manaValue": 2,
       "type": "Enchantment — Aura",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Double",
+        "Enchant"
+      ],
+      "oracleText": "Enchant creature\nWhen this Aura enters, put a +1/+1 counter on enchanted creature.\nEnchanted creature has \"Whenever this creature attacks, double the number of +1/+1 counters on it. Then if it has power 10 or greater, draw a card.\"",
       "scryfallImage": "https://cards.scryfall.io/large/front/d/4/d4398907-17d2-4fad-bfa9-56925fb75834.jpg"
     },
     "TMC0032": {
       "id": "TMC0032",
       "name": "Ninja Pizza",
+      "flavorName": null,
       "manaCost": "{2}{G}",
+      "manaValue": 3,
       "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Food"
+      ],
+      "oracleText": "Foods you control have \"{T}, Sacrifice this artifact: Add one mana of any color.\"\nAt the beginning of your second main phase, create a Food token. (It's an artifact with \"{2}, {T}, Sacrifice this token: You gain 3 life.\")",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/4/74c24ff9-d3d2-4ffb-bf8b-dba803481a99.jpg"
     },
     "TMC0033": {
       "id": "TMC0033",
       "name": "Rocksteady, Mutant Marauder",
+      "flavorName": null,
       "manaCost": "{2}{G}",
+      "manaValue": 3,
       "type": "Legendary Creature — Rhino Mutant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Partner",
+        "Partner with",
+        "Trample"
+      ],
+      "oracleText": "Partner with Bebop, Skull & Crossbones (When this creature enters, target player may put Bebop into their hand from their library, then shuffle.)\nTrample\nWhenever another nontoken creature you control enters, put a +1/+1 counter on target creature.",
       "scryfallImage": "https://cards.scryfall.io/large/front/a/e/ae25d91f-5489-4cd8-8634-42bcd32d4cf1.jpg"
     },
     "TMC0034": {
       "id": "TMC0034",
       "name": "Super Combo",
+      "flavorName": null,
       "manaCost": "{1}{G}",
+      "manaValue": 2,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Replicate"
+      ],
+      "oracleText": "Replicate {2} (When you cast this spell, copy it for each time you paid its replicate cost. You may choose new targets for the copies.)\nTarget creature you control deals damage equal to its power to target creature an opponent controls.",
       "scryfallImage": "https://cards.scryfall.io/large/front/5/2/52bed0d4-3bcf-4770-b9c9-2a1d0666d220.jpg"
     },
     "TMC0035": {
       "id": "TMC0035",
       "name": "Double Jump // Flying Kick",
+      "flavorName": null,
       "manaCost": "{1}{U}",
+      "manaValue": 4,
       "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R",
         "U"
       ],
+      "keywords": [
+        "Fuse"
+      ],
+      "oracleText": "Put a flying counter on target creature you control. Until end of turn, it has base power and toughness 5/5.\nFuse (You may cast one or both halves of this card from your hand.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/0/c0b94a92-48d5-4d08-a8fa-6f3a992db941.jpg"
     },
     "TMC0036": {
       "id": "TMC0036",
       "name": "Arcade Cabinet",
+      "flavorName": null,
       "manaCost": "{3}",
+      "manaValue": 3,
       "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [
+        "Double"
+      ],
+      "oracleText": "When this artifact enters, put a +1/+1 counter on each of up to four target creatures.\n{2}, {T}, Sacrifice a token: Double the number of each kind of counter on target creature.",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b2fd1df8-cc67-4209-af9d-5cf18c68cca9.jpg"
     },
     "TMC0037": {
       "id": "TMC0037",
       "name": "Big Mother Mouser",
+      "flavorName": null,
       "manaCost": "{4}",
+      "manaValue": 4,
       "type": "Artifact Creature — Robot",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [
+        "Double"
+      ],
+      "oracleText": "This creature enters with two +1/+1 counters on it.\nWhenever this creature attacks, double the number of +1/+1 counters on it.\nWhen this creature dies, create a number of 1/1 colorless Robot artifact creature tokens equal to the number of +1/+1 counters on this creature.",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c9ae6898-6b5a-43bd-8c84-4d8add285f7d.jpg"
     },
     "TMC0038": {
       "id": "TMC0038",
       "name": "Coin of Mastery",
+      "flavorName": null,
       "manaCost": "{4}",
+      "manaValue": 4,
       "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [
+        "Treasure"
+      ],
+      "oracleText": "Each creature you control enters with an additional +1/+1 counter on it for each mana from an artifact source spent to cast it.\n{T}: Create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/a/ca053574-2ac9-4814-955d-87a97e0aca7e.jpg"
     },
     "TMC0039": {
       "id": "TMC0039",
       "name": "Exploding Barrel",
+      "flavorName": null,
       "manaCost": "{3}",
+      "manaValue": 3,
       "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add one mana of any color. Put a pressure counter on this artifact.\n{8}, {T}, Sacrifice this artifact: It deals 20 damage to target creature. This ability costs {1} less to activate for each pressure counter on this artifact. Activate only as a sorcery.",
       "scryfallImage": "https://cards.scryfall.io/large/front/d/e/dee26c1c-f890-46ca-81bb-2bd63fa691c9.jpg"
     },
     "TMC0040": {
       "id": "TMC0040",
       "name": "Mole Module",
+      "flavorName": null,
       "manaCost": "{5}",
+      "manaValue": 5,
       "type": "Artifact — Vehicle",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [
+        "Crew",
+        "Menace",
+        "Mill"
+      ],
+      "oracleText": "Menace\nWhenever this Vehicle deals combat damage to a player, mill four cards. You may put a permanent card from among them onto the battlefield.\nCrew 2",
       "scryfallImage": "https://cards.scryfall.io/large/front/2/4/248757d9-f590-4f90-98a5-3df947b2bff6.jpg"
     },
     "TMC0041": {
       "id": "TMC0041",
       "name": "Roadkill Rodney",
+      "flavorName": null,
       "manaCost": "{2}",
+      "manaValue": 2,
       "type": "Artifact Creature — Robot",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [
+        "Deathtouch",
+        "Squad"
+      ],
+      "oracleText": "Squad {3} (As an additional cost to cast this spell, you may pay {3} any number of times. When this creature enters, create that many tokens that are copies of it.)\nDeathtouch\nWhenever this creature deals combat damage to a player, create a Mutagen token.",
       "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3fc23e7a-5059-4c8d-85bd-224f4c1bfc1c.jpg"
     },
     "TMC0042": {
       "id": "TMC0042",
       "name": "Big Apple, 3 a.m.",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "This land enters tapped. As it enters, choose a color.\n{T}: Add one mana of the chosen color.\n{5}, {T}: Create a 1/1 black Rat creature token for each opponent you have.",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/9/b9cc16f9-fea3-4527-9b81-3c84ce9c5e01.jpg"
     },
     "TMC0043": {
       "id": "TMC0043",
       "name": "Hidden Hideout",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "This land enters tapped.\n{T}: Add one mana of any color in your commander's color identity.\n{2}, {T}: Target creature you control with a counter on it gains lifelink until end of turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/3/f356522c-018d-43c7-988a-9ef9829ae75c.jpg"
     },
     "TMC0044": {
       "id": "TMC0044",
       "name": "Together Forever",
+      "flavorName": null,
       "manaCost": "{W}{W}",
+      "manaValue": 2,
       "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "W"
       ],
+      "keywords": [
+        "Support"
+      ],
+      "oracleText": "When this enchantment enters, support 2. (Put a +1/+1 counter on each of up to two target creatures.)\n{1}: Choose target creature with a counter on it. When that creature dies this turn, return that card to its owner's hand.",
       "scryfallImage": "https://cards.scryfall.io/large/front/1/b/1b19f82a-9724-41b1-934d-a8ec1493587b.jpg"
     },
     "TMC0045": {
       "id": "TMC0045",
       "name": "Vanquish the Horde",
+      "flavorName": null,
       "manaCost": "{6}{W}{W}",
+      "manaValue": 8,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "W"
       ],
+      "keywords": [],
+      "oracleText": "This spell costs {1} less to cast for each creature on the battlefield.\nDestroy all creatures.",
       "scryfallImage": "https://cards.scryfall.io/large/front/8/7/87514302-be90-4afe-9508-d9742425d1ba.jpg"
     },
     "TMC0046": {
       "id": "TMC0046",
       "name": "Wave Goodbye",
+      "flavorName": null,
       "manaCost": "{2}{U}{U}",
+      "manaValue": 4,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [],
+      "oracleText": "Return each creature without a +1/+1 counter on it to its owner's hand.",
       "scryfallImage": "https://cards.scryfall.io/large/front/8/f/8fb141d9-addd-47ad-bfc1-b5b376d4c950.jpg"
     },
     "TMC0047": {
       "id": "TMC0047",
       "name": "Blasphemous Act",
+      "flavorName": null,
       "manaCost": "{8}{R}",
+      "manaValue": 9,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [],
+      "oracleText": "This spell costs {1} less to cast for each creature on the battlefield.\nBlasphemous Act deals 13 damage to each creature.",
       "scryfallImage": "https://cards.scryfall.io/large/front/d/c/dc6c4337-7d3e-4700-9473-26185c109166.jpg"
     },
     "TMC0049": {
       "id": "TMC0049",
       "name": "Biogenic Ooze",
+      "flavorName": null,
       "manaCost": "{3}{G}{G}",
+      "manaValue": 5,
       "type": "Creature — Ooze",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [],
+      "oracleText": "When this creature enters, create a 2/2 green Ooze creature token.\nAt the beginning of your end step, put a +1/+1 counter on each Ooze you control.\n{1}{G}{G}{G}: Create a 2/2 green Ooze creature token.",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/e/0e850205-d010-49af-b68b-262360751b70.jpg"
     },
     "TMC0052": {
       "id": "TMC0052",
       "name": "Steelbane Hydra",
+      "flavorName": "Slash Clone",
       "manaCost": "{X}{G}{G}",
+      "manaValue": 2,
       "type": "Creature — Turtle Hydra",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [],
+      "oracleText": "This creature enters with X +1/+1 counters on it.\n{2}{G}, Remove a +1/+1 counter from this creature: Destroy target artifact or enchantment.",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/8/7869df96-ce77-45c0-829f-367819806356.jpg"
     },
     "TMC0053": {
       "id": "TMC0053",
       "name": "Vigor",
+      "flavorName": "Heralds of the Shredder",
       "manaCost": "{3}{G}{G}{G}",
+      "manaValue": 6,
       "type": "Creature — Elemental Incarnation",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Trample"
+      ],
+      "oracleText": "Trample\nIf damage would be dealt to another creature you control, prevent that damage. Put a +1/+1 counter on that creature for each 1 damage prevented this way.\nWhen Vigor is put into a graveyard from anywhere, shuffle it into its owner's library.",
       "scryfallImage": "https://cards.scryfall.io/large/front/6/9/6952b1c3-2a18-4ad5-8130-861fce1cb422.jpg"
     },
     "TMC0054": {
       "id": "TMC0054",
       "name": "Voracious Hydra",
+      "flavorName": "Aggro Amalgam",
       "manaCost": "{X}{G}{G}",
+      "manaValue": 2,
       "type": "Creature — Hydra",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Double",
+        "Fight",
+        "Trample"
+      ],
+      "oracleText": "Trample\nThis creature enters with X +1/+1 counters on it.\nWhen this creature enters, choose one —\n• Double the number of +1/+1 counters on this creature.\n• This creature fights target creature you don't control.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/4/f415b285-4771-43ba-9534-244e446f8f72.jpg"
     },
     "TMC0055": {
       "id": "TMC0055",
       "name": "Assassin's Trophy",
+      "flavorName": null,
       "manaCost": "{B}{G}",
+      "manaValue": 2,
       "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B",
         "G"
       ],
+      "keywords": [],
+      "oracleText": "Destroy target permanent an opponent controls. Its controller may search their library for a basic land card, put it onto the battlefield, then shuffle.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/3/932efc19-9bfd-4501-a623-ff6765a356d8.jpg"
     },
     "TMC0056": {
       "id": "TMC0056",
       "name": "Corpsejack Menace",
+      "flavorName": "Humongous Fungus",
       "manaCost": "{2}{B}{G}",
+      "manaValue": 4,
       "type": "Creature — Fungus",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B",
         "G"
       ],
+      "keywords": [],
+      "oracleText": "If one or more +1/+1 counters would be put on a creature you control, twice that many +1/+1 counters are put on it instead.",
       "scryfallImage": "https://cards.scryfall.io/large/front/8/5/85caf05a-035b-47c0-975c-dec76799ffcf.jpg"
     },
     "TMC0058": {
       "id": "TMC0058",
       "name": "Chromatic Lantern",
+      "flavorName": null,
       "manaCost": "{3}",
+      "manaValue": 3,
       "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "Lands you control have \"{T}: Add one mana of any color.\"\n{T}: Add one mana of any color.",
       "scryfallImage": "https://cards.scryfall.io/large/front/6/8/68625010-3e4e-4400-b503-bf381a7fd81b.jpg"
     },
     "TMC0061": {
       "id": "TMC0061",
       "name": "Cinder Glade",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land — Mountain Forest",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G",
         "R"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {R} or {G}.)\nThis land enters tapped unless you control two or more basic lands.",
       "scryfallImage": "https://cards.scryfall.io/large/front/4/5/45f13a94-c693-4a3b-a0bb-f18ae9fb1ca0.jpg"
     },
     "TMC0062": {
       "id": "TMC0062",
       "name": "City of Brass",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c21565d0-fc40-4d89-9b27-87c03385e0af.jpg"
     },
     "TMC0064": {
       "id": "TMC0064",
       "name": "Dragonskull Summit",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B",
         "R"
       ],
+      "keywords": [],
+      "oracleText": "This land enters tapped unless you control a Swamp or a Mountain.\n{T}: Add {B} or {R}.",
       "scryfallImage": "https://cards.scryfall.io/large/front/8/9/897976cb-a242-493e-b215-843bcdb6b44d.jpg"
     },
     "TMC0066": {
       "id": "TMC0066",
       "name": "Exotic Orchard",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add one mana of any color that a land an opponent controls could produce.",
       "scryfallImage": "https://cards.scryfall.io/large/front/a/c/ac9d97ef-a64b-43ef-8e4d-f3ebe46d9932.jpg"
     },
     "TMC0067": {
       "id": "TMC0067",
       "name": "Fabled Passage",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. Then if you control four or more lands, untap that land.",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/c/7c787c6b-b6c7-47a0-8f8d-761629f5568e.jpg"
     },
     "TMC0068": {
       "id": "TMC0068",
       "name": "Grand Coliseum",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "This land enters tapped.\n{T}: Add {C}.\n{T}: Add one mana of any color. This land deals 1 damage to you.",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/0/b07eb189-559a-4cd5-95ac-f6612fd11cf1.jpg"
     },
     "TMC0069": {
       "id": "TMC0069",
       "name": "Hinterland Harbor",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G",
         "U"
       ],
+      "keywords": [],
+      "oracleText": "This land enters tapped unless you control a Forest or an Island.\n{T}: Add {G} or {U}.",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/5/7598a728-796b-4b82-b269-217ecca44c2c.jpg"
     },
     "TMC0071": {
       "id": "TMC0071",
       "name": "Rain-Slicked Copse",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land — Forest Island",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G",
         "U"
       ],
+      "keywords": [
+        "Cycling"
+      ],
+      "oracleText": "({T}: Add {G} or {U}.)\nThis land enters tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/0/70e5e700-b215-4a55-ae96-04e9f886cad1.jpg"
     },
     "TMC0072": {
       "id": "TMC0072",
       "name": "Rootbound Crag",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G",
         "R"
       ],
+      "keywords": [],
+      "oracleText": "This land enters tapped unless you control a Mountain or a Forest.\n{T}: Add {R} or {G}.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/0/f01bb3fd-14c6-47cb-aba3-e3069da56c9f.jpg"
     },
     "TMC0073": {
       "id": "TMC0073",
       "name": "Smoldering Marsh",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land — Swamp Mountain",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B",
         "R"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {B} or {R}.)\nThis land enters tapped unless you control two or more basic lands.",
       "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a4746e54-974a-4743-ab9b-a9e49034b16d.jpg"
     },
     "TMC0074": {
       "id": "TMC0074",
       "name": "Sodden Verdure",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land — Forest Island",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G",
         "U"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {G} or {U}.)\nThis land enters tapped unless you control two or more basic lands.",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/b/0b5e219b-28fa-40e3-8afb-355ae767326d.jpg"
     },
     "TMC0075": {
       "id": "TMC0075",
       "name": "Spire Garden",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "G",
         "R"
       ],
+      "keywords": [],
+      "oracleText": "This land enters tapped unless you have two or more opponents.\n{T}: Add {R} or {G}.",
       "scryfallImage": "https://cards.scryfall.io/large/front/4/8/48444c3e-2068-4961-a9cd-9398052e5bd6.jpg"
     },
     "TMC0076": {
       "id": "TMC0076",
       "name": "Sunken Hollow",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land — Island Swamp",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B",
         "U"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {U} or {B}.)\nThis land enters tapped unless you control two or more basic lands.",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/a/7ab0a5f2-5260-403d-9522-954efc91e96d.jpg"
     },
     "TMC0080": {
       "id": "TMC0080",
       "name": "Undergrowth Stadium",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B",
         "G"
       ],
+      "keywords": [],
+      "oracleText": "This land enters tapped unless you have two or more opponents.\n{T}: Add {B} or {G}.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/2/f25aa8aa-e2f7-4634-8a96-2082e76c6503.jpg"
     },
     "TMC0081": {
       "id": "TMC0081",
       "name": "Vernal Fen",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land — Swamp Forest",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
       "colorIdentity": [
         "B",
         "G"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {B} or {G}.)\nThis land enters tapped unless you control two or more basic lands.",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/a/ba8f92ec-cd84-4958-9b31-b89598cb274d.jpg"
     },
     "TMT0019": {
       "id": "TMT0019",
       "name": "Lita, Little Orphan Amphibian",
+      "flavorName": null,
       "manaCost": "{1}{W}",
+      "manaValue": 2,
       "type": "Legendary Creature — Mutant Ninja Turtle",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [
         "W"
       ],
+      "keywords": [
+        "Alliance",
+        "Food",
+        "Scry"
+      ],
+      "oracleText": "Alliance — Whenever another creature you control enters, choose one that hasn't been chosen this turn.\n• Put a +1/+1 counter on Lita.\n• Create a Food token. (It's an artifact with \"{2}, {T}, Sacrifice this token: You gain 3 life.\")\n• Scry 1.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/f/9fbaabb5-e981-4cbf-888c-46449412711f.jpg"
     },
     "TMT0123": {
       "id": "TMT0123",
       "name": "Mona Lisa, Science Geek",
+      "flavorName": null,
       "manaCost": "{2}{G}",
+      "manaValue": 3,
       "type": "Legendary Creature — Lizard Mutant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Reach"
+      ],
+      "oracleText": "Reach\n{T}: Add X mana of any one color, where X is Mona Lisa's power.",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c2164204-120c-4dff-86ac-46ca9012ccd9.jpg"
     },
     "TMT0155": {
       "id": "TMT0155",
       "name": "Lessons from Life",
+      "flavorName": null,
       "manaCost": "{2}{G}{U}",
+      "manaValue": 4,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [
         "G",
         "U"
       ],
+      "keywords": [],
+      "oracleText": "Draw three cards. You may put a land card from your hand onto the battlefield tapped.",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f886117-aff3-4db7-9cf5-7cbe94c8cd02.jpg"
     },
     "TMT0173": {
       "id": "TMT0173",
       "name": "Everything Pizza",
+      "flavorName": null,
       "manaCost": "{2}",
+      "manaValue": 2,
       "type": "Artifact — Food",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [
         "B",
         "G",
@@ -742,188 +1422,359 @@
         "U",
         "W"
       ],
+      "keywords": [],
+      "oracleText": "When this artifact enters, search your library for a basic land card, reveal it, put it into your hand, then shuffle.\n{2}{W}{U}{B}{R}{G}, {T}, Sacrifice this artifact: Target player gains 3 life and draws a card. Each of your opponents discards a card. This artifact deals 3 damage to any target. Put three +1/+1 counters on up to one target creature.",
       "scryfallImage": "https://cards.scryfall.io/large/front/d/f/df2cdaa5-9ea0-4aa5-89d3-9edf40fa2a39.jpg"
     },
     "TMT0184": {
       "id": "TMT0184",
       "name": "Escape Tunnel",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.\n{T}, Sacrifice this land: Target creature with power 2 or less can't be blocked this turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/5/d/5df90940-15ea-418c-8547-6c75d69ec6d3.jpg"
     },
     "TMT0190": {
       "id": "TMT0190",
       "name": "Turtle Lair",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a Ninja or Turtle spell.\n{3}, {T}: Target Ninja or Turtle can't be blocked this turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/c/5/c50c4580-979b-4863-86b9-16e258198972.jpg"
     },
     "TMC0048": {
       "id": "TMC0048",
       "name": "Acidic Slime",
+      "flavorName": "Marauding Mutagen",
       "manaCost": "{3}{G}{G}",
+      "manaValue": 5,
       "type": "Creature — Ooze",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [
+        "Deathtouch"
+      ],
+      "oracleText": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)\nWhen this creature enters, destroy target artifact, enchantment, or land.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/e/9e2ee84d-1d11-48a3-b79d-6a67991a2e60.jpg"
     },
     "TMC0050": {
       "id": "TMC0050",
       "name": "Cultivate",
+      "flavorName": null,
       "manaCost": "{2}{G}",
+      "manaValue": 3,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [],
+      "oracleText": "Search your library for up to two basic land cards, reveal those cards, put one onto the battlefield tapped and the other into your hand, then shuffle.",
       "scryfallImage": "https://cards.scryfall.io/large/front/4/8/4824ad7c-e533-4357-b486-9e908721db65.jpg"
     },
     "TMC0051": {
       "id": "TMC0051",
       "name": "Harmonize",
+      "flavorName": null,
       "manaCost": "{2}{G}{G}",
+      "manaValue": 4,
       "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [],
+      "oracleText": "Draw three cards.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/0/90b42c40-d6ff-4fda-a040-1594f0ef9585.jpg"
     },
     "TMC0057": {
       "id": "TMC0057",
       "name": "Arcane Signet",
+      "flavorName": null,
       "manaCost": "{2}",
+      "manaValue": 2,
       "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add one mana of any color in your commander's color identity.",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/4/049ca0ff-0ca4-44f7-b144-731cf453afa9.jpg"
     },
     "TMC0059": {
       "id": "TMC0059",
       "name": "Sol Ring",
+      "flavorName": null,
       "manaCost": "{1}",
+      "manaValue": 1,
       "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "uncommon",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add {C}{C}.",
       "scryfallImage": "https://cards.scryfall.io/large/front/1/4/14dbce79-1fcc-4cc9-bf38-7729e44a411e.jpg"
     },
     "TMC0060": {
       "id": "TMC0060",
       "name": "Ash Barrens",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [],
+      "keywords": [
+        "Basic landcycling",
+        "Cycling",
+        "Landcycling",
+        "Typecycling"
+      ],
+      "oracleText": "{T}: Add {C}.\nBasic landcycling {1} ({1}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/e/8/e8510205-4baa-4f1c-bf64-5d931e2ddf48.jpg"
     },
     "TMC0063": {
       "id": "TMC0063",
       "name": "Command Tower",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add one mana of any color in your commander's color identity.",
       "scryfallImage": "https://cards.scryfall.io/large/front/4/d/4d51a621-be31-4b74-8e0b-3958180a8bc5.jpg"
     },
     "TMC0065": {
       "id": "TMC0065",
       "name": "Evolving Wilds",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
       "scryfallImage": "https://cards.scryfall.io/large/front/a/3/a30f5555-2fbe-4c88-9e4f-1f2e81ea6cfd.jpg"
     },
     "TMC0070": {
       "id": "TMC0070",
       "name": "Path of Ancestry",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "This land enters tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1. (Look at the top card of your library. You may put that card on the bottom.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/d/4/d4c1c9ba-d930-435c-8978-f10a2adb3d4c.jpg"
     },
     "TMC0077": {
       "id": "TMC0077",
       "name": "Thriving Grove",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [],
+      "oracleText": "This land enters tapped. As it enters, choose a color other than green.\n{T}: Add {G} or one mana of the chosen color.",
       "scryfallImage": "https://cards.scryfall.io/large/front/2/6/26cb32c5-83b8-4288-ae2d-788cdc4e6445.jpg"
     },
     "TMC0078": {
       "id": "TMC0078",
       "name": "Thriving Isle",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [],
+      "oracleText": "This land enters tapped. As it enters, choose a color other than blue.\n{T}: Add {U} or one mana of the chosen color.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/0/90bf15bd-4167-4a66-8729-73af5c65692a.jpg"
     },
     "TMC0079": {
       "id": "TMC0079",
       "name": "Thriving Moor",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [],
+      "oracleText": "This land enters tapped. As it enters, choose a color other than black.\n{T}: Add {B} or one mana of the chosen color.",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/7/b7c7d0c0-ada6-4c89-b47b-977e35e67b39.jpg"
     },
     "TMC0082": {
       "id": "TMC0082",
       "name": "Vibrant Cityscape",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
       "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b5e7cdb4-7b4d-4c6c-b016-d6cd3f9a04f2.jpg"
     },
     "TMT0315": {
       "id": "TMT0315",
       "name": "Plains",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Basic Land — Plains",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "W"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {W}.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/2/d/2dfe1926-c0d5-40a2-b1aa-988524aefc31.jpg"
     },
     "TMT0316": {
       "id": "TMT0316",
       "name": "Island",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Basic Land — Island",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "U"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {U}.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/8/3/836f371b-34f5-40e8-a806-e457841e5bc7.jpg"
     },
     "TMT0317": {
       "id": "TMT0317",
       "name": "Swamp",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Basic Land — Swamp",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "B"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {B}.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e43ac31a-942e-4871-be29-426e19e52701.jpg"
     },
     "TMT0318": {
       "id": "TMT0318",
       "name": "Mountain",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Basic Land — Mountain",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "R"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {R}.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/2/021fa322-f38c-4d94-8122-5b13425106d9.jpg"
     },
     "TMT0319": {
       "id": "TMT0319",
       "name": "Forest",
+      "flavorName": null,
       "manaCost": null,
+      "manaValue": 0,
       "type": "Basic Land — Forest",
+      "types": [
+        "Land"
+      ],
+      "rarity": "common",
       "colorIdentity": [
         "G"
       ],
+      "keywords": [],
+      "oracleText": "({T}: Add {G}.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/3/b/3b84ec1e-ccce-4b8b-9302-b26f84cfa469.jpg"
     }
   }
