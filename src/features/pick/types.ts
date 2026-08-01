@@ -27,20 +27,20 @@ export interface Card {
   scryfallImage: string | null;
 
   // Written by scripts/import-mtgjson.mjs to support search, sorting and
-  // filtering. Optional only while the re-import rolls across universes —
-  // see step 1.7 in redesign-plan.md, which makes them required once every
-  // data file carries them.
+  // filtering. Present on every card in every data file — only flavorName and
+  // oracleText are ever null, and only because most cards are not reskins and a
+  // few have no rules text.
 
   /** In-universe name a bonus sheet gives a reprint, e.g. "Hero of Light". */
-  flavorName?: string | null;
+  flavorName: string | null;
   /** Converted mana cost, straight from MTGJSON rather than parsed. */
-  manaValue?: number;
+  manaValue: number;
   /** Card types only, e.g. ["Artifact", "Creature"] — no subtypes. */
-  types?: string[];
-  rarity?: string | null;
-  keywords?: string[];
+  types: string[];
+  rarity: string;
+  keywords: string[];
   /** Rules text for every face, joined — see combinedText in the import script. */
-  oracleText?: string | null;
+  oracleText: string | null;
 }
 
 export interface Precon {

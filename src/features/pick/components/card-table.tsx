@@ -10,22 +10,6 @@ import { useCardPreview } from '../hooks/use-card-preview';
 import type { Card, PickType } from '../types';
 import { ManaCost } from './mana-cost';
 
-// Mana-symbol → CMC contribution. {3} = 3, {X} = 0, {2/W} = 2 (monohybrid
-// official rule), everything else = 1.
-function manaSymbolValue(symbol: string): number {
-  if (/^\d+$/.test(symbol)) return parseInt(symbol, 10);
-  if (/^[XYZ]$/.test(symbol)) return 0;
-  const monohybrid = symbol.match(/^(\d+)\/[A-Z]$/);
-  if (monohybrid) return parseInt(monohybrid[1], 10);
-  return 1;
-}
-
-function getCmc(card: Card): number {
-  if (!card.manaCost) return 0;
-  const tokens = card.manaCost.match(/\{([^}]+)\}/g) ?? [];
-  return tokens.reduce((sum, t) => sum + manaSymbolValue(t.slice(1, -1)), 0);
-}
-
 export type SortColumn = 'votes' | 'cmc' | 'name';
 
 interface CardTableProps {
@@ -105,7 +89,7 @@ export function CardTable({
       },
       {
         id: 'cmc',
-        accessorFn: (row) => getCmc(row),
+        accessorFn: (row) => row.manaValue,
         header: 'CMC',
         size: 80,
         Cell: ({ row }) =>

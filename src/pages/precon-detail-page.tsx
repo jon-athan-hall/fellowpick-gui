@@ -28,27 +28,6 @@ interface SortState {
   direction: SortDirection;
 }
 
-// Converts a single mana symbol to its CMC contribution.
-//   {3}        → 3   (generic)
-//   {X}/{Y}/{Z}→ 0   (variable, counts as 0 until paid)
-//   {2/W}      → 2   (monohybrid — the generic side; official MTG rule)
-//   {W}/{U}/{B}/{R}/{G}/{C}/{S} → 1
-//   {W/U} or {W/P} → 1 (colored hybrid, phyrexian)
-function manaSymbolValue(symbol: string): number {
-  if (/^\d+$/.test(symbol)) return parseInt(symbol, 10);
-  if (/^[XYZ]$/.test(symbol)) return 0;
-  const monohybrid = symbol.match(/^(\d+)\/[A-Z]$/);
-  if (monohybrid) return parseInt(monohybrid[1], 10);
-  return 1;
-}
-
-// Sums the converted mana cost of a card from its `manaCost` string.
-function getCmc(card: Card): number {
-  if (!card.manaCost) return 0;
-  const tokens = card.manaCost.match(/\{([^}]+)\}/g) ?? [];
-  return tokens.reduce((sum, t) => sum + manaSymbolValue(t.slice(1, -1)), 0);
-}
-
 // Sorts a list of cards according to the active sort and a snapshot of
 // vote counts. Stable: ties resolve by name A→Z so order doesn't waver
 // across renders.
@@ -63,7 +42,7 @@ function sortCards(
     if (sort.column === 'votes') {
       cmp = (voteAnchor[a.id] ?? 0) - (voteAnchor[b.id] ?? 0);
     } else if (sort.column === 'cmc') {
-      cmp = getCmc(a) - getCmc(b);
+      cmp = a.manaValue - b.manaValue;
     } else {
       cmp = a.name.localeCompare(b.name);
     }
