@@ -1,0 +1,511 @@
+{
+  "setCode": "SPE",
+  "name": "Marvel's Spider-Man Eternal",
+  "releaseDate": "2025-09-26",
+  "totalCards": 26,
+  "cards": {
+    "SPE0001": {
+      "id": "SPE0001",
+      "name": "Amateur Hero",
+      "flavorName": null,
+      "manaCost": "{2}{W}",
+      "manaValue": 3,
+      "type": "Creature — Human Hero",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "When this creature enters, you gain 2 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/8/38d3b35d-3ae7-4f41-879f-e05146112b24.jpg"
+    },
+    "SPE0002": {
+      "id": "SPE0002",
+      "name": "Amazing Alliance",
+      "flavorName": null,
+      "manaCost": "{1}{W}{W}",
+      "manaValue": 3,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Creatures you control get +1/+1.\nWhenever you attack with one or more legendary creatures, you gain that much life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/d/ddc2386e-18a4-49f0-9c08-da870dc6f96e.jpg"
+    },
+    "SPE0003": {
+      "id": "SPE0003",
+      "name": "MJ, Rising Star",
+      "flavorName": null,
+      "manaCost": "{2}{W}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Human Performer",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Vigilance"
+      ],
+      "oracleText": "Vigilance (Attacking doesn't cause this creature to tap.)\nWhenever you gain life, put a +1/+1 counter on MJ.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/6/46734558-4af4-4773-8c13-59e110bacae9.jpg"
+    },
+    "SPE0004": {
+      "id": "SPE0004",
+      "name": "Spider-Man, Peter Parker",
+      "flavorName": null,
+      "manaCost": "{3}{W}{W}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Spider Human Hero",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "oracleText": "Flying (This creature can't be blocked except by creatures with flying or reach.)\nWhenever you gain life, put a +1/+1 counter on target creature you control. It gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/1/415bf221-215b-4c9f-b995-8d31ca95adc0.jpg"
+    },
+    "SPE0005": {
+      "id": "SPE0005",
+      "name": "Alchemax Slayer-Bots",
+      "flavorName": null,
+      "manaCost": "{2}{U}",
+      "manaValue": 3,
+      "type": "Artifact Creature — Robot Villain",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "When this creature enters, tap target creature an opponent controls and put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/c/0c28edfe-8b30-41b6-889b-c42d5eca778b.jpg"
+    },
+    "SPE0006": {
+      "id": "SPE0006",
+      "name": "Future Flight",
+      "flavorName": null,
+      "manaCost": "{2}{U}{U}",
+      "manaValue": 4,
+      "type": "Enchantment — Aura",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Enchant"
+      ],
+      "oracleText": "Enchant creature\nWhen this Aura enters, draw two cards.\nEnchanted creature gets +2/+0 and has flying. (It can't be blocked except by creatures with flying or reach.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/2/62a8b9a4-86cd-4fb3-bda6-a044a79cc6fd.jpg"
+    },
+    "SPE0007": {
+      "id": "SPE0007",
+      "name": "Lyla, Holographic Assistant",
+      "flavorName": null,
+      "manaCost": "{3}{U}",
+      "manaValue": 4,
+      "type": "Legendary Artifact Creature — Illusion Advisor",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever you draw a card, put a +1/+1 counter on target creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/6/26ea86d7-34f8-4358-8fdf-a18e53397755.jpg"
+    },
+    "SPE0008": {
+      "id": "SPE0008",
+      "name": "Spider-Man 2099, Miguel O'Hara",
+      "flavorName": null,
+      "manaCost": "{4}{U}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Spider Human Hero",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "When Spider-Man 2099 enters, return up to one target creature to its owner's hand.\nWhenever one or more creatures you control deal combat damage to a player, draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/c/eca05fe2-f203-4e7c-ae90-41f1f2ae94cb.jpg"
+    },
+    "SPE0009": {
+      "id": "SPE0009",
+      "name": "Grendel, Spawn of Knull",
+      "flavorName": null,
+      "manaCost": "{3}{B}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Symbiote Dragon Villain",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Deathtouch",
+        "Flying"
+      ],
+      "oracleText": "Flying (This creature can't be blocked except by creatures with flying or reach.)\nDeathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/f/5fa7a8dc-67b3-4f96-af6e-98bb0a052d92.jpg"
+    },
+    "SPE0010": {
+      "id": "SPE0010",
+      "name": "Lethal Protection",
+      "flavorName": null,
+      "manaCost": "{3}{B}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "Destroy target creature. Return up to one target creature card from your graveyard to your hand.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d98f0e44-f5c7-4e08-8a4a-d0280f22d132.jpg"
+    },
+    "SPE0011": {
+      "id": "SPE0011",
+      "name": "Symbiote Spawn",
+      "flavorName": null,
+      "manaCost": "{2}{B}",
+      "manaValue": 3,
+      "type": "Creature — Symbiote Villain",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "When this creature dies, each opponent loses 2 life and you gain 2 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/a/6a79e848-ca3e-48d6-8522-f564f6f3e908.jpg"
+    },
+    "SPE0012": {
+      "id": "SPE0012",
+      "name": "Venom, Eddie Brock",
+      "flavorName": null,
+      "manaCost": "{4}{B}{B}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Symbiote Villain",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Menace"
+      ],
+      "oracleText": "Menace (This creature can't be blocked except by two or more creatures.)\nWhenever another creature dies, put a +1/+1 counter on Venom. If that creature was a Villain, draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/eab647ce-fe86-450d-b5e8-ebcda631f6a1.jpg"
+    },
+    "SPE0013": {
+      "id": "SPE0013",
+      "name": "Double Trouble",
+      "flavorName": null,
+      "manaCost": "{4}{R}",
+      "manaValue": 5,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Double"
+      ],
+      "oracleText": "Double the power of each creature you control until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/9/f9a73605-3a17-4887-8395-5bb8d10714bd.jpg"
+    },
+    "SPE0014": {
+      "id": "SPE0014",
+      "name": "Ghost-Spider, Gwen Stacy",
+      "flavorName": null,
+      "manaCost": "{3}{R}{R}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Spider Human Hero",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Menace"
+      ],
+      "oracleText": "Menace (This creature can't be blocked except by two or more creatures.)\nWhenever Ghost-Spider attacks, she deals X damage to defending player, where X is the number of attacking creatures.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fa0ccd32-63c8-47a2-8de1-5845dad8e682.jpg"
+    },
+    "SPE0015": {
+      "id": "SPE0015",
+      "name": "The Mary Janes",
+      "flavorName": null,
+      "manaCost": "{3}{R}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Human Bard Performer",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Menace"
+      ],
+      "oracleText": "This spell costs {1} less to cast for each creature that attacked this turn.\nMenace (This creature can't be blocked except by two or more creatures.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/8/88ede451-65c2-4169-b7a1-34edfc4e92ce.jpg"
+    },
+    "SPE0016": {
+      "id": "SPE0016",
+      "name": "Rampaging Classmate",
+      "flavorName": null,
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Creature — Lizard Berserker",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever this creature attacks, it gets +1/+0 until end of turn for each other attacking creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/8/58bd0a52-3e71-4059-b1c5-b3b3e3e99cfd.jpg"
+    },
+    "SPE0017": {
+      "id": "SPE0017",
+      "name": "Prowler, Misguided Mentor",
+      "flavorName": null,
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Human Rogue Villain",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "Prowler can't be blocked by creatures with power 2 or less.\nWhenever Prowler deals combat damage to a player, put a +1/+1 counter on another target creature you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/6/169fbdcd-5a08-4410-b7d4-fe04ad7891cc.jpg"
+    },
+    "SPE0018": {
+      "id": "SPE0018",
+      "name": "Spider-Man, Miles Morales",
+      "flavorName": null,
+      "manaCost": "{4}{G}{G}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Spider Human Hero",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Trample",
+        "Vigilance"
+      ],
+      "oracleText": "Vigilance, trample (Attacking doesn't cause this creature to tap. He can deal excess combat damage to the player he's attacking.)\nWhenever Spider-Man enters or attacks, put a +1/+1 counter on each other creature you control. Those creatures gain trample until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/1/61c17573-437e-4ffb-811f-8390d388d5a7.jpg"
+    },
+    "SPE0019": {
+      "id": "SPE0019",
+      "name": "Twisted Spider-Clone",
+      "flavorName": null,
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Creature — Spider Human",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "When this creature enters, put a +1/+1 counter on each creature you control with a +1/+1 counter on it.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/5/a5dbd3de-4ddd-4243-904d-0cedb4545729.jpg"
+    },
+    "SPE0020": {
+      "id": "SPE0020",
+      "name": "Venom Blast",
+      "flavorName": null,
+      "manaCost": "{2}{G}{G}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "Put two +1/+1 counters on target creature you control. It deals damage equal to its power to up to one other target creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/e/4e88f2d0-d014-49cf-bb3c-fadbfc12765d.jpg"
+    },
+    "SPE0021": {
+      "id": "SPE0021",
+      "name": "Grasping Tentacles",
+      "flavorName": null,
+      "manaCost": "{1}{U}{B}",
+      "manaValue": 3,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "oracleText": "Target opponent mills eight cards. You may put an artifact card from that player's graveyard onto the battlefield under your control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/3/83e8c09e-c195-4137-a6c1-45abdcaed10e.jpg"
+    },
+    "SPE0022": {
+      "id": "SPE0022",
+      "name": "Venom, Deadly Devourer",
+      "flavorName": null,
+      "manaCost": "{2}{B}{G}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Symbiote Villain",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "keywords": [
+        "Menace",
+        "Vigilance"
+      ],
+      "oracleText": "Vigilance, menace\n{3}: Exile target creature card from a graveyard. When you do, put X +1/+1 counters on target Symbiote, where X is the exiled card's toughness.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/d/7d2cb243-08a7-47c9-9d71-7748c499ac30.jpg"
+    },
+    "SPE0023": {
+      "id": "SPE0023",
+      "name": "Green Goblin, Nemesis",
+      "flavorName": null,
+      "manaCost": "{2}{B}{R}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Goblin Human Villain",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Treasure"
+      ],
+      "oracleText": "Flying\nWhenever you discard a nonland card, put a +1/+1 counter on target Goblin you control.\nWhenever you discard a land card, create a tapped Treasure token.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b2860277-5b9e-444a-81f9-58e23355a722.jpg"
+    },
+    "SPE0024": {
+      "id": "SPE0024",
+      "name": "Doc Ock, Evil Inventor",
+      "flavorName": null,
+      "manaCost": "{5}{U}{B}",
+      "manaValue": 7,
+      "type": "Legendary Creature — Human Scientist Villain",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "At the beginning of combat on your turn, target noncreature artifact you control becomes an 8/8 Robot Villain artifact creature in addition to its other types.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/d/ad287357-9602-4090-8feb-6f658f2a47b0.jpg"
+    },
+    "SPE0025": {
+      "id": "SPE0025",
+      "name": "Sensational Spider-Man",
+      "flavorName": null,
+      "manaCost": "{1}{W}{U}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Spider Human Hero",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever Sensational Spider-Man attacks, tap target creature defending player controls and put a stun counter on it. Then you may remove up to three stun counters from among all permanents. Draw cards equal to the number of stun counters removed this way.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/a/7a938fa9-cba2-4773-9be9-db1e37aa001f.jpg"
+    },
+    "SPE0026": {
+      "id": "SPE0026",
+      "name": "Pumpkin Bombs",
+      "flavorName": null,
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "{T}, Discard two cards: Draw three cards, then put a fuse counter on this artifact. It deals damage equal to the number of fuse counters on it to target opponent. They gain control of this artifact.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/e/6e9a83b6-2881-4ba3-96d4-0fd89110837d.jpg"
+    }
+  }
+}

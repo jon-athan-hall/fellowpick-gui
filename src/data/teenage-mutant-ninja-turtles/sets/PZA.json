@@ -1,0 +1,381 @@
+{
+  "setCode": "PZA",
+  "name": "Teenage Mutant Ninja Turtles Source Material",
+  "releaseDate": "2026-03-06",
+  "totalCards": 20,
+  "cards": {
+    "PZA0001": {
+      "id": "PZA0001",
+      "name": "Path to Exile",
+      "flavorName": null,
+      "manaCost": "{W}",
+      "manaValue": 1,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/e/ae0397e7-796b-412b-afec-d22759b610db.jpg"
+    },
+    "PZA0002": {
+      "id": "PZA0002",
+      "name": "Teleportation Circle",
+      "flavorName": null,
+      "manaCost": "{3}{W}",
+      "manaValue": 4,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "At the beginning of your end step, exile up to one target artifact or creature you control, then return that card to the battlefield under its owner's control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/4/d4291f04-2f94-483f-93f6-db313ecffabf.jpg"
+    },
+    "PZA0003": {
+      "id": "PZA0003",
+      "name": "Trouble in Pairs",
+      "flavorName": null,
+      "manaCost": "{2}{W}{W}",
+      "manaValue": 4,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "If an opponent would begin an extra turn, that player skips that turn instead.\nWhenever an opponent attacks you with two or more creatures, draws their second card each turn, or casts their second spell each turn, you draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3f631a24-4d71-400c-a58d-ae91e193db2e.jpg"
+    },
+    "PZA0004": {
+      "id": "PZA0004",
+      "name": "Brainstorm",
+      "flavorName": null,
+      "manaCost": "{U}",
+      "manaValue": 1,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Draw three cards, then put two cards from your hand on top of your library in any order.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/b/8bb0a0cf-5b04-4d68-bf7a-7131ae50d06b.jpg"
+    },
+    "PZA0005": {
+      "id": "PZA0005",
+      "name": "Cytoplast Manipulator",
+      "flavorName": null,
+      "manaCost": "{2}{U}{U}",
+      "manaValue": 4,
+      "type": "Creature — Human Wizard Mutant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Graft"
+      ],
+      "oracleText": "Graft 2 (This creature enters with two +1/+1 counters on it. Whenever another creature enters, you may move a +1/+1 counter from this creature onto it.)\n{U}, {T}: Gain control of target creature with a +1/+1 counter on it for as long as this creature remains on the battlefield.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/0/402e538f-c8f9-4fb7-9a9f-f9c75c9ca97f.jpg"
+    },
+    "PZA0006": {
+      "id": "PZA0006",
+      "name": "Ashcoat of the Shadow Swarm",
+      "flavorName": "Splinter of the Shadows",
+      "manaCost": "{3}{B}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Rat Warlock",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "oracleText": "Whenever Ashcoat attacks or blocks, other Rats you control get +X/+X until end of turn, where X is the number of Rats you control.\nAt the beginning of your end step, you may mill four cards. If you do, return up to two Rat creature cards from your graveyard to your hand. (To mill a card, put the top card of your library into your graveyard.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/8/6873a1d1-b1bc-4ed6-a734-0e35fd8dbc8e.jpg"
+    },
+    "PZA0007": {
+      "id": "PZA0007",
+      "name": "Plague of Vermin",
+      "flavorName": null,
+      "manaCost": "{6}{B}",
+      "manaValue": 7,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "Starting with you, each player may pay any amount of life. Repeat this process until no one pays life. Each player creates a 1/1 black Rat creature token for each 1 life they paid this way.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/c/6c6aca69-1624-420f-b83e-290a2c38291e.jpg"
+    },
+    "PZA0008": {
+      "id": "PZA0008",
+      "name": "All Will Be One",
+      "flavorName": null,
+      "manaCost": "{3}{R}{R}",
+      "manaValue": 5,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever you put one or more counters on a permanent or player, this enchantment deals that much damage to target opponent, creature an opponent controls, or planeswalker an opponent controls.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/d/7d9681a6-1c22-41ee-8437-22baafbf8e4b.jpg"
+    },
+    "PZA0009": {
+      "id": "PZA0009",
+      "name": "Silverclad Ferocidons",
+      "flavorName": null,
+      "manaCost": "{5}{R}{R}",
+      "manaValue": 7,
+      "type": "Creature — Dinosaur",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Enrage"
+      ],
+      "oracleText": "Enrage — Whenever this creature is dealt damage, each opponent sacrifices a permanent of their choice.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/0/d042bcf5-476e-4994-bec5-831b6b84d74e.jpg"
+    },
+    "PZA0010": {
+      "id": "PZA0010",
+      "name": "Underworld Breach",
+      "flavorName": null,
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Each nonland card in your graveyard has escape. The escape cost is equal to the card's mana cost plus exile three other cards from your graveyard. (You may cast cards from your graveyard for their escape cost.)\nAt the beginning of the end step, sacrifice this enchantment.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/9/49c8b2ed-95bf-4a85-a0d7-6d7c01fc086d.jpg"
+    },
+    "PZA0011": {
+      "id": "PZA0011",
+      "name": "Doubling Season",
+      "flavorName": null,
+      "manaCost": "{4}{G}",
+      "manaValue": 5,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "If an effect would create one or more tokens under your control, it creates twice that many of those tokens instead.\nIf an effect would put one or more counters on a permanent you control, it puts twice that many of those counters on that permanent instead.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8c2d6fde-5c3b-48c3-828c-832f00570824.jpg"
+    },
+    "PZA0012": {
+      "id": "PZA0012",
+      "name": "Rhythm of the Wild",
+      "flavorName": null,
+      "manaCost": "{1}{R}{G}",
+      "manaValue": 3,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Creature spells you control can't be countered.\nNontoken creatures you control have riot. (They enter with your choice of a +1/+1 counter or haste.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/7/e7843a8a-a8d8-4236-a05d-287fad0a74b1.jpg"
+    },
+    "PZA0013": {
+      "id": "PZA0013",
+      "name": "Waves of Aggression",
+      "flavorName": null,
+      "manaCost": "{3}{R/W}{R/W}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Retrace"
+      ],
+      "oracleText": "Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.\nRetrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/3/83a8bff9-cf74-40d6-87c5-0c2a33cdaed0.jpg"
+    },
+    "PZA0014": {
+      "id": "PZA0014",
+      "name": "Arcbound Ravager",
+      "flavorName": null,
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact Creature — Beast",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Modular"
+      ],
+      "oracleText": "Sacrifice an artifact: Put a +1/+1 counter on this creature.\nModular 1 (This creature enters with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/0/108033ab-e9d0-4510-9075-f28c3044629c.jpg"
+    },
+    "PZA0015": {
+      "id": "PZA0015",
+      "name": "Conqueror's Flail",
+      "flavorName": "Ronin's Arsenal",
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature gets +1/+1 for each color among permanents you control.\nAs long as this Equipment is attached to a creature, your opponents can't cast spells during your turn.\nEquip {2}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/4/24db0362-fb1a-4ab4-9922-c4db4b0ca6e1.jpg"
+    },
+    "PZA0016": {
+      "id": "PZA0016",
+      "name": "Metallic Mimic",
+      "flavorName": null,
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact Creature — Shapeshifter",
+      "types": [
+        "Artifact",
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "As this creature enters, choose a creature type.\nThis creature is the chosen type in addition to its other types.\nEach other creature you control of the chosen type enters with an additional +1/+1 counter on it.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/443b0960-a490-4287-80d9-2bfa0bdbea51.jpg"
+    },
+    "PZA0017": {
+      "id": "PZA0017",
+      "name": "Shadowspear",
+      "flavorName": "Donnie's Bō",
+      "manaCost": "{1}",
+      "manaValue": 1,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature gets +1/+1 and has trample and lifelink.\n{1}: Permanents your opponents control lose hexproof and indestructible until end of turn.\nEquip {2}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/0/90de17d0-1783-48f3-8aef-0b85df6da730.jpg"
+    },
+    "PZA0018": {
+      "id": "PZA0018",
+      "name": "Sword of Sinew and Steel",
+      "flavorName": "Leo's Katana",
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature gets +2/+2 and has protection from black and from red.\nWhenever equipped creature deals combat damage to a player, destroy up to one target planeswalker and up to one target artifact.\nEquip {2}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/f/af0d7cb4-aaac-4dbd-9daa-622342e33388.jpg"
+    },
+    "PZA0019": {
+      "id": "PZA0019",
+      "name": "Umezawa's Jitte",
+      "flavorName": "Raph's Jitte",
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Whenever equipped creature deals combat damage, put two charge counters on Umezawa's Jitte.\nRemove a charge counter from Umezawa's Jitte: Choose one —\n• Equipped creature gets +2/+2 until end of turn.\n• Target creature gets -1/-1 until end of turn.\n• You gain 2 life.\nEquip {2}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/d/4ddaccfb-52e5-4448-8273-797cff31db2b.jpg"
+    },
+    "PZA0020": {
+      "id": "PZA0020",
+      "name": "Undercity Sewers",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land — Island Swamp",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "oracleText": "({T}: Add {U} or {B}.)\nThis land enters tapped.\nWhen this land enters, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/9/19545db3-8be5-41e5-8d13-dec4f96fe624.jpg"
+    }
+  }
+}
