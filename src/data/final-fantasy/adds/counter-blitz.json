@@ -538,8 +538,8 @@
   {
     "id": "FIC0264",
     "name": "Hypnotic Sprite // Mesmeric Glare",
-    "manaCost": "{2}{U}",
-    "type": "Instant — Adventure",
+    "manaCost": "{U}{U}",
+    "type": "Creature — Faerie",
     "colorIdentity": [
       "U"
     ],
@@ -1170,8 +1170,8 @@
   {
     "id": "FIN0013",
     "name": "Crystal Fragments // Summon: Alexander",
-    "manaCost": null,
-    "type": "Enchantment Creature — Saga Construct",
+    "manaCost": "{W}",
+    "type": "Artifact — Equipment",
     "colorIdentity": [
       "W"
     ],
@@ -1200,8 +1200,8 @@
   {
     "id": "FIN0016",
     "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Dragon",
+    "manaCost": "{3}{W}",
+    "type": "Legendary Creature — Human Noble Knight",
     "colorIdentity": [
       "W"
     ],
@@ -1350,8 +1350,8 @@
   {
     "id": "FIN0031",
     "name": "Sidequest: Catch a Fish // Cooking Campsite",
-    "manaCost": null,
-    "type": "Land",
+    "manaCost": "{2}{W}",
+    "type": "Enchantment",
     "colorIdentity": [
       "W"
     ],
@@ -1430,8 +1430,8 @@
   {
     "id": "FIN0039",
     "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
-    "manaCost": null,
-    "type": "Legendary Creature — God",
+    "manaCost": "{1}{W}{W}",
+    "type": "Legendary Creature — Elder Wizard",
     "colorIdentity": [
       "W"
     ],
@@ -1620,8 +1620,8 @@
   {
     "id": "FIN0058",
     "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Elemental",
+    "manaCost": "{2}{U}",
+    "type": "Legendary Creature — Human Noble Warrior",
     "colorIdentity": [
       "U"
     ],
@@ -1770,8 +1770,8 @@
   {
     "id": "FIN0073",
     "name": "Sidequest: Card Collection // Magicked Card",
-    "manaCost": null,
-    "type": "Artifact — Vehicle",
+    "manaCost": "{3}{U}",
+    "type": "Enchantment",
     "colorIdentity": [
       "U"
     ],
@@ -2050,8 +2050,8 @@
   {
     "id": "FIN0185",
     "name": "Esper Origins // Summon: Esper Maduin",
-    "manaCost": null,
-    "type": "Enchantment Creature — Saga Elemental",
+    "manaCost": "{1}{G}",
+    "type": "Sorcery",
     "colorIdentity": [
       "G"
     ],
@@ -2210,8 +2210,8 @@
   {
     "id": "FIN0201",
     "name": "Sidequest: Raise a Chocobo // Black Chocobo",
-    "manaCost": null,
-    "type": "Creature — Bird",
+    "manaCost": "{1}{G}",
+    "type": "Enchantment",
     "colorIdentity": [
       "G"
     ],
@@ -2399,8 +2399,8 @@
   {
     "id": "FIN0240",
     "name": "Serah Farron // Crystallized Serah",
-    "manaCost": null,
-    "type": "Legendary Artifact",
+    "manaCost": "{1}{G}{W}",
+    "type": "Legendary Creature — Human Citizen",
     "colorIdentity": [
       "G",
       "W"
@@ -2593,7 +2593,7 @@
     "id": "FIN0272",
     "name": "Balamb Garden, SeeD Academy // Balamb Garden, Airborne",
     "manaCost": null,
-    "type": "Legendary Artifact — Vehicle",
+    "type": "Land — Town",
     "colorIdentity": [
       "G",
       "U"
@@ -2654,8 +2654,8 @@
   {
     "id": "FIN0283",
     "name": "Ishgard, the Holy See // Faith & Grief",
-    "manaCost": "{3}{W}{W}",
-    "type": "Sorcery — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "W"
     ],
@@ -2664,8 +2664,8 @@
   {
     "id": "FIN0284",
     "name": "Jidoor, Aristocratic Capital // Overture",
-    "manaCost": "{4}{U}{U}",
-    "type": "Sorcery — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "U"
     ],
@@ -2704,8 +2704,8 @@
   {
     "id": "FIN0293",
     "name": "Zanarkand, Ancient Metropolis // Lasting Fayth",
-    "manaCost": "{4}{G}{G}",
-    "type": "Sorcery — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "G"
     ],

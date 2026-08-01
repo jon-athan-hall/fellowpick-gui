@@ -2,7 +2,7 @@
   "setCode": "FIC",
   "name": "Final Fantasy Commander",
   "releaseDate": "2025-06-13",
-  "totalCards": 490,
+  "totalCards": 486,
   "cards": {
     "FIC0001": {
       "id": "FIC0001",
@@ -850,8 +850,8 @@
     "FIC0083": {
       "id": "FIC0083",
       "name": "Hildibrand Manderville // Gentleman's Rise",
-      "manaCost": "{2}{B}",
-      "type": "Instant — Adventure",
+      "manaCost": "{1}{W}",
+      "type": "Legendary Creature — Human Detective",
       "colorIdentity": [
         "B",
         "W"
@@ -1768,8 +1768,8 @@
     "FIC0173": {
       "id": "FIC0173",
       "name": "Hildibrand Manderville // Gentleman's Rise",
-      "manaCost": "{2}{B}",
-      "type": "Instant — Adventure",
+      "manaCost": "{1}{W}",
+      "type": "Legendary Creature — Human Detective",
       "colorIdentity": [
         "B",
         "W"
@@ -2748,8 +2748,8 @@
     "FIC0264": {
       "id": "FIC0264",
       "name": "Hypnotic Sprite // Mesmeric Glare",
-      "manaCost": "{2}{U}",
-      "type": "Instant — Adventure",
+      "manaCost": "{U}{U}",
+      "type": "Creature — Faerie",
       "colorIdentity": [
         "U"
       ],
@@ -2899,7 +2899,7 @@
       "id": "FIC0279",
       "name": "Murderous Rider // Swift End",
       "manaCost": "{1}{B}{B}",
-      "type": "Instant — Adventure",
+      "type": "Creature — Zombie Knight",
       "colorIdentity": [
         "B"
       ],

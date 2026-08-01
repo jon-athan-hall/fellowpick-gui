@@ -68,6 +68,31 @@ function makeCardId(setCode, number) {
   return `${setCode}${padded}`;
 }
 
+// Groups raw MTGJSON cards by the id makeCardId generates for them, keeping one
+// card per id.
+//
+// Ids are lossy on purpose — the collector number is stripped to digits, so a
+// card's alternate printings collapse onto one id, which is what lets the ADD
+// list offer a card once. But MTGJSON also emits each face of a double-faced
+// card as its own entry sharing one collector number, and meld results carry the
+// front card's number with a `b` suffix. Those land on the same id as a real,
+// different card, and plain last-write-wins let them overwrite it:
+//
+//   FIN0013  Crystal Fragments ({W} Equipment)  lost to its own back face
+//   FIN0099  Fang, Fearless l'Cie              lost to a meld result
+//
+// Keep the front face, and otherwise the first printing seen — the lowest
+// collector number, which is the base printing rather than a showcase variant.
+function collapseById(cards) {
+  const byId = new Map();
+  for (const card of cards) {
+    const id = makeCardId(card.setCode, card.number);
+    const existing = byId.get(id);
+    if (!existing || (existing.side === 'b' && card.side !== 'b')) byId.set(id, card);
+  }
+  return byId;
+}
+
 function buildScryfallImageUrl(scryfallId) {
   if (!scryfallId) return null;
   const c1 = scryfallId[0];
@@ -103,9 +128,10 @@ async function importPrecons(universeId, config) {
     const json = await fetchJson(url);
     const data = json.data;
 
-    const commanders = (data.commander || []).map(transformCard);
-    const mainBoardCards = (data.mainBoard || []).map(transformCard);
-    const mainBoard = Object.fromEntries(mainBoardCards.map(c => [c.id, c]));
+    const commanders = [...collapseById(data.commander || []).values()].map(transformCard);
+    const mainBoard = Object.fromEntries(
+      [...collapseById(data.mainBoard || [])].map(([id, card]) => [id, transformCard(card)])
+    );
 
     // Commander color identity is the union of all commander color identities.
     const colorIdentity = [...new Set(commanders.flatMap(c => c.colorIdentity))];
@@ -122,7 +148,9 @@ async function importPrecons(universeId, config) {
 
     const outPath = join(preconsDir, `${precon.id}.json`);
     writeFileSync(outPath, JSON.stringify(output, null, 2));
-    console.log(`  Wrote ${outPath} (${commanders.length} commanders, ${mainBoardCards.length} main board cards)`);
+    console.log(
+      `  Wrote ${outPath} (${commanders.length} commanders, ${Object.keys(mainBoard).length} main board cards)`
+    );
   }
 }
 
@@ -135,20 +163,24 @@ async function importSets(universeId, config) {
     const json = await fetchJson(url);
     const data = json.data;
 
-    const cardsArray = (data.cards || []).map(transformCard);
-    const cards = Object.fromEntries(cardsArray.map(c => [c.id, c]));
+    const collapsed = collapseById(data.cards || []);
+    const cards = Object.fromEntries(
+      [...collapsed].map(([id, card]) => [id, transformCard(card)])
+    );
 
     const output = {
       setCode: data.code,
       name: data.name,
       releaseDate: data.releaseDate,
-      totalCards: cardsArray.length,
+      // Cards written, not cards MTGJSON listed — alternate printings share an
+      // id, so the raw count overstated this by 106 for FIN.
+      totalCards: collapsed.size,
       cards,
     };
 
     const outPath = join(setsDir, `${setCode}.json`);
     writeFileSync(outPath, JSON.stringify(output, null, 2));
-    console.log(`  Wrote ${outPath} (${cardsArray.length} cards)`);
+    console.log(`  Wrote ${outPath} (${collapsed.size} cards)`);
   }
 }
 

@@ -334,8 +334,8 @@
   {
     "id": "FIC0083",
     "name": "Hildibrand Manderville // Gentleman's Rise",
-    "manaCost": "{2}{B}",
-    "type": "Instant — Adventure",
+    "manaCost": "{1}{W}",
+    "type": "Legendary Creature — Human Detective",
     "colorIdentity": [
       "B",
       "W"
@@ -713,7 +713,7 @@
     "id": "FIC0279",
     "name": "Murderous Rider // Swift End",
     "manaCost": "{1}{B}{B}",
-    "type": "Instant — Adventure",
+    "type": "Creature — Zombie Knight",
     "colorIdentity": [
       "B"
     ],
@@ -1300,8 +1300,8 @@
   {
     "id": "FIN0013",
     "name": "Crystal Fragments // Summon: Alexander",
-    "manaCost": null,
-    "type": "Enchantment Creature — Saga Construct",
+    "manaCost": "{W}",
+    "type": "Artifact — Equipment",
     "colorIdentity": [
       "W"
     ],
@@ -1330,8 +1330,8 @@
   {
     "id": "FIN0016",
     "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Dragon",
+    "manaCost": "{3}{W}",
+    "type": "Legendary Creature — Human Noble Knight",
     "colorIdentity": [
       "W"
     ],
@@ -1470,8 +1470,8 @@
   {
     "id": "FIN0031",
     "name": "Sidequest: Catch a Fish // Cooking Campsite",
-    "manaCost": null,
-    "type": "Land",
+    "manaCost": "{2}{W}",
+    "type": "Enchantment",
     "colorIdentity": [
       "W"
     ],
@@ -1550,8 +1550,8 @@
   {
     "id": "FIN0039",
     "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
-    "manaCost": null,
-    "type": "Legendary Creature — God",
+    "manaCost": "{1}{W}{W}",
+    "type": "Legendary Creature — Elder Wizard",
     "colorIdentity": [
       "W"
     ],
@@ -1660,7 +1660,7 @@
   {
     "id": "FIN0091",
     "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
-    "manaCost": null,
+    "manaCost": "{B}",
     "type": "Legendary Creature — Human Knight",
     "colorIdentity": [
       "B",
@@ -1739,6 +1739,16 @@
     "scryfallImage": "https://cards.scryfall.io/large/front/e/b/eb98cbc3-749c-44f4-974c-00be1286d69e.jpg"
   },
   {
+    "id": "FIN0099",
+    "name": "Fang, Fearless l'Cie // Ragnarok, Divine Deliverance",
+    "manaCost": "{2}{B}",
+    "type": "Legendary Creature — Human Warrior",
+    "colorIdentity": [
+      "B"
+    ],
+    "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f73a5cbb-905f-4b99-8d23-9d1b6bd47ee8.jpg"
+  },
+  {
     "id": "FIN0100",
     "name": "Fight On!",
     "manaCost": "{2}{B}",
@@ -1781,8 +1791,8 @@
   {
     "id": "FIN0104",
     "name": "Jecht, Reluctant Guardian // Braska's Final Aeon",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Nightmare",
+    "manaCost": "{3}{B}",
+    "type": "Legendary Creature — Human Warrior",
     "colorIdentity": [
       "B"
     ],
@@ -1891,8 +1901,8 @@
   {
     "id": "FIN0115",
     "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
-    "manaCost": null,
-    "type": "Legendary Creature — Angel Nightmare Avatar",
+    "manaCost": "{2}{B}",
+    "type": "Legendary Creature — Human Avatar Soldier",
     "colorIdentity": [
       "B"
     ],
@@ -1931,8 +1941,8 @@
   {
     "id": "FIN0119",
     "name": "Sidequest: Hunt the Mark // Yiazmat, Ultimate Mark",
-    "manaCost": null,
-    "type": "Legendary Creature — Dragon",
+    "manaCost": "{3}{B}{B}",
+    "type": "Enchantment",
     "colorIdentity": [
       "B"
     ],
@@ -1991,8 +2001,8 @@
   {
     "id": "FIN0125",
     "name": "Vincent Valentine // Galian Beast",
-    "manaCost": null,
-    "type": "Legendary Creature — Werewolf Beast",
+    "manaCost": "{2}{B}{B}",
+    "type": "Legendary Creature — Assassin",
     "colorIdentity": [
       "B"
     ],
@@ -2011,8 +2021,8 @@
   {
     "id": "FIN0127",
     "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
-    "manaCost": null,
-    "type": "Legendary Creature — Dragon",
+    "manaCost": "{3}{B}{B}",
+    "type": "Legendary Creature — Human Noble Warrior",
     "colorIdentity": [
       "B"
     ],
@@ -2071,8 +2081,8 @@
   {
     "id": "FIN0133",
     "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Demon",
+    "manaCost": "{4}{R}{R}",
+    "type": "Legendary Creature — Human Noble Warrior",
     "colorIdentity": [
       "R"
     ],
@@ -2311,8 +2321,8 @@
   {
     "id": "FIN0158",
     "name": "Sidequest: Play Blitzball // World Champion, Celestial Weapon",
-    "manaCost": null,
-    "type": "Legendary Artifact — Equipment",
+    "manaCost": "{2}{R}",
+    "type": "Enchantment",
     "colorIdentity": [
       "R"
     ],
@@ -2452,8 +2462,8 @@
   {
     "id": "FIN0221",
     "name": "Garland, Knight of Cornelia // Chaos, the Endless",
-    "manaCost": null,
-    "type": "Legendary Creature — Demon",
+    "manaCost": "{B}{R}",
+    "type": "Legendary Creature — Human Knight",
     "colorIdentity": [
       "B",
       "R"
@@ -2474,8 +2484,8 @@
   {
     "id": "FIN0229",
     "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Phoenix",
+    "manaCost": "{1}{R}{W}",
+    "type": "Legendary Creature — Human Noble Wizard",
     "colorIdentity": [
       "R",
       "W"
@@ -2496,13 +2506,13 @@
   {
     "id": "FIN0232",
     "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
-    "manaCost": null,
-    "type": "Legendary Creature — Avatar Wizard",
+    "manaCost": "{2}{B}{R}",
+    "type": "Legendary Creature — Human Mutant Wizard",
     "colorIdentity": [
       "B",
       "R"
     ],
-    "scryfallImage": "https://cards.scryfall.io/large/front/9/0/903192c7-f4ee-4872-aa61-3f8bdf2ab5c6.jpg"
+    "scryfallImage": "https://cards.scryfall.io/large/front/0/0/008782d2-72b0-4554-b1ce-2db99969a4d8.jpg"
   },
   {
     "id": "FIN0233",
@@ -2762,8 +2772,8 @@
   {
     "id": "FIN0283",
     "name": "Ishgard, the Holy See // Faith & Grief",
-    "manaCost": "{3}{W}{W}",
-    "type": "Sorcery — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "W"
     ],
@@ -2772,8 +2782,8 @@
   {
     "id": "FIN0285",
     "name": "Lindblum, Industrial Regency // Mage Siege",
-    "manaCost": "{2}{R}",
-    "type": "Instant — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "R"
     ],
@@ -2782,8 +2792,8 @@
   {
     "id": "FIN0286",
     "name": "Midgar, City of Mako // Reactor Raid",
-    "manaCost": "{2}{B}",
-    "type": "Sorcery — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "B"
     ],

@@ -2,7 +2,7 @@
   "setCode": "FIN",
   "name": "Final Fantasy",
   "releaseDate": "2025-06-13",
-  "totalCards": 691,
+  "totalCards": 585,
   "cards": {
     "FIN0001": {
       "id": "FIN0001",
@@ -123,8 +123,8 @@
     "FIN0013": {
       "id": "FIN0013",
       "name": "Crystal Fragments // Summon: Alexander",
-      "manaCost": null,
-      "type": "Enchantment Creature — Saga Construct",
+      "manaCost": "{W}",
+      "type": "Artifact — Equipment",
       "colorIdentity": [
         "W"
       ],
@@ -153,8 +153,8 @@
     "FIN0016": {
       "id": "FIN0016",
       "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Dragon",
+      "manaCost": "{3}{W}",
+      "type": "Legendary Creature — Human Noble Knight",
       "colorIdentity": [
         "W"
       ],
@@ -303,8 +303,8 @@
     "FIN0031": {
       "id": "FIN0031",
       "name": "Sidequest: Catch a Fish // Cooking Campsite",
-      "manaCost": null,
-      "type": "Land",
+      "manaCost": "{2}{W}",
+      "type": "Enchantment",
       "colorIdentity": [
         "W"
       ],
@@ -383,8 +383,8 @@
     "FIN0039": {
       "id": "FIN0039",
       "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
-      "manaCost": null,
-      "type": "Legendary Creature — God",
+      "manaCost": "{1}{W}{W}",
+      "type": "Legendary Creature — Elder Wizard",
       "colorIdentity": [
         "W"
       ],
@@ -573,8 +573,8 @@
     "FIN0058": {
       "id": "FIN0058",
       "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Elemental",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "U"
       ],
@@ -723,8 +723,8 @@
     "FIN0073": {
       "id": "FIN0073",
       "name": "Sidequest: Card Collection // Magicked Card",
-      "manaCost": null,
-      "type": "Artifact — Vehicle",
+      "manaCost": "{3}{U}",
+      "type": "Enchantment",
       "colorIdentity": [
         "U"
       ],
@@ -903,7 +903,7 @@
     "FIN0091": {
       "id": "FIN0091",
       "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
-      "manaCost": null,
+      "manaCost": "{B}",
       "type": "Legendary Creature — Human Knight",
       "colorIdentity": [
         "B",
@@ -983,14 +983,13 @@
     },
     "FIN0099": {
       "id": "FIN0099",
-      "name": "Ragnarok, Divine Deliverance",
-      "manaCost": null,
-      "type": "Legendary Creature — Beast Avatar",
+      "name": "Fang, Fearless l'Cie // Ragnarok, Divine Deliverance",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Warrior",
       "colorIdentity": [
-        "B",
-        "G"
+        "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/0/1/01c5bafe-c995-4cef-90fb-7ccb95858511.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f73a5cbb-905f-4b99-8d23-9d1b6bd47ee8.jpg"
     },
     "FIN0100": {
       "id": "FIN0100",
@@ -1035,8 +1034,8 @@
     "FIN0104": {
       "id": "FIN0104",
       "name": "Jecht, Reluctant Guardian // Braska's Final Aeon",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Nightmare",
+      "manaCost": "{3}{B}",
+      "type": "Legendary Creature — Human Warrior",
       "colorIdentity": [
         "B"
       ],
@@ -1145,8 +1144,8 @@
     "FIN0115": {
       "id": "FIN0115",
       "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
-      "manaCost": null,
-      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Avatar Soldier",
       "colorIdentity": [
         "B"
       ],
@@ -1185,8 +1184,8 @@
     "FIN0119": {
       "id": "FIN0119",
       "name": "Sidequest: Hunt the Mark // Yiazmat, Ultimate Mark",
-      "manaCost": null,
-      "type": "Legendary Creature — Dragon",
+      "manaCost": "{3}{B}{B}",
+      "type": "Enchantment",
       "colorIdentity": [
         "B"
       ],
@@ -1245,8 +1244,8 @@
     "FIN0125": {
       "id": "FIN0125",
       "name": "Vincent Valentine // Galian Beast",
-      "manaCost": null,
-      "type": "Legendary Creature — Werewolf Beast",
+      "manaCost": "{2}{B}{B}",
+      "type": "Legendary Creature — Assassin",
       "colorIdentity": [
         "B"
       ],
@@ -1265,8 +1264,8 @@
     "FIN0127": {
       "id": "FIN0127",
       "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
-      "manaCost": null,
-      "type": "Legendary Creature — Dragon",
+      "manaCost": "{3}{B}{B}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "B"
       ],
@@ -1325,8 +1324,8 @@
     "FIN0133": {
       "id": "FIN0133",
       "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Demon",
+      "manaCost": "{4}{R}{R}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "R"
       ],
@@ -1575,8 +1574,8 @@
     "FIN0158": {
       "id": "FIN0158",
       "name": "Sidequest: Play Blitzball // World Champion, Celestial Weapon",
-      "manaCost": null,
-      "type": "Legendary Artifact — Equipment",
+      "manaCost": "{2}{R}",
+      "type": "Enchantment",
       "colorIdentity": [
         "R"
       ],
@@ -1845,8 +1844,8 @@
     "FIN0185": {
       "id": "FIN0185",
       "name": "Esper Origins // Summon: Esper Maduin",
-      "manaCost": null,
-      "type": "Enchantment Creature — Saga Elemental",
+      "manaCost": "{1}{G}",
+      "type": "Sorcery",
       "colorIdentity": [
         "G"
       ],
@@ -2005,8 +2004,8 @@
     "FIN0201": {
       "id": "FIN0201",
       "name": "Sidequest: Raise a Chocobo // Black Chocobo",
-      "manaCost": null,
-      "type": "Creature — Bird",
+      "manaCost": "{1}{G}",
+      "type": "Enchantment",
       "colorIdentity": [
         "G"
       ],
@@ -2183,8 +2182,8 @@
     "FIN0218": {
       "id": "FIN0218",
       "name": "Emet-Selch, Unsundered // Hades, Sorcerer of Eld",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar",
+      "manaCost": "{1}{U}{B}",
+      "type": "Legendary Creature — Elder Wizard",
       "colorIdentity": [
         "B",
         "U"
@@ -2194,8 +2193,8 @@
     "FIN0219": {
       "id": "FIN0219",
       "name": "The Emperor of Palamecia // The Lord Master of Hell",
-      "manaCost": null,
-      "type": "Legendary Creature — Demon Noble Wizard",
+      "manaCost": "{U}{R}",
+      "type": "Legendary Creature — Human Noble Wizard",
       "colorIdentity": [
         "R",
         "U"
@@ -2205,8 +2204,8 @@
     "FIN0220": {
       "id": "FIN0220",
       "name": "Exdeath, Void Warlock // Neo Exdeath, Dimension's End",
-      "manaCost": null,
-      "type": "Legendary Creature — Spirit Avatar",
+      "manaCost": "{1}{B}{G}",
+      "type": "Legendary Creature — Spirit Warlock",
       "colorIdentity": [
         "B",
         "G"
@@ -2216,8 +2215,8 @@
     "FIN0221": {
       "id": "FIN0221",
       "name": "Garland, Knight of Cornelia // Chaos, the Endless",
-      "manaCost": null,
-      "type": "Legendary Creature — Demon",
+      "manaCost": "{B}{R}",
+      "type": "Legendary Creature — Human Knight",
       "colorIdentity": [
         "B",
         "R"
@@ -2304,8 +2303,8 @@
     "FIN0229": {
       "id": "FIN0229",
       "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Phoenix",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Noble Wizard",
       "colorIdentity": [
         "R",
         "W"
@@ -2326,8 +2325,8 @@
     "FIN0231": {
       "id": "FIN0231",
       "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{U}{B}{R}",
+      "type": "Legendary Creature — Human Wizard",
       "colorIdentity": [
         "B",
         "R",
@@ -2338,13 +2337,13 @@
     "FIN0232": {
       "id": "FIN0232",
       "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{B}{R}",
+      "type": "Legendary Creature — Human Mutant Wizard",
       "colorIdentity": [
         "B",
         "R"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/9/0/903192c7-f4ee-4872-aa61-3f8bdf2ab5c6.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/0/008782d2-72b0-4554-b1ce-2db99969a4d8.jpg"
     },
     "FIN0233": {
       "id": "FIN0233",
@@ -2427,8 +2426,8 @@
     "FIN0240": {
       "id": "FIN0240",
       "name": "Serah Farron // Crystallized Serah",
-      "manaCost": null,
-      "type": "Legendary Artifact",
+      "manaCost": "{1}{G}{W}",
+      "type": "Legendary Creature — Human Citizen",
       "colorIdentity": [
         "G",
         "W"
@@ -2483,8 +2482,8 @@
     "FIN0245": {
       "id": "FIN0245",
       "name": "Terra, Magical Adept // Esper Terra",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Wizard",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Human Wizard Warrior",
       "colorIdentity": [
         "B",
         "G",
@@ -2508,8 +2507,8 @@
     "FIN0247": {
       "id": "FIN0247",
       "name": "Ultimecia, Time Sorceress // Ultimecia, Omnipotent",
-      "manaCost": null,
-      "type": "Legendary Creature — Nightmare Warlock",
+      "manaCost": "{3}{U}{B}",
+      "type": "Legendary Creature — Human Warlock",
       "colorIdentity": [
         "B",
         "U"
@@ -2518,14 +2517,14 @@
     },
     "FIN0248": {
       "id": "FIN0248",
-      "name": "A-Vivi Ornitier",
+      "name": "Vivi Ornitier",
       "manaCost": "{1}{U}{R}",
       "type": "Legendary Creature — Wizard",
       "colorIdentity": [
         "R",
         "U"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f5fce9a5-85ae-408e-a260-b1e39843626e.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/c/ecc1027a-8c07-44a0-bdde-fa2844cff694.jpg"
     },
     "FIN0249": {
       "id": "FIN0249",
@@ -2727,7 +2726,7 @@
       "id": "FIN0272",
       "name": "Balamb Garden, SeeD Academy // Balamb Garden, Airborne",
       "manaCost": null,
-      "type": "Legendary Artifact — Vehicle",
+      "type": "Land — Town",
       "colorIdentity": [
         "G",
         "U"
@@ -2832,8 +2831,8 @@
     "FIN0283": {
       "id": "FIN0283",
       "name": "Ishgard, the Holy See // Faith & Grief",
-      "manaCost": "{3}{W}{W}",
-      "type": "Sorcery — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "W"
       ],
@@ -2842,8 +2841,8 @@
     "FIN0284": {
       "id": "FIN0284",
       "name": "Jidoor, Aristocratic Capital // Overture",
-      "manaCost": "{4}{U}{U}",
-      "type": "Sorcery — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "U"
       ],
@@ -2852,8 +2851,8 @@
     "FIN0285": {
       "id": "FIN0285",
       "name": "Lindblum, Industrial Regency // Mage Siege",
-      "manaCost": "{2}{R}",
-      "type": "Instant — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "R"
       ],
@@ -2862,8 +2861,8 @@
     "FIN0286": {
       "id": "FIN0286",
       "name": "Midgar, City of Mako // Reactor Raid",
-      "manaCost": "{2}{B}",
-      "type": "Sorcery — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "B"
       ],
@@ -2935,8 +2934,8 @@
     "FIN0293": {
       "id": "FIN0293",
       "name": "Zanarkand, Ancient Metropolis // Lasting Fayth",
-      "manaCost": "{4}{G}{G}",
-      "type": "Sorcery — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "G"
       ],
@@ -3103,8 +3102,8 @@
     "FIN0310": {
       "id": "FIN0310",
       "name": "Ishgard, the Holy See // Faith & Grief",
-      "manaCost": "{3}{W}{W}",
-      "type": "Sorcery — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "W"
       ],
@@ -3113,8 +3112,8 @@
     "FIN0311": {
       "id": "FIN0311",
       "name": "Jidoor, Aristocratic Capital // Overture",
-      "manaCost": "{4}{U}{U}",
-      "type": "Sorcery — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "U"
       ],
@@ -3123,8 +3122,8 @@
     "FIN0312": {
       "id": "FIN0312",
       "name": "Lindblum, Industrial Regency // Mage Siege",
-      "manaCost": "{2}{R}",
-      "type": "Instant — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "R"
       ],
@@ -3133,8 +3132,8 @@
     "FIN0313": {
       "id": "FIN0313",
       "name": "Midgar, City of Mako // Reactor Raid",
-      "manaCost": "{2}{B}",
-      "type": "Sorcery — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "B"
       ],
@@ -3143,8 +3142,8 @@
     "FIN0314": {
       "id": "FIN0314",
       "name": "Zanarkand, Ancient Metropolis // Lasting Fayth",
-      "manaCost": "{4}{G}{G}",
-      "type": "Sorcery — Adventure",
+      "manaCost": null,
+      "type": "Land — Town",
       "colorIdentity": [
         "G"
       ],
@@ -3173,8 +3172,8 @@
     "FIN0317": {
       "id": "FIN0317",
       "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
-      "manaCost": null,
-      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Avatar Soldier",
       "colorIdentity": [
         "B"
       ],
@@ -3183,8 +3182,8 @@
     "FIN0318": {
       "id": "FIN0318",
       "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Demon",
+      "manaCost": "{4}{R}{R}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "R"
       ],
@@ -3226,8 +3225,8 @@
     "FIN0322": {
       "id": "FIN0322",
       "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{U}{B}{R}",
+      "type": "Legendary Creature — Human Wizard",
       "colorIdentity": [
         "B",
         "R",
@@ -3238,8 +3237,8 @@
     "FIN0323": {
       "id": "FIN0323",
       "name": "Terra, Magical Adept // Esper Terra",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Wizard",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Human Wizard Warrior",
       "colorIdentity": [
         "B",
         "G",
@@ -3300,8 +3299,8 @@
     "FIN0329": {
       "id": "FIN0329",
       "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
-      "manaCost": null,
-      "type": "Legendary Creature — God",
+      "manaCost": "{1}{W}{W}",
+      "type": "Legendary Creature — Elder Wizard",
       "colorIdentity": [
         "W"
       ],
@@ -3548,7 +3547,7 @@
       "id": "FIN0354",
       "name": "Balamb Garden, SeeD Academy // Balamb Garden, Airborne",
       "manaCost": null,
-      "type": "Legendary Artifact — Vehicle",
+      "type": "Land — Town",
       "colorIdentity": [
         "G",
         "U"
@@ -3574,8 +3573,8 @@
     "FIN0357": {
       "id": "FIN0357",
       "name": "Crystal Fragments // Summon: Alexander",
-      "manaCost": null,
-      "type": "Enchantment Creature — Saga Construct",
+      "manaCost": "{W}",
+      "type": "Artifact — Equipment",
       "colorIdentity": [
         "W"
       ],
@@ -3634,8 +3633,8 @@
     "FIN0363": {
       "id": "FIN0363",
       "name": "Jecht, Reluctant Guardian // Braska's Final Aeon",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Nightmare",
+      "manaCost": "{3}{B}",
+      "type": "Legendary Creature — Human Warrior",
       "colorIdentity": [
         "B"
       ],
@@ -3704,8 +3703,8 @@
     "FIN0370": {
       "id": "FIN0370",
       "name": "Esper Origins // Summon: Esper Maduin",
-      "manaCost": null,
-      "type": "Enchantment Creature — Saga Elemental",
+      "manaCost": "{1}{G}",
+      "type": "Sorcery",
       "colorIdentity": [
         "G"
       ],
@@ -3764,8 +3763,8 @@
     "FIN0376": {
       "id": "FIN0376",
       "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Dragon",
+      "manaCost": "{3}{W}",
+      "type": "Legendary Creature — Human Noble Knight",
       "colorIdentity": [
         "W"
       ],
@@ -3784,8 +3783,8 @@
     "FIN0378": {
       "id": "FIN0378",
       "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Elemental",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "U"
       ],
@@ -3804,7 +3803,7 @@
     "FIN0380": {
       "id": "FIN0380",
       "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
-      "manaCost": null,
+      "manaCost": "{B}",
       "type": "Legendary Creature — Human Knight",
       "colorIdentity": [
         "B",
@@ -3814,20 +3813,19 @@
     },
     "FIN0381": {
       "id": "FIN0381",
-      "name": "Ragnarok, Divine Deliverance",
-      "manaCost": null,
-      "type": "Legendary Creature — Beast Avatar",
+      "name": "Fang, Fearless l'Cie // Ragnarok, Divine Deliverance",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Warrior",
       "colorIdentity": [
-        "B",
-        "G"
+        "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f40e47b-32ed-4846-92b3-cc54e89368fe.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/c/dca1a706-9eee-4d75-80ee-fa12257908e3.jpg"
     },
     "FIN0382": {
       "id": "FIN0382",
       "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
-      "manaCost": null,
-      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Avatar Soldier",
       "colorIdentity": [
         "B"
       ],
@@ -3836,8 +3834,8 @@
     "FIN0383": {
       "id": "FIN0383",
       "name": "Vincent Valentine // Galian Beast",
-      "manaCost": null,
-      "type": "Legendary Creature — Werewolf Beast",
+      "manaCost": "{2}{B}{B}",
+      "type": "Legendary Creature — Assassin",
       "colorIdentity": [
         "B"
       ],
@@ -3846,8 +3844,8 @@
     "FIN0384": {
       "id": "FIN0384",
       "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
-      "manaCost": null,
-      "type": "Legendary Creature — Dragon",
+      "manaCost": "{3}{B}{B}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "B"
       ],
@@ -3856,8 +3854,8 @@
     "FIN0385": {
       "id": "FIN0385",
       "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Demon",
+      "manaCost": "{4}{R}{R}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "R"
       ],
@@ -3948,8 +3946,8 @@
     "FIN0394": {
       "id": "FIN0394",
       "name": "Emet-Selch, Unsundered // Hades, Sorcerer of Eld",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar",
+      "manaCost": "{1}{U}{B}",
+      "type": "Legendary Creature — Elder Wizard",
       "colorIdentity": [
         "B",
         "U"
@@ -3981,8 +3979,8 @@
     "FIN0397": {
       "id": "FIN0397",
       "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Phoenix",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Noble Wizard",
       "colorIdentity": [
         "R",
         "W"
@@ -3992,8 +3990,8 @@
     "FIN0398": {
       "id": "FIN0398",
       "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{U}{B}{R}",
+      "type": "Legendary Creature — Human Wizard",
       "colorIdentity": [
         "B",
         "R",
@@ -4004,13 +4002,13 @@
     "FIN0399": {
       "id": "FIN0399",
       "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{B}{R}",
+      "type": "Legendary Creature — Human Mutant Wizard",
       "colorIdentity": [
         "B",
         "R"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/b/0/b058d305-d032-47c9-8567-11a4b4319695.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/7/374877d1-167a-42ea-adf3-a707ea0300e8.jpg"
     },
     "FIN0400": {
       "id": "FIN0400",
@@ -4317,8 +4315,8 @@
     "FIN0428": {
       "id": "FIN0428",
       "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Dragon",
+      "manaCost": "{3}{W}",
+      "type": "Legendary Creature — Human Noble Knight",
       "colorIdentity": [
         "W"
       ],
@@ -4377,8 +4375,8 @@
     "FIN0434": {
       "id": "FIN0434",
       "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
-      "manaCost": null,
-      "type": "Legendary Creature — God",
+      "manaCost": "{1}{W}{W}",
+      "type": "Legendary Creature — Elder Wizard",
       "colorIdentity": [
         "W"
       ],
@@ -4417,8 +4415,8 @@
     "FIN0438": {
       "id": "FIN0438",
       "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Elemental",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "U"
       ],
@@ -4487,7 +4485,7 @@
     "FIN0445": {
       "id": "FIN0445",
       "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
-      "manaCost": null,
+      "manaCost": "{B}",
       "type": "Legendary Creature — Human Knight",
       "colorIdentity": [
         "B",
@@ -4497,14 +4495,13 @@
     },
     "FIN0446": {
       "id": "FIN0446",
-      "name": "Ragnarok, Divine Deliverance",
-      "manaCost": null,
-      "type": "Legendary Creature — Beast Avatar",
+      "name": "Fang, Fearless l'Cie // Ragnarok, Divine Deliverance",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Warrior",
       "colorIdentity": [
-        "B",
-        "G"
+        "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/c/b/cbcde2c1-e973-4ec0-b333-d71fa7452ef1.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b82f08c2-3944-437d-9af6-f1e9088e02bb.jpg"
     },
     "FIN0447": {
       "id": "FIN0447",
@@ -4519,8 +4516,8 @@
     "FIN0448": {
       "id": "FIN0448",
       "name": "Jecht, Reluctant Guardian // Braska's Final Aeon",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Nightmare",
+      "manaCost": "{3}{B}",
+      "type": "Legendary Creature — Human Warrior",
       "colorIdentity": [
         "B"
       ],
@@ -4549,8 +4546,8 @@
     "FIN0451": {
       "id": "FIN0451",
       "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
-      "manaCost": null,
-      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Avatar Soldier",
       "colorIdentity": [
         "B"
       ],
@@ -4569,8 +4566,8 @@
     "FIN0453": {
       "id": "FIN0453",
       "name": "Sidequest: Hunt the Mark // Yiazmat, Ultimate Mark",
-      "manaCost": null,
-      "type": "Legendary Creature — Dragon",
+      "manaCost": "{3}{B}{B}",
+      "type": "Enchantment",
       "colorIdentity": [
         "B"
       ],
@@ -4579,8 +4576,8 @@
     "FIN0454": {
       "id": "FIN0454",
       "name": "Vincent Valentine // Galian Beast",
-      "manaCost": null,
-      "type": "Legendary Creature — Werewolf Beast",
+      "manaCost": "{2}{B}{B}",
+      "type": "Legendary Creature — Assassin",
       "colorIdentity": [
         "B"
       ],
@@ -4589,8 +4586,8 @@
     "FIN0455": {
       "id": "FIN0455",
       "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
-      "manaCost": null,
-      "type": "Legendary Creature — Dragon",
+      "manaCost": "{3}{B}{B}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "B"
       ],
@@ -4619,8 +4616,8 @@
     "FIN0458": {
       "id": "FIN0458",
       "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Demon",
+      "manaCost": "{4}{R}{R}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "R"
       ],
@@ -4878,8 +4875,8 @@
     "FIN0483": {
       "id": "FIN0483",
       "name": "Emet-Selch, Unsundered // Hades, Sorcerer of Eld",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar",
+      "manaCost": "{1}{U}{B}",
+      "type": "Legendary Creature — Elder Wizard",
       "colorIdentity": [
         "B",
         "U"
@@ -4889,8 +4886,8 @@
     "FIN0484": {
       "id": "FIN0484",
       "name": "The Emperor of Palamecia // The Lord Master of Hell",
-      "manaCost": null,
-      "type": "Legendary Creature — Demon Noble Wizard",
+      "manaCost": "{U}{R}",
+      "type": "Legendary Creature — Human Noble Wizard",
       "colorIdentity": [
         "R",
         "U"
@@ -4900,8 +4897,8 @@
     "FIN0485": {
       "id": "FIN0485",
       "name": "Exdeath, Void Warlock // Neo Exdeath, Dimension's End",
-      "manaCost": null,
-      "type": "Legendary Creature — Spirit Avatar",
+      "manaCost": "{1}{B}{G}",
+      "type": "Legendary Creature — Spirit Warlock",
       "colorIdentity": [
         "B",
         "G"
@@ -4911,8 +4908,8 @@
     "FIN0486": {
       "id": "FIN0486",
       "name": "Garland, Knight of Cornelia // Chaos, the Endless",
-      "manaCost": null,
-      "type": "Legendary Creature — Demon",
+      "manaCost": "{B}{R}",
+      "type": "Legendary Creature — Human Knight",
       "colorIdentity": [
         "B",
         "R"
@@ -4999,8 +4996,8 @@
     "FIN0494": {
       "id": "FIN0494",
       "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Phoenix",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Noble Wizard",
       "colorIdentity": [
         "R",
         "W"
@@ -5021,8 +5018,8 @@
     "FIN0496": {
       "id": "FIN0496",
       "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{U}{B}{R}",
+      "type": "Legendary Creature — Human Wizard",
       "colorIdentity": [
         "B",
         "R",
@@ -5033,13 +5030,13 @@
     "FIN0497": {
       "id": "FIN0497",
       "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{B}{R}",
+      "type": "Legendary Creature — Human Mutant Wizard",
       "colorIdentity": [
         "B",
         "R"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/c/d/cdb5acf7-2878-466d-8224-24fa64a602f5.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/8/98067c9a-d81e-4f5c-b55a-28872331fce8.jpg"
     },
     "FIN0498": {
       "id": "FIN0498",
@@ -5133,8 +5130,8 @@
     "FIN0506": {
       "id": "FIN0506",
       "name": "Serah Farron // Crystallized Serah",
-      "manaCost": null,
-      "type": "Legendary Artifact",
+      "manaCost": "{1}{G}{W}",
+      "type": "Legendary Creature — Human Citizen",
       "colorIdentity": [
         "G",
         "W"
@@ -5189,8 +5186,8 @@
     "FIN0511": {
       "id": "FIN0511",
       "name": "Terra, Magical Adept // Esper Terra",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Wizard",
+      "manaCost": "{1}{R}{G}",
+      "type": "Legendary Creature — Human Wizard Warrior",
       "colorIdentity": [
         "B",
         "G",
@@ -5214,8 +5211,8 @@
     "FIN0513": {
       "id": "FIN0513",
       "name": "Ultimecia, Time Sorceress // Ultimecia, Omnipotent",
-      "manaCost": null,
-      "type": "Legendary Creature — Nightmare Warlock",
+      "manaCost": "{3}{U}{B}",
+      "type": "Legendary Creature — Human Warlock",
       "colorIdentity": [
         "B",
         "U"
@@ -5303,8 +5300,8 @@
     "FIN0521": {
       "id": "FIN0521",
       "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Dragon",
+      "manaCost": "{3}{W}",
+      "type": "Legendary Creature — Human Noble Knight",
       "colorIdentity": [
         "W"
       ],
@@ -5323,8 +5320,8 @@
     "FIN0523": {
       "id": "FIN0523",
       "name": "Jill, Shiva's Dominant // Shiva, Warden of Ice",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Elemental",
+      "manaCost": "{2}{U}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "U"
       ],
@@ -5343,7 +5340,7 @@
     "FIN0525": {
       "id": "FIN0525",
       "name": "Cecil, Dark Knight // Cecil, Redeemed Paladin",
-      "manaCost": null,
+      "manaCost": "{B}",
       "type": "Legendary Creature — Human Knight",
       "colorIdentity": [
         "B",
@@ -5353,20 +5350,19 @@
     },
     "FIN0526": {
       "id": "FIN0526",
-      "name": "Ragnarok, Divine Deliverance",
-      "manaCost": null,
-      "type": "Legendary Creature — Beast Avatar",
+      "name": "Fang, Fearless l'Cie // Ragnarok, Divine Deliverance",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Warrior",
       "colorIdentity": [
-        "B",
-        "G"
+        "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a951cc35-bd29-467f-b28c-5d57340e7450.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/8/a8bfc03f-227c-4a5d-b172-067ea5860bf9.jpg"
     },
     "FIN0527": {
       "id": "FIN0527",
       "name": "Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",
-      "manaCost": null,
-      "type": "Legendary Creature — Angel Nightmare Avatar",
+      "manaCost": "{2}{B}",
+      "type": "Legendary Creature — Human Avatar Soldier",
       "colorIdentity": [
         "B"
       ],
@@ -5375,8 +5371,8 @@
     "FIN0528": {
       "id": "FIN0528",
       "name": "Vincent Valentine // Galian Beast",
-      "manaCost": null,
-      "type": "Legendary Creature — Werewolf Beast",
+      "manaCost": "{2}{B}{B}",
+      "type": "Legendary Creature — Assassin",
       "colorIdentity": [
         "B"
       ],
@@ -5385,8 +5381,8 @@
     "FIN0529": {
       "id": "FIN0529",
       "name": "Zenos yae Galvus // Shinryu, Transcendent Rival",
-      "manaCost": null,
-      "type": "Legendary Creature — Dragon",
+      "manaCost": "{3}{B}{B}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "B"
       ],
@@ -5395,8 +5391,8 @@
     "FIN0530": {
       "id": "FIN0530",
       "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Demon",
+      "manaCost": "{4}{R}{R}",
+      "type": "Legendary Creature — Human Noble Warrior",
       "colorIdentity": [
         "R"
       ],
@@ -5487,8 +5483,8 @@
     "FIN0539": {
       "id": "FIN0539",
       "name": "Emet-Selch, Unsundered // Hades, Sorcerer of Eld",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar",
+      "manaCost": "{1}{U}{B}",
+      "type": "Legendary Creature — Elder Wizard",
       "colorIdentity": [
         "B",
         "U"
@@ -5520,8 +5516,8 @@
     "FIN0542": {
       "id": "FIN0542",
       "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
-      "manaCost": null,
-      "type": "Legendary Enchantment Creature — Saga Phoenix",
+      "manaCost": "{1}{R}{W}",
+      "type": "Legendary Creature — Human Noble Wizard",
       "colorIdentity": [
         "R",
         "W"
@@ -5531,8 +5527,8 @@
     "FIN0543": {
       "id": "FIN0543",
       "name": "Kefka, Court Mage // Kefka, Ruler of Ruin",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{U}{B}{R}",
+      "type": "Legendary Creature — Human Wizard",
       "colorIdentity": [
         "B",
         "R",
@@ -5543,13 +5539,13 @@
     "FIN0544": {
       "id": "FIN0544",
       "name": "Kuja, Genome Sorcerer // Trance Kuja, Fate Defied",
-      "manaCost": null,
-      "type": "Legendary Creature — Avatar Wizard",
+      "manaCost": "{2}{B}{R}",
+      "type": "Legendary Creature — Human Mutant Wizard",
       "colorIdentity": [
         "B",
         "R"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/6/5/65530632-5b09-4359-921b-a6d094937aff.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/6/d673228a-eec8-4f6e-82fd-10db909ccee2.jpg"
     },
     "FIN0545": {
       "id": "FIN0545",
@@ -5629,7 +5625,7 @@
       "colorIdentity": [
         "G"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/6/c/6ce8744a-ede3-4662-968a-360eb6639f08.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/1/71b97e69-f198-41ec-9385-015ec2f0160f.jpg"
     },
     "FIN0552": {
       "id": "FIN0552",

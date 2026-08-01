@@ -1230,8 +1230,8 @@
   {
     "id": "FIN0013",
     "name": "Crystal Fragments // Summon: Alexander",
-    "manaCost": null,
-    "type": "Enchantment Creature — Saga Construct",
+    "manaCost": "{W}",
+    "type": "Artifact — Equipment",
     "colorIdentity": [
       "W"
     ],
@@ -1260,8 +1260,8 @@
   {
     "id": "FIN0016",
     "name": "Dion, Bahamut's Dominant // Bahamut, Warden of Light",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Dragon",
+    "manaCost": "{3}{W}",
+    "type": "Legendary Creature — Human Noble Knight",
     "colorIdentity": [
       "W"
     ],
@@ -1410,8 +1410,8 @@
   {
     "id": "FIN0031",
     "name": "Sidequest: Catch a Fish // Cooking Campsite",
-    "manaCost": null,
-    "type": "Land",
+    "manaCost": "{2}{W}",
+    "type": "Enchantment",
     "colorIdentity": [
       "W"
     ],
@@ -1490,8 +1490,8 @@
   {
     "id": "FIN0039",
     "name": "Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",
-    "manaCost": null,
-    "type": "Legendary Creature — God",
+    "manaCost": "{1}{W}{W}",
+    "type": "Legendary Creature — Elder Wizard",
     "colorIdentity": [
       "W"
     ],
@@ -1580,8 +1580,8 @@
   {
     "id": "FIN0133",
     "name": "Clive, Ifrit's Dominant // Ifrit, Warden of Inferno",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Demon",
+    "manaCost": "{4}{R}{R}",
+    "type": "Legendary Creature — Human Noble Warrior",
     "colorIdentity": [
       "R"
     ],
@@ -1830,8 +1830,8 @@
   {
     "id": "FIN0158",
     "name": "Sidequest: Play Blitzball // World Champion, Celestial Weapon",
-    "manaCost": null,
-    "type": "Legendary Artifact — Equipment",
+    "manaCost": "{2}{R}",
+    "type": "Enchantment",
     "colorIdentity": [
       "R"
     ],
@@ -2100,8 +2100,8 @@
   {
     "id": "FIN0185",
     "name": "Esper Origins // Summon: Esper Maduin",
-    "manaCost": null,
-    "type": "Enchantment Creature — Saga Elemental",
+    "manaCost": "{1}{G}",
+    "type": "Sorcery",
     "colorIdentity": [
       "G"
     ],
@@ -2260,8 +2260,8 @@
   {
     "id": "FIN0201",
     "name": "Sidequest: Raise a Chocobo // Black Chocobo",
-    "manaCost": null,
-    "type": "Creature — Bird",
+    "manaCost": "{1}{G}",
+    "type": "Enchantment",
     "colorIdentity": [
       "G"
     ],
@@ -2404,8 +2404,8 @@
   {
     "id": "FIN0229",
     "name": "Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",
-    "manaCost": null,
-    "type": "Legendary Enchantment Creature — Saga Phoenix",
+    "manaCost": "{1}{R}{W}",
+    "type": "Legendary Creature — Human Noble Wizard",
     "colorIdentity": [
       "R",
       "W"
@@ -2448,8 +2448,8 @@
   {
     "id": "FIN0240",
     "name": "Serah Farron // Crystallized Serah",
-    "manaCost": null,
-    "type": "Legendary Artifact",
+    "manaCost": "{1}{G}{W}",
+    "type": "Legendary Creature — Human Citizen",
     "colorIdentity": [
       "G",
       "W"
@@ -2692,8 +2692,8 @@
   {
     "id": "FIN0283",
     "name": "Ishgard, the Holy See // Faith & Grief",
-    "manaCost": "{3}{W}{W}",
-    "type": "Sorcery — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "W"
     ],
@@ -2702,8 +2702,8 @@
   {
     "id": "FIN0285",
     "name": "Lindblum, Industrial Regency // Mage Siege",
-    "manaCost": "{2}{R}",
-    "type": "Instant — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "R"
     ],
@@ -2742,8 +2742,8 @@
   {
     "id": "FIN0293",
     "name": "Zanarkand, Ancient Metropolis // Lasting Fayth",
-    "manaCost": "{4}{G}{G}",
-    "type": "Sorcery — Adventure",
+    "manaCost": null,
+    "type": "Land — Town",
     "colorIdentity": [
       "G"
     ],
