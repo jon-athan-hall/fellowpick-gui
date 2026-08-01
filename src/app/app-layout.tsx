@@ -175,7 +175,10 @@ export function AppLayout() {
                       )}
                       onClick={closeNav}
                     >
-                      <SetIcon code={u.sets[1]} />
+                      {/* `sets` is ordered by printing preference — commander
+                          decks first — so index 0 is the Commander set, whose
+                          symbol is the one we want beside a universe of decks. */}
+                      <SetIcon code={u.sets[0]} />
                       <span className={classes.label}>{u.name}</span>
                     </Link>
                     {u.precons.map((p) => {

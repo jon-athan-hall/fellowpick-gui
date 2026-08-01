@@ -2,7 +2,7 @@ export { usePickCountsQuery } from './api/use-pick-counts';
 export { useMyPicksQuery } from './api/use-my-picks';
 export { useMakePickMutation } from './api/use-make-pick';
 export { useRemovePickMutation } from './api/use-remove-pick';
-export { CardRow } from './components/card-row';
+export { CardTable } from './components/card-table';
 export { CardPreviewDrawer } from './components/card-preview-drawer';
 export { DeckIdentity } from './components/deck-identity';
 export { ManaCost } from './components/mana-cost';

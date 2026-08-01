@@ -23,11 +23,18 @@ const UNIVERSES_FILE = join(DATA_DIR, 'universes.json');
 const MTGJSON_BASE = 'https://mtgjson.com/api/v5';
 
 // MTGJSON deck filenames are CamelCase + setCode (look them up in DeckList.json).
+//
+// `sets` is ordered by printing preference, not release order: Commander decks
+// first, then the base set, then bonus sheets. build-add-candidates.mjs scans
+// sets in this order and keeps the first printing of each card name, so this
+// array is what decides which printing represents a card — and therefore which
+// cardId the API stores votes against. Appending a bonus sheet is always safe;
+// inserting ahead of an existing entry re-points cards and orphans their votes.
 const UNIVERSES = {
   'middle-earth': {
     name: 'Middle-Earth',
     description: 'The Lord of the Rings and Middle-Earth',
-    sets: ['LTR', 'LTC'],
+    sets: ['LTC', 'LTR'],
     precons: [
       { filename: 'FoodAndFellowship_LTC', id: 'food-and-fellowship', name: 'Food and Fellowship' },
       { filename: 'RidersOfRohan_LTC', id: 'riders-of-rohan', name: 'Riders of Rohan' },
@@ -38,7 +45,7 @@ const UNIVERSES = {
   'final-fantasy': {
     name: 'Final Fantasy',
     description: 'The Final Fantasy video game series',
-    sets: ['FIN', 'FIC'],
+    sets: ['FIC', 'FIN'],
     precons: [
       { filename: 'RevivalTranceFinalFantasyVi_FIC', id: 'revival-trance', name: 'Revival Trance' },
       { filename: 'LimitBreakFinalFantasyVii_FIC', id: 'limit-break', name: 'Limit Break' },
@@ -49,7 +56,7 @@ const UNIVERSES = {
   'teenage-mutant-ninja-turtles': {
     name: 'Teenage Mutant Ninja Turtles',
     description: 'Heroes in a half-shell — TMNT',
-    sets: ['TMT', 'TMC'],
+    sets: ['TMC', 'TMT'],
     precons: [
       { filename: 'TurtlePower_TMC', id: 'turtle-power', name: 'Turtle Power' },
     ],

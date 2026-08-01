@@ -4,8 +4,8 @@
     "name": "Middle-Earth",
     "description": "The Lord of the Rings and Middle-Earth",
     "sets": [
-      "LTR",
-      "LTC"
+      "LTC",
+      "LTR"
     ],
     "precons": [
       {
@@ -31,8 +31,8 @@
     "name": "Final Fantasy",
     "description": "The Final Fantasy video game series",
     "sets": [
-      "FIN",
-      "FIC"
+      "FIC",
+      "FIN"
     ],
     "precons": [
       {
@@ -58,8 +58,8 @@
     "name": "Teenage Mutant Ninja Turtles",
     "description": "Heroes in a half-shell — TMNT",
     "sets": [
-      "TMT",
-      "TMC"
+      "TMC",
+      "TMT"
     ],
     "precons": [
       {

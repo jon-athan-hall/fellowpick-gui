@@ -7,7 +7,7 @@ import { useAuth } from '../features/auth';
 import classes from './precon-detail-page.module.css';
 import {
   CardPreviewDrawer,
-  CardRow,
+  CardTable,
   DeckIdentity,
   loadAddCandidates,
   loadPrecon,
@@ -20,6 +20,59 @@ import {
 import type { Card, PickType } from '../features/pick';
 
 const PAGE_SIZE = 25;
+
+type SortColumn = 'votes' | 'cmc' | 'name';
+type SortDirection = 'asc' | 'desc';
+interface SortState {
+  column: SortColumn;
+  direction: SortDirection;
+}
+
+// Converts a single mana symbol to its CMC contribution.
+//   {3}        → 3   (generic)
+//   {X}/{Y}/{Z}→ 0   (variable, counts as 0 until paid)
+//   {2/W}      → 2   (monohybrid — the generic side; official MTG rule)
+//   {W}/{U}/{B}/{R}/{G}/{C}/{S} → 1
+//   {W/U} or {W/P} → 1 (colored hybrid, phyrexian)
+function manaSymbolValue(symbol: string): number {
+  if (/^\d+$/.test(symbol)) return parseInt(symbol, 10);
+  if (/^[XYZ]$/.test(symbol)) return 0;
+  const monohybrid = symbol.match(/^(\d+)\/[A-Z]$/);
+  if (monohybrid) return parseInt(monohybrid[1], 10);
+  return 1;
+}
+
+// Sums the converted mana cost of a card from its `manaCost` string.
+function getCmc(card: Card): number {
+  if (!card.manaCost) return 0;
+  const tokens = card.manaCost.match(/\{([^}]+)\}/g) ?? [];
+  return tokens.reduce((sum, t) => sum + manaSymbolValue(t.slice(1, -1)), 0);
+}
+
+// Sorts a list of cards according to the active sort and a snapshot of
+// vote counts. Stable: ties resolve by name A→Z so order doesn't waver
+// across renders.
+function sortCards(
+  cards: Card[],
+  sort: SortState,
+  voteAnchor: Record<string, number>
+): Card[] {
+  const sign = sort.direction === 'asc' ? 1 : -1;
+  return [...cards].sort((a, b) => {
+    let cmp = 0;
+    if (sort.column === 'votes') {
+      cmp = (voteAnchor[a.id] ?? 0) - (voteAnchor[b.id] ?? 0);
+    } else if (sort.column === 'cmc') {
+      cmp = getCmc(a) - getCmc(b);
+    } else {
+      cmp = a.name.localeCompare(b.name);
+    }
+    if (cmp === 0 && sort.column !== 'name') {
+      cmp = a.name.localeCompare(b.name);
+    }
+    return sign * cmp;
+  });
+}
 
 // Displays a precon deck's cards with CUT/ADD pick voting and community pick counts.
 // The route wraps this in a `key={preconId}` boundary, so per-precon state
@@ -58,10 +111,14 @@ export function PreconDetailPage() {
     return map;
   }, [myPicksQuery.data]);
 
-  // Lock sort order so optimistic count mutations from picks don't reshuffle the
-  // list mid-vote. Reorder only on: first successful load and tab switches.
+  // Lock sort order so optimistic count mutations from picks don't reshuffle
+  // the list mid-vote — the card you just voted on shouldn't "disappear" by
+  // jumping into its new slot. Reorder only on: first successful load, tab
+  // switch, and sort-column-or-direction change. All three bump `sortKey`,
+  // which the memos depend on; vote events do not.
   const [activeTab, setActiveTab] = useState<PickType>('CUT');
   const [sortKey, setSortKey] = useState(0);
+  const [sort, setSort] = useState<SortState>({ column: 'votes', direction: 'desc' });
 
   const sortedCuts = useMemo<Card[]>(() => {
     if (!precon) return [];
@@ -71,7 +128,7 @@ export function PreconDetailPage() {
     for (const c of countsQuery.data ?? []) {
       if (c.pickType === 'CUT') anchor[c.cardId] = c.count;
     }
-    return [...cards].sort((a, b) => (anchor[b.id] ?? 0) - (anchor[a.id] ?? 0));
+    return sortCards(cards, sort, anchor);
     // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: re-snapshot only on sortKey
   }, [precon, countsQuery.isSuccess, sortKey]);
 
@@ -81,7 +138,7 @@ export function PreconDetailPage() {
     for (const c of countsQuery.data ?? []) {
       if (c.pickType === 'ADD') anchor[c.cardId] = c.count;
     }
-    return [...addCandidates].sort((a, b) => (anchor[b.id] ?? 0) - (anchor[a.id] ?? 0));
+    return sortCards(addCandidates, sort, anchor);
     // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: re-snapshot only on sortKey
   }, [addCandidates, countsQuery.isSuccess, sortKey]);
 
@@ -163,22 +220,30 @@ export function PreconDetailPage() {
     const start = (page - 1) * PAGE_SIZE;
     const pageCards = cards.slice(start, start + PAGE_SIZE);
 
+    // MRT uses its own sorting-state shape; convert from our SortState.
+    const mrtSorting = [{ id: sort.column, desc: sort.direction === 'desc' }];
+
     return (
       <>
-        {pageCards.map((card) => (
-          <CardRow
-            key={card.id}
-            card={card}
-            count={countMap[card.id]?.[pickType] ?? 0}
-            pickType={pickType}
-            pickId={myPickMap[`${card.id}:${pickType}`]}
-            onPick={handlePick}
-            onUnpick={handleUnpick}
-            canPick={isAuthenticated}
-            isMobile={isMobile}
-            onCardTap={handleCardTap}
-          />
-        ))}
+        <CardTable
+          cards={pageCards}
+          countMap={countMap}
+          myPickMap={myPickMap}
+          pickType={pickType}
+          canPick={isAuthenticated}
+          isMobile={isMobile}
+          sorting={mrtSorting}
+          onSortingChange={(next) => {
+            if (next.length === 0) return;
+            const column = next[0].id as SortColumn;
+            const direction: SortDirection = next[0].desc ? 'desc' : 'asc';
+            setSort({ column, direction });
+            setSortKey((k) => k + 1);
+          }}
+          onCardTap={handleCardTap}
+          onPick={handlePick}
+          onUnpick={handleUnpick}
+        />
         {totalPages > 1 && (
           <Group justify="center" mt="md">
             <Pagination
