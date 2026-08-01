@@ -8,7 +8,13 @@ export { DeckIdentity } from './components/deck-identity';
 export { ManaCost } from './components/mana-cost';
 export { CardPreviewProvider } from './hooks/card-preview-context';
 export { useCardPreview } from './hooks/use-card-preview';
-export { findUniverse, loadPrecon, loadAddCandidates } from './data/load-precon';
+export { findUniverse } from './data/load-precon';
+export {
+  usePreconQuery,
+  useAddCandidatesQuery,
+  usePreconsQuery,
+  staticQueryKeys,
+} from './data/use-precon-data';
 export { pickRoutes } from './routes';
 export type {
   Card,

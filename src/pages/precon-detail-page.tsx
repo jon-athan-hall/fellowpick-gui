@@ -9,9 +9,9 @@ import {
   CardPreviewDrawer,
   CardTable,
   DeckIdentity,
-  loadAddCandidates,
-  loadPrecon,
+  useAddCandidatesQuery,
   useCardPreview,
+  usePreconQuery,
   useMakePickMutation,
   useMyPicksQuery,
   usePickCountsQuery,
@@ -20,6 +20,10 @@ import {
 import type { Card, PickType } from '../features/pick';
 
 const PAGE_SIZE = 25;
+
+// Stable identity for "no candidates yet". `?? []` would hand the sort memo a
+// fresh array on every render and re-snapshot the locked order each time.
+const EMPTY_CANDIDATES: Card[] = [];
 
 type SortColumn = 'votes' | 'cmc' | 'name';
 type SortDirection = 'asc' | 'desc';
@@ -62,16 +66,15 @@ export function PreconDetailPage() {
   const { isAuthenticated } = useAuth();
   const { setPreviewImage } = useCardPreview();
 
-  const precon = universeId && preconId ? loadPrecon(universeId, preconId) : null;
+  const preconQuery = usePreconQuery(universeId ?? '', preconId ?? '');
+  const addCandidatesQuery = useAddCandidatesQuery(universeId ?? '', preconId ?? '');
+  const precon = preconQuery.data ?? null;
   const countsQuery = usePickCountsQuery(preconId ?? '');
   const myPicksQuery = useMyPicksQuery(preconId ?? '', isAuthenticated);
   const makePick = useMakePickMutation(preconId ?? '');
   const removePick = useRemovePickMutation(preconId ?? '');
 
-  const addCandidates = useMemo(
-    () => (universeId && preconId ? loadAddCandidates(universeId, preconId) : []),
-    [universeId, preconId]
-  );
+  const addCandidates = addCandidatesQuery.data ?? EMPTY_CANDIDATES;
 
   const countMap = useMemo(() => {
     const map: Record<string, Record<PickType, number>> = {};
@@ -189,6 +192,12 @@ export function PreconDetailPage() {
     },
     [removePick]
   );
+
+  // The deck's JSON is a lazily-imported chunk now, so "no precon" means either
+  // still arriving or genuinely absent — tell those apart before saying so.
+  if (preconQuery.isPending) {
+    return <Loader />;
+  }
 
   if (!precon) {
     return <Text>Precon deck not found.</Text>;

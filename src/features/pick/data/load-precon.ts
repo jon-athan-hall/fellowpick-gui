@@ -1,8 +1,20 @@
 import type { Precon, Card } from '../types';
 import universes from '../../../data/universes.json';
 
-const preconModules = import.meta.glob('../../../data/*/precons/*.json', { eager: true }) as Record<string, { default: Precon }>;
-const addModules = import.meta.glob('../../../data/*/adds/*.json', { eager: true }) as Record<string, { default: Card[] }>;
+// Lazy on purpose. Eager globs inlined every precon and every candidate list —
+// 3.66 MB of JSON across four universes — into the main chunk, so opening one
+// deck downloaded all twelve. Without `eager`, Vite emits a chunk per file and
+// fetches only what a page asks for.
+//
+// `import: 'default'` unwraps the module for us, which is also why the old
+// "either { default: T } or T" handling is gone.
+const preconModules = import.meta.glob('../../../data/*/precons/*.json', {
+  import: 'default',
+}) as Record<string, () => Promise<Precon>>;
+
+const addModules = import.meta.glob('../../../data/*/adds/*.json', {
+  import: 'default',
+}) as Record<string, () => Promise<Card[]>>;
 
 // Looks up a universe by ID from the static universes list.
 export function findUniverse(universeId: string) {
@@ -10,13 +22,12 @@ export function findUniverse(universeId: string) {
 }
 
 // Loads a precon's JSON data by universe and precon ID.
-export function loadPrecon(universeId: string, preconId: string): Precon | null {
+export async function loadPrecon(universeId: string, preconId: string): Promise<Precon | null> {
   const key = Object.keys(preconModules).find(
     (k) => k.includes(`/${universeId}/precons/${preconId}.json`)
   );
   if (!key) return null;
-  const mod = preconModules[key];
-  return (mod as unknown as Precon).id ? (mod as unknown as Precon) : mod.default;
+  return preconModules[key]();
 }
 
 /**
@@ -31,14 +42,10 @@ export function loadPrecon(universeId: string, preconId: string): Precon | null 
  * If you add a new precon (or change a set), re-run `npm run build-data` to
  * regenerate. `npm run build` does this automatically via the prebuild hook.
  */
-export function loadAddCandidates(universeId: string, preconId: string): Card[] {
+export async function loadAddCandidates(universeId: string, preconId: string): Promise<Card[]> {
   const key = Object.keys(addModules).find(
     (k) => k.includes(`/${universeId}/adds/${preconId}.json`)
   );
   if (!key) return [];
-  const mod = addModules[key];
-  // JSON imports come through as either { default: T } or T directly,
-  // depending on bundler flags. Handle both.
-  if (Array.isArray(mod)) return mod as unknown as Card[];
-  return mod.default ?? [];
+  return addModules[key]();
 }

@@ -63,7 +63,17 @@ function PickApp() {
   return useRoutes(pickRoutes);
 }
 
-function renderBoard() {
+// The deck's JSON is a lazily-imported chunk, so nothing is on screen until it
+// resolves. Every test waits for the first row rather than for the deck name:
+// the name renders from the precon alone, while a row proves the card list is
+// there too.
+async function renderBoard() {
+  const result = renderRoutes();
+  await screen.findAllByRole('row');
+  return result;
+}
+
+function renderRoutes() {
   return renderWithProviders(<PickApp />, {
     routes: [DECK_URL],
     auth: {
@@ -99,13 +109,13 @@ describe('precon board', () => {
     vi.clearAllMocks();
   });
 
-  it('renders the deck identity', () => {
-    renderBoard();
+  it('renders the deck identity', async () => {
+    await renderBoard();
     expect(screen.getByText('Elven Council')).toBeInTheDocument();
   });
 
-  it('shows one page of cards at a time', () => {
-    renderBoard();
+  it('shows one page of cards at a time', async () => {
+    await renderBoard();
     expect(bodyRows()).toHaveLength(PAGE_SIZE);
 
     const pages = Math.ceil(deckCards.length / PAGE_SIZE);
@@ -113,27 +123,27 @@ describe('precon board', () => {
     expect(screen.queryByRole('button', { name: String(pages + 1) })).not.toBeInTheDocument();
   });
 
-  it('orders by vote count, breaking ties by name', () => {
-    renderBoard();
+  it('orders by vote count, breaking ties by name', async () => {
+    await renderBoard();
     expect(rowName(bodyRows()[0])).toBe(firstCutCard.name);
   });
 
-  it('puts the most-voted card first, wherever it sat before', () => {
+  it('puts the most-voted card first, wherever it sat before', async () => {
     mocks.counts = [{ cardId: buriedCard.id, pickType: 'CUT', count: 12 }];
-    renderBoard();
+    await renderBoard();
     expect(rowName(bodyRows()[0])).toBe(buriedCard.name);
   });
 
-  it('shows a different list of cards under ADD', () => {
-    renderBoard();
+  it('shows a different list of cards under ADD', async () => {
+    await renderBoard();
     fireEvent.click(screen.getByRole('tab', { name: 'ADD' }));
 
     expect(rowName(bodyRows()[0])).toBe(firstAddCard.name);
     expect(deckCards.some((c) => c.name === firstAddCard.name)).toBe(false);
   });
 
-  it('votes on a card when its row is clicked', () => {
-    renderBoard();
+  it('votes on a card when its row is clicked', async () => {
+    await renderBoard();
     fireEvent.click(bodyRows()[0]);
 
     expect(mocks.makePick).toHaveBeenCalledWith({
@@ -143,11 +153,11 @@ describe('precon board', () => {
     });
   });
 
-  it('withdraws an existing vote when the row is clicked again', () => {
+  it('withdraws an existing vote when the row is clicked again', async () => {
     mocks.myPicks = [
       { id: 'pick-1', preconId: 'elven-council', cardId: firstCutCard.id, pickType: 'CUT' },
     ];
-    renderBoard();
+    await renderBoard();
     fireEvent.click(bodyRows()[0]);
 
     expect(mocks.removePick).toHaveBeenCalledWith('pick-1');
@@ -157,8 +167,8 @@ describe('precon board', () => {
   // The order lock. Vote counts changing must update what a row *says* without
   // moving it — otherwise the card you just voted on jumps to its new slot and
   // vanishes from under the pointer.
-  it('keeps the row order stable when vote counts change', () => {
-    const { rerender } = renderBoard();
+  it('keeps the row order stable when vote counts change', async () => {
+    const { rerender } = await renderBoard();
     const orderBefore = bodyRows().map(rowName);
 
     // A card already on the first page, so its badge is on screen to prove the
