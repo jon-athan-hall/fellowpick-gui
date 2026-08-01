@@ -99,29 +99,62 @@ function paperOnly(cards, label) {
   return paper;
 }
 
-// Groups raw MTGJSON cards by the id makeCardId generates for them, keeping one
-// card per id.
+// Groups raw MTGJSON cards by the id makeCardId generates for them.
 //
 // Ids are lossy on purpose — the collector number is stripped to digits, so a
 // card's alternate printings collapse onto one id, which is what lets the ADD
 // list offer a card once. But MTGJSON also emits each face of a double-faced
 // card as its own entry sharing one collector number, and meld results carry the
-// front card's number with a `b` suffix. Those land on the same id as a real,
-// different card, and plain last-write-wins let them overwrite it:
+// front card's number with a `b` suffix, so a group can hold several faces of
+// one card as well as several printings of it. Left to last-write-wins, a back
+// face overwrote the real card:
 //
 //   FIN0013  Crystal Fragments ({W} Equipment)  lost to its own back face
 //   FIN0099  Fang, Fearless l'Cie              lost to a meld result
 //
-// Keep the front face, and otherwise the first printing seen — the lowest
-// collector number, which is the base printing rather than a showcase variant.
-function collapseById(cards) {
+// Grouping rather than overwriting lets pickFront choose what to display and
+// combinedText keep what the other faces say.
+function groupById(cards) {
   const byId = new Map();
   for (const card of cards) {
     const id = makeCardId(card.setCode, card.number);
-    const existing = byId.get(id);
-    if (!existing || (existing.side === 'b' && card.side !== 'b')) byId.set(id, card);
+    if (!byId.has(id)) byId.set(id, []);
+    byId.get(id).push(card);
   }
   return byId;
+}
+
+// The entry that represents the group: the front face, or failing that the
+// first printing seen — the lowest collector number, which is the base printing
+// rather than a showcase variant.
+function pickFront(group) {
+  return group.find((card) => card.side !== 'b') ?? group[0];
+}
+
+// Rules text for every face of the card, not just the one we display.
+//
+// MTGJSON stores `text` per face, so keeping only the front would drop the back
+// of every Saga and transform card — and the back is usually where the
+// interesting ability lives. Card search would quietly never match it.
+//
+// Faces are identified by `faceName`, which distinguishes the two halves of one
+// card while staying identical across alternate printings, so a variant
+// collision contributes its text once rather than twice.
+function combinedText(group) {
+  const seen = new Set();
+  const parts = [];
+  for (const card of [...group].sort((a, b) => (a.side ?? 'a').localeCompare(b.side ?? 'a'))) {
+    const face = card.faceName ?? card.name;
+    if (seen.has(face)) continue;
+    seen.add(face);
+    if (card.text) parts.push(card.text);
+  }
+  return parts.length > 0 ? parts.join('\n—\n') : null;
+}
+
+// Turns one id's group of raw MTGJSON entries into the single card we store.
+function toCard(group) {
+  return transformCard(pickFront(group), group);
 }
 
 function buildScryfallImageUrl(scryfallId) {
@@ -132,13 +165,33 @@ function buildScryfallImageUrl(scryfallId) {
 }
 
 // Trims each MTGJSON card to the fields the UI reads. See Card in src/features/pick/types.ts.
-function transformCard(card) {
+//
+// `manaValue` is the whole card's value rather than the front face's, which is
+// the number people mean by CMC. It agrees with the hand-rolled parser it
+// replaces on every card checked — the point is not that the parser was wrong
+// but that it was two copies of a rules engine deriving something the source
+// already states, and it silently returned 0 whenever manaCost was missing,
+// which is exactly what the back-face bug caused.
+//
+// `flavorName` is the in-universe name a bonus sheet gives a reprint: FCA prints
+// Adeline, Resplendent Cathar as "Hero of Light". The UI leads with that name,
+// since the whole point of these sets is the reskin.
+//
+// `keywords` is already the union across faces in MTGJSON, so the front face
+// carries the whole card's keywords.
+function transformCard(card, group = [card]) {
   return {
     id: makeCardId(card.setCode, card.number),
     name: card.name,
+    flavorName: card.flavorName ?? null,
     manaCost: card.manaCost || null,
+    manaValue: card.manaValue ?? 0,
     type: card.type,
+    types: card.types ?? [],
+    rarity: card.rarity ?? null,
     colorIdentity: card.colorIdentity || [],
+    keywords: card.keywords ?? [],
+    oracleText: combinedText(group),
     scryfallImage: buildScryfallImageUrl(card.identifiers?.scryfallId),
   };
 }
@@ -160,12 +213,12 @@ async function importPrecons(universeId, config) {
     const data = json.data;
 
     const commanders = [
-      ...collapseById(paperOnly(data.commander || [], `${precon.id} commanders`)).values(),
-    ].map(transformCard);
+      ...groupById(paperOnly(data.commander || [], `${precon.id} commanders`)).values(),
+    ].map(toCard);
     const mainBoard = Object.fromEntries(
-      [...collapseById(paperOnly(data.mainBoard || [], precon.id))].map(([id, card]) => [
+      [...groupById(paperOnly(data.mainBoard || [], precon.id))].map(([id, group]) => [
         id,
-        transformCard(card),
+        toCard(group),
       ])
     );
 
@@ -199,10 +252,8 @@ async function importSets(universeId, config) {
     const json = await fetchJson(url);
     const data = json.data;
 
-    const collapsed = collapseById(paperOnly(data.cards || [], setCode));
-    const cards = Object.fromEntries(
-      [...collapsed].map(([id, card]) => [id, transformCard(card)])
-    );
+    const grouped = groupById(paperOnly(data.cards || [], setCode));
+    const cards = Object.fromEntries([...grouped].map(([id, group]) => [id, toCard(group)]));
 
     const output = {
       setCode: data.code,
@@ -210,13 +261,13 @@ async function importSets(universeId, config) {
       releaseDate: data.releaseDate,
       // Cards written, not cards MTGJSON listed — alternate printings share an
       // id, so the raw count overstated this by 106 for FIN.
-      totalCards: collapsed.size,
+      totalCards: grouped.size,
       cards,
     };
 
     const outPath = join(setsDir, `${setCode}.json`);
     writeFileSync(outPath, JSON.stringify(output, null, 2));
-    console.log(`  Wrote ${outPath} (${collapsed.size} cards)`);
+    console.log(`  Wrote ${outPath} (${grouped.size} cards)`);
   }
 }
 
