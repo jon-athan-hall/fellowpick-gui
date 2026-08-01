@@ -2,7 +2,7 @@
   "setCode": "LTC",
   "name": "Tales of Middle-earth Commander",
   "releaseDate": "2023-06-23",
-  "totalCards": 592,
+  "totalCards": 558,
   "cards": {
     "LTC0001": {
       "id": "LTC0001",
@@ -1735,7 +1735,7 @@
     "LTC0166": {
       "id": "LTC0166",
       "name": "Dusk // Dawn",
-      "manaCost": "{3}{W}{W}",
+      "manaCost": "{2}{W}{W}",
       "type": "Sorcery",
       "colorIdentity": [
         "W"
@@ -3812,7 +3812,7 @@
       "colorIdentity": [
         "G"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/1/9/190ab58b-88cc-4baf-a843-d1b2710c14a8.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/8/d8961142-cb5d-49a1-9032-d9b6e5a24f97.jpg"
     },
     "LTC0379": {
       "id": "LTC0379",
@@ -3820,7 +3820,7 @@
       "manaCost": "{3}",
       "type": "Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/5/7/5770803f-e3bb-45eb-8859-0ff4d9255b2b.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/e/7e17b533-d45a-44a1-aa56-eaf18ff4bb71.jpg"
     },
     "LTC0380": {
       "id": "LTC0380",
@@ -3828,7 +3828,7 @@
       "manaCost": "{3}",
       "type": "Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/5/f/5f24a880-09bf-4a75-a367-23be13dbf4ed.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/c/dc50f081-bc81-4872-bfd9-d41e64b33bcb.jpg"
     },
     "LTC0381": {
       "id": "LTC0381",
@@ -3836,7 +3836,7 @@
       "manaCost": "{1}",
       "type": "Legendary Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/1/f/1fac900d-c40d-4f33-9ae5-45e31e5ce66c.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/d/7d9df3ce-25f9-426c-a113-6aea53ddf619.jpg"
     },
     "LTC0382": {
       "id": "LTC0382",
@@ -3844,7 +3844,7 @@
       "manaCost": "{3}",
       "type": "Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/e/e/ee977d30-f37d-4879-be52-c57d50922465.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/5/851f0e08-2c39-4ce9-a181-e106ca9e5fc1.jpg"
     },
     "LTC0383": {
       "id": "LTC0383",
@@ -3852,7 +3852,7 @@
       "manaCost": "{1}",
       "type": "Legendary Artifact — Equipment",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/9/a/9adf5196-41e9-401c-8ccf-abfad0350f87.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/1/b1a74aab-dcf2-426d-9cc5-9ef771d8227a.jpg"
     },
     "LTC0384": {
       "id": "LTC0384",
@@ -3860,7 +3860,7 @@
       "manaCost": "{3}",
       "type": "Artifact — Equipment",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/3/5/3543a80e-251b-498a-bf5e-ee2a2e9166e2.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6bd1a8c-fe2a-4a28-a709-6b57336fa2cd.jpg"
     },
     "LTC0385": {
       "id": "LTC0385",
@@ -3868,7 +3868,7 @@
       "manaCost": "{2}",
       "type": "Legendary Artifact — Equipment",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/8/5/85ff8012-5d11-43bf-9f77-5d0179dc775e.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fa1ada9a-eacd-42e9-9f6b-fb8b968af859.jpg"
     },
     "LTC0386": {
       "id": "LTC0386",
@@ -3876,7 +3876,7 @@
       "manaCost": "{2}",
       "type": "Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/0/0/008a3241-df86-4d80-88f9-912b0363d030.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/e/2e697bd7-53a3-4703-b7f4-ac680436967f.jpg"
     },
     "LTC0387": {
       "id": "LTC0387",
@@ -3884,7 +3884,7 @@
       "manaCost": null,
       "type": "Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/0/9/09721698-35a4-48a2-8896-fe036a642345.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/3/339dde25-a080-4aae-993f-261847398767.jpg"
     },
     "LTC0388": {
       "id": "LTC0388",
@@ -3894,7 +3894,7 @@
       "colorIdentity": [
         "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/6/2/621ce7c8-50dd-4487-b1fd-ffe476992ecc.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/d/bd77173d-1399-49e7-b0c8-696c7c2c01e0.jpg"
     },
     "LTC0389": {
       "id": "LTC0389",
@@ -3902,7 +3902,7 @@
       "manaCost": null,
       "type": "Legendary Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/1/8/18402090-02af-4dc3-94ed-633a03848ab2.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/841802b9-adc5-455e-8a8c-2d34c2766d54.jpg"
     },
     "LTC0390": {
       "id": "LTC0390",
@@ -3912,7 +3912,7 @@
       "colorIdentity": [
         "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/8/0/8015de93-6d51-425e-9a72-b745db37e8c1.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/c/cce035f4-5ba4-4e9d-ab26-d5d0290de74d.jpg"
     },
     "LTC0391": {
       "id": "LTC0391",
@@ -3922,7 +3922,7 @@
       "colorIdentity": [
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/e/b/ebaa3b73-abb5-4ad4-a4c7-4b9f358db2c6.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/6/d64a3ece-0da3-4228-af98-d8b06bdbe187.jpg"
     },
     "LTC0392": {
       "id": "LTC0392",
@@ -3930,7 +3930,7 @@
       "manaCost": null,
       "type": "Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/6/a/6a150673-8c52-4b56-9b81-c54cfcfc091b.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/e/ce15f400-9428-46dc-bdde-ee80ee8fcab0.jpg"
     },
     "LTC0393": {
       "id": "LTC0393",
@@ -3938,7 +3938,7 @@
       "manaCost": null,
       "type": "Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/1/9/196f121f-bd78-4455-855a-a2dd47314c1e.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/8/18876bcb-5c79-402b-879d-1f7c195f55e6.jpg"
     },
     "LTC0394": {
       "id": "LTC0394",
@@ -3946,7 +3946,7 @@
       "manaCost": null,
       "type": "Legendary Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bcfba3c1-b17b-4c09-94af-eb14bf2c1f77.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/0/302603c5-ced4-4ad9-801f-be5eb75096cd.jpg"
     },
     "LTC0395": {
       "id": "LTC0395",
@@ -3954,7 +3954,7 @@
       "manaCost": null,
       "type": "Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/2/3/23fcc3e5-b8c6-4425-a5c3-5de877302496.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/c/7cd5ad2b-9df3-4dad-b926-16c0634bb303.jpg"
     },
     "LTC0396": {
       "id": "LTC0396",
@@ -3965,7 +3965,7 @@
         "G",
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/7/0/70fbe9e9-5b7c-4c70-8854-4b6b051f8bb7.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/8/08864c71-df77-4e9c-8088-f48e744352f6.jpg"
     },
     "LTC0397": {
       "id": "LTC0397",
@@ -3975,7 +3975,7 @@
       "colorIdentity": [
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/7/1/71403ce4-e5ac-4e99-b26d-a51456df5cac.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/e/0e7511b8-9af9-4cc8-a01c-8e71af2cf5dc.jpg"
     },
     "LTC0398": {
       "id": "LTC0398",
@@ -3985,7 +3985,7 @@
       "colorIdentity": [
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/6/1/61f13afc-a10d-4c17-8bcc-434778ff34ab.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/a/8afc20a5-635d-4cc4-bce9-b6c2cd970ae5.jpg"
     },
     "LTC0399": {
       "id": "LTC0399",
@@ -3995,7 +3995,7 @@
       "colorIdentity": [
         "U"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/c/d/cdaf61a9-02da-48fd-a38b-13ecc326c40c.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/1/b1acad39-e3e3-4b44-b7f9-59ab1b293bd7.jpg"
     },
     "LTC0400": {
       "id": "LTC0400",
@@ -4003,7 +4003,7 @@
       "manaCost": null,
       "type": "Snow Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/f/c/fc82f708-49a7-44de-9b14-e17b67daaa1d.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bc9d792b-cc1b-48d0-935e-f418005ab59e.jpg"
     },
     "LTC0401": {
       "id": "LTC0401",
@@ -4013,7 +4013,7 @@
       "colorIdentity": [
         "U"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/a/5/a585ce22-7ca5-428c-81da-735e2be49b9d.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/84065219-b902-41fa-9a5a-7312e5103b78.jpg"
     },
     "LTC0402": {
       "id": "LTC0402",
@@ -4021,7 +4021,7 @@
       "manaCost": null,
       "type": "Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/3/6/3629730d-4a68-426d-a7e4-6e3873028fab.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/7/c739bac5-0fa1-4ae9-9eea-611aa3f0fbd5.jpg"
     },
     "LTC0403": {
       "id": "LTC0403",
@@ -4029,7 +4029,7 @@
       "manaCost": null,
       "type": "Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/4/e/4e849eb2-273e-4de6-bac4-404d4eb91aee.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/b/0bd6e6aa-c0b2-4ab1-9165-6cba8b93da13.jpg"
     },
     "LTC0404": {
       "id": "LTC0404",
@@ -4039,7 +4039,7 @@
       "colorIdentity": [
         "R"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/8/5/856c3adc-9fdf-4dd2-85a0-28da47f320fb.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/b/ebb868c6-56c9-4d15-be22-bb46cc96269a.jpg"
     },
     "LTC0405": {
       "id": "LTC0405",
@@ -4047,7 +4047,7 @@
       "manaCost": null,
       "type": "Legendary Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/a/b/ab819ad1-36b0-443b-a9fa-2a57665284d2.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/c/cc4be3ef-547e-41bb-855f-9c779f434919.jpg"
     },
     "LTC0406": {
       "id": "LTC0406",
@@ -4055,7 +4055,7 @@
       "manaCost": null,
       "type": "Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/a/b/ab0c7b95-f496-42bd-9cad-9f244a9f59d4.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/3/438e7c5f-087a-4326-b263-09847420ce41.jpg"
     },
     "LTC0407": {
       "id": "LTC0407",
@@ -4063,7 +4063,7 @@
       "manaCost": null,
       "type": "Legendary Land",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e4a5b982-ce4c-48e1-b1d6-a18012370298.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/4/940f07ab-f30d-4a40-bf3d-d2c05b49c305.jpg"
     },
     "LTC0408": {
       "id": "LTC0408",
@@ -4071,7 +4071,7 @@
       "manaCost": "{1}",
       "type": "Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/1/6/16089845-be81-4fc2-82a8-8a28ec7e20d4.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/a/7a8db21f-722b-4a07-985b-8d25a0b0006a.jpg"
     },
     "LTC0409": {
       "id": "LTC0409",
@@ -4079,7 +4079,7 @@
       "manaCost": "{1}",
       "type": "Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/9/f/9fac535f-46a3-440b-bb93-6fe4b2dba600.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/0/60bc8cfc-8f68-4ec7-92a7-98380d92f69e.jpg"
     },
     "LTC0410": {
       "id": "LTC0410",
@@ -4087,7 +4087,7 @@
       "manaCost": "{1}",
       "type": "Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/c/a/ca15027f-0f32-4018-9da8-50e4002fa6f8.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/3/13788423-db82-4e76-83ad-3f812a4d547a.jpg"
     },
     "LTC0411": {
       "id": "LTC0411",

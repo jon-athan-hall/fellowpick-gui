@@ -1641,14 +1641,6 @@
     "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0fd1fc09-a09d-45e6-8a07-3a8a83b4e6ec.jpg"
   },
   {
-    "id": "LTR0246",
-    "name": "A-The One Ring",
-    "manaCost": "{4}",
-    "type": "Legendary Artifact",
-    "colorIdentity": [],
-    "scryfallImage": "https://cards.scryfall.io/large/front/2/3/23b91af8-eff9-402a-8ba8-ab470c5c1a44.jpg"
-  },
-  {
     "id": "LTR0247",
     "name": "Palantír of Orthanc",
     "manaCost": "{3}",

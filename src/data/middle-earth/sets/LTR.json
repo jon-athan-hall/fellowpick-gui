@@ -2,7 +2,7 @@
   "setCode": "LTR",
   "name": "The Lord of the Rings: Tales of Middle-earth",
   "releaseDate": "2023-06-23",
-  "totalCards": 856,
+  "totalCards": 834,
   "cards": {
     "LTR0000": {
       "id": "LTR0000",
@@ -1035,13 +1035,13 @@
     },
     "LTR0103": {
       "id": "LTR0103",
-      "name": "A-Orcish Bowmasters",
+      "name": "Orcish Bowmasters",
       "manaCost": "{1}{B}",
       "type": "Creature — Orc Archer",
       "colorIdentity": [
         "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/f/f/ff7c57ab-f07d-4653-9451-42821cb431c0.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/c/7c024bae-5631-4e20-ac69-df392ac9e109.jpg"
     },
     "LTR0104": {
       "id": "LTR0104",
@@ -2497,11 +2497,11 @@
     },
     "LTR0246": {
       "id": "LTR0246",
-      "name": "A-The One Ring",
+      "name": "The One Ring",
       "manaCost": "{4}",
       "type": "Legendary Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/2/3/23b91af8-eff9-402a-8ba8-ab470c5c1a44.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d5806e68-1054-458e-866d-1f2470f682b2.jpg"
     },
     "LTR0247": {
       "id": "LTR0247",
@@ -7379,7 +7379,7 @@
       "colorIdentity": [
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c9108db3-93b3-4d15-8d43-8d6908c42a7c.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/1/01a4a36a-f10a-411b-9558-cbbb62e8b4ae.jpg"
     },
     "LTR0732": {
       "id": "LTR0732",
@@ -7389,7 +7389,7 @@
       "colorIdentity": [
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/c/9/c991916f-b238-459e-9176-a3a6f00c54c2.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/1/31d3f007-67aa-47c1-81ae-a54c982dee83.jpg"
     },
     "LTR0733": {
       "id": "LTR0733",
@@ -7399,7 +7399,7 @@
       "colorIdentity": [
         "U"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/8/2/8213e598-e594-4db1-aad5-836fa972df8f.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/6/c67088f4-4cbf-47f5-a4f8-a00f8aae305c.jpg"
     },
     "LTR0734": {
       "id": "LTR0734",
@@ -7409,7 +7409,7 @@
       "colorIdentity": [
         "U"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/2/2/2256e802-8895-432b-b381-bdca41e7ce06.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/5/f584f9a4-4ef1-463e-8aa3-a21b4f820e2a.jpg"
     },
     "LTR0735": {
       "id": "LTR0735",
@@ -7419,7 +7419,7 @@
       "colorIdentity": [
         "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/7/b/7b4b6982-c56e-4880-85ee-e24705afff55.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/c/5cc8bafb-ee70-4728-a712-0d6d244c39b6.jpg"
     },
     "LTR0736": {
       "id": "LTR0736",
@@ -7429,7 +7429,7 @@
       "colorIdentity": [
         "B"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/3/d/3de94e93-2021-4d00-a9db-497373994ec3.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d50d803f-6dad-4e4a-8f16-7be31a206170.jpg"
     },
     "LTR0737": {
       "id": "LTR0737",
@@ -7439,7 +7439,7 @@
       "colorIdentity": [
         "R"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a614d5f4-cb93-4fdb-a4d6-6a6e14bfd04e.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/d/1db2c9c2-e087-45b9-8cc8-e0bd3f333ed8.jpg"
     },
     "LTR0738": {
       "id": "LTR0738",
@@ -7449,7 +7449,7 @@
       "colorIdentity": [
         "R"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6975ed0-b2f0-4820-9649-6bc5594af19a.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/8/a86e5f6e-cf80-423c-b9fb-18bae9141df9.jpg"
     },
     "LTR0739": {
       "id": "LTR0739",
@@ -7459,7 +7459,7 @@
       "colorIdentity": [
         "G"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/c/e/cebd776a-92ac-4a4c-a88f-335fbcb84c36.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/6/96457086-f871-4ea4-9ca7-5cca2371d9c3.jpg"
     },
     "LTR0740": {
       "id": "LTR0740",
@@ -7469,7 +7469,7 @@
       "colorIdentity": [
         "G"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/3/8/385a0103-f15b-41fa-8d2c-5cf2568c4e13.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/5/4509adb6-f1ea-4369-9e11-cba60fd5449a.jpg"
     },
     "LTR0741": {
       "id": "LTR0741",
@@ -7482,7 +7482,7 @@
         "U",
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9d481911-48a9-4cd7-a3b4-14c058dcac19.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/f/5f092adf-a06e-47c1-9400-2eebf9ef719d.jpg"
     },
     "LTR0742": {
       "id": "LTR0742",
@@ -7493,7 +7493,7 @@
         "G",
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/b/a/ba4f80df-841d-4ae3-b33e-d45cdc853761.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/1/b161705c-9d12-416f-8e5c-54ea0d3befd0.jpg"
     },
     "LTR0743": {
       "id": "LTR0743",
@@ -7505,7 +7505,7 @@
         "U",
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a4d16e37-1fa1-4515-b29a-dbabb5c69665.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/8/58879b7a-a7d2-4fb0-954f-1ba2e1d57761.jpg"
     },
     "LTR0744": {
       "id": "LTR0744",
@@ -7517,7 +7517,7 @@
         "R",
         "U"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/2/7/27251103-e27c-446a-b64c-b7b0d5846b27.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/7/3766383d-6e3d-472c-ac7b-f3521ee214af.jpg"
     },
     "LTR0745": {
       "id": "LTR0745",
@@ -7531,7 +7531,7 @@
         "U",
         "W"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/5/0/50dd89bd-43a2-49c6-bf56-c9fbbf370540.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/d/ad53e3d4-f907-4f46-9fd9-b23067ce9b82.jpg"
     },
     "LTR0746": {
       "id": "LTR0746",
@@ -7539,7 +7539,7 @@
       "manaCost": "{3}",
       "type": "Legendary Artifact — Equipment",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/5/a/5a5354dd-ff5f-4231-bf31-039ad3448a09.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/c/5c411d18-c257-424a-9125-06eeafec1e66.jpg"
     },
     "LTR0747": {
       "id": "LTR0747",
@@ -7547,7 +7547,7 @@
       "manaCost": "{2}",
       "type": "Legendary Artifact — Equipment",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/8/a/8a5d405b-dfea-44de-a456-eaac8af73100.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/8/a8b9410a-804a-43ad-979b-3dc9fb569f99.jpg"
     },
     "LTR0748": {
       "id": "LTR0748",
@@ -7555,7 +7555,7 @@
       "manaCost": "{4}",
       "type": "Legendary Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/4/e/4e6fee52-33a8-4085-b632-bf95dfd2b16d.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/0/10a4e202-b564-4ac8-8bdf-a2a563662563.jpg"
     },
     "LTR0749": {
       "id": "LTR0749",
@@ -7563,7 +7563,7 @@
       "manaCost": "{3}",
       "type": "Legendary Artifact",
       "colorIdentity": [],
-      "scryfallImage": "https://cards.scryfall.io/large/front/b/9/b9b95f71-ca89-4173-89bf-99abccd259de.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/9/e9245b0e-f99e-46dd-90ad-87489197629e.jpg"
     },
     "LTR0750": {
       "id": "LTR0750",
@@ -7574,7 +7574,7 @@
         "B",
         "R"
       ],
-      "scryfallImage": "https://cards.scryfall.io/large/front/6/c/6c53dace-4597-4d34-96d1-7aa6290594d4.jpg"
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/a/6ad857f8-3c78-4333-b6c9-ac57b6b70888.jpg"
     },
     "LTR0751": {
       "id": "LTR0751",

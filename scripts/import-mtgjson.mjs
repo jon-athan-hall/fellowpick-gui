@@ -68,6 +68,37 @@ function makeCardId(setCode, number) {
   return `${setCode}${padded}`;
 }
 
+// Keeps only cards that exist in paper.
+//
+// MTGJSON set files include MTG Arena rebalanced cards — digital-only versions
+// of paper cards, named `A-The One Ring` and numbered `A-246`. You cannot own
+// one, so they have no place in a deck-upgrade vote, and because the name
+// differs from the paper card the ADD list's name-dedupe cannot collapse them:
+// the same card gets offered twice and votes split between them.
+//
+// Filtering on `availability` rather than on `isRebalanced` or the `A-` name
+// prefix states the actual rule — nothing digital-only — so MTGO-only cards and
+// any future online-only printing are caught by the same check.
+//
+// A missing field is treated as paper: MTGJSON always ships `availability`, and
+// if that ever changes we would rather import a stray card than silently write
+// an empty set.
+function isPaperCard(card) {
+  return !Array.isArray(card.availability) || card.availability.includes('paper');
+}
+
+// Drops non-paper cards and says so, since the count belongs in the build log
+// rather than being discovered later in the data.
+function paperOnly(cards, label) {
+  const paper = cards.filter(isPaperCard);
+  const dropped = cards.length - paper.length;
+  if (dropped > 0) {
+    const names = cards.filter((c) => !isPaperCard(c)).map((c) => c.name);
+    console.log(`  Skipped ${dropped} non-paper card(s) in ${label}: ${names.join(', ')}`);
+  }
+  return paper;
+}
+
 // Groups raw MTGJSON cards by the id makeCardId generates for them, keeping one
 // card per id.
 //
@@ -128,9 +159,14 @@ async function importPrecons(universeId, config) {
     const json = await fetchJson(url);
     const data = json.data;
 
-    const commanders = [...collapseById(data.commander || []).values()].map(transformCard);
+    const commanders = [
+      ...collapseById(paperOnly(data.commander || [], `${precon.id} commanders`)).values(),
+    ].map(transformCard);
     const mainBoard = Object.fromEntries(
-      [...collapseById(data.mainBoard || [])].map(([id, card]) => [id, transformCard(card)])
+      [...collapseById(paperOnly(data.mainBoard || [], precon.id))].map(([id, card]) => [
+        id,
+        transformCard(card),
+      ])
     );
 
     // Commander color identity is the union of all commander color identities.
@@ -163,7 +199,7 @@ async function importSets(universeId, config) {
     const json = await fetchJson(url);
     const data = json.data;
 
-    const collapsed = collapseById(data.cards || []);
+    const collapsed = collapseById(paperOnly(data.cards || [], setCode));
     const cards = Object.fromEntries(
       [...collapsed].map(([id, card]) => [id, transformCard(card)])
     );

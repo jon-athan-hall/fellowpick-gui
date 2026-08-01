@@ -1533,13 +1533,13 @@
   },
   {
     "id": "LTR0103",
-    "name": "A-Orcish Bowmasters",
+    "name": "Orcish Bowmasters",
     "manaCost": "{1}{B}",
     "type": "Creature — Orc Archer",
     "colorIdentity": [
       "B"
     ],
-    "scryfallImage": "https://cards.scryfall.io/large/front/f/f/ff7c57ab-f07d-4653-9451-42821cb431c0.jpg"
+    "scryfallImage": "https://cards.scryfall.io/large/front/7/c/7c024bae-5631-4e20-ac69-df392ac9e109.jpg"
   },
   {
     "id": "LTR0104",
@@ -2205,14 +2205,6 @@
     "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0fd1fc09-a09d-45e6-8a07-3a8a83b4e6ec.jpg"
   },
   {
-    "id": "LTR0246",
-    "name": "A-The One Ring",
-    "manaCost": "{4}",
-    "type": "Legendary Artifact",
-    "colorIdentity": [],
-    "scryfallImage": "https://cards.scryfall.io/large/front/2/3/23b91af8-eff9-402a-8ba8-ab470c5c1a44.jpg"
-  },
-  {
     "id": "LTR0247",
     "name": "Palantír of Orthanc",
     "manaCost": "{3}",
@@ -2432,16 +2424,6 @@
     "type": "Artifact — Equipment",
     "colorIdentity": [],
     "scryfallImage": "https://cards.scryfall.io/large/front/3/6/36ee958c-ae8c-49bd-9d85-0128ca19901c.jpg"
-  },
-  {
-    "id": "LTR0433",
-    "name": "Orcish Bowmasters",
-    "manaCost": "{1}{B}",
-    "type": "Creature — Orc Archer",
-    "colorIdentity": [
-      "B"
-    ],
-    "scryfallImage": "https://cards.scryfall.io/large/front/d/e/de2de055-5246-408b-80fe-cd01688c145e.jpg"
   },
   {
     "id": "LTR0825",
