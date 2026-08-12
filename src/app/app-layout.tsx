@@ -82,39 +82,63 @@ export function AppLayout() {
 
   return (
     <AppShell
-      // navbar.width = 275 visible + 16 left inset = 291; Main offsets by full width.
-      // Header gets extra height on small screens so the tagline can wrap to
-      // its own row beneath the burger/title/avatar row without overlapping
-      // the Main content below.
-      header={{ height: { base: 130, sm: 90 } }}
+      header={{ height: { base: 80, sm: 112 }}}
       navbar={{ width: 291, breakpoint: 'sm', collapsed: { mobile: !navOpened } }}
       padding="md"
       withBorder={false}
     >
-      <AppShell.Header bg="dark.6">
-        <Group h="100%" p="md" justify="space-between" wrap="wrap" align="center" className={classes.headerRow}>
-          <Group gap="sm" wrap="nowrap" align="center">
+      <AppShell.Header bg="dark.6" className={classes.header}>
+        <Group h="100%" px="lg" justify="space-between" wrap="nowrap" align="center">
+          <Group gap="md" wrap="nowrap" align="center">
             <Burger opened={navOpened} onClick={toggleNav} hiddenFrom="sm" size="sm" />
-            <UnstyledButton component={Link} to="/" aria-label="Fellowpick home">
-              <Title order={2} component="div" className={classes.appTitle}>
-                Fellowpick
-              </Title>
-            </UnstyledButton>
+            <Text component="span" aria-hidden="true" className={classes.wizard} fz={{ base: '2rem', sm: '2.75rem' }} lh={1}>
+              🧙
+            </Text>
+            <Stack gap={6}>
+              <UnstyledButton
+                component={Link}
+                to="/"
+                aria-label="Fellowpick home"
+                className={classes.brandLink}
+              >
+                <Title
+                  order={2}
+                  component="div"
+                  fz={{ base: '1.875rem', sm: '2.75rem' }}
+                  lh={1.1}
+                  style={{ whiteSpace: 'nowrap' }}
+                >
+                  Fellowpick
+                </Title>
+              </UnstyledButton>
+              {/* Hidden rather than wrapped on mobile: three descriptors cannot
+                  share a phone row. The gold diamonds are what make this read as
+                  three items instead of one long string. */}
+              <Group gap="xs" visibleFrom="sm" fz="sm" lts="0.06em" lh={1.3} tt="uppercase" c="dimmed">
+                <Text component="span" inherit>
+                  Community-driven
+                </Text>
+                <Text component="span" aria-hidden="true" c="gold.4" inherit>
+                  ✦
+                </Text>
+                <Text component="span" inherit>
+                  in-universe only
+                </Text>
+                <Text component="span" aria-hidden="true" c="gold.4" inherit>
+                  ✦
+                </Text>
+                <Text component="span" inherit>
+                  precon upgrades
+                </Text>
+              </Group>
+            </Stack>
           </Group>
-          <Text
-            size="sm"
-            c="dimmed"
-            tt="uppercase"
-            className={classes.tagline}
-            style={{ letterSpacing: '0.06em' }}
-          >
-            Community-driven · in-universe only · precon upgrades
-          </Text>
+
           {isAuthenticated ? (
             <Menu position="bottom-end" withArrow>
               <Menu.Target>
                 <UnstyledButton aria-label="User menu">
-                  <Avatar color="rust" radius="xl">
+                  <Avatar color="sapphire" radius="xl">
                     {user?.name
                       ?.split(' ')
                       .map((n) => n[0])
@@ -139,7 +163,7 @@ export function AppLayout() {
             <Menu position="bottom-end" withArrow>
               <Menu.Target>
                 <UnstyledButton aria-label="Guest menu">
-                  <Avatar color="secondary" radius="xl" />
+                  <Avatar color="sapphire" radius="xl" />
                 </UnstyledButton>
               </Menu.Target>
               <Menu.Dropdown>

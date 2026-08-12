@@ -22,47 +22,30 @@
   }
 }
 
-/* The Fellowpick wordmark. 2.5rem on desktop reads as a brand title; on
- * mobile it crowds the burger and avatar, so we drop it down — but not so
- * far that it loses presence. */
-.appTitle {
-  font-size: 2.5rem;
+/* The header's own bottom rule. AppShell's border is switched off shell-wide
+ * (withBorder={false}), so this 4px silver edge is what separates the header
+ * from the content beneath it — heavy enough to read as a deliberate element
+ * rather than a hairline, in a neutral that doesn't compete with the accent. */
+.header {
+  border-bottom: 4px solid var(--mantine-color-dark-3);
 }
 
-@media (max-width: 48em) {
-  .appTitle {
-    font-size: 1.875rem;
-  }
+/* The wizard's glow. A drop-shadow on the glyph rather than a box behind it, so
+ * it follows the emoji's silhouette. `em` deliberately: the blur is 45% of
+ * whatever font size the component sets, so the lighting stays proportional at
+ * every breakpoint without this file needing to know the sizes. Here only
+ * because `filter` has no Mantine style prop. */
+.wizard {
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 0.45em color-mix(in srgb, var(--mantine-color-sapphire-4) 85%, transparent));
 }
 
-/* Tagline ("Community-driven · in-universe only · precon upgrades"). On
- * desktop sits next to the wordmark in the header. `margin-right: auto`
- * absorbs all free space between the tagline and the avatar (and overrides
- * the parent Group's `justify="space-between"`, which would otherwise center
- * the tagline as the middle of three siblings). On mobile, flex-basis 100%
- * forces it to a row of its own beneath the burger/title/avatar row, and
- * the auto margin is reset since space-between already handles row 1. */
-.tagline {
-  flex: 0 1 auto;
-  margin-right: auto;
-}
-
-@media (max-width: 48em) {
-  .tagline {
-    flex-basis: 100%;
-    order: 99;
-    margin-right: 0;
-    text-align: left;
-  }
-}
-
-/* The header content row. On mobile we need a tight row-gap so the wrapped
- * tagline sits close under the title without a slab of empty space. We
- * leave column-gap to Mantine's Group default. */
-@media (max-width: 48em) {
-  .headerRow {
-    row-gap: 0.125rem;
-  }
+/* UnstyledButton strips the focus ring, and the wordmark is the home link, so
+ * it needs a visible one of its own. A pseudo-class has no prop equivalent. */
+.brandLink:focus-visible {
+  outline: 2px solid var(--mantine-color-sapphire-4);
+  outline-offset: 4px;
+  border-radius: var(--mantine-radius-sm);
 }
 
 /* Sidebar navigation styles. Built on plain <Link> + flex layout rather than

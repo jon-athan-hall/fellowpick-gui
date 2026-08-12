@@ -100,8 +100,10 @@ export const theme = createTheme({
     rust: sapphire,
     secondary: gold,
   },
+  fontFamily: 'Caudex, serif',
   headings: {
-    fontFamily: 'MedievalSharp, cursive'
+    fontFamily: 'Almendra, serif',
+    fontWeight: '400'
   },
   components: {
     Title: {
@@ -113,9 +115,6 @@ export const theme = createTheme({
         root: { letterSpacing: '0.05em' }
       }
     },
-    // Standard panel: lighter dark.6 background, md padding, md radius. Pages
-    // wrap sections in a bare <Paper> to get the card look. Override per-use
-    // with style/props as needed (e.g. a colored borderTop on CUT/ADD panels).
     Paper: {
       defaultProps: {
         bg: 'dark.6',
@@ -123,9 +122,6 @@ export const theme = createTheme({
         radius: 'md'
       }
     },
-    // Standard list card (universes, precons). Card does not inherit Paper's
-    // defaultProps, so it needs its own background or it sits flush with the
-    // page instead of reading as raised.
     Card: {
       defaultProps: {
         bg: 'dark.6',
