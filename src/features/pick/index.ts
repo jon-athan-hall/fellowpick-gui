@@ -6,6 +6,7 @@ export { CardTable } from './components/card-table';
 export { CardPreviewDrawer } from './components/card-preview-drawer';
 export { DeckIdentity } from './components/deck-identity';
 export { ManaCost } from './components/mana-cost';
+export { PickSwitcher } from './components/pick-switcher';
 export { CardPreviewProvider } from './hooks/card-preview-context';
 export { useCardPreview } from './hooks/use-card-preview';
 export { findUniverse } from './data/load-precon';
@@ -26,4 +27,5 @@ export type {
   PickRequest,
   PickResponse,
   PickCountResponse,
+  PreconBoardContext,
 } from './types';

@@ -1,14 +1,13 @@
-import { Alert, Group, Loader, Pagination, Paper, Stack, Tabs, Text } from '@mantine/core';
+import { Alert, Loader, Paper, Stack, Text } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import type { CSSProperties } from 'react';
 import { useCallback, useMemo, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Outlet, useMatch, useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
 import classes from './precon-detail-page.module.css';
 import {
   CardPreviewDrawer,
-  CardTable,
   DeckIdentity,
+  PickSwitcher,
   useAddCandidatesQuery,
   useCardPreview,
   usePreconQuery,
@@ -17,54 +16,38 @@ import {
   usePickCountsQuery,
   useRemovePickMutation,
 } from '../features/pick';
-import type { Card, PickType } from '../features/pick';
+import type { Card, PickType, PreconBoardContext } from '../features/pick';
 
-const PAGE_SIZE = 25;
-
-// Stable identity for "no candidates yet". `?? []` would hand the sort memo a
-// fresh array on every render and re-snapshot the locked order each time.
+// Stable identity for "no candidates yet". `?? []` would hand the boards a
+// fresh array on every render and re-snapshot their locked order each time.
 const EMPTY_CANDIDATES: Card[] = [];
+const EMPTY_COUNTS: PreconBoardContext['counts'] = [];
 
-type SortColumn = 'votes' | 'cmc' | 'name';
-type SortDirection = 'asc' | 'desc';
-interface SortState {
-  column: SortColumn;
-  direction: SortDirection;
-}
+/**
+ * Floor for the header, so the commander art has room to show its subject.
+ * The art band is `cover`-sized, so a header only as tall as its two lines of
+ * text crops the piece to a letterbox slice and regularly cuts the commander's
+ * face out of it.
+ */
+const HEADER_MIN_HEIGHT = '8rem';
 
-// Sorts a list of cards according to the active sort and a snapshot of
-// vote counts. Stable: ties resolve by name A→Z so order doesn't waver
-// across renders.
-function sortCards(
-  cards: Card[],
-  sort: SortState,
-  voteAnchor: Record<string, number>
-): Card[] {
-  const sign = sort.direction === 'asc' ? 1 : -1;
-  return [...cards].sort((a, b) => {
-    let cmp = 0;
-    if (sort.column === 'votes') {
-      cmp = (voteAnchor[a.id] ?? 0) - (voteAnchor[b.id] ?? 0);
-    } else if (sort.column === 'cmc') {
-      cmp = a.manaValue - b.manaValue;
-    } else {
-      cmp = a.name.localeCompare(b.name);
-    }
-    if (cmp === 0 && sort.column !== 'name') {
-      cmp = a.name.localeCompare(b.name);
-    }
-    return sign * cmp;
-  });
-}
-
-// Displays a precon deck's cards with CUT/ADD pick voting and community pick counts.
-// The route wraps this in a `key={preconId}` boundary, so per-precon state
-// (locked sort order, pagination) is reset by remount when navigating between
-// precons rather than by manual cleanup here.
+// The deck layout: everything that stays put while you move between the two
+// votes — the identity header, the switcher, the guest notice, and the card
+// preview drawer. The CUT and ADD boards are child routes rendered through the
+// outlet, and the shared data they both need is resolved once here.
+//
+// The route wraps this in a `key={preconId}` boundary, so per-precon state is
+// reset by remount when navigating between precons rather than by cleanup here.
 export function PreconDetailPage() {
   const { universeId, preconId } = useParams<{ universeId: string; preconId: string }>();
   const { isAuthenticated } = useAuth();
   const { setPreviewImage } = useCardPreview();
+
+  // Which board is mounted, read from the route rather than from state. The
+  // switcher and the drawer's vote button both need it, and matching the route
+  // keeps this honest if someone deep-links straight to /add.
+  const isAdd = useMatch('/universes/:universeId/precons/:preconId/add') !== null;
+  const activePickType: PickType = isAdd ? 'ADD' : 'CUT';
 
   const preconQuery = usePreconQuery(universeId ?? '', preconId ?? '');
   const addCandidatesQuery = useAddCandidatesQuery(universeId ?? '', preconId ?? '');
@@ -75,15 +58,16 @@ export function PreconDetailPage() {
   const removePick = useRemovePickMutation(preconId ?? '');
 
   const addCandidates = addCandidatesQuery.data ?? EMPTY_CANDIDATES;
+  const counts = countsQuery.data ?? EMPTY_COUNTS;
 
   const countMap = useMemo(() => {
     const map: Record<string, Record<PickType, number>> = {};
-    for (const c of countsQuery.data ?? []) {
+    for (const c of counts) {
       if (!map[c.cardId]) map[c.cardId] = { CUT: 0, ADD: 0 };
       map[c.cardId][c.pickType] = c.count;
     }
     return map;
-  }, [countsQuery.data]);
+  }, [counts]);
 
   const myPickMap = useMemo(() => {
     const map: Record<string, string> = {};
@@ -92,40 +76,6 @@ export function PreconDetailPage() {
     }
     return map;
   }, [myPicksQuery.data]);
-
-  // Lock sort order so optimistic count mutations from picks don't reshuffle
-  // the list mid-vote — the card you just voted on shouldn't "disappear" by
-  // jumping into its new slot. Reorder only on: first successful load, tab
-  // switch, and sort-column-or-direction change. All three bump `sortKey`,
-  // which the memos depend on; vote events do not.
-  const [activeTab, setActiveTab] = useState<PickType>('CUT');
-  const [sortKey, setSortKey] = useState(0);
-  const [sort, setSort] = useState<SortState>({ column: 'votes', direction: 'desc' });
-
-  const sortedCuts = useMemo<Card[]>(() => {
-    if (!precon) return [];
-    const cards = Object.values(precon.mainBoard);
-    if (!countsQuery.isSuccess) return cards;
-    const anchor: Record<string, number> = {};
-    for (const c of countsQuery.data ?? []) {
-      if (c.pickType === 'CUT') anchor[c.cardId] = c.count;
-    }
-    return sortCards(cards, sort, anchor);
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: re-snapshot only on sortKey
-  }, [precon, countsQuery.isSuccess, sortKey]);
-
-  const sortedAdds = useMemo<Card[]>(() => {
-    if (!countsQuery.isSuccess) return addCandidates;
-    const anchor: Record<string, number> = {};
-    for (const c of countsQuery.data ?? []) {
-      if (c.pickType === 'ADD') anchor[c.cardId] = c.count;
-    }
-    return sortCards(addCandidates, sort, anchor);
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: re-snapshot only on sortKey
-  }, [addCandidates, countsQuery.isSuccess, sortKey]);
-
-  const [cutsPage, setCutsPage] = useState(1);
-  const [addsPage, setAddsPage] = useState(1);
 
   // Mobile preview drawer: at narrow viewports, tapping a row opens the card
   // image in a bottom sheet where vote/unvote also lives. Desktop is
@@ -150,7 +100,7 @@ export function PreconDetailPage() {
 
   const previewCard = previewCardId ? cardById[previewCardId] ?? null : null;
   const previewPickId = previewCardId
-    ? myPickMap[`${previewCardId}:${activeTab}`]
+    ? myPickMap[`${previewCardId}:${activePickType}`]
     : undefined;
 
   const handleCardTap = useCallback((cardId: string) => {
@@ -164,19 +114,10 @@ export function PreconDetailPage() {
     if (previewPickId) {
       removePick.mutate(previewPickId);
     } else {
-      makePick.mutate({ preconId, cardId: previewCardId, pickType: activeTab });
+      makePick.mutate({ preconId, cardId: previewCardId, pickType: activePickType });
     }
     setPreviewCardId(null);
-  }, [previewCardId, previewPickId, preconId, activeTab, makePick, removePick]);
-
-  const handleTabChange = useCallback((value: string | null) => {
-    if (value !== 'CUT' && value !== 'ADD') return;
-    setActiveTab((current) => {
-      if (current === value) return current;
-      setSortKey((k) => k + 1);
-      return value;
-    });
-  }, []);
+  }, [previewCardId, previewPickId, preconId, activePickType, makePick, removePick]);
 
   const handlePick = useCallback(
     (cardId: string, pickType: PickType) => {
@@ -193,59 +134,46 @@ export function PreconDetailPage() {
     [removePick]
   );
 
+  const boardContext = useMemo<PreconBoardContext | null>(
+    () =>
+      precon
+        ? {
+            precon,
+            addCandidates,
+            counts,
+            countsReady: countsQuery.isSuccess,
+            countMap,
+            myPickMap,
+            canPick: isAuthenticated,
+            isMobile,
+            onCardTap: handleCardTap,
+            onPick: handlePick,
+            onUnpick: handleUnpick,
+          }
+        : null,
+    [
+      precon,
+      addCandidates,
+      counts,
+      countsQuery.isSuccess,
+      countMap,
+      myPickMap,
+      isAuthenticated,
+      isMobile,
+      handleCardTap,
+      handlePick,
+      handleUnpick,
+    ]
+  );
+
   // The deck's JSON is a lazily-imported chunk now, so "no precon" means either
   // still arriving or genuinely absent — tell those apart before saying so.
   if (preconQuery.isPending) {
     return <Loader />;
   }
 
-  if (!precon) {
+  if (!precon || !boardContext) {
     return <Text>Precon deck not found.</Text>;
-  }
-
-  function renderCardList(cards: Card[], pickType: PickType, page: number, setPage: (p: number) => void) {
-    const totalPages = Math.ceil(cards.length / PAGE_SIZE);
-    const start = (page - 1) * PAGE_SIZE;
-    const pageCards = cards.slice(start, start + PAGE_SIZE);
-
-    // MRT uses its own sorting-state shape; convert from our SortState.
-    const mrtSorting = [{ id: sort.column, desc: sort.direction === 'desc' }];
-
-    return (
-      <>
-        <CardTable
-          cards={pageCards}
-          countMap={countMap}
-          myPickMap={myPickMap}
-          pickType={pickType}
-          canPick={isAuthenticated}
-          isMobile={isMobile}
-          sorting={mrtSorting}
-          onSortingChange={(next) => {
-            if (next.length === 0) return;
-            const column = next[0].id as SortColumn;
-            const direction: SortDirection = next[0].desc ? 'desc' : 'asc';
-            setSort({ column, direction });
-            setSortKey((k) => k + 1);
-          }}
-          onCardTap={handleCardTap}
-          onPick={handlePick}
-          onUnpick={handleUnpick}
-        />
-        {totalPages > 1 && (
-          <Group justify="center" mt="md">
-            <Pagination
-              total={totalPages}
-              value={page}
-              onChange={setPage}
-              color={pickType === 'CUT' ? 'red' : 'secondary'}
-              size="md"
-              siblings={isMobile ? 0 : 1}
-            />
-          </Group>
-        )}
-      </>
-    );
   }
 
   // Commander artwork as a right-anchored decorative background on the header,
@@ -259,7 +187,16 @@ export function PreconDetailPage() {
   return (
     <Stack gap="lg">
       <Paper
-        style={{ position: 'relative', overflow: 'hidden' }}
+        mih={HEADER_MIN_HEIGHT}
+        // Centred rather than top-aligned: once the panel is taller than its
+        // text, the identity has to sit in the middle of the art or it reads as
+        // having fallen to the top of the box.
+        style={{
+          position: 'relative',
+          overflow: 'hidden',
+          display: 'flex',
+          alignItems: 'center',
+        }}
         onMouseEnter={() => setPreviewImage(commanderFullCard)}
         onMouseLeave={() => setPreviewImage(null)}
       >
@@ -287,57 +224,22 @@ export function PreconDetailPage() {
         </div>
       </Paper>
 
+      <PickSwitcher
+        deckHref={`/universes/${universeId}/precons/${preconId}`}
+        active={activePickType}
+      />
+
       {!isAuthenticated && (
-        <Alert variant="light" color="secondary">
+        <Alert variant="light" color="gold">
           Sign in to make your picks. You can browse the community's picks as a guest.
         </Alert>
       )}
 
-      {countsQuery.isLoading ? (
-        <Loader />
-      ) : (
-        <Tabs
-          value={activeTab}
-          onChange={handleTabChange}
-          variant="default"
-          classNames={{
-            root: classes.root,
-            list: classes.list,
-            tab: classes.tab,
-            panel: classes.panel,
-          }}
-          style={{
-            '--tab-color':
-              activeTab === 'CUT'
-                ? 'var(--mantine-color-red-6)'
-                : 'var(--mantine-color-secondary-6)',
-          } as CSSProperties}
-        >
-          <Tabs.List grow>
-            <Tabs.Tab value="CUT">
-              <Text fw={700} size="lg" c="red">CUT</Text>
-            </Tabs.Tab>
-            <Tabs.Tab value="ADD">
-              <Text fw={700} size="lg" c="secondary">ADD</Text>
-            </Tabs.Tab>
-          </Tabs.List>
-
-          <Tabs.Panel value="CUT">
-            <Stack gap={0}>
-              {renderCardList(sortedCuts, 'CUT', cutsPage, setCutsPage)}
-            </Stack>
-          </Tabs.Panel>
-          <Tabs.Panel value="ADD">
-            <Stack gap={0}>
-              {renderCardList(sortedAdds, 'ADD', addsPage, setAddsPage)}
-            </Stack>
-          </Tabs.Panel>
-        </Tabs>
-      )}
+      {countsQuery.isLoading ? <Loader /> : <Outlet context={boardContext} />}
 
       <CardPreviewDrawer
         card={previewCard}
-        pickType={activeTab}
+        pickType={activePickType}
         hasVoted={previewPickId !== undefined}
         canVote={isAuthenticated}
         onVote={handleVoteFromPreview}

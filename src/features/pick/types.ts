@@ -83,3 +83,32 @@ export interface PickCountResponse {
   pickType: PickType;
   count: number;
 }
+
+// --- Route context ---
+
+/**
+ * What the deck layout route hands down to whichever board is mounted under it.
+ *
+ * CUT and ADD are separate routes sharing one parent, so everything that must
+ * not be fetched or recomputed twice — the deck, the community counts, the
+ * user's own picks, the vote handlers — is resolved once by the layout and
+ * passed through the outlet. A board owns only what is genuinely its own: which
+ * list of cards it shows, its sort snapshot and its page.
+ */
+export interface PreconBoardContext {
+  precon: Precon;
+  addCandidates: Card[];
+  /** Raw counts, used to anchor a board's sort. */
+  counts: PickCountResponse[];
+  /** Counts have arrived; until they have, a board leaves its list unsorted. */
+  countsReady: boolean;
+  /** `<cardId>` → per-pick-type community totals, for cell rendering. */
+  countMap: Record<string, Record<PickType, number>>;
+  /** `<cardId>:<pickType>` → pickId for the current user. Presence = voted. */
+  myPickMap: Record<string, string>;
+  canPick: boolean;
+  isMobile: boolean;
+  onCardTap: (cardId: string) => void;
+  onPick: (cardId: string, pickType: PickType) => void;
+  onUnpick: (pickId: string) => void;
+}

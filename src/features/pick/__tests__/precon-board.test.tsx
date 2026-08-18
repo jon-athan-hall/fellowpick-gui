@@ -6,13 +6,12 @@ import precon from '../../../data/middle-earth/precons/elven-council.json';
 import { renderWithProviders } from '../../../test/render';
 import { pickRoutes } from '../routes';
 
-// Characterisation tests for the precon board — the CUT/ADD voting page.
+// Characterisation tests for the precon board — the CUT/ADD voting pages.
 //
-// This page is about to be pulled apart: CUT and ADD become separate routes
-// under a shared layout, and a filter bar joins the pipeline. These tests pin
-// the behaviour that has to survive that, and they deliberately go in through
-// `pickRoutes` rather than by rendering the page component, so the route split
-// (bare deck URL redirecting to /cut) does not invalidate them.
+// CUT and ADD are separate routes under a shared deck layout, and a filter bar
+// is still to join the pipeline. These tests pin the behaviour that has to
+// survive that, and they go in through `pickRoutes` rather than by rendering a
+// page component, so the bare deck URL's redirect to /cut is exercised too.
 //
 // The load-bearing one is "keeps the row order stable" at the bottom. That
 // behaviour is held up by two `eslint-disable react-hooks/exhaustive-deps`
@@ -89,9 +88,9 @@ function renderRoutes() {
   });
 }
 
-// Both tab panels stay mounted, so a bare `tbody tr` query returns the CUT and
-// ADD tables at once. Going through the accessibility tree keeps this to the
-// visible table, and stays correct once the tabs become separate routes.
+// Only one board is mounted at a time now, but going through the accessibility
+// tree rather than a bare `tbody tr` query keeps this honest about what is
+// actually on screen.
 function bodyRows(): HTMLElement[] {
   return screen.getAllByRole('row').filter((row) => row.closest('tbody') !== null);
 }
@@ -134,10 +133,20 @@ describe('precon board', () => {
     expect(rowName(bodyRows()[0])).toBe(buriedCard.name);
   });
 
+  it('lands on CUT from the bare deck URL', async () => {
+    await renderBoard();
+    // The redirect fired: the deck's own cards are showing, not the candidates.
+    expect(rowName(bodyRows()[0])).toBe(firstCutCard.name);
+    expect(screen.getByRole('link', { name: 'CUT' })).toHaveAttribute('aria-current', 'page');
+  });
+
   it('shows a different list of cards under ADD', async () => {
     await renderBoard();
-    fireEvent.click(screen.getByRole('tab', { name: 'ADD' }));
+    fireEvent.click(screen.getByRole('link', { name: 'ADD' }));
 
+    // A route change, not a tab switch — the CUT board unmounts and the ADD
+    // board mounts, so wait for the new list rather than reading straight away.
+    await screen.findByText(firstAddCard.name);
     expect(rowName(bodyRows()[0])).toBe(firstAddCard.name);
     expect(deckCards.some((c) => c.name === firstAddCard.name)).toBe(false);
   });
