@@ -1,4 +1,8 @@
-import { createTheme, type MantineColorsTuple } from '@mantine/core';
+import {
+  createTheme,
+  type CSSVariablesResolver,
+  type MantineColorsTuple
+} from '@mantine/core';
 
 /**
  * Palette drawn from the wizard favicon: the blue of the cloak, the silver of
@@ -103,9 +107,41 @@ export const theme = createTheme({
   fontFamily: 'Caudex, serif',
   headings: {
     fontFamily: 'Almendra, serif',
-    fontWeight: '400'
+    fontWeight: '400',
+    sizes: {
+      // Mantine's 2.125rem h1 is louder than any page title here needs, and at
+      // Almendra's proportions it crowds the header above it. 1.75rem is the
+      // size the login form was designed at and it carries every page title.
+      h1: { fontSize: '1.75rem', lineHeight: '1.3' }
+    }
   },
   components: {
+    // One lever for every input-based component. TextInput, PasswordInput,
+    // Select and friends all resolve their props through `InputBase`, whose own
+    // built-in default is `sm` — so this is the only place a global input size
+    // can be set. Anything that wants to be smaller (table filters, toolbars)
+    // still pins its own `size`.
+    InputBase: {
+      defaultProps: {
+        size: 'md'
+      }
+    },
+    // The one place the error tone splits in two. `--mantine-color-error`
+    // (red.6) tints the input's border, which is a UI boundary and clears the
+    // 3:1 floor at 3.7:1 — but the message underneath is small body text held to
+    // 4.5:1, and red.6 does not reach it. red.4 is the ramp's text tone at
+    // 5.4:1, so the border keeps the weight it was chosen for and the sentence
+    // explaining the error stays readable.
+    InputError: {
+      styles: {
+        error: { color: 'var(--mantine-color-red-4)' }
+      }
+    },
+    Button: {
+      defaultProps: {
+        size: 'md'
+      }
+    },
     Title: {
       // `c: 'rust'` used to sit here, colouring every heading in the accent —
       // the main reason headings were hard to read. Titles now inherit
@@ -131,5 +167,25 @@ export const theme = createTheme({
         withBorder: true
       }
     }
+  }
+});
+
+/**
+ * `--mantine-color-error` is the one palette decision `createTheme` cannot
+ * express — it is emitted by the CSS variables resolver, not by `colors`.
+ *
+ * Mantine's dark-scheme default is `red.8` (#8c2528), dark enough that an
+ * errored input reads as a dimmed field rather than a rejected one. `red.6`
+ * (#d13a40) is the same tone the filled destructive buttons already use, so a
+ * failed field and a Delete button now speak with one voice. It drives the
+ * input border, the placeholder and the required asterisk — the error message
+ * itself is lifted to red.4 by the `InputError` styles above, which is the only
+ * part of the field held to the 4.5:1 text floor.
+ */
+export const cssVariablesResolver: CSSVariablesResolver = () => ({
+  variables: {},
+  light: {},
+  dark: {
+    '--mantine-color-error': 'var(--mantine-color-red-6)'
   }
 });

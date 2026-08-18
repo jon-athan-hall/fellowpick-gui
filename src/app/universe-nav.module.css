@@ -1,0 +1,68 @@
+/* Desktop universe navigation — the tab, and the active item inside a dropdown.
+ *
+ * The bar's structure (full-bleed positioning, the row container, the panel
+ * colour) is Mantine props in universe-nav.tsx, and the dropdown's own
+ * padding, hover and focus come from Menu's theming. What is left here is the
+ * two things props cannot express: the tab's states, and the `color-mix`
+ * gradient that marks the active deck. */
+
+/* The tab is a <button> because it opens the dropdown, so it needs the browser
+ * button styling stripped back to a nav item. */
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: var(--mantine-spacing-sm) 0.875rem;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  font: inherit;
+  color: var(--mantine-color-text);
+  cursor: pointer;
+  transition: color 150ms ease;
+}
+
+.tab:hover {
+  color: var(--mantine-color-dark-0);
+}
+
+/* Colour and weight alone carry the active universe — no underline. The header
+ * already draws a heavy rule directly above this bar, and a second thick edge
+ * a row below it read as two competing boundaries. */
+.tabActive,
+.tabActive:hover {
+  color: var(--mantine-color-gold-4);
+  font-weight: 600;
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--mantine-color-sapphire-4);
+  outline-offset: -2px;
+}
+
+/* The active deck's gradient, carried over from the bar this dropdown replaced.
+ * It bleeds rightwards out of the label and fades by 80% of the row. Sapphire
+ * at 55% keeps the white label at ~6:1 on the strongest part of the wash.
+ *
+ * `background-image` rather than `background`, because Menu paints its hover
+ * with `background-color` — the two would otherwise fight, and this way they
+ * simply cannot. `--menu-item-hover: transparent` then keeps the active row
+ * looking identical whether or not the pointer is on it, the way it behaved
+ * when these rows lived in the bar. */
+.deckActive {
+  --deck-bleed: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--mantine-color-sapphire-4) 55%, transparent),
+    transparent 80%
+  );
+  --menu-item-hover: transparent;
+  --menu-item-color: var(--mantine-color-dark-0);
+  background-image: var(--deck-bleed);
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab {
+    transition: none;
+  }
+}

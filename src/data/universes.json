@@ -10,19 +10,38 @@
     "precons": [
       {
         "id": "food-and-fellowship",
-        "name": "Food and Fellowship"
+        "name": "Food and Fellowship",
+        "colorIdentity": [
+          "W",
+          "B",
+          "G"
+        ]
       },
       {
         "id": "riders-of-rohan",
-        "name": "Riders of Rohan"
+        "name": "Riders of Rohan",
+        "colorIdentity": [
+          "W",
+          "U",
+          "R"
+        ]
       },
       {
         "id": "elven-council",
-        "name": "Elven Council"
+        "name": "Elven Council",
+        "colorIdentity": [
+          "U",
+          "G"
+        ]
       },
       {
         "id": "the-hosts-of-mordor",
-        "name": "The Hosts of Mordor"
+        "name": "The Hosts of Mordor",
+        "colorIdentity": [
+          "U",
+          "B",
+          "R"
+        ]
       }
     ]
   },
@@ -38,19 +57,39 @@
     "precons": [
       {
         "id": "revival-trance",
-        "name": "Revival Trance"
+        "name": "Revival Trance",
+        "colorIdentity": [
+          "W",
+          "B",
+          "R"
+        ]
       },
       {
         "id": "limit-break",
-        "name": "Limit Break"
+        "name": "Limit Break",
+        "colorIdentity": [
+          "W",
+          "R",
+          "G"
+        ]
       },
       {
         "id": "counter-blitz",
-        "name": "Counter Blitz"
+        "name": "Counter Blitz",
+        "colorIdentity": [
+          "W",
+          "U",
+          "G"
+        ]
       },
       {
         "id": "scions-and-spellcraft",
-        "name": "Scions & Spellcraft"
+        "name": "Scions & Spellcraft",
+        "colorIdentity": [
+          "W",
+          "U",
+          "B"
+        ]
       }
     ]
   },
@@ -66,7 +105,14 @@
     "precons": [
       {
         "id": "turtle-power",
-        "name": "Turtle Power"
+        "name": "Turtle Power",
+        "colorIdentity": [
+          "W",
+          "U",
+          "B",
+          "R",
+          "G"
+        ]
       }
     ]
   },
@@ -84,19 +130,39 @@
     "precons": [
       {
         "id": "avengers-assemble",
-        "name": "Avengers Assemble"
+        "name": "Avengers Assemble",
+        "colorIdentity": [
+          "W",
+          "U",
+          "R"
+        ]
       },
       {
         "id": "the-fantastic-four",
-        "name": "The Fantastic Four"
+        "name": "The Fantastic Four",
+        "colorIdentity": [
+          "W",
+          "U",
+          "R",
+          "G"
+        ]
       },
       {
         "id": "wakanda-forever",
-        "name": "Wakanda Forever"
+        "name": "Wakanda Forever",
+        "colorIdentity": [
+          "W",
+          "G"
+        ]
       },
       {
         "id": "doom-prevails",
-        "name": "Doom Prevails"
+        "name": "Doom Prevails",
+        "colorIdentity": [
+          "U",
+          "B",
+          "R"
+        ]
       }
     ]
   }

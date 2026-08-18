@@ -1,0 +1,95 @@
+/* Mobile drawer navigation: the universe list, full height, behind the burger.
+ *
+ * Universe rows carry the commander set symbol. Deck rows carry no symbol at
+ * all — instead a ✦ (the same glyph the header uses between its descriptors)
+ * marks the active deck, sitting in the column the universe symbols occupy.
+ * A row never shows both. */
+
+/* The list and group stacks, and the labels' flex sizing, are Mantine props in
+ * universe-drawer-nav.tsx. What stays here is everything that needs a
+ * pseudo-element (the rail, the ✦) or a pseudo-class (hover, focus). */
+
+/* The rail hangs off the deck list rather than the whole group, so a universe
+ * name that wraps to two lines ("Teenage Mutant Ninja Turtles" does, at drawer
+ * width) pushes the rail down with it instead of being crossed by it. */
+.decks {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+}
+
+.decks::before {
+  content: '';
+  position: absolute;
+  /* Dead centre of the icon column: the row's left padding plus half the slot. */
+  left: calc(var(--mantine-spacing-sm) + 0.75rem);
+  top: 0;
+  bottom: 6px;
+  width: 1px;
+  border-radius: 2px;
+  background: var(--mantine-color-dark-5);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem var(--mantine-spacing-sm);
+  width: 100%;
+  text-decoration: none;
+  color: var(--mantine-color-text);
+  cursor: pointer;
+  position: relative;
+  transition: background-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
+}
+
+.row:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.row:focus-visible {
+  outline: 2px solid var(--mantine-color-sapphire-4);
+  outline-offset: -2px;
+}
+
+/* Sizing and weight are props; only the wrap behaviour needs a rule, since
+ * `word-break` has no style prop. */
+.label {
+  word-break: break-word;
+}
+
+.universeActive {
+  color: var(--mantine-color-gold-4);
+  box-shadow: inset 3px 0 0 var(--mantine-color-gold-4);
+}
+
+/* The ✦ marker. Always present so nothing shifts when it lights up, and
+ * stacked above the rail it sits on. */
+.deck::before {
+  content: '✦';
+  position: absolute;
+  left: calc(var(--mantine-spacing-sm) + 0.75rem);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.95rem;
+  line-height: 1;
+  color: transparent;
+  transition: color 150ms ease;
+  z-index: 1;
+}
+
+.deckActive {
+  color: var(--mantine-color-gold-4);
+}
+
+.deckActive::before {
+  color: var(--mantine-color-gold-4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .row,
+  .deck::before {
+    transition: none;
+  }
+}

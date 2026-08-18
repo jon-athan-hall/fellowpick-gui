@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from '../features/auth';
 import { CardPreviewProvider } from '../features/pick';
-import { theme } from '../theme';
+import { cssVariablesResolver, theme } from '../theme';
 import { AppRouter } from './app-router';
 
 const queryClient = new QueryClient({
@@ -19,7 +19,11 @@ const queryClient = new QueryClient({
 // Bootstraps the application with theme, routing, auth, and query providers.
 export function App() {
   return (
-    <MantineProvider theme={theme} defaultColorScheme="dark">
+    <MantineProvider
+      theme={theme}
+      cssVariablesResolver={cssVariablesResolver}
+      defaultColorScheme="dark"
+    >
       <Notifications />
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>

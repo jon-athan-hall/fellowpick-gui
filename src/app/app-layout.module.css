@@ -1,23 +1,26 @@
-/* AppShell.Navbar: floating panel with rounded corners on desktop, full-screen
- * sheet on mobile. The mobile rules at left:0/width:100% are what makes
- * Mantine's collapsed translateX(-100%) actually shift the navbar fully off
- * screen — with the desktop left:16 inset, 16px of its right edge would
- * peek through. */
-.navbar {
-  top: calc(var(--app-shell-header-offset) + 16px);
-  left: 16px;
-  bottom: 16px;
-  width: 275px;
-  height: auto;
-  border-radius: var(--mantine-radius-md);
+/* AppShell.Navbar is the mobile drawer only — on desktop the two-tier
+ * UniverseNav bar takes over.
+ *
+ * These rules MUST stay inside the mobile query. Mantine hides a collapsed
+ * desktop navbar by translating it left by --app-shell-navbar-width (291px),
+ * not by its own width, so a viewport-wide navbar at any width above the
+ * breakpoint shifts 291px and leaves the rest of itself covering the page. */
+@media (min-width: 48.0625em) {
+  .navbar {
+    display: none;
+  }
 }
 
+/* Full-screen sheet on mobile. left:0/width:100% is what makes Mantine's
+ * collapsed translateX(-100%) shift the navbar fully off screen; any left
+ * inset would leave its right edge peeking through. */
 @media (max-width: 48em) {
   .navbar {
     top: var(--app-shell-header-offset);
     left: 0;
     bottom: 0;
     width: 100%;
+    height: auto;
     border-radius: 0;
   }
 }
@@ -48,85 +51,6 @@
   border-radius: var(--mantine-radius-sm);
 }
 
-/* Sidebar navigation styles. Built on plain <Link> + flex layout rather than
-   Mantine NavLink, because NavLink's internal section/body sizing uses
-   em-relative spacing that drifts when the row's font-size differs. Keeping
-   universe and precon rows on the SAME flat flex structure with a fixed-width
-   icon slot guarantees label alignment down the column. */
-
-.navList {
-  display: flex;
-  flex-direction: column;
-  gap: var(--mantine-spacing-sm);
-}
-
-.universeGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.navItem {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  padding: 0.5rem 0.75rem;
-  width: 100%;
-  text-decoration: none;
-  color: var(--mantine-color-text);
-  border-radius: 0;
-  transition: background-color 150ms ease, color 150ms ease;
-  cursor: pointer;
-}
-
-/* Resting hover for any item — subtle white-overlay tint so it works on the
-   navbar's dark.6 panel regardless of color theme. */
-.navItem:hover {
-  background-color: rgba(255, 255, 255, 0.04);
-}
-
-/* Active resting state matches the inactive-hover bg, so the inactive→active
-   transition (or active appearing while already hovered) is smooth. */
-.navItem.active {
-  background-color: rgba(255, 255, 255, 0.04);
-}
-
-.navItem.active:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-}
-
-/* Optical correction: the visible set icon's ink visually crowds the label
-   compared to the precon row's invisible placeholder, making the universe
-   label *look* pushed right even though the layout is column-aligned. Pulling
-   the universe row's icon→label gap down by 2px (10px vs 12px) corrects the
-   illusion. */
-.navItem.universe {
-  gap: 0.625rem;
-}
-
-/* Colored left accent on active items — same idea as the colored top border
-   on the deck cards on the universes page, rotated 90°. Box-shadow rather
-   than border-left so the accent doesn't reserve 3px of layout space when
-   inactive. Color matches each row's theme. */
-.universe.active {
-  box-shadow: inset 3px 0 0 var(--mantine-color-rust-5);
-  color: var(--mantine-color-rust-4);
-}
-
-.precon.active {
-  box-shadow: inset 3px 0 0 var(--mantine-color-yellow-5);
-  color: var(--mantine-color-yellow-4);
-}
-
-.label {
-  flex: 1;
-  min-width: 0;
-  text-align: left;
-  word-break: break-word;
-}
-
-/* Universe labels are bold for visual hierarchy. The 2px gap correction above
-   accounts for the slight optical shift this creates. */
-.universe .label {
-  font-weight: 600;
-}
+/* The nav row styles that used to live here now belong to the two navigation
+   components that own them: universe-nav.module.css (desktop bar) and
+   universe-drawer-nav.module.css (mobile drawer). */
