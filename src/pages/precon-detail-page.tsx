@@ -5,6 +5,7 @@ import { Outlet, useMatch, useParams } from 'react-router-dom';
 import { useAuth } from '../features/auth';
 import classes from './precon-detail-page.module.css';
 import {
+  CardHoverPreview,
   CardPreviewDrawer,
   DeckIdentity,
   PickSwitcher,
@@ -236,6 +237,11 @@ export function PreconDetailPage() {
       )}
 
       {countsQuery.isLoading ? <Loader /> : <Outlet context={boardContext} />}
+
+      {/* The two halves of the same feature: hover follows the pointer on a
+          desktop, and a tap opens the sheet on a phone. Both read the same
+          preview state, so only one of them may be live at a time. */}
+      <CardHoverPreview disabled={isMobile} />
 
       <CardPreviewDrawer
         card={previewCard}

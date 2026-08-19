@@ -359,13 +359,22 @@ export function CardTable({
       // a data attribute on an object literal.
       ...(canVote ? { 'data-vote-row': true } : {}),
       onClick: () => handleRowClick(row.original),
+      // Only the opening half lives here. Clearing on the row's own leave would
+      // blink the art off between every pair of rows, because leaving one row
+      // fires before entering the next — the table below owns the close.
       onMouseEnter: isMobile ? undefined : () => setPreviewImage(row.original.scryfallImage),
-      onMouseLeave: isMobile ? undefined : () => setPreviewImage(null),
       // Without this, a quick second vote on the same row selects the card name
       // instead of registering as a press.
       style: { cursor: 'pointer', userSelect: 'none' },
     }),
   });
 
-  return <MantineReactTable table={table} />;
+  return (
+    // The preview closes when the pointer leaves the whole table rather than
+    // when it leaves a row, so moving down the list is one continuous preview
+    // instead of one that blinks off at every row boundary.
+    <div onMouseLeave={isMobile ? undefined : () => setPreviewImage(null)}>
+      <MantineReactTable table={table} />
+    </div>
+  );
 }
