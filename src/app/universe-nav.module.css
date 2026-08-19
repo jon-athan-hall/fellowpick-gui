@@ -59,6 +59,10 @@
   --menu-item-color: var(--mantine-color-dark-0);
   background-image: var(--deck-bleed);
   font-weight: 600;
+  /* The same radius the vote unit in the card table takes, so the two accented
+   * surfaces in the app agree on how a corner is cut. Only the left corners
+   * read — the wash has already faded out by the right edge. */
+  border-radius: var(--mantine-radius-sm);
 }
 
 @media (prefers-reduced-motion: reduce) {

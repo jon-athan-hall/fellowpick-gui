@@ -1,5 +1,5 @@
-import { ActionIcon, Badge, Group, Switch, Text, UnstyledButton } from '@mantine/core';
-import { IconArrowDown, IconArrowUp, IconArrowsSort } from '@tabler/icons-react';
+import { ActionIcon, Group, Text, UnstyledButton, VisuallyHidden } from '@mantine/core';
+import { IconArrowDown, IconArrowUp, IconArrowsSort, IconCheck } from '@tabler/icons-react';
 import {
   MantineReactTable,
   useMantineReactTable,
@@ -8,10 +8,12 @@ import {
   type MRT_SortingState,
 } from 'mantine-react-table';
 import { useMemo } from 'react';
+import { cx } from '../../../common/utils/cx';
 import { cardTypeLabel } from '../card-type';
 import { useCardPreview } from '../hooks/use-card-preview';
-import { PICK_ACCENT, PICK_ACCENT_NAME } from '../pick-accent';
+import { PICK_ACCENT, PICK_ACCENT_FILL, PICK_ACCENT_ON_FILL } from '../pick-accent';
 import type { Card, PickType } from '../types';
+import classes from './card-table.module.css';
 import { ManaCost } from './mana-cost';
 
 export type SortColumn = 'votes' | 'cmc' | 'type' | 'name';
@@ -79,7 +81,7 @@ function ColumnHeading({ column, pickType }: { column: MRT_Column<Card>; pickTyp
       w="100%"
       style={{ display: 'block', textAlign: 'left' }}
     >
-      <Group gap="md" wrap="nowrap" align="center">
+      <Group gap="xs" wrap="nowrap" align="center">
         <Text component="span" fz="lg" fw={600} tt="uppercase" lts="0.1em" lh={1.2}>
           {label}
         </Text>
@@ -108,6 +110,57 @@ function ColumnHeading({ column, pickType }: { column: MRT_Column<Card>; pickTyp
   );
 }
 
+/**
+ * The Votes cell: the community count and the user's own vote as one object.
+ *
+ * They were a badge and a switch sitting beside each other, which read as two
+ * unrelated things — one a readout, one a control the row click operated by
+ * proxy. Joined into a single shell they read as what they are: a button
+ * carrying its own tally, which the whole row presses.
+ *
+ * The vote half is dropped entirely when a click cannot vote — a signed-out
+ * visitor, or a phone, where a tap opens the preview instead. The count keeps
+ * its shell, and `card-table.module.css` withholds the press from those rows.
+ *
+ * Styling lives in the module because the press hangs off `:active` on the row
+ * rather than on anything this component renders.
+ */
+function VoteUnit({
+  count,
+  voted,
+  canVote,
+  pickType,
+}: {
+  count: number;
+  voted: boolean;
+  canVote: boolean;
+  pickType: PickType;
+}) {
+  return (
+    <span
+      className={cx(classes.unit, voted && classes.voted)}
+      style={
+        {
+          '--vote-accent': PICK_ACCENT[pickType],
+          '--vote-fill': PICK_ACCENT_FILL[pickType],
+          '--vote-on-fill': PICK_ACCENT_ON_FILL[pickType],
+        } as React.CSSProperties
+      }
+    >
+      <span className={classes.count}>{count}</span>
+      {canVote && (
+        <>
+          <span className={classes.seam} aria-hidden="true" />
+          <span className={classes.check}>
+            <IconCheck size="1rem" stroke={3} aria-hidden="true" />
+            {voted && <VisuallyHidden>Your vote</VisuallyHidden>}
+          </span>
+        </>
+      )}
+    </span>
+  );
+}
+
 // Renders the card list as a Mantine React Table v2. We pass the data already
 // sorted and paginated from the parent — `manualSorting: true` tells MRT not
 // to reorder (preserves the "card you just voted on stays put" lock), and
@@ -126,7 +179,9 @@ export function CardTable({
   onUnpick,
 }: CardTableProps) {
   const { setPreviewImage } = useCardPreview();
-  const accentColor = PICK_ACCENT_NAME[pickType];
+  // A tap on mobile opens the preview drawer rather than voting, so the vote
+  // half of the unit and the row's press both hang off this one condition.
+  const canVote = !isMobile && canPick;
 
   const columns = useMemo<MRT_ColumnDef<Card>[]>(() => {
     return [
@@ -134,46 +189,46 @@ export function CardTable({
         id: 'votes',
         accessorFn: (row) => countMap[row.id]?.[pickType] ?? 0,
         header: 'Votes',
-        size: 110,
-        Cell: ({ row }) => {
-          const count = countMap[row.original.id]?.[pickType] ?? 0;
-          const userPicked = myPickMap[`${row.original.id}:${pickType}`] !== undefined;
-          return (
-            <Group gap={8} wrap="nowrap">
-              <Badge variant="outline" size="lg" w={50} color={accentColor}>
-                {count}
-              </Badge>
-              {!isMobile && canPick && (
-                // pointer-events: none so the Switch doesn't double-fire a
-                // synthetic click on top of the row click.
-                <div style={{ pointerEvents: 'none' }}>
-                  <Switch
-                    checked={userPicked}
-                    readOnly
-                    size="sm"
-                    color={accentColor}
-                    tabIndex={-1}
-                    withThumbIndicator={false}
-                  />
-                </div>
-              )}
-            </Group>
-          );
-        },
+        // These sizes are the heading's width, not the cell's — every column
+        // here is titled by a word wider than what sits under it, so the
+        // heading is what the column has to clear. The table lays out
+        // semantically, so a size narrower than the content is only ignored.
+        size: 104,
+        Cell: ({ row }) => (
+          <VoteUnit
+            count={countMap[row.original.id]?.[pickType] ?? 0}
+            voted={myPickMap[`${row.original.id}:${pickType}`] !== undefined}
+            canVote={canVote}
+            pickType={pickType}
+          />
+        ),
       },
       {
         id: 'cmc',
         accessorFn: (row) => row.manaValue,
-        header: 'CMC',
-        size: 80,
+        // "CMC" is the rules term; "COST" is what the column shows — the pips
+        // themselves, not the converted number. The id stays `cmc` because it
+        // is the sort key `pick-board` switches on, and that does sort by the
+        // converted value.
+        header: 'Cost',
+        // The heading's width, as elsewhere. A typical two- or three-pip cost
+        // sits well inside it; the handful of five- and seven-pip cards in the
+        // data push their page's column wider, which is the price of pips this
+        // size and worth paying — they are the column's whole content.
+        size: 110,
+        // Larger than the body text beside them on purpose: these are read as
+        // symbols, not glyphs, and the colour pie has to be legible at a glance
+        // down the column.
         Cell: ({ row }) =>
-          row.original.manaCost ? <ManaCost cost={row.original.manaCost} size={16} /> : null,
+          row.original.manaCost ? <ManaCost cost={row.original.manaCost} size={20} /> : null,
       },
       {
         id: 'type',
         accessorFn: cardTypeLabel,
         header: 'Type',
-        size: 160,
+        // Truncates rather than sets the width: "Legendary Artifact Creature"
+        // would take 260px and no column of supporting detail earns that.
+        size: 130,
         Cell: ({ row }) => (
           <Text size="md" truncate>
             {cardTypeLabel(row.original)}
@@ -195,7 +250,7 @@ export function CardTable({
         ),
       },
     ];
-  }, [accentColor, canPick, countMap, isMobile, myPickMap, pickType]);
+  }, [canVote, countMap, myPickMap, pickType]);
 
   const handleRowClick = (card: Card) => {
     if (isMobile) {
@@ -231,7 +286,7 @@ export function CardTable({
     enableTopToolbar: false,
     enableBottomToolbar: false,
     enableColumnActions: false,
-    // CMC and Type are both supporting detail; a phone has room for the vote
+    // Cost and Type are both supporting detail; a phone has room for the vote
     // and the name, and little else.
     state: { sorting, columnVisibility: { cmc: !isMobile, type: !isMobile } },
     onSortingChange: (updater) => {
@@ -239,17 +294,21 @@ export function CardTable({
       onSortingChange(next);
     },
     mantineTableProps: {
-      // A full grid in a faint line, rather than row dividers alone: four
-      // columns of quite different content (a badge, mana symbols, two strings)
-      // track better across a row when the columns are ruled.
+      // Rows only. The column rules were there to help four kinds of content
+      // track across a row, but the vote unit now draws its own edges and the
+      // ruled cells fought it — two boxes inside one box. Alignment carries the
+      // columns on its own.
       withRowBorders: true,
-      withColumnBorders: true,
+      withColumnBorders: false,
       // No ring around the table. The panel it sits in is the container, and a
       // second edge a few pixels inside the first reads as a mistake.
       withTableBorder: false,
       borderColor: TABLE_LINE,
       verticalSpacing: 'sm',
-      horizontalSpacing: 'md',
+      // 12px rather than 16. With the column rules gone the gutters are all
+      // that separate the columns, but they only have to read as a gap — the
+      // extra 4px each side was buying width, not clarity.
+      horizontalSpacing: 'sm',
       highlightOnHover: true,
       highlightOnHoverColor: `color-mix(in srgb, ${PICK_ACCENT[pickType]} ${HOVER_TINT_PERCENT}%, transparent)`,
     },
@@ -262,6 +321,14 @@ export function CardTable({
       withBorder: false,
       shadow: undefined,
     },
+    // Mantine centres table cells already. The catch is that the vote unit and
+    // the mana pips are inline-level boxes: they sit on the cell's text
+    // baseline, and the strut below it — the descender of a line of text that
+    // isn't there — is part of what gets centred. The box ends up riding a few
+    // pixels high. Zeroing the line box in the two columns that hold no text
+    // collapses the strut, so what gets centred is the box itself.
+    mantineTableBodyCellProps: ({ column }) =>
+      column.id === 'votes' || column.id === 'cmc' ? { style: { lineHeight: 0 } } : {},
     mantineTableHeadCellProps: ({ column }) => {
       const sorted = column.getIsSorted();
       return {
@@ -273,10 +340,17 @@ export function CardTable({
       };
     },
     mantineTableBodyRowProps: ({ row }) => ({
+      // The row is the button: the vote unit's press is `:active` on this
+      // element, so the marker only goes on rows where a click actually votes.
+      // Spread rather than written inline — React's prop types have no slot for
+      // a data attribute on an object literal.
+      ...(canVote ? { 'data-vote-row': true } : {}),
       onClick: () => handleRowClick(row.original),
       onMouseEnter: isMobile ? undefined : () => setPreviewImage(row.original.scryfallImage),
       onMouseLeave: isMobile ? undefined : () => setPreviewImage(null),
-      style: { cursor: 'pointer' },
+      // Without this, a quick second vote on the same row selects the card name
+      // instead of registering as a press.
+      style: { cursor: 'pointer', userSelect: 'none' },
     }),
   });
 

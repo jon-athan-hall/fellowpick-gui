@@ -21,3 +21,22 @@ export const PICK_ACCENT_NAME: Record<PickType, string> = {
   CUT: 'red',
   ADD: 'gold',
 };
+
+/**
+ * The vote's *filled* surface, and the text that sits on top of it.
+ *
+ * Shade 6 in both ramps is the documented fill tone, and these are the two
+ * pairings `autoContrast` would choose itself: white on crimson (4.8:1) and
+ * black on gold (11.3:1). A component that hands Mantine a `color` prop gets
+ * that for free — the vote unit paints its own ground in CSS, so it has to be
+ * told.
+ */
+export const PICK_ACCENT_FILL: Record<PickType, string> = {
+  CUT: 'var(--mantine-color-red-6)',
+  ADD: 'var(--mantine-color-gold-6)',
+};
+
+export const PICK_ACCENT_ON_FILL: Record<PickType, string> = {
+  CUT: 'var(--mantine-color-white)',
+  ADD: 'var(--mantine-color-black)',
+};

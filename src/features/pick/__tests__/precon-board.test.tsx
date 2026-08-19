@@ -179,8 +179,8 @@ describe('precon board', () => {
     const { rerender } = await renderBoard();
     const orderBefore = bodyRows().map(rowName);
 
-    // A card already on the first page, so its badge is on screen to prove the
-    // count really did update while the row stayed put.
+    // A card already on the first page, so its vote unit is on screen to prove
+    // the count really did update while the row stayed put.
     mocks.counts = [{ cardId: alsoOnFirstPage.id, pickType: 'CUT', count: 99 }];
     rerender(<PickApp />);
 
