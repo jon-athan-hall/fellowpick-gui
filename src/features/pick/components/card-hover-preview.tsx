@@ -1,5 +1,6 @@
 import { Box, Image, Portal } from '@mantine/core';
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
+import { CARD_CORNER_RADIUS } from '../card-art';
 import { useCardPreview } from '../hooks/use-card-preview';
 
 /**
@@ -89,7 +90,6 @@ export function CardHoverPreview({ disabled = false }: { disabled?: boolean }) {
         w={PREVIEW_WIDTH}
         h={PREVIEW_HEIGHT}
         bg="dark.7"
-        bdrs="md"
         style={{
           position: 'fixed',
           top: 0,
@@ -98,6 +98,12 @@ export function CardHoverPreview({ disabled = false }: { disabled?: boolean }) {
           zIndex: 'var(--mantine-z-index-popover)',
           pointerEvents: 'none',
           boxShadow: 'var(--mantine-shadow-xl)',
+          // The card's own corners rather than a scale token, and on the box
+          // rather than the image: `overflow: hidden` then clips the JPEG's
+          // white wedges, and the shadow follows the card's shape instead of
+          // boxing it. The box is sized to the art exactly, so one radius
+          // serves both.
+          borderRadius: CARD_CORNER_RADIUS,
           overflow: 'hidden',
         }}
       >

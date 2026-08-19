@@ -1,0 +1,145 @@
+/*
+ * The vote unit — the community count and the user's own vote, joined into one
+ * control-shaped object.
+ *
+ * It has two hosts and so two ways of being pressed. In the card table the
+ * *row* is the button and the unit only depicts it, so the press has to come
+ * from an ancestor selector. In the mobile preview sheet the unit is the button
+ * itself. Both resolve to the same transform, so the two read as one component
+ * rather than as a pair that happen to look alike.
+ *
+ * A CSS module rather than props because none of that is reachable from
+ * Mantine: `:active` on an ancestor has no prop, and the voted state has to be
+ * a class or the colours snap instead of transitioning.
+ *
+ * The `--vote-*` colour properties are set per instance by the component, since
+ * the accent is crimson under CUT and gold under ADD.
+ */
+
+.unit {
+  /* One number carries both the shadow and the travel, so the unit sits down
+   * into exactly the shadow it was standing on. That equality is the whole
+   * effect — as two independent values it reads as a shape sliding instead of
+   * a button going down. */
+  --depth: 3px;
+  --press: 130ms cubic-bezier(0.34, 1.4, 0.64, 1);
+  --unit-height: 1.625rem;
+  --unit-font-size: 1.05rem;
+
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: var(--mantine-radius-sm);
+  overflow: hidden;
+  background: var(--mantine-color-dark-5);
+  box-shadow: var(--depth) var(--depth) 0 var(--mantine-color-black);
+  transition:
+    transform var(--press),
+    box-shadow var(--press);
+}
+
+/* Thumb-sized and full width, for the mobile preview sheet. Everything scales
+ * off the two custom properties above, so the large unit is the same drawing
+ * at a different size rather than a second design. */
+.lg {
+  --depth: 5px;
+  --unit-height: 3.5rem;
+  --unit-font-size: 1.75rem;
+
+  display: flex;
+  width: 100%;
+  border-radius: var(--mantine-radius-md);
+}
+
+/* Three parts count to two parts ✓ — 60/40. The small unit's ✓ is a square,
+ * because in a table column there is no width to give it; across the full sheet
+ * the ✓ takes nearly half the bar, which is the half being pressed. The count
+ * keeps the majority, so which half is the readout stays legible.
+ * The seam's 1px comes out of neither, so the ratio is of what remains. */
+.lg .count {
+  flex: 3;
+}
+
+.lg .check {
+  flex: 2;
+  /* Releases the square from the small size, so flex sets the width. */
+  width: auto;
+}
+
+/* Two classes, so these hold whichever order the stylesheets land in —
+ * UnstyledButton resets background and padding from a class of its own. */
+.unit.interactive {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: var(--mantine-color-dark-5);
+  font-family: inherit;
+}
+
+.unit.interactive:active,
+[data-vote-row]:active .unit {
+  transform: translate(var(--depth), var(--depth));
+  box-shadow: none;
+}
+
+.count,
+.check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: var(--unit-height);
+  transition:
+    background-color var(--press),
+    color var(--press);
+}
+
+.count {
+  min-width: 2.9em;
+  padding: 0 0.55em;
+  /* Between md and lg on the type scale at the small size, and deliberately so:
+   * it is the size the unit was drawn at. Tabular figures keep the digits
+   * stacked down the table's column as counts change under a live vote. */
+  font-size: var(--unit-font-size);
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--mantine-color-dimmed);
+}
+
+.seam {
+  width: 1px;
+  background: var(--mantine-color-dark-4);
+  transition: background-color var(--press);
+}
+
+.check {
+  width: var(--unit-height);
+  /* The glyph is sized in `em`, so it scales with the unit rather than needing
+   * a second value per size. */
+  font-size: var(--unit-font-size);
+  color: var(--mantine-color-dark-3);
+}
+
+/* Voted: the ✓ half takes the accent as its ground, the seam takes it as a
+ * line, and the count steps up out of dimmed. */
+.voted .count {
+  color: var(--mantine-color-text);
+}
+
+.voted .seam {
+  background: var(--vote-accent);
+}
+
+.voted .check {
+  background: var(--vote-fill);
+  color: var(--vote-on-fill);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .unit,
+  .count,
+  .check,
+  .seam {
+    transition: none;
+  }
+}

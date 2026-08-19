@@ -103,6 +103,7 @@ export function PreconDetailPage() {
   const previewPickId = previewCardId
     ? myPickMap[`${previewCardId}:${activePickType}`]
     : undefined;
+  const previewCount = previewCardId ? countMap[previewCardId]?.[activePickType] ?? 0 : 0;
 
   const handleCardTap = useCallback((cardId: string) => {
     setPreviewCardId(cardId);
@@ -117,7 +118,10 @@ export function PreconDetailPage() {
     } else {
       makePick.mutate({ preconId, cardId: previewCardId, pickType: activePickType });
     }
-    setPreviewCardId(null);
+    // The sheet stays open. The unit that was just tapped is the thing that
+    // reports the result — the count ticks up and the ✓ fills — and closing on
+    // the tap would take that away at the moment it happens. It also leaves the
+    // vote reversible without reopening the card.
   }, [previewCardId, previewPickId, preconId, activePickType, makePick, removePick]);
 
   const handlePick = useCallback(
@@ -246,6 +250,7 @@ export function PreconDetailPage() {
       <CardPreviewDrawer
         card={previewCard}
         pickType={activePickType}
+        count={previewCount}
         hasVoted={previewPickId !== undefined}
         canVote={isAuthenticated}
         onVote={handleVoteFromPreview}

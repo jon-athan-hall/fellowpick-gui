@@ -1,17 +1,13 @@
-import {
-  Button,
-  CloseButton,
-  Drawer,
-  Group,
-  Image,
-  Stack,
-  Text,
-} from '@mantine/core';
+import { Box, CloseButton, Drawer, Group, Image, Stack } from '@mantine/core';
+import { CARD_CORNER_RADIUS } from '../card-art';
 import type { Card, PickType } from '../types';
+import { VoteUnit } from './vote-unit';
 
 interface CardPreviewDrawerProps {
   card: Card | null;
   pickType: PickType;
+  /** The community's tally for this card, shown inside the vote unit. */
+  count: number;
   hasVoted: boolean;
   canVote: boolean;
   onVote: () => void;
@@ -37,13 +33,12 @@ interface CardPreviewDrawerProps {
 export function CardPreviewDrawer({
   card,
   pickType,
+  count,
   hasVoted,
   canVote,
   onVote,
   onClose,
 }: CardPreviewDrawerProps) {
-  const accentColor = pickType === 'CUT' ? 'red' : 'secondary';
-  const action = pickType === 'CUT' ? 'CUT' : 'ADDED';
   return (
     <Drawer
       opened={card !== null}
@@ -85,32 +80,38 @@ export function CardPreviewDrawer({
             mah="55vh"
             maw="100%"
             fit="contain"
+            // Mantine's Image is `width: 100%`. Left at that, a viewport short
+            // enough for the 55vh cap to bind would letterbox the art inside a
+            // full-width box — and the radius below would then round the empty
+            // bars while the card's own white corners stayed square. Auto width
+            // makes the element the art's own size under either constraint.
+            w="auto"
+            mx="auto"
+            // Clipped to the card's own corners. Without it the JPEG's four
+            // white wedges sit against the dark inset behind it.
+            style={{ borderRadius: CARD_CORNER_RADIUS }}
           />
         )}
 
-        {/* Note + button grouped together, pinned to the bottom of the inset
-         * via mt="auto" on the wrapper. The note sits directly above the
-         * button so the user reads "ALREADY CUT BY YOU" right next to
-         * "UNDO CUT", in their natural reading order. */}
-        {(canVote || hasVoted) && (
-          <Stack gap="xs" mt="auto">
-            {hasVoted && (
-              <Text size="sm" c="dimmed" ta="center">
-                ALREADY {action} BY YOU
-              </Text>
-            )}
-            {canVote && (
-              <Button
-                fullWidth
-                size="lg"
-                color={accentColor}
-                onClick={onVote}
-              >
-                {hasVoted ? `UNDO ${pickType}` : pickType}
-              </Button>
-            )}
-          </Stack>
-        )}
+        {/* Pinned to the bottom of the inset, under the thumb, by `mt="auto"`
+         * absorbing the slack above it.
+         *
+         * The same unit the desktop table puts in its Votes column, at the
+         * large size. It says both things the old button and its note said
+         * between them — how many votes the card has, and whether one of them
+         * is yours — without either having to be spelled out in a sentence.
+         * A guest gets the count alone, since the ✓ half is only drawn when a
+         * vote is possible. */}
+        <Box mt="auto">
+          <VoteUnit
+            count={count}
+            voted={hasVoted}
+            canVote={canVote}
+            pickType={pickType}
+            size="lg"
+            onClick={canVote ? onVote : undefined}
+          />
+        </Box>
       </Stack>
     </Drawer>
   );

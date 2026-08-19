@@ -1,5 +1,5 @@
-import { ActionIcon, Group, Text, UnstyledButton, VisuallyHidden } from '@mantine/core';
-import { IconArrowDown, IconArrowUp, IconArrowsSort, IconCheck } from '@tabler/icons-react';
+import { ActionIcon, Group, Text, UnstyledButton } from '@mantine/core';
+import { IconArrowDown, IconArrowUp, IconArrowsSort } from '@tabler/icons-react';
 import {
   MantineReactTable,
   useMantineReactTable,
@@ -8,13 +8,12 @@ import {
   type MRT_SortingState,
 } from 'mantine-react-table';
 import { useMemo } from 'react';
-import { cx } from '../../../common/utils/cx';
 import { cardTypeLabel } from '../card-type';
 import { useCardPreview } from '../hooks/use-card-preview';
-import { PICK_ACCENT, PICK_ACCENT_FILL, PICK_ACCENT_ON_FILL } from '../pick-accent';
+import { PICK_ACCENT } from '../pick-accent';
 import type { Card, PickType } from '../types';
-import classes from './card-table.module.css';
 import { ManaCost } from './mana-cost';
+import { VoteUnit } from './vote-unit';
 
 export type SortColumn = 'votes' | 'cmc' | 'type' | 'name';
 
@@ -110,57 +109,6 @@ function ColumnHeading({ column, pickType }: { column: MRT_Column<Card>; pickTyp
   );
 }
 
-/**
- * The Votes cell: the community count and the user's own vote as one object.
- *
- * They were a badge and a switch sitting beside each other, which read as two
- * unrelated things — one a readout, one a control the row click operated by
- * proxy. Joined into a single shell they read as what they are: a button
- * carrying its own tally, which the whole row presses.
- *
- * The vote half is dropped entirely when a click cannot vote — a signed-out
- * visitor, or a phone, where a tap opens the preview instead. The count keeps
- * its shell, and `card-table.module.css` withholds the press from those rows.
- *
- * Styling lives in the module because the press hangs off `:active` on the row
- * rather than on anything this component renders.
- */
-function VoteUnit({
-  count,
-  voted,
-  canVote,
-  pickType,
-}: {
-  count: number;
-  voted: boolean;
-  canVote: boolean;
-  pickType: PickType;
-}) {
-  return (
-    <span
-      className={cx(classes.unit, voted && classes.voted)}
-      style={
-        {
-          '--vote-accent': PICK_ACCENT[pickType],
-          '--vote-fill': PICK_ACCENT_FILL[pickType],
-          '--vote-on-fill': PICK_ACCENT_ON_FILL[pickType],
-        } as React.CSSProperties
-      }
-    >
-      <span className={classes.count}>{count}</span>
-      {canVote && (
-        <>
-          <span className={classes.seam} aria-hidden="true" />
-          <span className={classes.check}>
-            <IconCheck size="1rem" stroke={3} aria-hidden="true" />
-            {voted && <VisuallyHidden>Your vote</VisuallyHidden>}
-          </span>
-        </>
-      )}
-    </span>
-  );
-}
-
 // Renders the card list as a Mantine React Table v2. We pass the data already
 // sorted and paginated from the parent — `manualSorting: true` tells MRT not
 // to reorder (preserves the "card you just voted on stays put" lock), and
@@ -241,14 +189,14 @@ export function CardTable({
       {
         // Last, and the only column that grows — so it absorbs the leftover
         // width rather than leaving a ragged gap at the table's right edge.
-        // Deliberately oversized: a fixed layout hands surplus width to the
-        // columns in proportion to what they asked for, so the large number is
-        // what keeps the other three near the widths they were sized at instead
-        // of all four inflating together.
+        // Under a fixed layout it takes no width of its own at all (see
+        // `mantineTableHeadCellProps`), which is what lets the table fit any
+        // container: the other three are the only fixed cost, and everything
+        // left over is Name's. This `size` is only the fallback MRT needs.
         id: 'name',
         accessorKey: 'name',
         header: 'Name',
-        size: 800,
+        size: 300,
         grow: true,
         Cell: ({ row }) => (
           <Text size="md" truncate>
@@ -340,15 +288,37 @@ export function CardTable({
     // isn't there — is part of what gets centred. The box ends up riding a few
     // pixels high. Zeroing the line box in the two columns that hold no text
     // collapses the strut, so what gets centred is the box itself.
-    mantineTableBodyCellProps: ({ column }) =>
-      column.id === 'votes' || column.id === 'cmc' ? { style: { lineHeight: 0 } } : {},
+    mantineTableBodyCellProps: ({ column }) => {
+      if (column.id === 'votes' || column.id === 'cmc') return { style: { lineHeight: 0 } };
+      // A fixed layout reads its widths from the header row alone, so this is
+      // belt and braces — but MRT puts the same 300px floor on every Name cell,
+      // and nothing about the column's flexibility should depend on that being
+      // ignored.
+      if (column.id === 'name') return { style: { width: 'auto', minWidth: 0 } };
+      return {};
+    },
     mantineTableHeadCellProps: ({ column }) => {
       const sorted = column.getIsSorted();
       return {
         // MRT does not set this itself, and the heading is now a button whose
         // pressed state is otherwise only legible from the arrow's direction.
         'aria-sort': sorted === 'asc' ? 'ascending' : sorted === 'desc' ? 'descending' : 'none',
-        style: { verticalAlign: 'middle', borderBottom: HEAD_RULE },
+        style: {
+          verticalAlign: 'middle',
+          borderBottom: HEAD_RULE,
+          // A fixed layout takes its column widths from this row and does not
+          // shrink them, so a Name column with a width of its own makes the
+          // table as wide as the sum — and the rules then run off the panel's
+          // rounded edge, which is what a phone showed with only two columns
+          // visible. Auto width plus no floor makes Name purely the remainder,
+          // so the table fits its container at any width.
+          //
+          // Spread rather than a ternary per key: MRT sizes its columns with a
+          // `min-width` of its own on these cells, and this style merges over
+          // its style shallowly — so a key set to `undefined` for the other
+          // three would delete their sizing rather than leave it alone.
+          ...(column.id === 'name' ? { width: 'auto', minWidth: 0 } : {}),
+        },
         children: <ColumnHeading column={column} pickType={pickType} />,
       };
     },
