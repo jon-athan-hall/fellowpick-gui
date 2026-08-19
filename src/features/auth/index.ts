@@ -2,6 +2,7 @@ export { AuthProvider } from './hooks/auth-context';
 export { AuthContext, type AuthContextValue } from './hooks/auth-state';
 export { useAuth } from './hooks/use-auth';
 export { RequireAuth, RequireRole } from './guards';
+export { AuthFormPanel, type AuthFormLink } from './components/auth-form-panel';
 export { ResendVerificationBanner } from './components/resend-verification-banner';
 export { useLoginMutation } from './api/use-login';
 export { useRegisterMutation } from './api/use-register';

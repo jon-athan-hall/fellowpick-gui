@@ -52,6 +52,25 @@ const TABLE_LINE = 'var(--mantine-color-dark-5)';
  */
 const HEAD_RULE = '4px solid var(--mantine-color-dark-3)';
 
+/**
+ * The table's cell gutter. 12px rather than 16: with the column rules gone the
+ * gutters are all that separate the columns, but they only have to read as a
+ * gap — the extra 4px each side was buying width, not clarity.
+ */
+const CELL_GUTTER = 'sm';
+
+/**
+ * How far the table's content sits in from the edge of the panel that holds it,
+ * for anything above or below that wants to line up with the columns.
+ *
+ * Two insets stacked: MRT wraps the table in a Paper of its own, which takes
+ * this project's `p="md"` Paper default, and each cell then adds its own
+ * gutter. Neither is reachable from the outside, so a sibling can only agree
+ * with the columns by adding up the same two numbers — which is why they are
+ * added up here, once, rather than guessed at as a literal.
+ */
+export const TABLE_CONTENT_INSET = `calc(var(--mantine-spacing-md) + var(--mantine-spacing-${CELL_GUTTER}))`;
+
 /** How much of the vote's colour a hovered row takes. */
 const HOVER_TINT_PERCENT = 12;
 
@@ -281,10 +300,7 @@ export function CardTable({
       layout: 'fixed',
       borderColor: TABLE_LINE,
       verticalSpacing: 'sm',
-      // 12px rather than 16. With the column rules gone the gutters are all
-      // that separate the columns, but they only have to read as a gap — the
-      // extra 4px each side was buying width, not clarity.
-      horizontalSpacing: 'sm',
+      horizontalSpacing: CELL_GUTTER,
       highlightOnHover: true,
       highlightOnHoverColor: `color-mix(in srgb, ${PICK_ACCENT[pickType]} ${HOVER_TINT_PERCENT}%, transparent)`,
     },

@@ -40,9 +40,6 @@ const CENTRED_ON_VIEWPORT_BELOW_NAV = `calc(100dvh - 2 * (${CHROME_ABOVE} + ${NA
  */
 export const PANEL_HALF_COLUMN = 'calc(min(100%, max(20rem, 50%)))';
 
-/** The same shape, widened for pages whose card holds prose rather than a form. */
-export const PANEL_PROSE_COLUMN = 'calc(min(100%, max(20rem, 68%)))';
-
 interface CenteredGlowPanelProps {
   children: ReactNode;
   /** Card width. One of the `PANEL_*` expressions, or any CSS length. */

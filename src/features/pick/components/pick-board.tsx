@@ -1,6 +1,11 @@
 import { Group, Pagination, Paper } from '@mantine/core';
 import { useMemo, useState } from 'react';
-import { cardTypeOptions, filterCards, NO_FILTERS, type CardFilters } from '../card-filter';
+import {
+  cardTypeOptions,
+  filterCards,
+  NO_FILTERS,
+  type CardFilters,
+} from '../card-filter';
 import { cardDisplayName } from '../card-name';
 import { cardTypeLabel } from '../card-type';
 import { usePreconBoard } from '../hooks/use-precon-board';
@@ -119,6 +124,7 @@ export function PickBoard({ pickType }: PickBoardProps) {
       <CardFilterBar
         filters={filters}
         typeOptions={typeOptions}
+        pickType={pickType}
         // Back to page one on every change: the filtered list is shorter than
         // the one that set the page number, so keeping it lands past the end
         // and the table comes up empty — the same failure the CUT/ADD remount

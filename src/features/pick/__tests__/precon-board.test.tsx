@@ -213,6 +213,12 @@ describe('precon board', () => {
     expect(rows).toHaveLength(Math.min(lands.length, PAGE_SIZE));
     const landNames = new Set(lands.map(cardLabel));
     expect(rows.map(rowName).filter((n) => !landNames.has(n))).toEqual([]);
+
+    // 'All types' is a real option rather than a placeholder, so picking it is
+    // how the filter is cleared — there is no x on the field.
+    fireEvent.click(screen.getByRole('textbox', { name: 'Filter by card type' }));
+    fireEvent.click(await screen.findByRole('option', { name: 'All types' }));
+    expect(bodyRows()).toHaveLength(PAGE_SIZE);
   });
 
   // Typing narrows to matching names and, like every other filter, returns to
@@ -239,7 +245,10 @@ describe('precon board', () => {
   // press an arrow key, and the range moves one step.
   it('filters the list by a cost range', async () => {
     await renderBoard();
-    const [minThumb, maxThumb] = screen.getAllByRole('slider');
+    // Named individually via thumbFromLabel/thumbToLabel, so a screen reader
+    // says which end of the range is moving rather than 'slider, slider'.
+    const minThumb = screen.getByRole('slider', { name: 'Minimum mana value' });
+    const maxThumb = screen.getByRole('slider', { name: 'Maximum mana value' });
     expect(minThumb).toHaveAttribute('aria-valuenow', '0');
     expect(maxThumb).toHaveAttribute('aria-valuenow', String(MAX_CMC));
 

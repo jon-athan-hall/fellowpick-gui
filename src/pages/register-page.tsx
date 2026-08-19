@@ -1,10 +1,14 @@
-import { Anchor, Alert, Button, Paper, PasswordInput, Stack, TextInput, Title } from '@mantine/core';
+import { PasswordInput, TextInput } from '@mantine/core';
 import { useForm } from '@mantine/form';
-import { Link, useNavigate } from 'react-router-dom';
-import { useRegisterMutation } from '../features/auth';
+import { useNavigate } from 'react-router-dom';
+import { AuthFormPanel, useRegisterMutation } from '../features/auth';
 import { getApiErrorMessage } from '../common/api/errors';
 
 // Renders the account registration form with name, email, and password fields.
+//
+// The card, its heading, its spacing and its footer are all `AuthFormPanel`,
+// shared with sign-in. Everything left here is what actually differs between
+// the two: which fields, which mutation, and where a success goes.
 export function RegisterPage() {
   const navigate = useNavigate();
   const registerMutation = useRegisterMutation();
@@ -26,23 +30,38 @@ export function RegisterPage() {
     });
   }
 
-  const errorMessage = getApiErrorMessage(registerMutation.error, 'Registration failed');
-
   return (
-    <Paper>
-      <form onSubmit={form.onSubmit(handleSubmit)}>
-        <Stack>
-          <Title order={2}>Create an account</Title>
-          {errorMessage && <Alert color="red">{errorMessage}</Alert>}
-          <TextInput label="Name" required {...form.getInputProps('name')} />
-          <TextInput label="Email" type="email" required {...form.getInputProps('email')} />
-          <PasswordInput label="Password" required {...form.getInputProps('password')} />
-          <Button type="submit" loading={registerMutation.isPending}>
-            Register
-          </Button>
-          <Anchor component={Link} to="/login">Already have an account? Sign in</Anchor>
-        </Stack>
-      </form>
-    </Paper>
+    <AuthFormPanel
+      title="Create an account"
+      error={getApiErrorMessage(registerMutation.error, 'Registration failed')}
+      onSubmit={form.onSubmit(handleSubmit)}
+      submitLabel="Register"
+      loading={registerMutation.isPending}
+      links={[{ to: '/login', label: 'Already have an account? Sign in' }]}
+    >
+      {/* Placeholders on every field, as on sign-in: each shows the shape of
+          the answer rather than repeating the label above it. The name is the
+          one other people see beside your picks, so the example is a person's
+          name and not an account handle. */}
+      <TextInput
+        label="Name"
+        placeholder="Frodo Baggins"
+        required
+        {...form.getInputProps('name')}
+      />
+      <TextInput
+        label="Email"
+        type="email"
+        placeholder="you@example.com"
+        required
+        {...form.getInputProps('email')}
+      />
+      <PasswordInput
+        label="Password"
+        placeholder="••••••••"
+        required
+        {...form.getInputProps('password')}
+      />
+    </AuthFormPanel>
   );
 }

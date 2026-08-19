@@ -3,7 +3,7 @@ import { authPublicRoutes, RequireAuth, RequireRole } from '../features/auth';
 import { pickRoutes } from '../features/pick';
 import { roleAdminRoutes } from '../features/role';
 import { userAdminRoutes, userAuthenticatedRoutes } from '../features/user';
-import { pageAuthenticatedRoutes, pageFallbackRoute } from '../pages/routes';
+import { pageFallbackRoute, pagePublicRoutes } from '../pages/routes';
 import { AppLayout } from './app-layout';
 
 const routes: RouteObject[] = [
@@ -11,11 +11,11 @@ const routes: RouteObject[] = [
     element: <AppLayout />,
     children: [
       ...authPublicRoutes,
+      ...pagePublicRoutes,
       ...pickRoutes,
       {
         element: <RequireAuth />,
         children: [
-          ...pageAuthenticatedRoutes,
           ...userAuthenticatedRoutes,
           {
             element: <RequireRole role="ROLE_ADMIN" />,
