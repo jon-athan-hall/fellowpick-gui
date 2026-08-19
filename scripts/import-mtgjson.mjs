@@ -215,6 +215,23 @@ function toCard(group) {
   return transformCard(pickFront(group), group);
 }
 
+// The flavor name only if it is text a browser can actually draw.
+//
+// LTR's serialized The One Ring and LTC's three Sol Ring printings carry their
+// flavor name as Tengwar — the ring inscription — encoded in the Unicode
+// Private Use Area (U+E000–U+F8FF). Those code points mean nothing without the
+// specific font Wizards set the card in, which no browser has, so the name
+// arrives as a row of blank boxes or nothing at all. Since the UI leads with
+// the flavor name, keeping it would leave four cards looking nameless.
+//
+// Stripping PUA and then checking for anything left states the rule as "a name
+// the reader can see", which also catches whitespace-only values and any future
+// set that reaches for a custom script.
+function usableFlavorName(flavorName) {
+  if (!flavorName) return null;
+  return flavorName.replace(/[\uE000-\uF8FF]/g, '').trim() ? flavorName : null;
+}
+
 function buildScryfallImageUrl(scryfallId) {
   if (!scryfallId) return null;
   const c1 = scryfallId[0];
@@ -233,7 +250,8 @@ function buildScryfallImageUrl(scryfallId) {
 //
 // `flavorName` is the in-universe name a bonus sheet gives a reprint: FCA prints
 // Adeline, Resplendent Cathar as "Hero of Light". The UI leads with that name,
-// since the whole point of these sets is the reskin.
+// since the whole point of these sets is the reskin. See usableFlavorName for
+// the four cards where it cannot.
 //
 // `keywords` is already the union across faces in MTGJSON, so the front face
 // carries the whole card's keywords.
@@ -241,7 +259,7 @@ function transformCard(card, group = [card]) {
   return {
     id: makeCardId(card.setCode, card.number),
     name: card.name,
-    flavorName: card.flavorName ?? null,
+    flavorName: usableFlavorName(card.flavorName),
     manaCost: card.manaCost || null,
     manaValue: card.manaValue ?? 0,
     type: card.type,

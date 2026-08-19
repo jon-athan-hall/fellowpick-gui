@@ -75,13 +75,22 @@ represented.
 
 Spider-Man shipped no Commander decks, so SPM/SPE contribute cards only.
 
-### Set order is load-bearing
+### Which printing represents a card
 
-The `sets` array in `universes.json` is in **printing-preference order**, not
-release order: Commander decks, then the base set, then bonus sheets. ADD
-candidates are deduped by card *name*, so when a name appears in more than one
-set that order decides which printing wins — and therefore which `cardId` the
-API stores votes against.
+ADD candidates are deduped by card *name*, so when a name has several printings
+something has to pick the one that represents it — and that choice decides both
+the art shown and the `cardId` the API stores votes against. Two rules, in
+order:
+
+1. **The set**, from the `sets` array in `universes.json`. It is in
+   **printing-preference order**, not release order: Commander decks, then the
+   base set, then bonus sheets.
+2. **The printing within that set**, by collector number ascending — the base
+   printing ahead of its showcase, borderless and extended-art variants.
+   Collector number 0 is the exception: that is where a set's serialized
+   one-of-one lives, and it sorts *last*. LTR's number 0 is the 001/001 The One
+   Ring, which was winning the name over the ordinary LTR 246 and putting art
+   of a single physical card on four ADD lists.
 
 Appending a new set code is always safe. Inserting one ahead of an existing
 entry re-points cards and orphans every vote on them.
@@ -140,16 +149,31 @@ moves on its own schedule, so a re-import is what applies an RC update.
 
 Masterpiece and bonus sheets reskin existing cards: the card is printed with an
 in-universe name while its Oracle name stays the original. Both are kept —
-`name` is the Oracle name, `flavorName` the printed one.
+`name` is the Oracle name, `flavorName` the printed one. The UI leads with
+`flavorName` and trails the Oracle name in parentheses.
 
 | Set | Reskinned | Example (`flavorName` ← `name`) |
 |---|---|---|
-| `LTC` | 66 | The Party Tree ← The Great Henge |
+| `LTC` | 63 | The Party Tree ← The Great Henge |
 | `FCA` | 63 | Hero of Light ← Adeline, Resplendent Cathar |
 | `MSC` | 26 | Loki's Double ← Spark Double |
 | `MAR` | 14 | Venom, King in Black ← Skithiryx, the Blight Dragon |
 | `TMC` | 5 | Heralds of the Shredder ← Vigor |
 | `PZA` | 5 | Leo's Katana ← Sword of Sinew and Steel |
-| `LTR` | 2 | |
+| `LTR` | 1 | Lórien Brooch ← Trailblazer's Boots |
+| `FIC` | 1 | |
+| | **178** | |
 
 HOB, HOC, FIN, MSH, SPM and SPE have no reskins.
+
+Four cards carry a flavour name the import drops: LTR's serialized The One Ring
+and LTC's three Sol Ring printings name themselves in Tengwar, encoded in the
+Unicode Private Use Area. No browser has the font, so the name would render as
+blank boxes — and since the UI leads with the flavour name, those cards would
+look nameless. `usableFlavorName` in the import script nulls them.
+
+None of the four reaches a board today: the printing rules above pick LTR 246
+over the serialized One Ring, and Sol Ring is in every precon so it is filtered
+out of every ADD list. The guard stays because a card looking nameless is a bad
+enough failure to be worth catching at the source rather than relying on two
+unrelated rules to keep hiding it.

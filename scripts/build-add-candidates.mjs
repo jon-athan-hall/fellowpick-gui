@@ -10,11 +10,13 @@
 //      (mainBoard + commanders). Catches all printings of the deck's
 //      commander, all reprints, etc., even when they have different
 //      Scryfall ids.
-//   2. Among survivors, keep only the first occurrence of each name —
-//      collapses alt-art/full-art/showcase variants into one canonical row.
-//      Sets are scanned in the order declared by universes.json (commander
-//      decks, then the base set, then bonus sheets), so "first" is a stated
-//      preference rather than a coincidence of alphabetical set codes.
+//   2. Among survivors, keep one printing per name — collapses alt-art,
+//      full-art and showcase variants into one canonical row. Two rules decide
+//      which one, in order: the set, then the printing within it. Sets are
+//      scanned in the order declared by universes.json (commander decks, then
+//      the base set, then bonus sheets), so the set is a stated preference
+//      rather than a coincidence of alphabetical set codes; within the winning
+//      set, printingRank picks the base printing over its variants.
 //
 // Also applied: color identity must be a subset of the precon's colors, and
 // basic lands are skipped. Commander-banned cards are already absent — the set
@@ -99,6 +101,24 @@ function reportNameCollisions(universe, sets) {
   if (collisions.length > 10) console.log(`    …and ${collisions.length - 10} more`);
 }
 
+// How much a printing wants to represent its card: lower is better.
+//
+// Within one set the collector number already ranks printings the way we want —
+// the base printing comes first and the showcase, borderless and extended-art
+// variants follow it — with one exception. Collector number 0 is where Scryfall
+// and MTGJSON put a set's serialized one-of-one, and sorting first is exactly
+// what it should not do: LTR's number 0 is the 001/001 The One Ring, a card with
+// a single physical copy in the world, and it was winning the name over the
+// ordinary LTR 246. That put art nobody will ever own on the ADD list, and its
+// flavour name is the ring inscription in Tengwar, which no browser can draw.
+//
+// Ranked last rather than dropped, so a hypothetical set whose only printing of
+// a card is number 0 still contributes it.
+function printingRank(card, setCode) {
+  const number = Number(card.id.slice(setCode.length));
+  return number === 0 ? Number.MAX_SAFE_INTEGER : number;
+}
+
 function computeAddCandidates(precon, sets) {
   const preconCardNames = new Set([
     ...Object.values(precon.mainBoard).map((c) => c.name),
@@ -109,13 +129,24 @@ function computeAddCandidates(precon, sets) {
   const byName = new Map();
 
   for (const set of sets) {
+    // Resolved a set at a time: the set list decides which *set* represents a
+    // name, and printingRank only ever chooses between printings inside that
+    // one set. Comparing ranks across sets would let a low collector number in
+    // a bonus sheet outrank the Commander deck printing and silently re-point
+    // the card, which is the thing the set ordering exists to prevent.
+    const fromThisSet = new Map();
     for (const card of Object.values(set.cards)) {
       if (preconCardNames.has(card.name)) continue;
       if (byName.has(card.name)) continue;
       if (!card.colorIdentity.every((c) => commanderColors.has(c))) continue;
       if (card.type.includes('Basic Land')) continue;
-      byName.set(card.name, card);
+      const incumbent = fromThisSet.get(card.name);
+      if (incumbent && printingRank(incumbent, set.setCode) <= printingRank(card, set.setCode)) {
+        continue;
+      }
+      fromThisSet.set(card.name, card);
     }
+    for (const [name, card] of fromThisSet) byName.set(name, card);
   }
 
   return Array.from(byName.values());

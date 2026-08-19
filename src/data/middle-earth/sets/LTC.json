@@ -7715,7 +7715,7 @@
     "LTC0408": {
       "id": "LTC0408",
       "name": "Sol Ring",
-      "flavorName": " ",
+      "flavorName": null,
       "manaCost": "{1}",
       "manaValue": 1,
       "type": "Artifact",
@@ -7731,7 +7731,7 @@
     "LTC0409": {
       "id": "LTC0409",
       "name": "Sol Ring",
-      "flavorName": " ",
+      "flavorName": null,
       "manaCost": "{1}",
       "manaValue": 1,
       "type": "Artifact",
@@ -7747,7 +7747,7 @@
     "LTC0410": {
       "id": "LTC0410",
       "name": "Sol Ring",
-      "flavorName": " ",
+      "flavorName": null,
       "manaCost": "{1}",
       "manaValue": 1,
       "type": "Artifact",

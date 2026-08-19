@@ -7,7 +7,7 @@
     "LTR0000": {
       "id": "LTR0000",
       "name": "The One Ring",
-      "flavorName": "  ",
+      "flavorName": null,
       "manaCost": "{4}",
       "manaValue": 4,
       "type": "Legendary Artifact",

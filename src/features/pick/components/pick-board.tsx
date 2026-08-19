@@ -1,5 +1,6 @@
 import { Group, Pagination, Paper } from '@mantine/core';
 import { useMemo, useState } from 'react';
+import { cardDisplayName } from '../card-name';
 import { cardTypeLabel } from '../card-type';
 import { usePreconBoard } from '../hooks/use-precon-board';
 import { PICK_ACCENT_NAME } from '../pick-accent';
@@ -17,6 +18,11 @@ interface SortState {
 // Sorts a list of cards according to the active sort and a snapshot of
 // vote counts. Stable: ties resolve by name A→Z so order doesn't waver
 // across renders.
+//
+// Name comparisons use the displayed name, not the Oracle name, for the same
+// reason the type sort uses `cardTypeLabel`: a column that sorts by a value it
+// doesn't show reads as unsorted. It matters most on the reskin-heavy sets —
+// every card in FCA is printed under a name other than its own.
 function sortCards(cards: Card[], sort: SortState, voteAnchor: Record<string, number>): Card[] {
   const sign = sort.direction === 'asc' ? 1 : -1;
   return [...cards].sort((a, b) => {
@@ -30,10 +36,10 @@ function sortCards(cards: Card[], sort: SortState, voteAnchor: Record<string, nu
       // Creature" sorts under A rather than under its first type alone.
       cmp = cardTypeLabel(a).localeCompare(cardTypeLabel(b));
     } else {
-      cmp = a.name.localeCompare(b.name);
+      cmp = cardDisplayName(a).localeCompare(cardDisplayName(b));
     }
     if (cmp === 0 && sort.column !== 'name') {
-      cmp = a.name.localeCompare(b.name);
+      cmp = cardDisplayName(a).localeCompare(cardDisplayName(b));
     }
     return sign * cmp;
   });
@@ -48,9 +54,11 @@ interface PickBoardProps {
  * under ADD. Mounted by the `cut` and `add` routes beneath the deck layout,
  * which owns the deck itself, the counts and the vote handlers.
  *
- * Because the two are separate routes, switching sides unmounts this component
- * and mounts the other. That is what resets the sort snapshot and the page —
- * behaviour the old tab switch had to reproduce by hand.
+ * Switching sides unmounts this component and mounts the other, which is what
+ * resets the sort snapshot and the page — behaviour the old tab switch had to
+ * reproduce by hand. Separate routes are not on their own enough for that: both
+ * render a PickBoard into the same outlet slot, so the remount comes from the
+ * `key` each route element carries. See pick/routes.tsx.
  */
 export function PickBoard({ pickType }: PickBoardProps) {
   const {

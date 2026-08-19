@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import type { Card, Precon } from '../types';
+import type { Card, CardSet, Precon } from '../types';
 
 // Contract tests for the JSON that scripts/build-add-candidates.mjs emits.
 //
@@ -15,6 +15,9 @@ import type { Card, Precon } from '../types';
 
 const preconModules = import.meta.glob('../../../data/*/precons/*.json', { eager: true });
 const addModules = import.meta.glob('../../../data/*/adds/*.json', { eager: true });
+// Lazily, unlike the two above: the set files are the whole card pool and run to
+// several megabytes, and only one test needs them.
+const setModules = import.meta.glob('../../../data/*/sets/*.json');
 
 // setCode (3 chars) + collector number zero-padded to 4 — see makeCardId in
 // scripts/import-mtgjson.mjs. A set code outside this shape is not a failure of
@@ -39,6 +42,24 @@ const adds = Object.entries(addModules).map(
 );
 
 const preconBySlug = new Map(precons);
+
+// Every printing of every card in one universe's sets, keyed by card name.
+async function printingsByNameIn(universe: string): Promise<Map<string, string[]>> {
+  const loaders = Object.entries(setModules)
+    .filter(([path]) => path.includes(`/data/${universe}/sets/`))
+    .map(([, load]) => load);
+  const sets = await Promise.all(loaders.map(async (load) => unwrap<CardSet>(await load())));
+
+  const byName = new Map<string, string[]>();
+  for (const set of sets) {
+    for (const card of Object.values(set.cards)) {
+      const ids = byName.get(card.name) ?? [];
+      ids.push(card.id);
+      byName.set(card.name, ids);
+    }
+  }
+  return byName;
+}
 
 function duplicates(values: string[]): string[] {
   const seen = new Set<string>();
@@ -102,6 +123,22 @@ describe('static card data', () => {
         candidates
           .filter((c) => !c.colorIdentity.every((color) => legal.has(color)))
           .map((c) => `${c.name} [${c.colorIdentity.join('')}]`)
+      ).toEqual([]);
+    });
+
+    // Collector number 0 is where Scryfall and MTGJSON put a set's serialized
+    // one-of-one — LTR's is the 001/001 The One Ring. It sorts ahead of every
+    // real printing, so left alone it wins the name and the ADD list ends up
+    // showing art of a card with a single copy in the world. It may still
+    // represent a name if the set holds nothing else, which no shipped set does.
+    it('represents each name with a printing that is not the serialized one', async () => {
+      const [universe] = addSlug.split('/');
+      const printings = await printingsByNameIn(universe);
+      expect(
+        candidates
+          .filter((c) => c.id.endsWith('0000'))
+          .filter((c) => (printings.get(c.name) ?? []).length > 1)
+          .map((c) => `${c.name} (${c.id} of ${printings.get(c.name)?.join(', ')})`)
       ).toEqual([]);
     });
 

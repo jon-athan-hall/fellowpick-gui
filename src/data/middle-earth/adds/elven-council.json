@@ -1588,9 +1588,9 @@
     "scryfallImage": "https://cards.scryfall.io/large/front/7/9/79bfe024-1be9-4902-898a-93502e48b86d.jpg"
   },
   {
-    "id": "LTR0000",
+    "id": "LTR0246",
     "name": "The One Ring",
-    "flavorName": "  ",
+    "flavorName": null,
     "manaCost": "{4}",
     "manaValue": 4,
     "type": "Legendary Artifact",
@@ -1603,7 +1603,7 @@
       "Indestructible"
     ],
     "oracleText": "Indestructible\nWhen The One Ring enters, if you cast it, you gain protection from everything until your next turn.\nAt the beginning of your upkeep, you lose 1 life for each burden counter on The One Ring.\n{T}: Put a burden counter on The One Ring, then draw a card for each burden counter on The One Ring.",
-    "scryfallImage": "https://cards.scryfall.io/large/front/9/3/93de9042-cc62-4ade-8d8d-68fdbc84bfae.jpg"
+    "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d5806e68-1054-458e-866d-1f2470f682b2.jpg"
   },
   {
     "id": "LTR0039",

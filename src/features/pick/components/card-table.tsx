@@ -8,6 +8,7 @@ import {
   type MRT_SortingState,
 } from 'mantine-react-table';
 import { useMemo } from 'react';
+import { cardDisplayName, cardOracleName } from '../card-name';
 import { cardTypeLabel } from '../card-type';
 import { useCardPreview } from '../hooks/use-card-preview';
 import { PICK_ACCENT } from '../pick-accent';
@@ -194,15 +195,29 @@ export function CardTable({
         // container: the other three are the only fixed cost, and everything
         // left over is Name's. This `size` is only the fallback MRT needs.
         id: 'name',
-        accessorKey: 'name',
+        accessorFn: cardDisplayName,
         header: 'Name',
         size: 300,
         grow: true,
-        Cell: ({ row }) => (
-          <Text size="md" truncate>
-            {row.original.name}
-          </Text>
-        ),
+        // The printed name leads; the Oracle name trails it in parentheses,
+        // dimmed and a size down, and only on the cards that have one. Kept on
+        // one line rather than stacked: a second line would set the row height
+        // for every row in the table while only a minority of cards — none at
+        // all in HOB, FIN or MSH — would ever use it. `truncate` on the wrapper
+        // covers both, so a long pair ellipses at the column edge.
+        Cell: ({ row }) => {
+          const oracleName = cardOracleName(row.original);
+          return (
+            <Text size="md" truncate>
+              {cardDisplayName(row.original)}
+              {oracleName && (
+                <Text span c="dimmed" size="sm">
+                  {` (${oracleName})`}
+                </Text>
+              )}
+            </Text>
+          );
+        },
       },
     ];
   }, [canVote, countMap, myPickMap, pickType]);

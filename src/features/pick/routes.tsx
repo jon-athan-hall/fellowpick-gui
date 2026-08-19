@@ -16,8 +16,14 @@ export const pickRoutes: RouteObject[] = [
     element: <PreconDetailRoute />,
     children: [
       { index: true, element: <Navigate to="cut" replace /> },
-      { path: 'cut', element: <PickBoard pickType="CUT" /> },
-      { path: 'add', element: <PickBoard pickType="ADD" /> },
+      // Keyed, for the same reason PreconDetailRoute keys on preconId: both
+      // sides are a PickBoard in the same outlet slot, so without a key React
+      // reconciles rather than remounts and the board keeps its page and sort
+      // snapshot across the switch. The candidate pool runs several times
+      // longer than the deck, so page 11 of ADD carried into CUT is past the
+      // end of the list and the table renders empty.
+      { path: 'cut', element: <PickBoard key="CUT" pickType="CUT" /> },
+      { path: 'add', element: <PickBoard key="ADD" pickType="ADD" /> },
     ],
   },
 ];

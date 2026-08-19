@@ -1,5 +1,6 @@
 import { Box, CloseButton, Drawer, Group, Image, Stack } from '@mantine/core';
 import { CARD_CORNER_RADIUS } from '../card-art';
+import { cardDisplayName } from '../card-name';
 import type { Card, PickType } from '../types';
 import { VoteUnit } from './vote-unit';
 
@@ -76,7 +77,7 @@ export function CardPreviewDrawer({
         {card?.scryfallImage && (
           <Image
             src={card.scryfallImage}
-            alt={card.name}
+            alt={cardDisplayName(card)}
             mah="55vh"
             maw="100%"
             fit="contain"

@@ -4,6 +4,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import addCandidates from '../../../data/middle-earth/adds/elven-council.json';
 import precon from '../../../data/middle-earth/precons/elven-council.json';
 import { renderWithProviders } from '../../../test/render';
+import { cardDisplayName, cardOracleName } from '../card-name';
 import { pickRoutes } from '../routes';
 
 // Characterisation tests for the precon board — the CUT/ADD voting pages.
@@ -43,11 +44,24 @@ const DECK_URL = '/universes/middle-earth/precons/elven-council';
 
 const deckCards = Object.values(precon.mainBoard);
 
+type NamedCard = { name: string; flavorName: string | null };
+
 // The default sort is votes descending, and `sortCards` applies the direction
 // to the name tie-break too — so with no votes cast yet the list comes out
 // Z→A, not A→Z. Surprising, but it is what ships; pin it rather than assume.
-const byNameDescending = <T extends { name: string }>(cards: T[]) =>
-  [...cards].sort((a, b) => -a.name.localeCompare(b.name));
+//
+// Ordered by the *printed* name, which is what the board sorts on. On a reskin
+// that is not the Oracle name, and Elven Council's candidate pool holds enough
+// of them for the two orderings to disagree about which card comes first.
+const byNameDescending = <T extends NamedCard>(cards: T[]) =>
+  [...cards].sort((a, b) => -cardDisplayName(a).localeCompare(cardDisplayName(b)));
+
+// What the Name cell reads end to end: the printed name, followed by the Oracle
+// name in parentheses on the cards that carry one.
+function cardLabel(card: NamedCard): string {
+  const oracleName = cardOracleName(card);
+  return oracleName ? `${cardDisplayName(card)} (${oracleName})` : cardDisplayName(card);
+}
 
 // Expectations are derived from the committed data rather than hard-coded, so
 // re-importing a set changes the fixtures without falsifying the behaviour
@@ -123,19 +137,19 @@ describe('precon board', () => {
 
   it('orders by vote count, breaking ties by name', async () => {
     await renderBoard();
-    expect(rowName(bodyRows()[0])).toBe(firstCutCard.name);
+    expect(rowName(bodyRows()[0])).toBe(cardLabel(firstCutCard));
   });
 
   it('puts the most-voted card first, wherever it sat before', async () => {
     mocks.counts = [{ cardId: buriedCard.id, pickType: 'CUT', count: 12 }];
     await renderBoard();
-    expect(rowName(bodyRows()[0])).toBe(buriedCard.name);
+    expect(rowName(bodyRows()[0])).toBe(cardLabel(buriedCard));
   });
 
   it('lands on CUT from the bare deck URL', async () => {
     await renderBoard();
     // The redirect fired: the deck's own cards are showing, not the candidates.
-    expect(rowName(bodyRows()[0])).toBe(firstCutCard.name);
+    expect(rowName(bodyRows()[0])).toBe(cardLabel(firstCutCard));
     expect(screen.getByRole('link', { name: 'CUT' })).toHaveAttribute('aria-current', 'page');
   });
 
@@ -145,9 +159,44 @@ describe('precon board', () => {
 
     // A route change, not a tab switch — the CUT board unmounts and the ADD
     // board mounts, so wait for the new list rather than reading straight away.
-    await screen.findByText(firstAddCard.name);
-    expect(rowName(bodyRows()[0])).toBe(firstAddCard.name);
+    await screen.findByText(cardDisplayName(firstAddCard), { exact: false });
+    expect(rowName(bodyRows()[0])).toBe(cardLabel(firstAddCard));
     expect(deckCards.some((c) => c.name === firstAddCard.name)).toBe(false);
+  });
+
+  // Switching sides has to start over at page one. The candidate pool is
+  // several times longer than the deck, so a page number carried across from
+  // ADD lands past the end of CUT and the table comes up empty — no rows, no
+  // way back except the browser's back button.
+  it('starts at the first page again when the side changes', async () => {
+    const addPages = Math.ceil(addCandidates.length / PAGE_SIZE);
+    expect(addPages).toBeGreaterThan(Math.ceil(deckCards.length / PAGE_SIZE));
+
+    await renderBoard();
+    fireEvent.click(screen.getByRole('link', { name: 'ADD' }));
+    await screen.findByText(cardDisplayName(firstAddCard), { exact: false });
+    fireEvent.click(screen.getByRole('button', { name: String(addPages) }));
+
+    fireEvent.click(screen.getByRole('link', { name: 'CUT' }));
+    expect(bodyRows()).toHaveLength(PAGE_SIZE);
+    expect(rowName(bodyRows()[0])).toBe(cardLabel(firstCutCard));
+  });
+
+  // 25 of Elven Council's candidates are LTC reskins, printed under a name that
+  // is not their Oracle name. The cell has to carry both: the printed one is
+  // what the player is holding, the Oracle one is what every other Magic tool
+  // calls it. Voted to the top rather than paged to, since which page a given
+  // reskin lands on is not what this pins.
+  it('shows both names on a reskinned card', async () => {
+    const reskin = addCandidates.find((c) => c.flavorName);
+    if (!reskin?.flavorName) throw new Error('fixture: no reskin among the candidates');
+    mocks.counts = [{ cardId: reskin.id, pickType: 'ADD', count: 42 }];
+
+    await renderBoard();
+    fireEvent.click(screen.getByRole('link', { name: 'ADD' }));
+
+    await screen.findByText(reskin.flavorName, { exact: false });
+    expect(rowName(bodyRows()[0])).toBe(`${reskin.flavorName} (${reskin.name})`);
   });
 
   it('votes on a card when its row is clicked', async () => {
