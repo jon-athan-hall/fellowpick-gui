@@ -1,12 +1,13 @@
 import { Group, Pagination, Paper } from '@mantine/core';
 import { useMemo, useState } from 'react';
+import { cardTypeLabel } from '../card-type';
 import { usePreconBoard } from '../hooks/use-precon-board';
+import { PICK_ACCENT_NAME } from '../pick-accent';
 import type { Card, PickType } from '../types';
-import { CardTable } from './card-table';
+import { CardTable, type SortColumn } from './card-table';
 
 const PAGE_SIZE = 25;
 
-type SortColumn = 'votes' | 'cmc' | 'name';
 type SortDirection = 'asc' | 'desc';
 interface SortState {
   column: SortColumn;
@@ -24,6 +25,10 @@ function sortCards(cards: Card[], sort: SortState, voteAnchor: Record<string, nu
       cmp = (voteAnchor[a.id] ?? 0) - (voteAnchor[b.id] ?? 0);
     } else if (sort.column === 'cmc') {
       cmp = a.manaValue - b.manaValue;
+    } else if (sort.column === 'type') {
+      // Compare what the column actually shows, so a card reading "Artifact
+      // Creature" sorts under A rather than under its first type alone.
+      cmp = cardTypeLabel(a).localeCompare(cardTypeLabel(b));
     } else {
       cmp = a.name.localeCompare(b.name);
     }
@@ -120,7 +125,7 @@ export function PickBoard({ pickType }: PickBoardProps) {
             total={totalPages}
             value={page}
             onChange={setPage}
-            color={pickType === 'CUT' ? 'red' : 'gold'}
+            color={PICK_ACCENT_NAME[pickType]}
             siblings={isMobile ? 0 : 1}
           />
         </Group>

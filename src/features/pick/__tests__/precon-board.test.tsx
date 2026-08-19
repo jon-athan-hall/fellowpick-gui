@@ -88,9 +88,8 @@ function renderRoutes() {
   });
 }
 
-// Only one board is mounted at a time now, but going through the accessibility
-// tree rather than a bare `tbody tr` query keeps this honest about what is
-// actually on screen.
+// Going through the accessibility tree rather than a bare `tbody tr` query
+// keeps this honest about what is actually on screen.
 function bodyRows(): HTMLElement[] {
   return screen.getAllByRole('row').filter((row) => row.closest('tbody') !== null);
 }

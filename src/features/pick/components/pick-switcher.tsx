@@ -2,6 +2,7 @@ import { Box, Group, Text } from '@mantine/core';
 import { useReducedMotion } from '@mantine/hooks';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { PICK_ACCENT } from '../pick-accent';
 import type { PickType } from '../types';
 
 /** Milliseconds for the spark's turn, and for both words' colour change. */
@@ -19,10 +20,8 @@ const WORD_TYPE = {
 } as const;
 
 const SIDES: { type: PickType; color: string; path: string }[] = [
-  // red.5 rather than red.4: the deeper crimson holds its own beside gold, and
-  // at this size it clears the 3:1 large-text floor with room to spare.
-  { type: 'CUT', color: 'var(--mantine-color-red-5)', path: 'cut' },
-  { type: 'ADD', color: 'var(--mantine-color-gold-4)', path: 'add' },
+  { type: 'CUT', color: PICK_ACCENT.CUT, path: 'cut' },
+  { type: 'ADD', color: PICK_ACCENT.ADD, path: 'add' },
 ];
 
 interface PickSwitcherProps {
