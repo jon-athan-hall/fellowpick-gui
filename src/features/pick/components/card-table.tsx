@@ -189,11 +189,11 @@ export function CardTable({
         id: 'votes',
         accessorFn: (row) => countMap[row.id]?.[pickType] ?? 0,
         header: 'Votes',
-        // These sizes are the heading's width, not the cell's — every column
-        // here is titled by a word wider than what sits under it, so the
-        // heading is what the column has to clear. The table lays out
-        // semantically, so a size narrower than the content is only ignored.
-        size: 104,
+        // Under `layout: 'fixed'` these sizes are the whole story — the browser
+        // no longer measures the cells, so each one has to clear whichever is
+        // wider, the heading or its content. Here it is the heading: VOTES plus
+        // its sort control comes to ~125px against the unit's ~103px.
+        size: 128,
         Cell: ({ row }) => (
           <VoteUnit
             count={countMap[row.original.id]?.[pickType] ?? 0}
@@ -211,16 +211,19 @@ export function CardTable({
         // is the sort key `pick-board` switches on, and that does sort by the
         // converted value.
         header: 'Cost',
-        // The heading's width, as elsewhere. A typical two- or three-pip cost
-        // sits well inside it; the handful of five- and seven-pip cards in the
-        // data push their page's column wider, which is the price of pips this
-        // size and worth paying — they are the column's whole content.
-        size: 110,
+        // Sized for a five-pip cost (128px of pips), which covers all but five
+        // cards in the shipped data. Those five run to seven pips and wrap to a
+        // second line rather than spill into Type — a fixed column cannot grow
+        // to meet them, and 170px of permanent width for five cards is the
+        // worse trade.
+        size: 132,
         // Larger than the body text beside them on purpose: these are read as
         // symbols, not glyphs, and the colour pie has to be legible at a glance
         // down the column.
         Cell: ({ row }) =>
-          row.original.manaCost ? <ManaCost cost={row.original.manaCost} size={20} /> : null,
+          row.original.manaCost ? (
+            <ManaCost cost={row.original.manaCost} size={20} wrap="wrap" />
+          ) : null,
       },
       {
         id: 'type',
@@ -228,7 +231,7 @@ export function CardTable({
         header: 'Type',
         // Truncates rather than sets the width: "Legendary Artifact Creature"
         // would take 260px and no column of supporting detail earns that.
-        size: 130,
+        size: 140,
         Cell: ({ row }) => (
           <Text size="md" truncate>
             {cardTypeLabel(row.original)}
@@ -238,10 +241,14 @@ export function CardTable({
       {
         // Last, and the only column that grows — so it absorbs the leftover
         // width rather than leaving a ragged gap at the table's right edge.
+        // Deliberately oversized: a fixed layout hands surplus width to the
+        // columns in proportion to what they asked for, so the large number is
+        // what keeps the other three near the widths they were sized at instead
+        // of all four inflating together.
         id: 'name',
         accessorKey: 'name',
         header: 'Name',
-        size: 300,
+        size: 800,
         grow: true,
         Cell: ({ row }) => (
           <Text size="md" truncate>
@@ -303,6 +310,12 @@ export function CardTable({
       // No ring around the table. The panel it sits in is the container, and a
       // second edge a few pixels inside the first reads as a mistake.
       withTableBorder: false,
+      // Column widths come from the column definitions rather than from the
+      // cells. Semantic layout re-measures every column against its widest
+      // visible cell, so changing the sort — which changes which 25 cards are
+      // on the page, and with them the longest name and the widest cost — made
+      // the columns jump. Fixed layout means the sort only reorders rows.
+      layout: 'fixed',
       borderColor: TABLE_LINE,
       verticalSpacing: 'sm',
       // 12px rather than 16. With the column rules gone the gutters are all

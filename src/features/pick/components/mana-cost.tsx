@@ -17,11 +17,24 @@ function parseManaCost(manaCost: string): string[] {
 }
 
 // Renders a mana cost string as inline Scryfall mana symbol SVGs.
-export function ManaCost({ cost, size = 14 }: { cost: string; size?: number }) {
+//
+// `wrap` exists for callers whose column has a fixed width: a seven-pip cost is
+// wider than any sensible Cost column, and a second line is better than pips
+// spilling into the neighbouring column. It stays `nowrap` by default, since a
+// cost broken across lines is the worse reading anywhere it isn't forced.
+export function ManaCost({
+  cost,
+  size = 14,
+  wrap = 'nowrap',
+}: {
+  cost: string;
+  size?: number;
+  wrap?: 'wrap' | 'nowrap';
+}) {
   const symbols = parseManaCost(cost);
 
   return (
-    <Group gap={1} wrap="nowrap" style={{ display: 'inline-flex' }}>
+    <Group gap={1} wrap={wrap} style={{ display: 'inline-flex' }}>
       {symbols.map((symbol, i) => (
         <Image
           key={i}
