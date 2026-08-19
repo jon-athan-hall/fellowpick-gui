@@ -15,6 +15,11 @@ export interface Universe {
 export interface PreconSummary {
   id: string;
   name: string;
+  /**
+   * Duplicated from the precon file so the nav can draw a deck's pips without
+   * loading its chunk. Written by upsertUniverseEntry in the import script.
+   */
+  colorIdentity: string[];
 }
 
 export interface Card {

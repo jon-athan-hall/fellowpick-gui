@@ -1364,7 +1364,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Vigilance, reach\nYou have no maximum hand size.\nEmbiggen Fist — Whenever you cast a spell that targets a creature you control, draw a card. Until end of turn, Ms. Marvel gains \"Ms. Marvel's base power is equal to the number of cards in your hand.\"",
+      "oracleText": "Reach, vigilance\nYou have no maximum hand size.\nEmbiggen Fist — Whenever you cast a spell that targets a creature you control, draw a card. Until end of turn, Ms. Marvel gains \"Ms. Marvel's base power is equal to the number of cards in your hand.\"",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9dd2d627-10fc-4045-8545-03bcf75e60ca.jpg"
     },
     "MSH0068": {
@@ -2125,6 +2125,7 @@
       ],
       "keywords": [
         "Connive",
+        "Designed Only for Killing",
         "Flying",
         "Lifelink",
         "Mental Organism"
@@ -2611,7 +2612,7 @@
         "Reach",
         "Trick Arrows"
       ],
-      "oracleText": "First strike, reach\nTrick Arrows — Whenever Hawkeye becomes tapped, you may pay {1} up to three times. When you do, choose up to that many.\n• Net — Target creature can't block this turn.\n• Explosive — Hawkeye deals 2 damage to target player.\n• Boomerang — Discard a card, then draw a card.",
+      "oracleText": "Reach, first strike\nTrick Arrows — Whenever Hawkeye becomes tapped, you may pay {1} up to three times. When you do, choose up to that many —\n• Net — Target creature can't block this turn.\n• Explosive — Hawkeye deals 2 damage to target player.\n• Boomerang — Discard a card, then draw a card.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/9/9991b684-0ae0-4aa4-8f22-a9c473f5d69c.jpg"
     },
     "MSH0131": {
@@ -3633,7 +3634,7 @@
         "Brontosaurus",
         "Tyrannosaurus Rex"
       ],
-      "oracleText": "Brontosaurus — {3}: Until end of turn, Reptil becomes a Dinosaur Hero with base power and toughness 3/5 and gains vigilance and reach.\nTyrannosaurus Rex — {6}: Until end of turn, Reptil becomes a Dinosaur Hero with base power and toughness 6/6 and gains trample.",
+      "oracleText": "Brontosaurus — {3}: Until end of turn, Reptil becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance.\nTyrannosaurus Rex — {6}: Until end of turn, Reptil becomes a Dinosaur Hero with base power and toughness 6/6 and gains trample.",
       "scryfallImage": "https://cards.scryfall.io/large/front/4/7/472db3f2-23df-46c1-86c6-f35fbe5ab4e3.jpg"
     },
     "MSH0183": {
@@ -4572,7 +4573,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Flash\nVigilance, reach\nNo One Dies! — When Spider-Man enters, you may tap him. When you do, another target nonattacking creature you control gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
+      "oracleText": "Flash\nReach, vigilance\nNo One Dies! — When Spider-Man enters, you may tap him. When you do, another target nonattacking creature you control gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/e/5/e5db6968-1ca3-46bd-8cf9-e2c411ab29c1.jpg"
     },
     "MSH0229": {
@@ -6647,7 +6648,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Flash\nVigilance, reach\nNo One Dies! — When Spider-Man enters, you may tap him. When you do, another target nonattacking creature you control gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
+      "oracleText": "Flash\nReach, vigilance\nNo One Dies! — When Spider-Man enters, you may tap him. When you do, another target nonattacking creature you control gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/8/7/87dd1800-b9b6-4bac-a504-28146a42a4b4.jpg"
     },
     "MSH0336": {
@@ -7196,7 +7197,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Vigilance, reach\nYou have no maximum hand size.\nEmbiggen Fist — Whenever you cast a spell that targets a creature you control, draw a card. Until end of turn, Ms. Marvel gains \"Ms. Marvel's base power is equal to the number of cards in your hand.\"",
+      "oracleText": "Reach, vigilance\nYou have no maximum hand size.\nEmbiggen Fist — Whenever you cast a spell that targets a creature you control, draw a card. Until end of turn, Ms. Marvel gains \"Ms. Marvel's base power is equal to the number of cards in your hand.\"",
       "scryfallImage": "https://cards.scryfall.io/large/front/a/e/aea6935f-1f10-4a61-83f8-5bd2ed14a3c0.jpg"
     },
     "MSH0362": {
@@ -7322,7 +7323,7 @@
         "Reach",
         "Trick Arrows"
       ],
-      "oracleText": "First strike, reach\nTrick Arrows — Whenever Hawkeye becomes tapped, you may pay {1} up to three times. When you do, choose up to that many.\n• Net — Target creature can't block this turn.\n• Explosive — Hawkeye deals 2 damage to target player.\n• Boomerang — Discard a card, then draw a card.",
+      "oracleText": "Reach, first strike\nTrick Arrows — Whenever Hawkeye becomes tapped, you may pay {1} up to three times. When you do, choose up to that many —\n• Net — Target creature can't block this turn.\n• Explosive — Hawkeye deals 2 damage to target player.\n• Boomerang — Discard a card, then draw a card.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/7/972aedc2-c645-45d7-8976-de1fd504e819.jpg"
     },
     "MSH0368": {
@@ -8175,6 +8176,7 @@
       ],
       "keywords": [
         "Connive",
+        "Designed Only for Killing",
         "Flying",
         "Lifelink",
         "Mental Organism"

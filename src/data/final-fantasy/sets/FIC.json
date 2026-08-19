@@ -2047,7 +2047,7 @@
         "Mill",
         "Trample"
       ],
-      "oracleText": "Flying, trample, haste\nAs long as there are fewer than eight cards in your graveyard, The Warring Triad isn't a creature.\n{T}, Mill a card: Target player adds one mana of any color.",
+      "oracleText": "Flying, trample, haste\nAs long as there are fewer than eight cards in your graveyard, The Warring Triad isn't a creature.\n{T}, Mill a card: Target player adds one mana of any color. (Activate only as an instant.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/9/99fd1cd5-4740-4a0f-b773-3d3b66861d77.jpg"
     },
     "FIC0100": {
@@ -3975,7 +3975,7 @@
         "Mill",
         "Trample"
       ],
-      "oracleText": "Flying, trample, haste\nAs long as there are fewer than eight cards in your graveyard, The Warring Triad isn't a creature.\n{T}, Mill a card: Target player adds one mana of any color.",
+      "oracleText": "Flying, trample, haste\nAs long as there are fewer than eight cards in your graveyard, The Warring Triad isn't a creature.\n{T}, Mill a card: Target player adds one mana of any color. (Activate only as an instant.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/5/9/59c9633d-484c-4bce-ac86-696791afd6a4.jpg"
     },
     "FIC0194": {
@@ -7079,7 +7079,7 @@
       "keywords": [
         "Mill"
       ],
-      "oracleText": "{T}, Mill a card: Add {C}. (To mill a card, put the top card of your library into your graveyard.)",
+      "oracleText": "{T}, Mill a card: Add {C}. (Activate only as an instant. To mill a card, put the top card of your library into your graveyard.)",
       "scryfallImage": "https://cards.scryfall.io/large/front/7/1/717b0d6b-fa62-46d2-a061-7161d3255c98.jpg"
     },
     "FIC0353": {

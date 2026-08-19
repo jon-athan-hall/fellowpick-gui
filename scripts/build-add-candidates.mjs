@@ -17,7 +17,10 @@
 //      preference rather than a coincidence of alphabetical set codes.
 //
 // Also applied: color identity must be a subset of the precon's colors, and
-// basic lands are skipped.
+// basic lands are skipped. Commander-banned cards are already absent — the set
+// files never contain them, since import-mtgjson.mjs filters them on the way in
+// (see commanderLegalOnly there for why that filter lives at import rather than
+// here).
 //
 // Output: one file per precon in a sibling `adds/` directory:
 //   src/data/<universe>/adds/<precon-id>.json

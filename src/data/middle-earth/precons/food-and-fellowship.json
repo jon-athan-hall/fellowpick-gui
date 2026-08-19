@@ -4,8 +4,8 @@
   "universe": "middle-earth",
   "setCode": "LTC",
   "colorIdentity": [
-    "B",
     "W",
+    "B",
     "G"
   ],
   "commanders": [
@@ -251,7 +251,7 @@
         "Haste",
         "Trample"
       ],
-      "oracleText": "Trample, haste\nWhenever this creature attacks, attacking creatures get +1/+1 until end of turn. If a Food entered under your control this turn, untap those creatures and they get an additional +2/+2 until end of turn.",
+      "oracleText": "Trample, haste\nWhenever this creature attacks, attacking creatures get +1/+1 until end of turn. If a Food entered the battlefield under your control this turn, untap those creatures and they get an additional +2/+2 until end of turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/b/9be4f8b6-90ef-4c77-ae70-bffae229d243.jpg"
     },
     "LTC0043": {

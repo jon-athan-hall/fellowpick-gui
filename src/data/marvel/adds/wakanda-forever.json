@@ -258,7 +258,7 @@
       "Reach",
       "Vigilance"
     ],
-    "oracleText": "Vigilance, reach\nWhenever a player casts a noncreature spell, put a +1/+1 counter on Medusa.",
+    "oracleText": "Reach, vigilance\nWhenever a player casts a noncreature spell, put a +1/+1 counter on Medusa.",
     "scryfallImage": "https://cards.scryfall.io/large/front/3/1/3187ebab-8008-455c-a3c9-794a5b225b88.jpg"
   },
   {
@@ -2811,7 +2811,7 @@
     "keywords": [
       "Food"
     ],
-    "oracleText": "If you would create one or more tokens, instead create those tokens plus an additional Food token.\nAt the beginning of your end step, if you gained life this turn, draw a card.",
+    "oracleText": "If you would create one or more tokens, instead create those tokens plus an additional Food token. (It's an artifact with \"{2}, {T}, Sacrifice this token: You gain 3 life.\")\nAt the beginning of your end step, if you gained life this turn, draw a card.",
     "scryfallImage": "https://cards.scryfall.io/large/front/6/0/6082ab9f-290e-4230-84a0-46c7f8ed712d.jpg"
   },
   {
@@ -4992,7 +4992,7 @@
       "Brontosaurus",
       "Tyrannosaurus Rex"
     ],
-    "oracleText": "Brontosaurus — {3}: Until end of turn, Reptil becomes a Dinosaur Hero with base power and toughness 3/5 and gains vigilance and reach.\nTyrannosaurus Rex — {6}: Until end of turn, Reptil becomes a Dinosaur Hero with base power and toughness 6/6 and gains trample.",
+    "oracleText": "Brontosaurus — {3}: Until end of turn, Reptil becomes a Dinosaur Hero with base power and toughness 3/5 and gains reach and vigilance.\nTyrannosaurus Rex — {6}: Until end of turn, Reptil becomes a Dinosaur Hero with base power and toughness 6/6 and gains trample.",
     "scryfallImage": "https://cards.scryfall.io/large/front/4/7/472db3f2-23df-46c1-86c6-f35fbe5ab4e3.jpg"
   },
   {
@@ -5335,7 +5335,7 @@
       "Reach",
       "Vigilance"
     ],
-    "oracleText": "Flash\nVigilance, reach\nNo One Dies! — When Spider-Man enters, you may tap him. When you do, another target nonattacking creature you control gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
+    "oracleText": "Flash\nReach, vigilance\nNo One Dies! — When Spider-Man enters, you may tap him. When you do, another target nonattacking creature you control gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
     "scryfallImage": "https://cards.scryfall.io/large/front/e/5/e5db6968-1ca3-46bd-8cf9-e2c411ab29c1.jpg"
   },
   {

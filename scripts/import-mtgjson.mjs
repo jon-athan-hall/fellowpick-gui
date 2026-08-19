@@ -34,7 +34,10 @@ const UNIVERSES = {
   'middle-earth': {
     name: 'Middle-Earth',
     description: 'The Lord of the Rings and Middle-Earth',
-    sets: ['LTC', 'LTR'],
+    // HOB/HOC are The Hobbit (Aug 2026). It shipped no Commander decks — the
+    // precon slot went to two Scene Boxes, whose eternal-legal cards are HOC —
+    // so it contributes cards to all four LTC decks but no precon of its own.
+    sets: ['LTC', 'LTR', 'HOB', 'HOC'],
     precons: [
       { filename: 'FoodAndFellowship_LTC', id: 'food-and-fellowship', name: 'Food and Fellowship' },
       { filename: 'RidersOfRohan_LTC', id: 'riders-of-rohan', name: 'Riders of Rohan' },
@@ -77,6 +80,18 @@ const UNIVERSES = {
   },
 };
 
+// Colour identity in WUBRG order rather than MTGJSON's alphabetical BGRUW.
+//
+// This is the order Magic states a colour identity in everywhere — mana costs,
+// deck lists, the pips in the nav — so it is what a player reads as correct.
+// Sorting here rather than at each render point means the precon files and
+// universes.json agree, and no component has to know the convention.
+const WUBRG = ['W', 'U', 'B', 'R', 'G'];
+
+function sortColors(colors) {
+  return [...colors].sort((a, b) => WUBRG.indexOf(a) - WUBRG.indexOf(b));
+}
+
 function makeCardId(setCode, number) {
   const padded = number.replace(/\D/g, '').padStart(4, '0');
   return `${setCode}${padded}`;
@@ -111,6 +126,35 @@ function paperOnly(cards, label) {
     console.log(`  Skipped ${dropped} non-paper card(s) in ${label}: ${names.join(', ')}`);
   }
   return paper;
+}
+
+// Drops cards banned in Commander, and says which.
+//
+// Applied to sets only, never to precons. A set file exists for exactly one
+// reason — it is the pool build-add-candidates.mjs draws ADD candidates from —
+// and offering a vote to add Karakas to a deck is offering a move nobody can
+// make. A precon is the opposite case: LTC ships Karakas inside Elven Council
+// and The Hosts of Mordor, so it is a legitimate CUT target and dropping it
+// there would put the deck out of step with the physical product.
+//
+// The banlist changes on its own schedule, independent of set releases, so a
+// re-import is what applies an RC update. Four cards are affected today:
+// Karakas (LTC) and Primeval Titan (FCA).
+//
+// A missing field is treated as legal, matching isPaperCard's bias — better a
+// stray card than a silently gutted set if MTGJSON ever drops `legalities`.
+function isCommanderLegal(card) {
+  return !card.legalities || card.legalities.commander !== 'Banned';
+}
+
+function commanderLegalOnly(cards, label) {
+  const legal = cards.filter(isCommanderLegal);
+  const dropped = cards.length - legal.length;
+  if (dropped > 0) {
+    const names = [...new Set(cards.filter((c) => !isCommanderLegal(c)).map((c) => c.name))];
+    console.log(`  Skipped ${dropped} Commander-banned card(s) in ${label}: ${names.join(', ')}`);
+  }
+  return legal;
 }
 
 // Groups raw MTGJSON cards by the id makeCardId generates for them.
@@ -217,9 +261,14 @@ async function fetchJson(url) {
   return res.json();
 }
 
+// Writes one file per precon and returns `<precon-id>` → colour identity, which
+// upsertUniverseEntry needs: the nav renders a deck's pips straight from
+// universes.json rather than waiting on the precon chunk to load, and the
+// identity is only derivable here, from the commanders in the deck JSON.
 async function importPrecons(universeId, config) {
   const preconsDir = join(DATA_DIR, universeId, 'precons');
   mkdirSync(preconsDir, { recursive: true });
+  const colorIdentities = new Map();
 
   for (const precon of config.precons) {
     const url = `${MTGJSON_BASE}/decks/${precon.filename}.json`;
@@ -237,7 +286,8 @@ async function importPrecons(universeId, config) {
     );
 
     // Commander color identity is the union of all commander color identities.
-    const colorIdentity = [...new Set(commanders.flatMap(c => c.colorIdentity))];
+    const colorIdentity = sortColors(new Set(commanders.flatMap(c => c.colorIdentity)));
+    colorIdentities.set(precon.id, colorIdentity);
 
     const output = {
       id: precon.id,
@@ -255,6 +305,8 @@ async function importPrecons(universeId, config) {
       `  Wrote ${outPath} (${commanders.length} commanders, ${Object.keys(mainBoard).length} main board cards)`
     );
   }
+
+  return colorIdentities;
 }
 
 async function importSets(universeId, config) {
@@ -266,7 +318,9 @@ async function importSets(universeId, config) {
     const json = await fetchJson(url);
     const data = json.data;
 
-    const grouped = groupById(paperOnly(data.cards || [], setCode));
+    const grouped = groupById(
+      commanderLegalOnly(paperOnly(data.cards || [], setCode), setCode)
+    );
     const cards = Object.fromEntries([...grouped].map(([id, group]) => [id, toCard(group)]));
 
     const output = {
@@ -274,7 +328,8 @@ async function importSets(universeId, config) {
       name: data.name,
       releaseDate: data.releaseDate,
       // Cards written, not cards MTGJSON listed — alternate printings share an
-      // id, so the raw count overstated this by 106 for FIN.
+      // id, so the raw count overstated this by 106 for FIN, and the digital
+      // and banned filters above have already run.
       totalCards: grouped.size,
       cards,
     };
@@ -285,14 +340,18 @@ async function importSets(universeId, config) {
   }
 }
 
-function upsertUniverseEntry(universeId, config) {
+function upsertUniverseEntry(universeId, config, colorIdentities) {
   const universes = JSON.parse(readFileSync(UNIVERSES_FILE, 'utf-8'));
   const entry = {
     id: universeId,
     name: config.name,
     description: config.description,
     sets: config.sets,
-    precons: config.precons.map(p => ({ id: p.id, name: p.name })),
+    precons: config.precons.map(p => ({
+      id: p.id,
+      name: p.name,
+      colorIdentity: colorIdentities.get(p.id) ?? [],
+    })),
   };
   const idx = universes.findIndex(u => u.id === universeId);
   if (idx >= 0) universes[idx] = entry;
@@ -318,13 +377,13 @@ async function main() {
   console.log(`Importing ${config.name} (${targetUniverse})...\n`);
 
   console.log('Downloading precon decks...');
-  await importPrecons(targetUniverse, config);
+  const colorIdentities = await importPrecons(targetUniverse, config);
 
   console.log('\nDownloading sets...');
   await importSets(targetUniverse, config);
 
   console.log('\nUpdating universes.json...');
-  upsertUniverseEntry(targetUniverse, config);
+  upsertUniverseEntry(targetUniverse, config, colorIdentities);
 
   console.log(`\nDone! Data written to src/data/${targetUniverse}/`);
 }

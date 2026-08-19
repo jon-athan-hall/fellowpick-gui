@@ -3461,7 +3461,7 @@
       "B"
     ],
     "keywords": [],
-    "oracleText": "Whenever one or more cards leave your graveyard, you draw a card and you lose 1 life. This ability triggers only once each turn.\n(Melds with Vanille, Cheerful l'Cie.)\n—\nVigilance, menace, trample, reach, haste\nWhen Ragnarok dies, destroy target permanent and return target nonlegendary permanent card from your graveyard to the battlefield.",
+    "oracleText": "Whenever one or more cards leave your graveyard, you draw a card and you lose 1 life. This ability triggers only once each turn.\n(Melds with Vanille, Cheerful l'Cie.)\n—\nReach, vigilance, menace, trample, haste\nWhen Ragnarok dies, destroy target permanent and return target nonlegendary permanent card from your graveyard to the battlefield.",
     "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f73a5cbb-905f-4b99-8d23-9d1b6bd47ee8.jpg"
   },
   {
@@ -5244,7 +5244,7 @@
       "Trample",
       "Vigilance"
     ],
-    "oracleText": "Vigilance, reach, trample",
+    "oracleText": "Reach, vigilance, trample",
     "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e48cf6d5-4d32-4b66-80be-3495ecd3e906.jpg"
   },
   {

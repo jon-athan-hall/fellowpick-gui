@@ -4,10 +4,10 @@
   "universe": "marvel",
   "setCode": "MSC",
   "colorIdentity": [
-    "G",
-    "R",
+    "W",
     "U",
-    "W"
+    "R",
+    "G"
   ],
   "commanders": [
     {
@@ -54,7 +54,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Vigilance, reach\nAt the beginning of combat on your turn, if you've cast a noncreature spell this turn, draw a card.\n{R}{G}{W}{U}, {T}: Copy target triggered ability you control twice. You may choose new targets for the copies.",
+      "oracleText": "Reach, vigilance\nAt the beginning of combat on your turn, if you've cast a noncreature spell this turn, draw a card.\n{R}{G}{W}{U}, {T}: Copy target triggered ability you control twice. You may choose new targets for the copies.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/1/f1d80509-ece1-4b6d-bfe5-c6d003f581cf.jpg"
     },
     "MSC0003": {
@@ -372,7 +372,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Vigilance, reach\nWhenever a player casts a noncreature spell, put a +1/+1 counter on Medusa.",
+      "oracleText": "Reach, vigilance\nWhenever a player casts a noncreature spell, put a +1/+1 counter on Medusa.",
       "scryfallImage": "https://cards.scryfall.io/large/front/3/1/3187ebab-8008-455c-a3c9-794a5b225b88.jpg"
     },
     "MSC0076": {

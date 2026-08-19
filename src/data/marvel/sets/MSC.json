@@ -46,7 +46,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Vigilance, reach\nAt the beginning of combat on your turn, if you've cast a noncreature spell this turn, draw a card.\n{R}{G}{W}{U}, {T}: Copy target triggered ability you control twice. You may choose new targets for the copies.",
+      "oracleText": "Reach, vigilance\nAt the beginning of combat on your turn, if you've cast a noncreature spell this turn, draw a card.\n{R}{G}{W}{U}, {T}: Copy target triggered ability you control twice. You may choose new targets for the copies.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/1/f1d80509-ece1-4b6d-bfe5-c6d003f581cf.jpg"
     },
     "MSC0003": {
@@ -1336,7 +1336,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Vigilance, reach\nWhenever a player casts a noncreature spell, put a +1/+1 counter on Medusa.",
+      "oracleText": "Reach, vigilance\nWhenever a player casts a noncreature spell, put a +1/+1 counter on Medusa.",
       "scryfallImage": "https://cards.scryfall.io/large/front/3/1/3187ebab-8008-455c-a3c9-794a5b225b88.jpg"
     },
     "MSC0069": {
@@ -7281,7 +7281,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Vigilance, reach\nWhenever a player casts a noncreature spell, put a +1/+1 counter on Medusa.",
+      "oracleText": "Reach, vigilance\nWhenever a player casts a noncreature spell, put a +1/+1 counter on Medusa.",
       "scryfallImage": "https://cards.scryfall.io/large/front/5/b/5b59f320-ab75-4c32-bae5-223f975b7013.jpg"
     },
     "MSC0384": {
@@ -9654,7 +9654,7 @@
         "First strike",
         "Reach"
       ],
-      "oracleText": "First strike, reach\nWhenever Hawkeye or another Hero you control enters, it deals damage equal to the number of Heroes you control to any target.",
+      "oracleText": "Reach, first strike\nWhenever Hawkeye or another Hero you control enters, it deals damage equal to the number of Heroes you control to any target.",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f05832a-395e-44ba-8e1b-1488c3960343.jpg"
     },
     "MSC0507": {
@@ -11587,7 +11587,7 @@
         "Flying",
         "Vigilance"
       ],
-      "oracleText": "Flying, vigilance\n{1}{U}, {T}: Draw a card, then discard a card. This ability costs {1}{U} less to activate if another creature with flying entered under your control this turn.",
+      "oracleText": "Flying, vigilance\n{1}{U}, {T}: Draw a card, then discard a card. This ability costs {1}{U} less to activate if another creature with flying entered the battlefield under your control this turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3fea3eb2-9360-41fc-890e-8377e69fb9e3.jpg"
     },
     "MSC0622": {
@@ -12275,7 +12275,7 @@
         "B"
       ],
       "keywords": [],
-      "oracleText": "{T}, Pay 2 life: Draw a card. Activate only if an artifact entered under your control this turn.",
+      "oracleText": "{T}, Pay 2 life: Draw a card. Activate only if an artifact entered the battlefield under your control this turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3f888843-4bdb-438d-8fb9-968edb2713ac.jpg"
     },
     "MSC0657": {
@@ -13815,7 +13815,7 @@
       "keywords": [
         "Food"
       ],
-      "oracleText": "If you would create one or more tokens, instead create those tokens plus an additional Food token.\nAt the beginning of your end step, if you gained life this turn, draw a card.",
+      "oracleText": "If you would create one or more tokens, instead create those tokens plus an additional Food token. (It's an artifact with \"{2}, {T}, Sacrifice this token: You gain 3 life.\")\nAt the beginning of your end step, if you gained life this turn, draw a card.",
       "scryfallImage": "https://cards.scryfall.io/large/front/6/0/6082ab9f-290e-4230-84a0-46c7f8ed712d.jpg"
     },
     "MSC0735": {
@@ -16558,7 +16558,7 @@
         "Reach",
         "Vigilance"
       ],
-      "oracleText": "Vigilance, reach\nAt the beginning of combat on your turn, if you've cast a noncreature spell this turn, draw a card.\n{R}{G}{W}{U}, {T}: Copy target triggered ability you control twice. You may choose new targets for the copies.",
+      "oracleText": "Reach, vigilance\nAt the beginning of combat on your turn, if you've cast a noncreature spell this turn, draw a card.\n{R}{G}{W}{U}, {T}: Copy target triggered ability you control twice. You may choose new targets for the copies.",
       "scryfallImage": "https://cards.scryfall.io/large/front/6/4/64307a48-6e47-49b3-bfe0-c9d8d7226650.jpg"
     },
     "MSC0877": {

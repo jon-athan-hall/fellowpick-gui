@@ -5,7 +5,9 @@
     "description": "The Lord of the Rings and Middle-Earth",
     "sets": [
       "LTC",
-      "LTR"
+      "LTR",
+      "HOB",
+      "HOC"
     ],
     "precons": [
       {

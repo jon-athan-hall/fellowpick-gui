@@ -738,7 +738,7 @@
       "Mill",
       "Trample"
     ],
-    "oracleText": "Flying, trample, haste\nAs long as there are fewer than eight cards in your graveyard, The Warring Triad isn't a creature.\n{T}, Mill a card: Target player adds one mana of any color.",
+    "oracleText": "Flying, trample, haste\nAs long as there are fewer than eight cards in your graveyard, The Warring Triad isn't a creature.\n{T}, Mill a card: Target player adds one mana of any color. (Activate only as an instant.)",
     "scryfallImage": "https://cards.scryfall.io/large/front/9/9/99fd1cd5-4740-4a0f-b773-3d3b66861d77.jpg"
   },
   {
@@ -1644,7 +1644,7 @@
     "keywords": [
       "Mill"
     ],
-    "oracleText": "{T}, Mill a card: Add {C}. (To mill a card, put the top card of your library into your graveyard.)",
+    "oracleText": "{T}, Mill a card: Add {C}. (Activate only as an instant. To mill a card, put the top card of your library into your graveyard.)",
     "scryfallImage": "https://cards.scryfall.io/large/front/7/1/717b0d6b-fa62-46d2-a061-7161d3255c98.jpg"
   },
   {
@@ -4704,7 +4704,7 @@
     "keywords": [
       "Reach"
     ],
-    "oracleText": "Reach\nVehicles you control get +1/+1 and have vigilance and reach.\nWhenever a Vehicle crewed by Balthier and Fran this turn attacks, if it's the first combat phase of the turn, you may pay {1}{R}{G}. If you do, after this phase, there is an additional combat phase.",
+    "oracleText": "Reach\nVehicles you control get +1/+1 and have reach and vigilance.\nWhenever a Vehicle crewed by Balthier and Fran this turn attacks, if it's the first combat phase of the turn, you may pay {1}{R}{G}. If you do, after this phase, there is an additional combat phase.",
     "scryfallImage": "https://cards.scryfall.io/large/front/a/f/afcaed7d-7ea3-4f2a-a7f5-ee3315226369.jpg"
   },
   {
@@ -5083,7 +5083,7 @@
       "Trample",
       "Vigilance"
     ],
-    "oracleText": "Vigilance, reach, trample",
+    "oracleText": "Reach, vigilance, trample",
     "scryfallImage": "https://cards.scryfall.io/large/front/e/4/e48cf6d5-4d32-4b66-80be-3495ecd3e906.jpg"
   },
   {
@@ -6096,26 +6096,6 @@
     "keywords": [],
     "oracleText": "Destroy target artifact or enchantment. Its controller gains 4 life.",
     "scryfallImage": "https://cards.scryfall.io/large/front/d/3/d349901d-f9a6-4f09-a881-531c695cf1c4.jpg"
-  },
-  {
-    "id": "FCA0048",
-    "name": "Primeval Titan",
-    "flavorName": "Astral Titan",
-    "manaCost": "{4}{G}{G}",
-    "manaValue": 6,
-    "type": "Creature — Giant",
-    "types": [
-      "Creature"
-    ],
-    "rarity": "rare",
-    "colorIdentity": [
-      "G"
-    ],
-    "keywords": [
-      "Trample"
-    ],
-    "oracleText": "Trample\nWhenever this creature enters or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle.",
-    "scryfallImage": "https://cards.scryfall.io/large/front/9/7/972dfe0d-1f8a-4e18-bcd8-c1ff6266c01a.jpg"
   },
   {
     "id": "FCA0050",

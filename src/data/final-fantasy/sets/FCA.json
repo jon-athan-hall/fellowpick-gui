@@ -2,7 +2,7 @@
   "setCode": "FCA",
   "name": "Final Fantasy: Through the Ages",
   "releaseDate": "2025-06-13",
-  "totalCards": 64,
+  "totalCards": 63,
   "cards": {
     "FCA0001": {
       "id": "FCA0001",
@@ -918,26 +918,6 @@
       "keywords": [],
       "oracleText": "Destroy target artifact or enchantment. Its controller gains 4 life.",
       "scryfallImage": "https://cards.scryfall.io/large/front/d/3/d349901d-f9a6-4f09-a881-531c695cf1c4.jpg"
-    },
-    "FCA0048": {
-      "id": "FCA0048",
-      "name": "Primeval Titan",
-      "flavorName": "Astral Titan",
-      "manaCost": "{4}{G}{G}",
-      "manaValue": 6,
-      "type": "Creature — Giant",
-      "types": [
-        "Creature"
-      ],
-      "rarity": "rare",
-      "colorIdentity": [
-        "G"
-      ],
-      "keywords": [
-        "Trample"
-      ],
-      "oracleText": "Trample\nWhenever this creature enters or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle.",
-      "scryfallImage": "https://cards.scryfall.io/large/front/9/7/972dfe0d-1f8a-4e18-bcd8-c1ff6266c01a.jpg"
     },
     "FCA0049": {
       "id": "FCA0049",

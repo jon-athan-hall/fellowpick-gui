@@ -1,0 +1,3075 @@
+{
+  "setCode": "HOC",
+  "name": "The Hobbit Eternal",
+  "releaseDate": "2026-08-14",
+  "totalCards": 158,
+  "cards": {
+    "HOC0001": {
+      "id": "HOC0001",
+      "name": "Fíli and Kíli, Joyous",
+      "flavorName": null,
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Dwarf Bard",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Haste"
+      ],
+      "oracleText": "Haste\n{T}: Add {R}{R}. Spend this mana only to cast Dwarf, Equipment, and Saga spells.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/1/e1d12200-ae0b-4155-9853-3ffaf490c84c.jpg"
+    },
+    "HOC0002": {
+      "id": "HOC0002",
+      "name": "Gandalf, Party Guest",
+      "flavorName": null,
+      "manaCost": "{1}{U}{R}{W}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Avatar Wizard",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "At the beginning of combat on your turn, you may cast an instant or sorcery spell with mana value X or less from your hand without paying its mana cost, where X is twice the number of legendary Wizards you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/7/f742a14a-0c84-4225-a314-04d5c32fef08.jpg"
+    },
+    "HOC0003": {
+      "id": "HOC0003",
+      "name": "Thorin, King of Durin's Folk",
+      "flavorName": null,
+      "manaCost": "{3}{R}{W}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Dwarf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Treasure"
+      ],
+      "oracleText": "Whenever Thorin or another Dwarf you control enters, create a Treasure token.\nOther Dwarves you control get +1/+0 for each artifact token you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/7/773813a8-723f-4c26-9e0a-a01b2faada98.jpg"
+    },
+    "HOC0004": {
+      "id": "HOC0004",
+      "name": "Bilbo, Fellow Conspirator",
+      "flavorName": null,
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Halfling Citizen",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Food",
+        "Treasure"
+      ],
+      "oracleText": "If you would create a Food token, instead create a Food token and a Treasure token.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/84a95ac5-e2f6-4cf5-bc5e-ac4410168c06.jpg"
+    },
+    "HOC0005": {
+      "id": "HOC0005",
+      "name": "Bag End Banquet",
+      "flavorName": null,
+      "manaCost": "{6}",
+      "manaValue": 6,
+      "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [],
+      "keywords": [
+        "Food"
+      ],
+      "oracleText": "When this artifact enters, create three Food tokens.\n{T}: Add {C} for each Food you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/2/028f284b-4b4c-44e2-8ded-bc59ec71250f.jpg"
+    },
+    "HOC0006": {
+      "id": "HOC0006",
+      "name": "Ori, Plate Stacker",
+      "flavorName": null,
+      "manaCost": "{5}{W}{W}",
+      "manaValue": 7,
+      "type": "Legendary Creature — Dwarf Bard",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "When Ori enters, destroy all artifacts and enchantments your opponents control. You gain 1 life for each permanent destroyed this way.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/1/911bd55d-00c7-4362-ba2d-eef0a9dadb6c.jpg"
+    },
+    "HOC0007": {
+      "id": "HOC0007",
+      "name": "Long-Lost Lances",
+      "flavorName": null,
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature gets +2/+0.\nDuring your turn, creatures you control that are equipped have first strike and vigilance.\nEquip {2}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/1/c1d49a74-231a-4d38-abfe-3e9b4afff9c2.jpg"
+    },
+    "HOC0008": {
+      "id": "HOC0008",
+      "name": "Dragon-Cursed Halls",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [],
+      "keywords": [
+        "Treasure"
+      ],
+      "oracleText": "{T}: Add {C}.\n{1}, {T}: Until end of turn, target creature gains \"Whenever this creature deals combat damage to a player, create a Treasure token.\"",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/0/506b9df7-8236-4c6e-aebc-6b7e6fcd7e88.jpg"
+    },
+    "HOC0009": {
+      "id": "HOC0009",
+      "name": "Smaug the Impenetrable",
+      "flavorName": null,
+      "manaCost": "{5}{B}{R}",
+      "manaValue": 7,
+      "type": "Legendary Creature — Dragon",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Haste",
+        "Indestructible",
+        "Treasure"
+      ],
+      "oracleText": "Flying, indestructible, haste\nWhenever Smaug is dealt noncombat damage, create that many Treasure tokens.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/5/55872bce-08ce-4d4f-8951-9fa230f3e160.jpg"
+    },
+    "HOC0010": {
+      "id": "HOC0010",
+      "name": "Bilbo's Burglaring",
+      "flavorName": null,
+      "manaCost": "{4}{U}{U}",
+      "manaValue": 6,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "For each opponent, gain control of up to one target artifact that player controls.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/e/8e603c26-0c51-4cee-b1de-ada73d5f7f27.jpg"
+    },
+    "HOC0011": {
+      "id": "HOC0011",
+      "name": "Dragon's Desire",
+      "flavorName": null,
+      "manaCost": "{2}{R}{R}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Add {R} for each artifact your opponents control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/b/2b9d5820-a0b1-462d-a47c-4b6c6a549eca.jpg"
+    },
+    "HOC0012": {
+      "id": "HOC0012",
+      "name": "Necklace of Girion",
+      "flavorName": null,
+      "manaCost": "{2}{G}",
+      "manaValue": 3,
+      "type": "Legendary Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever you cast a green spell and whenever a Forest you control enters, put a +1/+1 counter on target creature you control.\n{T}: Add {G}.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/67c30782-0d28-4ce7-ad5b-ffbffeb97584.jpg"
+    },
+    "HOC0013": {
+      "id": "HOC0013",
+      "name": "Dawn of a New Age",
+      "flavorName": null,
+      "manaCost": "{1}{W}",
+      "manaValue": 2,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "This enchantment enters with a hope counter on it for each creature you control.\nAt the beginning of your end step, remove a hope counter from this enchantment. If you do, draw a card. Then if this enchantment has no hope counters on it, sacrifice it and you gain 4 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/d/0d153edc-b50f-4f64-ac6e-25db7a9ef3f6.jpg"
+    },
+    "HOC0014": {
+      "id": "HOC0014",
+      "name": "Flowering of the White Tree",
+      "flavorName": null,
+      "manaCost": "{W}{W}",
+      "manaValue": 2,
+      "type": "Legendary Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Legendary creatures you control get +2/+1 and have ward {1}.\nNonlegendary creatures you control get +1/+1.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b8d7c21f-7a67-4cab-ac95-b0bc6eb3d8a2.jpg"
+    },
+    "HOC0015": {
+      "id": "HOC0015",
+      "name": "The Gaffer",
+      "flavorName": null,
+      "manaCost": "{2}{W}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Halfling Peasant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "At the beginning of each end step, if you gained 3 or more life this turn, draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/c/9c264afd-ea8b-435c-bb01-c754d44ba4a5.jpg"
+    },
+    "HOC0016": {
+      "id": "HOC0016",
+      "name": "Galadriel's Dismissal",
+      "flavorName": null,
+      "manaCost": "{W}",
+      "manaValue": 1,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Kicker"
+      ],
+      "oracleText": "Kicker {2}{W} (You may pay an additional {2}{W} as you cast this spell.)\nTarget creature phases out. If this spell was kicked, each creature target player controls phases out instead. (Treat phased-out creatures and anything attached to them as though they don't exist until their controller's next turn.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/b/1b258c47-48b8-4787-9af7-1635cc17dff6.jpg"
+    },
+    "HOC0017": {
+      "id": "HOC0017",
+      "name": "Reprieve",
+      "flavorName": null,
+      "manaCost": "{1}{W}",
+      "manaValue": 2,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Return target spell to its owner's hand.\nDraw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fa2eca1b-96d6-4707-88ca-951bb7913cc9.jpg"
+    },
+    "HOC0018": {
+      "id": "HOC0018",
+      "name": "Raise the Palisade",
+      "flavorName": null,
+      "manaCost": "{4}{U}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Choose a creature type. Return all creatures that aren't of the chosen type to their owners' hands.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/a/2a7b9598-9234-4621-90e4-f578f2f84983.jpg"
+    },
+    "HOC0019": {
+      "id": "HOC0019",
+      "name": "Orcish Bowmasters",
+      "flavorName": null,
+      "manaCost": "{1}{B}",
+      "manaValue": 2,
+      "type": "Creature — Orc Archer",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Amass",
+        "Flash"
+      ],
+      "oracleText": "Flash\nWhen this creature enters and whenever an opponent draws a card except the first one they draw in each of their draw steps, this creature deals 1 damage to any target. Then amass Orcs 1.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/8/881b6202-6d02-489b-b79c-62142c42ed1f.jpg"
+    },
+    "HOC0020": {
+      "id": "HOC0020",
+      "name": "Witch-king of Angmar",
+      "flavorName": null,
+      "manaCost": "{3}{B}{B}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Wraith Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "oracleText": "Flying\nWhenever one or more creatures deal combat damage to you, each opponent sacrifices a creature of their choice that dealt combat damage to you this turn. The Ring tempts you.\nDiscard a card: Witch-king of Angmar gains indestructible until end of turn. Tap him.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/1/7170f930-8f94-4671-9acf-bf40913cbfa0.jpg"
+    },
+    "HOC0021": {
+      "id": "HOC0021",
+      "name": "Witch-king, Bringer of Ruin",
+      "flavorName": null,
+      "manaCost": "{4}{B}{B}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Wraith Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "oracleText": "Flying\nWhenever Witch-king attacks, defending player sacrifices a creature with the least power among creatures they control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/a/9a9e1edd-2a42-41a8-b089-66f3db080984.jpg"
+    },
+    "HOC0022": {
+      "id": "HOC0022",
+      "name": "Call Forth the Tempest",
+      "flavorName": null,
+      "manaCost": "{5}{R}{R}{R}",
+      "manaValue": 8,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Cascade"
+      ],
+      "oracleText": "Cascade, cascade (When you cast this spell, exile cards from the top of your library until you exile a nonland card that costs less. You may cast it without paying its mana cost. Put the exiled cards on the bottom of your library in a random order. Then do it again.)\nCall Forth the Tempest deals damage to each creature your opponents control equal to the total mana value of other spells you've cast this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/f/4f3d805a-a152-4aa5-85ec-45195cf9e955.jpg"
+    },
+    "HOC0023": {
+      "id": "HOC0023",
+      "name": "Cavern-Hoard Dragon",
+      "flavorName": null,
+      "manaCost": "{7}{R}{R}",
+      "manaValue": 9,
+      "type": "Creature — Dragon",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Haste",
+        "Trample",
+        "Treasure"
+      ],
+      "oracleText": "This spell costs {X} less to cast, where X is the greatest number of artifacts an opponent controls.\nFlying, trample, haste\nWhenever this creature deals combat damage to a player, you create a Treasure token for each artifact that player controls.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/7/e70e4fba-4217-472a-9adb-f7d63424ef2f.jpg"
+    },
+    "HOC0024": {
+      "id": "HOC0024",
+      "name": "Arwen, Weaver of Hope",
+      "flavorName": null,
+      "manaCost": "{1}{G}{G}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "Each other creature you control enters with a number of additional +1/+1 counters on it equal to Arwen's toughness.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/9/69d7bf6e-2309-4093-8a6e-db6b297556ed.jpg"
+    },
+    "HOC0025": {
+      "id": "HOC0025",
+      "name": "Delighted Halfling",
+      "flavorName": null,
+      "manaCost": "{G}",
+      "manaValue": 1,
+      "type": "Creature — Halfling Citizen",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a legendary spell, and that spell can't be countered.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/a/aad18e0d-ccf9-4d86-945b-36991558fd3e.jpg"
+    },
+    "HOC0026": {
+      "id": "HOC0026",
+      "name": "Elven Chorus",
+      "flavorName": null,
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "You may look at the top card of your library any time.\nYou may cast creature spells from the top of your library.\nCreatures you control have \"{T}: Add one mana of any color.\"",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/e/ceb93bf0-ed21-4963-b87b-1b5b76ca5b1a.jpg"
+    },
+    "HOC0027": {
+      "id": "HOC0027",
+      "name": "Last March of the Ents",
+      "flavorName": null,
+      "manaCost": "{6}{G}{G}",
+      "manaValue": 8,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "This spell can't be countered.\nDraw cards equal to the greatest toughness among creatures you control, then put any number of creature cards from your hand onto the battlefield.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/d/2d7097c9-2076-4ebc-8c9e-aa596351588c.jpg"
+    },
+    "HOC0028": {
+      "id": "HOC0028",
+      "name": "Aragorn and Arwen, Wed",
+      "flavorName": null,
+      "manaCost": "{4}{G}{W}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Human Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Vigilance"
+      ],
+      "oracleText": "Vigilance\nWhenever Aragorn and Arwen enters or attacks, put a +1/+1 counter on each other creature you control. You gain 1 life for each other creature you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/1/e1e75e94-7664-499e-9da1-97b56d44dd9e.jpg"
+    },
+    "HOC0029": {
+      "id": "HOC0029",
+      "name": "Aragorn, the Uniter",
+      "flavorName": null,
+      "manaCost": "{R}{G}{W}{U}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Human Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "Whenever you cast a white spell, create a 1/1 white Human Soldier creature token.\nWhenever you cast a blue spell, scry 2.\nWhenever you cast a red spell, Aragorn deals 3 damage to target opponent.\nWhenever you cast a green spell, target creature gets +4/+4 until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9d8d618a-9786-4e71-9808-96a336325367.jpg"
+    },
+    "HOC0030": {
+      "id": "HOC0030",
+      "name": "Arwen, Mortal Queen",
+      "flavorName": null,
+      "manaCost": "{1}{G}{W}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Arwen enters with an indestructible counter on her.\n{1}, Remove an indestructible counter from Arwen: Another target creature gains indestructible until end of turn. Put a +1/+1 counter and a lifelink counter on that creature and a +1/+1 counter and a lifelink counter on Arwen.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/2/a2055227-0a53-4b6b-b6d3-0eafc1884d4c.jpg"
+    },
+    "HOC0031": {
+      "id": "HOC0031",
+      "name": "Flame of Anor",
+      "flavorName": null,
+      "manaCost": "{1}{U}{R}",
+      "manaValue": 3,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Choose one. If you control a Wizard as you cast this spell, you may choose two instead.\n• Target player draws two cards.\n• Destroy target artifact.\n• Flame of Anor deals 5 damage to target creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/c/ac0930fa-cba7-406e-ba56-5d3e8a16f603.jpg"
+    },
+    "HOC0032": {
+      "id": "HOC0032",
+      "name": "Galadriel, Light of Valinor",
+      "flavorName": null,
+      "manaCost": "{2}{G}{W}{U}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Alliance",
+        "Scry"
+      ],
+      "oracleText": "Alliance — Whenever another creature you control enters, choose one that hasn't been chosen this turn —\n• Add {G}{G}{G}.\n• Put a +1/+1 counter on each creature you control.\n• Scry 2, then draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/e/fea53448-fc0d-45bb-8d30-03720865b541.jpg"
+    },
+    "HOC0033": {
+      "id": "HOC0033",
+      "name": "Gríma, Saruman's Footman",
+      "flavorName": null,
+      "manaCost": "{2}{U}{B}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Human Advisor",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Gríma can't be blocked.\nWhenever Gríma deals combat damage to a player, that player exiles cards from the top of their library until they exile an instant or sorcery card. You may cast that card without paying its mana cost. Then that player puts the exiled cards that weren't cast this way on the bottom of their library in a random order.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/c/3c8f0bfc-767a-411c-b870-f2764f3706f4.jpg"
+    },
+    "HOC0034": {
+      "id": "HOC0034",
+      "name": "Lotho, Corrupt Shirriff",
+      "flavorName": null,
+      "manaCost": "{W}{B}",
+      "manaValue": 2,
+      "type": "Legendary Creature — Halfling Rogue",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "keywords": [
+        "Treasure"
+      ],
+      "oracleText": "Whenever a player casts their second spell each turn, you lose 1 life and create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/9/692fcfe3-1057-4290-aaea-f4d50f642c05.jpg"
+    },
+    "HOC0035": {
+      "id": "HOC0035",
+      "name": "Saruman of Many Colors",
+      "flavorName": null,
+      "manaCost": "{3}{W}{U}{B}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Avatar Wizard",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Mill",
+        "Ward"
+      ],
+      "oracleText": "Ward—Discard an enchantment, instant, or sorcery card.\nWhenever you cast your second spell each turn, each opponent mills two cards. When one or more cards are milled this way, exile target enchantment, instant, or sorcery card with equal or lesser mana value than that spell from an opponent's graveyard. Copy the exiled card. You may cast the copy without paying its mana cost.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/2/62c8fa9c-d8ba-4ce0-946c-42fdc26b49d1.jpg"
+    },
+    "HOC0036": {
+      "id": "HOC0036",
+      "name": "Sauron, the Dark Lord",
+      "flavorName": null,
+      "manaCost": "{3}{U}{B}{R}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Avatar Horror",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Amass",
+        "Ward"
+      ],
+      "oracleText": "Ward—Sacrifice a legendary artifact or legendary creature.\nWhenever an opponent casts a spell, amass Orcs 1.\nWhenever an Army you control deals combat damage to a player, the Ring tempts you.\nWhenever the Ring tempts you, you may discard your hand. If you do, draw four cards.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/d/dd6dd9dc-ef2a-4806-a3e4-0597288a8162.jpg"
+    },
+    "HOC0037": {
+      "id": "HOC0037",
+      "name": "Sauron, the Lidless Eye",
+      "flavorName": null,
+      "manaCost": "{3}{B}{R}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Avatar Horror",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "When Sauron enters, gain control of target creature an opponent controls until end of turn. Untap it. It gains haste until end of turn.\n{1}{B}{R}: Creatures you control get +2/+0 until end of turn. Each opponent loses 2 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea2d0f3e-45d0-4abb-a2bb-d893f87301c2.jpg"
+    },
+    "HOC0038": {
+      "id": "HOC0038",
+      "name": "Tom Bombadil",
+      "flavorName": null,
+      "manaCost": "{W}{U}{B}{R}{G}",
+      "manaValue": 5,
+      "type": "Legendary Creature — God Bard",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "As long as there are four or more lore counters among Sagas you control, Tom Bombadil has hexproof and indestructible.\nWhenever the final chapter ability of a Saga you control resolves, reveal cards from the top of your library until you reveal a Saga card. Put that card onto the battlefield and the rest on the bottom of your library in a random order. This ability triggers only once each turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/0/8040d3ba-7601-4b99-a98a-2411ec1b717d.jpg"
+    },
+    "HOC0039": {
+      "id": "HOC0039",
+      "name": "Andúril, Flame of the West",
+      "flavorName": null,
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature gets +3/+1.\nWhenever equipped creature attacks, create two tapped 1/1 white Spirit creature tokens with flying. If that creature is legendary, instead create two of those tokens that are tapped and attacking.\nEquip {2}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f2a60c5-09ca-49e4-90bd-9dadc56dddf2.jpg"
+    },
+    "HOC0040": {
+      "id": "HOC0040",
+      "name": "Andúril, Narsil Reforged",
+      "flavorName": null,
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Ascend",
+        "Equip"
+      ],
+      "oracleText": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nWhenever equipped creature attacks, put a +1/+1 counter on each creature you control. If you have the city's blessing, put two +1/+1 counters on each creature you control instead.\nEquip {3}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/c/5c495189-451e-46ca-9a71-825dab50a0e7.jpg"
+    },
+    "HOC0041": {
+      "id": "HOC0041",
+      "name": "Bilbo's Ring",
+      "flavorName": null,
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "During your turn, equipped creature has hexproof and can't be blocked.\nWhenever equipped creature attacks alone, you draw a card and you lose 1 life.\nEquip Halfling {1} ({1}: Attach to target Halfling you control. Equip only as a sorcery.)\nEquip {4} ({4}: Attach to target creature you control. Equip only as a sorcery.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/67a4e16b-df1b-4b57-a388-add58eae5a24.jpg"
+    },
+    "HOC0042": {
+      "id": "HOC0042",
+      "name": "Glamdring",
+      "flavorName": null,
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature has first strike and gets +1/+0 for each instant and sorcery card in your graveyard.\nWhenever equipped creature deals combat damage to a player, you may cast an instant or sorcery spell from your hand with mana value less than or equal to that damage without paying its mana cost.\nEquip {3}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/a/ba4b13c5-ef17-4bde-80e1-59d7587c123b.jpg"
+    },
+    "HOC0043": {
+      "id": "HOC0043",
+      "name": "Mithril Coat",
+      "flavorName": null,
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip",
+        "Flash",
+        "Indestructible"
+      ],
+      "oracleText": "Flash\nIndestructible\nWhen Mithril Coat enters, attach it to target legendary creature you control.\nEquipped creature has indestructible.\nEquip {3}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/1/b19d533b-0081-4744-8fc8-5e864ddb39ba.jpg"
+    },
+    "HOC0044": {
+      "id": "HOC0044",
+      "name": "The One Ring",
+      "flavorName": null,
+      "manaCost": "{4}",
+      "manaValue": 4,
+      "type": "Legendary Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Indestructible"
+      ],
+      "oracleText": "Indestructible\nWhen The One Ring enters, if you cast it, you gain protection from everything until your next turn.\nAt the beginning of your upkeep, you lose 1 life for each burden counter on The One Ring.\n{T}: Put a burden counter on The One Ring, then draw a card for each burden counter on The One Ring.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/d/bdd2c783-1483-490a-ae93-c4664a0a9564.jpg"
+    },
+    "HOC0045": {
+      "id": "HOC0045",
+      "name": "Palantír of Orthanc",
+      "flavorName": null,
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Legendary Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Mill",
+        "Scry"
+      ],
+      "oracleText": "At the beginning of your end step, put an influence counter on Palantír of Orthanc and scry 2. Then target opponent may have you draw a card. If that player doesn't, you mill X cards, where X is the number of influence counters on Palantír of Orthanc, and that player loses life equal to the total mana value of those cards.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/6/a6a887e4-7cee-4107-8a9a-afbfa2e91bdc.jpg"
+    },
+    "HOC0046": {
+      "id": "HOC0046",
+      "name": "Relic of Sauron",
+      "flavorName": null,
+      "manaCost": "{4}",
+      "manaValue": 4,
+      "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "{T}: Add two mana in any combination of {U}, {B}, and/or {R}.\n{3}, {T}: Draw two cards, then discard a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8caea27b-040e-43c6-a8e0-0f3c0e40f411.jpg"
+    },
+    "HOC0047": {
+      "id": "HOC0047",
+      "name": "The Black Gate",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land — Gate",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "As The Black Gate enters, you may pay 3 life. If you don't, it enters tapped.\n{T}: Add {B}.\n{1}{B}, {T}: Choose a player with the most life or tied for most life. Target creature can't be blocked by creatures that player controls this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/b/db3710f3-fd63-43d9-b9d6-dfac041954fa.jpg"
+    },
+    "HOC0048": {
+      "id": "HOC0048",
+      "name": "Minas Morgul, Dark Fortress",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "Minas Morgul enters tapped.\n{T}: Add {B}.\n{3}{B}, {T}: Put a shadow counter on target creature. For as long as that creature has a shadow counter on it, it's a Wraith in addition to its other types. (A creature with shadow can block or be blocked by only creatures with shadow.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/7/27b2d8b7-3160-4a51-a898-a3c05180ff75.jpg"
+    },
+    "HOC0049": {
+      "id": "HOC0049",
+      "name": "Minas Tirith",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Minas Tirith enters tapped unless you control a legendary creature.\n{T}: Add {W}.\n{1}{W}, {T}: Draw a card. Activate only if you attacked with two or more creatures this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/3/638c45e2-91d0-4ced-8bf7-64b2817b281a.jpg"
+    },
+    "HOC0050": {
+      "id": "HOC0050",
+      "name": "Mount Doom",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "{T}, Pay 1 life: Add {B} or {R}.\n{1}{B}{R}, {T}: Mount Doom deals 1 damage to each opponent.\n{5}{B}{R}, {T}, Sacrifice Mount Doom and a legendary artifact: Choose up to two creatures, then destroy the rest. Activate only as a sorcery.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/8/f8d7f58c-bb5b-4cbe-8771-d668bef27bda.jpg"
+    },
+    "HOC0051": {
+      "id": "HOC0051",
+      "name": "Rivendell",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "Rivendell enters tapped unless you control a legendary creature.\n{T}: Add {U}.\n{1}{U}, {T}: Scry 2. Activate only if you control a legendary creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/1/1127eb51-50ef-47f3-abfe-48895c832296.jpg"
+    },
+    "HOC0052": {
+      "id": "HOC0052",
+      "name": "The Shire",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Food"
+      ],
+      "oracleText": "The Shire enters tapped unless you control a legendary creature.\n{T}: Add {G}.\n{1}{G}, {T}, Tap an untapped creature you control: Create a Food token.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/c/bc4895f4-d16f-4af6-b681-735131b886c4.jpg"
+    },
+    "HOC0053": {
+      "id": "HOC0053",
+      "name": "Dawn of a New Age",
+      "flavorName": null,
+      "manaCost": "{1}{W}",
+      "manaValue": 2,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "This enchantment enters with a hope counter on it for each creature you control.\nAt the beginning of your end step, remove a hope counter from this enchantment. If you do, draw a card. Then if this enchantment has no hope counters on it, sacrifice it and you gain 4 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/8/58c9ef2f-cd9a-4e71-85a4-f0f0e5cb1130.jpg"
+    },
+    "HOC0054": {
+      "id": "HOC0054",
+      "name": "Flowering of the White Tree",
+      "flavorName": null,
+      "manaCost": "{W}{W}",
+      "manaValue": 2,
+      "type": "Legendary Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Legendary creatures you control get +2/+1 and have ward {1}.\nNonlegendary creatures you control get +1/+1.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/9/99dc452c-f6a1-4f40-9262-3c5a6deaf092.jpg"
+    },
+    "HOC0055": {
+      "id": "HOC0055",
+      "name": "The Gaffer",
+      "flavorName": null,
+      "manaCost": "{2}{W}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Halfling Peasant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "At the beginning of each end step, if you gained 3 or more life this turn, draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/b/4b4db080-dc29-40ca-a8ff-a7c8d5f87853.jpg"
+    },
+    "HOC0056": {
+      "id": "HOC0056",
+      "name": "Galadriel's Dismissal",
+      "flavorName": null,
+      "manaCost": "{W}",
+      "manaValue": 1,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Kicker"
+      ],
+      "oracleText": "Kicker {2}{W} (You may pay an additional {2}{W} as you cast this spell.)\nTarget creature phases out. If this spell was kicked, each creature target player controls phases out instead. (Treat phased-out creatures and anything attached to them as though they don't exist until their controller's next turn.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/441802e0-cfd4-4c41-bc45-8babbe39f6d9.jpg"
+    },
+    "HOC0057": {
+      "id": "HOC0057",
+      "name": "Reprieve",
+      "flavorName": null,
+      "manaCost": "{1}{W}",
+      "manaValue": 2,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Return target spell to its owner's hand.\nDraw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/2/d2afc2b0-bd68-494b-9952-1fe53213552f.jpg"
+    },
+    "HOC0058": {
+      "id": "HOC0058",
+      "name": "Raise the Palisade",
+      "flavorName": null,
+      "manaCost": "{4}{U}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Choose a creature type. Return all creatures that aren't of the chosen type to their owners' hands.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/4/6413aeeb-6a11-42c3-9cd9-dcf2ebde58fc.jpg"
+    },
+    "HOC0059": {
+      "id": "HOC0059",
+      "name": "Orcish Bowmasters",
+      "flavorName": null,
+      "manaCost": "{1}{B}",
+      "manaValue": 2,
+      "type": "Creature — Orc Archer",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Amass",
+        "Flash"
+      ],
+      "oracleText": "Flash\nWhen this creature enters and whenever an opponent draws a card except the first one they draw in each of their draw steps, this creature deals 1 damage to any target. Then amass Orcs 1.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/d/fd845750-f253-4eb0-9903-1f4d5fac014e.jpg"
+    },
+    "HOC0060": {
+      "id": "HOC0060",
+      "name": "Witch-king of Angmar",
+      "flavorName": null,
+      "manaCost": "{3}{B}{B}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Wraith Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "oracleText": "Flying\nWhenever one or more creatures deal combat damage to you, each opponent sacrifices a creature of their choice that dealt combat damage to you this turn. The Ring tempts you.\nDiscard a card: Witch-king of Angmar gains indestructible until end of turn. Tap him.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/6/06ad9b5e-6ef0-40c5-8ea3-ddca5d5d965c.jpg"
+    },
+    "HOC0061": {
+      "id": "HOC0061",
+      "name": "Witch-king, Bringer of Ruin",
+      "flavorName": null,
+      "manaCost": "{4}{B}{B}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Wraith Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "oracleText": "Flying\nWhenever Witch-king attacks, defending player sacrifices a creature with the least power among creatures they control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/4/84738f2f-7eab-49c3-b936-ec1934a11127.jpg"
+    },
+    "HOC0062": {
+      "id": "HOC0062",
+      "name": "Call Forth the Tempest",
+      "flavorName": null,
+      "manaCost": "{5}{R}{R}{R}",
+      "manaValue": 8,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Cascade"
+      ],
+      "oracleText": "Cascade, cascade (When you cast this spell, exile cards from the top of your library until you exile a nonland card that costs less. You may cast it without paying its mana cost. Put the exiled cards on the bottom of your library in a random order. Then do it again.)\nCall Forth the Tempest deals damage to each creature your opponents control equal to the total mana value of other spells you've cast this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/5/1595281c-8d1d-4ad6-8197-01a0fc3b6087.jpg"
+    },
+    "HOC0063": {
+      "id": "HOC0063",
+      "name": "Cavern-Hoard Dragon",
+      "flavorName": null,
+      "manaCost": "{7}{R}{R}",
+      "manaValue": 9,
+      "type": "Creature — Dragon",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Flying",
+        "Haste",
+        "Trample",
+        "Treasure"
+      ],
+      "oracleText": "This spell costs {X} less to cast, where X is the greatest number of artifacts an opponent controls.\nFlying, trample, haste\nWhenever this creature deals combat damage to a player, you create a Treasure token for each artifact that player controls.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/9/f91355e4-097d-417b-9c26-e7e83d9ece3b.jpg"
+    },
+    "HOC0064": {
+      "id": "HOC0064",
+      "name": "Arwen, Weaver of Hope",
+      "flavorName": null,
+      "manaCost": "{1}{G}{G}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "Each other creature you control enters with a number of additional +1/+1 counters on it equal to Arwen's toughness.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/6/e6ba967b-8832-4a98-8685-36acdfb1a53b.jpg"
+    },
+    "HOC0065": {
+      "id": "HOC0065",
+      "name": "Delighted Halfling",
+      "flavorName": null,
+      "manaCost": "{G}",
+      "manaValue": 1,
+      "type": "Creature — Halfling Citizen",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a legendary spell, and that spell can't be countered.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/1/9158f904-bf34-4cc0-9a6c-34893da29f22.jpg"
+    },
+    "HOC0066": {
+      "id": "HOC0066",
+      "name": "Elven Chorus",
+      "flavorName": null,
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "You may look at the top card of your library any time.\nYou may cast creature spells from the top of your library.\nCreatures you control have \"{T}: Add one mana of any color.\"",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/0/804e1b6f-f62b-4e43-a21f-cd3f11d4b0d9.jpg"
+    },
+    "HOC0067": {
+      "id": "HOC0067",
+      "name": "Last March of the Ents",
+      "flavorName": null,
+      "manaCost": "{6}{G}{G}",
+      "manaValue": 8,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "This spell can't be countered.\nDraw cards equal to the greatest toughness among creatures you control, then put any number of creature cards from your hand onto the battlefield.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/9/8/98960275-41e6-41aa-951a-022dc148fd36.jpg"
+    },
+    "HOC0068": {
+      "id": "HOC0068",
+      "name": "Aragorn and Arwen, Wed",
+      "flavorName": null,
+      "manaCost": "{4}{G}{W}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Human Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Vigilance"
+      ],
+      "oracleText": "Vigilance\nWhenever Aragorn and Arwen enters or attacks, put a +1/+1 counter on each other creature you control. You gain 1 life for each other creature you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/2/a2ef302c-c20e-42ec-a4c3-87ba0cdb51f1.jpg"
+    },
+    "HOC0069": {
+      "id": "HOC0069",
+      "name": "Aragorn, the Uniter",
+      "flavorName": null,
+      "manaCost": "{R}{G}{W}{U}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Human Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "Whenever you cast a white spell, create a 1/1 white Human Soldier creature token.\nWhenever you cast a blue spell, scry 2.\nWhenever you cast a red spell, Aragorn deals 3 damage to target opponent.\nWhenever you cast a green spell, target creature gets +4/+4 until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/b/1b868c39-0fdc-4152-991e-3bc60a90d1ec.jpg"
+    },
+    "HOC0070": {
+      "id": "HOC0070",
+      "name": "Arwen, Mortal Queen",
+      "flavorName": null,
+      "manaCost": "{1}{G}{W}",
+      "manaValue": 3,
+      "type": "Legendary Creature — Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Arwen enters with an indestructible counter on her.\n{1}, Remove an indestructible counter from Arwen: Another target creature gains indestructible until end of turn. Put a +1/+1 counter and a lifelink counter on that creature and a +1/+1 counter and a lifelink counter on Arwen.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/9/392c3816-b2b2-48e8-970f-b407fa692368.jpg"
+    },
+    "HOC0071": {
+      "id": "HOC0071",
+      "name": "Flame of Anor",
+      "flavorName": null,
+      "manaCost": "{1}{U}{R}",
+      "manaValue": 3,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Choose one. If you control a Wizard as you cast this spell, you may choose two instead.\n• Target player draws two cards.\n• Destroy target artifact.\n• Flame of Anor deals 5 damage to target creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/c/1c8873a1-e324-4342-ba63-0bc1bc812e3b.jpg"
+    },
+    "HOC0072": {
+      "id": "HOC0072",
+      "name": "Galadriel, Light of Valinor",
+      "flavorName": null,
+      "manaCost": "{2}{G}{W}{U}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Alliance",
+        "Scry"
+      ],
+      "oracleText": "Alliance — Whenever another creature you control enters, choose one that hasn't been chosen this turn —\n• Add {G}{G}{G}.\n• Put a +1/+1 counter on each creature you control.\n• Scry 2, then draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/e/2e14edc5-9a68-4aef-baf6-43e7a6b732b5.jpg"
+    },
+    "HOC0073": {
+      "id": "HOC0073",
+      "name": "Gríma, Saruman's Footman",
+      "flavorName": null,
+      "manaCost": "{2}{U}{B}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Human Advisor",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Gríma can't be blocked.\nWhenever Gríma deals combat damage to a player, that player exiles cards from the top of their library until they exile an instant or sorcery card. You may cast that card without paying its mana cost. Then that player puts the exiled cards that weren't cast this way on the bottom of their library in a random order.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d929f47b-285e-4fce-837d-730f4f88cb99.jpg"
+    },
+    "HOC0074": {
+      "id": "HOC0074",
+      "name": "Lotho, Corrupt Shirriff",
+      "flavorName": null,
+      "manaCost": "{W}{B}",
+      "manaValue": 2,
+      "type": "Legendary Creature — Halfling Rogue",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "W"
+      ],
+      "keywords": [
+        "Treasure"
+      ],
+      "oracleText": "Whenever a player casts their second spell each turn, you lose 1 life and create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/a/2a363b0d-294e-4d43-a793-b90de0734390.jpg"
+    },
+    "HOC0075": {
+      "id": "HOC0075",
+      "name": "Saruman of Many Colors",
+      "flavorName": null,
+      "manaCost": "{3}{W}{U}{B}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Avatar Wizard",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Mill",
+        "Ward"
+      ],
+      "oracleText": "Ward—Discard an enchantment, instant, or sorcery card.\nWhenever you cast your second spell each turn, each opponent mills two cards. When one or more cards are milled this way, exile target enchantment, instant, or sorcery card with equal or lesser mana value than that spell from an opponent's graveyard. Copy the exiled card. You may cast the copy without paying its mana cost.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/a/ea41a4f7-a283-4826-9f17-0e1f5bf248d5.jpg"
+    },
+    "HOC0076": {
+      "id": "HOC0076",
+      "name": "Sauron, the Dark Lord",
+      "flavorName": null,
+      "manaCost": "{3}{U}{B}{R}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Avatar Horror",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Amass",
+        "Ward"
+      ],
+      "oracleText": "Ward—Sacrifice a legendary artifact or legendary creature.\nWhenever an opponent casts a spell, amass Orcs 1.\nWhenever an Army you control deals combat damage to a player, the Ring tempts you.\nWhenever the Ring tempts you, you may discard your hand. If you do, draw four cards.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/2/22dd486a-dfb1-4553-8b0d-d9407cfda36a.jpg"
+    },
+    "HOC0077": {
+      "id": "HOC0077",
+      "name": "Sauron, the Lidless Eye",
+      "flavorName": null,
+      "manaCost": "{3}{B}{R}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Avatar Horror",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "When Sauron enters, gain control of target creature an opponent controls until end of turn. Untap it. It gains haste until end of turn.\n{1}{B}{R}: Creatures you control get +2/+0 until end of turn. Each opponent loses 2 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/c/dc49a0a4-baf4-4efd-a4d4-269179f93c7e.jpg"
+    },
+    "HOC0078": {
+      "id": "HOC0078",
+      "name": "Tom Bombadil",
+      "flavorName": null,
+      "manaCost": "{W}{U}{B}{R}{G}",
+      "manaValue": 5,
+      "type": "Legendary Creature — God Bard",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "As long as there are four or more lore counters among Sagas you control, Tom Bombadil has hexproof and indestructible.\nWhenever the final chapter ability of a Saga you control resolves, reveal cards from the top of your library until you reveal a Saga card. Put that card onto the battlefield and the rest on the bottom of your library in a random order. This ability triggers only once each turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/0/c0c6f1e7-f16c-479c-bd0b-138488bd7942.jpg"
+    },
+    "HOC0079": {
+      "id": "HOC0079",
+      "name": "Andúril, Flame of the West",
+      "flavorName": null,
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature gets +3/+1.\nWhenever equipped creature attacks, create two tapped 1/1 white Spirit creature tokens with flying. If that creature is legendary, instead create two of those tokens that are tapped and attacking.\nEquip {2}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/7/47e706bd-4b4c-435d-882a-659dad68dc4d.jpg"
+    },
+    "HOC0080": {
+      "id": "HOC0080",
+      "name": "Andúril, Narsil Reforged",
+      "flavorName": null,
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Ascend",
+        "Equip"
+      ],
+      "oracleText": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nWhenever equipped creature attacks, put a +1/+1 counter on each creature you control. If you have the city's blessing, put two +1/+1 counters on each creature you control instead.\nEquip {3}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/9/e9ee862f-c007-4685-af83-dec508d8ec80.jpg"
+    },
+    "HOC0081": {
+      "id": "HOC0081",
+      "name": "Bilbo's Ring",
+      "flavorName": null,
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "During your turn, equipped creature has hexproof and can't be blocked.\nWhenever equipped creature attacks alone, you draw a card and you lose 1 life.\nEquip Halfling {1} ({1}: Attach to target Halfling you control. Equip only as a sorcery.)\nEquip {4} ({4}: Attach to target creature you control. Equip only as a sorcery.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/9/2960ba27-0d6f-49f1-a2ac-51a491200a51.jpg"
+    },
+    "HOC0082": {
+      "id": "HOC0082",
+      "name": "Glamdring",
+      "flavorName": null,
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature has first strike and gets +1/+0 for each instant and sorcery card in your graveyard.\nWhenever equipped creature deals combat damage to a player, you may cast an instant or sorcery spell from your hand with mana value less than or equal to that damage without paying its mana cost.\nEquip {3}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/6/162a211d-621e-4a20-a732-2f4233e4fe48.jpg"
+    },
+    "HOC0083": {
+      "id": "HOC0083",
+      "name": "Mithril Coat",
+      "flavorName": null,
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Equip",
+        "Flash",
+        "Indestructible"
+      ],
+      "oracleText": "Flash\nIndestructible\nWhen Mithril Coat enters, attach it to target legendary creature you control.\nEquipped creature has indestructible.\nEquip {3}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/1/2/12232ee5-e564-44f0-b973-21a141e9bd89.jpg"
+    },
+    "HOC0084": {
+      "id": "HOC0084",
+      "name": "The One Ring",
+      "flavorName": null,
+      "manaCost": "{4}",
+      "manaValue": 4,
+      "type": "Legendary Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Indestructible"
+      ],
+      "oracleText": "Indestructible\nWhen The One Ring enters, if you cast it, you gain protection from everything until your next turn.\nAt the beginning of your upkeep, you lose 1 life for each burden counter on The One Ring.\n{T}: Put a burden counter on The One Ring, then draw a card for each burden counter on The One Ring.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/2/c2fed990-78fd-4688-8cac-9f57774297f6.jpg"
+    },
+    "HOC0085": {
+      "id": "HOC0085",
+      "name": "Palantír of Orthanc",
+      "flavorName": null,
+      "manaCost": "{3}",
+      "manaValue": 3,
+      "type": "Legendary Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Mill",
+        "Scry"
+      ],
+      "oracleText": "At the beginning of your end step, put an influence counter on Palantír of Orthanc and scry 2. Then target opponent may have you draw a card. If that player doesn't, you mill X cards, where X is the number of influence counters on Palantír of Orthanc, and that player loses life equal to the total mana value of those cards.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/c/2c0bbe08-61cc-4ed8-8fb1-225d346542c7.jpg"
+    },
+    "HOC0086": {
+      "id": "HOC0086",
+      "name": "Relic of Sauron",
+      "flavorName": null,
+      "manaCost": "{4}",
+      "manaValue": 4,
+      "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "{T}: Add two mana in any combination of {U}, {B}, and/or {R}.\n{3}, {T}: Draw two cards, then discard a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/7/c74e5574-cb43-4094-8f18-237734d3dddc.jpg"
+    },
+    "HOC0087": {
+      "id": "HOC0087",
+      "name": "The Black Gate",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land — Gate",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "As The Black Gate enters, you may pay 3 life. If you don't, it enters tapped.\n{T}: Add {B}.\n{1}{B}, {T}: Choose a player with the most life or tied for most life. Target creature can't be blocked by creatures that player controls this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/d/8d7c2182-1199-4c3a-be4d-c178ab604362.jpg"
+    },
+    "HOC0088": {
+      "id": "HOC0088",
+      "name": "Minas Morgul, Dark Fortress",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "Minas Morgul enters tapped.\n{T}: Add {B}.\n{3}{B}, {T}: Put a shadow counter on target creature. For as long as that creature has a shadow counter on it, it's a Wraith in addition to its other types. (A creature with shadow can block or be blocked by only creatures with shadow.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/6/86d0093b-1af6-458a-8759-250bbaa77778.jpg"
+    },
+    "HOC0089": {
+      "id": "HOC0089",
+      "name": "Minas Tirith",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Minas Tirith enters tapped unless you control a legendary creature.\n{T}: Add {W}.\n{1}{W}, {T}: Draw a card. Activate only if you attacked with two or more creatures this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fa9b1e96-8294-4306-8280-c6b187bea5d8.jpg"
+    },
+    "HOC0090": {
+      "id": "HOC0090",
+      "name": "Mount Doom",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "{T}, Pay 1 life: Add {B} or {R}.\n{1}{B}{R}, {T}: Mount Doom deals 1 damage to each opponent.\n{5}{B}{R}, {T}, Sacrifice Mount Doom and a legendary artifact: Choose up to two creatures, then destroy the rest. Activate only as a sorcery.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/b/2bb2e6cf-6e2d-4b0b-83d3-46aff575eee4.jpg"
+    },
+    "HOC0091": {
+      "id": "HOC0091",
+      "name": "Rivendell",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "Rivendell enters tapped unless you control a legendary creature.\n{T}: Add {U}.\n{1}{U}, {T}: Scry 2. Activate only if you control a legendary creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/1/b1c307c6-7bb7-40c3-8b12-4bf95efac328.jpg"
+    },
+    "HOC0092": {
+      "id": "HOC0092",
+      "name": "The Shire",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Legendary Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Food"
+      ],
+      "oracleText": "The Shire enters tapped unless you control a legendary creature.\n{T}: Add {G}.\n{1}{G}, {T}, Tap an untapped creature you control: Create a Food token.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/3/8314297a-5c97-4d94-800c-0f9e42fca902.jpg"
+    },
+    "HOC0093": {
+      "id": "HOC0093",
+      "name": "Dwarven Warriors",
+      "flavorName": null,
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Creature — Dwarf Warrior",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "{T}: Target creature with power 2 or less can't be blocked this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/2/42a24675-d6a1-4e88-a2d1-ddbc1fdde322.jpg"
+    },
+    "HOC0094": {
+      "id": "HOC0094",
+      "name": "The Reaver Cleaver",
+      "flavorName": null,
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Legendary Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Equip",
+        "Treasure"
+      ],
+      "oracleText": "Equipped creature gets +1/+1 and has trample and \"Whenever this creature deals combat damage to a player or planeswalker, create that many Treasure tokens.\"\nEquip {3}",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/4/6431d2f1-44e7-4699-bc38-2e5222a5e243.jpg"
+    },
+    "HOC0095": {
+      "id": "HOC0095",
+      "name": "Arcane Signet",
+      "flavorName": null,
+      "manaCost": "{2}",
+      "manaValue": 2,
+      "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add one mana of any color in your commander's color identity.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/2/e209610d-bd1f-4f81-9a88-a6d8a43fe1c7.jpg"
+    },
+    "HOC0096": {
+      "id": "HOC0096",
+      "name": "Mox Amber",
+      "flavorName": null,
+      "manaCost": "{0}",
+      "manaValue": 0,
+      "type": "Legendary Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add one mana of any color among legendary creatures and planeswalkers you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/8/b89bcdd8-189e-41bb-bb3d-a53e6e6758e1.jpg"
+    },
+    "HOC0097": {
+      "id": "HOC0097",
+      "name": "Treasure Vault",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Artifact Land",
+      "types": [
+        "Artifact",
+        "Land"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [],
+      "keywords": [
+        "Treasure"
+      ],
+      "oracleText": "{T}: Add {C}.\n{X}{X}, {T}, Sacrifice this land: Create X Treasure tokens.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/4/f4c65751-f037-4b60-a4ad-7ea41b3dc847.jpg"
+    },
+    "HOC0098": {
+      "id": "HOC0098",
+      "name": "Bilbo, Unexpected Adventurer",
+      "flavorName": null,
+      "manaCost": "{3}{W}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Halfling Rogue",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Bilbo can't be blocked by creatures with power 3 or greater.\nWhenever Bilbo deals combat damage to a player or battle, put up to one target nonland permanent card with mana value 3 or less from a graveyard onto the battlefield under its owner's control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/3/c3540c92-60f3-4f32-89f2-4568d9c0fd4c.jpg"
+    },
+    "HOC0099": {
+      "id": "HOC0099",
+      "name": "Gandalf, Shadow's Foe",
+      "flavorName": null,
+      "manaCost": "{5}{U}{U}",
+      "manaValue": 7,
+      "type": "Legendary Creature — Avatar Wizard",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Landfall",
+        "Vigilance"
+      ],
+      "oracleText": "Vigilance\nWhen Gandalf enters, exile up to three target lands you control, then return them to the battlefield tapped under their owner's control.\nLandfall — Whenever a land you control enters, draw a card and put a +1/+1 counter on Gandalf.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/6/c659c9e5-5ec6-4c7f-80b2-e1782e6c3334.jpg"
+    },
+    "HOC0100": {
+      "id": "HOC0100",
+      "name": "Thorin, Company's Leader",
+      "flavorName": null,
+      "manaCost": "{4}{R}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Dwarf Warrior",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Treasure"
+      ],
+      "oracleText": "Whenever a Dwarf you control deals combat damage to a player or battle, create two Treasure tokens.\n{10}: Creatures you control gain double strike until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/b/5b402a0c-4861-4b58-83b6-c754624cb6ea.jpg"
+    },
+    "HOC0101": {
+      "id": "HOC0101",
+      "name": "Bard, Heir of Girion",
+      "flavorName": null,
+      "manaCost": "{2}{W}{U}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Human Archer",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Reach",
+        "Vigilance"
+      ],
+      "oracleText": "Reach, vigilance\nOther creatures you control get +1/+1.\nWhenever you attack, draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/5/a5bf2146-0843-4e1b-ad07-29e3dc0e842f.jpg"
+    },
+    "HOC0102": {
+      "id": "HOC0102",
+      "name": "Bolg, Erebor's Reckoning",
+      "flavorName": null,
+      "manaCost": "{4}{B}{R}",
+      "manaValue": 6,
+      "type": "Legendary Creature — Goblin Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "keywords": [
+        "Trample"
+      ],
+      "oracleText": "Trample\nAt the beginning of each combat, other Goblins and Orcs you control get +2/+2 until end of turn. Creatures your opponents control get -1/-1 until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/5/55f7866a-6727-4ae0-a0c0-367f29b9cea1.jpg"
+    },
+    "HOC0103": {
+      "id": "HOC0103",
+      "name": "Chief of the Wilds",
+      "flavorName": null,
+      "manaCost": "{2}{B}{G}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Wolf",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "G"
+      ],
+      "keywords": [
+        "Menace"
+      ],
+      "oracleText": "Menace\nWhenever another Wolf you control enters, put two +1/+1 counters on Chief of the Wilds.\nIf a triggered ability of another Wolf or battle you control triggers, that ability triggers an additional time.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/7/67b99400-a53a-48c8-a4d0-21bf63274225.jpg"
+    },
+    "HOC0104": {
+      "id": "HOC0104",
+      "name": "Dáin of the Ancient Halls",
+      "flavorName": null,
+      "manaCost": "{3}{R}{W}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Dwarf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Haste",
+        "Vigilance"
+      ],
+      "oracleText": "Vigilance, haste\nWhenever Dáin attacks, he deals damage equal to the number of Dwarves you control to each opponent.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/0/f0c5ea58-c6b0-4cf0-bc5e-45c9aa780b91.jpg"
+    },
+    "HOC0105": {
+      "id": "HOC0105",
+      "name": "Great Goblin, Foul-Hearted",
+      "flavorName": null,
+      "manaCost": "{3}{B}{R}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Goblin Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B",
+        "R"
+      ],
+      "keywords": [
+        "Amass"
+      ],
+      "oracleText": "Whenever Great Goblin enters or attacks, amass Goblins 3. (Put three +1/+1 counters on an Army you control. It's also a Goblin. If you don't control an Army, create a 0/0 black Goblin Army creature token first.)\nArmies you control have trample.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/3/b3075281-fb5e-458b-8956-0d4ce01f710a.jpg"
+    },
+    "HOC0106": {
+      "id": "HOC0106",
+      "name": "Thranduil the Strategist",
+      "flavorName": null,
+      "manaCost": "{3}{G}{U}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Landfall"
+      ],
+      "oracleText": "Other Elves you control have \"{T}: Add {G} or {U}.\"\nLandfall — Whenever a land you control enters, create a 1/1 green Elf creature token.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/b/6b4c1515-6127-4d4b-bdd2-e38bb68693e7.jpg"
+    },
+    "HOC0161": {
+      "id": "HOC0161",
+      "name": "Banishing Light",
+      "flavorName": null,
+      "manaCost": "{2}{W}",
+      "manaValue": 3,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "When this enchantment enters, exile target nonland permanent an opponent controls until this enchantment leaves the battlefield.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/5/d53c7e49-745d-48ba-bc50-240472a4f039.jpg"
+    },
+    "HOC0162": {
+      "id": "HOC0162",
+      "name": "Dawn of a New Age",
+      "flavorName": null,
+      "manaCost": "{1}{W}",
+      "manaValue": 2,
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "This enchantment enters with a hope counter on it for each creature you control.\nAt the beginning of your end step, remove a hope counter from this enchantment. If you do, draw a card. Then if this enchantment has no hope counters on it, sacrifice it and you gain 4 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/8/2881c507-aa8f-40a7-9995-6170ee85c7ed.jpg"
+    },
+    "HOC0163": {
+      "id": "HOC0163",
+      "name": "Dúnedain Blade",
+      "flavorName": null,
+      "manaCost": "{1}{W}",
+      "manaValue": 2,
+      "type": "Artifact — Equipment",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Equip"
+      ],
+      "oracleText": "Equipped creature gets +2/+1.\nEquip Human {1}\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/1/c168a37c-1e51-42c8-b04c-3f0ecae01666.jpg"
+    },
+    "HOC0164": {
+      "id": "HOC0164",
+      "name": "Eagles of the North",
+      "flavorName": null,
+      "manaCost": "{5}{W}",
+      "manaValue": 6,
+      "type": "Creature — Bird Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Cycling",
+        "Flying",
+        "Landcycling",
+        "Plainscycling",
+        "Typecycling"
+      ],
+      "oracleText": "Flying\nWhen this creature enters, creatures you control get +1/+0 and gain first strike until end of turn.\nPlainscycling {1} ({1}, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/6/068a5bf7-6faf-41d5-924d-cdf387c1a193.jpg"
+    },
+    "HOC0165": {
+      "id": "HOC0165",
+      "name": "Errand-Rider of Gondor",
+      "flavorName": null,
+      "manaCost": "{2}{W}",
+      "manaValue": 3,
+      "type": "Creature — Human Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "When this creature enters, draw a card. Then if you don't control a legendary creature, put a card from your hand on the bottom of your library.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/6/e675d492-ffec-4234-9793-a16de3221f50.jpg"
+    },
+    "HOC0166": {
+      "id": "HOC0166",
+      "name": "Esquire of the King",
+      "flavorName": null,
+      "manaCost": "{W}",
+      "manaValue": 1,
+      "type": "Creature — Human Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "{4}{W}, {T}: Creatures you control get +1/+1 until end of turn. This ability costs {2} less to activate if you control a legendary creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/c/8c8bbf73-2b36-4c27-bb69-aadb25dd828c.jpg"
+    },
+    "HOC0167": {
+      "id": "HOC0167",
+      "name": "Fiend Hunter",
+      "flavorName": null,
+      "manaCost": "{1}{W}{W}",
+      "manaValue": 3,
+      "type": "Creature — Human Cleric",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "When this creature enters, you may exile another target creature.\nWhen this creature leaves the battlefield, return the exiled card to the battlefield under its owner's control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/b/2b497736-e502-4e0c-b5dc-6ce5e9e8d4ab.jpg"
+    },
+    "HOC0168": {
+      "id": "HOC0168",
+      "name": "Fog on the Barrow-Downs",
+      "flavorName": null,
+      "manaCost": "{2}{W}",
+      "manaValue": 3,
+      "type": "Enchantment — Aura",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Enchant"
+      ],
+      "oracleText": "Enchant creature\nEnchanted creature is a Spirit and can't attack or block. (It loses all other creature types.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/7/7728c1a0-683c-4f07-bf68-e35602829bb0.jpg"
+    },
+    "HOC0169": {
+      "id": "HOC0169",
+      "name": "Landroval, Horizon Witness",
+      "flavorName": null,
+      "manaCost": "{4}{W}",
+      "manaValue": 5,
+      "type": "Legendary Creature — Bird Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "oracleText": "Flying\nWhenever two or more creatures you control attack a player, target attacking creature without flying gains flying until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/0/808029df-e1db-4fe0-b1ed-a75f8d496aa7.jpg"
+    },
+    "HOC0170": {
+      "id": "HOC0170",
+      "name": "Mentor of the Meek",
+      "flavorName": null,
+      "manaCost": "{2}{W}",
+      "manaValue": 3,
+      "type": "Creature — Human Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever another creature you control with power 2 or less enters, you may pay {1}. If you do, draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/5/05b6a101-4d12-4f50-8f02-5c778e08b149.jpg"
+    },
+    "HOC0171": {
+      "id": "HOC0171",
+      "name": "Soldier of the Grey Host",
+      "flavorName": null,
+      "manaCost": "{3}{W}",
+      "manaValue": 4,
+      "type": "Creature — Spirit Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [
+        "Flash",
+        "Flying"
+      ],
+      "oracleText": "Flash\nFlying\nWhen this creature enters, target creature gets +2/+0 until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/e/aec09395-d3b3-4bb8-a4be-9b6d7c47efad.jpg"
+    },
+    "HOC0172": {
+      "id": "HOC0172",
+      "name": "Westfold Rider",
+      "flavorName": null,
+      "manaCost": "{1}{W}",
+      "manaValue": 2,
+      "type": "Creature — Human Knight",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "W"
+      ],
+      "keywords": [],
+      "oracleText": "Sacrifice this creature: Destroy target artifact or enchantment. Activate only as a sorcery.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/a/fa7d2ec1-b6b7-4f37-a749-750e52c92e87.jpg"
+    },
+    "HOC0173": {
+      "id": "HOC0173",
+      "name": "Captain of Umbar",
+      "flavorName": null,
+      "manaCost": "{2}{U}",
+      "manaValue": 3,
+      "type": "Creature — Human Pirate",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "{1}, {T}: Draw a card, then discard a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/8/68cd9cc8-047b-4e0c-b84c-d015d89eb713.jpg"
+    },
+    "HOC0174": {
+      "id": "HOC0174",
+      "name": "Colossal Whale",
+      "flavorName": null,
+      "manaCost": "{5}{U}{U}",
+      "manaValue": 7,
+      "type": "Creature — Whale",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Islandwalk",
+        "Landwalk"
+      ],
+      "oracleText": "Islandwalk (This creature can't be blocked as long as defending player controls an Island.)\nWhenever this creature attacks, you may exile target creature defending player controls until this creature leaves the battlefield. (That creature returns under its owner's control.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a4d35a18-1c3c-4882-a318-5cf323350417.jpg"
+    },
+    "HOC0175": {
+      "id": "HOC0175",
+      "name": "Grey Havens Navigator",
+      "flavorName": null,
+      "manaCost": "{2}{U}",
+      "manaValue": 3,
+      "type": "Creature — Elf Pilot",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Flash",
+        "Scry"
+      ],
+      "oracleText": "Flash\nWhen this creature enters, scry 1.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/5/b5200abb-64e5-4401-a231-be3ca69d24b7.jpg"
+    },
+    "HOC0176": {
+      "id": "HOC0176",
+      "name": "Hithlain Knots",
+      "flavorName": null,
+      "manaCost": "{1}{U}",
+      "manaValue": 2,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "Tap target creature. Scry 1.\nDraw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/4/74868f21-b8a2-4aa0-9431-3f2171bde9c3.jpg"
+    },
+    "HOC0177": {
+      "id": "HOC0177",
+      "name": "Ithilien Kingfisher",
+      "flavorName": null,
+      "manaCost": "{2}{U}",
+      "manaValue": 3,
+      "type": "Creature — Bird",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "oracleText": "Flying\nWhen this creature dies, draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/5/8526b72e-936e-4592-9538-37acca0a6fc5.jpg"
+    },
+    "HOC0178": {
+      "id": "HOC0178",
+      "name": "Knights of Dol Amroth",
+      "flavorName": null,
+      "manaCost": "{3}{U}",
+      "manaValue": 4,
+      "type": "Creature — Human Knight",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever you draw your second card each turn, put a +1/+1 counter on this creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/9/a954c983-296a-448c-b8d8-ce04d82caaeb.jpg"
+    },
+    "HOC0179": {
+      "id": "HOC0179",
+      "name": "Lórien Revealed",
+      "flavorName": null,
+      "manaCost": "{3}{U}{U}",
+      "manaValue": 5,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Cycling",
+        "Islandcycling",
+        "Landcycling",
+        "Typecycling"
+      ],
+      "oracleText": "Draw three cards.\nIslandcycling {1} ({1}, Discard this card: Search your library for an Island card, reveal it, put it into your hand, then shuffle.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/0/209204c7-aae5-4768-91b8-89c8c4d4a97f.jpg"
+    },
+    "HOC0180": {
+      "id": "HOC0180",
+      "name": "Minas Tirith Garrison",
+      "flavorName": null,
+      "manaCost": "{3}{U}",
+      "manaValue": 4,
+      "type": "Creature — Human Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Minas Tirith Garrison's power is equal to the number of cards in your hand.\nWhenever this creature attacks, you may tap any number of untapped Humans you control. Draw a card for each Human tapped this way.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/f/bf30fc6c-9121-4d2d-be69-9d5e84250e4a.jpg"
+    },
+    "HOC0181": {
+      "id": "HOC0181",
+      "name": "Nimrodel Watcher",
+      "flavorName": null,
+      "manaCost": "{1}{U}",
+      "manaValue": 2,
+      "type": "Creature — Elf Scout",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever you scry, this creature gets +1/+0 until end of turn and can't be blocked this turn. This ability triggers only once each turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/8/3/838696b2-a813-4266-9476-cd0b67a781d5.jpg"
+    },
+    "HOC0182": {
+      "id": "HOC0182",
+      "name": "Pelargir Survivor",
+      "flavorName": null,
+      "manaCost": "{1}{U}",
+      "manaValue": 2,
+      "type": "Creature — Human Peasant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "oracleText": "{T}: Add one mana of any color. Spend this mana only to cast an instant or sorcery spell.\n{5}{U}, {T}: Target player mills three cards. (They put the top three cards of their library into their graveyard.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/6/767ab62c-59fd-4fda-8291-6170383a8ae0.jpg"
+    },
+    "HOC0183": {
+      "id": "HOC0183",
+      "name": "Stern Scolding",
+      "flavorName": null,
+      "manaCost": "{U}",
+      "manaValue": 1,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [],
+      "oracleText": "Counter target creature spell with power or toughness 2 or less.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b2dee261-e02f-47ab-8468-3ef055004c8c.jpg"
+    },
+    "HOC0184": {
+      "id": "HOC0184",
+      "name": "Willow-Wind",
+      "flavorName": null,
+      "manaCost": "{4}{U}",
+      "manaValue": 5,
+      "type": "Creature — Elemental",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Scry"
+      ],
+      "oracleText": "Flying\nWhen this creature enters, scry 2.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/c/fc19dc82-6608-4a2c-bdf5-27585cf86645.jpg"
+    },
+    "HOC0185": {
+      "id": "HOC0185",
+      "name": "Bitter Downfall",
+      "flavorName": null,
+      "manaCost": "{3}{B}",
+      "manaValue": 4,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "This spell costs {3} less to cast if it targets a creature that was dealt damage this turn.\nDestroy target creature. Its controller loses 2 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/a/3a4ac16c-eea8-40f9-a2b0-5016af0ac722.jpg"
+    },
+    "HOC0186": {
+      "id": "HOC0186",
+      "name": "Haunt of the Dead Marshes",
+      "flavorName": null,
+      "manaCost": "{B}",
+      "manaValue": 1,
+      "type": "Creature — Nightmare Elf",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "When this creature enters, scry 1.\n{2}{B}: Return this card from your graveyard to the battlefield tapped. Activate only if you control a legendary creature.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/7/37a12935-c927-4d25-a7e5-17a0b6229c60.jpg"
+    },
+    "HOC0187": {
+      "id": "HOC0187",
+      "name": "Languish",
+      "flavorName": null,
+      "manaCost": "{2}{B}{B}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "All creatures get -4/-4 until end of turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/8/e8701682-5b74-4855-adcf-7a1cf0c8cb41.jpg"
+    },
+    "HOC0188": {
+      "id": "HOC0188",
+      "name": "Merciless Executioner",
+      "flavorName": null,
+      "manaCost": "{2}{B}",
+      "manaValue": 3,
+      "type": "Creature — Orc Warrior",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "When this creature enters, each player sacrifices a creature of their choice.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/b/7b135177-4786-4ebe-98cd-c1db9444e577.jpg"
+    },
+    "HOC0189": {
+      "id": "HOC0189",
+      "name": "Night's Whisper",
+      "flavorName": null,
+      "manaCost": "{1}{B}",
+      "manaValue": 2,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "You draw two cards and lose 2 life.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/8/e8399c2e-ecc8-41c9-a690-a0eeafb27f77.jpg"
+    },
+    "HOC0190": {
+      "id": "HOC0190",
+      "name": "Shadow of the Enemy",
+      "flavorName": null,
+      "manaCost": "{3}{B}{B}{B}",
+      "manaValue": 6,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [],
+      "oracleText": "Exile all creature cards from target player's graveyard. You may cast spells from among those cards for as long as they remain exiled, and mana of any type can be spent to cast them.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/b/2bf42714-dfbd-4da5-8eba-8b27ab4b4cdf.jpg"
+    },
+    "HOC0191": {
+      "id": "HOC0191",
+      "name": "Troll of Khazad-dûm",
+      "flavorName": null,
+      "manaCost": "{5}{B}",
+      "manaValue": 6,
+      "type": "Creature — Troll",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "B"
+      ],
+      "keywords": [
+        "Cycling",
+        "Landcycling",
+        "Swampcycling",
+        "Typecycling"
+      ],
+      "oracleText": "This creature can't be blocked except by three or more creatures.\nSwampcycling {1} ({1}, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/5/e/5edb0c1d-be6a-42b1-829c-ffbea3647ad8.jpg"
+    },
+    "HOC0192": {
+      "id": "HOC0192",
+      "name": "Battle-Scarred Goblin",
+      "flavorName": null,
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Creature — Goblin Warrior",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever this creature becomes blocked, it deals 1 damage to each creature blocking it.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/8/289d3d6c-8f7b-42d9-be9c-59c93128d207.jpg"
+    },
+    "HOC0193": {
+      "id": "HOC0193",
+      "name": "Fire of Orthanc",
+      "flavorName": null,
+      "manaCost": "{3}{R}",
+      "manaValue": 4,
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Destroy target artifact or land. Creatures without flying can't block this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/e/be2cf51a-11c6-4d52-85f9-9518133ba201.jpg"
+    },
+    "HOC0194": {
+      "id": "HOC0194",
+      "name": "Goblin Cratermaker",
+      "flavorName": null,
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Creature — Goblin Warrior",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "{1}, Sacrifice this creature: Choose one —\n• This creature deals 2 damage to target creature.\n• Destroy target colorless nonland permanent.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/3/e37ae38f-ef93-4861-9a3a-49378a4d50b4.jpg"
+    },
+    "HOC0195": {
+      "id": "HOC0195",
+      "name": "Goblin Fireleaper",
+      "flavorName": null,
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Creature — Goblin Warrior",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "{1}{R}: This creature gets +1/+0 until end of turn.\nWhen this creature dies, it deals damage equal to its power to target creature an opponent controls.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/2/f238d6c0-80fb-44f8-855b-55720fcff07f.jpg"
+    },
+    "HOC0196": {
+      "id": "HOC0196",
+      "name": "Guttersnipe",
+      "flavorName": null,
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Creature — Goblin Shaman",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Whenever you cast an instant or sorcery spell, this creature deals 2 damage to each opponent.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/6/f6bb1ffc-2251-4655-b8f9-4c8047dd5d5f.jpg"
+    },
+    "HOC0197": {
+      "id": "HOC0197",
+      "name": "Improvised Club",
+      "flavorName": null,
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "As an additional cost to cast this spell, sacrifice an artifact or creature.\nImprovised Club deals 4 damage to any target.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/7/9/7937d8c7-76c6-4343-9f5e-994cb9e6f42a.jpg"
+    },
+    "HOC0198": {
+      "id": "HOC0198",
+      "name": "Inferno Titan",
+      "flavorName": null,
+      "manaCost": "{4}{R}{R}",
+      "manaValue": 6,
+      "type": "Creature — Giant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "mythic",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "{R}: This creature gets +1/+0 until end of turn.\nWhenever this creature enters or attacks, it deals 3 damage divided as you choose among one, two, or three targets.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/f/8/f839aadb-084e-4ddc-ba62-d654a695cc6b.jpg"
+    },
+    "HOC0199": {
+      "id": "HOC0199",
+      "name": "Oliphaunt",
+      "flavorName": null,
+      "manaCost": "{5}{R}",
+      "manaValue": 6,
+      "type": "Creature — Elephant",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Cycling",
+        "Landcycling",
+        "Mountaincycling",
+        "Trample",
+        "Typecycling"
+      ],
+      "oracleText": "Trample\nWhenever this creature attacks, another target creature you control gets +2/+0 and gains trample until end of turn.\nMountaincycling {1} ({1}, Discard this card: Search your library for a Mountain card, reveal it, put it into your hand, then shuffle.)",
+      "scryfallImage": "https://cards.scryfall.io/large/front/2/8/28b60f0b-6dd5-4e57-98ff-28effe8fcd55.jpg"
+    },
+    "HOC0200": {
+      "id": "HOC0200",
+      "name": "Olog-hai Crusher",
+      "flavorName": null,
+      "manaCost": "{3}{R}",
+      "manaValue": 4,
+      "type": "Creature — Troll Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Trample"
+      ],
+      "oracleText": "Trample\nThis creature can't block unless you control a Goblin or Orc.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/3/c/3cebc85a-a75f-47a4-b286-f66fe18303a7.jpg"
+    },
+    "HOC0201": {
+      "id": "HOC0201",
+      "name": "Orcish Siegemaster",
+      "flavorName": null,
+      "manaCost": "{2}{R}",
+      "manaValue": 3,
+      "type": "Creature — Orc Soldier",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [
+        "Trample"
+      ],
+      "oracleText": "Trample\nOther Orcs and Goblins you control have trample.\nWhenever this creature attacks, it gets +X/+0 until end of turn, where X is the greatest power among creatures you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/d/b/dbce4474-7485-4ab7-8016-04f03bc90dc5.jpg"
+    },
+    "HOC0202": {
+      "id": "HOC0202",
+      "name": "Smite the Deathless",
+      "flavorName": null,
+      "manaCost": "{1}{R}",
+      "manaValue": 2,
+      "type": "Instant",
+      "types": [
+        "Instant"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "R"
+      ],
+      "keywords": [],
+      "oracleText": "Smite the Deathless deals 3 damage to target creature. That creature loses indestructible until end of turn. If that creature would die this turn, exile it instead.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/7/c7a56386-12c8-48c1-895c-9f3af29ea1d1.jpg"
+    },
+    "HOC0203": {
+      "id": "HOC0203",
+      "name": "Celeborn the Wise",
+      "flavorName": null,
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Legendary Creature — Elf Noble",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "Whenever you attack with one or more Elves, scry 1.\nWhenever you scry, Celeborn gets +1/+1 until end of turn for each card looked at while scrying this way.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/c/8/c88e946a-03dc-4730-8f74-e41dfaf28177.jpg"
+    },
+    "HOC0204": {
+      "id": "HOC0204",
+      "name": "Elvish Archdruid",
+      "flavorName": null,
+      "manaCost": "{1}{G}{G}",
+      "manaValue": 3,
+      "type": "Creature — Elf Druid",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "Other Elf creatures you control get +1/+1.\n{T}: Add {G} for each Elf you control.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/0/006ff5a3-355b-4a7d-b402-bb3c8d32a585.jpg"
+    },
+    "HOC0205": {
+      "id": "HOC0205",
+      "name": "Elvish Mystic",
+      "flavorName": null,
+      "manaCost": "{G}",
+      "manaValue": 1,
+      "type": "Creature — Elf Druid",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "{T}: Add {G}.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/8/08b9a296-3b76-4f8f-9d71-7c9af92bb3b4.jpg"
+    },
+    "HOC0206": {
+      "id": "HOC0206",
+      "name": "Elvish Visionary",
+      "flavorName": null,
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Creature — Elf Shaman",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [],
+      "oracleText": "When this creature enters, draw a card.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/6/d/6d2f4a37-453f-4a2c-bfba-2d1227394c90.jpg"
+    },
+    "HOC0207": {
+      "id": "HOC0207",
+      "name": "Galadhrim Guide",
+      "flavorName": null,
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Creature — Elf Scout",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "When this creature enters, scry 2.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/0/5/0571a6b2-548a-43ed-9357-a27095d2e894.jpg"
+    },
+    "HOC0208": {
+      "id": "HOC0208",
+      "name": "Gift of Strands",
+      "flavorName": null,
+      "manaCost": "{3}{G}",
+      "manaValue": 4,
+      "type": "Enchantment — Aura",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Enchant",
+        "Flash",
+        "Scry"
+      ],
+      "oracleText": "Flash\nEnchant creature\nWhen this Aura enters, scry 2.\nEnchanted creature gets +3/+3.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/9/e945fa91-21c6-4a23-83ac-26f04c917908.jpg"
+    },
+    "HOC0209": {
+      "id": "HOC0209",
+      "name": "Lothlórien Lookout",
+      "flavorName": null,
+      "manaCost": "{1}{G}",
+      "manaValue": 2,
+      "type": "Creature — Elf Scout",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "common",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Scry"
+      ],
+      "oracleText": "Whenever this creature attacks, scry 1.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/a/c/acc6a5d4-9a04-4a52-b2dc-0b0ab616a110.jpg"
+    },
+    "HOC0210": {
+      "id": "HOC0210",
+      "name": "Mirkwood Elk",
+      "flavorName": null,
+      "manaCost": "{5}{G}",
+      "manaValue": 6,
+      "type": "Creature — Elk",
+      "types": [
+        "Creature"
+      ],
+      "rarity": "rare",
+      "colorIdentity": [
+        "G"
+      ],
+      "keywords": [
+        "Trample"
+      ],
+      "oracleText": "Trample\nWhenever this creature enters or attacks, return target Elf card from your graveyard to your hand. You gain life equal to that card's power.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/e/d/eda8bfa5-1e7d-442d-9d8c-651eb5630124.jpg"
+    },
+    "HOC0211": {
+      "id": "HOC0211",
+      "name": "Wayfarer's Bauble",
+      "flavorName": null,
+      "manaCost": "{1}",
+      "manaValue": 1,
+      "type": "Artifact",
+      "types": [
+        "Artifact"
+      ],
+      "rarity": "common",
+      "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{2}, {T}, Sacrifice this artifact: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/b/2/b279f268-c37e-4a2d-8195-74f4881226fc.jpg"
+    },
+    "HOC0212": {
+      "id": "HOC0212",
+      "name": "Rogue's Passage",
+      "flavorName": null,
+      "manaCost": null,
+      "manaValue": 0,
+      "type": "Land",
+      "types": [
+        "Land"
+      ],
+      "rarity": "uncommon",
+      "colorIdentity": [],
+      "keywords": [],
+      "oracleText": "{T}: Add {C}.\n{4}, {T}: Target creature can't be blocked this turn.",
+      "scryfallImage": "https://cards.scryfall.io/large/front/4/4/4493b62b-f354-47ff-9dcf-cc6e29de77c6.jpg"
+    }
+  }
+}

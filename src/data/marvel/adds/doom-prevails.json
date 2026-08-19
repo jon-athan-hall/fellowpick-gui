@@ -1569,7 +1569,7 @@
       "First strike",
       "Reach"
     ],
-    "oracleText": "First strike, reach\nWhenever Hawkeye or another Hero you control enters, it deals damage equal to the number of Heroes you control to any target.",
+    "oracleText": "Reach, first strike\nWhenever Hawkeye or another Hero you control enters, it deals damage equal to the number of Heroes you control to any target.",
     "scryfallImage": "https://cards.scryfall.io/large/front/0/f/0f05832a-395e-44ba-8e1b-1488c3960343.jpg"
   },
   {
@@ -2311,7 +2311,7 @@
       "Flying",
       "Vigilance"
     ],
-    "oracleText": "Flying, vigilance\n{1}{U}, {T}: Draw a card, then discard a card. This ability costs {1}{U} less to activate if another creature with flying entered under your control this turn.",
+    "oracleText": "Flying, vigilance\n{1}{U}, {T}: Draw a card, then discard a card. This ability costs {1}{U} less to activate if another creature with flying entered the battlefield under your control this turn.",
     "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3fea3eb2-9360-41fc-890e-8377e69fb9e3.jpg"
   },
   {
@@ -2999,7 +2999,7 @@
       "B"
     ],
     "keywords": [],
-    "oracleText": "{T}, Pay 2 life: Draw a card. Activate only if an artifact entered under your control this turn.",
+    "oracleText": "{T}, Pay 2 life: Draw a card. Activate only if an artifact entered the battlefield under your control this turn.",
     "scryfallImage": "https://cards.scryfall.io/large/front/3/f/3f888843-4bdb-438d-8fb9-968edb2713ac.jpg"
   },
   {
@@ -5850,7 +5850,7 @@
       "Reach",
       "Vigilance"
     ],
-    "oracleText": "Vigilance, reach\nYou have no maximum hand size.\nEmbiggen Fist — Whenever you cast a spell that targets a creature you control, draw a card. Until end of turn, Ms. Marvel gains \"Ms. Marvel's base power is equal to the number of cards in your hand.\"",
+    "oracleText": "Reach, vigilance\nYou have no maximum hand size.\nEmbiggen Fist — Whenever you cast a spell that targets a creature you control, draw a card. Until end of turn, Ms. Marvel gains \"Ms. Marvel's base power is equal to the number of cards in your hand.\"",
     "scryfallImage": "https://cards.scryfall.io/large/front/9/d/9dd2d627-10fc-4045-8545-03bcf75e60ca.jpg"
   },
   {
@@ -6591,6 +6591,7 @@
     ],
     "keywords": [
       "Connive",
+      "Designed Only for Killing",
       "Flying",
       "Lifelink",
       "Mental Organism"
@@ -7012,7 +7013,7 @@
       "Reach",
       "Trick Arrows"
     ],
-    "oracleText": "First strike, reach\nTrick Arrows — Whenever Hawkeye becomes tapped, you may pay {1} up to three times. When you do, choose up to that many.\n• Net — Target creature can't block this turn.\n• Explosive — Hawkeye deals 2 damage to target player.\n• Boomerang — Discard a card, then draw a card.",
+    "oracleText": "Reach, first strike\nTrick Arrows — Whenever Hawkeye becomes tapped, you may pay {1} up to three times. When you do, choose up to that many —\n• Net — Target creature can't block this turn.\n• Explosive — Hawkeye deals 2 damage to target player.\n• Boomerang — Discard a card, then draw a card.",
     "scryfallImage": "https://cards.scryfall.io/large/front/9/9/9991b684-0ae0-4aa4-8f22-a9c473f5d69c.jpg"
   },
   {
@@ -9063,7 +9064,6 @@
       "R"
     ],
     "keywords": [
-      "Undying",
       "Undying Vengeance",
       "Unreliable Visions"
     ],

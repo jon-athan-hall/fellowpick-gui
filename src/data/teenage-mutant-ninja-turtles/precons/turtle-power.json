@@ -4,11 +4,11 @@
   "universe": "teenage-mutant-ninja-turtles",
   "setCode": "TMC",
   "colorIdentity": [
-    "B",
-    "G",
-    "R",
+    "W",
     "U",
-    "W"
+    "B",
+    "R",
+    "G"
   ],
   "commanders": [
     {

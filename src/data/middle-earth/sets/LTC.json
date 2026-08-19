@@ -2,7 +2,7 @@
   "setCode": "LTC",
   "name": "Tales of Middle-earth Commander",
   "releaseDate": "2023-06-23",
-  "totalCards": 558,
+  "totalCards": 556,
   "cards": {
     "LTC0001": {
       "id": "LTC0001",
@@ -845,7 +845,7 @@
         "Haste",
         "Trample"
       ],
-      "oracleText": "Trample, haste\nWhenever this creature attacks, attacking creatures get +1/+1 until end of turn. If a Food entered under your control this turn, untap those creatures and they get an additional +2/+2 until end of turn.",
+      "oracleText": "Trample, haste\nWhenever this creature attacks, attacking creatures get +1/+1 until end of turn. If a Food entered the battlefield under your control this turn, untap those creatures and they get an additional +2/+2 until end of turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/9/b/9be4f8b6-90ef-4c77-ae70-bffae229d243.jpg"
     },
     "LTC0043": {
@@ -2532,7 +2532,7 @@
         "Haste",
         "Trample"
       ],
-      "oracleText": "Trample, haste\nWhenever this creature attacks, attacking creatures get +1/+1 until end of turn. If a Food entered under your control this turn, untap those creatures and they get an additional +2/+2 until end of turn.",
+      "oracleText": "Trample, haste\nWhenever this creature attacks, attacking creatures get +1/+1 until end of turn. If a Food entered the battlefield under your control this turn, untap those creatures and they get an additional +2/+2 until end of turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/f/1/f17809f9-7c41-47d0-ae69-8e08c2f6a0c1.jpg"
     },
     "LTC0126": {
@@ -7055,24 +7055,6 @@
       "oracleText": "{T}, Pay 1 life: Add {G} or {W}.\n{1}, {T}, Sacrifice this land: Draw a card.",
       "scryfallImage": "https://cards.scryfall.io/large/front/a/4/a439ed1c-b599-4469-82d9-df812f6c5bbd.jpg"
     },
-    "LTC0367": {
-      "id": "LTC0367",
-      "name": "Karakas",
-      "flavorName": "White Tower of Ecthelion",
-      "manaCost": null,
-      "manaValue": 0,
-      "type": "Legendary Land",
-      "types": [
-        "Land"
-      ],
-      "rarity": "mythic",
-      "colorIdentity": [
-        "W"
-      ],
-      "keywords": [],
-      "oracleText": "{T}: Add {W}.\n{T}: Return target legendary creature to its owner's hand.",
-      "scryfallImage": "https://cards.scryfall.io/large/front/d/9/d939ad90-b4b6-452d-a318-b8895d185a0c.jpg"
-    },
     "LTC0368": {
       "id": "LTC0368",
       "name": "Kor Haven",
@@ -7561,24 +7543,6 @@
       "keywords": [],
       "oracleText": "{T}, Pay 1 life: Add {G} or {W}.\n{1}, {T}, Sacrifice this land: Draw a card.",
       "scryfallImage": "https://cards.scryfall.io/large/front/0/8/08864c71-df77-4e9c-8088-f48e744352f6.jpg"
-    },
-    "LTC0397": {
-      "id": "LTC0397",
-      "name": "Karakas",
-      "flavorName": "White Tower of Ecthelion",
-      "manaCost": null,
-      "manaValue": 0,
-      "type": "Legendary Land",
-      "types": [
-        "Land"
-      ],
-      "rarity": "mythic",
-      "colorIdentity": [
-        "W"
-      ],
-      "keywords": [],
-      "oracleText": "{T}: Add {W}.\n{T}: Return target legendary creature to its owner's hand.",
-      "scryfallImage": "https://cards.scryfall.io/large/front/0/e/0e7511b8-9af9-4cc8-a01c-8e71af2cf5dc.jpg"
     },
     "LTC0398": {
       "id": "LTC0398",
@@ -8460,7 +8424,7 @@
         "Haste",
         "Trample"
       ],
-      "oracleText": "Trample, haste\nWhenever this creature attacks, attacking creatures get +1/+1 until end of turn. If a Food entered under your control this turn, untap those creatures and they get an additional +2/+2 until end of turn.",
+      "oracleText": "Trample, haste\nWhenever this creature attacks, attacking creatures get +1/+1 until end of turn. If a Food entered the battlefield under your control this turn, untap those creatures and they get an additional +2/+2 until end of turn.",
       "scryfallImage": "https://cards.scryfall.io/large/front/3/4/34ae0f5c-fbee-4195-aef7-0b5f08713ca6.jpg"
     },
     "LTC0445": {
@@ -9471,7 +9435,7 @@
       "keywords": [
         "Split second"
       ],
-      "oracleText": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nUntap target creature. Until end of turn, it gains hexproof, reach, and \"Whenever this creature becomes tapped, it deals damage equal to its power to up to one target creature.\"",
+      "oracleText": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nUntap target creature. Until end of turn, it gains reach, hexproof, and \"Whenever this creature becomes tapped, it deals damage equal to its power to up to one target creature.\"",
       "scryfallImage": "https://cards.scryfall.io/large/front/8/5/851c0167-04ba-4d15-b0fa-c211bd8826f1.jpg"
     },
     "LTC0494": {
@@ -10338,7 +10302,7 @@
       "keywords": [
         "Split second"
       ],
-      "oracleText": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nUntap target creature. Until end of turn, it gains hexproof, reach, and \"Whenever this creature becomes tapped, it deals damage equal to its power to up to one target creature.\"",
+      "oracleText": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nUntap target creature. Until end of turn, it gains reach, hexproof, and \"Whenever this creature becomes tapped, it deals damage equal to its power to up to one target creature.\"",
       "scryfallImage": "https://cards.scryfall.io/large/front/2/a/2a5d0ed2-9994-47ff-b453-77e28844ecd1.jpg"
     },
     "LTC0538": {
