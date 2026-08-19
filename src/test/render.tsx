@@ -52,8 +52,12 @@ export function renderWithProviders(
   const authValue = auth === null ? null : makeAuthValue(auth);
 
   function Wrapper({ children }: { children: ReactNode }) {
+    // `env="test"` turns off transitions and portalling. Without it a Combobox
+    // dropdown opens into a node the Transition still has at `display: none`,
+    // so its options exist in the DOM but sit outside the accessibility tree —
+    // `getByRole('option')` finds nothing while `querySelectorAll` finds seven.
     const tree = (
-      <MantineProvider>
+      <MantineProvider env="test">
         <QueryClientProvider client={queryClient}>
           <MemoryRouter initialEntries={routes}>{children}</MemoryRouter>
         </QueryClientProvider>

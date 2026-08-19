@@ -137,7 +137,7 @@ export function CardTable({
       {
         id: 'votes',
         accessorFn: (row) => countMap[row.id]?.[pickType] ?? 0,
-        header: 'Votes',
+        header: 'Picks',
         // Under `layout: 'fixed'` these sizes are the whole story — the browser
         // no longer measures the cells, so each one has to clear whichever is
         // wider, the heading or its content. Here it is the heading: VOTES plus

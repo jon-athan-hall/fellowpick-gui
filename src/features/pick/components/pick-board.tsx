@@ -1,10 +1,12 @@
 import { Group, Pagination, Paper } from '@mantine/core';
 import { useMemo, useState } from 'react';
+import { cardTypeOptions, filterCards, NO_FILTERS, type CardFilters } from '../card-filter';
 import { cardDisplayName } from '../card-name';
 import { cardTypeLabel } from '../card-type';
 import { usePreconBoard } from '../hooks/use-precon-board';
 import { PICK_ACCENT_NAME } from '../pick-accent';
 import type { Card, PickType } from '../types';
+import { CardFilterBar } from './card-filter-bar';
 import { CardTable, type SortColumn } from './card-table';
 
 const PAGE_SIZE = 25;
@@ -83,21 +85,27 @@ export function PickBoard({ pickType }: PickBoardProps) {
   const [sortKey, setSortKey] = useState(0);
   const [sort, setSort] = useState<SortState>({ column: 'votes', direction: 'desc' });
   const [page, setPage] = useState(1);
+  const [filters, setFilters] = useState<CardFilters>(NO_FILTERS);
 
   const source = useMemo<Card[]>(
     () => (pickType === 'CUT' ? Object.values(precon.mainBoard) : addCandidates),
     [pickType, precon, addCandidates]
   );
 
+  // Options come off `source`, the list before filtering, so narrowing to one
+  // type never empties the dropdown that got you there.
+  const typeOptions = useMemo(() => cardTypeOptions(source), [source]);
+  const filtered = useMemo(() => filterCards(source, filters), [source, filters]);
+
   const sorted = useMemo<Card[]>(() => {
-    if (!countsReady) return source;
+    if (!countsReady) return filtered;
     const anchor: Record<string, number> = {};
     for (const c of counts) {
       if (c.pickType === pickType) anchor[c.cardId] = c.count;
     }
-    return sortCards(source, sort, anchor);
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: re-snapshot only on sortKey
-  }, [source, countsReady, sortKey]);
+    return sortCards(filtered, sort, anchor);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: re-snapshot only on sortKey and a filter change
+  }, [filtered, countsReady, sortKey]);
 
   const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
   const start = (page - 1) * PAGE_SIZE;
@@ -108,6 +116,18 @@ export function PickBoard({ pickType }: PickBoardProps) {
 
   return (
     <Paper>
+      <CardFilterBar
+        filters={filters}
+        typeOptions={typeOptions}
+        // Back to page one on every change: the filtered list is shorter than
+        // the one that set the page number, so keeping it lands past the end
+        // and the table comes up empty — the same failure the CUT/ADD remount
+        // fixes, arriving by a different road.
+        onChange={(next) => {
+          setFilters(next);
+          setPage(1);
+        }}
+      />
       <CardTable
         cards={pageCards}
         countMap={countMap}
